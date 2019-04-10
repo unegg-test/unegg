@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/7zBuf.h' l='34' type='void DynBuf_Free(CDynBuf * p, ISzAlloc * alloc)'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/7zBuf2.c' l='39' ll='45' type='void DynBuf_Free(CDynBuf * p, ISzAlloc * alloc)'/>

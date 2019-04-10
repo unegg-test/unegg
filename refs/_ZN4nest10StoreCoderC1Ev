@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/algorithm/StoreCoder.h' l='23' type='void nest::StoreCoder::StoreCoder()'/>
+<def f='codebrowser/nest/algorithm/StoreCoder.cpp' l='17' ll='20' type='void nest::StoreCoder::StoreCoder()'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='497' u='c' c='_ZN4nest9ALZFormat13GenerateCoderEiPPNS_5CoderEPm'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='482' u='c' c='_ZN4nest9EggFormat13GenerateCoderEiPPNS_5CoderEPm'/>

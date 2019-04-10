@@ -1,0 +1,2 @@
+<dec f='include/stdio.h' l='702' type='int ungetc(int __c, FILE * __stream)'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='910' u='c' c='myfeof'/>

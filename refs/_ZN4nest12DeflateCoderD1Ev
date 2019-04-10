@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/algorithm/DeflateCoder.h' l='25' type='void nest::DeflateCoder::~DeflateCoder()'/>
+<inh f='codebrowser/nest/algorithm/Coder.h' l='23' c='_ZN4nest5CoderD1Ev'/>
+<def f='codebrowser/nest/algorithm/DeflateCoder.cpp' l='24' ll='27' type='void nest::DeflateCoder::~DeflateCoder()'/>

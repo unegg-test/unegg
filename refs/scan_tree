@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='149' type='void scan_tree(deflate_state * s, ct_data * tree, int max_code)'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='711' ll='750' macro='1' type='void scan_tree(deflate_state * s, ct_data * tree, int max_code)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='813' u='c' c='build_bl_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='814' u='c' c='build_bl_tree'/>

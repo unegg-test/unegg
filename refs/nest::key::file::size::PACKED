@@ -1,0 +1,5 @@
+<def f='codebrowser/nest/nest.h' l='123' macro='1' type='const unsigned int'/>
+<use f='codebrowser/UnEgg.cpp' l='186' u='r' c='_Z18PrintListOfArchivePKc'/>
+<use f='codebrowser/UnEgg.cpp' l='236' u='r' c='_Z18PrintListOfArchivePKc'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='182' u='r' c='_ZN4nest3alz4File9_As8BytesEjPb'/>
+<use f='codebrowser/nest/format/egg/FileWrap.cpp' l='119' u='r' c='_ZN4nest3egg8FileWrap9_As8BytesEjPb'/>

@@ -1,0 +1,2 @@
+<def f='include/c++/7/bits/stl_set.h' l='324' ll='326' type='allocator_type std::set::get_allocator() const'/>
+<doc f='include/c++/7/bits/stl_set.h' l='323'>///  Returns the allocator object with which the %set was constructed.</doc>

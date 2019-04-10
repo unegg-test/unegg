@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/format/EggFormat.h' l='103' type='void nest::EggFormat::GenerateCoder(int method, nest::Coder ** coder, size_t * dataHeaderSize)'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='438' u='c' c='_ZN4nest9EggFormat17PrepareSolidBlockEPNS_3egg9BlockWrapEPNS0_16BlockExtractInfoE'/>
+<def f='codebrowser/nest/format/EggFormat.cpp' l='475' ll='501' type='void nest::EggFormat::GenerateCoder(int method, nest::Coder ** coder, size_t * dataHeaderSize)'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='779' u='c' c='_ZN4nest9EggFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>

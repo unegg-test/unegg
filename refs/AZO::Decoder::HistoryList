@@ -1,0 +1,6 @@
+<def f='codebrowser/nest/algorithm/azo/Decoder/HistoryListD.h' l='13' ll='26'/>
+<fun r='_ZN3AZO7Decoder11HistoryListC1ET_'/>
+<fun r='_ZN3AZO7Decoder11HistoryList4CodeERNS0_11EntropyCodeERT_'/>
+<mbr r='AZO::Decoder::HistoryList::state_' t='BoolState&lt;&gt;'/>
+<mbr r='AZO::Decoder::HistoryList::prob_' t='EntropyBitProb&lt;N&gt;'/>
+<fun r='_ZN3AZO7Decoder11HistoryList4CodeERNS0_11EntropyCodeERT_'/>

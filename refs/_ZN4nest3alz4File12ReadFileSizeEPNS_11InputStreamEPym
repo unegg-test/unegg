@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/format/alz/File.h' l='114' type='int nest::alz::File::ReadFileSize(nest::InputStream * stream, uint64 * size, size_t byteCount)'/>
+<def f='codebrowser/nest/format/alz/File.cpp' l='50' ll='79' type='int nest::alz::File::ReadFileSize(nest::InputStream * stream, uint64 * size, size_t byteCount)'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='107' u='c' c='_ZN4nest3alz4File6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='110' u='c' c='_ZN4nest3alz4File6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>

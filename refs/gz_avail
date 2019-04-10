@@ -1,0 +1,24 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='10' type='int gz_avail(gz_statep )'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='50' ll='64' macro='1' type='int gz_avail(gz_statep state)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='67' u='c' c='gz_next4'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='67' u='c' c='gz_next4'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='67' u='c' c='gz_next4'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='67' u='c' c='gz_next4'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='143' u='c' c='gz_head'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='154' u='c' c='gz_head'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='67' u='c' c='gz_head'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='67' u='c' c='gz_head'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='67' u='c' c='gz_head'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='67' u='c' c='gz_head'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='67' u='c' c='gz_head'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='67' u='c' c='gz_head'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='67' u='c' c='gz_head'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='67' u='c' c='gz_head'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='67' u='c' c='gz_head'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='67' u='c' c='gz_head'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='67' u='c' c='gz_head'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='67' u='c' c='gz_head'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='67' u='c' c='gz_head'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='67' u='c' c='gz_head'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='67' u='c' c='gz_head'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='246' u='c' c='gz_decomp'/>

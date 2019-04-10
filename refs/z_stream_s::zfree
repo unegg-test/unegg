@@ -1,0 +1,29 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='98' type='free_func'/>
+<use f='codebrowser/nest/algorithm/DeflateCoder.cpp' l='35' u='w' c='_ZN4nest12DeflateCoder10InitializeEPKhm'/>
+<offset>576</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='98'>/* used to free the internal state */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/compress.c' l='43' u='w' c='compress2'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='241' u='r' c='deflateInit2_'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='241' u='w' c='deflateInit2_'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='359' u='r' c='deflateReset'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='914' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='915' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='916' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='917' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='919' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='128' u='w' c='gz_head'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='35' u='w' c='gz_init'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='48' u='r' c='inflateBackInit_'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='48' u='w' c='inflateBackInit_'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='626' u='r' c='inflateBackEnd'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='628' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='158' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='186' u='r' c='inflateInit2_'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='186' u='w' c='inflateInit2_'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='195' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1242' u='r' c='inflateEnd'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1245' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1246' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1417' u='r' c='inflateCopy'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1430' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/uncompr.c' l='43' u='w' c='uncompress'/>

@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzHash.h' l='15'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='500' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='658' u='c'/>

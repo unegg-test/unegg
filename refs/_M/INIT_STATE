@@ -1,0 +1,6 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='51'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='323' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='374' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='607' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='903' u='c'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='49'>/* All codes must not exceed MAX_BITS bits */</doc>

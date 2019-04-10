@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/algorithm/azo/Decoder/MainCodeD.h' l='15' type='int AZO::Decoder::MainCode::Code(const byte *&amp; in, u_int &amp; iuAvailSize, byte *&amp; out, u_int &amp; outAvailSize)'/>
+<def f='codebrowser/nest/algorithm/azo/Decoder/MainCodeD.cpp' l='59' ll='146' type='int AZO::Decoder::MainCode::Code(const byte *&amp; in, u_int &amp; inAvailSize, byte *&amp; out, u_int &amp; outAvailSize)'/>
+<use f='codebrowser/nest/algorithm/azo/unAZO.cpp' l='65' u='c' c='_Z14AZO_DecompressPvP10AZO_Stream'/>
+<use f='codebrowser/nest/algorithm/azo/unAZO.cpp' l='110' u='c' c='_Z20AZO_BufferDecompressPcPjPKcj'/>

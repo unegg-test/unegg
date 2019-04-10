@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>LzmaDec.h source code [codebrowser/nest/third-party/algorithm/lzma/LzmaDec.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/third-party/algorithm/lzma/LzmaDec.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>nest</a>/<a href='../..'>third-party</a>/<a href='..'>algorithm</a>/<a href='./'>lzma</a>/<a href='LzmaDec.h.html'>LzmaDec.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* LzmaDec.h -- LZMA Decoder</i></td></tr>
+<tr><th id="2">2</th><td><i> 2009-02-07 : Igor Pavlov : Public domain */</i></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#<span data-ppcond="4">ifndef</span> <span class="macro" data-ref="_M/__LZMA_DEC_H">__LZMA_DEC_H</span></u></td></tr>
+<tr><th id="5">5</th><td><u>#define <dfn class="macro" id="_M/__LZMA_DEC_H" data-ref="_M/__LZMA_DEC_H">__LZMA_DEC_H</dfn></u></td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><u>#include <a href="Types.h.html">"Types.h"</a></u></td></tr>
+<tr><th id="8">8</th><td></td></tr>
+<tr><th id="9">9</th><td><u>#<span data-ppcond="9">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="10">10</th><td><b>extern</b> <q>"C"</q></td></tr>
+<tr><th id="11">11</th><td>{</td></tr>
+<tr><th id="12">12</th><td><u>#<span data-ppcond="9">endif</span></u></td></tr>
+<tr><th id="13">13</th><td></td></tr>
+<tr><th id="14">14</th><td><i>/* #define _LZMA_PROB32 */</i></td></tr>
+<tr><th id="15">15</th><td><i>/* _LZMA_PROB32 can increase the speed on some CPUs,</i></td></tr>
+<tr><th id="16">16</th><td><i> but memory usage for CLzmaDec::probs will be doubled in that case */</i></td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td><u>#<span data-ppcond="18">ifdef</span> <span class="macro" data-ref="_M/_LZMA_PROB32">_LZMA_PROB32</span></u></td></tr>
+<tr><th id="19">19</th><td><u>#define CLzmaProb UInt32</u></td></tr>
+<tr><th id="20">20</th><td><u>#<span data-ppcond="18">else</span></u></td></tr>
+<tr><th id="21">21</th><td><u>#define <dfn class="macro" id="_M/CLzmaProb" data-ref="_M/CLzmaProb">CLzmaProb</dfn> <a class="typedef" href="Types.h.html#UInt16" title='UInt16' data-type='unsigned short' data-ref="UInt16">UInt16</a></u></td></tr>
+<tr><th id="22">22</th><td><u>#<span data-ppcond="18">endif</span></u></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><i>/* ---------- LZMA Properties ---------- */</i></td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><u>#define <dfn class="macro" id="_M/LZMA_PROPS_SIZE" data-ref="_M/LZMA_PROPS_SIZE">LZMA_PROPS_SIZE</dfn> 5</u></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><b>typedef</b> <b>struct</b> <dfn class="type def" id="_CLzmaProps" title='_CLzmaProps' data-ref="_CLzmaProps"><a class="type" href="#_CLzmaProps" title='_CLzmaProps' data-ref="_CLzmaProps">_CLzmaProps</a></dfn></td></tr>
+<tr><th id="29">29</th><td>{</td></tr>
+<tr><th id="30">30</th><td>    <em>unsigned</em> <dfn class="decl" id="_CLzmaProps::lc" title='_CLzmaProps::lc' data-ref="_CLzmaProps::lc">lc</dfn>, <dfn class="decl" id="_CLzmaProps::lp" title='_CLzmaProps::lp' data-ref="_CLzmaProps::lp">lp</dfn>, <dfn class="decl" id="_CLzmaProps::pb" title='_CLzmaProps::pb' data-ref="_CLzmaProps::pb">pb</dfn>;</td></tr>
+<tr><th id="31">31</th><td>    <a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> <dfn class="decl" id="_CLzmaProps::dicSize" title='_CLzmaProps::dicSize' data-ref="_CLzmaProps::dicSize">dicSize</dfn>;</td></tr>
+<tr><th id="32">32</th><td>} <dfn class="typedef" id="CLzmaProps" title='CLzmaProps' data-type='struct _CLzmaProps' data-ref="CLzmaProps">CLzmaProps</dfn>;</td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><i>/* LzmaProps_Decode - decodes properties</i></td></tr>
+<tr><th id="35">35</th><td><i> Returns:</i></td></tr>
+<tr><th id="36">36</th><td><i> SZ_OK</i></td></tr>
+<tr><th id="37">37</th><td><i> SZ_ERROR_UNSUPPORTED - Unsupported properties</i></td></tr>
+<tr><th id="38">38</th><td><i> */</i></td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><a class="typedef" href="Types.h.html#SRes" title='SRes' data-type='int' data-ref="SRes">SRes</a> <dfn class="decl" id="LzmaProps_Decode" title='LzmaProps_Decode' data-ref="LzmaProps_Decode">LzmaProps_Decode</dfn>(<a class="typedef" href="#CLzmaProps" title='CLzmaProps' data-type='struct _CLzmaProps' data-ref="CLzmaProps">CLzmaProps</a> *<dfn class="local col0 decl" id="60p" title='p' data-type='CLzmaProps *' data-ref="60p">p</dfn>, <em>const</em> <a class="typedef" href="Types.h.html#Byte" title='Byte' data-type='unsigned char' data-ref="Byte">Byte</a> *<dfn class="local col1 decl" id="61data" title='data' data-type='const Byte *' data-ref="61data">data</dfn>, <em>unsigned</em> <dfn class="local col2 decl" id="62size" title='size' data-type='unsigned int' data-ref="62size">size</dfn>);</td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><i>/* ---------- LZMA Decoder state ---------- */</i></td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td><i>/* LZMA_REQUIRED_INPUT_MAX = number of required input bytes for worst case.</i></td></tr>
+<tr><th id="45">45</th><td><i> Num bits = log2((2^11 / 31) ^ 22) + 26 &lt; 134 + 26 = 160; */</i></td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td><u>#define <dfn class="macro" id="_M/LZMA_REQUIRED_INPUT_MAX" data-ref="_M/LZMA_REQUIRED_INPUT_MAX">LZMA_REQUIRED_INPUT_MAX</dfn> 20</u></td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td><b>typedef</b> <b>struct</b></td></tr>
+<tr><th id="50">50</th><td>{</td></tr>
+<tr><th id="51">51</th><td>    <a class="typedef" href="#CLzmaProps" title='CLzmaProps' data-type='struct _CLzmaProps' data-ref="CLzmaProps">CLzmaProps</a> <dfn class="decl" id="(anonymous)::prop" title='(anonymous struct)::prop' data-ref="(anonymous)::prop">prop</dfn>;</td></tr>
+<tr><th id="52">52</th><td>    <a class="macro" href="#21" title="UInt16" data-ref="_M/CLzmaProb">CLzmaProb</a> *<dfn class="decl" id="(anonymous)::probs" title='(anonymous struct)::probs' data-ref="(anonymous)::probs">probs</dfn>;</td></tr>
+<tr><th id="53">53</th><td>    <a class="typedef" href="Types.h.html#Byte" title='Byte' data-type='unsigned char' data-ref="Byte">Byte</a> *<dfn class="decl" id="(anonymous)::dic" title='(anonymous struct)::dic' data-ref="(anonymous)::dic">dic</dfn>;</td></tr>
+<tr><th id="54">54</th><td>    <em>const</em> <a class="typedef" href="Types.h.html#Byte" title='Byte' data-type='unsigned char' data-ref="Byte">Byte</a> *<dfn class="decl" id="(anonymous)::buf" title='(anonymous struct)::buf' data-ref="(anonymous)::buf">buf</dfn>;</td></tr>
+<tr><th id="55">55</th><td>    <a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> <dfn class="decl" id="(anonymous)::range" title='(anonymous struct)::range' data-ref="(anonymous)::range">range</dfn>, <dfn class="decl" id="(anonymous)::code" title='(anonymous struct)::code' data-ref="(anonymous)::code">code</dfn>;</td></tr>
+<tr><th id="56">56</th><td>    <a class="typedef" href="Types.h.html#SizeT" title='SizeT' data-type='size_t' data-ref="SizeT">SizeT</a> <dfn class="decl" id="(anonymous)::dicPos" title='(anonymous struct)::dicPos' data-ref="(anonymous)::dicPos">dicPos</dfn>;</td></tr>
+<tr><th id="57">57</th><td>    <a class="typedef" href="Types.h.html#SizeT" title='SizeT' data-type='size_t' data-ref="SizeT">SizeT</a> <dfn class="decl" id="(anonymous)::dicBufSize" title='(anonymous struct)::dicBufSize' data-ref="(anonymous)::dicBufSize">dicBufSize</dfn>;</td></tr>
+<tr><th id="58">58</th><td>    <a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> <dfn class="decl" id="(anonymous)::processedPos" title='(anonymous struct)::processedPos' data-ref="(anonymous)::processedPos">processedPos</dfn>;</td></tr>
+<tr><th id="59">59</th><td>    <a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> <dfn class="decl" id="(anonymous)::checkDicSize" title='(anonymous struct)::checkDicSize' data-ref="(anonymous)::checkDicSize">checkDicSize</dfn>;</td></tr>
+<tr><th id="60">60</th><td>    <em>unsigned</em> <dfn class="decl" id="(anonymous)::state" title='(anonymous struct)::state' data-ref="(anonymous)::state">state</dfn>;</td></tr>
+<tr><th id="61">61</th><td>    <a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> <dfn class="decl" id="(anonymous)::reps" title='(anonymous struct)::reps' data-ref="(anonymous)::reps">reps</dfn>[<var>4</var>];</td></tr>
+<tr><th id="62">62</th><td>    <em>unsigned</em> <dfn class="decl" id="(anonymous)::remainLen" title='(anonymous struct)::remainLen' data-ref="(anonymous)::remainLen">remainLen</dfn>;</td></tr>
+<tr><th id="63">63</th><td>    <em>int</em> <dfn class="decl" id="(anonymous)::needFlush" title='(anonymous struct)::needFlush' data-ref="(anonymous)::needFlush">needFlush</dfn>;</td></tr>
+<tr><th id="64">64</th><td>    <em>int</em> <dfn class="decl" id="(anonymous)::needInitState" title='(anonymous struct)::needInitState' data-ref="(anonymous)::needInitState">needInitState</dfn>;</td></tr>
+<tr><th id="65">65</th><td>    <a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> <dfn class="decl" id="(anonymous)::numProbs" title='(anonymous struct)::numProbs' data-ref="(anonymous)::numProbs">numProbs</dfn>;</td></tr>
+<tr><th id="66">66</th><td>    <em>unsigned</em> <dfn class="decl" id="(anonymous)::tempBufSize" title='(anonymous struct)::tempBufSize' data-ref="(anonymous)::tempBufSize">tempBufSize</dfn>;</td></tr>
+<tr><th id="67">67</th><td>    <a class="typedef" href="Types.h.html#Byte" title='Byte' data-type='unsigned char' data-ref="Byte">Byte</a> <dfn class="decl" id="(anonymous)::tempBuf" title='(anonymous struct)::tempBuf' data-ref="(anonymous)::tempBuf">tempBuf</dfn>[<a class="macro" href="#47" title="20" data-ref="_M/LZMA_REQUIRED_INPUT_MAX">LZMA_REQUIRED_INPUT_MAX</a>];</td></tr>
+<tr><th id="68">68</th><td>} <dfn class="typedef" id="CLzmaDec" title='CLzmaDec' data-type='struct CLzmaDec' data-ref="CLzmaDec">CLzmaDec</dfn>;</td></tr>
+<tr><th id="69">69</th><td></td></tr>
+<tr><th id="70">70</th><td><u>#define <dfn class="macro" id="_M/LzmaDec_Construct" data-ref="_M/LzmaDec_Construct">LzmaDec_Construct</dfn>(p) { (p)-&gt;dic = 0; (p)-&gt;probs = 0; }</u></td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td><em>void</em> <dfn class="decl" id="LzmaDec_Init" title='LzmaDec_Init' data-ref="LzmaDec_Init">LzmaDec_Init</dfn>(<a class="typedef" href="#CLzmaDec" title='CLzmaDec' data-type='struct CLzmaDec' data-ref="CLzmaDec">CLzmaDec</a> *<dfn class="local col3 decl" id="63p" title='p' data-type='CLzmaDec *' data-ref="63p">p</dfn>);</td></tr>
+<tr><th id="73">73</th><td></td></tr>
+<tr><th id="74">74</th><td><i>/* There are two types of LZMA streams:</i></td></tr>
+<tr><th id="75">75</th><td><i> 0) Stream with end mark. That end mark adds about 6 bytes to compressed size.</i></td></tr>
+<tr><th id="76">76</th><td><i> 1) Stream without end mark. You must know exact uncompressed size to decompress such stream. */</i></td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="79">79</th><td>{</td></tr>
+<tr><th id="80">80</th><td>    <dfn class="enum" id="LZMA_FINISH_ANY" title='LZMA_FINISH_ANY' data-ref="LZMA_FINISH_ANY">LZMA_FINISH_ANY</dfn>, <i>/* finish at any point */</i></td></tr>
+<tr><th id="81">81</th><td>    <dfn class="enum" id="LZMA_FINISH_END" title='LZMA_FINISH_END' data-ref="LZMA_FINISH_END">LZMA_FINISH_END</dfn></td></tr>
+<tr><th id="82">82</th><td><i>/* block must be finished at the end */</i></td></tr>
+<tr><th id="83">83</th><td>} <dfn class="typedef" id="ELzmaFinishMode" title='ELzmaFinishMode' data-type='enum ELzmaFinishMode' data-ref="ELzmaFinishMode">ELzmaFinishMode</dfn>;</td></tr>
+<tr><th id="84">84</th><td></td></tr>
+<tr><th id="85">85</th><td><i>/* ELzmaFinishMode has meaning only if the decoding reaches output limit !!!</i></td></tr>
+<tr><th id="86">86</th><td><i></i></td></tr>
+<tr><th id="87">87</th><td><i> You must use LZMA_FINISH_END, when you know that current output buffer</i></td></tr>
+<tr><th id="88">88</th><td><i> covers last bytes of block. In other cases you must use LZMA_FINISH_ANY.</i></td></tr>
+<tr><th id="89">89</th><td><i></i></td></tr>
+<tr><th id="90">90</th><td><i> If LZMA decoder sees end marker before reaching output limit, it returns SZ_OK,</i></td></tr>
+<tr><th id="91">91</th><td><i> and output value of destLen will be less than output buffer size limit.</i></td></tr>
+<tr><th id="92">92</th><td><i> You can check status result also.</i></td></tr>
+<tr><th id="93">93</th><td><i></i></td></tr>
+<tr><th id="94">94</th><td><i> You can use multiple checks to test data integrity after full decompression:</i></td></tr>
+<tr><th id="95">95</th><td><i> 1) Check Result and "status" variable.</i></td></tr>
+<tr><th id="96">96</th><td><i> 2) Check that output(destLen) = uncompressedSize, if you know real uncompressedSize.</i></td></tr>
+<tr><th id="97">97</th><td><i> 3) Check that output(srcLen) = compressedSize, if you know real compressedSize.</i></td></tr>
+<tr><th id="98">98</th><td><i> You must use correct finish mode in that case. */</i></td></tr>
+<tr><th id="99">99</th><td></td></tr>
+<tr><th id="100">100</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="101">101</th><td>{</td></tr>
+<tr><th id="102">102</th><td>    <dfn class="enum" id="LZMA_STATUS_NOT_SPECIFIED" title='LZMA_STATUS_NOT_SPECIFIED' data-ref="LZMA_STATUS_NOT_SPECIFIED">LZMA_STATUS_NOT_SPECIFIED</dfn>, <i>/* use main error code instead */</i></td></tr>
+<tr><th id="103">103</th><td>    <dfn class="enum" id="LZMA_STATUS_FINISHED_WITH_MARK" title='LZMA_STATUS_FINISHED_WITH_MARK' data-ref="LZMA_STATUS_FINISHED_WITH_MARK">LZMA_STATUS_FINISHED_WITH_MARK</dfn>, <i>/* stream was finished with end mark. */</i></td></tr>
+<tr><th id="104">104</th><td>    <dfn class="enum" id="LZMA_STATUS_NOT_FINISHED" title='LZMA_STATUS_NOT_FINISHED' data-ref="LZMA_STATUS_NOT_FINISHED">LZMA_STATUS_NOT_FINISHED</dfn>, <i>/* stream was not finished */</i></td></tr>
+<tr><th id="105">105</th><td>    <dfn class="enum" id="LZMA_STATUS_NEEDS_MORE_INPUT" title='LZMA_STATUS_NEEDS_MORE_INPUT' data-ref="LZMA_STATUS_NEEDS_MORE_INPUT">LZMA_STATUS_NEEDS_MORE_INPUT</dfn>, <i>/* you must provide more input bytes */</i></td></tr>
+<tr><th id="106">106</th><td>    <dfn class="enum" id="LZMA_STATUS_MAYBE_FINISHED_WITHOUT_MARK" title='LZMA_STATUS_MAYBE_FINISHED_WITHOUT_MARK' data-ref="LZMA_STATUS_MAYBE_FINISHED_WITHOUT_MARK">LZMA_STATUS_MAYBE_FINISHED_WITHOUT_MARK</dfn></td></tr>
+<tr><th id="107">107</th><td><i>/* there is probability that stream was finished without end mark */</i></td></tr>
+<tr><th id="108">108</th><td>} <dfn class="typedef" id="ELzmaStatus" title='ELzmaStatus' data-type='enum ELzmaStatus' data-ref="ELzmaStatus">ELzmaStatus</dfn>;</td></tr>
+<tr><th id="109">109</th><td></td></tr>
+<tr><th id="110">110</th><td><i>/* ELzmaStatus is used only as output value for function call */</i></td></tr>
+<tr><th id="111">111</th><td></td></tr>
+<tr><th id="112">112</th><td><i>/* ---------- Interfaces ---------- */</i></td></tr>
+<tr><th id="113">113</th><td></td></tr>
+<tr><th id="114">114</th><td><i>/* There are 3 levels of interfaces:</i></td></tr>
+<tr><th id="115">115</th><td><i> 1) Dictionary Interface</i></td></tr>
+<tr><th id="116">116</th><td><i> 2) Buffer Interface</i></td></tr>
+<tr><th id="117">117</th><td><i> 3) One Call Interface</i></td></tr>
+<tr><th id="118">118</th><td><i> You can select any of these interfaces, but don't mix functions from different</i></td></tr>
+<tr><th id="119">119</th><td><i> groups for same object. */</i></td></tr>
+<tr><th id="120">120</th><td></td></tr>
+<tr><th id="121">121</th><td><i>/* There are two variants to allocate state for Dictionary Interface:</i></td></tr>
+<tr><th id="122">122</th><td><i> 1) LzmaDec_Allocate / LzmaDec_Free</i></td></tr>
+<tr><th id="123">123</th><td><i> 2) LzmaDec_AllocateProbs / LzmaDec_FreeProbs</i></td></tr>
+<tr><th id="124">124</th><td><i> You can use variant 2, if you set dictionary buffer manually.</i></td></tr>
+<tr><th id="125">125</th><td><i> For Buffer Interface you must always use variant 1.</i></td></tr>
+<tr><th id="126">126</th><td><i></i></td></tr>
+<tr><th id="127">127</th><td><i> LzmaDec_Allocate* can return:</i></td></tr>
+<tr><th id="128">128</th><td><i> SZ_OK</i></td></tr>
+<tr><th id="129">129</th><td><i> SZ_ERROR_MEM         - Memory allocation error</i></td></tr>
+<tr><th id="130">130</th><td><i> SZ_ERROR_UNSUPPORTED - Unsupported properties</i></td></tr>
+<tr><th id="131">131</th><td><i> */</i></td></tr>
+<tr><th id="132">132</th><td></td></tr>
+<tr><th id="133">133</th><td><a class="typedef" href="Types.h.html#SRes" title='SRes' data-type='int' data-ref="SRes">SRes</a> <dfn class="decl" id="LzmaDec_AllocateProbs" title='LzmaDec_AllocateProbs' data-ref="LzmaDec_AllocateProbs">LzmaDec_AllocateProbs</dfn>(<a class="typedef" href="#CLzmaDec" title='CLzmaDec' data-type='struct CLzmaDec' data-ref="CLzmaDec">CLzmaDec</a> *<dfn class="local col4 decl" id="64p" title='p' data-type='CLzmaDec *' data-ref="64p">p</dfn>, <em>const</em> <a class="typedef" href="Types.h.html#Byte" title='Byte' data-type='unsigned char' data-ref="Byte">Byte</a> *<dfn class="local col5 decl" id="65props" title='props' data-type='const Byte *' data-ref="65props">props</dfn>, <em>unsigned</em> <dfn class="local col6 decl" id="66propsSize" title='propsSize' data-type='unsigned int' data-ref="66propsSize">propsSize</dfn>, <a class="typedef" href="Types.h.html#ISzAlloc" title='ISzAlloc' data-type='struct ISzAlloc' data-ref="ISzAlloc">ISzAlloc</a> *<dfn class="local col7 decl" id="67alloc" title='alloc' data-type='ISzAlloc *' data-ref="67alloc">alloc</dfn>);</td></tr>
+<tr><th id="134">134</th><td><em>void</em> <dfn class="decl" id="LzmaDec_FreeProbs" title='LzmaDec_FreeProbs' data-ref="LzmaDec_FreeProbs">LzmaDec_FreeProbs</dfn>(<a class="typedef" href="#CLzmaDec" title='CLzmaDec' data-type='struct CLzmaDec' data-ref="CLzmaDec">CLzmaDec</a> *<dfn class="local col8 decl" id="68p" title='p' data-type='CLzmaDec *' data-ref="68p">p</dfn>, <a class="typedef" href="Types.h.html#ISzAlloc" title='ISzAlloc' data-type='struct ISzAlloc' data-ref="ISzAlloc">ISzAlloc</a> *<dfn class="local col9 decl" id="69alloc" title='alloc' data-type='ISzAlloc *' data-ref="69alloc">alloc</dfn>);</td></tr>
+<tr><th id="135">135</th><td></td></tr>
+<tr><th id="136">136</th><td><a class="typedef" href="Types.h.html#SRes" title='SRes' data-type='int' data-ref="SRes">SRes</a> <dfn class="decl" id="LzmaDec_Allocate" title='LzmaDec_Allocate' data-ref="LzmaDec_Allocate">LzmaDec_Allocate</dfn>(<a class="typedef" href="#CLzmaDec" title='CLzmaDec' data-type='struct CLzmaDec' data-ref="CLzmaDec">CLzmaDec</a> *<dfn class="local col0 decl" id="70state" title='state' data-type='CLzmaDec *' data-ref="70state">state</dfn>, <em>const</em> <a class="typedef" href="Types.h.html#Byte" title='Byte' data-type='unsigned char' data-ref="Byte">Byte</a> *<dfn class="local col1 decl" id="71prop" title='prop' data-type='const Byte *' data-ref="71prop">prop</dfn>, <em>unsigned</em> <dfn class="local col2 decl" id="72propsSize" title='propsSize' data-type='unsigned int' data-ref="72propsSize">propsSize</dfn>, <a class="typedef" href="Types.h.html#ISzAlloc" title='ISzAlloc' data-type='struct ISzAlloc' data-ref="ISzAlloc">ISzAlloc</a> *<dfn class="local col3 decl" id="73alloc" title='alloc' data-type='ISzAlloc *' data-ref="73alloc">alloc</dfn>);</td></tr>
+<tr><th id="137">137</th><td><em>void</em> <dfn class="decl" id="LzmaDec_Free" title='LzmaDec_Free' data-ref="LzmaDec_Free">LzmaDec_Free</dfn>(<a class="typedef" href="#CLzmaDec" title='CLzmaDec' data-type='struct CLzmaDec' data-ref="CLzmaDec">CLzmaDec</a> *<dfn class="local col4 decl" id="74state" title='state' data-type='CLzmaDec *' data-ref="74state">state</dfn>, <a class="typedef" href="Types.h.html#ISzAlloc" title='ISzAlloc' data-type='struct ISzAlloc' data-ref="ISzAlloc">ISzAlloc</a> *<dfn class="local col5 decl" id="75alloc" title='alloc' data-type='ISzAlloc *' data-ref="75alloc">alloc</dfn>);</td></tr>
+<tr><th id="138">138</th><td></td></tr>
+<tr><th id="139">139</th><td><i>/* ---------- Dictionary Interface ---------- */</i></td></tr>
+<tr><th id="140">140</th><td></td></tr>
+<tr><th id="141">141</th><td><i>/* You can use it, if you want to eliminate the overhead for data copying from</i></td></tr>
+<tr><th id="142">142</th><td><i> dictionary to some other external buffer.</i></td></tr>
+<tr><th id="143">143</th><td><i> You must work with CLzmaDec variables directly in this interface.</i></td></tr>
+<tr><th id="144">144</th><td><i></i></td></tr>
+<tr><th id="145">145</th><td><i> STEPS:</i></td></tr>
+<tr><th id="146">146</th><td><i> LzmaDec_Constr()</i></td></tr>
+<tr><th id="147">147</th><td><i> LzmaDec_Allocate()</i></td></tr>
+<tr><th id="148">148</th><td><i> for (each new stream)</i></td></tr>
+<tr><th id="149">149</th><td><i> {</i></td></tr>
+<tr><th id="150">150</th><td><i> LzmaDec_Init()</i></td></tr>
+<tr><th id="151">151</th><td><i> while (it needs more decompression)</i></td></tr>
+<tr><th id="152">152</th><td><i> {</i></td></tr>
+<tr><th id="153">153</th><td><i> LzmaDec_DecodeToDic()</i></td></tr>
+<tr><th id="154">154</th><td><i> use data from CLzmaDec::dic and update CLzmaDec::dicPos</i></td></tr>
+<tr><th id="155">155</th><td><i> }</i></td></tr>
+<tr><th id="156">156</th><td><i> }</i></td></tr>
+<tr><th id="157">157</th><td><i> LzmaDec_Free()</i></td></tr>
+<tr><th id="158">158</th><td><i> */</i></td></tr>
+<tr><th id="159">159</th><td></td></tr>
+<tr><th id="160">160</th><td><i>/* LzmaDec_DecodeToDic</i></td></tr>
+<tr><th id="161">161</th><td><i></i></td></tr>
+<tr><th id="162">162</th><td><i> The decoding to internal dictionary buffer (CLzmaDec::dic).</i></td></tr>
+<tr><th id="163">163</th><td><i> You must manually update CLzmaDec::dicPos, if it reaches CLzmaDec::dicBufSize !!!</i></td></tr>
+<tr><th id="164">164</th><td><i></i></td></tr>
+<tr><th id="165">165</th><td><i> finishMode:</i></td></tr>
+<tr><th id="166">166</th><td><i> It has meaning only if the decoding reaches output limit (dicLimit).</i></td></tr>
+<tr><th id="167">167</th><td><i> LZMA_FINISH_ANY - Decode just dicLimit bytes.</i></td></tr>
+<tr><th id="168">168</th><td><i> LZMA_FINISH_END - Stream must be finished after dicLimit.</i></td></tr>
+<tr><th id="169">169</th><td><i></i></td></tr>
+<tr><th id="170">170</th><td><i> Returns:</i></td></tr>
+<tr><th id="171">171</th><td><i> SZ_OK</i></td></tr>
+<tr><th id="172">172</th><td><i> status:</i></td></tr>
+<tr><th id="173">173</th><td><i> LZMA_STATUS_FINISHED_WITH_MARK</i></td></tr>
+<tr><th id="174">174</th><td><i> LZMA_STATUS_NOT_FINISHED</i></td></tr>
+<tr><th id="175">175</th><td><i> LZMA_STATUS_NEEDS_MORE_INPUT</i></td></tr>
+<tr><th id="176">176</th><td><i> LZMA_STATUS_MAYBE_FINISHED_WITHOUT_MARK</i></td></tr>
+<tr><th id="177">177</th><td><i> SZ_ERROR_DATA - Data error</i></td></tr>
+<tr><th id="178">178</th><td><i> */</i></td></tr>
+<tr><th id="179">179</th><td></td></tr>
+<tr><th id="180">180</th><td><a class="typedef" href="Types.h.html#SRes" title='SRes' data-type='int' data-ref="SRes">SRes</a> <dfn class="decl" id="LzmaDec_DecodeToDic" title='LzmaDec_DecodeToDic' data-ref="LzmaDec_DecodeToDic">LzmaDec_DecodeToDic</dfn>(<a class="typedef" href="#CLzmaDec" title='CLzmaDec' data-type='struct CLzmaDec' data-ref="CLzmaDec">CLzmaDec</a> *<dfn class="local col6 decl" id="76p" title='p' data-type='CLzmaDec *' data-ref="76p">p</dfn>, <a class="typedef" href="Types.h.html#SizeT" title='SizeT' data-type='size_t' data-ref="SizeT">SizeT</a> <dfn class="local col7 decl" id="77dicLimit" title='dicLimit' data-type='SizeT' data-ref="77dicLimit">dicLimit</dfn>, <em>const</em> <a class="typedef" href="Types.h.html#Byte" title='Byte' data-type='unsigned char' data-ref="Byte">Byte</a> *<dfn class="local col8 decl" id="78src" title='src' data-type='const Byte *' data-ref="78src">src</dfn>, <a class="typedef" href="Types.h.html#SizeT" title='SizeT' data-type='size_t' data-ref="SizeT">SizeT</a> *<dfn class="local col9 decl" id="79srcLen" title='srcLen' data-type='SizeT *' data-ref="79srcLen">srcLen</dfn>, <a class="typedef" href="#ELzmaFinishMode" title='ELzmaFinishMode' data-type='enum ELzmaFinishMode' data-ref="ELzmaFinishMode">ELzmaFinishMode</a> <dfn class="local col0 decl" id="80finishMode" title='finishMode' data-type='ELzmaFinishMode' data-ref="80finishMode">finishMode</dfn>, <a class="typedef" href="#ELzmaStatus" title='ELzmaStatus' data-type='enum ELzmaStatus' data-ref="ELzmaStatus">ELzmaStatus</a> *<dfn class="local col1 decl" id="81status" title='status' data-type='ELzmaStatus *' data-ref="81status">status</dfn>);</td></tr>
+<tr><th id="181">181</th><td></td></tr>
+<tr><th id="182">182</th><td><i>/* ---------- Buffer Interface ---------- */</i></td></tr>
+<tr><th id="183">183</th><td></td></tr>
+<tr><th id="184">184</th><td><i>/* It's zlib-like interface.</i></td></tr>
+<tr><th id="185">185</th><td><i> See LzmaDec_DecodeToDic description for information about STEPS and return results,</i></td></tr>
+<tr><th id="186">186</th><td><i> but you must use LzmaDec_DecodeToBuf instead of LzmaDec_DecodeToDic and you don't need</i></td></tr>
+<tr><th id="187">187</th><td><i> to work with CLzmaDec variables manually.</i></td></tr>
+<tr><th id="188">188</th><td><i></i></td></tr>
+<tr><th id="189">189</th><td><i> finishMode:</i></td></tr>
+<tr><th id="190">190</th><td><i> It has meaning only if the decoding reaches output limit (*destLen).</i></td></tr>
+<tr><th id="191">191</th><td><i> LZMA_FINISH_ANY - Decode just destLen bytes.</i></td></tr>
+<tr><th id="192">192</th><td><i> LZMA_FINISH_END - Stream must be finished after (*destLen).</i></td></tr>
+<tr><th id="193">193</th><td><i> */</i></td></tr>
+<tr><th id="194">194</th><td></td></tr>
+<tr><th id="195">195</th><td><a class="typedef" href="Types.h.html#SRes" title='SRes' data-type='int' data-ref="SRes">SRes</a> <dfn class="decl" id="LzmaDec_DecodeToBuf" title='LzmaDec_DecodeToBuf' data-ref="LzmaDec_DecodeToBuf">LzmaDec_DecodeToBuf</dfn>(<a class="typedef" href="#CLzmaDec" title='CLzmaDec' data-type='struct CLzmaDec' data-ref="CLzmaDec">CLzmaDec</a> *<dfn class="local col2 decl" id="82p" title='p' data-type='CLzmaDec *' data-ref="82p">p</dfn>, <a class="typedef" href="Types.h.html#Byte" title='Byte' data-type='unsigned char' data-ref="Byte">Byte</a> *<dfn class="local col3 decl" id="83dest" title='dest' data-type='Byte *' data-ref="83dest">dest</dfn>, <a class="typedef" href="Types.h.html#SizeT" title='SizeT' data-type='size_t' data-ref="SizeT">SizeT</a> *<dfn class="local col4 decl" id="84destLen" title='destLen' data-type='SizeT *' data-ref="84destLen">destLen</dfn>, <em>const</em> <a class="typedef" href="Types.h.html#Byte" title='Byte' data-type='unsigned char' data-ref="Byte">Byte</a> *<dfn class="local col5 decl" id="85src" title='src' data-type='const Byte *' data-ref="85src">src</dfn>, <a class="typedef" href="Types.h.html#SizeT" title='SizeT' data-type='size_t' data-ref="SizeT">SizeT</a> *<dfn class="local col6 decl" id="86srcLen" title='srcLen' data-type='SizeT *' data-ref="86srcLen">srcLen</dfn>, <a class="typedef" href="#ELzmaFinishMode" title='ELzmaFinishMode' data-type='enum ELzmaFinishMode' data-ref="ELzmaFinishMode">ELzmaFinishMode</a> <dfn class="local col7 decl" id="87finishMode" title='finishMode' data-type='ELzmaFinishMode' data-ref="87finishMode">finishMode</dfn>,</td></tr>
+<tr><th id="196">196</th><td>    <a class="typedef" href="#ELzmaStatus" title='ELzmaStatus' data-type='enum ELzmaStatus' data-ref="ELzmaStatus">ELzmaStatus</a> *<dfn class="local col8 decl" id="88status" title='status' data-type='ELzmaStatus *' data-ref="88status">status</dfn>);</td></tr>
+<tr><th id="197">197</th><td></td></tr>
+<tr><th id="198">198</th><td><i>/* ---------- One Call Interface ---------- */</i></td></tr>
+<tr><th id="199">199</th><td></td></tr>
+<tr><th id="200">200</th><td><i>/* LzmaDecode</i></td></tr>
+<tr><th id="201">201</th><td><i></i></td></tr>
+<tr><th id="202">202</th><td><i> finishMode:</i></td></tr>
+<tr><th id="203">203</th><td><i> It has meaning only if the decoding reaches output limit (*destLen).</i></td></tr>
+<tr><th id="204">204</th><td><i> LZMA_FINISH_ANY - Decode just destLen bytes.</i></td></tr>
+<tr><th id="205">205</th><td><i> LZMA_FINISH_END - Stream must be finished after (*destLen).</i></td></tr>
+<tr><th id="206">206</th><td><i></i></td></tr>
+<tr><th id="207">207</th><td><i> Returns:</i></td></tr>
+<tr><th id="208">208</th><td><i> SZ_OK</i></td></tr>
+<tr><th id="209">209</th><td><i> status:</i></td></tr>
+<tr><th id="210">210</th><td><i> LZMA_STATUS_FINISHED_WITH_MARK</i></td></tr>
+<tr><th id="211">211</th><td><i> LZMA_STATUS_NOT_FINISHED</i></td></tr>
+<tr><th id="212">212</th><td><i> LZMA_STATUS_MAYBE_FINISHED_WITHOUT_MARK</i></td></tr>
+<tr><th id="213">213</th><td><i> SZ_ERROR_DATA - Data error</i></td></tr>
+<tr><th id="214">214</th><td><i> SZ_ERROR_MEM  - Memory allocation error</i></td></tr>
+<tr><th id="215">215</th><td><i> SZ_ERROR_UNSUPPORTED - Unsupported properties</i></td></tr>
+<tr><th id="216">216</th><td><i> SZ_ERROR_INPUT_EOF - It needs more bytes in input buffer (src).</i></td></tr>
+<tr><th id="217">217</th><td><i> */</i></td></tr>
+<tr><th id="218">218</th><td></td></tr>
+<tr><th id="219">219</th><td><a class="typedef" href="Types.h.html#SRes" title='SRes' data-type='int' data-ref="SRes">SRes</a> <dfn class="decl" id="LzmaDecode" title='LzmaDecode' data-ref="LzmaDecode">LzmaDecode</dfn>(<a class="typedef" href="Types.h.html#Byte" title='Byte' data-type='unsigned char' data-ref="Byte">Byte</a> *<dfn class="local col9 decl" id="89dest" title='dest' data-type='Byte *' data-ref="89dest">dest</dfn>, <a class="typedef" href="Types.h.html#SizeT" title='SizeT' data-type='size_t' data-ref="SizeT">SizeT</a> *<dfn class="local col0 decl" id="90destLen" title='destLen' data-type='SizeT *' data-ref="90destLen">destLen</dfn>, <em>const</em> <a class="typedef" href="Types.h.html#Byte" title='Byte' data-type='unsigned char' data-ref="Byte">Byte</a> *<dfn class="local col1 decl" id="91src" title='src' data-type='const Byte *' data-ref="91src">src</dfn>, <a class="typedef" href="Types.h.html#SizeT" title='SizeT' data-type='size_t' data-ref="SizeT">SizeT</a> *<dfn class="local col2 decl" id="92srcLen" title='srcLen' data-type='SizeT *' data-ref="92srcLen">srcLen</dfn>, <em>const</em> <a class="typedef" href="Types.h.html#Byte" title='Byte' data-type='unsigned char' data-ref="Byte">Byte</a> *<dfn class="local col3 decl" id="93propData" title='propData' data-type='const Byte *' data-ref="93propData">propData</dfn>, <em>unsigned</em> <dfn class="local col4 decl" id="94propSize" title='propSize' data-type='unsigned int' data-ref="94propSize">propSize</dfn>,</td></tr>
+<tr><th id="220">220</th><td>    <a class="typedef" href="#ELzmaFinishMode" title='ELzmaFinishMode' data-type='enum ELzmaFinishMode' data-ref="ELzmaFinishMode">ELzmaFinishMode</a> <dfn class="local col5 decl" id="95finishMode" title='finishMode' data-type='ELzmaFinishMode' data-ref="95finishMode">finishMode</dfn>, <a class="typedef" href="#ELzmaStatus" title='ELzmaStatus' data-type='enum ELzmaStatus' data-ref="ELzmaStatus">ELzmaStatus</a> *<dfn class="local col6 decl" id="96status" title='status' data-type='ELzmaStatus *' data-ref="96status">status</dfn>, <a class="typedef" href="Types.h.html#ISzAlloc" title='ISzAlloc' data-type='struct ISzAlloc' data-ref="ISzAlloc">ISzAlloc</a> *<dfn class="local col7 decl" id="97alloc" title='alloc' data-type='ISzAlloc *' data-ref="97alloc">alloc</dfn>);</td></tr>
+<tr><th id="221">221</th><td></td></tr>
+<tr><th id="222">222</th><td><u>#<span data-ppcond="222">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="223">223</th><td>}</td></tr>
+<tr><th id="224">224</th><td><u>#<span data-ppcond="222">endif</span></u></td></tr>
+<tr><th id="225">225</th><td></td></tr>
+<tr><th id="226">226</th><td><u>#<span data-ppcond="4">endif</span></u></td></tr>
+<tr><th id="227">227</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../algorithm/LZMACoder.cpp.html'>codebrowser/nest/algorithm/LZMACoder.cpp</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

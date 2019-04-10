@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/7zFile.h' l='47' type='WRes File_Write(CSzFile * p, const void * data, size_t * size)'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='140' ll='173' type='WRes File_Write(CSzFile * p, const void * data, size_t * size)'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='289' u='c' c='FileOutStream_Write'/>
+<doc f='codebrowser/nest/third-party/algorithm/lzma/7zFile.h' l='46'>/* writes *size bytes */</doc>

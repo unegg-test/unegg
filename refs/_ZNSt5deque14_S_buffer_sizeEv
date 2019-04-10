@@ -1,0 +1,8 @@
+<def f='include/c++/7/bits/stl_deque.h' l='862' ll='863' type='static size_t std::deque::_S_buffer_size()'/>
+<use f='include/c++/7/bits/deque.tcc' l='399' u='c' c='_ZNSt5deque18_M_fill_initializeERKT_'/>
+<use f='include/c++/7/bits/deque.tcc' l='455' u='c' c='_ZNSt5deque19_M_range_initializeET_S0_St20forward_iterator_tag'/>
+<use f='include/c++/7/bits/deque.tcc' l='850' u='c' c='_ZNSt5deque19_M_destroy_data_auxENSt11_Deque_baseIT_T0_E8iteratorES4_'/>
+<use f='include/c++/7/bits/deque.tcc' l='873' u='c' c='_ZNSt5deque24_M_new_elements_at_frontEm'/>
+<use f='include/c++/7/bits/deque.tcc' l='874' u='c' c='_ZNSt5deque24_M_new_elements_at_frontEm'/>
+<use f='include/c++/7/bits/deque.tcc' l='898' u='c' c='_ZNSt5deque23_M_new_elements_at_backEm'/>
+<use f='include/c++/7/bits/deque.tcc' l='899' u='c' c='_ZNSt5deque23_M_new_elements_at_backEm'/>

@@ -1,0 +1,12 @@
+<def f='include/c++/7/bits/basic_string.h' l='2291' ll='2293' type='const _CharT * std::__cxx11::basic_string::data() const'/>
+<use f='include/c++/7/bits/basic_string.tcc' l='1200' u='c' c='_ZNKSt7__cxx1112basic_string4findEPKT_N9__gnu_cxx14__alloc_traitsINS5_IT1_E6rebindIS1_E5otherEE9size_typeESC_'/>
+<doc f='include/c++/7/bits/basic_string.h' l='2283'>/**
+       *  @brief  Return const pointer to contents.
+       *
+       *  This is a pointer to internal data.  It is undefined to modify
+       *  the contents through the returned pointer. To get a pointer that
+       *  allows modifying the contents use @c &amp;str[0] instead,
+       *  (or in C++17 the non-const @c str.data() overload).
+      */</doc>
+<use f='include/c++/7/bits/locale_facets_nonio.tcc' l='398' u='c' c='_ZNKSt7__cxx119money_get6do_getET0_S1_bRSt8ios_baseRSt12_Ios_IostateRNS_12basic_stringIT_St11char_traitsIS7_ESaIS7_EEE'/>
+<use f='include/c++/7/bits/locale_facets_nonio.tcc' l='398' u='c' c='_ZNKSt7__cxx119money_get6do_getET0_S1_bRSt8ios_baseRSt12_Ios_IostateRNS_12basic_stringIT_St11char_traitsIS7_ESaIS7_EEE'/>

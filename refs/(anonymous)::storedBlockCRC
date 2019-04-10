@@ -1,0 +1,14 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='388' type='UInt32'/>
+<offset>25408</offset>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='387'>/* stored and calculated CRCs */</doc>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='827' u='r' c='BZ2_bzDecompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='830' u='r' c='BZ2_bzDecompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='241' u='w' c='BZ2_decompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='243' u='w' c='BZ2_decompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='243' u='r' c='BZ2_decompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='245' u='w' c='BZ2_decompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='245' u='r' c='BZ2_decompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='247' u='w' c='BZ2_decompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='247' u='r' c='BZ2_decompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='249' u='w' c='BZ2_decompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='249' u='r' c='BZ2_decompress'/>

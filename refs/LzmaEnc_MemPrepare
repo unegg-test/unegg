@@ -1,0 +1,2 @@
+<def f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='2035' ll='2042' type='SRes LzmaEnc_MemPrepare(CLzmaEncHandle pp, const Byte * src, SizeT srcLen, UInt32 keepWindowSize, ISzAlloc * alloc, ISzAlloc * allocBig)'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='2206' u='c' c='LzmaEnc_MemEncode'/>

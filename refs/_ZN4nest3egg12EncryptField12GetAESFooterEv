@@ -1,0 +1,4 @@
+<def f='codebrowser/nest/format/egg/EncryptField.h' l='52' ll='63' type='const char * nest::egg::EncryptField::GetAESFooter()'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='853' u='c' c='_ZN4nest9EggFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>
+<use f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='212' u='c' c='_ZN4nest3egg14ExtraFieldWrap6_AsPtrEjPb'/>
+<use f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='215' u='c' c='_ZN4nest3egg14ExtraFieldWrap6_AsPtrEjPb'/>

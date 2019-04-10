@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/algorithm/azo/Decoder/BlockCodeD.h' l='40' type='AZO::Decoder::MatchCode'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/BlockCodeD.cpp' l='22' u='w' c='_ZN3AZO7Decoder9BlockCodeC1EPhj'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/BlockCodeD.cpp' l='58' u='m' c='_ZN3AZO7Decoder9BlockCode7GetCodeERNS0_11EntropyCodeEj'/>
+<offset>2179200</offset>

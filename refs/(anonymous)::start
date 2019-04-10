@@ -1,0 +1,6 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='100' type='long'/>
+<offset>512</offset>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='184' u='w' c='gz_open'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='185' u='r' c='gz_open'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='185' u='w' c='gz_open'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='268' u='r' c='gzrewind'/>

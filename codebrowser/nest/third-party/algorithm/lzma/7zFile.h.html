@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>7zFile.h source code [codebrowser/nest/third-party/algorithm/lzma/7zFile.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/third-party/algorithm/lzma/7zFile.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>nest</a>/<a href='../..'>third-party</a>/<a href='..'>algorithm</a>/<a href='./'>lzma</a>/<a href='7zFile.h.html'>7zFile.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* 7zFile.h -- File IO</i></td></tr>
+<tr><th id="2">2</th><td><i> 2009-11-24 : Igor Pavlov : Public domain */</i></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#<span data-ppcond="4">ifndef</span> <span class="macro" data-ref="_M/__7Z_FILE_H">__7Z_FILE_H</span></u></td></tr>
+<tr><th id="5">5</th><td><u>#define <dfn class="macro" id="_M/__7Z_FILE_H" data-ref="_M/__7Z_FILE_H">__7Z_FILE_H</dfn></u></td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><u>#<span data-ppcond="7">ifdef</span> <span class="macro" data-ref="_M/_WIN32">_WIN32</span></u></td></tr>
+<tr><th id="8">8</th><td><u>#define USE_WINDOWS_FILE</u></td></tr>
+<tr><th id="9">9</th><td><u>#<span data-ppcond="7">endif</span></u></td></tr>
+<tr><th id="10">10</th><td></td></tr>
+<tr><th id="11">11</th><td><u>#<span data-ppcond="11">ifdef</span> <span class="macro" data-ref="_M/USE_WINDOWS_FILE">USE_WINDOWS_FILE</span></u></td></tr>
+<tr><th id="12">12</th><td><u>#include &lt;windows.h&gt;</u></td></tr>
+<tr><th id="13">13</th><td><u>#<span data-ppcond="11">else</span></u></td></tr>
+<tr><th id="14">14</th><td><u>#include <a href="../../../../../include/stdio.h.html">&lt;stdio.h&gt;</a></u></td></tr>
+<tr><th id="15">15</th><td><u>#<span data-ppcond="11">endif</span></u></td></tr>
+<tr><th id="16">16</th><td></td></tr>
+<tr><th id="17">17</th><td><u>#include <a href="Types.h.html">"Types.h"</a></u></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><a class="macro" href="Types.h.html#18" title="" data-ref="_M/EXTERN_C_BEGIN">EXTERN_C_BEGIN</a></td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td><i>/* ---------- File ---------- */</i></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><b>typedef</b> <b>struct</b></td></tr>
+<tr><th id="24">24</th><td>{</td></tr>
+<tr><th id="25">25</th><td><u>#<span data-ppcond="25">ifdef</span> <span class="macro" data-ref="_M/USE_WINDOWS_FILE">USE_WINDOWS_FILE</span></u></td></tr>
+<tr><th id="26">26</th><td>    HANDLE handle;</td></tr>
+<tr><th id="27">27</th><td><u>#<span data-ppcond="25">else</span></u></td></tr>
+<tr><th id="28">28</th><td>    <a class="typedef" href="../../../../../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a> *<dfn class="decl" id="(anonymous)::file" title='(anonymous struct)::file' data-ref="(anonymous)::file">file</dfn>;</td></tr>
+<tr><th id="29">29</th><td><u>#<span data-ppcond="25">endif</span></u></td></tr>
+<tr><th id="30">30</th><td>} <dfn class="typedef" id="CSzFile" title='CSzFile' data-type='struct CSzFile' data-ref="CSzFile">CSzFile</dfn>;</td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td><em>void</em> <a class="decl" href="7zFile.c.html#File_Construct" title='File_Construct' data-ref="File_Construct" id="File_Construct">File_Construct</a>(<a class="typedef" href="#CSzFile" title='CSzFile' data-type='struct CSzFile' data-ref="CSzFile">CSzFile</a> *<dfn class="local col1 decl" id="1p" title='p' data-type='CSzFile *' data-ref="1p">p</dfn>);</td></tr>
+<tr><th id="33">33</th><td><u>#<span data-ppcond="33">if</span> !defined(<span class="macro" data-ref="_M/UNDER_CE">UNDER_CE</span>) || !defined(<span class="macro" data-ref="_M/USE_WINDOWS_FILE">USE_WINDOWS_FILE</span>)</u></td></tr>
+<tr><th id="34">34</th><td><a class="typedef" href="Types.h.html#WRes" title='WRes' data-type='int' data-ref="WRes">WRes</a> <a class="decl" href="7zFile.c.html#InFile_Open" title='InFile_Open' data-ref="InFile_Open" id="InFile_Open">InFile_Open</a>(<a class="typedef" href="#CSzFile" title='CSzFile' data-type='struct CSzFile' data-ref="CSzFile">CSzFile</a> *<dfn class="local col2 decl" id="2p" title='p' data-type='CSzFile *' data-ref="2p">p</dfn>, <em>const</em> <em>char</em> *<dfn class="local col3 decl" id="3name" title='name' data-type='const char *' data-ref="3name">name</dfn>);</td></tr>
+<tr><th id="35">35</th><td><a class="typedef" href="Types.h.html#WRes" title='WRes' data-type='int' data-ref="WRes">WRes</a> <a class="decl" href="7zFile.c.html#OutFile_Open" title='OutFile_Open' data-ref="OutFile_Open" id="OutFile_Open">OutFile_Open</a>(<a class="typedef" href="#CSzFile" title='CSzFile' data-type='struct CSzFile' data-ref="CSzFile">CSzFile</a> *<dfn class="local col4 decl" id="4p" title='p' data-type='CSzFile *' data-ref="4p">p</dfn>, <em>const</em> <em>char</em> *<dfn class="local col5 decl" id="5name" title='name' data-type='const char *' data-ref="5name">name</dfn>);</td></tr>
+<tr><th id="36">36</th><td><u>#<span data-ppcond="33">endif</span></u></td></tr>
+<tr><th id="37">37</th><td><u>#<span data-ppcond="37">ifdef</span> <span class="macro" data-ref="_M/USE_WINDOWS_FILE">USE_WINDOWS_FILE</span></u></td></tr>
+<tr><th id="38">38</th><td>WRes InFile_OpenW(CSzFile *p, <em>const</em> WCHAR *name);</td></tr>
+<tr><th id="39">39</th><td>WRes OutFile_OpenW(CSzFile *p, <em>const</em> WCHAR *name);</td></tr>
+<tr><th id="40">40</th><td><u>#<span data-ppcond="37">endif</span></u></td></tr>
+<tr><th id="41">41</th><td><a class="typedef" href="Types.h.html#WRes" title='WRes' data-type='int' data-ref="WRes">WRes</a> <a class="decl" href="7zFile.c.html#File_Close" title='File_Close' data-ref="File_Close" id="File_Close">File_Close</a>(<a class="typedef" href="#CSzFile" title='CSzFile' data-type='struct CSzFile' data-ref="CSzFile">CSzFile</a> *<dfn class="local col6 decl" id="6p" title='p' data-type='CSzFile *' data-ref="6p">p</dfn>);</td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td><i>/* reads max(*size, remain file's size) bytes */</i></td></tr>
+<tr><th id="44">44</th><td><a class="typedef" href="Types.h.html#WRes" title='WRes' data-type='int' data-ref="WRes">WRes</a> <a class="decl" href="7zFile.c.html#File_Read" title='File_Read' data-ref="File_Read" id="File_Read">File_Read</a>(<a class="typedef" href="#CSzFile" title='CSzFile' data-type='struct CSzFile' data-ref="CSzFile">CSzFile</a> *<dfn class="local col7 decl" id="7p" title='p' data-type='CSzFile *' data-ref="7p">p</dfn>, <em>void</em> *<dfn class="local col8 decl" id="8data" title='data' data-type='void *' data-ref="8data">data</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> *<dfn class="local col9 decl" id="9size" title='size' data-type='size_t *' data-ref="9size">size</dfn>);</td></tr>
+<tr><th id="45">45</th><td></td></tr>
+<tr><th id="46">46</th><td><i>/* writes *size bytes */</i></td></tr>
+<tr><th id="47">47</th><td><a class="typedef" href="Types.h.html#WRes" title='WRes' data-type='int' data-ref="WRes">WRes</a> <a class="decl" href="7zFile.c.html#File_Write" title='File_Write' data-ref="File_Write" id="File_Write">File_Write</a>(<a class="typedef" href="#CSzFile" title='CSzFile' data-type='struct CSzFile' data-ref="CSzFile">CSzFile</a> *<dfn class="local col0 decl" id="10p" title='p' data-type='CSzFile *' data-ref="10p">p</dfn>, <em>const</em> <em>void</em> *<dfn class="local col1 decl" id="11data" title='data' data-type='const void *' data-ref="11data">data</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> *<dfn class="local col2 decl" id="12size" title='size' data-type='size_t *' data-ref="12size">size</dfn>);</td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td><a class="typedef" href="Types.h.html#WRes" title='WRes' data-type='int' data-ref="WRes">WRes</a> <a class="decl" href="7zFile.c.html#File_Seek" title='File_Seek' data-ref="File_Seek" id="File_Seek">File_Seek</a>(<a class="typedef" href="#CSzFile" title='CSzFile' data-type='struct CSzFile' data-ref="CSzFile">CSzFile</a> *<dfn class="local col3 decl" id="13p" title='p' data-type='CSzFile *' data-ref="13p">p</dfn>, <a class="typedef" href="Types.h.html#Int64" title='Int64' data-type='long long' data-ref="Int64">Int64</a> *<dfn class="local col4 decl" id="14pos" title='pos' data-type='Int64 *' data-ref="14pos">pos</dfn>, <a class="typedef" href="Types.h.html#ESzSeek" title='ESzSeek' data-type='enum ESzSeek' data-ref="ESzSeek">ESzSeek</a> <dfn class="local col5 decl" id="15origin" title='origin' data-type='ESzSeek' data-ref="15origin">origin</dfn>);</td></tr>
+<tr><th id="50">50</th><td><a class="typedef" href="Types.h.html#WRes" title='WRes' data-type='int' data-ref="WRes">WRes</a> <a class="decl" href="7zFile.c.html#File_GetLength" title='File_GetLength' data-ref="File_GetLength" id="File_GetLength">File_GetLength</a>(<a class="typedef" href="#CSzFile" title='CSzFile' data-type='struct CSzFile' data-ref="CSzFile">CSzFile</a> *<dfn class="local col6 decl" id="16p" title='p' data-type='CSzFile *' data-ref="16p">p</dfn>, <a class="typedef" href="Types.h.html#UInt64" title='UInt64' data-type='unsigned long long' data-ref="UInt64">UInt64</a> *<dfn class="local col7 decl" id="17length" title='length' data-type='UInt64 *' data-ref="17length">length</dfn>);</td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td><i>/* ---------- FileInStream ---------- */</i></td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td><b>typedef</b> <b>struct</b></td></tr>
+<tr><th id="55">55</th><td>{</td></tr>
+<tr><th id="56">56</th><td>    <a class="typedef" href="Types.h.html#ISeqInStream" title='ISeqInStream' data-type='struct ISeqInStream' data-ref="ISeqInStream">ISeqInStream</a> <dfn class="decl" id="(anonymous)::s" title='(anonymous struct)::s' data-ref="(anonymous)::s">s</dfn>;</td></tr>
+<tr><th id="57">57</th><td>    <a class="typedef" href="#CSzFile" title='CSzFile' data-type='struct CSzFile' data-ref="CSzFile">CSzFile</a> <dfn class="decl" id="(anonymous)::file" title='(anonymous struct)::file' data-ref="(anonymous)::file">file</dfn>;</td></tr>
+<tr><th id="58">58</th><td>} <dfn class="typedef" id="CFileSeqInStream" title='CFileSeqInStream' data-type='struct CFileSeqInStream' data-ref="CFileSeqInStream">CFileSeqInStream</dfn>;</td></tr>
+<tr><th id="59">59</th><td></td></tr>
+<tr><th id="60">60</th><td><em>void</em> <a class="decl" href="7zFile.c.html#FileSeqInStream_CreateVTable" title='FileSeqInStream_CreateVTable' data-ref="FileSeqInStream_CreateVTable" id="FileSeqInStream_CreateVTable">FileSeqInStream_CreateVTable</a>(<a class="typedef" href="#CFileSeqInStream" title='CFileSeqInStream' data-type='struct CFileSeqInStream' data-ref="CFileSeqInStream">CFileSeqInStream</a> *<dfn class="local col8 decl" id="18p" title='p' data-type='CFileSeqInStream *' data-ref="18p">p</dfn>);</td></tr>
+<tr><th id="61">61</th><td></td></tr>
+<tr><th id="62">62</th><td><b>typedef</b> <b>struct</b></td></tr>
+<tr><th id="63">63</th><td>{</td></tr>
+<tr><th id="64">64</th><td>    <a class="typedef" href="Types.h.html#ISeekInStream" title='ISeekInStream' data-type='struct ISeekInStream' data-ref="ISeekInStream">ISeekInStream</a> <dfn class="decl" id="(anonymous)::s" title='(anonymous struct)::s' data-ref="(anonymous)::s">s</dfn>;</td></tr>
+<tr><th id="65">65</th><td>    <a class="typedef" href="#CSzFile" title='CSzFile' data-type='struct CSzFile' data-ref="CSzFile">CSzFile</a> <dfn class="decl" id="(anonymous)::file" title='(anonymous struct)::file' data-ref="(anonymous)::file">file</dfn>;</td></tr>
+<tr><th id="66">66</th><td>} <dfn class="typedef" id="CFileInStream" title='CFileInStream' data-type='struct CFileInStream' data-ref="CFileInStream">CFileInStream</dfn>;</td></tr>
+<tr><th id="67">67</th><td></td></tr>
+<tr><th id="68">68</th><td><em>void</em> <a class="decl" href="7zFile.c.html#FileInStream_CreateVTable" title='FileInStream_CreateVTable' data-ref="FileInStream_CreateVTable" id="FileInStream_CreateVTable">FileInStream_CreateVTable</a>(<a class="typedef" href="#CFileInStream" title='CFileInStream' data-type='struct CFileInStream' data-ref="CFileInStream">CFileInStream</a> *<dfn class="local col9 decl" id="19p" title='p' data-type='CFileInStream *' data-ref="19p">p</dfn>);</td></tr>
+<tr><th id="69">69</th><td></td></tr>
+<tr><th id="70">70</th><td><b>typedef</b> <b>struct</b></td></tr>
+<tr><th id="71">71</th><td>{</td></tr>
+<tr><th id="72">72</th><td>    <a class="typedef" href="Types.h.html#ISeqOutStream" title='ISeqOutStream' data-type='struct ISeqOutStream' data-ref="ISeqOutStream">ISeqOutStream</a> <dfn class="decl" id="(anonymous)::s" title='(anonymous struct)::s' data-ref="(anonymous)::s">s</dfn>;</td></tr>
+<tr><th id="73">73</th><td>    <a class="typedef" href="#CSzFile" title='CSzFile' data-type='struct CSzFile' data-ref="CSzFile">CSzFile</a> <dfn class="decl" id="(anonymous)::file" title='(anonymous struct)::file' data-ref="(anonymous)::file">file</dfn>;</td></tr>
+<tr><th id="74">74</th><td>} <dfn class="typedef" id="CFileOutStream" title='CFileOutStream' data-type='struct CFileOutStream' data-ref="CFileOutStream">CFileOutStream</dfn>;</td></tr>
+<tr><th id="75">75</th><td></td></tr>
+<tr><th id="76">76</th><td><em>void</em> <a class="decl" href="7zFile.c.html#FileOutStream_CreateVTable" title='FileOutStream_CreateVTable' data-ref="FileOutStream_CreateVTable" id="FileOutStream_CreateVTable">FileOutStream_CreateVTable</a>(<a class="typedef" href="#CFileOutStream" title='CFileOutStream' data-type='struct CFileOutStream' data-ref="CFileOutStream">CFileOutStream</a> *<dfn class="local col0 decl" id="20p" title='p' data-type='CFileOutStream *' data-ref="20p">p</dfn>);</td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td><a class="macro" href="Types.h.html#19" title="" data-ref="_M/EXTERN_C_END">EXTERN_C_END</a></td></tr>
+<tr><th id="79">79</th><td><u>#<span data-ppcond="4">endif</span></u></td></tr>
+<tr><th id="80">80</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='7zFile.c.html'>codebrowser/nest/third-party/algorithm/lzma/7zFile.c</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,6 @@
+<inh f='include/c++/7/bits/ios_base.h' l='233' c='std::ios_base::system_error'/>
+<def f='include/c++/7/bits/ios_base.h' l='255' ll='274'/>
+<size>32</size>
+<fun r='_ZNSt8ios_base7failureC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<fun r='_ZNSt8ios_base7failureD1Ev'/>
+<fun r='_ZNKSt8ios_base7failure4whatEv'/>

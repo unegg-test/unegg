@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/algorithm/LZMACoder.h' l='39' type='unsigned char *'/>
+<use f='codebrowser/nest/algorithm/LZMACoder.cpp' l='67' u='w' c='_ZN4nest9LZMACoder6OnPushEPvm'/>
+<use f='codebrowser/nest/algorithm/LZMACoder.cpp' l='83' u='r' c='_ZN4nest9LZMACoder5OnPopEPvPm'/>
+<offset>1152</offset>

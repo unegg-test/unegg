@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/format/egg/FileWrap.h' l='32' type='void nest::egg::FileWrap::FileWrap(bool isSolid)'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='197' u='c' c='_ZN4nest9EggFormat9ScanFilesEv'/>
+<def f='codebrowser/nest/format/egg/FileWrap.cpp' l='20' ll='25' type='void nest::egg::FileWrap::FileWrap(bool isSolid)'/>

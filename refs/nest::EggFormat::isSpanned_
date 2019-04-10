@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/format/EggFormat.h' l='119' type='bool'/>
+<offset>2304</offset>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='104' u='w' c='_ZN4nest9EggFormat4ScanEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='107' u='r' c='_ZN4nest9EggFormat4ScanEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='990' u='r' c='_ZN4nest9EggFormat9_As4BytesEjPb'/>

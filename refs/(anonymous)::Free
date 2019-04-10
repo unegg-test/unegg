@@ -1,0 +1,14 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='228' type='void (*)(void *, void *)'/>
+<offset>64</offset>
+<doc f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='228'>/* address can be 0 */</doc>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zBuf.c' l='33' u='r' c='Buf_Free'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zBuf2.c' l='31' u='r' c='DynBuf_Write'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zBuf2.c' l='41' u='r' c='DynBuf_Free'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='21' u='r' c='LzInWindow_Free'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='162' u='r' c='MatchFinder_FreeThisClassMemory'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='868' u='r' c='LzmaDec_FreeProbs'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='874' u='r' c='LzmaDec_FreeDict'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='480' u='r' c='RangeEnc_Free'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='1689' u='r' c='LzmaEnc_FreeLits'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='1690' u='r' c='LzmaEnc_FreeLits'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='1708' u='r' c='LzmaEnc_Destroy'/>

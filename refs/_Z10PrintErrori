@@ -1,0 +1,4 @@
+<def f='codebrowser/UnEgg.cpp' l='84' ll='100' type='void PrintError(int error)'/>
+<use f='codebrowser/UnEgg.cpp' l='274' u='c' c='_Z18PrintListOfArchivePKc'/>
+<use f='codebrowser/UnEgg.cpp' l='311' u='c' c='_Z14ExtractArchiveR11CommandLine'/>
+<use f='codebrowser/UnEgg.cpp' l='316' u='c' c='_Z14ExtractArchiveR11CommandLine'/>

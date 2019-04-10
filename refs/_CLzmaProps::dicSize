@@ -1,0 +1,9 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.h' l='31' type='UInt32'/>
+<offset>96</offset>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='434' u='r' c='LzmaDec_WriteRem'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='435' u='r' c='LzmaDec_WriteRem'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='455' u='r' c='LzmaDec_DecodeReal2'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='460' u='r' c='LzmaDec_DecodeReal2'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='461' u='r' c='LzmaDec_DecodeReal2'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='896' u='w' c='LzmaProps_Decode'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='939' u='r' c='LzmaDec_Allocate'/>

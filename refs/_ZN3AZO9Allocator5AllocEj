@@ -1,0 +1,6 @@
+<dec f='codebrowser/nest/algorithm/azo/Common/Allocator.h' l='18' type='static void * AZO::Allocator::Alloc(u_int n)'/>
+<use f='codebrowser/nest/algorithm/azo/Common/BufferMan.cpp' l='27' u='c' c='_ZN3AZO9BufferMan8CapacityEj'/>
+<def f='codebrowser/nest/algorithm/azo/Common/Allocator.cpp' l='13' ll='25' type='static void * AZO::Allocator::Alloc(u_int n)'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/MainCodeD.cpp' l='43' u='c' c='_ZN3AZO7Decoder8MainCode9ReadBlockEPKhjPhj'/>
+<use f='codebrowser/nest/algorithm/azo/unAZO.cpp' l='40' u='c' c='_Z18AZO_DecompressInitPPv'/>
+<use f='codebrowser/nest/algorithm/azo/unAZO.cpp' l='98' u='c' c='_Z20AZO_BufferDecompressPcPjPKcj'/>

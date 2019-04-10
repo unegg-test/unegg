@@ -1,0 +1,31 @@
+<def f='codebrowser/nest/third-party/algorithm/lzma/LzFind.h' l='16' ll='52'/>
+<size>1168</size>
+<mbr r='_CMatchFinder::buffer' o='0' t='Byte *'/>
+<mbr r='_CMatchFinder::pos' o='64' t='UInt32'/>
+<mbr r='_CMatchFinder::posLimit' o='96' t='UInt32'/>
+<mbr r='_CMatchFinder::streamPos' o='128' t='UInt32'/>
+<mbr r='_CMatchFinder::lenLimit' o='160' t='UInt32'/>
+<mbr r='_CMatchFinder::cyclicBufferPos' o='192' t='UInt32'/>
+<mbr r='_CMatchFinder::cyclicBufferSize' o='224' t='UInt32'/>
+<mbr r='_CMatchFinder::matchMaxLen' o='256' t='UInt32'/>
+<mbr r='_CMatchFinder::hash' o='320' t='CLzRef *'/>
+<mbr r='_CMatchFinder::son' o='384' t='CLzRef *'/>
+<mbr r='_CMatchFinder::hashMask' o='448' t='UInt32'/>
+<mbr r='_CMatchFinder::cutValue' o='480' t='UInt32'/>
+<mbr r='_CMatchFinder::bufferBase' o='512' t='Byte *'/>
+<mbr r='_CMatchFinder::stream' o='576' t='ISeqInStream *'/>
+<mbr r='_CMatchFinder::streamEndWasReached' o='640' t='int'/>
+<mbr r='_CMatchFinder::blockSize' o='672' t='UInt32'/>
+<mbr r='_CMatchFinder::keepSizeBefore' o='704' t='UInt32'/>
+<mbr r='_CMatchFinder::keepSizeAfter' o='736' t='UInt32'/>
+<mbr r='_CMatchFinder::numHashBytes' o='768' t='UInt32'/>
+<mbr r='_CMatchFinder::directInput' o='800' t='int'/>
+<mbr r='_CMatchFinder::directInputRem' o='832' t='size_t'/>
+<mbr r='_CMatchFinder::btMode' o='896' t='int'/>
+<mbr r='_CMatchFinder::bigHash' o='928' t='int'/>
+<mbr r='_CMatchFinder::historySize' o='960' t='UInt32'/>
+<mbr r='_CMatchFinder::fixedHashSize' o='992' t='UInt32'/>
+<mbr r='_CMatchFinder::hashSizeSum' o='1024' t='UInt32'/>
+<mbr r='_CMatchFinder::numSons' o='1056' t='UInt32'/>
+<mbr r='_CMatchFinder::result' o='1088' t='SRes'/>
+<mbr r='_CMatchFinder::crc' o='1120' t='UInt32 [256]'/>

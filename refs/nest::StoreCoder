@@ -1,0 +1,17 @@
+<inh f='codebrowser/nest/algorithm/Coder.h' l='20' c='nest::Coder'/>
+<def f='codebrowser/nest/algorithm/StoreCoder.h' l='20' ll='36'/>
+<size>24</size>
+<fun r='_ZN4nest10StoreCoderC1Ev'/>
+<fun r='_ZN4nest10StoreCoderD1Ev'/>
+<fun r='_ZN4nest10StoreCoder10InitializeEPKhm'/>
+<fun r='_ZN4nest10StoreCoder8FinalizeEv'/>
+<fun r='_ZN4nest10StoreCoder6OnPushEPvm'/>
+<fun r='_ZN4nest10StoreCoder5OnPopEPvPm'/>
+<mbr r='nest::StoreCoder::buffer_' o='64' t='void *'/>
+<mbr r='nest::StoreCoder::size_' o='128' t='size_t'/>
+<fun r='_ZN4nest10StoreCoderC1Ev'/>
+<fun r='_ZN4nest10StoreCoderD1Ev'/>
+<fun r='_ZN4nest10StoreCoder10InitializeEPKhm'/>
+<fun r='_ZN4nest10StoreCoder8FinalizeEv'/>
+<fun r='_ZN4nest10StoreCoder6OnPushEPvm'/>
+<fun r='_ZN4nest10StoreCoder5OnPopEPvPm'/>

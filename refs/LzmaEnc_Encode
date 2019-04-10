@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.h' l='56' type='SRes LzmaEnc_Encode(CLzmaEncHandle p, ISeqOutStream * outStream, ISeqInStream * inStream, ICompressProgress * progress, ISzAlloc * alloc, ISzAlloc * allocBig)'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='2152' ll='2157' type='SRes LzmaEnc_Encode(CLzmaEncHandle pp, ISeqOutStream * outStream, ISeqInStream * inStream, ICompressProgress * progress, ISzAlloc * alloc, ISzAlloc * allocBig)'/>

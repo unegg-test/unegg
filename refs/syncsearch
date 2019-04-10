@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='100' type='unsigned int syncsearch(unsigned int * have, unsigned char * buf, unsigned int len)'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1322' ll='1343' macro='1' type='unsigned int syncsearch(unsigned int * have, unsigned char * buf, unsigned int len)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1370' u='c' c='inflateSync'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1374' u='c' c='inflateSync'/>

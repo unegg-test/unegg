@@ -1,0 +1,2 @@
+<dec f='include/stdio.h' l='306' type='FILE * fdopen(int __fd, const char * __modes)'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1431' u='c' c='bzopen_or_bzdopen'/>

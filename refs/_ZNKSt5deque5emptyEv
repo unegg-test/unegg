@@ -1,0 +1,5 @@
+<def f='include/c++/7/bits/stl_deque.h' l='1356' ll='1358' type='bool std::deque::empty() const'/>
+<doc f='include/c++/7/bits/stl_deque.h' l='1352'>/**
+       *  Returns true if the %deque is empty.  (Thus begin() would
+       *  equal end().)
+       */</doc>

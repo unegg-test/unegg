@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/encryption/Decoder.h' l='22' type='int nest::Decoder::DecryptBuffer(void * buffer, size_t size)'/>
+<def f='codebrowser/nest/encryption/Decoder.cpp' l='23' ll='26' type='int nest::Decoder::DecryptBuffer(void * buffer, size_t size)'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='566' u='c' c='_ZN4nest9ALZFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='807' u='c' c='_ZN4nest9EggFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>

@@ -1,0 +1,1 @@
+<def f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='2020' ll='2026' type='SRes LzmaEnc_PrepareForLzma2(CLzmaEncHandle pp, ISeqInStream * inStream, UInt32 keepWindowSize, ISzAlloc * alloc, ISzAlloc * allocBig)'/>

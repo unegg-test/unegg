@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='1604' type='const char * zError(int )'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/zutil.c' l='133' ll='137' type='const char * zError(int err)'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/zutil.c' l='130'>/* exported to allow conversion of error code to string for compress() and
+ * uncompress()
+ */</doc>

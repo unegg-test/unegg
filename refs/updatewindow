@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='96' type='int updatewindow(z_streamp strm, unsigned int out)'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='358' ll='406' macro='1' type='int updatewindow(z_streamp strm, unsigned int out)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1218' u='c' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1275' u='c' c='inflateSetDictionary'/>

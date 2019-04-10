@@ -1,0 +1,7 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='257' type='UChar [18002]'/>
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='403' type='UChar [18002]'/>
+<offset>207088</offset>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='476' u='w' c='sendMTFValues'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='522' u='r' c='sendMTFValues'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='299' u='w' c='BZ2_decompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='308' u='r' c='BZ2_decompress'/>

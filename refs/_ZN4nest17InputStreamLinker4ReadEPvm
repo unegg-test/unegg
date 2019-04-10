@@ -1,0 +1,15 @@
+<dec f='codebrowser/nest/stream/InputStreamLinker.h' l='35' type='size_t nest::InputStreamLinker::Read(void * buf, size_t size)'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='122' u='c' c='_ZN4nest9ALZFormat4ScanEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='200' u='c' c='_ZN4nest9ALZFormat11ScanFootersEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='216' u='c' c='_ZN4nest9ALZFormat11ScanFootersEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='228' u='c' c='_ZN4nest9ALZFormat11ScanFootersEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='228' u='c' c='_ZN4nest9ALZFormat11ScanFootersEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='232' u='c' c='_ZN4nest9ALZFormat11ScanFootersEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='543' u='c' c='_ZN4nest9ALZFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='561' u='c' c='_ZN4nest9ALZFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='443' u='c' c='_ZN4nest9EggFormat17PrepareSolidBlockEPNS_3egg9BlockWrapEPNS0_16BlockExtractInfoE'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='673' u='c' c='_ZN4nest9EggFormat19ExtractSolidArchiveEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='784' u='c' c='_ZN4nest9EggFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='802' u='c' c='_ZN4nest9EggFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>
+<inh f='codebrowser/nest/stream/InputStream.h' l='35' c='_ZN4nest11InputStream4ReadEPvm'/>
+<def f='codebrowser/nest/stream/InputStreamLinker.cpp' l='81' ll='106' type='size_t nest::InputStreamLinker::Read(void * buf, size_t size)'/>

@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/format/egg/ExtraField.h' l='31' type='unsigned int nest::egg::ExtraField::GetSize()'/>
+<def f='codebrowser/nest/format/egg/ExtraField.cpp' l='126' ll='129' type='unsigned int nest::egg::ExtraField::GetSize()'/>

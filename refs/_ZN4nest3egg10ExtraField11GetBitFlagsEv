@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/format/egg/ExtraField.h' l='29' type='unsigned char nest::egg::ExtraField::GetBitFlags()'/>
+<def f='codebrowser/nest/format/egg/ExtraField.cpp' l='116' ll='119' type='unsigned char nest::egg::ExtraField::GetBitFlags()'/>

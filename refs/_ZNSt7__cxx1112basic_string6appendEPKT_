@@ -1,0 +1,8 @@
+<def f='include/c++/7/bits/basic_string.h' l='1252' ll='1259' type='basic_string&lt;_CharT, _Traits, _Alloc&gt; &amp; std::__cxx11::basic_string::append(const _CharT * __s)'/>
+<doc f='include/c++/7/bits/basic_string.h' l='1247'>/**
+       *  @brief  Append a C string.
+       *  @param __s  The C string to append.
+       *  @return  Reference to this string.
+       */</doc>
+<use f='codebrowser/nest/Workspace.cpp' l='285' u='c' c='_ZN4nest9Workspace19OnQueryOutputStreamEmPPNS_12OutputStreamEPKc'/>
+<use f='codebrowser/nest/Workspace.cpp' l='286' u='c' c='_ZN4nest9Workspace19OnQueryOutputStreamEmPPNS_12OutputStreamEPKc'/>

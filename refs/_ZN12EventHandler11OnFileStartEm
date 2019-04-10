@@ -1,0 +1,3 @@
+<dec f='codebrowser/EventHandler.h' l='46' type='int EventHandler::OnFileStart(size_t index)'/>
+<inh f='codebrowser/nest/Events.h' l='34' c='_ZN4nest6Events11OnFileStartEm'/>
+<def f='codebrowser/EventHandler.cpp' l='114' ll='140' type='int EventHandler::OnFileStart(size_t index)'/>

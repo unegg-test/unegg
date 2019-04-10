@@ -1,0 +1,6 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.h' l='134' type='void LzmaDec_FreeProbs(CLzmaDec * p, ISzAlloc * alloc)'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='866' ll='870' type='void LzmaDec_FreeProbs(CLzmaDec * p, ISzAlloc * alloc)'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='880' u='c' c='LzmaDec_Free'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='915' u='c' c='LzmaDec_AllocateProbs2'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='946' u='c' c='LzmaDec_Allocate'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='982' u='c' c='LzmaDecode'/>

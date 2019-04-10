@@ -1,0 +1,6 @@
+<def f='codebrowser/nest/algorithm/azo/AZO.h' l='31' ll='38'/>
+<size>32</size>
+<mbr r='AZO_Stream::next_in' o='0' t='const char *'/>
+<mbr r='AZO_Stream::avail_in' o='64' t='unsigned int'/>
+<mbr r='AZO_Stream::next_out' o='128' t='char *'/>
+<mbr r='AZO_Stream::avail_out' o='192' t='unsigned int'/>

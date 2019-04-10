@@ -1,0 +1,6 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzHash.h' l='37'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='511' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='645' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='670' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='723' u='c'/>
+<doc f='codebrowser/nest/third-party/algorithm/lzma/LzHash.h' l='36'>/* #define HASH_ZIP_CALC hashValue = ((cur[0] | ((UInt32)cur[1] &lt;&lt; 8)) ^ p-&gt;crc[cur[2]]) &amp; 0xFFFF; */</doc>

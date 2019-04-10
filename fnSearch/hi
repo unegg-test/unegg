@@ -1,0 +1,3 @@
+_ZN3AZO4Base11HistoryList3AddERKT_|AZO::Base::HistoryList::Add
+_ZN3AZO4Base11HistoryList4SizeEv|AZO::Base::HistoryList::Size
+_ZN3AZO7Decoder11HistoryList4CodeERNS0_11EntropyCodeERT_|AZO::Decoder::HistoryList::Code

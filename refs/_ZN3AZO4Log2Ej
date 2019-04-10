@@ -1,0 +1,3 @@
+<def f='codebrowser/nest/algorithm/azo/Common/MatchCodeTable.h' l='137' ll='145' type='u_int AZO::Log2(u_int num)'/>
+<use f='codebrowser/nest/algorithm/azo/Common/MatchCodeTable.h' l='159' u='c' c='_ZN3AZO18GetMatchLengthCodeEj'/>
+<use f='codebrowser/nest/algorithm/azo/Common/MatchCodeTable.h' l='178' u='c' c='_ZN3AZO16GetMatchDistCodeEj'/>

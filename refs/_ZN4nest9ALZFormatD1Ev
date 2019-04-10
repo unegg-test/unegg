@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/format/ALZFormat.h' l='33' type='void nest::ALZFormat::~ALZFormat()'/>
+<inh f='codebrowser/nest/format/Format.h' l='35' c='_ZN4nest6FormatD1Ev'/>
+<inh f='codebrowser/nest/Info.h' l='23' c='_ZN4nest4InfoD1Ev'/>
+<def f='codebrowser/nest/format/ALZFormat.cpp' l='37' ll='41' type='void nest::ALZFormat::~ALZFormat()'/>

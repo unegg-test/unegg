@@ -1,0 +1,15 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='112' type='char *'/>
+<offset>896</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='112'>/* error message */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='100' u='w' c='gz_open'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='457' u='r' c='gzerror'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='457' u='r' c='gzerror'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='491' u='r' c='gz_error'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='493' u='r' c='gz_error'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='494' u='w' c='gz_error'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='504' u='w' c='gz_error'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='509' u='w' c='gz_error'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='511' u='w' c='gz_error'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='514' u='r' c='gz_error'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='515' u='r' c='gz_error'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='516' u='r' c='gz_error'/>

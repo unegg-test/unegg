@@ -1,0 +1,7 @@
+<def f='codebrowser/nest/algorithm/azo/Common/ProbCount.h' l='9' ll='19'/>
+<fun r='_ZN3AZO9ProbCountC1Ei'/>
+<mbr r='AZO::ProbCount::hit' t='uint32_t [N]'/>
+<mbr r='AZO::ProbCount::total' t='uint32_t'/>
+<fun r='_ZN3AZO9ProbCount9IncreProbERKT_i'/>
+<fun r='_ZN3AZO9ProbCountC1Ei'/>
+<fun r='_ZN3AZO9ProbCount9IncreProbERKT_i'/>

@@ -1,0 +1,9 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='105' type='int'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='380' u='w' c='deflateReset'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='603' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='604' u='w' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='796' u='w' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='829' u='w' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='858' u='w' c='deflate'/>
+<offset>512</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='105'>/* value of flush param for previous deflate call */</doc>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.h' l='65' type='UInt32'/>
+<offset>832</offset>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='913' u='r' c='LzmaDec_AllocateProbs2'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='917' u='w' c='LzmaDec_AllocateProbs2'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/nest/format/ALZFormat.h' l='100' type='bool'/>
+<offset>1280</offset>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='25' u='w' c='_ZN4nest9ALZFormatC1Ev'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='32' u='w' c='_ZN4nest9ALZFormatC1EPNS_6EventsE'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='76' u='w' c='_ZN4nest9ALZFormat5CloseEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='123' u='w' c='_ZN4nest9ALZFormat4ScanEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='124' u='r' c='_ZN4nest9ALZFormat4ScanEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='666' u='r' c='_ZN4nest9ALZFormat9_As4BytesEjPb'/>

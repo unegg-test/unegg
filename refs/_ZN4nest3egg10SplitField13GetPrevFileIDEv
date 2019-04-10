@@ -1,0 +1,4 @@
+<def f='codebrowser/nest/format/egg/SplitField.h' l='25' ll='28' type='unsigned int nest::egg::SplitField::GetPrevFileID()'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='313' u='c' c='_ZN4nest9EggFormat21PrepareSpannedStreamsEv'/>
+<use f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='147' u='c' c='_ZN4nest3egg14ExtraFieldWrap9_As4BytesEjPb'/>
+<use f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='175' u='c' c='_ZN4nest3egg14ExtraFieldWrap9_As8BytesEjPb'/>

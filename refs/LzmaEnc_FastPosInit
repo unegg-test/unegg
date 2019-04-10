@@ -1,0 +1,2 @@
+<def f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='116' ll='129' type='void LzmaEnc_FastPosInit(Byte * g_FastPos)'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='1670' u='c' c='LzmaEnc_Construct'/>

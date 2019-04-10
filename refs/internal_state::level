@@ -1,0 +1,24 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='182' type='int'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='303' u='w' c='deflateInit2_'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='432' u='r' c='deflateParams'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='439' u='r' c='deflateParams'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='440' u='w' c='deflateParams'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='620' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='621' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='637' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='638' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='658' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='660' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='662' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='822' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1031' u='r' c='lm_init'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1032' u='r' c='lm_init'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1033' u='r' c='lm_init'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1034' u='r' c='lm_init'/>
+<offset>1440</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='177'>/* Insert new strings in the hash table only if the match length is not
+     * greater than this length. This saves time but degrades compression.
+     * max_insert_length is used only for compression levels &lt;= 3.
+     */</doc>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='182'>/* compression level (1..9) */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='935' u='r' c='_tr_flush_block'/>

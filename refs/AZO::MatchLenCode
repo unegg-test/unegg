@@ -1,0 +1,5 @@
+<def f='codebrowser/nest/algorithm/azo/Common/MatchCodeTable.h' l='14' ll='16'/>
+<def f='codebrowser/nest/algorithm/azo/Common/MatchCodeTable.h' l='18' ll='21'/>
+<size>1</size>
+<smbr r='AZO::MatchLenCode::value' t='const u_int'/>
+<smbr r='AZO::MatchLenCode{0}::value' t='const u_int'/>

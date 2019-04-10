@@ -1,0 +1,5 @@
+<dec f='include/c++/7/debug/assertions.h' l='43'/>
+<use f='include/c++/7/bits/stl_vector.h' l='797' u='c'/>
+<use f='include/c++/7/bits/stl_vector.h' l='815' u='c'/>
+<use f='include/c++/7/bits/stl_deque.h' l='1375' u='c'/>
+<use f='include/c++/7/bits/stl_deque.h' l='1393' u='c'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='103' type='int'/>
+<offset>672</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='103'>/* true if last read direct, false if gzip */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='78' u='w' c='gz_reset'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='201' u='w' c='gz_head'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='222' u='w' c='gz_head'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='624' u='r' c='gzdirect'/>

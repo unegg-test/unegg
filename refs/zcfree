@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zutil.h' l='267' type='void zcfree(voidpf opaque, voidpf ptr)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='241' u='r' c='deflateInit2_'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='48' u='r' c='inflateBackInit_'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='186' u='r' c='inflateInit2_'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/zutil.c' l='310' ll='316' type='void zcfree(voidpf opaque, voidpf ptr)'/>

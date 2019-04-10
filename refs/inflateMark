@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='880' type='long inflateMark(z_streamp strm)'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1470' ll='1480' type='long inflateMark(z_streamp strm)'/>

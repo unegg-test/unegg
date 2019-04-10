@@ -1,0 +1,32 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='90' type='Bytef *'/>
+<use f='codebrowser/nest/algorithm/DeflateCoder.cpp' l='61' u='w' c='_ZN4nest12DeflateCoder5OnPopEPvPm'/>
+<offset>192</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='90'>/* next output byte should be put there */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/compress.c' l='38' u='w' c='compress2'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='570' u='r' c='flush_pending'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='571' u='w' c='flush_pending'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='595' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='273' u='r' c='gz_decomp'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='323' u='w' c='gz_make'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='435' u='w' c='gzread'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='50' u='w' c='gz_init'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='51' u='r' c='gz_init'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='78' u='r' c='gz_comp'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='86' u='w' c='gz_comp'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='88' u='r' c='gz_comp'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='132' u='w' c='inflateBack'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='121' u='r' c='inflateBack'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inffast.c' l='101' u='r' c='inflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inffast.c' l='317' u='w' c='inflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='385' u='r' c='updatewindow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='392' u='r' c='updatewindow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='395' u='r' c='updatewindow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='612' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='440' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='451' u='w' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='451' u='w' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='440' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='451' u='w' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1229' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1229' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/uncompr.c' l='38' u='w' c='uncompress'/>

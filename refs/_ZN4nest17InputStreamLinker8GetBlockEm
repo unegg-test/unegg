@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/stream/InputStreamLinker.h' l='51' type='nest::InputStreamLinker::StreamBlock * nest::InputStreamLinker::GetBlock(size_t index)'/>
+<def f='codebrowser/nest/stream/InputStreamLinker.cpp' l='271' ll='274' type='InputStreamLinker::StreamBlock * nest::InputStreamLinker::GetBlock(size_t index)'/>

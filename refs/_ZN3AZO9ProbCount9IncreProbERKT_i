@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/algorithm/azo/Common/ProbCount.h' l='18' type='void AZO::ProbCount::IncreProb(const T &amp; value, int count = 1)'/>
+<def f='codebrowser/nest/algorithm/azo/Common/ProbCount.cpp' l='16' ll='24' type='void AZO::ProbCount::IncreProb(const T &amp; value, int count = 1)'/>

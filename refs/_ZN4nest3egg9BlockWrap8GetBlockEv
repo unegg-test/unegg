@@ -1,0 +1,11 @@
+<def f='codebrowser/nest/format/egg/BlockWrap.h' l='30' ll='33' type='nest::egg::Block &amp; nest::egg::BlockWrap::GetBlock()'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='376' u='c' c='_ZN4nest9EggFormat15ReadSolidBlocksEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='433' u='c' c='_ZN4nest9EggFormat17PrepareSolidBlockEPNS_3egg9BlockWrapEPNS0_16BlockExtractInfoE'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='438' u='c' c='_ZN4nest9EggFormat17PrepareSolidBlockEPNS_3egg9BlockWrapEPNS0_16BlockExtractInfoE'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='450' u='c' c='_ZN4nest9EggFormat17PrepareSolidBlockEPNS_3egg9BlockWrapEPNS0_16BlockExtractInfoE'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='638' u='c' c='_ZN4nest9EggFormat19ExtractSolidArchiveEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='779' u='c' c='_ZN4nest9EggFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='793' u='c' c='_ZN4nest9EggFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='794' u='c' c='_ZN4nest9EggFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='842' u='c' c='_ZN4nest9EggFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>
+<use f='codebrowser/nest/format/egg/FileWrap.cpp' l='77' u='c' c='_ZN4nest3egg8FileWrap6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>

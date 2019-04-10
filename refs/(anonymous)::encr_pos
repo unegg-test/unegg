@@ -1,0 +1,6 @@
+<dec f='codebrowser/nest/third-party/encryption/aes/fileenc.h' l='89' type='unsigned int'/>
+<offset>3648</offset>
+<doc f='codebrowser/nest/third-party/encryption/aes/fileenc.h' l='89'>/* block position (enc)   */</doc>
+<use f='codebrowser/nest/third-party/encryption/aes/fileenc.c' l='53' u='r' c='encr_data'/>
+<use f='codebrowser/nest/third-party/encryption/aes/fileenc.c' l='70' u='w' c='encr_data'/>
+<use f='codebrowser/nest/third-party/encryption/aes/fileenc.c' l='98' u='w' c='fcrypt_init'/>

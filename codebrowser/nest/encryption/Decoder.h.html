@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Decoder.h source code [codebrowser/nest/encryption/Decoder.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="nest::Decoder "/>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/encryption/Decoder.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>codebrowser</a>/<a href='..'>nest</a>/<a href='./'>encryption</a>/<a href='Decoder.h.html'>Decoder.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Decoder.h</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> *  Created on: 2011. 3. 29.</i></td></tr>
+<tr><th id="5">5</th><td><i> *      Author: revolution</i></td></tr>
+<tr><th id="6">6</th><td><i> */</i></td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td><u>#<span data-ppcond="8">ifndef</span> <span class="macro" data-ref="_M/NEST_ENCRYPTION_DECODER_H_">NEST_ENCRYPTION_DECODER_H_</span></u></td></tr>
+<tr><th id="9">9</th><td><u>#define <dfn class="macro" id="_M/NEST_ENCRYPTION_DECODER_H_" data-ref="_M/NEST_ENCRYPTION_DECODER_H_">NEST_ENCRYPTION_DECODER_H_</dfn></u></td></tr>
+<tr><th id="10">10</th><td></td></tr>
+<tr><th id="11">11</th><td><u>#include <a href="../nest.h.html">&lt;nest/nest.h&gt;</a></u></td></tr>
+<tr><th id="12">12</th><td></td></tr>
+<tr><th id="13">13</th><td><b>namespace</b> <span class="namespace">nest</span></td></tr>
+<tr><th id="14">14</th><td>{</td></tr>
+<tr><th id="15">15</th><td></td></tr>
+<tr><th id="16">16</th><td><b>class</b> <dfn class="type def" id="nest::Decoder" title='nest::Decoder' data-ref="nest::Decoder">Decoder</dfn></td></tr>
+<tr><th id="17">17</th><td>{</td></tr>
+<tr><th id="18">18</th><td><b>public</b>:</td></tr>
+<tr><th id="19">19</th><td>    <b>virtual</b> <dfn class="virtual decl" id="_ZN4nest7DecoderD1Ev" title='nest::Decoder::~Decoder' data-ref="_ZN4nest7DecoderD1Ev">~Decoder</dfn>();</td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td>    <em>int</em> <dfn class="decl" id="_ZN4nest7Decoder17PreprocessDecryptEPKcPKv" title='nest::Decoder::PreprocessDecrypt' data-ref="_ZN4nest7Decoder17PreprocessDecryptEPKcPKv">PreprocessDecrypt</dfn>(<em>const</em> <em>char</em>* <dfn class="local col3 decl" id="183password" title='password' data-type='const char *' data-ref="183password">password</dfn>, <em>const</em> <em>void</em>* <dfn class="local col4 decl" id="184header" title='header' data-type='const void *' data-ref="184header">header</dfn>);</td></tr>
+<tr><th id="22">22</th><td>    <em>int</em> <dfn class="decl" id="_ZN4nest7Decoder13DecryptBufferEPvm" title='nest::Decoder::DecryptBuffer' data-ref="_ZN4nest7Decoder13DecryptBufferEPvm">DecryptBuffer</dfn>(<em>void</em>* <dfn class="local col5 decl" id="185buffer" title='buffer' data-type='void *' data-ref="185buffer">buffer</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col6 decl" id="186size" title='size' data-type='size_t' data-ref="186size">size</dfn>);</td></tr>
+<tr><th id="23">23</th><td>    <em>int</em> <dfn class="decl" id="_ZN4nest7Decoder18PostprocessDecryptEPKv" title='nest::Decoder::PostprocessDecrypt' data-ref="_ZN4nest7Decoder18PostprocessDecryptEPKv">PostprocessDecrypt</dfn>(<em>const</em> <em>void</em>* <dfn class="local col7 decl" id="187footer" title='footer' data-type='const void *' data-ref="187footer">footer</dfn>);</td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td>    <em>bool</em> <dfn class="decl" id="_ZN4nest7Decoder9VerifyNowEPKv" title='nest::Decoder::VerifyNow' data-ref="_ZN4nest7Decoder9VerifyNowEPKv">VerifyNow</dfn>(<em>const</em> <em>void</em>* <dfn class="local col8 decl" id="188verifyData" title='verifyData' data-type='const void *' data-ref="188verifyData">verifyData</dfn>);</td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><b>protected</b>:</td></tr>
+<tr><th id="28">28</th><td>    <b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN4nest7Decoder12OnPreprocessEPKcPKv" title='nest::Decoder::OnPreprocess' data-ref="_ZN4nest7Decoder12OnPreprocessEPKcPKv">OnPreprocess</dfn>(<em>const</em> <em>char</em>* <dfn class="local col9 decl" id="189password" title='password' data-type='const char *' data-ref="189password">password</dfn>, <em>const</em> <em>void</em>* <dfn class="local col0 decl" id="190header" title='header' data-type='const void *' data-ref="190header">header</dfn>) = <var>0</var>;</td></tr>
+<tr><th id="29">29</th><td>    <b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN4nest7Decoder9OnDecryptEPvm" title='nest::Decoder::OnDecrypt' data-ref="_ZN4nest7Decoder9OnDecryptEPvm">OnDecrypt</dfn>(<em>void</em>* <dfn class="local col1 decl" id="191buffer" title='buffer' data-type='void *' data-ref="191buffer">buffer</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col2 decl" id="192size" title='size' data-type='size_t' data-ref="192size">size</dfn>) = <var>0</var>;</td></tr>
+<tr><th id="30">30</th><td>    <b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN4nest7Decoder13OnPostprocessEPKv" title='nest::Decoder::OnPostprocess' data-ref="_ZN4nest7Decoder13OnPostprocessEPKv">OnPostprocess</dfn>(<em>const</em> <em>void</em>* <dfn class="local col3 decl" id="193footer" title='footer' data-type='const void *' data-ref="193footer">footer</dfn>) = <var>0</var>;</td></tr>
+<tr><th id="31">31</th><td>    <b>virtual</b> <em>bool</em> <dfn class="virtual decl" id="_ZN4nest7Decoder8OnVerifyEPKv" title='nest::Decoder::OnVerify' data-ref="_ZN4nest7Decoder8OnVerifyEPKv">OnVerify</dfn>(<em>const</em> <em>void</em>* <dfn class="local col4 decl" id="194verifyData" title='verifyData' data-type='const void *' data-ref="194verifyData">verifyData</dfn>) = <var>0</var>;</td></tr>
+<tr><th id="32">32</th><td>};</td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td>}</td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td><u>#<span data-ppcond="8">endif</span> /* NEST_ENCRYPTION_DECODER_H_ */</u></td></tr>
+<tr><th id="37">37</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../EventHandler.cpp.html'>codebrowser/EventHandler.cpp</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

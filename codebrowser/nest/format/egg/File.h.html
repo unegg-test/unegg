@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>File.h source code [codebrowser/nest/format/egg/File.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="nest::egg::File "/>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/format/egg/File.h'; var root_path = '../../../..'; var data_path = '../../../../../data';</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>codebrowser</a>/<a href='../..'>nest</a>/<a href='..'>format</a>/<a href='./'>egg</a>/<a href='File.h.html'>File.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * File.h</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> *  Created on: 2010. 12. 10.</i></td></tr>
+<tr><th id="5">5</th><td><i> *      Author: Jehoon Shin(Revolution)</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> *  Copyright(c) 2010-Present ESTsoft Corp. All rights reserved.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> *  For conditions of distribution and use, see copyright notice in license.txt</i></td></tr>
+<tr><th id="10">10</th><td><i> */</i></td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td><u>#<span data-ppcond="12">ifndef</span> <span class="macro" data-ref="_M/NEST_FORMAT_EGG_FILE_H_">NEST_FORMAT_EGG_FILE_H_</span></u></td></tr>
+<tr><th id="13">13</th><td><u>#define <dfn class="macro" id="_M/NEST_FORMAT_EGG_FILE_H_" data-ref="_M/NEST_FORMAT_EGG_FILE_H_">NEST_FORMAT_EGG_FILE_H_</dfn></u></td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><u>#include <a href="../Header.h.html">&lt;nest/format/Header.h&gt;</a></u></td></tr>
+<tr><th id="16">16</th><td></td></tr>
+<tr><th id="17">17</th><td><b>namespace</b> <span class="namespace">nest</span></td></tr>
+<tr><th id="18">18</th><td>{</td></tr>
+<tr><th id="19">19</th><td><b>namespace</b> <span class="namespace">egg</span></td></tr>
+<tr><th id="20">20</th><td>{</td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><b>class</b> <dfn class="type def" id="nest::egg::File" title='nest::egg::File' data-ref="nest::egg::File">File</dfn>: <b>public</b> <a class="type" href="../Header.h.html#nest::Header" title='nest::Header' data-ref="nest::Header">Header</a></td></tr>
+<tr><th id="23">23</th><td>{</td></tr>
+<tr><th id="24">24</th><td><b>public</b>:</td></tr>
+<tr><th id="25">25</th><td>    <dfn class="decl" id="_ZN4nest3egg4FileC1Ev" title='nest::egg::File::File' data-ref="_ZN4nest3egg4FileC1Ev">File</dfn>();</td></tr>
+<tr><th id="26">26</th><td>    <b>virtual</b> <dfn class="virtual decl" id="_ZN4nest3egg4FileD1Ev" title='nest::egg::File::~File' data-ref="_ZN4nest3egg4FileD1Ev">~File</dfn>();</td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td>    <b>inline</b> <em>unsigned</em> <em>int</em> <dfn class="decl def" id="_ZN4nest3egg4File5GetIDEv" title='nest::egg::File::GetID' data-ref="_ZN4nest3egg4File5GetIDEv">GetID</dfn>()</td></tr>
+<tr><th id="29">29</th><td>    {</td></tr>
+<tr><th id="30">30</th><td>        <b>return</b> <a class="member" href="#nest::egg::File::id_" title='nest::egg::File::id_' data-ref="nest::egg::File::id_">id_</a>;</td></tr>
+<tr><th id="31">31</th><td>    }</td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td>    <b>inline</b> <a class="typedef" href="../../define.h.html#uint64" title='uint64' data-type='unsigned long long' data-ref="uint64">uint64</a> <dfn class="decl def" id="_ZN4nest3egg4File9GetLengthEv" title='nest::egg::File::GetLength' data-ref="_ZN4nest3egg4File9GetLengthEv">GetLength</dfn>()</td></tr>
+<tr><th id="34">34</th><td>    {</td></tr>
+<tr><th id="35">35</th><td>        <b>return</b> <a class="member" href="#nest::egg::File::length_" title='nest::egg::File::length_' data-ref="nest::egg::File::length_">length_</a>;</td></tr>
+<tr><th id="36">36</th><td>    }</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td><b>protected</b>:</td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td>    <b>virtual</b> <em>void</em> <dfn class="virtual decl def" id="_ZN4nest3egg4File9OnCleanUpEv" title='nest::egg::File::OnCleanUp' data-ref="_ZN4nest3egg4File9OnCleanUpEv">OnCleanUp</dfn>()</td></tr>
+<tr><th id="41">41</th><td>    {</td></tr>
+<tr><th id="42">42</th><td>    }</td></tr>
+<tr><th id="43">43</th><td>    <b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN4nest3egg4File6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE" title='nest::egg::File::OnRead' data-ref="_ZN4nest3egg4File6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE">OnRead</dfn>(<a class="type" href="../../stream/InputStreamRewinder.h.html#nest::InputStreamRewinder" title='nest::InputStreamRewinder' data-ref="nest::InputStreamRewinder">InputStreamRewinder</a>* <dfn class="local col6 decl" id="126rewinder" title='rewinder' data-type='nest::InputStreamRewinder *' data-ref="126rewinder">rewinder</dfn>, <a class="type" href="../../stream/InputStream.h.html#nest::InputStream" title='nest::InputStream' data-ref="nest::InputStream">InputStream</a>* <dfn class="local col7 decl" id="127stream" title='stream' data-type='nest::InputStream *' data-ref="127stream">stream</dfn>);</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td>    <i>// Info</i></td></tr>
+<tr><th id="46">46</th><td>    <b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN4nest3egg4File9_As4BytesEjPb" title='nest::egg::File::_As4Bytes' data-ref="_ZN4nest3egg4File9_As4BytesEjPb">_As4Bytes</dfn>(<em>unsigned</em> <em>int</em> <dfn class="local col8 decl" id="128key" title='key' data-type='unsigned int' data-ref="128key">key</dfn>, <em>bool</em>* <dfn class="local col9 decl" id="129handled" title='handled' data-type='bool *' data-ref="129handled">handled</dfn>);</td></tr>
+<tr><th id="47">47</th><td>    <b>virtual</b> <a class="typedef" href="../../define.h.html#int64" title='int64' data-type='long long' data-ref="int64">int64</a> <dfn class="virtual decl" id="_ZN4nest3egg4File9_As8BytesEjPb" title='nest::egg::File::_As8Bytes' data-ref="_ZN4nest3egg4File9_As8BytesEjPb">_As8Bytes</dfn>(<em>unsigned</em> <em>int</em> <dfn class="local col0 decl" id="130key" title='key' data-type='unsigned int' data-ref="130key">key</dfn>, <em>bool</em>* <dfn class="local col1 decl" id="131handled" title='handled' data-type='bool *' data-ref="131handled">handled</dfn>);</td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td><b>private</b>:</td></tr>
+<tr><th id="50">50</th><td>    <em>unsigned</em> <em>int</em> <dfn class="decl" id="nest::egg::File::id_" title='nest::egg::File::id_' data-ref="nest::egg::File::id_">id_</dfn>;</td></tr>
+<tr><th id="51">51</th><td>    <a class="typedef" href="../../define.h.html#uint64" title='uint64' data-type='unsigned long long' data-ref="uint64">uint64</a> <dfn class="decl" id="nest::egg::File::length_" title='nest::egg::File::length_' data-ref="nest::egg::File::length_">length_</dfn>;</td></tr>
+<tr><th id="52">52</th><td>};</td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td>}</td></tr>
+<tr><th id="55">55</th><td>}</td></tr>
+<tr><th id="56">56</th><td></td></tr>
+<tr><th id="57">57</th><td><u>#<span data-ppcond="12">endif</span> /* NEST_FORMAT_EGG_FILE_H_ */</u></td></tr>
+<tr><th id="58">58</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../EventHandler.cpp.html'>codebrowser/EventHandler.cpp</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

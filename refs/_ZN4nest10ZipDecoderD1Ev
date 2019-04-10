@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/encryption/ZipDecoder.h' l='21' type='void nest::ZipDecoder::~ZipDecoder()'/>
+<inh f='codebrowser/nest/encryption/Decoder.h' l='19' c='_ZN4nest7DecoderD1Ev'/>
+<def f='codebrowser/nest/encryption/ZipDecoder.cpp' l='20' ll='23' type='void nest::ZipDecoder::~ZipDecoder()'/>

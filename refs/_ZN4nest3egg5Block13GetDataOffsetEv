@@ -1,0 +1,2 @@
+<def f='codebrowser/nest/format/egg/Block.h' l='53' ll='56' type='uint64 nest::egg::Block::GetDataOffset()'/>
+<use f='codebrowser/nest/format/egg/Block.cpp' l='85' u='c' c='_ZN4nest3egg5Block9_As8BytesEjPb'/>

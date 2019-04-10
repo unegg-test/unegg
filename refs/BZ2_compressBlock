@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='276' type='void BZ2_compressBlock(EState * , Bool )'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='386' u='c' c='handle_compress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='391' u='c' c='handle_compress'/>
+<def f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='602' ll='667' type='void BZ2_compressBlock(EState * s, Bool is_last_block)'/>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='601'>/*---------------------------------------------------*/</doc>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzFind.h' l='72' type='void MatchFinder_Free(CMatchFinder * p, ISzAlloc * alloc)'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='166' ll='170' type='void MatchFinder_Free(CMatchFinder * p, ISzAlloc * alloc)'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='186' u='c' c='MatchFinder_Create'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='253' u='c' c='MatchFinder_Create'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='1700' u='c' c='LzmaEnc_Destruct'/>

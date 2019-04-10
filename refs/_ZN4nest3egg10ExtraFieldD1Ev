@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/format/egg/ExtraField.h' l='26' type='void nest::egg::ExtraField::~ExtraField()'/>
+<ovr f='codebrowser/nest/format/egg/Dummy.cpp' l='25' c='_ZN4nest3egg5DummyD1Ev'/>
+<inh f='codebrowser/nest/format/Header.h' l='31' c='_ZN4nest6HeaderD1Ev'/>
+<def f='codebrowser/nest/format/egg/ExtraField.cpp' l='27' ll='31' type='void nest::egg::ExtraField::~ExtraField()'/>

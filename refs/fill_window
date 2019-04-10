@@ -1,0 +1,7 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='76' type='void fill_window(deflate_state * s)'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1305' ll='1430' macro='1' type='void fill_window(deflate_state * s)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1484' u='c' c='deflate_stored'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1534' u='c' c='deflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1631' u='c' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1755' u='c' c='deflate_rle'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1816' u='c' c='deflate_huff'/>

@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/Utils.h' l='35' type='size_t nest::utf8::p2i(const char * s, size_t pos)'/>
+<def f='codebrowser/nest/Utils.cpp' l='194' ll='197' type='size_t nest::utf8::p2i(const char * s, size_t pos)'/>

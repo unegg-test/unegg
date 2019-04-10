@@ -1,0 +1,29 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/inflate.h' l='96' type='unsigned char *'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='57' u='w' c='inflateBackInit_'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='277' u='r' c='inflateBack'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='204' u='r' c='inflateBack'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='204' u='r' c='inflateBack'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='204' u='r' c='inflateBack'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='602' u='r' c='inflateBack'/>
+<offset>512</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/inflate.h' l='96'>/* allocated sliding window, if needed */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inffast.c' l='110' u='r' c='inflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='157' u='r' c='inflateReset2'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='158' u='r' c='inflateReset2'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='159' u='w' c='inflateReset2'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='192' u='w' c='inflateInit2_'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='368' u='r' c='updatewindow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='369' u='w' c='updatewindow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='372' u='r' c='updatewindow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='385' u='r' c='updatewindow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='392' u='r' c='updatewindow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='395' u='r' c='updatewindow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1135' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1138' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1245' u='r' c='inflateEnd'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1245' u='r' c='inflateEnd'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1280' u='r' c='inflateSetDictionary'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1285' u='r' c='inflateSetDictionary'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1426' u='r' c='inflateCopy'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1446' u='r' c='inflateCopy'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1448' u='w' c='inflateCopy'/>

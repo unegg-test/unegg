@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/third-party/encryption/aes/aesopt.h' l='617'/>
+<doc f='codebrowser/nest/third-party/encryption/aes/aesopt.h' l='615'>/* multiply four bytes in GF(2^8) by &apos;x&apos; {02} in parallel */</doc>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='19' type='void fixedtables(struct inflate_state * state)'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='73' ll='114' macro='1' type='void fixedtables(struct inflate_state * state)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='300' u='c' c='inflateBack'/>
+<dec f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='95' type='void fixedtables(struct inflate_state * state)'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='240' ll='281' macro='1' type='void fixedtables(struct inflate_state * state)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='828' u='c' c='inflate'/>

@@ -1,0 +1,20 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='474' type='0'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='47' u='r' c='LzmaDec_TryDummy'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='47' u='r' c='LzmaDec_TryDummy'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='47' u='r' c='LzmaDec_TryDummy'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='47' u='r' c='LzmaDec_TryDummy'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='47' u='r' c='LzmaDec_TryDummy'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='47' u='r' c='LzmaDec_TryDummy'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='47' u='r' c='LzmaDec_TryDummy'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='47' u='r' c='LzmaDec_TryDummy'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='47' u='r' c='LzmaDec_TryDummy'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='47' u='r' c='LzmaDec_TryDummy'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='47' u='r' c='LzmaDec_TryDummy'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='47' u='r' c='LzmaDec_TryDummy'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='47' u='r' c='LzmaDec_TryDummy'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='47' u='r' c='LzmaDec_TryDummy'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='47' u='r' c='LzmaDec_TryDummy'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='47' u='r' c='LzmaDec_TryDummy'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='764' u='r' c='LzmaDec_DecodeToDic'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='798' u='r' c='LzmaDec_DecodeToDic'/>
+<doc f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='474'>/* unexpected end of input stream */</doc>

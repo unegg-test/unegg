@@ -1,0 +1,11 @@
+<dec f='codebrowser/nest/stream/InputStreamLinker.h' l='30' type='void nest::InputStreamLinker::Close()'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='73' u='c' c='_ZN4nest9ALZFormat5CloseEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='364' u='c' c='_ZN4nest9ALZFormat21PrepareSpannedStreamsEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='419' u='c' c='_ZN4nest9ALZFormat7ExtractEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='342' u='c' c='_ZN4nest9EggFormat21PrepareSpannedStreamsEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='537' u='c' c='_ZN4nest9EggFormat20ExtractNormalArchiveEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='736' u='c' c='_ZN4nest9EggFormat19ExtractSolidArchiveEv'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='192' u='c' c='_ZN4nest17InputStreamLinker13UpdateStreamsEv'/>
+<inh f='codebrowser/nest/stream/InputStream.h' l='32' c='_ZN4nest11InputStream5CloseEv'/>
+<def f='codebrowser/nest/stream/InputStreamLinker.cpp' l='198' ll='206' type='void nest::InputStreamLinker::Close()'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='210' u='c' c='_ZN4nest17InputStreamLinker8FinalizeEv'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='82'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='307' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='221' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='316' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='427' u='c'/>

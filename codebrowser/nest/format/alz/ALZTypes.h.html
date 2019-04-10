@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ALZTypes.h source code [codebrowser/nest/format/alz/ALZTypes.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/format/alz/ALZTypes.h'; var root_path = '../../../..'; var data_path = '../../../../../data';</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>codebrowser</a>/<a href='../..'>nest</a>/<a href='..'>format</a>/<a href='./'>alz</a>/<a href='ALZTypes.h.html'>ALZTypes.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * ALZTypes.h</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> *  Created on: 2011. 6. 3.</i></td></tr>
+<tr><th id="5">5</th><td><i> *      Author: Jehoon Shin(Revolution)</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> *  Copyright(c) 2010-Present ESTsoft Corp. All rights reserved.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> *  For conditions of distribution and use, see copyright notice in license.txt</i></td></tr>
+<tr><th id="10">10</th><td><i> */</i></td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td><u>#<span data-ppcond="12">ifndef</span> <span class="macro" data-ref="_M/NEST_FORMAT_ALZ_ALZTYPES_H_">NEST_FORMAT_ALZ_ALZTYPES_H_</span></u></td></tr>
+<tr><th id="13">13</th><td><u>#define <dfn class="macro" id="_M/NEST_FORMAT_ALZ_ALZTYPES_H_" data-ref="_M/NEST_FORMAT_ALZ_ALZTYPES_H_">NEST_FORMAT_ALZ_ALZTYPES_H_</dfn></u></td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><u>#include <a href="../../nest.h.html">&lt;nest/nest.h&gt;</a></u></td></tr>
+<tr><th id="16">16</th><td></td></tr>
+<tr><th id="17">17</th><td><b>namespace</b> <span class="namespace">nest</span></td></tr>
+<tr><th id="18">18</th><td>{</td></tr>
+<tr><th id="19">19</th><td><b>namespace</b> <span class="namespace">alz</span></td></tr>
+<tr><th id="20">20</th><td>{</td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><em>const</em> <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl def" id="nest::alz::MAX_PASSWORD_LEN" title='nest::alz::MAX_PASSWORD_LEN' data-ref="nest::alz::MAX_PASSWORD_LEN">MAX_PASSWORD_LEN</dfn> = <var>65536</var>;</td></tr>
+<tr><th id="23">23</th><td><em>const</em> <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl def" id="nest::alz::EXTRACT_CHUNK" title='nest::alz::EXTRACT_CHUNK' data-ref="nest::alz::EXTRACT_CHUNK">EXTRACT_CHUNK</dfn> = <var>1024</var> * <var>4</var>; <i>//1024;</i></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><b>namespace</b> <span class="namespace">Magic</span></td></tr>
+<tr><th id="26">26</th><td>{</td></tr>
+<tr><th id="27">27</th><td>    <em>const</em> <em>unsigned</em> <em>int</em> <dfn class="decl def" id="nest::alz::Magic::ALZ" title='nest::alz::Magic::ALZ' data-ref="nest::alz::Magic::ALZ">ALZ</dfn> = <var>0x015A4C41</var>;</td></tr>
+<tr><th id="28">28</th><td>    <em>const</em> <em>unsigned</em> <em>int</em> <dfn class="decl def" id="nest::alz::Magic::FILE" title='nest::alz::Magic::FILE' data-ref="nest::alz::Magic::FILE">FILE</dfn> = <var>0x015A4C42</var>;</td></tr>
+<tr><th id="29">29</th><td>    <em>const</em> <em>unsigned</em> <em>int</em> <dfn class="decl def" id="nest::alz::Magic::END" title='nest::alz::Magic::END' data-ref="nest::alz::Magic::END">END</dfn> = <var>0x015A4C43</var>;</td></tr>
+<tr><th id="30">30</th><td>    <em>const</em> <em>unsigned</em> <em>int</em> <dfn class="decl def" id="nest::alz::Magic::COMMENT" title='nest::alz::Magic::COMMENT' data-ref="nest::alz::Magic::COMMENT">COMMENT</dfn> = <var>0x015A4C45</var>;</td></tr>
+<tr><th id="31">31</th><td>    <em>const</em> <em>unsigned</em> <em>int</em> <dfn class="decl def" id="nest::alz::Magic::SPLIT" title='nest::alz::Magic::SPLIT' data-ref="nest::alz::Magic::SPLIT">SPLIT</dfn> = <var>0x035A4C43</var>;</td></tr>
+<tr><th id="32">32</th><td>    <em>const</em> <em>unsigned</em> <em>int</em> <dfn class="decl def" id="nest::alz::Magic::FILE_END" title='nest::alz::Magic::FILE_END' data-ref="nest::alz::Magic::FILE_END">FILE_END</dfn> = <var>0x025A4C43</var>;</td></tr>
+<tr><th id="33">33</th><td>}</td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td>}</td></tr>
+<tr><th id="36">36</th><td>}</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td><u>#<span data-ppcond="12">endif</span> /* NEST_FORMAT_ALZ_ALZTYPES_H_ */</u></td></tr>
+<tr><th id="39">39</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../UnEgg.cpp.html'>codebrowser/UnEgg.cpp</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

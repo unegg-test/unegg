@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/Bra.h' l='58' type='SizeT x86_Convert(Byte * data, SizeT size, UInt32 ip, UInt32 * state, int encoding)'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/Bra86.c' l='11' ll='85' type='SizeT x86_Convert(Byte * data, SizeT size, UInt32 ip, UInt32 * state, int encoding)'/>

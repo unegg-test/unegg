@@ -1,0 +1,10 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/inflate.h' l='83' type='int'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='271' u='w' c='inflateBack'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='285' u='r' c='inflateBack'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='291' u='w' c='inflateBack'/>
+<offset>32</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/inflate.h' l='83'>/* true if processing last block */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='114' u='w' c='inflateReset'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='813' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='819' u='w' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1230' u='r' c='inflate'/>

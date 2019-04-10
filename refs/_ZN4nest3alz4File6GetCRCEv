@@ -1,0 +1,4 @@
+<def f='codebrowser/nest/format/alz/File.h' l='73' ll='76' type='unsigned int nest::alz::File::GetCRC()'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='461' u='c' c='_ZN4nest9ALZFormat17PreprocessDecryptEmPNS_3alz4FileE'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='601' u='c' c='_ZN4nest9ALZFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='175' u='c' c='_ZN4nest3alz4File9_As4BytesEjPb'/>

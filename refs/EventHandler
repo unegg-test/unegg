@@ -1,0 +1,43 @@
+<inh f='codebrowser/nest/Events.h' l='24' c='nest::Events'/>
+<def f='codebrowser/EventHandler.h' l='31' ll='69'/>
+<size>112</size>
+<fun r='_ZN12EventHandlerC1EP7winsize'/>
+<fun r='_ZN12EventHandlerD1Ev'/>
+<fun r='_ZN12EventHandler15SetDisplayLevelEi'/>
+<fun r='_ZN12EventHandler11SetRedirectEb'/>
+<fun r='_ZN12EventHandler10InitializeEPN4nest9WorkspaceE'/>
+<fun r='_ZN12EventHandler8FinalizeEi'/>
+<fun r='_ZN12EventHandler11OnWorkStartEi'/>
+<fun r='_ZN12EventHandler12OnWorkFinishEii'/>
+<fun r='_ZN12EventHandler11OnFileStartEm'/>
+<fun r='_ZN12EventHandler12OnFileFinishEmi'/>
+<fun r='_ZN12EventHandler7OnErrorEmi'/>
+<fun r='_ZN12EventHandler18OnQueryInputStreamEmPPN4nest11InputStreamEPKcm'/>
+<fun r='_ZN12EventHandler19OnQueryOutputStreamEmPPN4nest12OutputStreamEPKc'/>
+<fun r='_ZN12EventHandler15OnQueryPasswordEmPcmm'/>
+<fun r='_ZN12EventHandler10OnProgressEmii'/>
+<fun r='_ZN12EventHandler11PrintIndentEm'/>
+<mbr r='EventHandler::vLevel_' o='64' t='int'/>
+<mbr r='EventHandler::redirect_' o='96' t='bool'/>
+<mbr r='EventHandler::sender_' o='128' t='nest::Workspace *'/>
+<mbr r='EventHandler::overwrite_' o='192' t='int'/>
+<mbr r='EventHandler::filename_' o='256' t='std::string'/>
+<mbr r='EventHandler::archiveName_' o='512' t='std::string'/>
+<mbr r='EventHandler::info_' o='768' t='nest::Info *'/>
+<mbr r='EventHandler::console_' o='832' t='winsize *'/>
+<fun r='_ZN12EventHandlerC1EP7winsize'/>
+<fun r='_ZN12EventHandlerD1Ev'/>
+<fun r='_ZN12EventHandler15SetDisplayLevelEi'/>
+<fun r='_ZN12EventHandler11SetRedirectEb'/>
+<fun r='_ZN12EventHandler10InitializeEPN4nest9WorkspaceE'/>
+<fun r='_ZN12EventHandler8FinalizeEi'/>
+<fun r='_ZN12EventHandler11OnWorkStartEi'/>
+<fun r='_ZN12EventHandler12OnWorkFinishEii'/>
+<fun r='_ZN12EventHandler11OnFileStartEm'/>
+<fun r='_ZN12EventHandler12OnFileFinishEmi'/>
+<fun r='_ZN12EventHandler7OnErrorEmi'/>
+<fun r='_ZN12EventHandler19OnQueryOutputStreamEmPPN4nest12OutputStreamEPKc'/>
+<fun r='_ZN12EventHandler15OnQueryPasswordEmPcmm'/>
+<fun r='_ZN12EventHandler18OnQueryInputStreamEmPPN4nest11InputStreamEPKcm'/>
+<fun r='_ZN12EventHandler10OnProgressEmii'/>
+<fun r='_ZN12EventHandler11PrintIndentEm'/>

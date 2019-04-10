@@ -1,0 +1,6 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='499' type='int inflateEnd(z_streamp strm)'/>
+<use f='codebrowser/nest/algorithm/DeflateCoder.cpp' l='47' u='c' c='_ZN4nest12DeflateCoder8FinalizeEv'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='645' u='c' c='gzclose_r'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1238' ll='1250' type='int inflateEnd(z_streamp strm)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/uncompr.c' l='50' u='c' c='uncompress'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/uncompr.c' l='57' u='c' c='uncompress'/>

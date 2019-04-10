@@ -1,0 +1,23 @@
+<dec f='codebrowser/nest/define.h' l='32' type='2'/>
+<use f='codebrowser/nest/algorithm/AZOCoder.cpp' l='67' u='r' c='_ZN4nest8AZOCoder5OnPopEPvPm'/>
+<use f='codebrowser/nest/algorithm/AZOCoder.cpp' l='75' u='r' c='_ZN4nest8AZOCoder5OnPopEPvPm'/>
+<use f='codebrowser/nest/algorithm/BZipCoder.cpp' l='70' u='r' c='_ZN4nest9BZipCoder5OnPopEPvPm'/>
+<use f='codebrowser/nest/algorithm/BZipCoder.cpp' l='74' u='r' c='_ZN4nest9BZipCoder5OnPopEPvPm'/>
+<use f='codebrowser/nest/algorithm/DeflateCoder.cpp' l='79' u='r' c='_ZN4nest12DeflateCoder5OnPopEPvPm'/>
+<use f='codebrowser/nest/algorithm/LZMACoder.cpp' l='99' u='r' c='_ZN4nest9LZMACoder5OnPopEPvPm'/>
+<use f='codebrowser/nest/algorithm/StoreCoder.cpp' l='53' u='r' c='_ZN4nest10StoreCoder5OnPopEPvPm'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='168' u='r' c='_ZN4nest9ALZFormat9ScanFilesEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='345' u='r' c='_ZN4nest9ALZFormat21PrepareSpannedStreamsEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='362' u='r' c='_ZN4nest9ALZFormat21PrepareSpannedStreamsEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='582' u='r' c='_ZN4nest9ALZFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='211' u='r' c='_ZN4nest9EggFormat9ScanFilesEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='371' c='_ZN4nest9EggFormat15ReadSolidBlocksEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='627' u='r' c='_ZN4nest9EggFormat19ExtractSolidArchiveEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='630' u='r' c='_ZN4nest9EggFormat19ExtractSolidArchiveEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='823' u='r' c='_ZN4nest9EggFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>
+<use f='codebrowser/nest/format/Header.cpp' l='42' u='r' c='_ZN4nest6Header4ReadEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='161' u='r' c='_ZN4nest3alz4File6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/egg/BlockWrap.cpp' l='54' u='r' c='_ZN4nest3egg9BlockWrap6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/egg/ExtraField.cpp' l='47' u='r' c='_ZN4nest3egg10ExtraField6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/egg/FileWrap.cpp' l='71' c='_ZN4nest3egg8FileWrap6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/egg/FileWrap.cpp' l='89' u='r' c='_ZN4nest3egg8FileWrap6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>

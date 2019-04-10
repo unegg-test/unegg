@@ -1,0 +1,1 @@
+<def f='include/c++/7/cmath' l='875' ll='881' type='typename __gnu_cxx::__enable_if&lt;__is_arithmetic&lt;_Tp&gt;::__value, int&gt;::__type std::isnan(_Tp __f)'/>

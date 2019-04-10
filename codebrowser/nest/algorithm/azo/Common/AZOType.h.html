@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>AZOType.h source code [codebrowser/nest/algorithm/azo/Common/AZOType.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="AZO::UINT "/>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/algorithm/azo/Common/AZOType.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>nest</a>/<a href='../..'>algorithm</a>/<a href='..'>azo</a>/<a href='./'>Common</a>/<a href='AZOType.h.html'>AZOType.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/AZO_AZOTYPE_H">AZO_AZOTYPE_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/AZO_AZOTYPE_H" data-ref="_M/AZO_AZOTYPE_H">AZO_AZOTYPE_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="../../../../../include/x86_64-linux-gnu/sys/types.h.html">&lt;sys/types.h&gt;</a></u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><b>namespace</b> <span class="namespace">AZO</span> {</td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td><u>#<span data-ppcond="8">ifdef</span> <span class="macro" data-ref="_M/_WIN32">_WIN32</span></u></td></tr>
+<tr><th id="9">9</th><td><b>typedef</b> __int8              int8_t;</td></tr>
+<tr><th id="10">10</th><td><b>typedef</b> __int16             int16_t;</td></tr>
+<tr><th id="11">11</th><td><b>typedef</b> __int32             int32_t;</td></tr>
+<tr><th id="12">12</th><td><b>typedef</b> __int64             int64_t;</td></tr>
+<tr><th id="13">13</th><td><b>typedef</b> <em>unsigned</em> __int8     uint8_t;</td></tr>
+<tr><th id="14">14</th><td><b>typedef</b> <em>unsigned</em> __int16    uint16_t;</td></tr>
+<tr><th id="15">15</th><td><b>typedef</b> <em>unsigned</em> __int32    uint32_t;</td></tr>
+<tr><th id="16">16</th><td><b>typedef</b> <em>unsigned</em> __int64    uint64_t;</td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td><b>typedef</b> <em>unsigned</em> <em>int</em>        u_int;</td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><u>#<span data-ppcond="8">else</span></u></td></tr>
+<tr><th id="21">21</th><td><b>typedef</b> <em>char</em>                <dfn class="typedef" id="AZO::int8_t" title='AZO::int8_t' data-type='char' data-ref="AZO::int8_t">int8_t</dfn>;</td></tr>
+<tr><th id="22">22</th><td><b>typedef</b> <em>short</em>               <dfn class="typedef" id="AZO::int16_t" title='AZO::int16_t' data-type='short' data-ref="AZO::int16_t">int16_t</dfn>;</td></tr>
+<tr><th id="23">23</th><td><b>typedef</b> <em>int</em>                 <dfn class="typedef" id="AZO::int32_t" title='AZO::int32_t' data-type='int' data-ref="AZO::int32_t">int32_t</dfn>;</td></tr>
+<tr><th id="24">24</th><td><b>typedef</b> <em>long</em> <em>long</em>           <dfn class="typedef" id="AZO::int64_t" title='AZO::int64_t' data-type='long long' data-ref="AZO::int64_t">int64_t</dfn>;</td></tr>
+<tr><th id="25">25</th><td><b>typedef</b> <em>unsigned</em> <em>char</em>       <dfn class="typedef" id="AZO::uint8_t" title='AZO::uint8_t' data-type='unsigned char' data-ref="AZO::uint8_t">uint8_t</dfn>;</td></tr>
+<tr><th id="26">26</th><td><b>typedef</b> <em>unsigned</em> <em>short</em>      <dfn class="typedef" id="AZO::uint16_t" title='AZO::uint16_t' data-type='unsigned short' data-ref="AZO::uint16_t">uint16_t</dfn>;</td></tr>
+<tr><th id="27">27</th><td><b>typedef</b> <em>unsigned</em> <em>int</em>        <dfn class="typedef" id="AZO::uint32_t" title='AZO::uint32_t' data-type='unsigned int' data-ref="AZO::uint32_t">uint32_t</dfn>;</td></tr>
+<tr><th id="28">28</th><td><b>typedef</b> <em>unsigned</em> <em>long</em> <em>long</em>  <dfn class="typedef" id="AZO::uint64_t" title='AZO::uint64_t' data-type='unsigned long long' data-ref="AZO::uint64_t">uint64_t</dfn>;</td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><i>//typedef unsigned int        u_int;</i></td></tr>
+<tr><th id="31">31</th><td><u>#<span data-ppcond="8">endif</span> /*_WIN32*/</u></td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><b>typedef</b> <a class="typedef" href="#AZO::uint8_t" title='AZO::uint8_t' data-type='unsigned char' data-ref="AZO::uint8_t">uint8_t</a>             <dfn class="typedef" id="AZO::byte" title='AZO::byte' data-type='uint8_t' data-ref="AZO::byte">byte</dfn>;</td></tr>
+<tr><th id="34">34</th><td><b>typedef</b> <i>/*bool*/</i> <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a>      <dfn class="typedef" id="AZO::BOOL" title='AZO::BOOL' data-type='u_int' data-ref="AZO::BOOL">BOOL</dfn>; <i>//for performance</i></td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><b>template</b> &lt;<em>int</em> N&gt; <b>struct</b> <dfn class="type def" id="AZO::UINT" title='AZO::UINT' data-ref="AZO::UINT">UINT</dfn> {</td></tr>
+<tr><th id="38">38</th><td>};</td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><b>template</b> &lt;&gt; <b>struct</b> <dfn class="type def" id="AZO::UINT" title='AZO::UINT' data-ref="AZO::UINT"><a class="type" href="#AZO::UINT" title='AZO::UINT' data-ref="AZO::UINT">UINT</a></dfn>&lt;<var>8</var>&gt; {</td></tr>
+<tr><th id="41">41</th><td>    <b>typedef</b> <a class="typedef" href="#AZO::uint64_t" title='AZO::uint64_t' data-type='unsigned long long' data-ref="AZO::uint64_t">uint64_t</a> <dfn class="typedef" id="AZO::UINT{8}::type" title='AZO::UINT&lt;8&gt;::type' data-type='uint64_t' data-ref="AZO::UINT{8}::type">type</dfn>;</td></tr>
+<tr><th id="42">42</th><td>};</td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td><b>template</b> &lt;&gt; <b>struct</b> <dfn class="type def" id="AZO::UINT" title='AZO::UINT' data-ref="AZO::UINT"><a class="type" href="#AZO::UINT" title='AZO::UINT' data-ref="AZO::UINT">UINT</a></dfn>&lt;<var>4</var>&gt; {</td></tr>
+<tr><th id="45">45</th><td>    <b>typedef</b> <a class="typedef" href="#AZO::uint32_t" title='AZO::uint32_t' data-type='unsigned int' data-ref="AZO::uint32_t">uint32_t</a> <dfn class="typedef" id="AZO::UINT{4}::type" title='AZO::UINT&lt;4&gt;::type' data-type='uint32_t' data-ref="AZO::UINT{4}::type">type</dfn>;</td></tr>
+<tr><th id="46">46</th><td>};</td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td><b>typedef</b> <a class="type" href="#AZO::UINT" title='AZO::UINT' data-ref="AZO::UINT">UINT</a>&lt;<b>sizeof</b>(<em>void</em>*)&gt;::<a class="typedef" href="#AZO::UINT{8}::type" title='AZO::UINT&lt;8&gt;::type' data-type='uint64_t' data-ref="AZO::UINT{8}::type">type</a>  <dfn class="typedef" id="AZO::uint_t" title='AZO::uint_t' data-type='UINT&lt;sizeof(void *)&gt;::type' data-ref="AZO::uint_t">uint_t</dfn>;</td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td>} <i>//namespaces AZO</i></td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td><u>#<span data-ppcond="1">endif</span> /*AZO_AZOTYPE_H*/</u></td></tr>
+<tr><th id="53">53</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../Base/BoolStateB.cpp.html'>codebrowser/nest/algorithm/azo/Base/BoolStateB.cpp</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

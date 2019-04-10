@@ -1,0 +1,11 @@
+<use f='codebrowser/nest/format/egg/BlockWrap.h' l='32' u='a' c='_ZN4nest3egg9BlockWrap8GetBlockEv'/>
+<dec f='codebrowser/nest/format/egg/BlockWrap.h' l='58' type='nest::egg::Block'/>
+<offset>128</offset>
+<use f='codebrowser/nest/format/egg/BlockWrap.cpp' l='33' u='m' c='_ZN4nest3egg9BlockWrap9OnCleanUpEv'/>
+<use f='codebrowser/nest/format/egg/BlockWrap.cpp' l='40' u='m' c='_ZN4nest3egg9BlockWrap6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/egg/BlockWrap.cpp' l='63' u='m' c='_ZN4nest3egg9BlockWrap9_As4BytesEjPb'/>
+<use f='codebrowser/nest/format/egg/BlockWrap.cpp' l='80' u='m' c='_ZN4nest3egg9BlockWrap9_As8BytesEjPb'/>
+<use f='codebrowser/nest/format/egg/BlockWrap.cpp' l='97' u='m' c='_ZN4nest3egg9BlockWrap7_AsSizeEjPb'/>
+<use f='codebrowser/nest/format/egg/BlockWrap.cpp' l='114' u='m' c='_ZN4nest3egg9BlockWrap6_AsPtrEjPb'/>
+<use f='codebrowser/nest/format/egg/BlockWrap.cpp' l='131' u='m' c='_ZN4nest3egg9BlockWrap7_AsInfoEjPb'/>
+<use f='codebrowser/nest/format/egg/BlockWrap.cpp' l='148' u='m' c='_ZN4nest3egg9BlockWrap12_AsChildInfoEjmPb'/>

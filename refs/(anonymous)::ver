@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/CpuArch.h' l='127' type='UInt32'/>
+<offset>128</offset>
+<use f='codebrowser/nest/third-party/algorithm/lzma/CpuArch.c' l='101' u='a' c='x86cpuid_CheckAndRead'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/CpuArch.c' l='127' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/CpuArch.c' l='128' macro='1' u='r'/>

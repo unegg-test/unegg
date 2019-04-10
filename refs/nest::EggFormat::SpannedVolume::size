@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/format/EggFormat.h' l='87' type='uint64'/>
+<offset>128</offset>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='318' u='w' c='_ZN4nest9EggFormat21PrepareSpannedStreamsEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='348' u='r' c='_ZN4nest9EggFormat21PrepareSpannedStreamsEv'/>

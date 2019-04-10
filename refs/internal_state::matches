@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='246' type='uInt'/>
+<offset>47296</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='246'>/* number of string matches in current block */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='427' u='w' c='init_block'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1037' u='w' c='_tr_tally'/>

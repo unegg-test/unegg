@@ -1,0 +1,14 @@
+<inh f='codebrowser/nest/algorithm/azo/Base/MainCodeB.h' l='10' c='AZO::Base::MainCode'/>
+<def f='codebrowser/nest/algorithm/azo/Decoder/MainCodeD.h' l='9' ll='33'/>
+<size>80</size>
+<fun r='_ZN3AZO7Decoder8MainCodeC1Ev'/>
+<fun r='_ZN3AZO7Decoder8MainCodeD1Ev'/>
+<fun r='_ZN3AZO7Decoder8MainCode4CodeERPKhRjRPhS5_'/>
+<fun r='_ZN3AZO7Decoder8MainCode10ReadNumberERT_PKhj'/>
+<fun r='_ZN3AZO7Decoder8MainCode9ReadBlockEPKhjPhj'/>
+<mbr r='AZO::Decoder::MainCode::compressSize_' o='544' t='u_int'/>
+<mbr r='AZO::Decoder::MainCode::setSizeInfo_' o='576' t='bool'/>
+<fun r='_ZN3AZO7Decoder8MainCodeC1Ev'/>
+<fun r='_ZN3AZO7Decoder8MainCodeD1Ev'/>
+<fun r='_ZN3AZO7Decoder8MainCode9ReadBlockEPKhjPhj'/>
+<fun r='_ZN3AZO7Decoder8MainCode4CodeERPKhRjRPhS5_'/>

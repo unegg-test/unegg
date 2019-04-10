@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/algorithm/azo/Common/BufferMan.h' l='16' type='u_int AZO::BufferMan::Get(byte * buf, u_int size)'/>
+<def f='codebrowser/nest/algorithm/azo/Common/BufferMan.cpp' l='83' ll='95' type='u_int AZO::BufferMan::Get(byte * buf, u_int size)'/>
+<use f='codebrowser/nest/algorithm/azo/Base/MainCodeB.cpp' l='87' u='c' c='_ZN3AZO4Base8MainCode12GetOutBufferERPhRjj'/>
+<use f='codebrowser/nest/algorithm/azo/Base/MainCodeB.cpp' l='122' u='c' c='_ZN3AZO4Base8MainCode15RemoveOutBufferERPhRjj'/>

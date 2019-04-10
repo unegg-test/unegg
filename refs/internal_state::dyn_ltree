@@ -1,0 +1,26 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='192' type='struct ct_data_s [573]'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='977' u='r' c='deflateCopy'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1563' macro='1' u='m'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1600' macro='1' u='m'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1682' macro='1' u='m'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1709' macro='1' u='m'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1728' macro='1' u='m'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1785' macro='1' u='m'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1793' macro='1' u='m'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1827' macro='1' u='m'/>
+<offset>1568</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='191'>/* Didn&apos;t use ct_data typedef below to supress compiler warning */</doc>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='192'>/* literal and length tree */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='391' u='r' c='_tr_init'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='421' u='m' c='init_block'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='425' u='m' c='init_block'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='813' u='r' c='build_bl_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='861' u='r' c='send_all_trees'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1001' u='r' c='_tr_flush_block'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1035' u='m' c='_tr_tally'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1044' u='m' c='_tr_tally'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1149' u='m' c='detect_data_type'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1153' u='m' c='detect_data_type'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1153' u='m' c='detect_data_type'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1154' u='m' c='detect_data_type'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1157' u='m' c='detect_data_type'/>

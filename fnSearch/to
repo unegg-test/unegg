@@ -1,0 +1,4 @@
+_ZNSt5stack3topEv|std::stack::top
+_ZSt7tolowerT_RKSt6locale|std::tolower
+_ZSt7toupperT_RKSt6locale|std::toupper
+_ZN3AZO4Base9BoolState8TotalBitEv|AZO::Base::BoolState::TotalBit

@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/define.h' l='44' type='14'/>
+<use f='codebrowser/EventHandler.cpp' l='214' c='_ZN12EventHandler7OnErrorEmi'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='726' u='r' c='_ZN4nest9EggFormat19ExtractSolidArchiveEv'/>

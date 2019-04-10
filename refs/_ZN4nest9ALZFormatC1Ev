@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/format/ALZFormat.h' l='31' type='void nest::ALZFormat::ALZFormat()'/>
+<def f='codebrowser/nest/format/ALZFormat.cpp' l='24' ll='29' type='void nest::ALZFormat::ALZFormat()'/>
+<use f='codebrowser/nest/format/ALZFormatFactory.cpp' l='18' u='c'/>
+<use f='codebrowser/nest/format/ALZFormatFactory.cpp' l='33' u='c' c='_ZN4nest16ALZFormatFactory12CreateFormatEv'/>

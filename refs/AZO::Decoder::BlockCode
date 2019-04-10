@@ -1,0 +1,17 @@
+<def f='codebrowser/nest/algorithm/azo/Decoder/BlockCodeD.h' l='22' ll='41'/>
+<size>347728</size>
+<fun r='_ZN3AZO7Decoder9BlockCodeC1EPhj'/>
+<fun r='_ZN3AZO7Decoder9BlockCodeD1Ev'/>
+<fun r='_ZN3AZO7Decoder9BlockCode4CodeERNS0_11EntropyCodeE'/>
+<fun r='_ZN3AZO7Decoder9BlockCode9CopyBlockEjjj'/>
+<fun r='_ZN3AZO7Decoder9BlockCode7GetCodeERNS0_11EntropyCodeEj'/>
+<mbr r='AZO::Decoder::BlockCode::buf_' o='0' t='byte *'/>
+<mbr r='AZO::Decoder::BlockCode::bufSize_' o='64' t='u_int'/>
+<mbr r='AZO::Decoder::BlockCode::matchState_' o='96' t='BoolState&lt;&gt;'/>
+<mbr r='AZO::Decoder::BlockCode::alphaProb_' o='8320' t='AZO::Decoder::AlphaCode'/>
+<mbr r='AZO::Decoder::BlockCode::matchCode_' o='2179200' t='AZO::Decoder::MatchCode'/>
+<fun r='_ZN3AZO7Decoder9BlockCodeC1EPhj'/>
+<fun r='_ZN3AZO7Decoder9BlockCodeD1Ev'/>
+<fun r='_ZN3AZO7Decoder9BlockCode9CopyBlockEjjj'/>
+<fun r='_ZN3AZO7Decoder9BlockCode7GetCodeERNS0_11EntropyCodeEj'/>
+<fun r='_ZN3AZO7Decoder9BlockCode4CodeERNS0_11EntropyCodeE'/>

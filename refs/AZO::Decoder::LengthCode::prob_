@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/algorithm/azo/Decoder/LengthCodeD.h' l='18' type='PredictProb&lt;MATCH_DIST_CODE_SIZE, MATCH_LENGTH_CODE_SIZE, LENGTHCODE_PREDICT_SHIFT&gt;'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/LengthCodeD.cpp' l='12' u='m' c='_ZN3AZO7Decoder10LengthCode4CodeERNS0_11EntropyCodeEh'/>
+<offset>0</offset>

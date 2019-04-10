@@ -1,0 +1,16 @@
+<def f='include/c++/7/bits/basic_string.h' l='1052' ll='1061' type='reference std::__cxx11::basic_string::operator[](size_type __pos)'/>
+<doc f='include/c++/7/bits/basic_string.h' l='1042'>/**
+       *  @brief  Subscript access to the data contained in the %string.
+       *  @param  __pos  The index of the character to access.
+       *  @return  Read/write reference to the character.
+       *
+       *  This operator allows for easy, array-style, data access.
+       *  Note that data access with this operator is unchecked and
+       *  out_of_range lookups are not defined. (For checked lookups
+       *  see at().)
+       */</doc>
+<use f='include/c++/7/bits/locale_facets_nonio.tcc' l='319' u='c' c='_ZNKSt7__cxx119money_get10_M_extractET0_S1_RSt8ios_baseRSt12_Ios_IostateRNS_12basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='codebrowser/UnEgg.cpp' l='376' u='c' c='main'/>
+<use f='codebrowser/UnEgg.cpp' l='383' u='c' c='main'/>
+<use f='codebrowser/UnEgg.cpp' l='418' u='c' c='main'/>
+<use f='codebrowser/nest/Workspace.cpp' l='129' u='c' c='_ZN4nest9Workspace7ExtractEPKc'/>

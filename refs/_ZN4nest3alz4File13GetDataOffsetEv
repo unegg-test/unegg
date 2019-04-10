@@ -1,0 +1,3 @@
+<def f='codebrowser/nest/format/alz/File.h' l='88' ll='91' type='uint64 nest::alz::File::GetDataOffset()'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='536' u='c' c='_ZN4nest9ALZFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='184' u='c' c='_ZN4nest3alz4File9_As8BytesEjPb'/>

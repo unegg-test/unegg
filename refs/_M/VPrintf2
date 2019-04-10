@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='77'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='827' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='845' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='437' u='c'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='114' type='uLong'/>
+<offset>64</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='114'>/* modification time */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='633' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='634' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='635' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='636' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='692' u='w' c='inflate'/>

@@ -1,0 +1,17 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/inflate.h' l='32' type='11'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='270' u='r' c='inflateBack'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='283' c='inflateBack'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='346' u='r' c='inflateBack'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='518' u='r' c='inflateBack'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/inflate.h' l='32'>/* i: waiting for type bits, including last-flag bit */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inffast.c' l='299' u='r' c='inflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='617' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='667' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='795' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='809' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='810' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='879' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1011' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1045' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1231' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1384' u='r' c='inflateSync'/>

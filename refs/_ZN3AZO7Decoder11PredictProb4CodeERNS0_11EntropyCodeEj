@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/algorithm/azo/Decoder/PredictProbD.h' l='17' type='u_int AZO::Decoder::PredictProb::Code(AZO::Decoder::EntropyCode &amp; entropy, u_int pre)'/>
+<def f='codebrowser/nest/algorithm/azo/Decoder/PredictProbD.cpp' l='9' ll='36' type='u_int AZO::Decoder::PredictProb::Code(AZO::Decoder::EntropyCode &amp; entropy, u_int pre)'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/AlphaCodeD.cpp' l='24' u='c' c='_ZN3AZO7Decoder9AlphaCode4CodeERNS0_11EntropyCodeEjh'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/LengthCodeD.cpp' l='12' u='c' c='_ZN3AZO7Decoder10LengthCode4CodeERNS0_11EntropyCodeEh'/>

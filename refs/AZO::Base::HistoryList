@@ -1,0 +1,9 @@
+<def f='codebrowser/nest/algorithm/azo/Base/HistoryListB.h' l='10' ll='22'/>
+<fun r='_ZN3AZO4Base11HistoryListC1ET_'/>
+<fun r='_ZN3AZO4Base11HistoryList4SizeEv'/>
+<fun r='_ZN3AZO4Base11HistoryList3AddERKT_'/>
+<fun r='_ZN3AZO4Base11HistoryList3AddERKT_j'/>
+<mbr r='AZO::Base::HistoryList::rep_' t='T [N]'/>
+<fun r='_ZN3AZO4Base11HistoryListC1ET_'/>
+<fun r='_ZN3AZO4Base11HistoryList3AddERKT_'/>
+<fun r='_ZN3AZO4Base11HistoryList3AddERKT_j'/>

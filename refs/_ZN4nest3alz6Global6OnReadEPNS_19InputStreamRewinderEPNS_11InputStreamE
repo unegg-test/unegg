@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/format/alz/Global.h' l='46' type='int nest::alz::Global::OnRead(nest::InputStreamRewinder * rewinder, nest::InputStream * stream)'/>
+<inh f='codebrowser/nest/format/Header.h' l='43' c='_ZN4nest6Header6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<def f='codebrowser/nest/format/alz/Global.cpp' l='39' ll='63' type='int nest::alz::Global::OnRead(nest::InputStreamRewinder * rewinder, nest::InputStream * stream)'/>

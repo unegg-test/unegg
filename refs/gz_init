@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='9' type='int gz_init(gz_statep )'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='15' ll='53' macro='1' type='int gz_init(gz_statep state)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='68' u='c' c='gz_comp'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='175' u='c' c='gzwrite'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='299' u='c' c='gzprintf'/>

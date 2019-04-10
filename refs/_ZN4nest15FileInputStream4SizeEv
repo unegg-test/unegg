@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/stream/FileInputStream.h' l='33' type='uint64 nest::FileInputStream::Size()'/>
+<use f='codebrowser/nest/stream/FileInputStream.cpp' l='37' u='c' c='_ZN4nest15FileInputStream4OpenEv'/>
+<inh f='codebrowser/nest/stream/InputStream.h' l='36' c='_ZN4nest11InputStream4SizeEv'/>
+<def f='codebrowser/nest/stream/FileInputStream.cpp' l='67' ll='78' type='uint64 nest::FileInputStream::Size()'/>

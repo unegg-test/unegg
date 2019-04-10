@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='285' type='void BZ2_hbMakeCodeLengths(UChar * , Int32 * , Int32 , Int32 )'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='450' u='c' c='sendMTFValues'/>
+<def f='codebrowser/nest/third-party/algorithm/bzip2/huffman.c' l='63' ll='148' type='void BZ2_hbMakeCodeLengths(UChar * len, Int32 * freq, Int32 alphaSize, Int32 maxLen)'/>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/huffman.c' l='62'>/*---------------------------------------------------*/</doc>

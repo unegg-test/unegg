@@ -1,0 +1,7 @@
+<dec f='codebrowser/nest/algorithm/azo/AZO.h' l='33' type='const char *'/>
+<use f='codebrowser/nest/algorithm/azo/AZOWrapper.h' l='35' u='w' c='_ZN10AZODecoder10DecompressERPKcRjRPcS3_'/>
+<use f='codebrowser/nest/algorithm/azo/AZOWrapper.h' l='42' u='r' c='_ZN10AZODecoder10DecompressERPKcRjRPcS3_'/>
+<use f='codebrowser/nest/algorithm/AZOCoder.cpp' l='48' u='w' c='_ZN4nest8AZOCoder6OnPushEPvm'/>
+<offset>0</offset>
+<use f='codebrowser/nest/algorithm/azo/unAZO.cpp' l='60' u='r' c='_Z14AZO_DecompressPvP10AZO_Stream'/>
+<use f='codebrowser/nest/algorithm/azo/unAZO.cpp' l='67' u='w' c='_Z14AZO_DecompressPvP10AZO_Stream'/>

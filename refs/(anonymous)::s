@@ -1,0 +1,18 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='192' type='ILookInStream'/>
+<dec f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='204' type='ISeqInStream'/>
+<dec f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='212' type='ISeqInStream'/>
+<offset>0</offset>
+<dec f='codebrowser/nest/third-party/algorithm/lzma/7zFile.h' l='56' type='ISeqInStream'/>
+<dec f='codebrowser/nest/third-party/algorithm/lzma/7zFile.h' l='64' type='ISeekInStream'/>
+<dec f='codebrowser/nest/third-party/algorithm/lzma/7zFile.h' l='72' type='ISeqOutStream'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='261' u='m' c='FileSeqInStream_CreateVTable'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='280' u='m' c='FileInStream_CreateVTable'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='281' u='m' c='FileInStream_CreateVTable'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='295' u='m' c='FileOutStream_CreateVTable'/>
+<offset>0</offset>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='136' u='m' c='LookToRead_CreateVTable'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='137' u='m' c='LookToRead_CreateVTable'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='138' u='m' c='LookToRead_CreateVTable'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='139' u='m' c='LookToRead_CreateVTable'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='155' u='m' c='SecToLook_CreateVTable'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='166' u='m' c='SecToRead_CreateVTable'/>

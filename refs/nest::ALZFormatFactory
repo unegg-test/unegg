@@ -1,0 +1,8 @@
+<inh f='codebrowser/nest/format/FormatFactory.h' l='22' c='nest::FormatFactory'/>
+<def f='codebrowser/nest/format/ALZFormatFactory.h' l='21' ll='32'/>
+<size>8</size>
+<fun r='_ZN4nest16ALZFormatFactoryC1Ev'/>
+<fun r='_ZN4nest16ALZFormatFactoryD1Ev'/>
+<fun r='_ZN4nest16ALZFormatFactory12CreateFormatEv'/>
+<fun r='_ZN4nest16ALZFormatFactory11CheckHeaderEPNS_11InputStreamE'/>
+<smbr r='nest::ALZFormatFactory::staticFormat_' t='nest::ALZFormat'/>

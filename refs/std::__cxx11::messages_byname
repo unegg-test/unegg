@@ -1,0 +1,9 @@
+<def f='include/c++/7/bits/locale_facets_nonio.h' l='1981' ll='2000'/>
+<inh f='include/c++/7/bits/locale_facets_nonio.tcc' l='1364' c='std::__cxx11::messages'/>
+<def f='include/c++/7/bits/locale_facets_nonio.tcc' l='1365'/>
+<inh f='include/c++/7/bits/locale_facets_nonio.tcc' l='1439' c='std::__cxx11::messages'/>
+<def f='include/c++/7/bits/locale_facets_nonio.tcc' l='1440'/>
+<size>32</size>
+<fun r='_ZNSt7__cxx1115messages_bynameC1EPKcm'/>
+<fun r='_ZNSt7__cxx1115messages_bynameD1Ev'/>
+<fun r='_ZNSt7__cxx1115messages_bynameC1EPKcm'/>

@@ -1,0 +1,11 @@
+<def f='include/c++/7/bits/stl_stack.h' l='224' ll='226' type='void std::stack::push(const value_type &amp; __x)'/>
+<doc f='include/c++/7/bits/stl_stack.h' l='215'>/**
+       *  @brief  Add data to the top of the %stack.
+       *  @param  __x  Data to be added.
+       *
+       *  This is a typical %stack operation.  The function creates an
+       *  element at the top of the %stack and assigns the given data
+       *  to it.  The time complexity of the operation depends on the
+       *  underlying sequence.
+       */</doc>
+<use f='codebrowser/nest/Workspace.cpp' l='204' u='c' c='_ZN4nest9Workspace11OnWorkStartEi'/>

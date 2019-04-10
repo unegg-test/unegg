@@ -1,0 +1,4 @@
+<dec f='codebrowser/CommandLine.h' l='28' type='size_t CommandLine::GetArgumentCount()'/>
+<def f='codebrowser/CommandLine.cpp' l='56' ll='59' type='size_t CommandLine::GetArgumentCount()'/>
+<use f='codebrowser/UnEgg.cpp' l='290' u='c' c='_Z14ExtractArchiveR11CommandLine'/>
+<use f='codebrowser/UnEgg.cpp' l='359' u='c' c='main'/>

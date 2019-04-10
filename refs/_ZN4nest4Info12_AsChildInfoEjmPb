@@ -1,0 +1,9 @@
+<dec f='codebrowser/nest/Info.h' l='43' type='nest::Info * nest::Info::_AsChildInfo(unsigned int key, size_t index, bool * handled)'/>
+<use f='codebrowser/nest/Info.cpp' l='69' u='c' c='_ZN4nest4Info11AsChildInfoEjmPb'/>
+<def f='codebrowser/nest/Info.cpp' l='119' ll='124' type='nest::Info * nest::Info::_AsChildInfo(unsigned int key, size_t index, bool * handled)'/>
+<ovr f='codebrowser/nest/format/ALZFormat.cpp' l='758' c='_ZN4nest9ALZFormat12_AsChildInfoEjmPb'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='762' u='c' c='_ZN4nest9ALZFormat12_AsChildInfoEjmPb'/>
+<ovr f='codebrowser/nest/format/EggFormat.cpp' l='1088' c='_ZN4nest9EggFormat12_AsChildInfoEjmPb'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='1093' u='c' c='_ZN4nest9EggFormat12_AsChildInfoEjmPb'/>
+<ovr f='codebrowser/nest/format/egg/BlockWrap.cpp' l='145' c='_ZN4nest3egg9BlockWrap12_AsChildInfoEjmPb'/>
+<ovr f='codebrowser/nest/format/egg/FileWrap.cpp' l='207' c='_ZN4nest3egg8FileWrap12_AsChildInfoEjmPb'/>

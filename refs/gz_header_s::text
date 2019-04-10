@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='113' type='int'/>
+<offset>0</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='113'>/* true if compressed data believed to be text */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='627' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='685' u='w' c='inflate'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='68' type='ush'/>
+<offset>0</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='68'>/* father node in Huffman tree */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='520' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='683' macro='1' u='w'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='683' macro='1' u='w'/>

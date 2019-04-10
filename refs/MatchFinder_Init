@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzFind.h' l='104' type='void MatchFinder_Init(CMatchFinder * p)'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='282' ll='294' type='void MatchFinder_Init(CMatchFinder * p)'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='733' u='r' c='MatchFinder_CreateVTable'/>

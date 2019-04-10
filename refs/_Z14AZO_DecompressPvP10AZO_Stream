@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/algorithm/azo/AZO.h' l='55' type='int AZO_Decompress(AZO_HDECOMPRESS handle, AZO_Stream * stream)'/>
+<use f='codebrowser/nest/algorithm/azo/AZOWrapper.h' l='52' u='c' c='_ZN10AZODecoder10DecompressER10AZO_Stream'/>
+<def f='codebrowser/nest/algorithm/azo/unAZO.cpp' l='51' ll='73' type='int AZO_Decompress(AZO_HCOMPRESS handle, AZO_Stream * stream)'/>

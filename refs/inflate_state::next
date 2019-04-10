@@ -1,0 +1,22 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/inflate.h' l='115' type='code *'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='376' u='w' c='inflateBack'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='377' u='r' c='inflateBack'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='379' u='a' c='inflateBack'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='451' u='w' c='inflateBack'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='452' u='r' c='inflateBack'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='454' u='a' c='inflateBack'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='461' u='r' c='inflateBack'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='464' u='a' c='inflateBack'/>
+<offset>1088</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/inflate.h' l='115'>/* next available space in codes[] */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='123' u='w' c='inflateReset'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='907' u='w' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='908' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='910' u='a' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='982' u='w' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='983' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='985' u='a' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='992' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='995' u='a' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1443' u='w' c='inflateCopy'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1443' u='r' c='inflateCopy'/>

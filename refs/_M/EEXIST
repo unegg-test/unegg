@@ -1,0 +1,4 @@
+<dec f='include/asm-generic/errno-base.h' l='20'/>
+<use f='codebrowser/nest/Utils.cpp' l='459' u='c'/>
+<use f='codebrowser/nest/Utils.cpp' l='469' u='c'/>
+<use f='codebrowser/nest/stream/FileOutputStream.cpp' l='101' u='c'/>

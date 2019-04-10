@@ -1,0 +1,30 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/inftrees.h' l='27' type='unsigned short'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='396' u='r' c='inflateBack'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='399' u='r' c='inflateBack'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='402' u='r' c='inflateBack'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='414' u='r' c='inflateBack'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='493' u='r' c='inflateBack'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='501' u='r' c='inflateBack'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='547' u='r' c='inflateBack'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='560' u='r' c='inflateBack'/>
+<offset>16</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/inftrees.h' l='27'>/* offset in table or code value */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inffast.c' l='137' u='r' c='inflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inffast.c' l='140' u='r' c='inflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inffast.c' l='165' u='r' c='inflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inffast.c' l='284' u='r' c='inflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inffast.c' l='294' u='r' c='inflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='927' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='930' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='933' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='945' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1024' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1034' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1074' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1089' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inftrees.c' l='120' u='w' c='inflate_table'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inftrees.c' l='221' u='w' c='inflate_table'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inftrees.c' l='225' u='w' c='inflate_table'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inftrees.c' l='229' u='w' c='inflate_table'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inftrees.c' l='288' u='w' c='inflate_table'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inftrees.c' l='301' u='w' c='inflate_table'/>

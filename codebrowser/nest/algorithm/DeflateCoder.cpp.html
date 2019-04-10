@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>DeflateCoder.cpp source code [codebrowser/nest/algorithm/DeflateCoder.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/algorithm/DeflateCoder.cpp'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>codebrowser</a>/<a href='..'>nest</a>/<a href='./'>algorithm</a>/<a href='DeflateCoder.cpp.html'>DeflateCoder.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * DeflateCoder.cpp</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> *  Created on: 2010. 12. 16.</i></td></tr>
+<tr><th id="5">5</th><td><i> *      Author: Jehoon Shin(Revolution)</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> *  Copyright(c) 2010-Present ESTsoft Corp. All rights reserved.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> *  For conditions of distribution and use, see copyright notice in license.txt</i></td></tr>
+<tr><th id="10">10</th><td><i> */</i></td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td><u>#include <a href="DeflateCoder.h.html">"DeflateCoder.h"</a></u></td></tr>
+<tr><th id="13">13</th><td><u>#include <a href="../../../include/string.h.html">&lt;string.h&gt;</a></u></td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><b>namespace</b> <span class="namespace">nest</span></td></tr>
+<tr><th id="16">16</th><td>{</td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td><a class="type" href="DeflateCoder.h.html#nest::DeflateCoder" title='nest::DeflateCoder' data-ref="nest::DeflateCoder">DeflateCoder</a>::<dfn class="decl def" id="_ZN4nest12DeflateCoderC1Ev" title='nest::DeflateCoder::DeflateCoder' data-ref="_ZN4nest12DeflateCoderC1Ev">DeflateCoder</dfn>()</td></tr>
+<tr><th id="19">19</th><td>{</td></tr>
+<tr><th id="20">20</th><td>	<i>// TODO Auto-generated constructor stub</i></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td>}</td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><a class="type" href="DeflateCoder.h.html#nest::DeflateCoder" title='nest::DeflateCoder' data-ref="nest::DeflateCoder">DeflateCoder</a>::<dfn class="virtual decl def" id="_ZN4nest12DeflateCoderD1Ev" title='nest::DeflateCoder::~DeflateCoder' data-ref="_ZN4nest12DeflateCoderD1Ev">~DeflateCoder</dfn>()</td></tr>
+<tr><th id="25">25</th><td>{</td></tr>
+<tr><th id="26">26</th><td>	<i>// TODO Auto-generated destructor stub</i></td></tr>
+<tr><th id="27">27</th><td>}</td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><em>int</em> <a class="type" href="DeflateCoder.h.html#nest::DeflateCoder" title='nest::DeflateCoder' data-ref="nest::DeflateCoder">DeflateCoder</a>::<dfn class="virtual decl def" id="_ZN4nest12DeflateCoder10InitializeEPKhm" title='nest::DeflateCoder::Initialize' data-ref="_ZN4nest12DeflateCoder10InitializeEPKhm">Initialize</dfn>(<em>const</em> <em>unsigned</em> <em>char</em>* <dfn class="local col0 decl" id="140dataHeader" title='dataHeader' data-type='const unsigned char *' data-ref="140dataHeader">dataHeader</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col1 decl" id="141size" title='size' data-type='size_t' data-ref="141size">size</dfn>)</td></tr>
+<tr><th id="30">30</th><td>{</td></tr>
+<tr><th id="31">31</th><td>	<a class="type" href="Coder.h.html#nest::Coder" title='nest::Coder' data-ref="nest::Coder">Coder</a>::<a class="virtual member" href="Coder.h.html#_ZN4nest5Coder10InitializeEPKhm" title='nest::Coder::Initialize' data-ref="_ZN4nest5Coder10InitializeEPKhm">Initialize</a>(<a class="local col0 ref" href="#140dataHeader" title='dataHeader' data-ref="140dataHeader">dataHeader</a>, <a class="local col1 ref" href="#141size" title='size' data-ref="141size">size</a>);</td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td>	<a class="ref" href="../../../include/string.h.html#memset" title='memset' data-ref="memset">memset</a>(&amp;<a class="member" href="DeflateCoder.h.html#nest::DeflateCoder::stream_" title='nest::DeflateCoder::stream_' data-ref="nest::DeflateCoder::stream_">stream_</a>, <var>0</var>, <b>sizeof</b>(<a class="member" href="DeflateCoder.h.html#nest::DeflateCoder::stream_" title='nest::DeflateCoder::stream_' data-ref="nest::DeflateCoder::stream_">stream_</a>));</td></tr>
+<tr><th id="34">34</th><td>	<a class="member" href="DeflateCoder.h.html#nest::DeflateCoder::stream_" title='nest::DeflateCoder::stream_' data-ref="nest::DeflateCoder::stream_">stream_</a>.<a class="ref" href="../third-party/algorithm/zlib/zlib.h.html#z_stream_s::zalloc" title='z_stream_s::zalloc' data-ref="z_stream_s::zalloc">zalloc</a> = <a class="macro" href="../third-party/algorithm/zlib/zlib.h.html#208" title="0" data-ref="_M/Z_NULL">Z_NULL</a>;</td></tr>
+<tr><th id="35">35</th><td>	<a class="member" href="DeflateCoder.h.html#nest::DeflateCoder::stream_" title='nest::DeflateCoder::stream_' data-ref="nest::DeflateCoder::stream_">stream_</a>.<a class="ref" href="../third-party/algorithm/zlib/zlib.h.html#z_stream_s::zfree" title='z_stream_s::zfree' data-ref="z_stream_s::zfree">zfree</a> = <a class="macro" href="../third-party/algorithm/zlib/zlib.h.html#208" title="0" data-ref="_M/Z_NULL">Z_NULL</a>;</td></tr>
+<tr><th id="36">36</th><td>	<a class="member" href="DeflateCoder.h.html#nest::DeflateCoder::stream_" title='nest::DeflateCoder::stream_' data-ref="nest::DeflateCoder::stream_">stream_</a>.<a class="ref" href="../third-party/algorithm/zlib/zlib.h.html#z_stream_s::opaque" title='z_stream_s::opaque' data-ref="z_stream_s::opaque">opaque</a> = <a class="macro" href="../third-party/algorithm/zlib/zlib.h.html#208" title="0" data-ref="_M/Z_NULL">Z_NULL</a>;</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td>	<em>int</em> <dfn class="local col2 decl" id="142res" title='res' data-type='int' data-ref="142res">res</dfn> = <a class="macro" href="../third-party/algorithm/zlib/zlib.h.html#1553" title="inflateInit2_((&amp;stream_), (-15), &quot;1.2.5&quot;, sizeof(z_stream))" data-ref="_M/inflateInit2">inflateInit2</a>(&amp;<a class="member" href="DeflateCoder.h.html#nest::DeflateCoder::stream_" title='nest::DeflateCoder::stream_' data-ref="nest::DeflateCoder::stream_">stream_</a>, -<a class="macro" href="../third-party/algorithm/zlib/zconf.h.html#220" title="15" data-ref="_M/MAX_WBITS">MAX_WBITS</a>);</td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td>	<b>return</b> <a class="local col2 ref" href="#142res" title='res' data-ref="142res">res</a> == <a class="macro" href="../third-party/algorithm/zlib/zlib.h.html#173" title="0" data-ref="_M/Z_OK">Z_OK</a> ? <span class="namespace">Result::</span><a class="enum" href="../define.h.html#Result::Success" title='Result::Success' data-ref="Result::Success">Success</a> : <span class="namespace">Result::</span><a class="enum" href="../define.h.html#Result::Fail" title='Result::Fail' data-ref="Result::Fail">Fail</a>;</td></tr>
+<tr><th id="41">41</th><td>}</td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td><em>void</em> <a class="type" href="DeflateCoder.h.html#nest::DeflateCoder" title='nest::DeflateCoder' data-ref="nest::DeflateCoder">DeflateCoder</a>::<dfn class="virtual decl def" id="_ZN4nest12DeflateCoder8FinalizeEv" title='nest::DeflateCoder::Finalize' data-ref="_ZN4nest12DeflateCoder8FinalizeEv">Finalize</dfn>()</td></tr>
+<tr><th id="44">44</th><td>{</td></tr>
+<tr><th id="45">45</th><td>	<a class="type" href="Coder.h.html#nest::Coder" title='nest::Coder' data-ref="nest::Coder">Coder</a>::<a class="virtual member" href="Coder.h.html#_ZN4nest5Coder8FinalizeEv" title='nest::Coder::Finalize' data-ref="_ZN4nest5Coder8FinalizeEv">Finalize</a>();</td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td>	<a class="ref" href="../third-party/algorithm/zlib/zlib.h.html#inflateEnd" title='inflateEnd' data-ref="inflateEnd">inflateEnd</a>(&amp;<a class="member" href="DeflateCoder.h.html#nest::DeflateCoder::stream_" title='nest::DeflateCoder::stream_' data-ref="nest::DeflateCoder::stream_">stream_</a>);</td></tr>
+<tr><th id="48">48</th><td>}</td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td><em>int</em> <a class="type" href="DeflateCoder.h.html#nest::DeflateCoder" title='nest::DeflateCoder' data-ref="nest::DeflateCoder">DeflateCoder</a>::<dfn class="virtual decl def" id="_ZN4nest12DeflateCoder6OnPushEPvm" title='nest::DeflateCoder::OnPush' data-ref="_ZN4nest12DeflateCoder6OnPushEPvm">OnPush</dfn>(<em>void</em>* <dfn class="local col3 decl" id="143inputBuffer" title='inputBuffer' data-type='void *' data-ref="143inputBuffer">inputBuffer</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col4 decl" id="144size" title='size' data-type='size_t' data-ref="144size">size</dfn>)</td></tr>
+<tr><th id="51">51</th><td>{</td></tr>
+<tr><th id="52">52</th><td>	<a class="member" href="DeflateCoder.h.html#nest::DeflateCoder::stream_" title='nest::DeflateCoder::stream_' data-ref="nest::DeflateCoder::stream_">stream_</a>.<a class="ref" href="../third-party/algorithm/zlib/zlib.h.html#z_stream_s::next_in" title='z_stream_s::next_in' data-ref="z_stream_s::next_in">next_in</a> = <b>static_cast</b>&lt;<a class="typedef" href="../third-party/algorithm/zlib/zconf.h.html#Bytef" title='Bytef' data-type='Byte' data-ref="Bytef">Bytef</a>*&gt; (<a class="local col3 ref" href="#143inputBuffer" title='inputBuffer' data-ref="143inputBuffer">inputBuffer</a>);</td></tr>
+<tr><th id="53">53</th><td>	<a class="member" href="DeflateCoder.h.html#nest::DeflateCoder::stream_" title='nest::DeflateCoder::stream_' data-ref="nest::DeflateCoder::stream_">stream_</a>.<a class="ref" href="../third-party/algorithm/zlib/zlib.h.html#z_stream_s::avail_in" title='z_stream_s::avail_in' data-ref="z_stream_s::avail_in">avail_in</a> = <b>static_cast</b>&lt;<em>unsigned</em> <em>int</em>&gt;(<a class="local col4 ref" href="#144size" title='size' data-ref="144size">size</a>);</td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td>	<b>return</b> <span class="namespace">Result::</span><a class="enum" href="../define.h.html#Result::Success" title='Result::Success' data-ref="Result::Success">Success</a>;</td></tr>
+<tr><th id="56">56</th><td>}</td></tr>
+<tr><th id="57">57</th><td></td></tr>
+<tr><th id="58">58</th><td><em>int</em> <a class="type" href="DeflateCoder.h.html#nest::DeflateCoder" title='nest::DeflateCoder' data-ref="nest::DeflateCoder">DeflateCoder</a>::<dfn class="virtual decl def" id="_ZN4nest12DeflateCoder5OnPopEPvPm" title='nest::DeflateCoder::OnPop' data-ref="_ZN4nest12DeflateCoder5OnPopEPvPm">OnPop</dfn>(<em>void</em>* <dfn class="local col5 decl" id="145outputBuffer" title='outputBuffer' data-type='void *' data-ref="145outputBuffer">outputBuffer</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span>* <dfn class="local col6 decl" id="146size" title='size' data-type='size_t *' data-ref="146size">size</dfn>)</td></tr>
+<tr><th id="59">59</th><td>{</td></tr>
+<tr><th id="60">60</th><td>	<a class="member" href="DeflateCoder.h.html#nest::DeflateCoder::stream_" title='nest::DeflateCoder::stream_' data-ref="nest::DeflateCoder::stream_">stream_</a>.<a class="ref" href="../third-party/algorithm/zlib/zlib.h.html#z_stream_s::avail_out" title='z_stream_s::avail_out' data-ref="z_stream_s::avail_out">avail_out</a> = <b>static_cast</b>&lt;<em>unsigned</em> <em>int</em>&gt;(*<a class="local col6 ref" href="#146size" title='size' data-ref="146size">size</a>);</td></tr>
+<tr><th id="61">61</th><td>	<a class="member" href="DeflateCoder.h.html#nest::DeflateCoder::stream_" title='nest::DeflateCoder::stream_' data-ref="nest::DeflateCoder::stream_">stream_</a>.<a class="ref" href="../third-party/algorithm/zlib/zlib.h.html#z_stream_s::next_out" title='z_stream_s::next_out' data-ref="z_stream_s::next_out">next_out</a> = <b>static_cast</b>&lt;<a class="typedef" href="../third-party/algorithm/zlib/zconf.h.html#Bytef" title='Bytef' data-type='Byte' data-ref="Bytef">Bytef</a>*&gt; (<a class="local col5 ref" href="#145outputBuffer" title='outputBuffer' data-ref="145outputBuffer">outputBuffer</a>);</td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td>	<em>int</em> <dfn class="local col7 decl" id="147res" title='res' data-type='int' data-ref="147res">res</dfn> = <a class="ref" href="../third-party/algorithm/zlib/zlib.h.html#inflate" title='inflate' data-ref="inflate">inflate</a>(&amp;<a class="member" href="DeflateCoder.h.html#nest::DeflateCoder::stream_" title='nest::DeflateCoder::stream_' data-ref="nest::DeflateCoder::stream_">stream_</a>, <a class="macro" href="../third-party/algorithm/zlib/zlib.h.html#164" title="0" data-ref="_M/Z_NO_FLUSH">Z_NO_FLUSH</a>);</td></tr>
+<tr><th id="64">64</th><td></td></tr>
+<tr><th id="65">65</th><td>	<em>bool</em> <dfn class="local col8 decl" id="148finished" title='finished' data-type='bool' data-ref="148finished">finished</dfn> = <b>true</b>;</td></tr>
+<tr><th id="66">66</th><td>	<b>switch</b> (<a class="local col7 ref" href="#147res" title='res' data-ref="147res">res</a>)</td></tr>
+<tr><th id="67">67</th><td>	{</td></tr>
+<tr><th id="68">68</th><td>	<b>case</b> <a class="macro" href="../third-party/algorithm/zlib/zlib.h.html#173" title="0" data-ref="_M/Z_OK">Z_OK</a>:</td></tr>
+<tr><th id="69">69</th><td>	<b>case</b> <a class="macro" href="../third-party/algorithm/zlib/zlib.h.html#174" title="1" data-ref="_M/Z_STREAM_END">Z_STREAM_END</a>:</td></tr>
+<tr><th id="70">70</th><td>	<b>case</b> <a class="macro" href="../third-party/algorithm/zlib/zlib.h.html#180" title="(-5)" data-ref="_M/Z_BUF_ERROR">Z_BUF_ERROR</a>:</td></tr>
+<tr><th id="71">71</th><td>	{</td></tr>
+<tr><th id="72">72</th><td>		<a class="local col8 ref" href="#148finished" title='finished' data-ref="148finished">finished</a> = <a class="member" href="DeflateCoder.h.html#nest::DeflateCoder::stream_" title='nest::DeflateCoder::stream_' data-ref="nest::DeflateCoder::stream_">stream_</a>.<a class="ref" href="../third-party/algorithm/zlib/zlib.h.html#z_stream_s::avail_out" title='z_stream_s::avail_out' data-ref="z_stream_s::avail_out">avail_out</a> != <var>0</var> || <a class="local col7 ref" href="#147res" title='res' data-ref="147res">res</a> == <a class="macro" href="../third-party/algorithm/zlib/zlib.h.html#174" title="1" data-ref="_M/Z_STREAM_END">Z_STREAM_END</a>;</td></tr>
+<tr><th id="73">73</th><td></td></tr>
+<tr><th id="74">74</th><td>		*<a class="local col6 ref" href="#146size" title='size' data-ref="146size">size</a> -= <a class="member" href="DeflateCoder.h.html#nest::DeflateCoder::stream_" title='nest::DeflateCoder::stream_' data-ref="nest::DeflateCoder::stream_">stream_</a>.<a class="ref" href="../third-party/algorithm/zlib/zlib.h.html#z_stream_s::avail_out" title='z_stream_s::avail_out' data-ref="z_stream_s::avail_out">avail_out</a>;</td></tr>
+<tr><th id="75">75</th><td>		<b>break</b>;</td></tr>
+<tr><th id="76">76</th><td>	}</td></tr>
+<tr><th id="77">77</th><td>	}</td></tr>
+<tr><th id="78">78</th><td></td></tr>
+<tr><th id="79">79</th><td>	<b>return</b> <a class="local col8 ref" href="#148finished" title='finished' data-ref="148finished">finished</a> ? <span class="namespace">Result::</span><a class="enum" href="../define.h.html#Result::End" title='Result::End' data-ref="Result::End">End</a> : <span class="namespace">Result::</span><a class="enum" href="../define.h.html#Result::Success" title='Result::Success' data-ref="Result::Success">Success</a>;</td></tr>
+<tr><th id="80">80</th><td>}</td></tr>
+<tr><th id="81">81</th><td></td></tr>
+<tr><th id="82">82</th><td>}</td></tr>
+<tr><th id="83">83</th><td></td></tr>
+<tr><th id="84">84</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

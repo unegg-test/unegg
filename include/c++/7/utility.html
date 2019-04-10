@@ -1,0 +1,425 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>utility source code [include/c++/7/utility] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'include/c++/7/utility'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>include</a>/<a href='..'>c++</a>/<a href='./'>7</a>/<a href='utility.html'>utility</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>// &lt;utility&gt; -*- C++ -*-</i></td></tr>
+<tr><th id="2">2</th><td><i></i></td></tr>
+<tr><th id="3">3</th><td><i>// Copyright (C) 2001-2017 Free Software Foundation, Inc.</i></td></tr>
+<tr><th id="4">4</th><td><i>//</i></td></tr>
+<tr><th id="5">5</th><td><i>// This file is part of the GNU ISO C++ Library.  This library is free</i></td></tr>
+<tr><th id="6">6</th><td><i>// software; you can redistribute it and/or modify it under the</i></td></tr>
+<tr><th id="7">7</th><td><i>// terms of the GNU General Public License as published by the</i></td></tr>
+<tr><th id="8">8</th><td><i>// Free Software Foundation; either version 3, or (at your option)</i></td></tr>
+<tr><th id="9">9</th><td><i>// any later version.</i></td></tr>
+<tr><th id="10">10</th><td><i></i></td></tr>
+<tr><th id="11">11</th><td><i>// This library is distributed in the hope that it will be useful,</i></td></tr>
+<tr><th id="12">12</th><td><i>// but WITHOUT ANY WARRANTY; without even the implied warranty of</i></td></tr>
+<tr><th id="13">13</th><td><i>// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</i></td></tr>
+<tr><th id="14">14</th><td><i>// GNU General Public License for more details.</i></td></tr>
+<tr><th id="15">15</th><td><i></i></td></tr>
+<tr><th id="16">16</th><td><i>// Under Section 7 of GPL version 3, you are granted additional</i></td></tr>
+<tr><th id="17">17</th><td><i>// permissions described in the GCC Runtime Library Exception, version</i></td></tr>
+<tr><th id="18">18</th><td><i>// 3.1, as published by the Free Software Foundation.</i></td></tr>
+<tr><th id="19">19</th><td><i></i></td></tr>
+<tr><th id="20">20</th><td><i>// You should have received a copy of the GNU General Public License and</i></td></tr>
+<tr><th id="21">21</th><td><i>// a copy of the GCC Runtime Library Exception along with this program;</i></td></tr>
+<tr><th id="22">22</th><td><i>// see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see</i></td></tr>
+<tr><th id="23">23</th><td><i>// &lt;<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>&gt;.</i></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><i>/*</i></td></tr>
+<tr><th id="26">26</th><td><i> *</i></td></tr>
+<tr><th id="27">27</th><td><i> * Copyright (c) 1994</i></td></tr>
+<tr><th id="28">28</th><td><i> * Hewlett-Packard Company</i></td></tr>
+<tr><th id="29">29</th><td><i> *</i></td></tr>
+<tr><th id="30">30</th><td><i> * Permission to use, copy, modify, distribute and sell this software</i></td></tr>
+<tr><th id="31">31</th><td><i> * and its documentation for any purpose is hereby granted without fee,</i></td></tr>
+<tr><th id="32">32</th><td><i> * provided that the above copyright notice appear in all copies and</i></td></tr>
+<tr><th id="33">33</th><td><i> * that both that copyright notice and this permission notice appear</i></td></tr>
+<tr><th id="34">34</th><td><i> * in supporting documentation.  Hewlett-Packard Company makes no</i></td></tr>
+<tr><th id="35">35</th><td><i> * representations about the suitability of this software for any</i></td></tr>
+<tr><th id="36">36</th><td><i> * purpose.  It is provided "as is" without express or implied warranty.</i></td></tr>
+<tr><th id="37">37</th><td><i> *</i></td></tr>
+<tr><th id="38">38</th><td><i> *</i></td></tr>
+<tr><th id="39">39</th><td><i> * Copyright (c) 1996,1997</i></td></tr>
+<tr><th id="40">40</th><td><i> * Silicon Graphics Computer Systems, Inc.</i></td></tr>
+<tr><th id="41">41</th><td><i> *</i></td></tr>
+<tr><th id="42">42</th><td><i> * Permission to use, copy, modify, distribute and sell this software</i></td></tr>
+<tr><th id="43">43</th><td><i> * and its documentation for any purpose is hereby granted without fee,</i></td></tr>
+<tr><th id="44">44</th><td><i> * provided that the above copyright notice appear in all copies and</i></td></tr>
+<tr><th id="45">45</th><td><i> * that both that copyright notice and this permission notice appear</i></td></tr>
+<tr><th id="46">46</th><td><i> * in supporting documentation.  Silicon Graphics makes no</i></td></tr>
+<tr><th id="47">47</th><td><i> * representations about the suitability of this software for any</i></td></tr>
+<tr><th id="48">48</th><td><i> * purpose.  It is provided "as is" without express or implied warranty.</i></td></tr>
+<tr><th id="49">49</th><td><i> */</i></td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td><i class="doc">/**<span class="command"> @file</span> include/utility</i></td></tr>
+<tr><th id="52">52</th><td><i class="doc"> *  This is a Standard C++ Library header.</i></td></tr>
+<tr><th id="53">53</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td><u>#<span data-ppcond="55">ifndef</span> <span class="macro" data-ref="_M/_GLIBCXX_UTILITY">_GLIBCXX_UTILITY</span></u></td></tr>
+<tr><th id="56">56</th><td><u>#define <dfn class="macro" id="_M/_GLIBCXX_UTILITY" data-ref="_M/_GLIBCXX_UTILITY">_GLIBCXX_UTILITY</dfn> 1</u></td></tr>
+<tr><th id="57">57</th><td></td></tr>
+<tr><th id="58">58</th><td><u>#pragma GCC system_header</u></td></tr>
+<tr><th id="59">59</th><td></td></tr>
+<tr><th id="60">60</th><td><i class="doc">/**</i></td></tr>
+<tr><th id="61">61</th><td><i class="doc"> * <span class="command">@defgroup</span> <span class="verb">utilities Utilities</span></i></td></tr>
+<tr><th id="62">62</th><td><i class="doc"> *</i></td></tr>
+<tr><th id="63">63</th><td><i class="doc"> * Components deemed generally useful. Includes pair, tuple,</i></td></tr>
+<tr><th id="64">64</th><td><i class="doc"> * forward/move helpers, ratio, function object, metaprogramming and</i></td></tr>
+<tr><th id="65">65</th><td><i class="doc"> * type traits, time, date, and memory functions.</i></td></tr>
+<tr><th id="66">66</th><td><i class="doc"> */</i></td></tr>
+<tr><th id="67">67</th><td></td></tr>
+<tr><th id="68">68</th><td><u>#include <a href="../../x86_64-linux-gnu/c++/7/bits/c++config.h.html">&lt;bits/c++config.h&gt;</a></u></td></tr>
+<tr><th id="69">69</th><td><u>#include <a href="bits/stl_relops.h.html">&lt;bits/stl_relops.h&gt;</a></u></td></tr>
+<tr><th id="70">70</th><td><u>#include <a href="bits/stl_pair.h.html">&lt;bits/stl_pair.h&gt;</a></u></td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td><u>#<span data-ppcond="72">if</span> <span class="macro" title="199711L" data-ref="_M/__cplusplus">__cplusplus</span> &gt;= 201103L</u></td></tr>
+<tr><th id="73">73</th><td></td></tr>
+<tr><th id="74">74</th><td><u>#include &lt;type_traits&gt;</u></td></tr>
+<tr><th id="75">75</th><td><u>#include &lt;bits/move.h&gt;</u></td></tr>
+<tr><th id="76">76</th><td><u>#include &lt;initializer_list&gt;</u></td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td><b>namespace</b> std _GLIBCXX_VISIBILITY(<b>default</b>)</td></tr>
+<tr><th id="79">79</th><td>{</td></tr>
+<tr><th id="80">80</th><td>_GLIBCXX_BEGIN_NAMESPACE_VERSION</td></tr>
+<tr><th id="81">81</th><td></td></tr>
+<tr><th id="82">82</th><td>  <i class="doc">/// Finds the size of a given tuple type.</i></td></tr>
+<tr><th id="83">83</th><td>  <b>template</b>&lt;<b>typename</b> _Tp&gt;</td></tr>
+<tr><th id="84">84</th><td>    <b>struct</b> tuple_size;</td></tr>
+<tr><th id="85">85</th><td></td></tr>
+<tr><th id="86">86</th><td>  <i>// _GLIBCXX_RESOLVE_LIB_DEFECTS</i></td></tr>
+<tr><th id="87">87</th><td><i>  // 2770. tuple_size&lt;const T&gt; specialization is not SFINAE compatible</i></td></tr>
+<tr><th id="88">88</th><td></td></tr>
+<tr><th id="89">89</th><td><u>#if __cplusplus &lt;= 201402L</u></td></tr>
+<tr><th id="90">90</th><td>  <b>template</b>&lt;<b>typename</b> _Tp, <b>typename</b> = <em>void</em>&gt;</td></tr>
+<tr><th id="91">91</th><td>    <b>struct</b> __tuple_size_cv_impl { };</td></tr>
+<tr><th id="92">92</th><td></td></tr>
+<tr><th id="93">93</th><td>  <b>template</b>&lt;<b>typename</b> _Tp&gt;</td></tr>
+<tr><th id="94">94</th><td>    <b>struct</b> __tuple_size_cv_impl&lt;_Tp, __void_t&lt;decltype(tuple_size&lt;_Tp&gt;::value)&gt;&gt;</td></tr>
+<tr><th id="95">95</th><td>    : integral_constant&lt;size_t, tuple_size&lt;_Tp&gt;::value&gt; { };</td></tr>
+<tr><th id="96">96</th><td></td></tr>
+<tr><th id="97">97</th><td>  <i>// _GLIBCXX_RESOLVE_LIB_DEFECTS</i></td></tr>
+<tr><th id="98">98</th><td><i>  // 2313. tuple_size should always derive from integral_constant&lt;size_t, N&gt;</i></td></tr>
+<tr><th id="99">99</th><td>  <b>template</b>&lt;<b>typename</b> _Tp&gt;</td></tr>
+<tr><th id="100">100</th><td>    <b>struct</b> tuple_size&lt;<em>const</em> _Tp&gt; : __tuple_size_cv_impl&lt;_Tp&gt; { };</td></tr>
+<tr><th id="101">101</th><td></td></tr>
+<tr><th id="102">102</th><td>  <b>template</b>&lt;<b>typename</b> _Tp&gt;</td></tr>
+<tr><th id="103">103</th><td>    <b>struct</b> tuple_size&lt;<em>volatile</em> _Tp&gt; : __tuple_size_cv_impl&lt;_Tp&gt; { };</td></tr>
+<tr><th id="104">104</th><td></td></tr>
+<tr><th id="105">105</th><td>  <b>template</b>&lt;<b>typename</b> _Tp&gt;</td></tr>
+<tr><th id="106">106</th><td>    <b>struct</b> tuple_size&lt;<em>const</em> <em>volatile</em> _Tp&gt; : __tuple_size_cv_impl&lt;_Tp&gt; { };</td></tr>
+<tr><th id="107">107</th><td><u>#else</u></td></tr>
+<tr><th id="108">108</th><td>  <b>template</b>&lt;<b>typename</b> _Tp,</td></tr>
+<tr><th id="109">109</th><td>	   <b>typename</b> _Up = <b>typename</b> remove_cv&lt;_Tp&gt;::type,</td></tr>
+<tr><th id="110">110</th><td>	   <b>typename</b> = <b>typename</b> enable_if&lt;is_same&lt;_Tp, _Up&gt;::value&gt;::type,</td></tr>
+<tr><th id="111">111</th><td>	   size_t = tuple_size&lt;_Tp&gt;::value&gt;</td></tr>
+<tr><th id="112">112</th><td>    <b>using</b> __enable_if_has_tuple_size = _Tp;</td></tr>
+<tr><th id="113">113</th><td></td></tr>
+<tr><th id="114">114</th><td>  <b>template</b>&lt;<b>typename</b> _Tp&gt;</td></tr>
+<tr><th id="115">115</th><td>    <b>struct</b> tuple_size&lt;<em>const</em> __enable_if_has_tuple_size&lt;_Tp&gt;&gt;</td></tr>
+<tr><th id="116">116</th><td>    : <b>public</b> tuple_size&lt;_Tp&gt; { };</td></tr>
+<tr><th id="117">117</th><td></td></tr>
+<tr><th id="118">118</th><td>  <b>template</b>&lt;<b>typename</b> _Tp&gt;</td></tr>
+<tr><th id="119">119</th><td>    <b>struct</b> tuple_size&lt;<em>volatile</em> __enable_if_has_tuple_size&lt;_Tp&gt;&gt;</td></tr>
+<tr><th id="120">120</th><td>    : <b>public</b> tuple_size&lt;_Tp&gt; { };</td></tr>
+<tr><th id="121">121</th><td></td></tr>
+<tr><th id="122">122</th><td>  <b>template</b>&lt;<b>typename</b> _Tp&gt;</td></tr>
+<tr><th id="123">123</th><td>    <b>struct</b> tuple_size&lt;<em>const</em> <em>volatile</em> __enable_if_has_tuple_size&lt;_Tp&gt;&gt;</td></tr>
+<tr><th id="124">124</th><td>    : <b>public</b> tuple_size&lt;_Tp&gt; { };</td></tr>
+<tr><th id="125">125</th><td><u>#endif</u></td></tr>
+<tr><th id="126">126</th><td></td></tr>
+<tr><th id="127">127</th><td>  <i class="doc">/// Gives the type of the ith element of a given tuple type.</i></td></tr>
+<tr><th id="128">128</th><td>  <b>template</b>&lt;std::size_t __i, <b>typename</b> _Tp&gt;</td></tr>
+<tr><th id="129">129</th><td>    <b>struct</b> tuple_element;</td></tr>
+<tr><th id="130">130</th><td></td></tr>
+<tr><th id="131">131</th><td>  <i>// Duplicate of C++14's tuple_element_t for internal use in C++11 mode</i></td></tr>
+<tr><th id="132">132</th><td>  <b>template</b>&lt;std::size_t __i, <b>typename</b> _Tp&gt;</td></tr>
+<tr><th id="133">133</th><td>    <b>using</b> __tuple_element_t = <b>typename</b> tuple_element&lt;__i, _Tp&gt;::type;</td></tr>
+<tr><th id="134">134</th><td></td></tr>
+<tr><th id="135">135</th><td>  <b>template</b>&lt;std::size_t __i, <b>typename</b> _Tp&gt;</td></tr>
+<tr><th id="136">136</th><td>    <b>struct</b> tuple_element&lt;__i, <em>const</em> _Tp&gt;</td></tr>
+<tr><th id="137">137</th><td>    {</td></tr>
+<tr><th id="138">138</th><td>      <b>typedef</b> <b>typename</b> add_const&lt;__tuple_element_t&lt;__i, _Tp&gt;&gt;::type type;</td></tr>
+<tr><th id="139">139</th><td>    };</td></tr>
+<tr><th id="140">140</th><td></td></tr>
+<tr><th id="141">141</th><td>  <b>template</b>&lt;std::size_t __i, <b>typename</b> _Tp&gt;</td></tr>
+<tr><th id="142">142</th><td>    <b>struct</b> tuple_element&lt;__i, <em>volatile</em> _Tp&gt;</td></tr>
+<tr><th id="143">143</th><td>    {</td></tr>
+<tr><th id="144">144</th><td>      <b>typedef</b> <b>typename</b> add_volatile&lt;__tuple_element_t&lt;__i, _Tp&gt;&gt;::type type;</td></tr>
+<tr><th id="145">145</th><td>    };</td></tr>
+<tr><th id="146">146</th><td></td></tr>
+<tr><th id="147">147</th><td>  <b>template</b>&lt;std::size_t __i, <b>typename</b> _Tp&gt;</td></tr>
+<tr><th id="148">148</th><td>    <b>struct</b> tuple_element&lt;__i, <em>const</em> <em>volatile</em> _Tp&gt;</td></tr>
+<tr><th id="149">149</th><td>    {</td></tr>
+<tr><th id="150">150</th><td>      <b>typedef</b> <b>typename</b> add_cv&lt;__tuple_element_t&lt;__i, _Tp&gt;&gt;::type type;</td></tr>
+<tr><th id="151">151</th><td>    };</td></tr>
+<tr><th id="152">152</th><td></td></tr>
+<tr><th id="153">153</th><td><u>#if __cplusplus &gt; 201103L</u></td></tr>
+<tr><th id="154">154</th><td><u>#define __cpp_lib_tuple_element_t 201402</u></td></tr>
+<tr><th id="155">155</th><td></td></tr>
+<tr><th id="156">156</th><td>  <b>template</b>&lt;std::size_t __i, <b>typename</b> _Tp&gt;</td></tr>
+<tr><th id="157">157</th><td>    <b>using</b> tuple_element_t = <b>typename</b> tuple_element&lt;__i, _Tp&gt;::type;</td></tr>
+<tr><th id="158">158</th><td><u>#endif</u></td></tr>
+<tr><th id="159">159</th><td></td></tr>
+<tr><th id="160">160</th><td>  <i>// Various functions which give std::pair a tuple-like interface.</i></td></tr>
+<tr><th id="161">161</th><td><i></i></td></tr>
+<tr><th id="162">162</th><td><i>  /// Partial specialization for std::pair</i></td></tr>
+<tr><th id="163">163</th><td>  <b>template</b>&lt;<b>typename</b> _T1, <b>typename</b> _T2&gt;</td></tr>
+<tr><th id="164">164</th><td>    <b>struct</b> __is_tuple_like_impl&lt;std::pair&lt;_T1, _T2&gt;&gt; : true_type</td></tr>
+<tr><th id="165">165</th><td>    { };</td></tr>
+<tr><th id="166">166</th><td></td></tr>
+<tr><th id="167">167</th><td>  <i class="doc">/// Partial specialization for std::pair</i></td></tr>
+<tr><th id="168">168</th><td>  <b>template</b>&lt;<b>class</b> _Tp1, <b>class</b> _Tp2&gt;</td></tr>
+<tr><th id="169">169</th><td>    <b>struct</b> tuple_size&lt;std::pair&lt;_Tp1, _Tp2&gt;&gt;</td></tr>
+<tr><th id="170">170</th><td>    : <b>public</b> integral_constant&lt;std::size_t, <var>2</var>&gt; { };</td></tr>
+<tr><th id="171">171</th><td></td></tr>
+<tr><th id="172">172</th><td>  <i class="doc">/// Partial specialization for std::pair</i></td></tr>
+<tr><th id="173">173</th><td>  <b>template</b>&lt;<b>class</b> _Tp1, <b>class</b> _Tp2&gt;</td></tr>
+<tr><th id="174">174</th><td>    <b>struct</b> tuple_element&lt;<var>0</var>, std::pair&lt;_Tp1, _Tp2&gt;&gt;</td></tr>
+<tr><th id="175">175</th><td>    { <b>typedef</b> _Tp1 type; };</td></tr>
+<tr><th id="176">176</th><td></td></tr>
+<tr><th id="177">177</th><td>  <i class="doc">/// Partial specialization for std::pair</i></td></tr>
+<tr><th id="178">178</th><td>  <b>template</b>&lt;<b>class</b> _Tp1, <b>class</b> _Tp2&gt;</td></tr>
+<tr><th id="179">179</th><td>    <b>struct</b> tuple_element&lt;<var>1</var>, std::pair&lt;_Tp1, _Tp2&gt;&gt;</td></tr>
+<tr><th id="180">180</th><td>    { <b>typedef</b> _Tp2 type; };</td></tr>
+<tr><th id="181">181</th><td></td></tr>
+<tr><th id="182">182</th><td>  <b>template</b>&lt;std::size_t _Int&gt;</td></tr>
+<tr><th id="183">183</th><td>    <b>struct</b> __pair_get;</td></tr>
+<tr><th id="184">184</th><td></td></tr>
+<tr><th id="185">185</th><td>  <b>template</b>&lt;&gt;</td></tr>
+<tr><th id="186">186</th><td>    <b>struct</b> __pair_get&lt;<var>0</var>&gt;</td></tr>
+<tr><th id="187">187</th><td>    {</td></tr>
+<tr><th id="188">188</th><td>      <b>template</b>&lt;<b>typename</b> _Tp1, <b>typename</b> _Tp2&gt;</td></tr>
+<tr><th id="189">189</th><td>        <em>static</em> constexpr _Tp1&amp;</td></tr>
+<tr><th id="190">190</th><td>        __get(std::pair&lt;_Tp1, _Tp2&gt;&amp; __pair) noexcept</td></tr>
+<tr><th id="191">191</th><td>        { <b>return</b> __pair.first; }</td></tr>
+<tr><th id="192">192</th><td></td></tr>
+<tr><th id="193">193</th><td>      <b>template</b>&lt;<b>typename</b> _Tp1, <b>typename</b> _Tp2&gt;</td></tr>
+<tr><th id="194">194</th><td>        <em>static</em> constexpr _Tp1&amp;&amp;</td></tr>
+<tr><th id="195">195</th><td>        __move_get(std::pair&lt;_Tp1, _Tp2&gt;&amp;&amp; __pair) noexcept</td></tr>
+<tr><th id="196">196</th><td>        { <b>return</b> std::forward&lt;_Tp1&gt;(__pair.first); }</td></tr>
+<tr><th id="197">197</th><td></td></tr>
+<tr><th id="198">198</th><td>      <b>template</b>&lt;<b>typename</b> _Tp1, <b>typename</b> _Tp2&gt;</td></tr>
+<tr><th id="199">199</th><td>        <em>static</em> constexpr <em>const</em> _Tp1&amp;</td></tr>
+<tr><th id="200">200</th><td>        __const_get(<em>const</em> std::pair&lt;_Tp1, _Tp2&gt;&amp; __pair) noexcept</td></tr>
+<tr><th id="201">201</th><td>        { <b>return</b> __pair.first; }</td></tr>
+<tr><th id="202">202</th><td>    };</td></tr>
+<tr><th id="203">203</th><td></td></tr>
+<tr><th id="204">204</th><td>  <b>template</b>&lt;&gt;</td></tr>
+<tr><th id="205">205</th><td>    <b>struct</b> __pair_get&lt;<var>1</var>&gt;</td></tr>
+<tr><th id="206">206</th><td>    {</td></tr>
+<tr><th id="207">207</th><td>      <b>template</b>&lt;<b>typename</b> _Tp1, <b>typename</b> _Tp2&gt;</td></tr>
+<tr><th id="208">208</th><td>        <em>static</em> constexpr _Tp2&amp;</td></tr>
+<tr><th id="209">209</th><td>        __get(std::pair&lt;_Tp1, _Tp2&gt;&amp; __pair) noexcept</td></tr>
+<tr><th id="210">210</th><td>        { <b>return</b> __pair.second; }</td></tr>
+<tr><th id="211">211</th><td></td></tr>
+<tr><th id="212">212</th><td>      <b>template</b>&lt;<b>typename</b> _Tp1, <b>typename</b> _Tp2&gt;</td></tr>
+<tr><th id="213">213</th><td>        <em>static</em> constexpr _Tp2&amp;&amp;</td></tr>
+<tr><th id="214">214</th><td>        __move_get(std::pair&lt;_Tp1, _Tp2&gt;&amp;&amp; __pair) noexcept</td></tr>
+<tr><th id="215">215</th><td>        { <b>return</b> std::forward&lt;_Tp2&gt;(__pair.second); }</td></tr>
+<tr><th id="216">216</th><td></td></tr>
+<tr><th id="217">217</th><td>      <b>template</b>&lt;<b>typename</b> _Tp1, <b>typename</b> _Tp2&gt;</td></tr>
+<tr><th id="218">218</th><td>        <em>static</em> constexpr <em>const</em> _Tp2&amp;</td></tr>
+<tr><th id="219">219</th><td>        __const_get(<em>const</em> std::pair&lt;_Tp1, _Tp2&gt;&amp; __pair) noexcept</td></tr>
+<tr><th id="220">220</th><td>        { <b>return</b> __pair.second; }</td></tr>
+<tr><th id="221">221</th><td>    };</td></tr>
+<tr><th id="222">222</th><td></td></tr>
+<tr><th id="223">223</th><td>  <b>template</b>&lt;std::size_t _Int, <b>class</b> _Tp1, <b>class</b> _Tp2&gt;</td></tr>
+<tr><th id="224">224</th><td>    constexpr <b>typename</b> tuple_element&lt;_Int, std::pair&lt;_Tp1, _Tp2&gt;&gt;::type&amp;</td></tr>
+<tr><th id="225">225</th><td>    get(std::pair&lt;_Tp1, _Tp2&gt;&amp; __in) noexcept</td></tr>
+<tr><th id="226">226</th><td>    { <b>return</b> __pair_get&lt;_Int&gt;::__get(__in); }</td></tr>
+<tr><th id="227">227</th><td></td></tr>
+<tr><th id="228">228</th><td>  <b>template</b>&lt;std::size_t _Int, <b>class</b> _Tp1, <b>class</b> _Tp2&gt;</td></tr>
+<tr><th id="229">229</th><td>    constexpr <b>typename</b> tuple_element&lt;_Int, std::pair&lt;_Tp1, _Tp2&gt;&gt;::type&amp;&amp;</td></tr>
+<tr><th id="230">230</th><td>    get(std::pair&lt;_Tp1, _Tp2&gt;&amp;&amp; __in) noexcept</td></tr>
+<tr><th id="231">231</th><td>    { <b>return</b> __pair_get&lt;_Int&gt;::__move_get(std::move(__in)); }</td></tr>
+<tr><th id="232">232</th><td></td></tr>
+<tr><th id="233">233</th><td>  <b>template</b>&lt;std::size_t _Int, <b>class</b> _Tp1, <b>class</b> _Tp2&gt;</td></tr>
+<tr><th id="234">234</th><td>    constexpr <em>const</em> <b>typename</b> tuple_element&lt;_Int, std::pair&lt;_Tp1, _Tp2&gt;&gt;::type&amp;</td></tr>
+<tr><th id="235">235</th><td>    get(<em>const</em> std::pair&lt;_Tp1, _Tp2&gt;&amp; __in) noexcept</td></tr>
+<tr><th id="236">236</th><td>    { <b>return</b> __pair_get&lt;_Int&gt;::__const_get(__in); }</td></tr>
+<tr><th id="237">237</th><td></td></tr>
+<tr><th id="238">238</th><td><u>#if __cplusplus &gt; 201103L</u></td></tr>
+<tr><th id="239">239</th><td></td></tr>
+<tr><th id="240">240</th><td><u>#define __cpp_lib_tuples_by_type 201304</u></td></tr>
+<tr><th id="241">241</th><td></td></tr>
+<tr><th id="242">242</th><td>  <b>template</b> &lt;<b>typename</b> _Tp, <b>typename</b> _Up&gt;</td></tr>
+<tr><th id="243">243</th><td>    constexpr _Tp&amp;</td></tr>
+<tr><th id="244">244</th><td>    get(pair&lt;_Tp, _Up&gt;&amp; __p) noexcept</td></tr>
+<tr><th id="245">245</th><td>    { <b>return</b> __p.first; }</td></tr>
+<tr><th id="246">246</th><td></td></tr>
+<tr><th id="247">247</th><td>  <b>template</b> &lt;<b>typename</b> _Tp, <b>typename</b> _Up&gt;</td></tr>
+<tr><th id="248">248</th><td>    constexpr <em>const</em> _Tp&amp;</td></tr>
+<tr><th id="249">249</th><td>    get(<em>const</em> pair&lt;_Tp, _Up&gt;&amp; __p) noexcept</td></tr>
+<tr><th id="250">250</th><td>    { <b>return</b> __p.first; }</td></tr>
+<tr><th id="251">251</th><td></td></tr>
+<tr><th id="252">252</th><td>  <b>template</b> &lt;<b>typename</b> _Tp, <b>typename</b> _Up&gt;</td></tr>
+<tr><th id="253">253</th><td>    constexpr _Tp&amp;&amp;</td></tr>
+<tr><th id="254">254</th><td>    get(pair&lt;_Tp, _Up&gt;&amp;&amp; __p) noexcept</td></tr>
+<tr><th id="255">255</th><td>    { <b>return</b> std::move(__p.first); }</td></tr>
+<tr><th id="256">256</th><td></td></tr>
+<tr><th id="257">257</th><td>  <b>template</b> &lt;<b>typename</b> _Tp, <b>typename</b> _Up&gt;</td></tr>
+<tr><th id="258">258</th><td>    constexpr _Tp&amp;</td></tr>
+<tr><th id="259">259</th><td>    get(pair&lt;_Up, _Tp&gt;&amp; __p) noexcept</td></tr>
+<tr><th id="260">260</th><td>    { <b>return</b> __p.second; }</td></tr>
+<tr><th id="261">261</th><td></td></tr>
+<tr><th id="262">262</th><td>  <b>template</b> &lt;<b>typename</b> _Tp, <b>typename</b> _Up&gt;</td></tr>
+<tr><th id="263">263</th><td>    constexpr <em>const</em> _Tp&amp;</td></tr>
+<tr><th id="264">264</th><td>    get(<em>const</em> pair&lt;_Up, _Tp&gt;&amp; __p) noexcept</td></tr>
+<tr><th id="265">265</th><td>    { <b>return</b> __p.second; }</td></tr>
+<tr><th id="266">266</th><td></td></tr>
+<tr><th id="267">267</th><td>  <b>template</b> &lt;<b>typename</b> _Tp, <b>typename</b> _Up&gt;</td></tr>
+<tr><th id="268">268</th><td>    constexpr _Tp&amp;&amp;</td></tr>
+<tr><th id="269">269</th><td>    get(pair&lt;_Up, _Tp&gt;&amp;&amp; __p) noexcept</td></tr>
+<tr><th id="270">270</th><td>    { <b>return</b> std::move(__p.second); }</td></tr>
+<tr><th id="271">271</th><td></td></tr>
+<tr><th id="272">272</th><td><u>#define __cpp_lib_exchange_function 201304</u></td></tr>
+<tr><th id="273">273</th><td></td></tr>
+<tr><th id="274">274</th><td>  <i class="doc">/// Assign<span class="command"> @p</span> <span class="arg">__new_val</span> to<span class="command"> @p</span> <span class="arg">__obj</span> and return its previous value.</i></td></tr>
+<tr><th id="275">275</th><td>  <b>template</b> &lt;<b>typename</b> _Tp, <b>typename</b> _Up = _Tp&gt;</td></tr>
+<tr><th id="276">276</th><td>    <b>inline</b> _Tp</td></tr>
+<tr><th id="277">277</th><td>    exchange(_Tp&amp; __obj, _Up&amp;&amp; __new_val)</td></tr>
+<tr><th id="278">278</th><td>    { <b>return</b> std::__exchange(__obj, std::forward&lt;_Up&gt;(__new_val)); }</td></tr>
+<tr><th id="279">279</th><td><u>#endif</u></td></tr>
+<tr><th id="280">280</th><td></td></tr>
+<tr><th id="281">281</th><td>  <i>// Stores a tuple of indices.  Used by tuple and pair, and by bind() to</i></td></tr>
+<tr><th id="282">282</th><td><i>  // extract the elements in a tuple.</i></td></tr>
+<tr><th id="283">283</th><td>  <b>template</b>&lt;size_t... _Indexes&gt; <b>struct</b> _Index_tuple { };</td></tr>
+<tr><th id="284">284</th><td></td></tr>
+<tr><th id="285">285</th><td>  <i>// Concatenates two _Index_tuples.</i></td></tr>
+<tr><th id="286">286</th><td>  <b>template</b>&lt;<b>typename</b> _Itup1, <b>typename</b> _Itup2&gt; <b>struct</b> _Itup_cat;</td></tr>
+<tr><th id="287">287</th><td></td></tr>
+<tr><th id="288">288</th><td>  <b>template</b>&lt;size_t... _Ind1, size_t... _Ind2&gt;</td></tr>
+<tr><th id="289">289</th><td>    <b>struct</b> _Itup_cat&lt;_Index_tuple&lt;_Ind1...&gt;, _Index_tuple&lt;_Ind2...&gt;&gt;</td></tr>
+<tr><th id="290">290</th><td>    {</td></tr>
+<tr><th id="291">291</th><td>      <b>using</b> __type = _Index_tuple&lt;_Ind1..., (_Ind2 + <b>sizeof</b>...(_Ind1))...&gt;;</td></tr>
+<tr><th id="292">292</th><td>    };</td></tr>
+<tr><th id="293">293</th><td></td></tr>
+<tr><th id="294">294</th><td>  <i>// Builds an _Index_tuple&lt;0, 1, 2, ..., _Num-1&gt;.</i></td></tr>
+<tr><th id="295">295</th><td>  <b>template</b>&lt;size_t _Num&gt;</td></tr>
+<tr><th id="296">296</th><td>    <b>struct</b> _Build_index_tuple</td></tr>
+<tr><th id="297">297</th><td>    : _Itup_cat&lt;<b>typename</b> _Build_index_tuple&lt;_Num / <var>2</var>&gt;::__type,</td></tr>
+<tr><th id="298">298</th><td>		<b>typename</b> _Build_index_tuple&lt;_Num - _Num / <var>2</var>&gt;::__type&gt;</td></tr>
+<tr><th id="299">299</th><td>    { };</td></tr>
+<tr><th id="300">300</th><td></td></tr>
+<tr><th id="301">301</th><td>  <b>template</b>&lt;&gt;</td></tr>
+<tr><th id="302">302</th><td>    <b>struct</b> _Build_index_tuple&lt;<var>1</var>&gt;</td></tr>
+<tr><th id="303">303</th><td>    {</td></tr>
+<tr><th id="304">304</th><td>      <b>typedef</b> _Index_tuple&lt;<var>0</var>&gt; __type;</td></tr>
+<tr><th id="305">305</th><td>    };</td></tr>
+<tr><th id="306">306</th><td></td></tr>
+<tr><th id="307">307</th><td>  <b>template</b>&lt;&gt;</td></tr>
+<tr><th id="308">308</th><td>    <b>struct</b> _Build_index_tuple&lt;<var>0</var>&gt;</td></tr>
+<tr><th id="309">309</th><td>    {</td></tr>
+<tr><th id="310">310</th><td>      <b>typedef</b> _Index_tuple&lt;&gt; __type;</td></tr>
+<tr><th id="311">311</th><td>    };</td></tr>
+<tr><th id="312">312</th><td></td></tr>
+<tr><th id="313">313</th><td><u>#if __cplusplus &gt; 201103L</u></td></tr>
+<tr><th id="314">314</th><td></td></tr>
+<tr><th id="315">315</th><td><u>#define __cpp_lib_integer_sequence 201304</u></td></tr>
+<tr><th id="316">316</th><td></td></tr>
+<tr><th id="317">317</th><td>  <i class="doc">/// Class template integer_sequence</i></td></tr>
+<tr><th id="318">318</th><td>  <b>template</b>&lt;<b>typename</b> _Tp, _Tp... _Idx&gt;</td></tr>
+<tr><th id="319">319</th><td>    <b>struct</b> integer_sequence</td></tr>
+<tr><th id="320">320</th><td>    {</td></tr>
+<tr><th id="321">321</th><td>      <b>typedef</b> _Tp value_type;</td></tr>
+<tr><th id="322">322</th><td>      <em>static</em> constexpr size_t size() noexcept { <b>return</b> <b>sizeof</b>...(_Idx); }</td></tr>
+<tr><th id="323">323</th><td>    };</td></tr>
+<tr><th id="324">324</th><td></td></tr>
+<tr><th id="325">325</th><td>  <b>template</b>&lt;<b>typename</b> _Tp, _Tp _Num,</td></tr>
+<tr><th id="326">326</th><td>	   <b>typename</b> _ISeq = <b>typename</b> _Build_index_tuple&lt;_Num&gt;::__type&gt;</td></tr>
+<tr><th id="327">327</th><td>    <b>struct</b> _Make_integer_sequence;</td></tr>
+<tr><th id="328">328</th><td></td></tr>
+<tr><th id="329">329</th><td>  <b>template</b>&lt;<b>typename</b> _Tp, _Tp _Num,  size_t... _Idx&gt;</td></tr>
+<tr><th id="330">330</th><td>    <b>struct</b> _Make_integer_sequence&lt;_Tp, _Num, _Index_tuple&lt;_Idx...&gt;&gt;</td></tr>
+<tr><th id="331">331</th><td>    {</td></tr>
+<tr><th id="332">332</th><td>      static_assert( _Num &gt;= <var>0</var>,</td></tr>
+<tr><th id="333">333</th><td>		     <q>"Cannot make integer sequence of negative length"</q> );</td></tr>
+<tr><th id="334">334</th><td></td></tr>
+<tr><th id="335">335</th><td>      <b>typedef</b> integer_sequence&lt;_Tp, <b>static_cast</b>&lt;_Tp&gt;(_Idx)...&gt; __type;</td></tr>
+<tr><th id="336">336</th><td>    };</td></tr>
+<tr><th id="337">337</th><td></td></tr>
+<tr><th id="338">338</th><td>  <i class="doc">/// Alias template make_integer_sequence</i></td></tr>
+<tr><th id="339">339</th><td>  <b>template</b>&lt;<b>typename</b> _Tp, _Tp _Num&gt;</td></tr>
+<tr><th id="340">340</th><td>    <b>using</b> make_integer_sequence</td></tr>
+<tr><th id="341">341</th><td>      = <b>typename</b> _Make_integer_sequence&lt;_Tp, _Num&gt;::__type;</td></tr>
+<tr><th id="342">342</th><td></td></tr>
+<tr><th id="343">343</th><td>  <i class="doc">/// Alias template index_sequence</i></td></tr>
+<tr><th id="344">344</th><td>  <b>template</b>&lt;size_t... _Idx&gt;</td></tr>
+<tr><th id="345">345</th><td>    <b>using</b> index_sequence = integer_sequence&lt;size_t, _Idx...&gt;;</td></tr>
+<tr><th id="346">346</th><td></td></tr>
+<tr><th id="347">347</th><td>  <i class="doc">/// Alias template make_index_sequence</i></td></tr>
+<tr><th id="348">348</th><td>  <b>template</b>&lt;size_t _Num&gt;</td></tr>
+<tr><th id="349">349</th><td>    <b>using</b> make_index_sequence = make_integer_sequence&lt;size_t, _Num&gt;;</td></tr>
+<tr><th id="350">350</th><td></td></tr>
+<tr><th id="351">351</th><td>  <i class="doc">/// Alias template index_sequence_for</i></td></tr>
+<tr><th id="352">352</th><td>  <b>template</b>&lt;<b>typename</b>... _Types&gt;</td></tr>
+<tr><th id="353">353</th><td>    <b>using</b> index_sequence_for = make_index_sequence&lt;<b>sizeof</b>...(_Types)&gt;;</td></tr>
+<tr><th id="354">354</th><td><u>#endif</u></td></tr>
+<tr><th id="355">355</th><td></td></tr>
+<tr><th id="356">356</th><td><u>#if __cplusplus &gt; 201402L</u></td></tr>
+<tr><th id="357">357</th><td></td></tr>
+<tr><th id="358">358</th><td>  <b>struct</b> in_place_t {</td></tr>
+<tr><th id="359">359</th><td>    <b>explicit</b> in_place_t() = <b>default</b>;</td></tr>
+<tr><th id="360">360</th><td>  };</td></tr>
+<tr><th id="361">361</th><td></td></tr>
+<tr><th id="362">362</th><td>  <b>inline</b> constexpr in_place_t in_place{};</td></tr>
+<tr><th id="363">363</th><td></td></tr>
+<tr><th id="364">364</th><td>  <b>template</b>&lt;<b>typename</b> _Tp&gt; <b>struct</b> in_place_type_t</td></tr>
+<tr><th id="365">365</th><td>  {</td></tr>
+<tr><th id="366">366</th><td>    <b>explicit</b> in_place_type_t() = <b>default</b>;</td></tr>
+<tr><th id="367">367</th><td>  };</td></tr>
+<tr><th id="368">368</th><td></td></tr>
+<tr><th id="369">369</th><td>  <b>template</b>&lt;<b>typename</b> _Tp&gt;</td></tr>
+<tr><th id="370">370</th><td>    <b>inline</b> constexpr in_place_type_t&lt;_Tp&gt; in_place_type{};</td></tr>
+<tr><th id="371">371</th><td></td></tr>
+<tr><th id="372">372</th><td>  <b>template</b>&lt;size_t _Idx&gt; <b>struct</b> in_place_index_t</td></tr>
+<tr><th id="373">373</th><td>  {</td></tr>
+<tr><th id="374">374</th><td>    <b>explicit</b> in_place_index_t() = <b>default</b>;</td></tr>
+<tr><th id="375">375</th><td>  };</td></tr>
+<tr><th id="376">376</th><td></td></tr>
+<tr><th id="377">377</th><td>  <b>template</b>&lt;size_t _Idx&gt;</td></tr>
+<tr><th id="378">378</th><td>    <b>inline</b> constexpr in_place_index_t&lt;_Idx&gt; in_place_index{};</td></tr>
+<tr><th id="379">379</th><td></td></tr>
+<tr><th id="380">380</th><td>  <b>template</b>&lt;<b>typename</b>&gt;</td></tr>
+<tr><th id="381">381</th><td>    <b>struct</b> __is_in_place_type_impl : false_type</td></tr>
+<tr><th id="382">382</th><td>    { };</td></tr>
+<tr><th id="383">383</th><td></td></tr>
+<tr><th id="384">384</th><td>  <b>template</b>&lt;<b>typename</b> _Tp&gt;</td></tr>
+<tr><th id="385">385</th><td>    <b>struct</b> __is_in_place_type_impl&lt;in_place_type_t&lt;_Tp&gt;&gt; : true_type</td></tr>
+<tr><th id="386">386</th><td>    { };</td></tr>
+<tr><th id="387">387</th><td></td></tr>
+<tr><th id="388">388</th><td>  <b>template</b>&lt;<b>typename</b> _Tp&gt;</td></tr>
+<tr><th id="389">389</th><td>    <b>struct</b> __is_in_place_type</td></tr>
+<tr><th id="390">390</th><td>      : <b>public</b> __is_in_place_type_impl&lt;_Tp&gt;</td></tr>
+<tr><th id="391">391</th><td>    { };</td></tr>
+<tr><th id="392">392</th><td></td></tr>
+<tr><th id="393">393</th><td><u>#define  __cpp_lib_as_const 201510</u></td></tr>
+<tr><th id="394">394</th><td>  <b>template</b>&lt;<b>typename</b> _Tp&gt;</td></tr>
+<tr><th id="395">395</th><td>    constexpr add_const_t&lt;_Tp&gt;&amp; as_const(_Tp&amp; __t) noexcept { <b>return</b> __t; }</td></tr>
+<tr><th id="396">396</th><td></td></tr>
+<tr><th id="397">397</th><td>  <b>template</b>&lt;<b>typename</b> _Tp&gt;</td></tr>
+<tr><th id="398">398</th><td>    <em>void</em> as_const(<em>const</em> _Tp&amp;&amp;) = <b>delete</b>;</td></tr>
+<tr><th id="399">399</th><td></td></tr>
+<tr><th id="400">400</th><td><u>#endif // C++17</u></td></tr>
+<tr><th id="401">401</th><td></td></tr>
+<tr><th id="402">402</th><td>_GLIBCXX_END_NAMESPACE_VERSION</td></tr>
+<tr><th id="403">403</th><td>} <i>// namespace</i></td></tr>
+<tr><th id="404">404</th><td></td></tr>
+<tr><th id="405">405</th><td><u>#<span data-ppcond="72">endif</span></u></td></tr>
+<tr><th id="406">406</th><td></td></tr>
+<tr><th id="407">407</th><td><u>#<span data-ppcond="55">endif</span> /* _GLIBCXX_UTILITY */</u></td></tr>
+<tr><th id="408">408</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../codebrowser/nest/Utils.cpp.html'>codebrowser/nest/Utils.cpp</a><br/>Generated on <em>2019-Apr-10</em> from project include<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

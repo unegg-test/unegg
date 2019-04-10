@@ -1,0 +1,12 @@
+<use f='codebrowser/nest/format/egg/FileWrap.h' l='42' u='a' c='_ZN4nest3egg8FileWrap9GetExtrasEv'/>
+<use f='codebrowser/nest/format/egg/FileWrap.h' l='47' u='m' c='_ZN4nest3egg8FileWrap8GetExtraEi'/>
+<dec f='codebrowser/nest/format/egg/FileWrap.h' l='74' type='nest::egg::ExtraFieldWrap'/>
+<offset>320</offset>
+<use f='codebrowser/nest/format/egg/FileWrap.cpp' l='36' u='m' c='_ZN4nest3egg8FileWrap9OnCleanUpEv'/>
+<use f='codebrowser/nest/format/egg/FileWrap.cpp' l='54' u='m' c='_ZN4nest3egg8FileWrap6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/egg/FileWrap.cpp' l='106' u='m' c='_ZN4nest3egg8FileWrap9_As4BytesEjPb'/>
+<use f='codebrowser/nest/format/egg/FileWrap.cpp' l='138' u='m' c='_ZN4nest3egg8FileWrap9_As8BytesEjPb'/>
+<use f='codebrowser/nest/format/egg/FileWrap.cpp' l='157' u='m' c='_ZN4nest3egg8FileWrap7_AsSizeEjPb'/>
+<use f='codebrowser/nest/format/egg/FileWrap.cpp' l='179' u='m' c='_ZN4nest3egg8FileWrap6_AsPtrEjPb'/>
+<use f='codebrowser/nest/format/egg/FileWrap.cpp' l='196' u='m' c='_ZN4nest3egg8FileWrap7_AsInfoEjPb'/>
+<use f='codebrowser/nest/format/egg/FileWrap.cpp' l='215' u='m' c='_ZN4nest3egg8FileWrap12_AsChildInfoEjmPb'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/inftrees.h' l='55' type='0'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='379' u='r' c='inflateBack'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='910' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inftrees.c' l='137' u='r' c='inflate_table'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inftrees.c' l='182' c='inflate_table'/>

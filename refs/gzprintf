@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='1259' type='int gzprintf(gzFile file, const char * format)'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='281' ll='347' type='int gzprintf(gzFile file, const char * format)'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='280'>/* -- see zlib.h -- */</doc>

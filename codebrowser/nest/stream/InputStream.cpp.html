@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>InputStream.cpp source code [codebrowser/nest/stream/InputStream.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/stream/InputStream.cpp'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>codebrowser</a>/<a href='..'>nest</a>/<a href='./'>stream</a>/<a href='InputStream.cpp.html'>InputStream.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * InputStream.cpp</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> *  Created on: 2010. 12. 10.</i></td></tr>
+<tr><th id="5">5</th><td><i> *      Author: Jehoon Shin(Revolution)</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> *  Copyright(c) 2010-Present ESTsoft Corp. All rights reserved.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> *  For conditions of distribution and use, see copyright notice in license.txt</i></td></tr>
+<tr><th id="10">10</th><td><i> */</i></td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td><u>#include <a href="InputStream.h.html">"InputStream.h"</a></u></td></tr>
+<tr><th id="13">13</th><td></td></tr>
+<tr><th id="14">14</th><td><b>namespace</b> <span class="namespace">nest</span></td></tr>
+<tr><th id="15">15</th><td>{</td></tr>
+<tr><th id="16">16</th><td></td></tr>
+<tr><th id="17">17</th><td><em>int</em> <a class="type" href="InputStream.h.html#nest::InputStream" title='nest::InputStream' data-ref="nest::InputStream">InputStream</a>::<dfn class="virtual decl def" id="_ZN4nest11InputStream10InitializeEPKc" title='nest::InputStream::Initialize' data-ref="_ZN4nest11InputStream10InitializeEPKc">Initialize</dfn>(<em>const</em> <em>char</em>* <dfn class="local col1 decl" id="1virtualName" title='virtualName' data-type='const char *' data-ref="1virtualName">virtualName</dfn>)</td></tr>
+<tr><th id="18">18</th><td>{</td></tr>
+<tr><th id="19">19</th><td>    <b>this</b>-&gt;<a class="member" href="InputStream.h.html#nest::InputStream::virtualName" title='nest::InputStream::virtualName' data-ref="nest::InputStream::virtualName">virtualName</a> <a class="ref" href="../../../include/c++/7/bits/basic_string.h.html#_ZNSt7__cxx1112basic_stringaSEPKT_" title='std::__cxx11::basic_string::operator=' data-ref="_ZNSt7__cxx1112basic_stringaSEPKT_">=</a> <a class="local col1 ref" href="#1virtualName" title='virtualName' data-ref="1virtualName">virtualName</a>;</td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td>    <b>return</b> <span class="namespace">Result::</span><a class="enum" href="../define.h.html#Result::Success" title='Result::Success' data-ref="Result::Success">Success</a>;</td></tr>
+<tr><th id="22">22</th><td>}</td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><em>void</em> <a class="type" href="InputStream.h.html#nest::InputStream" title='nest::InputStream' data-ref="nest::InputStream">InputStream</a>::<dfn class="virtual decl def" id="_ZN4nest11InputStream8FinalizeEv" title='nest::InputStream::Finalize' data-ref="_ZN4nest11InputStream8FinalizeEv">Finalize</dfn>()</td></tr>
+<tr><th id="25">25</th><td>{</td></tr>
+<tr><th id="26">26</th><td>    <a class="member" href="InputStream.h.html#nest::InputStream::virtualName" title='nest::InputStream::virtualName' data-ref="nest::InputStream::virtualName">virtualName</a>.<a class="ref" href="../../../include/c++/7/bits/basic_string.h.html#_ZNSt7__cxx1112basic_string5clearEv" title='std::__cxx11::basic_string::clear' data-ref="_ZNSt7__cxx1112basic_string5clearEv">clear</a>();</td></tr>
+<tr><th id="27">27</th><td>}</td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><em>const</em> <em>char</em>* <a class="type" href="InputStream.h.html#nest::InputStream" title='nest::InputStream' data-ref="nest::InputStream">InputStream</a>::<dfn class="virtual decl def" id="_ZN4nest11InputStream14GetVirtualNameEv" title='nest::InputStream::GetVirtualName' data-ref="_ZN4nest11InputStream14GetVirtualNameEv">GetVirtualName</dfn>()</td></tr>
+<tr><th id="30">30</th><td>{</td></tr>
+<tr><th id="31">31</th><td>    <b>return</b> <a class="member" href="InputStream.h.html#nest::InputStream::virtualName" title='nest::InputStream::virtualName' data-ref="nest::InputStream::virtualName">virtualName</a>.<a class="ref" href="../../../include/c++/7/bits/basic_string.h.html#_ZNKSt7__cxx1112basic_string5c_strEv" title='std::__cxx11::basic_string::c_str' data-ref="_ZNKSt7__cxx1112basic_string5c_strEv">c_str</a>();</td></tr>
+<tr><th id="32">32</th><td>}</td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td>}</td></tr>
+<tr><th id="35">35</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

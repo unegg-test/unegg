@@ -1,0 +1,2 @@
+<def f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='1654' ll='1676' type='void LzmaEnc_Construct(CLzmaEnc * p)'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='1683' u='c' c='LzmaEnc_Create'/>

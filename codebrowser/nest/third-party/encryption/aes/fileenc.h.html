@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>fileenc.h source code [codebrowser/nest/third-party/encryption/aes/fileenc.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/third-party/encryption/aes/fileenc.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>nest</a>/<a href='../..'>third-party</a>/<a href='..'>encryption</a>/<a href='./'>aes</a>/<a href='fileenc.h.html'>fileenc.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> ---------------------------------------------------------------------------</i></td></tr>
+<tr><th id="3">3</th><td><i> Copyright (c) 2002, Dr Brian Gladman &lt;                 &gt;, Worcester, UK.</i></td></tr>
+<tr><th id="4">4</th><td><i> All rights reserved.</i></td></tr>
+<tr><th id="5">5</th><td><i></i></td></tr>
+<tr><th id="6">6</th><td><i> LICENSE TERMS</i></td></tr>
+<tr><th id="7">7</th><td><i></i></td></tr>
+<tr><th id="8">8</th><td><i> The free distribution and use of this software in both source and binary</i></td></tr>
+<tr><th id="9">9</th><td><i> form is allowed (with or without changes) provided that:</i></td></tr>
+<tr><th id="10">10</th><td><i></i></td></tr>
+<tr><th id="11">11</th><td><i>   1. distributions of this source code include the above copyright</i></td></tr>
+<tr><th id="12">12</th><td><i>      notice, this list of conditions and the following disclaimer;</i></td></tr>
+<tr><th id="13">13</th><td><i></i></td></tr>
+<tr><th id="14">14</th><td><i>   2. distributions in binary form include the above copyright</i></td></tr>
+<tr><th id="15">15</th><td><i>      notice, this list of conditions and the following disclaimer</i></td></tr>
+<tr><th id="16">16</th><td><i>      in the documentation and/or other associated materials;</i></td></tr>
+<tr><th id="17">17</th><td><i></i></td></tr>
+<tr><th id="18">18</th><td><i>   3. the copyright holder's name is not used to endorse products</i></td></tr>
+<tr><th id="19">19</th><td><i>      built using this software without specific written permission.</i></td></tr>
+<tr><th id="20">20</th><td><i></i></td></tr>
+<tr><th id="21">21</th><td><i> ALTERNATIVELY, provided that this notice is retained in full, this product</i></td></tr>
+<tr><th id="22">22</th><td><i> may be distributed under the terms of the GNU General Public License (GPL),</i></td></tr>
+<tr><th id="23">23</th><td><i> in which case the provisions of the GPL apply INSTEAD OF those given above.</i></td></tr>
+<tr><th id="24">24</th><td><i></i></td></tr>
+<tr><th id="25">25</th><td><i> DISCLAIMER</i></td></tr>
+<tr><th id="26">26</th><td><i></i></td></tr>
+<tr><th id="27">27</th><td><i> This software is provided 'as is' with no explicit or implied warranties</i></td></tr>
+<tr><th id="28">28</th><td><i> in respect of its properties, including, but not limited to, correctness</i></td></tr>
+<tr><th id="29">29</th><td><i> and/or fitness for purpose.</i></td></tr>
+<tr><th id="30">30</th><td><i> ---------------------------------------------------------------------------</i></td></tr>
+<tr><th id="31">31</th><td><i> Issue Date: 24/01/2003</i></td></tr>
+<tr><th id="32">32</th><td><i></i></td></tr>
+<tr><th id="33">33</th><td><i> This file contains the header file for fileenc.c, which implements password</i></td></tr>
+<tr><th id="34">34</th><td><i> based file encryption and authentication using AES in CTR mode, HMAC-SHA1 </i></td></tr>
+<tr><th id="35">35</th><td><i> authentication and RFC2898 password based key derivation.</i></td></tr>
+<tr><th id="36">36</th><td><i>*/</i></td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td><u>#<span data-ppcond="38">ifndef</span> <span class="macro" data-ref="_M/_FENC_H">_FENC_H</span></u></td></tr>
+<tr><th id="39">39</th><td><u>#define <dfn class="macro" id="_M/_FENC_H" data-ref="_M/_FENC_H">_FENC_H</dfn></u></td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td><u>#include <a href="aes.h.html">"aes.h"</a></u></td></tr>
+<tr><th id="42">42</th><td><u>#include <a href="hmac.h.html">"hmac.h"</a></u></td></tr>
+<tr><th id="43">43</th><td><u>#include <a href="pwd2key.h.html">"pwd2key.h"</a></u></td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><u>#define <dfn class="macro" id="_M/PASSWORD_VERIFIER" data-ref="_M/PASSWORD_VERIFIER">PASSWORD_VERIFIER</dfn></u></td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td><u>#define <dfn class="macro" id="_M/MAX_KEY_LENGTH" data-ref="_M/MAX_KEY_LENGTH">MAX_KEY_LENGTH</dfn>        32</u></td></tr>
+<tr><th id="48">48</th><td><u>#define <dfn class="macro" id="_M/MAX_PWD_LENGTH" data-ref="_M/MAX_PWD_LENGTH">MAX_PWD_LENGTH</dfn>       128</u></td></tr>
+<tr><th id="49">49</th><td><u>#define <dfn class="macro" id="_M/MAX_SALT_LENGTH" data-ref="_M/MAX_SALT_LENGTH">MAX_SALT_LENGTH</dfn>       16</u></td></tr>
+<tr><th id="50">50</th><td><u>#define <dfn class="macro" id="_M/KEYING_ITERATIONS" data-ref="_M/KEYING_ITERATIONS">KEYING_ITERATIONS</dfn>   1000</u></td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td><u>#<span data-ppcond="52">ifdef</span>  <a class="macro" href="#45" data-ref="_M/PASSWORD_VERIFIER">PASSWORD_VERIFIER</a></u></td></tr>
+<tr><th id="53">53</th><td><u>#define <dfn class="macro" id="_M/PWD_VER_LENGTH" data-ref="_M/PWD_VER_LENGTH">PWD_VER_LENGTH</dfn>         2</u></td></tr>
+<tr><th id="54">54</th><td><u>#<span data-ppcond="52">else</span></u></td></tr>
+<tr><th id="55">55</th><td><u>#define PWD_VER_LENGTH         0</u></td></tr>
+<tr><th id="56">56</th><td><u>#<span data-ppcond="52">endif</span></u></td></tr>
+<tr><th id="57">57</th><td></td></tr>
+<tr><th id="58">58</th><td><u>#define <dfn class="macro" id="_M/GOOD_RETURN" data-ref="_M/GOOD_RETURN">GOOD_RETURN</dfn>            0</u></td></tr>
+<tr><th id="59">59</th><td><u>#define <dfn class="macro" id="_M/PASSWORD_TOO_LONG" data-ref="_M/PASSWORD_TOO_LONG">PASSWORD_TOO_LONG</dfn>   -100</u></td></tr>
+<tr><th id="60">60</th><td><u>#define <dfn class="macro" id="_M/BAD_MODE" data-ref="_M/BAD_MODE">BAD_MODE</dfn>            -101</u></td></tr>
+<tr><th id="61">61</th><td></td></tr>
+<tr><th id="62">62</th><td><i>/*</i></td></tr>
+<tr><th id="63">63</th><td><i>    Field lengths (in bytes) versus File Encryption Mode (0 &lt; mode &lt; 4)</i></td></tr>
+<tr><th id="64">64</th><td><i></i></td></tr>
+<tr><th id="65">65</th><td><i>    Mode Key Salt  MAC Overhead</i></td></tr>
+<tr><th id="66">66</th><td><i>       1  16    8   10       18</i></td></tr>
+<tr><th id="67">67</th><td><i>       2  24   12   10       22</i></td></tr>
+<tr><th id="68">68</th><td><i>       3  32   16   10       26</i></td></tr>
+<tr><th id="69">69</th><td><i></i></td></tr>
+<tr><th id="70">70</th><td><i>   The following macros assume that the mode value is correct.</i></td></tr>
+<tr><th id="71">71</th><td><i>*/</i></td></tr>
+<tr><th id="72">72</th><td></td></tr>
+<tr><th id="73">73</th><td><u>#define <dfn class="macro" id="_M/KEY_LENGTH" data-ref="_M/KEY_LENGTH">KEY_LENGTH</dfn>(mode)        (8 * (mode &amp; 3) + 8)</u></td></tr>
+<tr><th id="74">74</th><td><u>#define <dfn class="macro" id="_M/SALT_LENGTH" data-ref="_M/SALT_LENGTH">SALT_LENGTH</dfn>(mode)       (4 * (mode &amp; 3) + 4)</u></td></tr>
+<tr><th id="75">75</th><td><u>#define <dfn class="macro" id="_M/MAC_LENGTH" data-ref="_M/MAC_LENGTH">MAC_LENGTH</dfn>(mode)        (10)</u></td></tr>
+<tr><th id="76">76</th><td></td></tr>
+<tr><th id="77">77</th><td><i>/* the context for file encryption   */</i></td></tr>
+<tr><th id="78">78</th><td></td></tr>
+<tr><th id="79">79</th><td><u>#<span data-ppcond="79">if</span> defined(<span class="macro" data-ref="_M/__cplusplus">__cplusplus</span>)</u></td></tr>
+<tr><th id="80">80</th><td><b>extern</b> <q>"C"</q></td></tr>
+<tr><th id="81">81</th><td>{</td></tr>
+<tr><th id="82">82</th><td><u>#<span data-ppcond="79">endif</span></u></td></tr>
+<tr><th id="83">83</th><td></td></tr>
+<tr><th id="84">84</th><td><b>typedef</b> <b>struct</b></td></tr>
+<tr><th id="85">85</th><td>{   <em>unsigned</em> <em>char</em>   <dfn class="decl" id="(anonymous)::nonce" title='(anonymous struct)::nonce' data-ref="(anonymous)::nonce">nonce</dfn>[<a class="macro" href="aes.h.html#70" title="16" data-ref="_M/BLOCK_SIZE">BLOCK_SIZE</a>];          <i>/* the CTR nonce          */</i></td></tr>
+<tr><th id="86">86</th><td>    <em>unsigned</em> <em>char</em>   <dfn class="decl" id="(anonymous)::encr_bfr" title='(anonymous struct)::encr_bfr' data-ref="(anonymous)::encr_bfr">encr_bfr</dfn>[<a class="macro" href="aes.h.html#70" title="16" data-ref="_M/BLOCK_SIZE">BLOCK_SIZE</a>];       <i>/* encrypt buffer         */</i></td></tr>
+<tr><th id="87">87</th><td>    <a class="typedef" href="aes.h.html#aes_ctx" title='aes_ctx' data-type='struct aes_ctx' data-ref="aes_ctx">aes_ctx</a>         <dfn class="decl" id="(anonymous)::encr_ctx" title='(anonymous struct)::encr_ctx' data-ref="(anonymous)::encr_ctx">encr_ctx</dfn>[<var>1</var>];                <i>/* encryption context     */</i></td></tr>
+<tr><th id="88">88</th><td>    <a class="typedef" href="hmac.h.html#hmac_ctx" title='hmac_ctx' data-type='struct hmac_ctx' data-ref="hmac_ctx">hmac_ctx</a>        <dfn class="decl" id="(anonymous)::auth_ctx" title='(anonymous struct)::auth_ctx' data-ref="(anonymous)::auth_ctx">auth_ctx</dfn>[<var>1</var>];                <i>/* authentication context */</i></td></tr>
+<tr><th id="89">89</th><td>    <em>unsigned</em> <em>int</em>    <dfn class="decl" id="(anonymous)::encr_pos" title='(anonymous struct)::encr_pos' data-ref="(anonymous)::encr_pos">encr_pos</dfn>;                   <i>/* block position (enc)   */</i></td></tr>
+<tr><th id="90">90</th><td>    <em>unsigned</em> <em>int</em>    <dfn class="decl" id="(anonymous)::pwd_len" title='(anonymous struct)::pwd_len' data-ref="(anonymous)::pwd_len">pwd_len</dfn>;                    <i>/* password length        */</i></td></tr>
+<tr><th id="91">91</th><td>    <em>unsigned</em> <em>int</em>    <dfn class="decl" id="(anonymous)::mode" title='(anonymous struct)::mode' data-ref="(anonymous)::mode">mode</dfn>;                       <i>/* File encryption mode   */</i></td></tr>
+<tr><th id="92">92</th><td>} <dfn class="typedef" id="fcrypt_ctx" title='fcrypt_ctx' data-type='struct fcrypt_ctx' data-ref="fcrypt_ctx">fcrypt_ctx</dfn>;</td></tr>
+<tr><th id="93">93</th><td></td></tr>
+<tr><th id="94">94</th><td><i>/* initialise file encryption or decryption */</i></td></tr>
+<tr><th id="95">95</th><td></td></tr>
+<tr><th id="96">96</th><td><em>int</em> <dfn class="decl" id="fcrypt_init" title='fcrypt_init' data-ref="fcrypt_init">fcrypt_init</dfn>(</td></tr>
+<tr><th id="97">97</th><td>    <em>int</em> <dfn class="local col6 decl" id="46mode" title='mode' data-type='int' data-ref="46mode">mode</dfn>,                               <i>/* the mode to be used (input)          */</i></td></tr>
+<tr><th id="98">98</th><td>    <em>const</em> <em>unsigned</em> <em>char</em> <dfn class="local col7 decl" id="47pwd" title='pwd' data-type='const unsigned char *' data-ref="47pwd">pwd</dfn>[],              <i>/* the user specified password (input)  */</i></td></tr>
+<tr><th id="99">99</th><td>    <em>unsigned</em> <em>int</em> <dfn class="local col8 decl" id="48pwd_len" title='pwd_len' data-type='unsigned int' data-ref="48pwd_len">pwd_len</dfn>,                   <i>/* the length of the password (input)   */</i></td></tr>
+<tr><th id="100">100</th><td>    <em>const</em> <em>unsigned</em> <em>char</em> <dfn class="local col9 decl" id="49salt" title='salt' data-type='const unsigned char *' data-ref="49salt">salt</dfn>[],             <i>/* the salt (input)                     */</i></td></tr>
+<tr><th id="101">101</th><td><u>#<span data-ppcond="101">ifdef</span> <a class="macro" href="#45" data-ref="_M/PASSWORD_VERIFIER">PASSWORD_VERIFIER</a></u></td></tr>
+<tr><th id="102">102</th><td>    <em>unsigned</em> <em>char</em> <dfn class="local col0 decl" id="50pwd_ver" title='pwd_ver' data-type='unsigned char *' data-ref="50pwd_ver">pwd_ver</dfn>[<a class="macro" href="#53" title="2" data-ref="_M/PWD_VER_LENGTH">PWD_VER_LENGTH</a>],  <i>/* 2 byte password verifier (output)    */</i></td></tr>
+<tr><th id="103">103</th><td><u>#<span data-ppcond="101">endif</span></u></td></tr>
+<tr><th id="104">104</th><td>    <a class="typedef" href="#fcrypt_ctx" title='fcrypt_ctx' data-type='struct fcrypt_ctx' data-ref="fcrypt_ctx">fcrypt_ctx</a>      <dfn class="local col1 decl" id="51cx" title='cx' data-type='fcrypt_ctx *' data-ref="51cx">cx</dfn>[<var>1</var>]);                 <i>/* the file encryption context (output) */</i></td></tr>
+<tr><th id="105">105</th><td></td></tr>
+<tr><th id="106">106</th><td><i>/* perform 'in place' encryption or decryption and authentication               */</i></td></tr>
+<tr><th id="107">107</th><td></td></tr>
+<tr><th id="108">108</th><td><em>void</em> <dfn class="decl" id="fcrypt_encrypt" title='fcrypt_encrypt' data-ref="fcrypt_encrypt">fcrypt_encrypt</dfn>(<em>unsigned</em> <em>char</em> <dfn class="local col2 decl" id="52data" title='data' data-type='unsigned char *' data-ref="52data">data</dfn>[], <em>unsigned</em> <em>int</em> <dfn class="local col3 decl" id="53data_len" title='data_len' data-type='unsigned int' data-ref="53data_len">data_len</dfn>, <a class="typedef" href="#fcrypt_ctx" title='fcrypt_ctx' data-type='struct fcrypt_ctx' data-ref="fcrypt_ctx">fcrypt_ctx</a> <dfn class="local col4 decl" id="54cx" title='cx' data-type='fcrypt_ctx *' data-ref="54cx">cx</dfn>[<var>1</var>]);</td></tr>
+<tr><th id="109">109</th><td><em>void</em> <dfn class="decl" id="fcrypt_decrypt" title='fcrypt_decrypt' data-ref="fcrypt_decrypt">fcrypt_decrypt</dfn>(<em>unsigned</em> <em>char</em> <dfn class="local col5 decl" id="55data" title='data' data-type='unsigned char *' data-ref="55data">data</dfn>[], <em>unsigned</em> <em>int</em> <dfn class="local col6 decl" id="56data_len" title='data_len' data-type='unsigned int' data-ref="56data_len">data_len</dfn>, <a class="typedef" href="#fcrypt_ctx" title='fcrypt_ctx' data-type='struct fcrypt_ctx' data-ref="fcrypt_ctx">fcrypt_ctx</a> <dfn class="local col7 decl" id="57cx" title='cx' data-type='fcrypt_ctx *' data-ref="57cx">cx</dfn>[<var>1</var>]);</td></tr>
+<tr><th id="110">110</th><td></td></tr>
+<tr><th id="111">111</th><td><i>/* close encryption/decryption and return the MAC value */</i></td></tr>
+<tr><th id="112">112</th><td><i>/* the return value is the length of the MAC            */</i></td></tr>
+<tr><th id="113">113</th><td></td></tr>
+<tr><th id="114">114</th><td><em>int</em> <dfn class="decl" id="fcrypt_end" title='fcrypt_end' data-ref="fcrypt_end">fcrypt_end</dfn>(<em>unsigned</em> <em>char</em> <dfn class="local col8 decl" id="58mac" title='mac' data-type='unsigned char *' data-ref="58mac">mac</dfn>[],     <i>/* the MAC value (output)   */</i></td></tr>
+<tr><th id="115">115</th><td>               <a class="typedef" href="#fcrypt_ctx" title='fcrypt_ctx' data-type='struct fcrypt_ctx' data-ref="fcrypt_ctx">fcrypt_ctx</a> <dfn class="local col9 decl" id="59cx" title='cx' data-type='fcrypt_ctx *' data-ref="59cx">cx</dfn>[<var>1</var>]);       <i>/* the context (input)      */</i></td></tr>
+<tr><th id="116">116</th><td></td></tr>
+<tr><th id="117">117</th><td><u>#<span data-ppcond="117">if</span> defined(<span class="macro" data-ref="_M/__cplusplus">__cplusplus</span>)</u></td></tr>
+<tr><th id="118">118</th><td>}</td></tr>
+<tr><th id="119">119</th><td><u>#<span data-ppcond="117">endif</span></u></td></tr>
+<tr><th id="120">120</th><td></td></tr>
+<tr><th id="121">121</th><td><u>#<span data-ppcond="38">endif</span></u></td></tr>
+<tr><th id="122">122</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../encryption/AESDecoder.cpp.html'>codebrowser/nest/encryption/AESDecoder.cpp</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

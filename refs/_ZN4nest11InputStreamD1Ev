@@ -1,0 +1,3 @@
+<def f='codebrowser/nest/stream/InputStream.h' l='25' ll='27' type='void nest::InputStream::~InputStream()'/>
+<ovr f='codebrowser/nest/stream/FileInputStream.cpp' l='23' c='_ZN4nest15FileInputStreamD1Ev'/>
+<ovr f='codebrowser/nest/stream/InputStreamLinker.cpp' l='23' c='_ZN4nest17InputStreamLinkerD1Ev'/>

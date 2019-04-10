@@ -1,0 +1,7 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/inflate.h' l='34' type='13'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='297' u='r' c='inflateBack'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='317' c='inflateBack'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/inflate.h' l='34'>/* i: waiting for stored size (length and complement) */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='825' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='848' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1403' u='r' c='inflateSyncPoint'/>

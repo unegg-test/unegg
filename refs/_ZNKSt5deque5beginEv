@@ -1,0 +1,5 @@
+<def f='include/c++/7/bits/stl_deque.h' l='1173' ll='1175' type='const_iterator std::deque::begin() const'/>
+<doc f='include/c++/7/bits/stl_deque.h' l='1169'>/**
+       *  Returns a read-only (constant) iterator that points to the first
+       *  element in the %deque.  Iteration is done in ordinary element order.
+       */</doc>

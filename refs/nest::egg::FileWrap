@@ -1,0 +1,22 @@
+<inh f='codebrowser/nest/format/Header.h' l='27' c='nest::Header'/>
+<def f='codebrowser/nest/format/egg/FileWrap.h' l='29' ll='77'/>
+<size>144</size>
+<fun r='_ZN4nest3egg8FileWrapC1Eb'/>
+<fun r='_ZN4nest3egg8FileWrapD1Ev'/>
+<fun r='_ZN4nest3egg8FileWrap13GetFileHeaderEv'/>
+<fun r='_ZN4nest3egg8FileWrap9GetExtrasEv'/>
+<fun r='_ZN4nest3egg8FileWrap8GetExtraEi'/>
+<fun r='_ZN4nest3egg8FileWrap13GetBlockCountEv'/>
+<fun r='_ZN4nest3egg8FileWrap8GetBlockEm'/>
+<fun r='_ZN4nest3egg8FileWrap9OnCleanUpEv'/>
+<fun r='_ZN4nest3egg8FileWrap6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<fun r='_ZN4nest3egg8FileWrap9_As4BytesEjPb'/>
+<fun r='_ZN4nest3egg8FileWrap9_As8BytesEjPb'/>
+<fun r='_ZN4nest3egg8FileWrap7_AsSizeEjPb'/>
+<fun r='_ZN4nest3egg8FileWrap6_AsPtrEjPb'/>
+<fun r='_ZN4nest3egg8FileWrap7_AsInfoEjPb'/>
+<fun r='_ZN4nest3egg8FileWrap12_AsChildInfoEjmPb'/>
+<mbr r='nest::egg::FileWrap::file_' o='128' t='nest::egg::File'/>
+<mbr r='nest::egg::FileWrap::extras_' o='320' t='nest::egg::ExtraFieldWrap'/>
+<mbr r='nest::egg::FileWrap::blocks_' o='896' t='std::vector&lt;BlockWrap *&gt;'/>
+<mbr r='nest::egg::FileWrap::isSolid_' o='1088' t='bool'/>

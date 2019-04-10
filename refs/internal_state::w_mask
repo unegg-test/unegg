@@ -1,0 +1,10 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='111' type='uInt'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='274' u='w' c='deflateInit2_'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='185' u='r' c='deflateSetDictionary'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1079' u='r' c='longest_match'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='185' u='r' c='deflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='185' u='r' c='deflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='185' u='r' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='185' u='r' c='deflate_slow'/>
+<offset>608</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='111'>/* w_size - 1 */</doc>

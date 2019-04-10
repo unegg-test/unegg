@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/format/ALZFormat.h' l='93' type='uint64'/>
+<offset>128</offset>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='341' u='w' c='_ZN4nest9ALZFormat21PrepareSpannedStreamsEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='349' u='w' c='_ZN4nest9ALZFormat21PrepareSpannedStreamsEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='370' u='r' c='_ZN4nest9ALZFormat21PrepareSpannedStreamsEv'/>

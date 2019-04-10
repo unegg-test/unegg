@@ -1,0 +1,12 @@
+<dec f='codebrowser/nest/format/ALZFormat.h' l='99' type='std::vector&lt;alz::File *&gt;'/>
+<offset>1088</offset>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='159' u='m' c='_ZN4nest9ALZFormat9ScanFilesEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='160' u='m' c='_ZN4nest9ALZFormat9ScanFilesEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='161' u='m' c='_ZN4nest9ALZFormat9ScanFilesEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='241' u='m' c='_ZN4nest9ALZFormat11ScanFootersEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='245' u='m' c='_ZN4nest9ALZFormat11ScanFootersEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='382' u='m' c='_ZN4nest9ALZFormat18QueryExtractStreamEmPPNS_12OutputStreamE'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='398' u='m' c='_ZN4nest9ALZFormat7ExtractEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='511' u='m' c='_ZN4nest9ALZFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='705' u='m' c='_ZN4nest9ALZFormat7_AsSizeEjPb'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='760' u='m' c='_ZN4nest9ALZFormat12_AsChildInfoEjmPb'/>

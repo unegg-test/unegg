@@ -1,0 +1,10 @@
+<dec f='include/x86_64-linux-gnu/c++/7/bits/c++config.h' l='569'/>
+<use f='include/c++/7/stdexcept' l='120' u='c'/>
+<use f='include/c++/7/stdexcept' l='150' u='c'/>
+<use f='include/c++/7/stdexcept' l='161' u='c'/>
+<use f='include/c++/7/stdexcept' l='173' u='c'/>
+<use f='include/c++/7/stdexcept' l='185' u='c'/>
+<use f='include/c++/7/stdexcept' l='204' u='c'/>
+<use f='include/c++/7/stdexcept' l='233' u='c'/>
+<use f='include/c++/7/stdexcept' l='244' u='c'/>
+<use f='include/c++/7/stdexcept' l='255' u='c'/>

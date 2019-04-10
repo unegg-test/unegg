@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/algorithm/azo/Decoder/MainCodeD.h' l='13' type='void AZO::Decoder::MainCode::~MainCode()'/>
+<def f='codebrowser/nest/algorithm/azo/Decoder/MainCodeD.cpp' l='16' ll='23' type='void AZO::Decoder::MainCode::~MainCode()'/>
+<use f='codebrowser/nest/algorithm/azo/unAZO.cpp' l='83' u='c' c='_Z17AZO_DecompressEndPv'/>
+<use f='codebrowser/nest/algorithm/azo/unAZO.cpp' l='114' u='c' c='_Z20AZO_BufferDecompressPcPjPKcj'/>

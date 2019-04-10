@@ -1,0 +1,15 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='263' type='ulg'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='285' u='w' c='deflateInit2_'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1404' u='r' c='fill_window'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1408' u='r' c='fill_window'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1416' u='w' c='fill_window'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1418' u='r' c='fill_window'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1423' u='r' c='fill_window'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1424' u='r' c='fill_window'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1425' u='r' c='fill_window'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1426' u='r' c='fill_window'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1427' u='w' c='fill_window'/>
+<offset>47424</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='259'>/* Number of valid bits in bi_buf.  All bits above the last valid bit
+     * are always zero.
+     */</doc>

@@ -1,0 +1,4 @@
+<def f='codebrowser/nest/format/egg/Block.h' l='48' ll='51' type='unsigned int nest::egg::Block::GetCRC()'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='638' u='c' c='_ZN4nest9EggFormat19ExtractSolidArchiveEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='842' u='c' c='_ZN4nest9EggFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>
+<use f='codebrowser/nest/format/egg/Block.cpp' l='78' u='c' c='_ZN4nest3egg5Block9_As4BytesEjPb'/>

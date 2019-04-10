@@ -1,0 +1,6 @@
+<dec f='codebrowser/nest/algorithm/LZMACoder.h' l='41' type='size_t'/>
+<use f='codebrowser/nest/algorithm/LZMACoder.cpp' l='69' u='w' c='_ZN4nest9LZMACoder6OnPushEPvm'/>
+<use f='codebrowser/nest/algorithm/LZMACoder.cpp' l='80' u='r' c='_ZN4nest9LZMACoder5OnPopEPvPm'/>
+<use f='codebrowser/nest/algorithm/LZMACoder.cpp' l='83' u='r' c='_ZN4nest9LZMACoder5OnPopEPvPm'/>
+<use f='codebrowser/nest/algorithm/LZMACoder.cpp' l='85' u='w' c='_ZN4nest9LZMACoder5OnPopEPvPm'/>
+<offset>1280</offset>

@@ -1,0 +1,2 @@
+<def f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='49' ll='52' type='Byte MatchFinder_GetIndexByte(CMatchFinder * p, Int32 index)'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='734' u='r' c='MatchFinder_CreateVTable'/>

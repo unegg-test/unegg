@@ -1,0 +1,59 @@
+<inh f='codebrowser/nest/format/Format.h' l='23' c='nest::Format'/>
+<inh f='codebrowser/nest/Events.h' l='24' c='nest::Events'/>
+<inh f='codebrowser/nest/Info.h' l='20' c='nest::Info'/>
+<def f='codebrowser/nest/format/EggFormat.h' l='33' ll='123'/>
+<size>384</size>
+<fun r='_ZN4nest9EggFormatC1Ev'/>
+<fun r='_ZN4nest9EggFormatC1EPNS_6EventsE'/>
+<fun r='_ZN4nest9EggFormatD1Ev'/>
+<fun r='_ZN4nest9EggFormat4OpenEPNS_11InputStreamE'/>
+<fun r='_ZN4nest9EggFormat5CloseEv'/>
+<fun r='_ZN4nest9EggFormat11CheckHeaderEPNS_11InputStreamE'/>
+<fun r='_ZN4nest9EggFormat4ScanEv'/>
+<fun r='_ZN4nest9EggFormat7ExtractEv'/>
+<fun r='_ZN4nest9EggFormat14GetInputStreamEv'/>
+<fun r='_ZN4nest9EggFormat7GetInfoEv'/>
+<fun r='_ZN4nest9EggFormat9_As4BytesEjPb'/>
+<fun r='_ZN4nest9EggFormat9_As8BytesEjPb'/>
+<fun r='_ZN4nest9EggFormat7_AsSizeEjPb'/>
+<fun r='_ZN4nest9EggFormat6_AsPtrEjPb'/>
+<fun r='_ZN4nest9EggFormat12_AsChildInfoEjmPb'/>
+<fun r='_ZN4nest9EggFormat10InitializeEPNS_9WorkspaceE'/>
+<fun r='_ZN4nest9EggFormat8FinalizeEi'/>
+<fun r='_ZN4nest9EggFormat11OnWorkStartEi'/>
+<fun r='_ZN4nest9EggFormat12OnWorkFinishEii'/>
+<fun r='_ZN4nest9EggFormat11OnFileStartEm'/>
+<fun r='_ZN4nest9EggFormat12OnFileFinishEmi'/>
+<fun r='_ZN4nest9EggFormat7OnErrorEmi'/>
+<fun r='_ZN4nest9EggFormat18OnQueryInputStreamEmPPNS_11InputStreamEPKcm'/>
+<fun r='_ZN4nest9EggFormat19OnQueryOutputStreamEmPPNS_12OutputStreamEPKc'/>
+<fun r='_ZN4nest9EggFormat15OnQueryPasswordEmPcmm'/>
+<fun r='_ZN4nest9EggFormat10OnProgressEmii'/>
+<fun r='_ZN4nest9EggFormat19CheckHeaderInternalEPNS_11InputStreamEPNS_3egg6GlobalE'/>
+<fun r='_ZN4nest9EggFormat11ScanHeadersEPNS_11InputStreamEPNS_3egg14ExtraFieldWrapE'/>
+<fun r='_ZN4nest9EggFormat9ScanFilesEv'/>
+<fun r='_ZN4nest9EggFormat11ScanFootersEv'/>
+<fun r='_ZN4nest9EggFormat21PrepareSpannedStreamsEv'/>
+<fun r='_ZN4nest9EggFormat15ReadSolidBlocksEv'/>
+<fun r='_ZN4nest9EggFormat18CalculateDummySizeEPNS_11InputStreamE'/>
+<fun r='_ZN4nest9EggFormat18GenerateVolumeNameEmPcm'/>
+<fun r='_ZN4nest9EggFormat18QueryExtractStreamEmPPNS_12OutputStreamE'/>
+<fun r='_ZN4nest9EggFormat17PrepareSolidBlockEPNS_3egg9BlockWrapEPNS0_16BlockExtractInfoE'/>
+<fun r='_ZN4nest9EggFormat11IsTargetDirEPNS_3egg8FileWrapE'/>
+<fun r='_ZN4nest9EggFormat13GenerateCoderEiPPNS_5CoderEPm'/>
+<fun r='_ZN4nest9EggFormat20ExtractNormalArchiveEv'/>
+<fun r='_ZN4nest9EggFormat19ExtractSolidArchiveEv'/>
+<fun r='_ZN4nest9EggFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>
+<fun r='_ZN4nest9EggFormat17PreprocessDecryptEmPNS_3egg12EncryptFieldE'/>
+<fun r='_ZN4nest9EggFormat18PostprocessDecryptEmPNS_3egg12EncryptFieldE'/>
+<mbr r='nest::EggFormat::opened_' o='256' t='bool'/>
+<mbr r='nest::EggFormat::password_' o='320' t='std::string'/>
+<mbr r='nest::EggFormat::headerExtras_' o='576' t='egg::ExtraFieldWrap'/>
+<mbr r='nest::EggFormat::footerExtras_' o='1152' t='egg::ExtraFieldWrap'/>
+<mbr r='nest::EggFormat::globalHeader_' o='1728' t='egg::Global'/>
+<mbr r='nest::EggFormat::files_' o='1920' t='std::vector&lt;egg::FileWrap *&gt;'/>
+<mbr r='nest::EggFormat::solidBlocks_' o='2112' t='std::vector&lt;egg::BlockWrap *&gt;'/>
+<mbr r='nest::EggFormat::isSpanned_' o='2304' t='bool'/>
+<mbr r='nest::EggFormat::isSolid_' o='2312' t='bool'/>
+<mbr r='nest::EggFormat::decoder_' o='2368' t='nest::Decoder *'/>
+<mbr r='nest::EggFormat::istream_' o='2432' t='nest::InputStreamLinker'/>

@@ -1,0 +1,16 @@
+<dec f='codebrowser/nest/third-party/encryption/aes/fileenc.h' l='73'/>
+<doc f='codebrowser/nest/third-party/encryption/aes/fileenc.h' l='62'>/*
+    Field lengths (in bytes) versus File Encryption Mode (0 &lt; mode &lt; 4)
+
+    Mode Key Salt  MAC Overhead
+       1  16    8   10       18
+       2  24   12   10       22
+       3  32   16   10       26
+
+   The following macros assume that the mode value is correct.
+*/</doc>
+<use f='codebrowser/nest/third-party/encryption/aes/fileenc.c' l='95' u='c'/>
+<use f='codebrowser/nest/third-party/encryption/aes/fileenc.c' l='104' u='c'/>
+<use f='codebrowser/nest/third-party/encryption/aes/fileenc.c' l='108' u='c'/>
+<use f='codebrowser/nest/third-party/encryption/aes/fileenc.c' l='108' u='c'/>
+<use f='codebrowser/nest/third-party/encryption/aes/fileenc.c' l='111' u='c'/>

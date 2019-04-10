@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/format/Format.h' l='50' type='void nest::Format::Close()'/>
+<use f='codebrowser/nest/Workspace.cpp' l='107' u='c' c='_ZN4nest9Workspace5CloseEv'/>
+<ovr f='codebrowser/nest/format/ALZFormat.cpp' l='71' c='_ZN4nest9ALZFormat5CloseEv'/>
+<ovr f='codebrowser/nest/format/EggFormat.cpp' l='79' c='_ZN4nest9EggFormat5CloseEv'/>

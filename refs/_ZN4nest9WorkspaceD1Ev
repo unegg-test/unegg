@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/Workspace.h' l='32' type='void nest::Workspace::~Workspace()'/>
+<inh f='codebrowser/nest/Events.h' l='27' c='_ZN4nest6EventsD1Ev'/>
+<def f='codebrowser/nest/Workspace.cpp' l='39' ll='42' type='void nest::Workspace::~Workspace()'/>

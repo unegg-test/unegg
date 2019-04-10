@@ -1,0 +1,20 @@
+<def f='codebrowser/nest/algorithm/azo/Base/EntropyBitProbB.h' l='10' ll='35'/>
+<fun r='_ZN3AZO4Base14EntropyBitProbC1Ev'/>
+<fun r='_ZN3AZO4Base14EntropyBitProbD1Ev'/>
+<fun r='_ZN3AZO4Base14EntropyBitProb4InitEv'/>
+<fun r='_ZN3AZO4Base14EntropyBitProb6UpdateEj'/>
+<fun r='_ZN3AZO4Base14EntropyBitProb7GetProbEj'/>
+<fun r='_ZN3AZO4Base14EntropyBitProb9IncreProbEjj'/>
+<smbr r='AZO::Base::EntropyBitProb::BIT_N' t='const u_int'/>
+<smbr r='AZO::Base::EntropyBitProb::ARRAY_N' t='const u_int'/>
+<smbr r='AZO::Base::EntropyBitProb::TOTAL_BIT' t='const u_int'/>
+<smbr r='AZO::Base::EntropyBitProb::TOTAL_COUNT' t='const uint32_t'/>
+<mbr r='AZO::Base::EntropyBitProb::prob_' t='uint32_t [ARRAY_N]'/>
+<fun r='_ZN3AZO4Base14EntropyBitProb7CompareENS0_14EntropyBitProbIXT_EEES4_j'/>
+<fun r='_ZN3AZO4Base14EntropyBitProbC1Ev'/>
+<fun r='_ZN3AZO4Base14EntropyBitProbD1Ev'/>
+<fun r='_ZN3AZO4Base14EntropyBitProb4InitEv'/>
+<fun r='_ZN3AZO4Base14EntropyBitProb7GetProbEj'/>
+<fun r='_ZN3AZO4Base14EntropyBitProb9IncreProbEjj'/>
+<fun r='_ZN3AZO4Base14EntropyBitProb6UpdateEj'/>
+<fun r='_ZN3AZO4Base14EntropyBitProb7CompareENS0_14EntropyBitProbIXT_EEES4_j'/>

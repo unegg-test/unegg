@@ -1,0 +1,33 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='119' type='void gz_error(gz_statep , int , const char * )'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='118'>/* shared functions */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='81' u='c' c='gz_reset'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='315' u='c' c='gzseek64'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='476' u='c' c='gzclearerr'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='485' ll='518' type='void gz_error(gz_statep state, int err, const char * msg)'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='479'>/* Create an error message in allocated memory and set state-&gt;err and
+   state-&gt;msg accordingly.  Free any previous error message already there.  Do
+   not try to free or allocate space if the error is Z_MEM_ERROR (out of
+   memory).  Simply save the error message as a static string.  If there is an
+   allocation failure constructing the error message, then convert the error to
+   out of memory. */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='37' u='c' c='gz_load'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='121' u='c' c='gz_head'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='136' u='c' c='gz_head'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='163' u='c' c='gz_head'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='168' u='c' c='gz_head'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='249' u='c' c='gz_decomp'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='256' u='c' c='gz_decomp'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='261' u='c' c='gz_decomp'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='265' u='c' c='gz_decomp'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='279' u='c' c='gz_decomp'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='283' u='c' c='gz_decomp'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='287' u='c' c='gz_decomp'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='385' u='c' c='gzread'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='520' u='c' c='gzungetc'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='649' u='c' c='gzclose_r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='29' u='c' c='gz_init'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='41' u='c' c='gz_init'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='81' u='c' c='gz_comp'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='95' u='c' c='gz_comp'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='166' u='c' c='gzwrite'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='526' u='c' c='gzclose_w'/>

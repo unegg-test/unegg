@@ -1,0 +1,16 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='196' type='Byte [16384]'/>
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.h' l='54' type='const Byte *'/>
+<offset>256</offset>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='78' c='LookToRead_Look_Lookahead'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='83' u='r' c='LookToRead_Look_Lookahead'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='97' c='LookToRead_Look_Exact'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='102' u='r' c='LookToRead_Look_Exact'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='121' u='r' c='LookToRead_Read'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='147' u='r' c='LzmaDec_DecodeReal'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='407' u='w' c='LzmaDec_DecodeReal'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='463' u='r' c='LzmaDec_DecodeReal2'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='781' u='w' c='LzmaDec_DecodeToDic'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='784' u='r' c='LzmaDec_DecodeToDic'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='810' u='w' c='LzmaDec_DecodeToDic'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='811' u='r' c='LzmaDec_DecodeToDic'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='813' u='r' c='LzmaDec_DecodeToDic'/>

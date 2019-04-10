@@ -1,0 +1,12 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='204' type='int'/>
+<offset>42272</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='204'>/* number of elements in the heap */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='466' u='r' c='pqdownheap'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='468' u='r' c='pqdownheap'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='638' u='w' c='build_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='642' u='w' c='build_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='654' u='r' c='build_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='655' u='w' c='build_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='666' u='r' c='build_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='441' u='w' c='build_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='694' u='r' c='build_tree'/>

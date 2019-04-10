@@ -1,0 +1,35 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='95' type='z_streamp'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='268' u='w' c='deflateInit2_'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='602' u='w' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='954' u='w' c='deflateCopy'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1365' u='r' c='fill_window'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1380' u='r' c='fill_window'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1395' u='r' c='fill_window'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1443' u='r' c='deflate_stored'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1450' u='r' c='deflate_stored'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1443' u='r' c='deflate_stored'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1450' u='r' c='deflate_stored'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1443' u='r' c='deflate_stored'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1450' u='r' c='deflate_stored'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1443' u='r' c='deflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1450' u='r' c='deflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1443' u='r' c='deflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1450' u='r' c='deflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1443' u='r' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1450' u='r' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1443' u='r' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1715' u='r' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1443' u='r' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1450' u='r' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1443' u='r' c='deflate_rle'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1450' u='r' c='deflate_rle'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1443' u='r' c='deflate_rle'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1450' u='r' c='deflate_rle'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1443' u='r' c='deflate_huff'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1450' u='r' c='deflate_huff'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1443' u='r' c='deflate_huff'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1450' u='r' c='deflate_huff'/>
+<offset>0</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='95'>/* pointer back to this zlib stream */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='938' u='r' c='_tr_flush_block'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='939' u='r' c='_tr_flush_block'/>

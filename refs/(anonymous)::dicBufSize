@@ -1,0 +1,12 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.h' l='57' type='SizeT'/>
+<offset>448</offset>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='140' u='r' c='LzmaDec_DecodeReal'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='428' u='r' c='LzmaDec_WriteRem'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='503' u='r' c='LzmaDec_TryDummy'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='515' u='r' c='LzmaDec_TryDummy'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='836' u='r' c='LzmaDec_DecodeToBuf'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='839' u='r' c='LzmaDec_DecodeToBuf'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='841' u='r' c='LzmaDec_DecodeToBuf'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='940' u='r' c='LzmaDec_Allocate'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='950' u='w' c='LzmaDec_Allocate'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='971' u='w' c='LzmaDecode'/>

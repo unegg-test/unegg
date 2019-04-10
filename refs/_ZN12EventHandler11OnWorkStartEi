@@ -1,0 +1,3 @@
+<dec f='codebrowser/EventHandler.h' l='43' type='int EventHandler::OnWorkStart(int workCode)'/>
+<inh f='codebrowser/nest/Events.h' l='31' c='_ZN4nest6Events11OnWorkStartEi'/>
+<def f='codebrowser/EventHandler.cpp' l='68' ll='90' type='int EventHandler::OnWorkStart(int workCode)'/>

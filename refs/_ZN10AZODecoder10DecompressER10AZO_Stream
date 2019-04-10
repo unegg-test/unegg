@@ -1,0 +1,3 @@
+<use f='codebrowser/nest/algorithm/azo/AZOWrapper.h' l='40' u='c' c='_ZN10AZODecoder10DecompressERPKcRjRPcS3_'/>
+<def f='codebrowser/nest/algorithm/azo/AZOWrapper.h' l='50' ll='53' type='int AZODecoder::Decompress(AZO_Stream &amp; stream)'/>
+<use f='codebrowser/nest/algorithm/AZOCoder.cpp' l='59' u='c' c='_ZN4nest8AZOCoder5OnPopEPvPm'/>

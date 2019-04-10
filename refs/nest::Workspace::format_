@@ -1,0 +1,21 @@
+<dec f='codebrowser/nest/Workspace.h' l='76' type='nest::Format *'/>
+<offset>768</offset>
+<use f='codebrowser/nest/Workspace.cpp' l='29' u='w' c='_ZN4nest9WorkspaceC1Ev'/>
+<use f='codebrowser/nest/Workspace.cpp' l='35' u='w' c='_ZN4nest9WorkspaceC1EPNS_6EventsE'/>
+<use f='codebrowser/nest/Workspace.cpp' l='79' u='w' c='_ZN4nest9Workspace4OpenEPKc'/>
+<use f='codebrowser/nest/Workspace.cpp' l='80' u='r' c='_ZN4nest9Workspace4OpenEPKc'/>
+<use f='codebrowser/nest/Workspace.cpp' l='82' u='r' c='_ZN4nest9Workspace4OpenEPKc'/>
+<use f='codebrowser/nest/Workspace.cpp' l='86' u='r' c='_ZN4nest9Workspace4OpenEPKc'/>
+<use f='codebrowser/nest/Workspace.cpp' l='105' u='r' c='_ZN4nest9Workspace5CloseEv'/>
+<use f='codebrowser/nest/Workspace.cpp' l='107' u='r' c='_ZN4nest9Workspace5CloseEv'/>
+<use f='codebrowser/nest/Workspace.cpp' l='108' u='r' c='_ZN4nest9Workspace5CloseEv'/>
+<use f='codebrowser/nest/Workspace.cpp' l='109' u='w' c='_ZN4nest9Workspace5CloseEv'/>
+<use f='codebrowser/nest/Workspace.cpp' l='126' u='r' c='_ZN4nest9Workspace7ExtractEPKc'/>
+<use f='codebrowser/nest/Workspace.cpp' l='134' u='r' c='_ZN4nest9Workspace7ExtractEPKc'/>
+<use f='codebrowser/nest/Workspace.cpp' l='147' u='r' c='_ZN4nest9Workspace8IsOpenedEv'/>
+<use f='codebrowser/nest/Workspace.cpp' l='152' u='r' c='_ZN4nest9Workspace12GetStreamPosEv'/>
+<use f='codebrowser/nest/Workspace.cpp' l='152' u='r' c='_ZN4nest9Workspace12GetStreamPosEv'/>
+<use f='codebrowser/nest/Workspace.cpp' l='157' u='r' c='_ZN4nest9Workspace13GetStreamSizeEv'/>
+<use f='codebrowser/nest/Workspace.cpp' l='157' u='r' c='_ZN4nest9Workspace13GetStreamSizeEv'/>
+<use f='codebrowser/nest/Workspace.cpp' l='162' u='r' c='_ZN4nest9Workspace7GetInfoEv'/>
+<use f='codebrowser/nest/Workspace.cpp' l='162' u='r' c='_ZN4nest9Workspace7GetInfoEv'/>

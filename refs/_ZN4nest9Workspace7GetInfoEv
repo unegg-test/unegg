@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/Workspace.h' l='47' type='nest::Info * nest::Workspace::GetInfo()'/>
+<use f='codebrowser/EventHandler.cpp' l='48' u='c' c='_ZN12EventHandler10InitializeEPN4nest9WorkspaceE'/>
+<use f='codebrowser/UnEgg.cpp' l='107' u='c' c='_Z18PrintListOfArchivePKc'/>
+<use f='codebrowser/UnEgg.cpp' l='306' u='c' c='_Z14ExtractArchiveR11CommandLine'/>
+<def f='codebrowser/nest/Workspace.cpp' l='160' ll='163' type='nest::Info * nest::Workspace::GetInfo()'/>

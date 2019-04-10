@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='158' type='0'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='206' c='File_Seek'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='37' c='LookInStream_SeekTo'/>

@@ -1,0 +1,6 @@
+<dec f='include/c++/7/bits/stl_tree.h' l='890' type='void std::_Rb_tree::_M_erase(_Link_type __x)'/>
+<use f='include/c++/7/bits/stl_tree.h' l='949' u='c' c='_ZNSt8_Rb_treeD1Ev'/>
+<use f='include/c++/7/bits/stl_tree.h' l='1171' u='c' c='_ZNSt8_Rb_tree5clearEv'/>
+<use f='include/c++/7/bits/stl_tree.h' l='1841' u='c' c='_ZNSt8_Rb_tree7_M_copyEPKSt13_Rb_tree_nodeIT0_EPSt18_Rb_tree_node_baseRT_'/>
+<def f='include/c++/7/bits/stl_tree.h' l='1847' ll='1861' type='void std::_Rb_tree::_M_erase(_Link_type __x)'/>
+<use f='include/c++/7/bits/stl_tree.h' l='1856' u='c' c='_ZNSt8_Rb_tree8_M_eraseEPSt13_Rb_tree_nodeIT0_E'/>

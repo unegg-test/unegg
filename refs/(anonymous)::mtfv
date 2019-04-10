@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='218' type='UInt16 *'/>
+<offset>576</offset>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='199' u='w' c='BZ2_bzCompressInit'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='152' u='r' c='generateMTFValues'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='259' u='r' c='sendMTFValues'/>

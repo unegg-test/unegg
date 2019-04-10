@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='45'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='192' u='c'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='43'>/* number of codes used to transfer the bit lengths */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='518' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='638' u='c'/>

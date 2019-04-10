@@ -1,0 +1,3 @@
+_ZN4nest12OutputStreamD1Ev|nest::OutputStream::~OutputStream
+_ZN3AZO4Base8MainCode16OutBufferUseSizeEv|AZO::Base::MainCode::OutBufferUseSize
+OutFile_Open|OutFile_Open

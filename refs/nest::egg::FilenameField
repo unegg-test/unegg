@@ -1,0 +1,9 @@
+<inh f='codebrowser/nest/format/egg/ExtraField.h' l='22' c='nest::egg::ExtraField'/>
+<def f='codebrowser/nest/format/egg/FilenameField.h' l='22' ll='54'/>
+<size>32</size>
+<fun r='_ZN4nest3egg13FilenameField11IsEncryptedEv'/>
+<fun r='_ZN4nest3egg13FilenameField6IsUTF8Ev'/>
+<fun r='_ZN4nest3egg13FilenameField10IsAbsoluteEv'/>
+<fun r='_ZN4nest3egg13FilenameField9GetLocaleEv'/>
+<fun r='_ZN4nest3egg13FilenameField15GetParentPathIDEv'/>
+<fun r='_ZN4nest3egg13FilenameField11GetFileNameEv'/>

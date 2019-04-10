@@ -1,0 +1,2 @@
+<def f='codebrowser/nest/format/egg/Block.h' l='33' ll='36' type='unsigned char nest::egg::Block::GetMethodHint()'/>
+<use f='codebrowser/nest/format/egg/Block.cpp' l='76' u='c' c='_ZN4nest3egg5Block9_As4BytesEjPb'/>

@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/stream/OutputStream.h' l='27' type='int nest::OutputStream::Create(const char * virtualName)'/>
+<use f='codebrowser/nest/Workspace.cpp' l='318' u='c' c='_ZN4nest9Workspace19OnQueryOutputStreamEmPPNS_12OutputStreamEPKc'/>
+<ovr f='codebrowser/nest/stream/FileOutputStream.cpp' l='34' c='_ZN4nest16FileOutputStream6CreateEPKc'/>

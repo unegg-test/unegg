@@ -1,0 +1,6 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzFind.h' l='34' type='ISeqInStream *'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='87' u='r' c='MatchFinder_ReadBlock'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='87' u='r' c='MatchFinder_ReadBlock'/>
+<offset>576</offset>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='2014' u='w' c='LzmaEnc_Prepare'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='2023' u='w' c='LzmaEnc_PrepareForLzma2'/>

@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/format/Format.h' l='51' type='int nest::Format::CheckHeader(nest::InputStream * stream)'/>
+<ovr f='codebrowser/nest/format/ALZFormat.cpp' l='79' c='_ZN4nest9ALZFormat11CheckHeaderEPNS_11InputStreamE'/>
+<ovr f='codebrowser/nest/format/EggFormat.cpp' l='85' c='_ZN4nest9EggFormat11CheckHeaderEPNS_11InputStreamE'/>

@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/algorithm/azo/AZO.h' l='48' type='void AZO_Allocator(AZO_ALLOC_FUNCTON allocFunc, AZO_FREE_FUNCTON freeFunc, void * opaque)'/>
+<def f='codebrowser/nest/algorithm/azo/unAZO.cpp' l='26' ll='31' type='void AZO_Allocator(AZO_ALLOC_FUNCTON allocFunc, AZO_FREE_FUNCTON freeFunc, void * opaque)'/>

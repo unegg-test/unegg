@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/stream/InputStreamLinker.h' l='34' type='uint64 nest::InputStreamLinker::Tell()'/>
+<inh f='codebrowser/nest/stream/InputStream.h' l='34' c='_ZN4nest11InputStream4TellEv'/>
+<def f='codebrowser/nest/stream/InputStreamLinker.cpp' l='74' ll='79' type='uint64 nest::InputStreamLinker::Tell()'/>

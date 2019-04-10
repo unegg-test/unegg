@@ -1,0 +1,5 @@
+<dec f='include/stdio.h' l='272' type='FILE * fopen(const char *__restrict __filename, const char *__restrict __modes)'/>
+<use f='codebrowser/nest/stream/FileInputStream.cpp' l='34' u='c' c='_ZN4nest15FileInputStream4OpenEv'/>
+<use f='codebrowser/nest/stream/FileOutputStream.cpp' l='42' u='c' c='_ZN4nest16FileOutputStream6CreateEPKc'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1425' u='c' c='bzopen_or_bzdopen'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='48' u='c' c='File_Open'/>

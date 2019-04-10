@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/Utils.h' l='59' type='int nest::mkdir_r(const char * dir, mode_t mode)'/>
+<def f='codebrowser/nest/Utils.cpp' l='449' ll='473' type='int nest::mkdir_r(const char * dir, mode_t mode)'/>
+<use f='codebrowser/nest/stream/FileOutputStream.cpp' l='56' u='c' c='_ZN4nest16FileOutputStream12CreateFolderEPKc'/>
+<use f='codebrowser/nest/stream/FileOutputStream.cpp' l='100' u='c' c='_ZN4nest16FileOutputStream14ForceDirectoryEPKc'/>

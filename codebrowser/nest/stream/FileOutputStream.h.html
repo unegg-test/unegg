@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>FileOutputStream.h source code [codebrowser/nest/stream/FileOutputStream.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="nest::FileOutputStream "/>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/stream/FileOutputStream.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>codebrowser</a>/<a href='..'>nest</a>/<a href='./'>stream</a>/<a href='FileOutputStream.h.html'>FileOutputStream.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * FileOutputStream.h</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> *  Created on: 2011. 3. 25.</i></td></tr>
+<tr><th id="5">5</th><td><i> *      Author: Jehoon Shin(Revolution)</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> *  Copyright(c) 2010-Present ESTsoft Corp. All rights reserved.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> *  For conditions of distribution and use, see copyright notice in license.txt</i></td></tr>
+<tr><th id="10">10</th><td><i> */</i></td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td><u>#<span data-ppcond="12">ifndef</span> <span class="macro" data-ref="_M/NEST_STREAM_FILEOUTPUTSTREAM_H_">NEST_STREAM_FILEOUTPUTSTREAM_H_</span></u></td></tr>
+<tr><th id="13">13</th><td><u>#define <dfn class="macro" id="_M/NEST_STREAM_FILEOUTPUTSTREAM_H_" data-ref="_M/NEST_STREAM_FILEOUTPUTSTREAM_H_">NEST_STREAM_FILEOUTPUTSTREAM_H_</dfn></u></td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><u>#include <a href="../../../include/c++/7/string.html">&lt;string&gt;</a></u></td></tr>
+<tr><th id="16">16</th><td><u>#include <a href="OutputStream.h.html">&lt;nest/stream/OutputStream.h&gt;</a></u></td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td><b>namespace</b> <span class="namespace">nest</span></td></tr>
+<tr><th id="19">19</th><td>{</td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td><b>class</b> <dfn class="type def" id="nest::FileOutputStream" title='nest::FileOutputStream' data-ref="nest::FileOutputStream">FileOutputStream</dfn>: <b>public</b> <a class="type" href="OutputStream.h.html#nest::OutputStream" title='nest::OutputStream' data-ref="nest::OutputStream">OutputStream</a></td></tr>
+<tr><th id="22">22</th><td>{</td></tr>
+<tr><th id="23">23</th><td><b>public</b>:</td></tr>
+<tr><th id="24">24</th><td>    <dfn class="decl" id="_ZN4nest16FileOutputStreamC1Ev" title='nest::FileOutputStream::FileOutputStream' data-ref="_ZN4nest16FileOutputStreamC1Ev">FileOutputStream</dfn>();</td></tr>
+<tr><th id="25">25</th><td>    <b>virtual</b> <dfn class="virtual decl" id="_ZN4nest16FileOutputStreamD1Ev" title='nest::FileOutputStream::~FileOutputStream' data-ref="_ZN4nest16FileOutputStreamD1Ev">~FileOutputStream</dfn>();</td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td>    <b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN4nest16FileOutputStream6CreateEPKc" title='nest::FileOutputStream::Create' data-ref="_ZN4nest16FileOutputStream6CreateEPKc">Create</dfn>(<em>const</em> <em>char</em>* <dfn class="local col5 decl" id="5virtualName" title='virtualName' data-type='const char *' data-ref="5virtualName">virtualName</dfn>);</td></tr>
+<tr><th id="28">28</th><td>    <b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN4nest16FileOutputStream12CreateFolderEPKc" title='nest::FileOutputStream::CreateFolder' data-ref="_ZN4nest16FileOutputStream12CreateFolderEPKc">CreateFolder</dfn>(<em>const</em> <em>char</em>* <dfn class="local col6 decl" id="6virtualName" title='virtualName' data-type='const char *' data-ref="6virtualName">virtualName</dfn>);</td></tr>
+<tr><th id="29">29</th><td>    <b>virtual</b> <em>void</em> <dfn class="virtual decl" id="_ZN4nest16FileOutputStream5CloseEv" title='nest::FileOutputStream::Close' data-ref="_ZN4nest16FileOutputStream5CloseEv">Close</dfn>();</td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td>    <em>bool</em> <dfn class="decl def" id="_ZN4nest16FileOutputStream8IsOpenedEv" title='nest::FileOutputStream::IsOpened' data-ref="_ZN4nest16FileOutputStream8IsOpenedEv">IsOpened</dfn>()</td></tr>
+<tr><th id="32">32</th><td>    {</td></tr>
+<tr><th id="33">33</th><td>        <b>return</b> <a class="member" href="#nest::FileOutputStream::file_" title='nest::FileOutputStream::file_' data-ref="nest::FileOutputStream::file_">file_</a> != <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="34">34</th><td>    }</td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td>    <b>virtual</b> <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="virtual decl" id="_ZN4nest16FileOutputStream5WriteEPvm" title='nest::FileOutputStream::Write' data-ref="_ZN4nest16FileOutputStream5WriteEPvm">Write</dfn>(<em>void</em>* <dfn class="local col7 decl" id="7buf" title='buf' data-type='void *' data-ref="7buf">buf</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col8 decl" id="8size" title='size' data-type='size_t' data-ref="8size">size</dfn>);</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td><b>protected</b>:</td></tr>
+<tr><th id="39">39</th><td>    <em>int</em> <dfn class="decl" id="_ZN4nest16FileOutputStream14EnsureFilePathEPKc" title='nest::FileOutputStream::EnsureFilePath' data-ref="_ZN4nest16FileOutputStream14EnsureFilePathEPKc">EnsureFilePath</dfn>(<em>const</em> <em>char</em>* <dfn class="local col9 decl" id="9path" title='path' data-type='const char *' data-ref="9path">path</dfn>);</td></tr>
+<tr><th id="40">40</th><td>    <em>int</em> <dfn class="decl" id="_ZN4nest16FileOutputStream14ForceDirectoryEPKc" title='nest::FileOutputStream::ForceDirectory' data-ref="_ZN4nest16FileOutputStream14ForceDirectoryEPKc">ForceDirectory</dfn>(<em>const</em> <em>char</em>* <dfn class="local col0 decl" id="10path" title='path' data-type='const char *' data-ref="10path">path</dfn>);</td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><b>private</b>:</td></tr>
+<tr><th id="43">43</th><td>    <span class="namespace">std::</span><a class="typedef" href="../../../include/c++/7/bits/stringfwd.h.html#std::__cxx11::string" title='std::__cxx11::string' data-type='basic_string&lt;char&gt;' data-ref="std::__cxx11::string">string</a> <dfn class="decl" id="nest::FileOutputStream::filename_" title='nest::FileOutputStream::filename_' data-ref="nest::FileOutputStream::filename_">filename_</dfn>;</td></tr>
+<tr><th id="44">44</th><td>    <a class="typedef" href="../../../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a>* <dfn class="decl" id="nest::FileOutputStream::file_" title='nest::FileOutputStream::file_' data-ref="nest::FileOutputStream::file_">file_</dfn>;</td></tr>
+<tr><th id="45">45</th><td>};</td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td>}</td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td><u>#<span data-ppcond="12">endif</span> /* NEST_STREAM_FILEOUTPUTSTREAM_H_ */</u></td></tr>
+<tr><th id="50">50</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../Workspace.cpp.html'>codebrowser/nest/Workspace.cpp</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

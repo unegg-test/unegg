@@ -1,0 +1,22 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='109' type='uInt'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='273' u='w' c='deflateInit2_'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='274' u='r' c='deflateInit2_'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='281' u='r' c='deflateInit2_'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='282' u='r' c='deflateInit2_'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='331' u='r' c='deflateSetDictionary'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='332' u='r' c='deflateSetDictionary'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='956' u='r' c='deflateCopy'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='957' u='r' c='deflateCopy'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='968' u='r' c='deflateCopy'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='969' u='r' c='deflateCopy'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1025' u='r' c='lm_init'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1073' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1074' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1311' u='r' c='fill_window'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1332' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1505' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1552' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1652' macro='1' u='r'/>
+<offset>544</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='107'>/* used by deflate.c: */</doc>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='109'>/* LZ77 window size (32K by default) */</doc>

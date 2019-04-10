@@ -1,0 +1,2 @@
+<def f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='2044' ll='2053' type='void LzmaEnc_Finish(CLzmaEncHandle pp)'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='2148' u='c' c='LzmaEnc_Encode2'/>

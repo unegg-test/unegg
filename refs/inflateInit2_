@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='1540' type='int inflateInit2_(z_streamp strm, int windowBits, const char * version, int stream_size)'/>
+<use f='codebrowser/nest/algorithm/DeflateCoder.cpp' l='38' macro='1' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='132' macro='1' u='c'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='168' ll='199' type='int inflateInit2_(z_streamp strm, int windowBits, const char * version, int stream_size)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='206' u='c' c='inflateInit_'/>

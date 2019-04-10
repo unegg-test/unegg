@@ -1,0 +1,26 @@
+<def f='codebrowser/nest/algorithm/azo/Common/BufferMan.h' l='8' ll='31'/>
+<size>24</size>
+<fun r='_ZN3AZO9BufferManC1Ev'/>
+<fun r='_ZN3AZO9BufferManD1Ev'/>
+<fun r='_ZN3AZO9BufferMan8CapacityEj'/>
+<fun r='_ZN3AZO9BufferMan3AddEPKhj'/>
+<fun r='_ZN3AZO9BufferMan3GetEPhj'/>
+<fun r='_ZN3AZO9BufferMan5AheadEj'/>
+<fun r='_ZN3AZO9BufferMan6RemoveEj'/>
+<fun r='_ZN3AZO9BufferMan5ClearEv'/>
+<fun r='_ZN3AZO9BufferMan9GetBufPtrEv'/>
+<fun r='_ZN3AZO9BufferMan7GetSizeEv'/>
+<fun r='_ZN3AZO9BufferMan10GetUseSizeEv'/>
+<fun r='_ZN3AZO9BufferMan13GetRemainSizeEv'/>
+<mbr r='AZO::BufferMan::buf_' o='0' t='byte *'/>
+<mbr r='AZO::BufferMan::rdPtr_' o='64' t='u_int'/>
+<mbr r='AZO::BufferMan::wrPtr_' o='96' t='u_int'/>
+<mbr r='AZO::BufferMan::size_' o='128' t='u_int'/>
+<fun r='_ZN3AZO9BufferManC1Ev'/>
+<fun r='_ZN3AZO9BufferManD1Ev'/>
+<fun r='_ZN3AZO9BufferMan8CapacityEj'/>
+<fun r='_ZN3AZO9BufferMan9GetBufPtrEv'/>
+<fun r='_ZN3AZO9BufferMan3AddEPKhj'/>
+<fun r='_ZN3AZO9BufferMan5AheadEj'/>
+<fun r='_ZN3AZO9BufferMan3GetEPhj'/>
+<fun r='_ZN3AZO9BufferMan6RemoveEj'/>

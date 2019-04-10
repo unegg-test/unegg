@@ -1,0 +1,4 @@
+<def f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='71' ll='72' macro='1' type='const uch [19]'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='827' u='r' c='build_bl_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='857' u='r' c='send_all_trees'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='857' u='r' c='send_all_trees'/>

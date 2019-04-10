@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/CpuArch.h' l='145' type='Bool CPU_Is_InOrder()'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/CpuArch.c' l='120' ll='140' type='Bool CPU_Is_InOrder()'/>

@@ -1,0 +1,2 @@
+<def f='codebrowser/UnEgg.cpp' l='102' ll='278' type='int PrintListOfArchive(const char * filename)'/>
+<use f='codebrowser/UnEgg.cpp' l='332' u='c' c='_Z18ProcessCommandlineR11CommandLine'/>

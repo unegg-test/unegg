@@ -1,0 +1,13 @@
+_ZNSt6vector6assignEmRKT_|std::vector::assign
+_ZNSt5deque6assignEmRKT_|std::deque::assign
+_ZSt4asinf|std::asin
+_ZN4nest4Info6AsBoolEjPb|nest::Info::AsBool
+_ZN4nest4Info11AsChildInfoEjmPb|nest::Info::AsChildInfo
+_ZN4nest4Info6AsInfoEjPb|nest::Info::AsInfo
+_ZN4nest4Info7AsInt32EjPb|nest::Info::AsInt32
+_ZN4nest4Info7AsInt64EjPb|nest::Info::AsInt64
+_ZN4nest4Info5AsPtrEjPb|nest::Info::AsPtr
+_ZN4nest4Info6AsSizeEjPb|nest::Info::AsSize
+_ZN4nest4Info8AsStringEjPb|nest::Info::AsString
+_ZN4nest4Info8AsUInt32EjPb|nest::Info::AsUInt32
+_ZN4nest4Info8AsUInt64EjPb|nest::Info::AsUInt64

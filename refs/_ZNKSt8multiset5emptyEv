@@ -1,0 +1,2 @@
+<def f='include/c++/7/bits/stl_multiset.h' l='399' ll='401' type='bool std::multiset::empty() const'/>
+<doc f='include/c++/7/bits/stl_multiset.h' l='398'>///  Returns true if the %set is empty.</doc>

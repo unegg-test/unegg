@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/stream/InputStreamLinker.h' l='40' type='int nest::InputStreamLinker::PopAll()'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='365' u='c' c='_ZN4nest9ALZFormat21PrepareSpannedStreamsEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='343' u='c' c='_ZN4nest9EggFormat21PrepareSpannedStreamsEv'/>
+<def f='codebrowser/nest/stream/InputStreamLinker.cpp' l='153' ll='165' type='int nest::InputStreamLinker::PopAll()'/>

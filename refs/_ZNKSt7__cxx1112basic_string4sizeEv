@@ -1,0 +1,17 @@
+<def f='include/c++/7/bits/basic_string.h' l='919' ll='921' type='size_type std::__cxx11::basic_string::size() const'/>
+<use f='include/c++/7/bits/basic_string.h' l='1097' u='c' c='_ZNSt7__cxx1112basic_string2atEN9__gnu_cxx14__alloc_traitsINS2_IT1_E6rebindIT_E5otherEE9size_typeE'/>
+<doc f='include/c++/7/bits/basic_string.h' l='916'>// Capacity:
+      ///  Returns the number of characters in the string, not including any
+      ///  null-termination.</doc>
+<use f='include/c++/7/bits/locale_facets.tcc' l='88' u='c' c='_ZNSt16__numpunct_cache8_M_cacheERKSt6locale'/>
+<use f='include/c++/7/bits/locale_facets.tcc' l='296' u='c' c='_ZNKSt7num_get16_M_extract_floatET0_S0_RSt8ios_baseRSt12_Ios_IostateRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/c++/7/bits/locale_facets.tcc' l='319' u='c' c='_ZNKSt7num_get16_M_extract_floatET0_S0_RSt8ios_baseRSt12_Ios_IostateRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/c++/7/bits/locale_facets.tcc' l='355' u='c' c='_ZNKSt7num_get16_M_extract_floatET0_S0_RSt8ios_baseRSt12_Ios_IostateRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/c++/7/bits/locale_facets.tcc' l='554' u='c' c='_ZNKSt7num_get14_M_extract_intET0_S0_RSt8ios_baseRSt12_Ios_IostateRT_'/>
+<use f='include/c++/7/bits/locale_facets.tcc' l='567' u='c' c='_ZNKSt7num_get14_M_extract_intET0_S0_RSt8ios_baseRSt12_Ios_IostateRT_'/>
+<use f='include/c++/7/bits/locale_facets_nonio.tcc' l='85' u='c' c='_ZNSt18__moneypunct_cache8_M_cacheERKSt6locale'/>
+<use f='include/c++/7/bits/locale_facets_nonio.tcc' l='310' u='c' c='_ZNKSt7__cxx119money_get10_M_extractET0_S1_RSt8ios_baseRSt12_Ios_IostateRNS_12basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/c++/7/bits/locale_facets_nonio.tcc' l='315' u='c' c='_ZNKSt7__cxx119money_get10_M_extractET0_S1_RSt8ios_baseRSt12_Ios_IostateRNS_12basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/c++/7/bits/locale_facets_nonio.tcc' l='323' u='c' c='_ZNKSt7__cxx119money_get10_M_extractET0_S1_RSt8ios_baseRSt12_Ios_IostateRNS_12basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/c++/7/bits/locale_facets_nonio.tcc' l='394' u='c' c='_ZNKSt7__cxx119money_get6do_getET0_S1_bRSt8ios_baseRSt12_Ios_IostateRNS_12basic_stringIT_St11char_traitsIS7_ESaIS7_EEE'/>
+<use f='codebrowser/nest/Workspace.cpp' l='129' u='c' c='_ZN4nest9Workspace7ExtractEPKc'/>

@@ -1,0 +1,14 @@
+_ZNKSt8_Rb_tree4sizeEv|std::_Rb_tree::size
+_ZNKSt8multiset4sizeEv|std::multiset::size
+_ZNKSt3set4sizeEv|std::set::size
+_ZNKSt6vector4sizeEv|std::vector::size
+_ZNKSt5deque4sizeEv|std::deque::size
+_ZNKSt5stack4sizeEv|std::stack::size
+_ZSt7signbitT_|std::signbit
+_ZSt3sinf|std::sin
+_ZSt4sinhf|std::sinh
+_ZNKSt17_Temporary_buffer4sizeEv|std::_Temporary_buffer::size
+_ZNSt14numeric_limits13signaling_NaNEv|std::numeric_limits::signaling_NaN
+_ZN3AZO4Base11HistoryList4SizeEv|AZO::Base::HistoryList::Size
+_ZN4nest15FileInputStream4SizeEv|nest::FileInputStream::Size
+_ZN4nest17InputStreamLinker4SizeEv|nest::InputStreamLinker::Size

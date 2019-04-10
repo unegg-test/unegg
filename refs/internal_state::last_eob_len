@@ -1,0 +1,8 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='247' type='int'/>
+<offset>47328</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='247'>/* bit length of EOB code for last block */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='402' u='w' c='_tr_init'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='910' u='r' c='_tr_align'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='918' u='w' c='_tr_align'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1121' u='w' c='compress_block'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1229' u='w' c='copy_block'/>

@@ -1,0 +1,2 @@
+<def f='codebrowser/nest/format/egg/FilenameField.h' l='40' ll='43' type='unsigned short nest::egg::FilenameField::GetLocale()'/>
+<use f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='128' u='c' c='_ZN4nest3egg14ExtraFieldWrap9_As4BytesEjPb'/>

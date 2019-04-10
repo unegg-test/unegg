@@ -1,0 +1,7 @@
+<def f='codebrowser/nest/format/ALZFormat.h' l='81' ll='88'/>
+<size>40</size>
+<mbr r='nest::ALZFormat::BlockExtractInfo::coder' o='0' t='nest::Coder *'/>
+<mbr r='nest::ALZFormat::BlockExtractInfo::dataHeaderSize' o='64' t='size_t'/>
+<mbr r='nest::ALZFormat::BlockExtractInfo::crc' o='128' t='unsigned int'/>
+<mbr r='nest::ALZFormat::BlockExtractInfo::rawDataRemained' o='192' t='uint64'/>
+<mbr r='nest::ALZFormat::BlockExtractInfo::dataRemained' o='256' t='uint64'/>

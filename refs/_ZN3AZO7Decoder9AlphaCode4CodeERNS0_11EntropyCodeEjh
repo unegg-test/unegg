@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/algorithm/azo/Decoder/AlphaCodeD.h' l='25' type='byte AZO::Decoder::AlphaCode::Code(AZO::Decoder::EntropyCode &amp; entropy, u_int pos, byte pre)'/>
+<def f='codebrowser/nest/algorithm/azo/Decoder/AlphaCodeD.cpp' l='20' ll='25' type='byte AZO::Decoder::AlphaCode::Code(AZO::Decoder::EntropyCode &amp; entropy, u_int pos, byte pre)'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/BlockCodeD.cpp' l='50' u='c' c='_ZN3AZO7Decoder9BlockCode7GetCodeERNS0_11EntropyCodeEj'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/BlockCodeD.cpp' l='74' u='c' c='_ZN3AZO7Decoder9BlockCode4CodeERNS0_11EntropyCodeE'/>

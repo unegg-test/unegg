@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.h' l='136' type='SRes LzmaDec_Allocate(CLzmaDec * state, const Byte * prop, unsigned int propsSize, ISzAlloc * alloc)'/>
+<use f='codebrowser/nest/algorithm/LZMACoder.cpp' l='49' u='c' c='_ZN4nest9LZMACoder10InitializeEPKhm'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='933' ll='953' type='SRes LzmaDec_Allocate(CLzmaDec * p, const Byte * props, unsigned int propsSize, ISzAlloc * alloc)'/>

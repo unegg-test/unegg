@@ -1,0 +1,6 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.h' l='122' type='int BZ2_bzDecompress(bz_stream * strm)'/>
+<use f='codebrowser/nest/algorithm/BZipCoder.cpp' l='59' u='c' c='_ZN4nest9BZipCoder5OnPopEPvPm'/>
+<def f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='808' ll='858' type='int BZ2_bzDecompress(bz_stream * strm)'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1199' u='c' c='BZ2_bzRead'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1327' u='c' c='BZ2_bzBuffToBuffDecompress'/>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='807'>/*---------------------------------------------------*/</doc>

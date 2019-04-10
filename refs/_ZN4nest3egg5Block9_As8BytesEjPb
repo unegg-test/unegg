@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/format/egg/Block.h' l='66' type='int64 nest::egg::Block::_As8Bytes(unsigned int key, bool * handled)'/>
+<inh f='codebrowser/nest/Info.h' l='39' c='_ZN4nest4Info9_As8BytesEjPb'/>
+<def f='codebrowser/nest/format/egg/Block.cpp' l='83' ll='88' type='int64 nest::egg::Block::_As8Bytes(unsigned int key, bool * handled)'/>

@@ -1,0 +1,6 @@
+<inh f='include/c++/7/stdexcept' l='197' c='std::runtime_error'/>
+<def f='include/c++/7/bits/ios_base.h' l='233' ll='243'/>
+<ovr f='include/c++/7/bits/ios_base.h' l='255' c='std::ios_base::failure'/>
+<size>32</size>
+<doc f='include/c++/7/bits/ios_base.h' l='232'>// Type that is layout-compatible with std::system_error</doc>
+<mbr r='std::ios_base::system_error::_M_code' o='128' t='struct error_code'/>

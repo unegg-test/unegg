@@ -1,0 +1,7 @@
+<inh f='codebrowser/nest/format/egg/ExtraField.h' l='22' c='nest::egg::ExtraField'/>
+<def f='codebrowser/nest/format/egg/CommentField.h' l='23' ll='45'/>
+<size>32</size>
+<fun r='_ZN4nest3egg12CommentField11IsEncryptedEv'/>
+<fun r='_ZN4nest3egg12CommentField6IsUTF8Ev'/>
+<fun r='_ZN4nest3egg12CommentField9GetLocaleEv'/>
+<fun r='_ZN4nest3egg12CommentField10GetCommentEv'/>

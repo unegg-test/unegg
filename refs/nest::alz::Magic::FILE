@@ -1,0 +1,2 @@
+<def f='codebrowser/nest/format/alz/ALZTypes.h' l='28' type='const unsigned int'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='90' u='r' c='_ZN4nest3alz4File6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>

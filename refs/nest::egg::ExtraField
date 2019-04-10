@@ -1,0 +1,24 @@
+<inh f='codebrowser/nest/format/Header.h' l='27' c='nest::Header'/>
+<def f='codebrowser/nest/format/egg/ExtraField.h' l='22' ll='43'/>
+<ovr f='codebrowser/nest/format/egg/CommentField.h' l='23' c='nest::egg::CommentField'/>
+<ovr f='codebrowser/nest/format/egg/FilenameField.h' l='22' c='nest::egg::FilenameField'/>
+<ovr f='codebrowser/nest/format/egg/EncryptField.h' l='22' c='nest::egg::EncryptField'/>
+<size>32</size>
+<fun r='_ZN4nest3egg10ExtraFieldC1Ev'/>
+<fun r='_ZN4nest3egg10ExtraFieldD1Ev'/>
+<fun r='_ZN4nest3egg10ExtraField12GetSignatureEv'/>
+<fun r='_ZN4nest3egg10ExtraField11GetBitFlagsEv'/>
+<fun r='_ZN4nest3egg10ExtraField10GetBitFlagEm'/>
+<fun r='_ZN4nest3egg10ExtraField7GetSizeEv'/>
+<fun r='_ZN4nest3egg10ExtraField10GetDataPtrEm'/>
+<fun r='_ZN4nest3egg10ExtraField9OnCleanUpEv'/>
+<fun r='_ZN4nest3egg10ExtraField6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<mbr r='nest::egg::ExtraField::signature_' o='96' t='int'/>
+<mbr r='nest::egg::ExtraField::gpb_' o='128' t='unsigned char'/>
+<mbr r='nest::egg::ExtraField::size_' o='160' t='unsigned int'/>
+<mbr r='nest::egg::ExtraField::data_' o='192' t='char *'/>
+<ovr f='codebrowser/nest/format/egg/WindowsField.h' l='22' c='nest::egg::WindowsField'/>
+<ovr f='codebrowser/nest/format/egg/PosixField.h' l='22' c='nest::egg::PosixField'/>
+<ovr f='codebrowser/nest/format/egg/SplitField.h' l='22' c='nest::egg::SplitField'/>
+<ovr f='codebrowser/nest/format/egg/Dummy.h' l='22' c='nest::egg::Dummy'/>
+<ovr f='codebrowser/nest/format/egg/SolidField.h' l='22' c='nest::egg::SolidField'/>

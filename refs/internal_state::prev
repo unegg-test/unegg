@@ -1,0 +1,20 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='128' type='Posf *'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='282' u='w' c='deflateInit2_'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='293' u='r' c='deflateInit2_'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='185' u='r' c='deflateSetDictionary'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='916' u='r' c='deflateEnd'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='916' u='r' c='deflateEnd'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='957' u='w' c='deflateCopy'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='962' u='r' c='deflateCopy'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='969' u='r' c='deflateCopy'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='969' u='r' c='deflateCopy'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1078' u='r' c='longest_match'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1354' u='r' c='fill_window'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='185' u='r' c='deflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='185' u='r' c='deflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='185' u='r' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='185' u='r' c='deflate_slow'/>
+<offset>768</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='124'>/* Actual size of window: 2*wSize, except when the user input buffer
+     * is directly used as sliding window.
+     */</doc>

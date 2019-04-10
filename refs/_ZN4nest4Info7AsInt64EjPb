@@ -1,0 +1,13 @@
+<dec f='codebrowser/nest/Info.h' l='26' type='int64 nest::Info::AsInt64(unsigned int key, bool * handled = __null)'/>
+<def f='codebrowser/nest/Info.cpp' l='32' ll='35' type='int64 nest::Info::AsInt64(unsigned int key, bool * handled = __null)'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='691' u='c' c='_ZN4nest9ALZFormat9_As8BytesEjPb'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='1015' u='c' c='_ZN4nest9EggFormat9_As8BytesEjPb'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='1018' u='c' c='_ZN4nest9EggFormat9_As8BytesEjPb'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='1022' u='c' c='_ZN4nest9EggFormat9_As8BytesEjPb'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='186' u='c' c='_ZN4nest3alz4File9_As8BytesEjPb'/>
+<use f='codebrowser/nest/format/egg/BlockWrap.cpp' l='80' u='c' c='_ZN4nest3egg9BlockWrap9_As8BytesEjPb'/>
+<use f='codebrowser/nest/format/egg/BlockWrap.cpp' l='83' u='c' c='_ZN4nest3egg9BlockWrap9_As8BytesEjPb'/>
+<use f='codebrowser/nest/format/egg/FileWrap.cpp' l='135' u='c' c='_ZN4nest3egg8FileWrap9_As8BytesEjPb'/>
+<use f='codebrowser/nest/format/egg/FileWrap.cpp' l='138' u='c' c='_ZN4nest3egg8FileWrap9_As8BytesEjPb'/>
+<use f='codebrowser/nest/format/egg/FileWrap.cpp' l='154' u='c' c='_ZN4nest3egg8FileWrap7_AsSizeEjPb'/>
+<use f='codebrowser/nest/format/egg/FileWrap.cpp' l='157' u='c' c='_ZN4nest3egg8FileWrap7_AsSizeEjPb'/>

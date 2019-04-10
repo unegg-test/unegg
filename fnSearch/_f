@@ -1,0 +1,6 @@
+_ZN4nest6FormatD1Ev|nest::Format::~Format
+_ZN4nest3alz4FileD1Ev|nest::alz::File::~File
+_ZN4nest3egg4FileD1Ev|nest::egg::File::~File
+_ZN4nest3egg8FileWrapD1Ev|nest::egg::FileWrap::~FileWrap
+_ZN4nest15FileInputStreamD1Ev|nest::FileInputStream::~FileInputStream
+_ZN4nest16FileOutputStreamD1Ev|nest::FileOutputStream::~FileOutputStream

@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>zutil.h source code [codebrowser/nest/third-party/algorithm/zlib/zutil.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/third-party/algorithm/zlib/zutil.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>nest</a>/<a href='../..'>third-party</a>/<a href='..'>algorithm</a>/<a href='./'>zlib</a>/<a href='zutil.h.html'>zutil.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* zutil.h -- internal interface and configuration of the compression library</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 1995-2010 Jean-loup Gailly.</i></td></tr>
+<tr><th id="3">3</th><td><i> * For conditions of distribution and use, see copyright notice in zlib.h</i></td></tr>
+<tr><th id="4">4</th><td><i> */</i></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><i>/* WARNING: this file should *not* be used by applications. It is</i></td></tr>
+<tr><th id="7">7</th><td><i>   part of the implementation of the compression library and is</i></td></tr>
+<tr><th id="8">8</th><td><i>   subject to change. Applications should only use zlib.h.</i></td></tr>
+<tr><th id="9">9</th><td><i> */</i></td></tr>
+<tr><th id="10">10</th><td></td></tr>
+<tr><th id="11">11</th><td><i>/* @(#) $Id$ */</i></td></tr>
+<tr><th id="12">12</th><td></td></tr>
+<tr><th id="13">13</th><td><u>#<span data-ppcond="13">ifndef</span> <span class="macro" data-ref="_M/ZUTIL_H">ZUTIL_H</span></u></td></tr>
+<tr><th id="14">14</th><td><u>#define <dfn class="macro" id="_M/ZUTIL_H" data-ref="_M/ZUTIL_H">ZUTIL_H</dfn></u></td></tr>
+<tr><th id="15">15</th><td></td></tr>
+<tr><th id="16">16</th><td><u>#<span data-ppcond="16">if</span> ((<span class="macro" title="4" data-ref="_M/__GNUC__">__GNUC__</span>-0) * 10 + <span class="macro" title="2" data-ref="_M/__GNUC_MINOR__">__GNUC_MINOR__</span>-0 &gt;= 33) &amp;&amp; !defined(<span class="macro" data-ref="_M/NO_VIZ">NO_VIZ</span>)</u></td></tr>
+<tr><th id="17">17</th><td><u>#  define <dfn class="macro" id="_M/ZLIB_INTERNAL" data-ref="_M/ZLIB_INTERNAL">ZLIB_INTERNAL</dfn> __attribute__((visibility ("hidden")))</u></td></tr>
+<tr><th id="18">18</th><td><u>#<span data-ppcond="16">else</span></u></td></tr>
+<tr><th id="19">19</th><td><u>#  define ZLIB_INTERNAL</u></td></tr>
+<tr><th id="20">20</th><td><u>#<span data-ppcond="16">endif</span></u></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><u>#include <a href="zlib.h.html">"zlib.h"</a></u></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><u>#<span data-ppcond="24">ifdef</span> <a class="macro" href="zconf.h.html#169" data-ref="_M/STDC">STDC</a></u></td></tr>
+<tr><th id="25">25</th><td><u>#  <span data-ppcond="25">if</span> !(defined(<span class="macro" data-ref="_M/_WIN32_WCE">_WIN32_WCE</span>) &amp;&amp; defined(<span class="macro" data-ref="_M/_MSC_VER">_MSC_VER</span>))</u></td></tr>
+<tr><th id="26">26</th><td><u>#    include &lt;stddef.h&gt;</u></td></tr>
+<tr><th id="27">27</th><td><u>#  <span data-ppcond="25">endif</span></u></td></tr>
+<tr><th id="28">28</th><td><u>#  include <a href="../../../../../include/string.h.html">&lt;string.h&gt;</a></u></td></tr>
+<tr><th id="29">29</th><td><u>#  include <a href="../../../../../include/stdlib.h.html">&lt;stdlib.h&gt;</a></u></td></tr>
+<tr><th id="30">30</th><td><u>#<span data-ppcond="24">endif</span></u></td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td><u>#<span data-ppcond="32">ifndef</span> <span class="macro" data-ref="_M/local">local</span></u></td></tr>
+<tr><th id="33">33</th><td><u>#  define <dfn class="macro" id="_M/local" data-ref="_M/local">local</dfn> static</u></td></tr>
+<tr><th id="34">34</th><td><u>#<span data-ppcond="32">endif</span></u></td></tr>
+<tr><th id="35">35</th><td><i>/* compile with -Dlocal if your debugger can't find static symbols */</i></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><b>typedef</b> <em>unsigned</em> <em>char</em>  <dfn class="typedef" id="uch" title='uch' data-type='unsigned char' data-ref="uch">uch</dfn>;</td></tr>
+<tr><th id="38">38</th><td><b>typedef</b> <a class="typedef" href="#uch" title='uch' data-type='unsigned char' data-ref="uch">uch</a> <a class="macro" href="zconf.h.html#329" title="" data-ref="_M/FAR">FAR</a> <dfn class="typedef" id="uchf" title='uchf' data-type='uch' data-ref="uchf">uchf</dfn>;</td></tr>
+<tr><th id="39">39</th><td><b>typedef</b> <em>unsigned</em> <em>short</em> <dfn class="typedef" id="ush" title='ush' data-type='unsigned short' data-ref="ush">ush</dfn>;</td></tr>
+<tr><th id="40">40</th><td><b>typedef</b> <a class="typedef" href="#ush" title='ush' data-type='unsigned short' data-ref="ush">ush</a> <a class="macro" href="zconf.h.html#329" title="" data-ref="_M/FAR">FAR</a> <dfn class="typedef" id="ushf" title='ushf' data-type='ush' data-ref="ushf">ushf</dfn>;</td></tr>
+<tr><th id="41">41</th><td><b>typedef</b> <em>unsigned</em> <em>long</em>  <dfn class="typedef" id="ulg" title='ulg' data-type='unsigned long' data-ref="ulg">ulg</dfn>;</td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td><b>extern</b> <em>const</em> <em>char</em> * <em>const</em> <dfn class="decl" id="z_errmsg" title='z_errmsg' data-ref="z_errmsg">z_errmsg</dfn>[<var>10</var>]; <i>/* indexed by 2-zlib_error */</i></td></tr>
+<tr><th id="44">44</th><td><i>/* (size given to avoid silly warnings with Visual C++) */</i></td></tr>
+<tr><th id="45">45</th><td></td></tr>
+<tr><th id="46">46</th><td><u>#define <dfn class="macro" id="_M/ERR_MSG" data-ref="_M/ERR_MSG">ERR_MSG</dfn>(err) z_errmsg[Z_NEED_DICT-(err)]</u></td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td><u>#define <dfn class="macro" id="_M/ERR_RETURN" data-ref="_M/ERR_RETURN">ERR_RETURN</dfn>(strm,err) \</u></td></tr>
+<tr><th id="49">49</th><td><u>  return (strm-&gt;msg = (char*)ERR_MSG(err), (err))</u></td></tr>
+<tr><th id="50">50</th><td><i>/* To be used only when the state is known to be valid */</i></td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td>        <i>/* common constants */</i></td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td><u>#<span data-ppcond="54">ifndef</span> <span class="macro" data-ref="_M/DEF_WBITS">DEF_WBITS</span></u></td></tr>
+<tr><th id="55">55</th><td><u>#  define <dfn class="macro" id="_M/DEF_WBITS" data-ref="_M/DEF_WBITS">DEF_WBITS</dfn> MAX_WBITS</u></td></tr>
+<tr><th id="56">56</th><td><u>#<span data-ppcond="54">endif</span></u></td></tr>
+<tr><th id="57">57</th><td><i>/* default windowBits for decompression. MAX_WBITS is for compression only */</i></td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td><u>#<span data-ppcond="59">if</span> <a class="macro" href="zconf.h.html#210" title="9" data-ref="_M/MAX_MEM_LEVEL">MAX_MEM_LEVEL</a> &gt;= 8</u></td></tr>
+<tr><th id="60">60</th><td><u>#  define <dfn class="macro" id="_M/DEF_MEM_LEVEL" data-ref="_M/DEF_MEM_LEVEL">DEF_MEM_LEVEL</dfn> 8</u></td></tr>
+<tr><th id="61">61</th><td><u>#<span data-ppcond="59">else</span></u></td></tr>
+<tr><th id="62">62</th><td><u>#  define DEF_MEM_LEVEL  MAX_MEM_LEVEL</u></td></tr>
+<tr><th id="63">63</th><td><u>#<span data-ppcond="59">endif</span></u></td></tr>
+<tr><th id="64">64</th><td><i>/* default memLevel */</i></td></tr>
+<tr><th id="65">65</th><td></td></tr>
+<tr><th id="66">66</th><td><u>#define <dfn class="macro" id="_M/STORED_BLOCK" data-ref="_M/STORED_BLOCK">STORED_BLOCK</dfn> 0</u></td></tr>
+<tr><th id="67">67</th><td><u>#define <dfn class="macro" id="_M/STATIC_TREES" data-ref="_M/STATIC_TREES">STATIC_TREES</dfn> 1</u></td></tr>
+<tr><th id="68">68</th><td><u>#define <dfn class="macro" id="_M/DYN_TREES" data-ref="_M/DYN_TREES">DYN_TREES</dfn>    2</u></td></tr>
+<tr><th id="69">69</th><td><i>/* The three kinds of block type */</i></td></tr>
+<tr><th id="70">70</th><td></td></tr>
+<tr><th id="71">71</th><td><u>#define <dfn class="macro" id="_M/MIN_MATCH" data-ref="_M/MIN_MATCH">MIN_MATCH</dfn>  3</u></td></tr>
+<tr><th id="72">72</th><td><u>#define <dfn class="macro" id="_M/MAX_MATCH" data-ref="_M/MAX_MATCH">MAX_MATCH</dfn>  258</u></td></tr>
+<tr><th id="73">73</th><td><i>/* The minimum and maximum match lengths */</i></td></tr>
+<tr><th id="74">74</th><td></td></tr>
+<tr><th id="75">75</th><td><u>#define <dfn class="macro" id="_M/PRESET_DICT" data-ref="_M/PRESET_DICT">PRESET_DICT</dfn> 0x20 /* preset dictionary flag in zlib header */</u></td></tr>
+<tr><th id="76">76</th><td></td></tr>
+<tr><th id="77">77</th><td>        <i>/* target dependencies */</i></td></tr>
+<tr><th id="78">78</th><td></td></tr>
+<tr><th id="79">79</th><td><u>#<span data-ppcond="79">if</span> defined(<span class="macro" data-ref="_M/MSDOS">MSDOS</span>) || (defined(<span class="macro" data-ref="_M/WINDOWS">WINDOWS</span>) &amp;&amp; !defined(<span class="macro" data-ref="_M/WIN32">WIN32</span>))</u></td></tr>
+<tr><th id="80">80</th><td><u>#  define OS_CODE  0x00</u></td></tr>
+<tr><th id="81">81</th><td><u>#  if defined(__TURBOC__) || defined(__BORLANDC__)</u></td></tr>
+<tr><th id="82">82</th><td><u>#    if (__STDC__ == 1) &amp;&amp; (defined(__LARGE__) || defined(__COMPACT__))</u></td></tr>
+<tr><th id="83">83</th><td>       <i>/* Allow compilation with ANSI keywords only enabled */</i></td></tr>
+<tr><th id="84">84</th><td>       <em>void</em> _Cdecl farfree( <em>void</em> *block );</td></tr>
+<tr><th id="85">85</th><td>       <em>void</em> *_Cdecl farmalloc( <em>unsigned</em> <em>long</em> nbytes );</td></tr>
+<tr><th id="86">86</th><td><u>#    else</u></td></tr>
+<tr><th id="87">87</th><td><u>#      include &lt;alloc.h&gt;</u></td></tr>
+<tr><th id="88">88</th><td><u>#    endif</u></td></tr>
+<tr><th id="89">89</th><td><u>#  else /* MSC or DJGPP */</u></td></tr>
+<tr><th id="90">90</th><td><u>#    include &lt;malloc.h&gt;</u></td></tr>
+<tr><th id="91">91</th><td><u>#  endif</u></td></tr>
+<tr><th id="92">92</th><td><u>#<span data-ppcond="79">endif</span></u></td></tr>
+<tr><th id="93">93</th><td></td></tr>
+<tr><th id="94">94</th><td><u>#<span data-ppcond="94">ifdef</span> <span class="macro" data-ref="_M/AMIGA">AMIGA</span></u></td></tr>
+<tr><th id="95">95</th><td><u>#  define OS_CODE  0x01</u></td></tr>
+<tr><th id="96">96</th><td><u>#<span data-ppcond="94">endif</span></u></td></tr>
+<tr><th id="97">97</th><td></td></tr>
+<tr><th id="98">98</th><td><u>#<span data-ppcond="98">if</span> defined(<span class="macro" data-ref="_M/VAXC">VAXC</span>) || defined(<span class="macro" data-ref="_M/VMS">VMS</span>)</u></td></tr>
+<tr><th id="99">99</th><td><u>#  define OS_CODE  0x02</u></td></tr>
+<tr><th id="100">100</th><td><u>#  define F_OPEN(name, mode) \</u></td></tr>
+<tr><th id="101">101</th><td><u>     fopen((name), (mode), "mbc=60", "ctx=stm", "rfm=fix", "mrs=512")</u></td></tr>
+<tr><th id="102">102</th><td><u>#<span data-ppcond="98">endif</span></u></td></tr>
+<tr><th id="103">103</th><td></td></tr>
+<tr><th id="104">104</th><td><u>#<span data-ppcond="104">if</span> defined(<span class="macro" data-ref="_M/ATARI">ATARI</span>) || defined(<span class="macro" data-ref="_M/atarist">atarist</span>)</u></td></tr>
+<tr><th id="105">105</th><td><u>#  define OS_CODE  0x05</u></td></tr>
+<tr><th id="106">106</th><td><u>#<span data-ppcond="104">endif</span></u></td></tr>
+<tr><th id="107">107</th><td></td></tr>
+<tr><th id="108">108</th><td><u>#<span data-ppcond="108">ifdef</span> <span class="macro" data-ref="_M/OS2">OS2</span></u></td></tr>
+<tr><th id="109">109</th><td><u>#  define OS_CODE  0x06</u></td></tr>
+<tr><th id="110">110</th><td><u>#  ifdef M_I86</u></td></tr>
+<tr><th id="111">111</th><td><u>#    include &lt;malloc.h&gt;</u></td></tr>
+<tr><th id="112">112</th><td><u>#  endif</u></td></tr>
+<tr><th id="113">113</th><td><u>#<span data-ppcond="108">endif</span></u></td></tr>
+<tr><th id="114">114</th><td></td></tr>
+<tr><th id="115">115</th><td><u>#<span data-ppcond="115">if</span> defined(<span class="macro" data-ref="_M/MACOS">MACOS</span>) || defined(<span class="macro" data-ref="_M/TARGET_OS_MAC">TARGET_OS_MAC</span>)</u></td></tr>
+<tr><th id="116">116</th><td><u>#  define OS_CODE  0x07</u></td></tr>
+<tr><th id="117">117</th><td><u>#  if defined(__MWERKS__) &amp;&amp; __dest_os != __be_os &amp;&amp; __dest_os != __win32_os</u></td></tr>
+<tr><th id="118">118</th><td><u>#    include &lt;unix.h&gt; /* for fdopen */</u></td></tr>
+<tr><th id="119">119</th><td><u>#  else</u></td></tr>
+<tr><th id="120">120</th><td><u>#    ifndef fdopen</u></td></tr>
+<tr><th id="121">121</th><td><u>#      define fdopen(fd,mode) NULL /* No fdopen() */</u></td></tr>
+<tr><th id="122">122</th><td><u>#    endif</u></td></tr>
+<tr><th id="123">123</th><td><u>#  endif</u></td></tr>
+<tr><th id="124">124</th><td><u>#<span data-ppcond="115">endif</span></u></td></tr>
+<tr><th id="125">125</th><td></td></tr>
+<tr><th id="126">126</th><td><u>#<span data-ppcond="126">ifdef</span> <span class="macro" data-ref="_M/TOPS20">TOPS20</span></u></td></tr>
+<tr><th id="127">127</th><td><u>#  define OS_CODE  0x0a</u></td></tr>
+<tr><th id="128">128</th><td><u>#<span data-ppcond="126">endif</span></u></td></tr>
+<tr><th id="129">129</th><td></td></tr>
+<tr><th id="130">130</th><td><u>#<span data-ppcond="130">ifdef</span> <span class="macro" data-ref="_M/WIN32">WIN32</span></u></td></tr>
+<tr><th id="131">131</th><td><u>#  ifndef __CYGWIN__  /* Cygwin is Unix, not Win32 */</u></td></tr>
+<tr><th id="132">132</th><td><u>#    define OS_CODE  0x0b</u></td></tr>
+<tr><th id="133">133</th><td><u>#  endif</u></td></tr>
+<tr><th id="134">134</th><td><u>#<span data-ppcond="130">endif</span></u></td></tr>
+<tr><th id="135">135</th><td></td></tr>
+<tr><th id="136">136</th><td><u>#<span data-ppcond="136">ifdef</span> <span class="macro" data-ref="_M/__50SERIES">__50SERIES</span> /* Prime/PRIMOS */</u></td></tr>
+<tr><th id="137">137</th><td><u>#  define OS_CODE  0x0f</u></td></tr>
+<tr><th id="138">138</th><td><u>#<span data-ppcond="136">endif</span></u></td></tr>
+<tr><th id="139">139</th><td></td></tr>
+<tr><th id="140">140</th><td><u>#<span data-ppcond="140">if</span> defined(<span class="macro" data-ref="_M/_BEOS_">_BEOS_</span>) || defined(<span class="macro" data-ref="_M/RISCOS">RISCOS</span>)</u></td></tr>
+<tr><th id="141">141</th><td><u>#  define fdopen(fd,mode) NULL /* No fdopen() */</u></td></tr>
+<tr><th id="142">142</th><td><u>#<span data-ppcond="140">endif</span></u></td></tr>
+<tr><th id="143">143</th><td></td></tr>
+<tr><th id="144">144</th><td><u>#<span data-ppcond="144">if</span> (defined(<span class="macro" data-ref="_M/_MSC_VER">_MSC_VER</span>) &amp;&amp; (_MSC_VER &gt; 600)) &amp;&amp; !defined <span class="macro" data-ref="_M/__INTERIX">__INTERIX</span></u></td></tr>
+<tr><th id="145">145</th><td><u>#  if defined(_WIN32_WCE)</u></td></tr>
+<tr><th id="146">146</th><td><u>#    define fdopen(fd,mode) NULL /* No fdopen() */</u></td></tr>
+<tr><th id="147">147</th><td><u>#    ifndef _PTRDIFF_T_DEFINED</u></td></tr>
+<tr><th id="148">148</th><td>       <b>typedef</b> <em>int</em> ptrdiff_t;</td></tr>
+<tr><th id="149">149</th><td><u>#      define _PTRDIFF_T_DEFINED</u></td></tr>
+<tr><th id="150">150</th><td><u>#    endif</u></td></tr>
+<tr><th id="151">151</th><td><u>#  else</u></td></tr>
+<tr><th id="152">152</th><td><u>#    define fdopen(fd,type)  _fdopen(fd,type)</u></td></tr>
+<tr><th id="153">153</th><td><u>#  endif</u></td></tr>
+<tr><th id="154">154</th><td><u>#<span data-ppcond="144">endif</span></u></td></tr>
+<tr><th id="155">155</th><td></td></tr>
+<tr><th id="156">156</th><td><u>#<span data-ppcond="156">if</span> defined(<span class="macro" data-ref="_M/__BORLANDC__">__BORLANDC__</span>)</u></td></tr>
+<tr><th id="157">157</th><td>  <u>#pragma warn -8004</u></td></tr>
+<tr><th id="158">158</th><td>  <u>#pragma warn -8008</u></td></tr>
+<tr><th id="159">159</th><td>  <u>#pragma warn -8066</u></td></tr>
+<tr><th id="160">160</th><td><u>#<span data-ppcond="156">endif</span></u></td></tr>
+<tr><th id="161">161</th><td></td></tr>
+<tr><th id="162">162</th><td><i>/* provide prototypes for these when building zlib without LFS */</i></td></tr>
+<tr><th id="163">163</th><td><u>#<span data-ppcond="163">if</span> !defined(<span class="macro" data-ref="_M/_LARGEFILE64_SOURCE">_LARGEFILE64_SOURCE</span>) || _LFS64_LARGEFILE-0 == 0</u></td></tr>
+<tr><th id="164">164</th><td>    <a class="macro" href="zconf.h.html#319" title="extern" data-ref="_M/ZEXTERN">ZEXTERN</a> <a class="typedef" href="zconf.h.html#uLong" title='uLong' data-type='unsigned long' data-ref="uLong">uLong</a> <a class="macro" href="zconf.h.html#322" title="" data-ref="_M/ZEXPORT">ZEXPORT</a> <a class="decl" href="adler32.c.html#adler32_combine64" title='adler32_combine64' data-ref="adler32_combine64" id="adler32_combine64">adler32_combine64</a> <a class="macro" href="zconf.h.html#240" title="(uLong, uLong, long)" data-ref="_M/OF">OF</a>((<a class="typedef" href="zconf.h.html#uLong" title='uLong' data-type='unsigned long' data-ref="uLong">uLong</a>, <a class="typedef" href="zconf.h.html#uLong" title='uLong' data-type='unsigned long' data-ref="uLong">uLong</a>, <a class="macro" href="zconf.h.html#394" title="long" data-ref="_M/z_off_t">z_off_t</a>));</td></tr>
+<tr><th id="165">165</th><td>    <a class="macro" href="zconf.h.html#319" title="extern" data-ref="_M/ZEXTERN">ZEXTERN</a> <a class="typedef" href="zconf.h.html#uLong" title='uLong' data-type='unsigned long' data-ref="uLong">uLong</a> <a class="macro" href="zconf.h.html#322" title="" data-ref="_M/ZEXPORT">ZEXPORT</a> <dfn class="decl" id="crc32_combine64" title='crc32_combine64' data-ref="crc32_combine64">crc32_combine64</dfn> <a class="macro" href="zconf.h.html#240" title="(uLong, uLong, long)" data-ref="_M/OF">OF</a>((<a class="typedef" href="zconf.h.html#uLong" title='uLong' data-type='unsigned long' data-ref="uLong">uLong</a>, <a class="typedef" href="zconf.h.html#uLong" title='uLong' data-type='unsigned long' data-ref="uLong">uLong</a>, <a class="macro" href="zconf.h.html#394" title="long" data-ref="_M/z_off_t">z_off_t</a>));</td></tr>
+<tr><th id="166">166</th><td><u>#<span data-ppcond="163">endif</span></u></td></tr>
+<tr><th id="167">167</th><td></td></tr>
+<tr><th id="168">168</th><td>        <i>/* common defaults */</i></td></tr>
+<tr><th id="169">169</th><td></td></tr>
+<tr><th id="170">170</th><td><u>#<span data-ppcond="170">ifndef</span> <span class="macro" data-ref="_M/OS_CODE">OS_CODE</span></u></td></tr>
+<tr><th id="171">171</th><td><u>#  define <dfn class="macro" id="_M/OS_CODE" data-ref="_M/OS_CODE">OS_CODE</dfn>  0x03  /* assume Unix */</u></td></tr>
+<tr><th id="172">172</th><td><u>#<span data-ppcond="170">endif</span></u></td></tr>
+<tr><th id="173">173</th><td></td></tr>
+<tr><th id="174">174</th><td><u>#<span data-ppcond="174">ifndef</span> <span class="macro" data-ref="_M/F_OPEN">F_OPEN</span></u></td></tr>
+<tr><th id="175">175</th><td><u>#  define <dfn class="macro" id="_M/F_OPEN" data-ref="_M/F_OPEN">F_OPEN</dfn>(name, mode) fopen((name), (mode))</u></td></tr>
+<tr><th id="176">176</th><td><u>#<span data-ppcond="174">endif</span></u></td></tr>
+<tr><th id="177">177</th><td></td></tr>
+<tr><th id="178">178</th><td>         <i>/* functions */</i></td></tr>
+<tr><th id="179">179</th><td></td></tr>
+<tr><th id="180">180</th><td><u>#<span data-ppcond="180">if</span> defined(<a class="macro" href="zconf.h.html#173" data-ref="_M/STDC99">STDC99</a>) || (defined(<span class="macro" data-ref="_M/__TURBOC__">__TURBOC__</span>) &amp;&amp; __TURBOC__ &gt;= 0x550)</u></td></tr>
+<tr><th id="181">181</th><td><u>#  <span data-ppcond="181">ifndef</span> <span class="macro" data-ref="_M/HAVE_VSNPRINTF">HAVE_VSNPRINTF</span></u></td></tr>
+<tr><th id="182">182</th><td><u>#    define <dfn class="macro" id="_M/HAVE_VSNPRINTF" data-ref="_M/HAVE_VSNPRINTF">HAVE_VSNPRINTF</dfn></u></td></tr>
+<tr><th id="183">183</th><td><u>#  <span data-ppcond="181">endif</span></u></td></tr>
+<tr><th id="184">184</th><td><u>#<span data-ppcond="180">endif</span></u></td></tr>
+<tr><th id="185">185</th><td><u>#<span data-ppcond="185">if</span> defined(<span class="macro" data-ref="_M/__CYGWIN__">__CYGWIN__</span>)</u></td></tr>
+<tr><th id="186">186</th><td><u>#  ifndef HAVE_VSNPRINTF</u></td></tr>
+<tr><th id="187">187</th><td><u>#    define HAVE_VSNPRINTF</u></td></tr>
+<tr><th id="188">188</th><td><u>#  endif</u></td></tr>
+<tr><th id="189">189</th><td><u>#<span data-ppcond="185">endif</span></u></td></tr>
+<tr><th id="190">190</th><td><u>#<span data-ppcond="190">ifndef</span> <a class="macro" href="#182" data-ref="_M/HAVE_VSNPRINTF">HAVE_VSNPRINTF</a></u></td></tr>
+<tr><th id="191">191</th><td><u>#  ifdef MSDOS</u></td></tr>
+<tr><th id="192">192</th><td>     <i>/* vsnprintf may exist on some MS-DOS compilers (DJGPP?),</i></td></tr>
+<tr><th id="193">193</th><td><i>        but for now we just assume it doesn't. */</i></td></tr>
+<tr><th id="194">194</th><td><u>#    define NO_vsnprintf</u></td></tr>
+<tr><th id="195">195</th><td><u>#  endif</u></td></tr>
+<tr><th id="196">196</th><td><u>#  ifdef __TURBOC__</u></td></tr>
+<tr><th id="197">197</th><td><u>#    define NO_vsnprintf</u></td></tr>
+<tr><th id="198">198</th><td><u>#  endif</u></td></tr>
+<tr><th id="199">199</th><td><u>#  ifdef WIN32</u></td></tr>
+<tr><th id="200">200</th><td>     <i>/* In Win32, vsnprintf is available as the "non-ANSI" _vsnprintf. */</i></td></tr>
+<tr><th id="201">201</th><td><u>#    if !defined(vsnprintf) &amp;&amp; !defined(NO_vsnprintf)</u></td></tr>
+<tr><th id="202">202</th><td><u>#      if !defined(_MSC_VER) || ( defined(_MSC_VER) &amp;&amp; _MSC_VER &lt; 1500 )</u></td></tr>
+<tr><th id="203">203</th><td><u>#         define vsnprintf _vsnprintf</u></td></tr>
+<tr><th id="204">204</th><td><u>#      endif</u></td></tr>
+<tr><th id="205">205</th><td><u>#    endif</u></td></tr>
+<tr><th id="206">206</th><td><u>#  endif</u></td></tr>
+<tr><th id="207">207</th><td><u>#  ifdef __SASC</u></td></tr>
+<tr><th id="208">208</th><td><u>#    define NO_vsnprintf</u></td></tr>
+<tr><th id="209">209</th><td><u>#  endif</u></td></tr>
+<tr><th id="210">210</th><td><u>#<span data-ppcond="190">endif</span></u></td></tr>
+<tr><th id="211">211</th><td><u>#<span data-ppcond="211">ifdef</span> <span class="macro" data-ref="_M/VMS">VMS</span></u></td></tr>
+<tr><th id="212">212</th><td><u>#  define NO_vsnprintf</u></td></tr>
+<tr><th id="213">213</th><td><u>#<span data-ppcond="211">endif</span></u></td></tr>
+<tr><th id="214">214</th><td></td></tr>
+<tr><th id="215">215</th><td><u>#<span data-ppcond="215">if</span> defined(<span class="macro" data-ref="_M/pyr">pyr</span>)</u></td></tr>
+<tr><th id="216">216</th><td><u>#  define NO_MEMCPY</u></td></tr>
+<tr><th id="217">217</th><td><u>#<span data-ppcond="215">endif</span></u></td></tr>
+<tr><th id="218">218</th><td><u>#<span data-ppcond="218">if</span> defined(<span class="macro" data-ref="_M/SMALL_MEDIUM">SMALL_MEDIUM</span>) &amp;&amp; !defined(<span class="macro" data-ref="_M/_MSC_VER">_MSC_VER</span>) &amp;&amp; !defined(<span class="macro" data-ref="_M/__SC__">__SC__</span>)</u></td></tr>
+<tr><th id="219">219</th><td> <i>/* Use our own functions for small and medium model with MSC &lt;= 5.0.</i></td></tr>
+<tr><th id="220">220</th><td><i>  * You may have to use the same strategy for Borland C (untested).</i></td></tr>
+<tr><th id="221">221</th><td><i>  * The __SC__ check is for Symantec.</i></td></tr>
+<tr><th id="222">222</th><td><i>  */</i></td></tr>
+<tr><th id="223">223</th><td><u>#  define NO_MEMCPY</u></td></tr>
+<tr><th id="224">224</th><td><u>#<span data-ppcond="218">endif</span></u></td></tr>
+<tr><th id="225">225</th><td><u>#<span data-ppcond="225">if</span> defined(<a class="macro" href="zconf.h.html#169" data-ref="_M/STDC">STDC</a>) &amp;&amp; !defined(<span class="macro" data-ref="_M/HAVE_MEMCPY">HAVE_MEMCPY</span>) &amp;&amp; !defined(<span class="macro" data-ref="_M/NO_MEMCPY">NO_MEMCPY</span>)</u></td></tr>
+<tr><th id="226">226</th><td><u>#  define <dfn class="macro" id="_M/HAVE_MEMCPY" data-ref="_M/HAVE_MEMCPY">HAVE_MEMCPY</dfn></u></td></tr>
+<tr><th id="227">227</th><td><u>#<span data-ppcond="225">endif</span></u></td></tr>
+<tr><th id="228">228</th><td><u>#<span data-ppcond="228">ifdef</span> <a class="macro" href="#226" data-ref="_M/HAVE_MEMCPY">HAVE_MEMCPY</a></u></td></tr>
+<tr><th id="229">229</th><td><u>#  <span data-ppcond="229">ifdef</span> <span class="macro" data-ref="_M/SMALL_MEDIUM">SMALL_MEDIUM</span> /* MSDOS small or medium model */</u></td></tr>
+<tr><th id="230">230</th><td><u>#    define zmemcpy _fmemcpy</u></td></tr>
+<tr><th id="231">231</th><td><u>#    define zmemcmp _fmemcmp</u></td></tr>
+<tr><th id="232">232</th><td><u>#    define zmemzero(dest, len) _fmemset(dest, 0, len)</u></td></tr>
+<tr><th id="233">233</th><td><u>#  <span data-ppcond="229">else</span></u></td></tr>
+<tr><th id="234">234</th><td><u>#    define <dfn class="macro" id="_M/zmemcpy" data-ref="_M/zmemcpy">zmemcpy</dfn> memcpy</u></td></tr>
+<tr><th id="235">235</th><td><u>#    define <dfn class="macro" id="_M/zmemcmp" data-ref="_M/zmemcmp">zmemcmp</dfn> memcmp</u></td></tr>
+<tr><th id="236">236</th><td><u>#    define <dfn class="macro" id="_M/zmemzero" data-ref="_M/zmemzero">zmemzero</dfn>(dest, len) memset(dest, 0, len)</u></td></tr>
+<tr><th id="237">237</th><td><u>#  <span data-ppcond="229">endif</span></u></td></tr>
+<tr><th id="238">238</th><td><u>#<span data-ppcond="228">else</span></u></td></tr>
+<tr><th id="239">239</th><td>   <em>void</em> ZLIB_INTERNAL zmemcpy OF((Bytef* dest, <em>const</em> Bytef* source, uInt len));</td></tr>
+<tr><th id="240">240</th><td>   <em>int</em> ZLIB_INTERNAL zmemcmp OF((<em>const</em> Bytef* s1, <em>const</em> Bytef* s2, uInt len));</td></tr>
+<tr><th id="241">241</th><td>   <em>void</em> ZLIB_INTERNAL zmemzero OF((Bytef* dest, uInt len));</td></tr>
+<tr><th id="242">242</th><td><u>#<span data-ppcond="228">endif</span></u></td></tr>
+<tr><th id="243">243</th><td></td></tr>
+<tr><th id="244">244</th><td><i>/* Diagnostic functions */</i></td></tr>
+<tr><th id="245">245</th><td><u>#<span data-ppcond="245">ifdef</span> <span class="macro" data-ref="_M/DEBUG">DEBUG</span></u></td></tr>
+<tr><th id="246">246</th><td><u>#  include &lt;stdio.h&gt;</u></td></tr>
+<tr><th id="247">247</th><td>   <b>extern</b> <em>int</em> ZLIB_INTERNAL z_verbose;</td></tr>
+<tr><th id="248">248</th><td>   <b>extern</b> <em>void</em> ZLIB_INTERNAL z_error OF((<em>char</em> *m));</td></tr>
+<tr><th id="249">249</th><td><u>#  define Assert(cond,msg) {if(!(cond)) z_error(msg);}</u></td></tr>
+<tr><th id="250">250</th><td><u>#  define Trace(x) {if (z_verbose&gt;=0) fprintf x ;}</u></td></tr>
+<tr><th id="251">251</th><td><u>#  define Tracev(x) {if (z_verbose&gt;0) fprintf x ;}</u></td></tr>
+<tr><th id="252">252</th><td><u>#  define Tracevv(x) {if (z_verbose&gt;1) fprintf x ;}</u></td></tr>
+<tr><th id="253">253</th><td><u>#  define Tracec(c,x) {if (z_verbose&gt;0 &amp;&amp; (c)) fprintf x ;}</u></td></tr>
+<tr><th id="254">254</th><td><u>#  define Tracecv(c,x) {if (z_verbose&gt;1 &amp;&amp; (c)) fprintf x ;}</u></td></tr>
+<tr><th id="255">255</th><td><u>#<span data-ppcond="245">else</span></u></td></tr>
+<tr><th id="256">256</th><td><u>#  define <dfn class="macro" id="_M/Assert" data-ref="_M/Assert">Assert</dfn>(cond,msg)</u></td></tr>
+<tr><th id="257">257</th><td><u>#  define <dfn class="macro" id="_M/Trace" data-ref="_M/Trace">Trace</dfn>(x)</u></td></tr>
+<tr><th id="258">258</th><td><u>#  define <dfn class="macro" id="_M/Tracev" data-ref="_M/Tracev">Tracev</dfn>(x)</u></td></tr>
+<tr><th id="259">259</th><td><u>#  define <dfn class="macro" id="_M/Tracevv" data-ref="_M/Tracevv">Tracevv</dfn>(x)</u></td></tr>
+<tr><th id="260">260</th><td><u>#  define <dfn class="macro" id="_M/Tracec" data-ref="_M/Tracec">Tracec</dfn>(c,x)</u></td></tr>
+<tr><th id="261">261</th><td><u>#  define <dfn class="macro" id="_M/Tracecv" data-ref="_M/Tracecv">Tracecv</dfn>(c,x)</u></td></tr>
+<tr><th id="262">262</th><td><u>#<span data-ppcond="245">endif</span></u></td></tr>
+<tr><th id="263">263</th><td></td></tr>
+<tr><th id="264">264</th><td></td></tr>
+<tr><th id="265">265</th><td><a class="typedef" href="zconf.h.html#voidpf" title='voidpf' data-type='void *' data-ref="voidpf">voidpf</a> <a class="macro" href="#17" title="__attribute__((visibility (&quot;hidden&quot;)))" data-ref="_M/ZLIB_INTERNAL">ZLIB_INTERNAL</a> <dfn class="decl" id="zcalloc" title='zcalloc' data-ref="zcalloc">zcalloc</dfn> <a class="macro" href="zconf.h.html#240" title="(voidpf opaque, unsigned items, unsigned size)" data-ref="_M/OF">OF</a>((<a class="typedef" href="zconf.h.html#voidpf" title='voidpf' data-type='void *' data-ref="voidpf">voidpf</a> <dfn class="local col1 decl" id="1opaque" title='opaque' data-type='voidpf' data-ref="1opaque">opaque</dfn>, <em>unsigned</em> <dfn class="local col2 decl" id="2items" title='items' data-type='unsigned int' data-ref="2items">items</dfn>,</td></tr>
+<tr><th id="266">266</th><td>                        <em>unsigned</em> <dfn class="local col3 decl" id="3size" title='size' data-type='unsigned int' data-ref="3size">size</dfn>));</td></tr>
+<tr><th id="267">267</th><td><em>void</em> <a class="macro" href="#17" title="__attribute__((visibility (&quot;hidden&quot;)))" data-ref="_M/ZLIB_INTERNAL">ZLIB_INTERNAL</a> <dfn class="decl" id="zcfree" title='zcfree' data-ref="zcfree">zcfree</dfn>  <a class="macro" href="zconf.h.html#240" title="(voidpf opaque, voidpf ptr)" data-ref="_M/OF">OF</a>((<a class="typedef" href="zconf.h.html#voidpf" title='voidpf' data-type='void *' data-ref="voidpf">voidpf</a> <dfn class="local col4 decl" id="4opaque" title='opaque' data-type='voidpf' data-ref="4opaque">opaque</dfn>, <a class="typedef" href="zconf.h.html#voidpf" title='voidpf' data-type='void *' data-ref="voidpf">voidpf</a> <dfn class="local col5 decl" id="5ptr" title='ptr' data-type='voidpf' data-ref="5ptr">ptr</dfn>));</td></tr>
+<tr><th id="268">268</th><td></td></tr>
+<tr><th id="269">269</th><td><u>#define <dfn class="macro" id="_M/ZALLOC" data-ref="_M/ZALLOC">ZALLOC</dfn>(strm, items, size) \</u></td></tr>
+<tr><th id="270">270</th><td><u>           (*((strm)-&gt;zalloc))((strm)-&gt;opaque, (items), (size))</u></td></tr>
+<tr><th id="271">271</th><td><u>#define <dfn class="macro" id="_M/ZFREE" data-ref="_M/ZFREE">ZFREE</dfn>(strm, addr)  (*((strm)-&gt;zfree))((strm)-&gt;opaque, (voidpf)(addr))</u></td></tr>
+<tr><th id="272">272</th><td><u>#define <dfn class="macro" id="_M/TRY_FREE" data-ref="_M/TRY_FREE">TRY_FREE</dfn>(s, p) {if (p) ZFREE(s, p);}</u></td></tr>
+<tr><th id="273">273</th><td></td></tr>
+<tr><th id="274">274</th><td><u>#<span data-ppcond="13">endif</span> /* ZUTIL_H */</u></td></tr>
+<tr><th id="275">275</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='adler32.c.html'>codebrowser/nest/third-party/algorithm/zlib/adler32.c</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

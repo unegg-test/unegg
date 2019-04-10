@@ -1,0 +1,6 @@
+<dec f='codebrowser/nest/third-party/encryption/aes/fileenc.h' l='114' type='int fcrypt_end(unsigned char * mac, fcrypt_ctx * cx)'/>
+<use f='codebrowser/nest/encryption/AESDecoder.cpp' l='51' u='c' c='_ZN4nest10AESDecoder13OnPostprocessEPKv'/>
+<doc f='codebrowser/nest/third-party/encryption/aes/fileenc.h' l='112'>/* the return value is the length of the MAC            */</doc>
+<doc f='codebrowser/nest/third-party/encryption/aes/fileenc.h' l='114'>/* the MAC value (output)   */</doc>
+<def f='codebrowser/nest/third-party/encryption/aes/fileenc.c' l='135' ll='139' type='int fcrypt_end(unsigned char * mac, fcrypt_ctx * cx)'/>
+<doc f='codebrowser/nest/third-party/encryption/aes/fileenc.c' l='133'>/* close encryption/decryption and return the MAC value */</doc>

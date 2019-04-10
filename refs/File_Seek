@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/7zFile.h' l='49' type='WRes File_Seek(CSzFile * p, Int64 * pos, ESzSeek origin)'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='175' ll='223' type='WRes File_Seek(CSzFile * p, Int64 * pos, ESzSeek origin)'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='275' u='c' c='FileInStream_Seek'/>

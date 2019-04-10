@@ -1,0 +1,53 @@
+<def f='include/c++/7/bits/stl_vector.h' l='794' ll='799' type='reference std::vector::operator[](size_type __n)'/>
+<use f='codebrowser/CommandLine.cpp' l='63' u='c' c='_ZN11CommandLine11GetArgumentEm'/>
+<doc f='include/c++/7/bits/stl_vector.h' l='783'>/**
+       *  @brief  Subscript access to the data contained in the %vector.
+       *  @param __n The index of the element for which data should be
+       *  accessed.
+       *  @return  Read/write reference to data.
+       *
+       *  This operator allows for easy, array-style, data access.
+       *  Note that data access with this operator is unchecked and
+       *  out_of_range lookups are not defined. (For checked lookups
+       *  see at().)
+       */</doc>
+<use f='codebrowser/nest/stream/InputStreamRewinder.h' l='42' u='c' c='_ZN4nest19InputStreamRewinderD1Ev'/>
+<use f='codebrowser/nest/format/egg/FileWrap.h' l='57' u='c' c='_ZN4nest3egg8FileWrap8GetBlockEm'/>
+<use f='codebrowser/nest/Utils.cpp' l='346' u='c' c='_ZN4nest4utf813path_ellipsisEPcmmPKc'/>
+<use f='codebrowser/nest/Utils.cpp' l='353' u='c' c='_ZN4nest4utf813path_ellipsisEPcmmPKc'/>
+<use f='codebrowser/nest/Utils.cpp' l='353' u='c' c='_ZN4nest4utf813path_ellipsisEPcmmPKc'/>
+<use f='codebrowser/nest/Utils.cpp' l='355' u='c' c='_ZN4nest4utf813path_ellipsisEPcmmPKc'/>
+<use f='codebrowser/nest/Utils.cpp' l='362' u='c' c='_ZN4nest4utf813path_ellipsisEPcmmPKc'/>
+<use f='codebrowser/nest/Utils.cpp' l='364' u='c' c='_ZN4nest4utf813path_ellipsisEPcmmPKc'/>
+<use f='codebrowser/nest/Utils.cpp' l='365' u='c' c='_ZN4nest4utf813path_ellipsisEPcmmPKc'/>
+<use f='codebrowser/nest/Utils.cpp' l='365' u='c' c='_ZN4nest4utf813path_ellipsisEPcmmPKc'/>
+<use f='codebrowser/nest/Workspace.cpp' l='71' u='c' c='_ZN4nest9Workspace4OpenEPKc'/>
+<use f='codebrowser/nest/Workspace.cpp' l='114' u='c' c='_ZN4nest9Workspace5CloseEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='245' u='c' c='_ZN4nest9ALZFormat11ScanFootersEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='369' u='c' c='_ZN4nest9ALZFormat21PrepareSpannedStreamsEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='382' u='c' c='_ZN4nest9ALZFormat18QueryExtractStreamEmPPNS_12OutputStreamE'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='511' u='c' c='_ZN4nest9ALZFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='347' u='c' c='_ZN4nest9EggFormat21PrepareSpannedStreamsEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='420' u='c' c='_ZN4nest9EggFormat18QueryExtractStreamEmPPNS_12OutputStreamE'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='560' u='c' c='_ZN4nest9EggFormat19ExtractSolidArchiveEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='573' u='c' c='_ZN4nest9EggFormat19ExtractSolidArchiveEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='654' u='c' c='_ZN4nest9EggFormat19ExtractSolidArchiveEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='746' u='c' c='_ZN4nest9EggFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>
+<use f='codebrowser/nest/format/egg/FileWrap.cpp' l='42' u='c' c='_ZN4nest3egg8FileWrap9OnCleanUpEv'/>
+<use f='codebrowser/nest/format/egg/FileWrap.cpp' l='124' u='c' c='_ZN4nest3egg8FileWrap9_As8BytesEjPb'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='67' u='c' c='_ZN4nest17InputStreamLinker4SeekEyi'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='92' u='c' c='_ZN4nest17InputStreamLinker4ReadEPvm'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='157' u='c' c='_ZN4nest17InputStreamLinker6PopAllEv'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='171' u='c' c='_ZN4nest17InputStreamLinker13UpdateStreamsEv'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='171' u='c' c='_ZN4nest17InputStreamLinker13UpdateStreamsEv'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='172' u='c' c='_ZN4nest17InputStreamLinker13UpdateStreamsEv'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='172' u='c' c='_ZN4nest17InputStreamLinker13UpdateStreamsEv'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='172' u='c' c='_ZN4nest17InputStreamLinker13UpdateStreamsEv'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='203' u='c' c='_ZN4nest17InputStreamLinker5CloseEv'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='213' u='c' c='_ZN4nest17InputStreamLinker8FinalizeEv'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='225' u='c' c='_ZN4nest17InputStreamLinker15PositionToIndexEy'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='230' u='c' c='_ZN4nest17InputStreamLinker15PositionToIndexEy'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='241' u='c' c='_ZN4nest17InputStreamLinker15PositionToIndexEy'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='260' u='c' c='_ZN4nest17InputStreamLinker12OpenInternalEm'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='263' u='c' c='_ZN4nest17InputStreamLinker12OpenInternalEm'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='273' u='c' c='_ZN4nest17InputStreamLinker8GetBlockEm'/>

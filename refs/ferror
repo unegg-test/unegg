@@ -1,0 +1,13 @@
+<dec f='include/stdio.h' l='830' type='int ferror(FILE * __stream)'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='934' u='c' c='BZ2_bzWriteOpen'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='978' u='c' c='BZ2_bzWrite'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='998' u='c' c='BZ2_bzWrite'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1037' u='c' c='BZ2_bzWriteClose64'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1057' u='c' c='BZ2_bzWriteClose64'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1065' u='c' c='BZ2_bzWriteClose64'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1067' u='c' c='BZ2_bzWriteClose64'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1107' u='c' c='BZ2_bzReadOpen'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1186' u='c' c='BZ2_bzRead'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1192' u='c' c='BZ2_bzRead'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='135' u='c' c='File_Read'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='170' u='c' c='File_Write'/>

@@ -1,0 +1,6 @@
+<def f='include/c++/7/bits/stl_deque.h' l='1182' ll='1184' type='iterator std::deque::end()'/>
+<doc f='include/c++/7/bits/stl_deque.h' l='1177'>/**
+       *  Returns a read/write iterator that points one past the last
+       *  element in the %deque.  Iteration is done in ordinary
+       *  element order.
+       */</doc>

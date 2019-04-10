@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/Workspace.h' l='49' type='int nest::Workspace::GetLastWork()'/>
+<use f='codebrowser/EventHandler.cpp' l='120' u='c' c='_ZN12EventHandler11OnFileStartEm'/>
+<use f='codebrowser/EventHandler.cpp' l='144' u='c' c='_ZN12EventHandler12OnFileFinishEmi'/>
+<def f='codebrowser/nest/Workspace.cpp' l='165' ll='168' type='int nest::Workspace::GetLastWork()'/>

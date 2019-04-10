@@ -1,0 +1,8 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='352' type='int deflateEnd(z_streamp strm)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/compress.c' l='51' u='c' c='compress2'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/compress.c' l='56' u='c' c='compress2'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='297' u='c' c='deflateInit2_'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='895' ll='923' type='int deflateEnd(z_streamp strm)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='964' u='c' c='deflateCopy'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='894'>/* ========================================================================= */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='523' u='c' c='gzclose_w'/>

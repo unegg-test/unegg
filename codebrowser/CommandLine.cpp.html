@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>CommandLine.cpp source code [codebrowser/CommandLine.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/CommandLine.cpp'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='CommandLine.cpp.html'>CommandLine.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * CommandLine.cpp</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> *  Created on: 2010. 12. 9.</i></td></tr>
+<tr><th id="5">5</th><td><i> *      Author: Jehoon Shin(Revolution)</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> *  Copyright(c) 2010-Present ESTsoft Corp. All rights reserved.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> *  For conditions of distribution and use, see copyright notice in license.txt</i></td></tr>
+<tr><th id="10">10</th><td><i> */</i></td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td><u>#include <a href="CommandLine.h.html">"CommandLine.h"</a></u></td></tr>
+<tr><th id="13">13</th><td><u>#include <a href="nest/Utils.h.html">&lt;nest/Utils.h&gt;</a></u></td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><a class="type" href="CommandLine.h.html#CommandLine" title='CommandLine' data-ref="CommandLine">CommandLine</a>::<dfn class="decl def" id="_ZN11CommandLineC1EiPPc" title='CommandLine::CommandLine' data-ref="_ZN11CommandLineC1EiPPc">CommandLine</dfn>(<em>int</em> <dfn class="local col4 decl" id="3404argc" title='argc' data-type='int' data-ref="3404argc">argc</dfn>, <em>char</em>* <dfn class="local col5 decl" id="3405argv" title='argv' data-type='char **' data-ref="3405argv">argv</dfn>[])</td></tr>
+<tr><th id="16">16</th><td>{</td></tr>
+<tr><th id="17">17</th><td>    <a class="member" href="#_ZN11CommandLine16ParseCommandlineEiPPc" title='CommandLine::ParseCommandline' data-ref="_ZN11CommandLine16ParseCommandlineEiPPc">ParseCommandline</a>(<a class="local col4 ref" href="#3404argc" title='argc' data-ref="3404argc">argc</a>, <a class="local col5 ref" href="#3405argv" title='argv' data-ref="3405argv">argv</a>);</td></tr>
+<tr><th id="18">18</th><td>}</td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><a class="type" href="CommandLine.h.html#CommandLine" title='CommandLine' data-ref="CommandLine">CommandLine</a>::<dfn class="virtual decl def" id="_ZN11CommandLineD1Ev" title='CommandLine::~CommandLine' data-ref="_ZN11CommandLineD1Ev">~CommandLine</dfn>()</td></tr>
+<tr><th id="21">21</th><td>{</td></tr>
+<tr><th id="22">22</th><td>    <i>// TODO Auto-generated destructor stub</i></td></tr>
+<tr><th id="23">23</th><td>}</td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><em>void</em> <a class="type" href="CommandLine.h.html#CommandLine" title='CommandLine' data-ref="CommandLine">CommandLine</a>::<dfn class="decl def" id="_ZN11CommandLine16ParseCommandlineEiPPc" title='CommandLine::ParseCommandline' data-ref="_ZN11CommandLine16ParseCommandlineEiPPc">ParseCommandline</dfn>(<em>int</em> <dfn class="local col6 decl" id="3406argc" title='argc' data-type='int' data-ref="3406argc">argc</dfn>, <em>char</em>* <dfn class="local col7 decl" id="3407argv" title='argv' data-type='char **' data-ref="3407argv">argv</dfn>[])</td></tr>
+<tr><th id="26">26</th><td>{</td></tr>
+<tr><th id="27">27</th><td>    <b>for</b> (<em>int</em> <dfn class="local col8 decl" id="3408i" title='i' data-type='int' data-ref="3408i">i</dfn> = <var>1</var>; <a class="local col8 ref" href="#3408i" title='i' data-ref="3408i">i</a> &lt; <a class="local col6 ref" href="#3406argc" title='argc' data-ref="3406argc">argc</a>; ++<a class="local col8 ref" href="#3408i" title='i' data-ref="3408i">i</a>)</td></tr>
+<tr><th id="28">28</th><td>    {</td></tr>
+<tr><th id="29">29</th><td>        <b>if</b> (<a class="local col7 ref" href="#3407argv" title='argv' data-ref="3407argv">argv</a>[<a class="local col8 ref" href="#3408i" title='i' data-ref="3408i">i</a>][<var>0</var>] == <kbd>'-'</kbd>)</td></tr>
+<tr><th id="30">30</th><td>        {</td></tr>
+<tr><th id="31">31</th><td>            <a class="member" href="CommandLine.h.html#CommandLine::commands_" title='CommandLine::commands_' data-ref="CommandLine::commands_">commands_</a>.<a class="ref" href="../include/c++/7/bits/stl_set.h.html#_ZNSt3set6insertERKT_" title='std::set::insert' data-ref="_ZNSt3set6insertERKT_">insert</a>(<span class="namespace">std::</span><a class="typedef" href="../include/c++/7/bits/stringfwd.h.html#std::__cxx11::string" title='std::__cxx11::string' data-type='basic_string&lt;char&gt;' data-ref="std::__cxx11::string">string</a><a class="ref" href="../include/c++/7/bits/basic_string.h.html#_ZNSt7__cxx1112basic_stringC1EPKT_RKT1_" title='std::__cxx11::basic_string::basic_string&lt;_CharT, _Traits, _Alloc&gt;' data-ref="_ZNSt7__cxx1112basic_stringC1EPKT_RKT1_">(</a>&amp;<a class="local col7 ref" href="#3407argv" title='argv' data-ref="3407argv">argv</a>[<a class="local col8 ref" href="#3408i" title='i' data-ref="3408i">i</a>][<var>1</var>]));</td></tr>
+<tr><th id="32">32</th><td>        }</td></tr>
+<tr><th id="33">33</th><td>        <b>else</b></td></tr>
+<tr><th id="34">34</th><td>        {</td></tr>
+<tr><th id="35">35</th><td>            <span class="namespace">std::</span><a class="typedef" href="../include/c++/7/bits/stringfwd.h.html#std::__cxx11::string" title='std::__cxx11::string' data-type='basic_string&lt;char&gt;' data-ref="std::__cxx11::string">string</a> <dfn class="local col9 decl" id="3409arg" title='arg' data-type='std::string' data-ref="3409arg">arg</dfn> = <a class="ref fake" href="../include/c++/7/bits/basic_string.h.html#_ZNSt7__cxx1112basic_stringC1EPKT_RKT1_" title='std::__cxx11::basic_string::basic_string&lt;_CharT, _Traits, _Alloc&gt;' data-ref="_ZNSt7__cxx1112basic_stringC1EPKT_RKT1_"></a><a class="local col7 ref" href="#3407argv" title='argv' data-ref="3407argv">argv</a>[<a class="local col8 ref" href="#3408i" title='i' data-ref="3408i">i</a>];</td></tr>
+<tr><th id="36">36</th><td>            <a class="member" href="CommandLine.h.html#CommandLine::args_" title='CommandLine::args_' data-ref="CommandLine::args_">args_</a>.<a class="ref" href="../include/c++/7/bits/stl_vector.h.html#_ZNSt6vector9push_backERKT_" title='std::vector::push_back' data-ref="_ZNSt6vector9push_backERKT_">push_back</a>(<a class="local col9 ref" href="#3409arg" title='arg' data-ref="3409arg">arg</a>);</td></tr>
+<tr><th id="37">37</th><td>        }</td></tr>
+<tr><th id="38">38</th><td>    }</td></tr>
+<tr><th id="39">39</th><td>}</td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td><em>bool</em> <a class="type" href="CommandLine.h.html#CommandLine" title='CommandLine' data-ref="CommandLine">CommandLine</a>::<dfn class="decl def" id="_ZN11CommandLine13CommandExistsEPKc" title='CommandLine::CommandExists' data-ref="_ZN11CommandLine13CommandExistsEPKc">CommandExists</dfn>(<em>const</em> <em>char</em>* <dfn class="local col0 decl" id="3410c" title='c' data-type='const char *' data-ref="3410c">c</dfn>)</td></tr>
+<tr><th id="42">42</th><td>{</td></tr>
+<tr><th id="43">43</th><td>    <b>return</b> <a class="member" href="CommandLine.h.html#CommandLine::commands_" title='CommandLine::commands_' data-ref="CommandLine::commands_">commands_</a>.<a class="ref" href="../include/c++/7/bits/stl_set.h.html#_ZNSt3set4findERKT_" title='std::set::find' data-ref="_ZNSt3set4findERKT_">find</a>(<span class="namespace">std::</span><a class="typedef" href="../include/c++/7/bits/stringfwd.h.html#std::__cxx11::string" title='std::__cxx11::string' data-type='basic_string&lt;char&gt;' data-ref="std::__cxx11::string">string</a><a class="ref" href="../include/c++/7/bits/basic_string.h.html#_ZNSt7__cxx1112basic_stringC1EPKT_RKT1_" title='std::__cxx11::basic_string::basic_string&lt;_CharT, _Traits, _Alloc&gt;' data-ref="_ZNSt7__cxx1112basic_stringC1EPKT_RKT1_">(</a><a class="local col0 ref" href="#3410c" title='c' data-ref="3410c">c</a>)) <a class="ref" href="../include/c++/7/bits/stl_tree.h.html#_ZNKSt23_Rb_tree_const_iteratorneERKSt23_Rb_tree_const_iteratorIT_E" title='std::_Rb_tree_const_iterator::operator!=' data-ref="_ZNKSt23_Rb_tree_const_iteratorneERKSt23_Rb_tree_const_iteratorIT_E">!=</a> <a class="member" href="CommandLine.h.html#CommandLine::commands_" title='CommandLine::commands_' data-ref="CommandLine::commands_">commands_</a>.<a class="ref" href="../include/c++/7/bits/stl_set.h.html#_ZNKSt3set3endEv" title='std::set::end' data-ref="_ZNKSt3set3endEv">end</a>();</td></tr>
+<tr><th id="44">44</th><td>}</td></tr>
+<tr><th id="45">45</th><td></td></tr>
+<tr><th id="46">46</th><td><span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <a class="type" href="CommandLine.h.html#CommandLine" title='CommandLine' data-ref="CommandLine">CommandLine</a>::<dfn class="decl def" id="_ZN11CommandLine15GetCommandCountEv" title='CommandLine::GetCommandCount' data-ref="_ZN11CommandLine15GetCommandCountEv">GetCommandCount</dfn>()</td></tr>
+<tr><th id="47">47</th><td>{</td></tr>
+<tr><th id="48">48</th><td>    <b>return</b> <a class="member" href="CommandLine.h.html#CommandLine::commands_" title='CommandLine::commands_' data-ref="CommandLine::commands_">commands_</a>.<a class="ref" href="../include/c++/7/bits/stl_set.h.html#_ZNKSt3set4sizeEv" title='std::set::size' data-ref="_ZNKSt3set4sizeEv">size</a>();</td></tr>
+<tr><th id="49">49</th><td>}</td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td><span class="namespace">std::</span><a class="type" href="../include/c++/7/bits/stl_set.h.html#std::set" title='std::set' data-ref="std::set">set</a>&lt;<span class="namespace">std::</span><a class="typedef" href="../include/c++/7/bits/stringfwd.h.html#std::__cxx11::string" title='std::__cxx11::string' data-type='basic_string&lt;char&gt;' data-ref="std::__cxx11::string">string</a>&gt;&amp; <a class="type" href="CommandLine.h.html#CommandLine" title='CommandLine' data-ref="CommandLine">CommandLine</a>::<dfn class="decl def" id="_ZN11CommandLine11GetCommandsEv" title='CommandLine::GetCommands' data-ref="_ZN11CommandLine11GetCommandsEv">GetCommands</dfn>()</td></tr>
+<tr><th id="52">52</th><td>{</td></tr>
+<tr><th id="53">53</th><td>    <b>return</b> <a class="member" href="CommandLine.h.html#CommandLine::commands_" title='CommandLine::commands_' data-ref="CommandLine::commands_">commands_</a>;</td></tr>
+<tr><th id="54">54</th><td>}</td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td><span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <a class="type" href="CommandLine.h.html#CommandLine" title='CommandLine' data-ref="CommandLine">CommandLine</a>::<dfn class="decl def" id="_ZN11CommandLine16GetArgumentCountEv" title='CommandLine::GetArgumentCount' data-ref="_ZN11CommandLine16GetArgumentCountEv">GetArgumentCount</dfn>()</td></tr>
+<tr><th id="57">57</th><td>{</td></tr>
+<tr><th id="58">58</th><td>    <b>return</b> <a class="member" href="CommandLine.h.html#CommandLine::args_" title='CommandLine::args_' data-ref="CommandLine::args_">args_</a>.<a class="ref" href="../include/c++/7/bits/stl_vector.h.html#_ZNKSt6vector4sizeEv" title='std::vector::size' data-ref="_ZNKSt6vector4sizeEv">size</a>();</td></tr>
+<tr><th id="59">59</th><td>}</td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td><em>const</em> <em>char</em>* <a class="type" href="CommandLine.h.html#CommandLine" title='CommandLine' data-ref="CommandLine">CommandLine</a>::<dfn class="decl def" id="_ZN11CommandLine11GetArgumentEm" title='CommandLine::GetArgument' data-ref="_ZN11CommandLine11GetArgumentEm">GetArgument</dfn>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col1 decl" id="3411index" title='index' data-type='size_t' data-ref="3411index">index</dfn>)</td></tr>
+<tr><th id="62">62</th><td>{</td></tr>
+<tr><th id="63">63</th><td>    <b>return</b> <a class="member" href="CommandLine.h.html#CommandLine::args_" title='CommandLine::args_' data-ref="CommandLine::args_">args_</a><a class="ref" href="../include/c++/7/bits/stl_vector.h.html#_ZNSt6vectorixEm" title='std::vector::operator[]' data-ref="_ZNSt6vectorixEm">[<a class="local col1 ref" href="#3411index" title='index' data-ref="3411index">index</a>]</a>.<a class="ref" href="../include/c++/7/bits/basic_string.h.html#_ZNKSt7__cxx1112basic_string5c_strEv" title='std::__cxx11::basic_string::c_str' data-ref="_ZNKSt7__cxx1112basic_string5c_strEv">c_str</a>();</td></tr>
+<tr><th id="64">64</th><td>}</td></tr>
+<tr><th id="65">65</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

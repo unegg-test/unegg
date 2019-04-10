@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='182' type='SRes LookInStream_SeekTo(ILookInStream * stream, UInt64 offset)'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='34' ll='38' type='SRes LookInStream_SeekTo(ILookInStream * stream, UInt64 offset)'/>

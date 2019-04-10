@@ -1,0 +1,7 @@
+<dec f='codebrowser/nest/algorithm/azo/AZO.h' l='53' type='int AZO_DecompressInit(AZO_HDECOMPRESS * pHandle)'/>
+<use f='codebrowser/nest/algorithm/azo/AZOWrapper.h' l='23' u='c' c='_ZN10AZODecoderC1Ev'/>
+<doc f='codebrowser/nest/algorithm/azo/AZO.h' l='52'>//Decompress</doc>
+<doc f='codebrowser/nest/algorithm/azo/AZO.h' l='53'>/*OUT*/</doc>
+<def f='codebrowser/nest/algorithm/azo/unAZO.cpp' l='34' ll='49' type='int AZO_DecompressInit(AZO_HCOMPRESS * pHandle)'/>
+<doc f='codebrowser/nest/algorithm/azo/unAZO.cpp' l='33'>//Compress</doc>
+<doc f='codebrowser/nest/algorithm/azo/unAZO.cpp' l='34'>/*OUT*/</doc>

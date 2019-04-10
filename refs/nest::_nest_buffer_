@@ -1,0 +1,13 @@
+<def f='codebrowser/nest/Utils.h' l='45' type='char [10240]'/>
+<use f='codebrowser/UnEgg.cpp' l='155' macro='1' u='r'/>
+<use f='codebrowser/UnEgg.cpp' l='155' macro='1' u='r'/>
+<use f='codebrowser/UnEgg.cpp' l='162' macro='1' u='r'/>
+<use f='codebrowser/UnEgg.cpp' l='162' macro='1' u='r'/>
+<use f='codebrowser/UnEgg.cpp' l='219' macro='1' u='r'/>
+<use f='codebrowser/UnEgg.cpp' l='219' macro='1' u='r'/>
+<use f='codebrowser/nest/Utils.cpp' l='300' u='r' c='_ZN4nest4utf85limitEmPKc'/>
+<use f='codebrowser/nest/Utils.cpp' l='300' u='r' c='_ZN4nest4utf85limitEmPKc'/>
+<use f='codebrowser/nest/Utils.cpp' l='302' u='r' c='_ZN4nest4utf85limitEmPKc'/>
+<use f='codebrowser/nest/Utils.cpp' l='428' u='r' c='_ZN4nest4utf813path_ellipsisEmPKc'/>
+<use f='codebrowser/nest/Utils.cpp' l='428' u='r' c='_ZN4nest4utf813path_ellipsisEmPKc'/>
+<use f='codebrowser/nest/Utils.cpp' l='429' u='r' c='_ZN4nest4utf813path_ellipsisEmPKc'/>

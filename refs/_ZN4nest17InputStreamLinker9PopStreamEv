@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/stream/InputStreamLinker.h' l='39' type='int nest::InputStreamLinker::PopStream()'/>
+<def f='codebrowser/nest/stream/InputStreamLinker.cpp' l='144' ll='151' type='int nest::InputStreamLinker::PopStream()'/>

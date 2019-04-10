@@ -1,0 +1,13 @@
+<def f='include/c++/7/bits/stl_vector.h' l='1246' ll='1248' type='void std::vector::clear()'/>
+<use f='include/c++/7/bits/stl_vector.h' l='1316' u='c' c='_ZNSt6vector19_M_range_initializeET_S0_St18input_iterator_tag'/>
+<doc f='include/c++/7/bits/stl_vector.h' l='1240'>/**
+       *  Erases all the elements.  Note that this function only erases the
+       *  elements, and that if the elements themselves are pointers, the
+       *  pointed-to memory is not touched in any way.  Managing the pointer is
+       *  the user&apos;s responsibility.
+       */</doc>
+<use f='codebrowser/nest/stream/InputStreamRewinder.h' l='59' u='c' c='_ZN4nest19InputStreamRewinder5ClearEv'/>
+<use f='codebrowser/nest/Workspace.cpp' l='119' u='c' c='_ZN4nest9Workspace5CloseEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='362' u='c' c='_ZN4nest9EggFormat15ReadSolidBlocksEv'/>
+<use f='codebrowser/nest/format/egg/FileWrap.cpp' l='44' u='c' c='_ZN4nest3egg8FileWrap9OnCleanUpEv'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='216' u='c' c='_ZN4nest17InputStreamLinker8FinalizeEv'/>

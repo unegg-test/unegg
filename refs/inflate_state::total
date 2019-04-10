@@ -1,0 +1,7 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/inflate.h' l='89' type='unsigned long'/>
+<offset>256</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/inflate.h' l='89'>/* protected copy of output count */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='110' u='w' c='inflateReset'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1164' u='w' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1186' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1226' u='w' c='inflate'/>

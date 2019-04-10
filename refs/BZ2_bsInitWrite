@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='279' type='void BZ2_bsInitWrite(EState * )'/>
+<def f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='37' ll='41' type='void BZ2_bsInitWrite(EState * s)'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='623' u='c' c='BZ2_compressBlock'/>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='36'>/*---------------------------------------------------*/</doc>

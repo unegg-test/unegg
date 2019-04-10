@@ -1,0 +1,4 @@
+<def f='codebrowser/nest/algorithm/azo/Common/AZOOption.h' l='21' type='const u_int'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/DistanceCodeD.h' l='25' u='r' c='_ZN3AZO7Decoder12DistanceCodeC1Ev'/>
+<use f='codebrowser/nest/algorithm/azo/Common/MatchCodeTable.h' l='35' u='r'/>
+<use f='codebrowser/nest/algorithm/azo/Common/MatchCodeTable.h' l='170' u='r' c='_ZN3AZO16GetMatchDistCodeEj'/>

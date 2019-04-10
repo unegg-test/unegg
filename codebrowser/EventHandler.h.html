@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>EventHandler.h source code [codebrowser/EventHandler.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="EventHandler "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/EventHandler.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='EventHandler.h.html'>EventHandler.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * EventHandler.h</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> *  Created on: 2011. 3. 25.</i></td></tr>
+<tr><th id="5">5</th><td><i> *      Author: Jehoon Shin(Revolution)</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> *  Copyright(c) 2010-Present ESTsoft Corp. All rights reserved.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> *  For conditions of distribution and use, see copyright notice in license.txt</i></td></tr>
+<tr><th id="10">10</th><td><i> */</i></td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td><u>#<span data-ppcond="12">ifndef</span> <span class="macro" data-ref="_M/EVENTHANDLER_H_">EVENTHANDLER_H_</span></u></td></tr>
+<tr><th id="13">13</th><td><u>#define <dfn class="macro" id="_M/EVENTHANDLER_H_" data-ref="_M/EVENTHANDLER_H_">EVENTHANDLER_H_</dfn></u></td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><u>#include <a href="../include/c++/7/string.html">&lt;string&gt;</a></u></td></tr>
+<tr><th id="16">16</th><td><u>#include <a href="nest/Events.h.html">&lt;nest/Events.h&gt;</a></u></td></tr>
+<tr><th id="17">17</th><td><u>#include <a href="nest/Info.h.html">&lt;nest/Info.h&gt;</a></u></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><u>#<span data-ppcond="19">ifndef</span> <span class="macro" data-ref="_M/__MINGW32__">__MINGW32__</span></u></td></tr>
+<tr><th id="20">20</th><td><u>#include <a href="../include/x86_64-linux-gnu/sys/ioctl.h.html">&lt;sys/ioctl.h&gt;</a></u></td></tr>
+<tr><th id="21">21</th><td><u>#<span data-ppcond="19">else</span></u></td></tr>
+<tr><th id="22">22</th><td><b>struct</b> winsize</td></tr>
+<tr><th id="23">23</th><td>{</td></tr>
+<tr><th id="24">24</th><td>    <em>unsigned</em> <em>short</em> ws_row; <i>/* rows, in characters */</i></td></tr>
+<tr><th id="25">25</th><td>    <em>unsigned</em> <em>short</em> ws_col; <i>/* columns, in characters */</i></td></tr>
+<tr><th id="26">26</th><td>    <em>unsigned</em> <em>short</em> ws_xpixel; <i>/* horizontal size, pixels */</i></td></tr>
+<tr><th id="27">27</th><td>    <em>unsigned</em> <em>short</em> ws_ypixel; <i>/* vertical size, pixels */</i></td></tr>
+<tr><th id="28">28</th><td>};</td></tr>
+<tr><th id="29">29</th><td><u>#<span data-ppcond="19">endif</span></u></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><b>class</b> <dfn class="type def" id="EventHandler" title='EventHandler' data-ref="EventHandler">EventHandler</dfn>: <b>public</b> <span class="namespace">nest::</span><a class="type" href="nest/Events.h.html#nest::Events" title='nest::Events' data-ref="nest::Events">Events</a></td></tr>
+<tr><th id="32">32</th><td>{</td></tr>
+<tr><th id="33">33</th><td><b>public</b>:</td></tr>
+<tr><th id="34">34</th><td>    <a class="decl" href="EventHandler.cpp.html#_ZN12EventHandlerC1EP7winsize" title='EventHandler::EventHandler' data-ref="_ZN12EventHandlerC1EP7winsize" id="_ZN12EventHandlerC1EP7winsize">EventHandler</a>(<a class="type" href="../include/x86_64-linux-gnu/bits/ioctl-types.h.html#winsize" title='winsize' data-ref="winsize">winsize</a>* <dfn class="local col3 decl" id="63console" title='console' data-type='winsize *' data-ref="63console">console</dfn>);</td></tr>
+<tr><th id="35">35</th><td>    <b>virtual</b> <a class="virtual decl" href="EventHandler.cpp.html#_ZN12EventHandlerD1Ev" title='EventHandler::~EventHandler' data-ref="_ZN12EventHandlerD1Ev" id="_ZN12EventHandlerD1Ev">~EventHandler</a>();</td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td>    <em>void</em> <a class="decl" href="EventHandler.cpp.html#_ZN12EventHandler15SetDisplayLevelEi" title='EventHandler::SetDisplayLevel' data-ref="_ZN12EventHandler15SetDisplayLevelEi" id="_ZN12EventHandler15SetDisplayLevelEi">SetDisplayLevel</a>(<em>int</em> <dfn class="local col4 decl" id="64vLevel" title='vLevel' data-type='int' data-ref="64vLevel">vLevel</dfn>);</td></tr>
+<tr><th id="38">38</th><td>    <em>void</em> <a class="decl" href="EventHandler.cpp.html#_ZN12EventHandler11SetRedirectEb" title='EventHandler::SetRedirect' data-ref="_ZN12EventHandler11SetRedirectEb" id="_ZN12EventHandler11SetRedirectEb">SetRedirect</a>(<em>bool</em> <dfn class="local col5 decl" id="65redirect" title='redirect' data-type='bool' data-ref="65redirect">redirect</dfn>);</td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td>    <b>virtual</b> <em>int</em> <a class="virtual decl" href="EventHandler.cpp.html#_ZN12EventHandler10InitializeEPN4nest9WorkspaceE" title='EventHandler::Initialize' data-ref="_ZN12EventHandler10InitializeEPN4nest9WorkspaceE" id="_ZN12EventHandler10InitializeEPN4nest9WorkspaceE">Initialize</a>(<span class="namespace">nest::</span><a class="type" href="nest/Workspace.h.html#nest::Workspace" title='nest::Workspace' data-ref="nest::Workspace">Workspace</a>* <dfn class="local col6 decl" id="66sender" title='sender' data-type='nest::Workspace *' data-ref="66sender">sender</dfn>);</td></tr>
+<tr><th id="41">41</th><td>    <b>virtual</b> <em>void</em> <a class="virtual decl" href="EventHandler.cpp.html#_ZN12EventHandler8FinalizeEi" title='EventHandler::Finalize' data-ref="_ZN12EventHandler8FinalizeEi" id="_ZN12EventHandler8FinalizeEi">Finalize</a>(<em>int</em> <dfn class="local col7 decl" id="67res" title='res' data-type='int' data-ref="67res">res</dfn>);</td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td>    <b>virtual</b> <em>int</em> <a class="virtual decl" href="EventHandler.cpp.html#_ZN12EventHandler11OnWorkStartEi" title='EventHandler::OnWorkStart' data-ref="_ZN12EventHandler11OnWorkStartEi" id="_ZN12EventHandler11OnWorkStartEi">OnWorkStart</a>(<em>int</em> <dfn class="local col8 decl" id="68workCode" title='workCode' data-type='int' data-ref="68workCode">workCode</dfn>);</td></tr>
+<tr><th id="44">44</th><td>    <b>virtual</b> <em>void</em> <a class="virtual decl" href="EventHandler.cpp.html#_ZN12EventHandler12OnWorkFinishEii" title='EventHandler::OnWorkFinish' data-ref="_ZN12EventHandler12OnWorkFinishEii" id="_ZN12EventHandler12OnWorkFinishEii">OnWorkFinish</a>(<em>int</em> <dfn class="local col9 decl" id="69workCode" title='workCode' data-type='int' data-ref="69workCode">workCode</dfn>, <em>int</em> <dfn class="local col0 decl" id="70res" title='res' data-type='int' data-ref="70res">res</dfn>);</td></tr>
+<tr><th id="45">45</th><td></td></tr>
+<tr><th id="46">46</th><td>    <b>virtual</b> <em>int</em> <a class="virtual decl" href="EventHandler.cpp.html#_ZN12EventHandler11OnFileStartEm" title='EventHandler::OnFileStart' data-ref="_ZN12EventHandler11OnFileStartEm" id="_ZN12EventHandler11OnFileStartEm">OnFileStart</a>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col1 decl" id="71index" title='index' data-type='size_t' data-ref="71index">index</dfn>);</td></tr>
+<tr><th id="47">47</th><td>    <b>virtual</b> <em>void</em> <a class="virtual decl" href="EventHandler.cpp.html#_ZN12EventHandler12OnFileFinishEmi" title='EventHandler::OnFileFinish' data-ref="_ZN12EventHandler12OnFileFinishEmi" id="_ZN12EventHandler12OnFileFinishEmi">OnFileFinish</a>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col2 decl" id="72index" title='index' data-type='size_t' data-ref="72index">index</dfn>, <em>int</em> <dfn class="local col3 decl" id="73res" title='res' data-type='int' data-ref="73res">res</dfn>);</td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td>    <b>virtual</b> <em>int</em> <a class="virtual decl" href="EventHandler.cpp.html#_ZN12EventHandler7OnErrorEmi" title='EventHandler::OnError' data-ref="_ZN12EventHandler7OnErrorEmi" id="_ZN12EventHandler7OnErrorEmi">OnError</a>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col4 decl" id="74index" title='index' data-type='size_t' data-ref="74index">index</dfn>, <em>int</em> <dfn class="local col5 decl" id="75errorCode" title='errorCode' data-type='int' data-ref="75errorCode">errorCode</dfn>);</td></tr>
+<tr><th id="50">50</th><td>    <b>virtual</b> <em>int</em> <a class="virtual decl" href="EventHandler.cpp.html#_ZN12EventHandler18OnQueryInputStreamEmPPN4nest11InputStreamEPKcm" title='EventHandler::OnQueryInputStream' data-ref="_ZN12EventHandler18OnQueryInputStreamEmPPN4nest11InputStreamEPKcm" id="_ZN12EventHandler18OnQueryInputStreamEmPPN4nest11InputStreamEPKcm">OnQueryInputStream</a>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col6 decl" id="76index" title='index' data-type='size_t' data-ref="76index">index</dfn>, <span class="namespace">nest::</span><a class="type" href="nest/stream/InputStream.h.html#nest::InputStream" title='nest::InputStream' data-ref="nest::InputStream">InputStream</a>** <dfn class="local col7 decl" id="77stream" title='stream' data-type='nest::InputStream **' data-ref="77stream">stream</dfn>,</td></tr>
+<tr><th id="51">51</th><td>            <em>const</em> <em>char</em>* <dfn class="local col8 decl" id="78virtualName" title='virtualName' data-type='const char *' data-ref="78virtualName">virtualName</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col9 decl" id="79queryCount" title='queryCount' data-type='size_t' data-ref="79queryCount">queryCount</dfn>);</td></tr>
+<tr><th id="52">52</th><td>    <b>virtual</b> <em>int</em> <a class="virtual decl" href="EventHandler.cpp.html#_ZN12EventHandler19OnQueryOutputStreamEmPPN4nest12OutputStreamEPKc" title='EventHandler::OnQueryOutputStream' data-ref="_ZN12EventHandler19OnQueryOutputStreamEmPPN4nest12OutputStreamEPKc" id="_ZN12EventHandler19OnQueryOutputStreamEmPPN4nest12OutputStreamEPKc">OnQueryOutputStream</a>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col0 decl" id="80index" title='index' data-type='size_t' data-ref="80index">index</dfn>, <span class="namespace">nest::</span><a class="type" href="nest/Events.h.html#nest::OutputStream" title='nest::OutputStream' data-ref="nest::OutputStream">OutputStream</a>** <dfn class="local col1 decl" id="81stream" title='stream' data-type='nest::OutputStream **' data-ref="81stream">stream</dfn>,</td></tr>
+<tr><th id="53">53</th><td>            <em>const</em> <em>char</em>* <dfn class="local col2 decl" id="82virtualName" title='virtualName' data-type='const char *' data-ref="82virtualName">virtualName</dfn>);</td></tr>
+<tr><th id="54">54</th><td>    <b>virtual</b> <em>int</em> <a class="virtual decl" href="EventHandler.cpp.html#_ZN12EventHandler15OnQueryPasswordEmPcmm" title='EventHandler::OnQueryPassword' data-ref="_ZN12EventHandler15OnQueryPasswordEmPcmm" id="_ZN12EventHandler15OnQueryPasswordEmPcmm">OnQueryPassword</a>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col3 decl" id="83index" title='index' data-type='size_t' data-ref="83index">index</dfn>, <em>char</em>* <dfn class="local col4 decl" id="84buffer" title='buffer' data-type='char *' data-ref="84buffer">buffer</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col5 decl" id="85size" title='size' data-type='size_t' data-ref="85size">size</dfn>,</td></tr>
+<tr><th id="55">55</th><td>            <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col6 decl" id="86queryCount" title='queryCount' data-type='size_t' data-ref="86queryCount">queryCount</dfn>);</td></tr>
+<tr><th id="56">56</th><td>    <b>virtual</b> <em>int</em> <a class="virtual decl" href="EventHandler.cpp.html#_ZN12EventHandler10OnProgressEmii" title='EventHandler::OnProgress' data-ref="_ZN12EventHandler10OnProgressEmii" id="_ZN12EventHandler10OnProgressEmii">OnProgress</a>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col7 decl" id="87index" title='index' data-type='size_t' data-ref="87index">index</dfn>, <em>int</em> <dfn class="local col8 decl" id="88current" title='current' data-type='int' data-ref="88current">current</dfn>, <em>int</em> <dfn class="local col9 decl" id="89max" title='max' data-type='int' data-ref="89max">max</dfn>);</td></tr>
+<tr><th id="57">57</th><td></td></tr>
+<tr><th id="58">58</th><td><b>private</b>:</td></tr>
+<tr><th id="59">59</th><td>    <em>void</em> <a class="decl" href="EventHandler.cpp.html#_ZN12EventHandler11PrintIndentEm" title='EventHandler::PrintIndent' data-ref="_ZN12EventHandler11PrintIndentEm" id="_ZN12EventHandler11PrintIndentEm">PrintIndent</a>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col0 decl" id="90size" title='size' data-type='size_t' data-ref="90size">size</dfn>);</td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td>    <em>int</em> <dfn class="decl" id="EventHandler::vLevel_" title='EventHandler::vLevel_' data-ref="EventHandler::vLevel_">vLevel_</dfn>;</td></tr>
+<tr><th id="62">62</th><td>    <em>bool</em> <dfn class="decl" id="EventHandler::redirect_" title='EventHandler::redirect_' data-ref="EventHandler::redirect_">redirect_</dfn>;</td></tr>
+<tr><th id="63">63</th><td>    <span class="namespace">nest::</span><a class="type" href="nest/Workspace.h.html#nest::Workspace" title='nest::Workspace' data-ref="nest::Workspace">Workspace</a>* <dfn class="decl" id="EventHandler::sender_" title='EventHandler::sender_' data-ref="EventHandler::sender_">sender_</dfn>;</td></tr>
+<tr><th id="64">64</th><td>    <em>int</em> <dfn class="decl" id="EventHandler::overwrite_" title='EventHandler::overwrite_' data-ref="EventHandler::overwrite_">overwrite_</dfn>;</td></tr>
+<tr><th id="65">65</th><td>    <span class="namespace">std::</span><a class="typedef" href="../include/c++/7/bits/stringfwd.h.html#std::__cxx11::string" title='std::__cxx11::string' data-type='basic_string&lt;char&gt;' data-ref="std::__cxx11::string">string</a> <dfn class="decl" id="EventHandler::filename_" title='EventHandler::filename_' data-ref="EventHandler::filename_">filename_</dfn>;</td></tr>
+<tr><th id="66">66</th><td>    <span class="namespace">std::</span><a class="typedef" href="../include/c++/7/bits/stringfwd.h.html#std::__cxx11::string" title='std::__cxx11::string' data-type='basic_string&lt;char&gt;' data-ref="std::__cxx11::string">string</a> <dfn class="decl" id="EventHandler::archiveName_" title='EventHandler::archiveName_' data-ref="EventHandler::archiveName_">archiveName_</dfn>;</td></tr>
+<tr><th id="67">67</th><td>    <span class="namespace">nest::</span><a class="type" href="nest/Info.h.html#nest::Info" title='nest::Info' data-ref="nest::Info">Info</a>* <dfn class="decl" id="EventHandler::info_" title='EventHandler::info_' data-ref="EventHandler::info_">info_</dfn>;</td></tr>
+<tr><th id="68">68</th><td>    <a class="type" href="../include/x86_64-linux-gnu/bits/ioctl-types.h.html#winsize" title='winsize' data-ref="winsize">winsize</a>* <dfn class="decl" id="EventHandler::console_" title='EventHandler::console_' data-ref="EventHandler::console_">console_</dfn>;</td></tr>
+<tr><th id="69">69</th><td>};</td></tr>
+<tr><th id="70">70</th><td></td></tr>
+<tr><th id="71">71</th><td><u>#<span data-ppcond="12">endif</span> /* EVENTHANDLER_H_ */</u></td></tr>
+<tr><th id="72">72</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='EventHandler.cpp.html'>codebrowser/EventHandler.cpp</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

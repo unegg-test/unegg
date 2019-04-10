@@ -1,0 +1,14 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='210' type='UInt32 *'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/blocksort.c' l='1045' u='r' c='BZ2_blockSort'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/blocksort.c' l='1079' u='r' c='BZ2_blockSort'/>
+<offset>192</offset>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='209'>/* for doing the block sorting */</doc>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='172' u='w' c='BZ2_bzCompressInit'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='177' u='w' c='BZ2_bzCompressInit'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='181' u='r' c='BZ2_bzCompressInit'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='182' u='r' c='BZ2_bzCompressInit'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='182' u='r' c='BZ2_bzCompressInit'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='199' u='r' c='BZ2_bzCompressInit'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='201' u='r' c='BZ2_bzCompressInit'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='476' u='r' c='BZ2_bzCompressEnd'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='476' u='r' c='BZ2_bzCompressEnd'/>

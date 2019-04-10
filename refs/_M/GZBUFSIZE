@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='72'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='71'>/* default i/o buffer size -- double this for output when reading */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='99' u='c'/>

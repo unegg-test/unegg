@@ -1,0 +1,6 @@
+<dec f='codebrowser/nest/stream/InputStream.h' l='39' type='std::string'/>
+<offset>64</offset>
+<use f='codebrowser/nest/stream/FileInputStream.cpp' l='34' u='m' c='_ZN4nest15FileInputStream4OpenEv'/>
+<use f='codebrowser/nest/stream/InputStream.cpp' l='19' u='w' c='_ZN4nest11InputStream10InitializeEPKc'/>
+<use f='codebrowser/nest/stream/InputStream.cpp' l='26' u='m' c='_ZN4nest11InputStream8FinalizeEv'/>
+<use f='codebrowser/nest/stream/InputStream.cpp' l='31' u='m' c='_ZN4nest11InputStream14GetVirtualNameEv'/>

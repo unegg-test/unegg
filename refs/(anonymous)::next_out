@@ -1,0 +1,18 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.h' l='55' type='char *'/>
+<use f='codebrowser/nest/algorithm/BZipCoder.cpp' l='57' u='w' c='_ZN4nest9BZipCoder5OnPopEPvPm'/>
+<offset>192</offset>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='347' u='r' c='copy_output_until_stop'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='350' u='w' c='copy_output_until_stop'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='547' u='r' c='unRLE_obuf_to_output_FAST'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='550' u='w' c='unRLE_obuf_to_output_FAST'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='599' u='r' c='unRLE_obuf_to_output_FAST'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='677' u='w' c='unRLE_obuf_to_output_FAST'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='717' u='r' c='unRLE_obuf_to_output_SMALL'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='720' u='w' c='unRLE_obuf_to_output_SMALL'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='766' u='r' c='unRLE_obuf_to_output_SMALL'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='769' u='w' c='unRLE_obuf_to_output_SMALL'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='989' u='w' c='BZ2_bzWrite'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1048' u='w' c='BZ2_bzWriteClose64'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1182' u='w' c='BZ2_bzRead'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1275' u='w' c='BZ2_bzBuffToBuffCompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1323' u='w' c='BZ2_bzBuffToBuffDecompress'/>

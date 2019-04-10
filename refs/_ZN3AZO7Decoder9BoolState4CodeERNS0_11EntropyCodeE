@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/algorithm/azo/Decoder/BoolStateD.h' l='29' type='BOOL AZO::Decoder::BoolState::Code(AZO::Decoder::EntropyCode &amp; entropy)'/>
+<def f='codebrowser/nest/algorithm/azo/Decoder/BoolStateD.cpp' l='20' ll='27' type='BOOL AZO::Decoder::BoolState::Code(AZO::Decoder::EntropyCode &amp; entropy)'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/HistoryListD.cpp' l='13' u='c' c='_ZN3AZO7Decoder11HistoryList4CodeERNS0_11EntropyCodeERT_'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/DictionaryTableD.cpp' l='22' u='c' c='_ZN3AZO7Decoder15DictionaryTable4CodeERNS0_11EntropyCodeERjS4_'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/BlockCodeD.cpp' l='46' u='c' c='_ZN3AZO7Decoder9BlockCode7GetCodeERNS0_11EntropyCodeEj'/>

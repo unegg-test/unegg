@@ -1,0 +1,22 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='381' type='UInt32 *'/>
+<offset>25216</offset>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='380'>/* for undoing the Burrows-Wheeler transform (FAST) */</doc>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='523' u='w' c='BZ2_bzDecompressInit'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='565' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='571' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='577' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='582' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='585' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='597' u='r' c='unRLE_obuf_to_output_FAST'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='675' u='w' c='unRLE_obuf_to_output_FAST'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='870' u='r' c='BZ2_bzDecompressEnd'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='870' u='r' c='BZ2_bzDecompressEnd'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='218' u='w' c='BZ2_decompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='219' u='r' c='BZ2_decompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='412' u='r' c='BZ2_decompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='480' u='r' c='BZ2_decompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='561' u='r' c='BZ2_decompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='562' u='r' c='BZ2_decompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='566' u='r' c='BZ2_decompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='570' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='573' macro='1' u='r'/>

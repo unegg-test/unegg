@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/format/egg/Global.h' l='42' type='void nest::egg::Global::OnCleanUp()'/>
+<inh f='codebrowser/nest/format/Header.h' l='42' c='_ZN4nest6Header9OnCleanUpEv'/>
+<def f='codebrowser/nest/format/egg/Global.cpp' l='32' ll='35' type='void nest::egg::Global::OnCleanUp()'/>

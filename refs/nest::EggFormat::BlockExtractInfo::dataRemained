@@ -1,0 +1,6 @@
+<dec f='codebrowser/nest/format/EggFormat.h' l='81' type='uint64'/>
+<offset>256</offset>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='433' u='w' c='_ZN4nest9EggFormat17PrepareSolidBlockEPNS_3egg9BlockWrapEPNS0_16BlockExtractInfoE'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='612' u='r' c='_ZN4nest9EggFormat19ExtractSolidArchiveEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='612' u='r' c='_ZN4nest9EggFormat19ExtractSolidArchiveEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='620' u='w' c='_ZN4nest9EggFormat19ExtractSolidArchiveEv'/>

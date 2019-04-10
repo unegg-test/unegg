@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/Workspace.h' l='71' type='std::vector&lt;FormatFactory *&gt;'/>
+<def f='codebrowser/nest/Workspace.cpp' l='19' type='std::vector&lt;FormatFactory *&gt;'/>
+<use f='codebrowser/nest/Workspace.cpp' l='23' u='m' c='_ZN4nest9Workspace10AddFactoryEPNS_13FormatFactoryE'/>
+<use f='codebrowser/nest/Workspace.cpp' l='69' u='m' c='_ZN4nest9Workspace4OpenEPKc'/>
+<use f='codebrowser/nest/Workspace.cpp' l='71' u='m' c='_ZN4nest9Workspace4OpenEPKc'/>

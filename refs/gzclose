@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='1413' type='int gzclose(gzFile file)'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/gzclose.c' l='11' ll='25' type='int gzclose(gzFile file)'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/gzclose.c' l='8'>/* gzclose() is in a separate file so that it is linked in only if it is used.
+   That way the other gzclose functions can be used instead to avoid linking in
+   unneeded compression or decompression routines. */</doc>

@@ -1,0 +1,2 @@
+<def f='codebrowser/nest/format/alz/File.h' l='98' ll='101' type='const char * nest::alz::File::GetComment()'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='204' u='c' c='_ZN4nest3alz4File6_AsPtrEjPb'/>

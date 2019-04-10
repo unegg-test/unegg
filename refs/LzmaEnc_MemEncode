@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.h' l='58' type='SRes LzmaEnc_MemEncode(CLzmaEncHandle p, Byte * dest, SizeT * destLen, const Byte * src, SizeT srcLen, int writeEndMark, ICompressProgress * progress, ISzAlloc * alloc, ISzAlloc * allocBig)'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='2188' ll='2214' type='SRes LzmaEnc_MemEncode(CLzmaEncHandle pp, Byte * dest, SizeT * destLen, const Byte * src, SizeT srcLen, int writeEndMark, ICompressProgress * progress, ISzAlloc * alloc, ISzAlloc * allocBig)'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='2229' u='c' c='LzmaEncode'/>

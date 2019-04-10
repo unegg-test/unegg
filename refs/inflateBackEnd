@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='1042' type='int inflateBackEnd(z_streamp strm)'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='623' ll='632' type='int inflateBackEnd(z_streamp strm)'/>

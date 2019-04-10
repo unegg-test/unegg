@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>BlockCodeD.h source code [codebrowser/nest/algorithm/azo/Decoder/BlockCodeD.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="AZO::Decoder::BlockCode "/>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/algorithm/azo/Decoder/BlockCodeD.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>nest</a>/<a href='../..'>algorithm</a>/<a href='..'>azo</a>/<a href='./'>Decoder</a>/<a href='BlockCodeD.h.html'>BlockCodeD.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * BlockCodeD.h</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> *  Created on: 2010. 12. 16.</i></td></tr>
+<tr><th id="5">5</th><td><i> *      Author: Yoonsik Oh(Boom)</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> *  Copyright(c) 2010-Present ESTsoft Corp. All rights reserved.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> *  For conditions of distribution and use, see copyright notice in license.txt</i></td></tr>
+<tr><th id="10">10</th><td><i> */</i></td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td><u>#<span data-ppcond="12">ifndef</span> <span class="macro" data-ref="_M/AZO_DECODER_BLOCKCODE_H">AZO_DECODER_BLOCKCODE_H</span></u></td></tr>
+<tr><th id="13">13</th><td><u>#define <dfn class="macro" id="_M/AZO_DECODER_BLOCKCODE_H" data-ref="_M/AZO_DECODER_BLOCKCODE_H">AZO_DECODER_BLOCKCODE_H</dfn></u></td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><u>#include <a href="BoolStateD.h.html">"BoolStateD.h"</a></u></td></tr>
+<tr><th id="16">16</th><td><u>#include <a href="AlphaCodeD.h.html">"AlphaCodeD.h"</a></u></td></tr>
+<tr><th id="17">17</th><td><u>#include <a href="MatchCodeD.h.html">"MatchCodeD.h"</a></u></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><b>namespace</b> <span class="namespace">AZO</span> {</td></tr>
+<tr><th id="20">20</th><td><b>namespace</b> <span class="namespace">Decoder</span> {</td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><b>class</b> <dfn class="type def" id="AZO::Decoder::BlockCode" title='AZO::Decoder::BlockCode' data-ref="AZO::Decoder::BlockCode">BlockCode</dfn></td></tr>
+<tr><th id="23">23</th><td>{</td></tr>
+<tr><th id="24">24</th><td><b>public</b>: </td></tr>
+<tr><th id="25">25</th><td>    <a class="decl" href="BlockCodeD.cpp.html#_ZN3AZO7Decoder9BlockCodeC1EPhj" title='AZO::Decoder::BlockCode::BlockCode' data-ref="_ZN3AZO7Decoder9BlockCodeC1EPhj" id="_ZN3AZO7Decoder9BlockCodeC1EPhj">BlockCode</a>(<a class="typedef" href="../Common/AZOType.h.html#AZO::byte" title='AZO::byte' data-type='uint8_t' data-ref="AZO::byte">byte</a>* <dfn class="local col7 decl" id="67buf" title='buf' data-type='byte *' data-ref="67buf">buf</dfn>, <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <dfn class="local col8 decl" id="68size" title='size' data-type='u_int' data-ref="68size">size</dfn>);</td></tr>
+<tr><th id="26">26</th><td>    <a class="decl" href="BlockCodeD.cpp.html#_ZN3AZO7Decoder9BlockCodeD1Ev" title='AZO::Decoder::BlockCode::~BlockCode' data-ref="_ZN3AZO7Decoder9BlockCodeD1Ev" id="_ZN3AZO7Decoder9BlockCodeD1Ev">~BlockCode</a>();</td></tr>
+<tr><th id="27">27</th><td>    </td></tr>
+<tr><th id="28">28</th><td>    <em>int</em> <a class="decl" href="BlockCodeD.cpp.html#_ZN3AZO7Decoder9BlockCode4CodeERNS0_11EntropyCodeE" title='AZO::Decoder::BlockCode::Code' data-ref="_ZN3AZO7Decoder9BlockCode4CodeERNS0_11EntropyCodeE" id="_ZN3AZO7Decoder9BlockCode4CodeERNS0_11EntropyCodeE">Code</a>(<a class="type" href="EntropyCodeD.h.html#AZO::Decoder::EntropyCode" title='AZO::Decoder::EntropyCode' data-ref="AZO::Decoder::EntropyCode">EntropyCode</a>&amp; <dfn class="local col9 decl" id="69entropy" title='entropy' data-type='AZO::Decoder::EntropyCode &amp;' data-ref="69entropy">entropy</dfn>);</td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><b>private</b>:</td></tr>
+<tr><th id="31">31</th><td>    <em>bool</em> <a class="decl" href="BlockCodeD.cpp.html#_ZN3AZO7Decoder9BlockCode9CopyBlockEjjj" title='AZO::Decoder::BlockCode::CopyBlock' data-ref="_ZN3AZO7Decoder9BlockCode9CopyBlockEjjj" id="_ZN3AZO7Decoder9BlockCode9CopyBlockEjjj">CopyBlock</a>(<a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <dfn class="local col0 decl" id="70pos" title='pos' data-type='u_int' data-ref="70pos">pos</dfn>, <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <dfn class="local col1 decl" id="71dist" title='dist' data-type='u_int' data-ref="71dist">dist</dfn>, <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <dfn class="local col2 decl" id="72len" title='len' data-type='u_int' data-ref="72len">len</dfn>);</td></tr>
+<tr><th id="32">32</th><td>    <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <a class="decl" href="BlockCodeD.cpp.html#_ZN3AZO7Decoder9BlockCode7GetCodeERNS0_11EntropyCodeEj" title='AZO::Decoder::BlockCode::GetCode' data-ref="_ZN3AZO7Decoder9BlockCode7GetCodeERNS0_11EntropyCodeEj" id="_ZN3AZO7Decoder9BlockCode7GetCodeERNS0_11EntropyCodeEj">GetCode</a>(<a class="type" href="EntropyCodeD.h.html#AZO::Decoder::EntropyCode" title='AZO::Decoder::EntropyCode' data-ref="AZO::Decoder::EntropyCode">EntropyCode</a>&amp; <dfn class="local col3 decl" id="73entropy" title='entropy' data-type='AZO::Decoder::EntropyCode &amp;' data-ref="73entropy">entropy</dfn>, <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <dfn class="local col4 decl" id="74pos" title='pos' data-type='u_int' data-ref="74pos">pos</dfn>);</td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><b>private</b>:</td></tr>
+<tr><th id="35">35</th><td>    <a class="typedef" href="../Common/AZOType.h.html#AZO::byte" title='AZO::byte' data-type='uint8_t' data-ref="AZO::byte">byte</a>* <dfn class="decl" id="AZO::Decoder::BlockCode::buf_" title='AZO::Decoder::BlockCode::buf_' data-ref="AZO::Decoder::BlockCode::buf_">buf_</dfn>;</td></tr>
+<tr><th id="36">36</th><td>    <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <dfn class="decl" id="AZO::Decoder::BlockCode::bufSize_" title='AZO::Decoder::BlockCode::bufSize_' data-ref="AZO::Decoder::BlockCode::bufSize_">bufSize_</dfn>;</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td>    <a class="type" href="BoolStateD.h.html#AZO::Decoder::BoolState" title='AZO::Decoder::BoolState' data-ref="AZO::Decoder::BoolState">BoolState</a>&lt;&gt; <dfn class="decl" id="AZO::Decoder::BlockCode::matchState_" title='AZO::Decoder::BlockCode::matchState_' data-ref="AZO::Decoder::BlockCode::matchState_">matchState_</dfn>;</td></tr>
+<tr><th id="39">39</th><td>    <a class="type" href="AlphaCodeD.h.html#AZO::Decoder::AlphaCode" title='AZO::Decoder::AlphaCode' data-ref="AZO::Decoder::AlphaCode">AlphaCode</a>   <dfn class="decl" id="AZO::Decoder::BlockCode::alphaProb_" title='AZO::Decoder::BlockCode::alphaProb_' data-ref="AZO::Decoder::BlockCode::alphaProb_">alphaProb_</dfn>;</td></tr>
+<tr><th id="40">40</th><td>    <a class="type" href="MatchCodeD.h.html#AZO::Decoder::MatchCode" title='AZO::Decoder::MatchCode' data-ref="AZO::Decoder::MatchCode">MatchCode</a>   <dfn class="decl" id="AZO::Decoder::BlockCode::matchCode_" title='AZO::Decoder::BlockCode::matchCode_' data-ref="AZO::Decoder::BlockCode::matchCode_">matchCode_</dfn>;</td></tr>
+<tr><th id="41">41</th><td>};</td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td>} <i>//namespaces Decoder</i></td></tr>
+<tr><th id="44">44</th><td>} <i>//namespaces AZO</i></td></tr>
+<tr><th id="45">45</th><td></td></tr>
+<tr><th id="46">46</th><td><u>#include <a href="BlockCodeD.cpp.html">"BlockCodeD.cpp"</a></u></td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td><u>#<span data-ppcond="12">endif</span> /*AZO_DECODER_BLOCKCODE_H*/</u></td></tr>
+<tr><th id="49">49</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='BlockCodeD.cpp.html'>codebrowser/nest/algorithm/azo/Decoder/BlockCodeD.cpp</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

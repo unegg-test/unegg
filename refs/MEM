@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/inflate.h' l='51' type='30'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/inflate.h' l='51'>/* got an inflate() memory error -- remain here until reset */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1202' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1219' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1276' u='r' c='inflateSetDictionary'/>

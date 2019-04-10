@@ -1,0 +1,15 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='88' type='uLong'/>
+<offset>128</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='88'>/* total nb of input bytes read so far */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='363' u='w' c='deflateReset'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='435' u='r' c='deflateParams'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='875' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='876' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='877' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='878' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1014' u='w' c='read_buf'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='110' u='w' c='inflateReset'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1224' u='w' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1377' u='w' c='inflateSync'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1381' u='r' c='inflateSync'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1383' u='w' c='inflateSync'/>

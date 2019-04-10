@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/Utils.h' l='33' type='const char * nest::utf8::find(const char * s, const char * substr)'/>
+<def f='codebrowser/nest/Utils.cpp' l='173' ll='176' type='const char * nest::utf8::find(const char * s, const char * substr)'/>
+<use f='codebrowser/nest/Utils.cpp' l='184' u='c' c='_ZN4nest4utf86find_rEPKcS2_'/>

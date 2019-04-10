@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/format/EggFormat.h' l='109' type='int nest::EggFormat::PreprocessDecrypt(size_t index, egg::EncryptField * header)'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='763' u='c' c='_ZN4nest9EggFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>
+<def f='codebrowser/nest/format/EggFormat.cpp' l='905' ll='980' type='int nest::EggFormat::PreprocessDecrypt(size_t index, egg::EncryptField * header)'/>

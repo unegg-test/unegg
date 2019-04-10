@@ -1,0 +1,2 @@
+<def f='codebrowser/nest/nest.h' l='99' macro='1' type='const unsigned int'/>
+<use f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='117' u='r' c='_ZN4nest3egg14ExtraFieldWrap9_As4BytesEjPb'/>

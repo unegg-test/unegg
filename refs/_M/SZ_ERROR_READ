@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='34'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='256' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='269' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='1595' u='c'/>

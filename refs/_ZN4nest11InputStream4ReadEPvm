@@ -1,0 +1,34 @@
+<dec f='codebrowser/nest/stream/InputStream.h' l='35' type='size_t nest::InputStream::Read(void * buf, size_t size)'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='335' u='c' c='_ZN4nest9ALZFormat21PrepareSpannedStreamsEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='394' u='c' c='_ZN4nest9EggFormat18CalculateDummySizeEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='55' u='c' c='_ZN4nest3alz4File12ReadFileSizeEPNS_11InputStreamEPym'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='85' u='c' c='_ZN4nest3alz4File6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='92' u='c' c='_ZN4nest3alz4File6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='100' u='c' c='_ZN4nest3alz4File6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='103' u='c' c='_ZN4nest3alz4File6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='124' u='c' c='_ZN4nest3alz4File6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='140' u='c' c='_ZN4nest3alz4File6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/alz/Global.cpp' l='43' macro='1' u='c'/>
+<use f='codebrowser/nest/format/alz/Global.cpp' l='48' macro='1' u='c'/>
+<use f='codebrowser/nest/format/alz/Global.cpp' l='51' macro='1' u='c'/>
+<use f='codebrowser/nest/format/egg/Block.cpp' l='38' macro='1' u='c'/>
+<use f='codebrowser/nest/format/egg/Block.cpp' l='43' macro='1' u='c'/>
+<use f='codebrowser/nest/format/egg/Block.cpp' l='46' macro='1' u='c'/>
+<use f='codebrowser/nest/format/egg/Block.cpp' l='49' macro='1' u='c'/>
+<use f='codebrowser/nest/format/egg/Block.cpp' l='52' macro='1' u='c'/>
+<use f='codebrowser/nest/format/egg/Block.cpp' l='55' macro='1' u='c'/>
+<use f='codebrowser/nest/format/egg/ExtraField.cpp' l='43' macro='1' u='c'/>
+<use f='codebrowser/nest/format/egg/ExtraField.cpp' l='53' macro='1' u='c'/>
+<use f='codebrowser/nest/format/egg/ExtraField.cpp' l='61' macro='1' u='c'/>
+<use f='codebrowser/nest/format/egg/ExtraField.cpp' l='73' macro='1' u='c'/>
+<use f='codebrowser/nest/format/egg/ExtraField.cpp' l='89' macro='1' u='c'/>
+<use f='codebrowser/nest/format/egg/File.cpp' l='37' macro='1' u='c'/>
+<use f='codebrowser/nest/format/egg/File.cpp' l='42' macro='1' u='c'/>
+<use f='codebrowser/nest/format/egg/File.cpp' l='45' macro='1' u='c'/>
+<use f='codebrowser/nest/format/egg/Global.cpp' l='42' macro='1' u='c'/>
+<use f='codebrowser/nest/format/egg/Global.cpp' l='47' macro='1' u='c'/>
+<use f='codebrowser/nest/format/egg/Global.cpp' l='50' macro='1' u='c'/>
+<use f='codebrowser/nest/format/egg/Global.cpp' l='53' macro='1' u='c'/>
+<ovr f='codebrowser/nest/stream/FileInputStream.cpp' l='62' c='_ZN4nest15FileInputStream4ReadEPvm'/>
+<ovr f='codebrowser/nest/stream/InputStreamLinker.cpp' l='81' c='_ZN4nest17InputStreamLinker4ReadEPvm'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='97' u='c' c='_ZN4nest17InputStreamLinker4ReadEPvm'/>

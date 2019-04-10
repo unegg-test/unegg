@@ -1,0 +1,5 @@
+<def f='codebrowser/nest/format/egg/FilenameField.h' l='30' ll='33' type='bool nest::egg::FilenameField::IsUTF8()'/>
+<use f='codebrowser/nest/format/egg/FilenameField.h' l='42' u='c' c='_ZN4nest3egg13FilenameField9GetLocaleEv'/>
+<use f='codebrowser/nest/format/egg/FilenameField.h' l='47' u='c' c='_ZN4nest3egg13FilenameField15GetParentPathIDEv'/>
+<use f='codebrowser/nest/format/egg/FilenameField.h' l='52' u='c' c='_ZN4nest3egg13FilenameField11GetFileNameEv'/>
+<use f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='127' u='c' c='_ZN4nest3egg14ExtraFieldWrap9_As4BytesEjPb'/>

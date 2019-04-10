@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/Utils.h' l='37' type='size_t nest::utf8::euckr2utf8(const char * str, std::string * utf8)'/>
+<def f='codebrowser/nest/Utils.cpp' l='213' ll='244' type='size_t nest::utf8::euckr2utf8(const char * str, std::string * utf8)'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='239' u='c' c='_ZN4nest9ALZFormat11ScanFootersEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='244' u='c' c='_ZN4nest9ALZFormat11ScanFootersEv'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='129' u='c' c='_ZN4nest3alz4File6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>

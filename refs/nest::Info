@@ -1,0 +1,23 @@
+<def f='codebrowser/nest/Info.h' l='20' ll='44'/>
+<ovr f='codebrowser/nest/format/Header.h' l='27' c='nest::Header'/>
+<ovr f='codebrowser/nest/format/EggFormat.h' l='33' c='nest::EggFormat'/>
+<size>8</size>
+<fun r='_ZN4nest4InfoD1Ev'/>
+<fun r='_ZN4nest4Info7AsInt32EjPb'/>
+<fun r='_ZN4nest4Info8AsUInt32EjPb'/>
+<fun r='_ZN4nest4Info7AsInt64EjPb'/>
+<fun r='_ZN4nest4Info8AsUInt64EjPb'/>
+<fun r='_ZN4nest4Info6AsBoolEjPb'/>
+<fun r='_ZN4nest4Info6AsSizeEjPb'/>
+<fun r='_ZN4nest4Info8AsStringEjPb'/>
+<fun r='_ZN4nest4Info5AsPtrEjPb'/>
+<fun r='_ZN4nest4Info6AsInfoEjPb'/>
+<fun r='_ZN4nest4Info11AsChildInfoEjmPb'/>
+<fun r='_ZN4nest4Info10InfoAssertEbj'/>
+<fun r='_ZN4nest4Info9_As4BytesEjPb'/>
+<fun r='_ZN4nest4Info9_As8BytesEjPb'/>
+<fun r='_ZN4nest4Info7_AsSizeEjPb'/>
+<fun r='_ZN4nest4Info6_AsPtrEjPb'/>
+<fun r='_ZN4nest4Info7_AsInfoEjPb'/>
+<fun r='_ZN4nest4Info12_AsChildInfoEjmPb'/>
+<ovr f='codebrowser/nest/format/ALZFormat.h' l='28' c='nest::ALZFormat'/>

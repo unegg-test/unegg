@@ -1,0 +1,13 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.h' l='195' type='SRes LzmaDec_DecodeToBuf(CLzmaDec * p, Byte * dest, SizeT * destLen, const Byte * src, SizeT * srcLen, ELzmaFinishMode finishMode, ELzmaStatus * status)'/>
+<use f='codebrowser/nest/algorithm/LZMACoder.cpp' l='83' u='c' c='_ZN4nest9LZMACoder5OnPopEPvPm'/>
+<doc f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.h' l='184'>/* It&apos;s zlib-like interface.
+ See LzmaDec_DecodeToDic description for information about STEPS and return results,
+ but you must use LzmaDec_DecodeToBuf instead of LzmaDec_DecodeToDic and you don&apos;t need
+ to work with CLzmaDec variables manually.
+
+ finishMode:
+ It has meaning only if the decoding reaches output limit (*destLen).
+ LZMA_FINISH_ANY - Decode just destLen bytes.
+ LZMA_FINISH_END - Stream must be finished after (*destLen).
+ */</doc>
+<def f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='825' ll='864' type='SRes LzmaDec_DecodeToBuf(CLzmaDec * p, Byte * dest, SizeT * destLen, const Byte * src, SizeT * srcLen, ELzmaFinishMode finishMode, ELzmaStatus * status)'/>

@@ -1,0 +1,2 @@
+<def f='codebrowser/nest/format/egg/FileWrap.h' l='35' ll='38' type='nest::egg::File &amp; nest::egg::FileWrap::GetFileHeader()'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='574' u='c' c='_ZN4nest9EggFormat19ExtractSolidArchiveEv'/>

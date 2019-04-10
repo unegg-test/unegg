@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='1397' type='int gzdirect(gzFile file)'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='604' ll='625' type='int gzdirect(gzFile file)'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='603'>/* -- see zlib.h -- */</doc>

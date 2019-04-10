@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/format/EggFormatFactory.h' l='31' type='nest::EggFormat'/>
+<def f='codebrowser/nest/format/EggFormatFactory.cpp' l='17' type='nest::EggFormat'/>
+<use f='codebrowser/nest/format/EggFormatFactory.cpp' l='34' u='m' c='_ZN4nest16EggFormatFactory11CheckHeaderEPNS_11InputStreamE'/>

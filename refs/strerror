@@ -1,0 +1,4 @@
+<dec f='include/string.h' l='408' type='char * strerror(int __errnum)'/>
+<doc f='include/string.h' l='407'>/* Return a string describing the meaning of the `errno&apos; code in ERRNUM.  */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='37' macro='1' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='81' macro='1' u='c'/>

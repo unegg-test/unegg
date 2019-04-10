@@ -1,0 +1,2 @@
+<def f='codebrowser/nest/format/egg/EggTypes.h' l='31' type='const int'/>
+<use f='codebrowser/nest/format/egg/Block.cpp' l='40' u='r' c='_ZN4nest3egg5Block6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>

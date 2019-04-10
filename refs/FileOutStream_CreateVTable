@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/7zFile.h' l='76' type='void FileOutStream_CreateVTable(CFileOutStream * p)'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='293' ll='296' type='void FileOutStream_CreateVTable(CFileOutStream * p)'/>

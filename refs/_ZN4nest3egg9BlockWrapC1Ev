@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/format/egg/BlockWrap.h' l='27' type='void nest::egg::BlockWrap::BlockWrap()'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='366' u='c' c='_ZN4nest9EggFormat15ReadSolidBlocksEv'/>
+<def f='codebrowser/nest/format/egg/BlockWrap.cpp' l='19' ll='23' type='void nest::egg::BlockWrap::BlockWrap()'/>
+<use f='codebrowser/nest/format/egg/FileWrap.cpp' l='66' u='c' c='_ZN4nest3egg8FileWrap6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>

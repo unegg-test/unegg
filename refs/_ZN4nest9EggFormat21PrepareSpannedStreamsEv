@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/format/EggFormat.h' l='95' type='int nest::EggFormat::PrepareSpannedStreams()'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='109' u='c' c='_ZN4nest9EggFormat4ScanEv'/>
+<def f='codebrowser/nest/format/EggFormat.cpp' l='268' ll='356' type='int nest::EggFormat::PrepareSpannedStreams()'/>

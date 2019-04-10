@@ -1,0 +1,6 @@
+<def f='codebrowser/nest/algorithm/azo/Decoder/LengthCodeD.h' l='10' ll='19'/>
+<size>70144</size>
+<fun r='_ZN3AZO7Decoder10LengthCodeC1Ev'/>
+<fun r='_ZN3AZO7Decoder10LengthCode4CodeERNS0_11EntropyCodeEh'/>
+<mbr r='AZO::Decoder::LengthCode::prob_' o='0' t='PredictProb&lt;MATCH_DIST_CODE_SIZE, MATCH_LENGTH_CODE_SIZE, LENGTHCODE_PREDICT_SHIFT&gt;'/>
+<fun r='_ZN3AZO7Decoder10LengthCode4CodeERNS0_11EntropyCodeEh'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='1532' type='int deflateInit_(z_streamp strm, int level, const char * version, int stream_size)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/compress.c' l='46' macro='1' u='c'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='198' ll='207' type='int deflateInit_(z_streamp strm, int level, const char * version, int stream_size)'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='197'>/* ========================================================================= */</doc>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.h' l='19' type='UInt32'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='48' u='w' c='LzmaEncProps_Init'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='59' u='r' c='LzmaEncProps_Normalize'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='60' u='w' c='LzmaEncProps_Normalize'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='90' u='r' c='LzmaEncProps_GetDictSize'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='398' u='r' c='LzmaEnc_SetProps'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='399' u='r' c='LzmaEnc_SetProps'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='401' u='r' c='LzmaEnc_SetProps'/>
+<offset>32</offset>
+<doc f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.h' l='19'>/* (1 &lt;&lt; 12) &lt;= dictSize &lt;= (1 &lt;&lt; 27) for 32-bit version
+     (1 &lt;&lt; 12) &lt;= dictSize &lt;= (1 &lt;&lt; 30) for 64-bit version
+     default = (1 &lt;&lt; 24) */</doc>

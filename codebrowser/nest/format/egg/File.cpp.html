@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>File.cpp source code [codebrowser/nest/format/egg/File.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/format/egg/File.cpp'; var root_path = '../../../..'; var data_path = '../../../../../data';</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>codebrowser</a>/<a href='../..'>nest</a>/<a href='..'>format</a>/<a href='./'>egg</a>/<a href='File.cpp.html'>File.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * File.cpp</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> *  Created on: 2010. 12. 10.</i></td></tr>
+<tr><th id="5">5</th><td><i> *      Author: Jehoon Shin(Revolution)</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> *  Copyright(c) 2010-Present ESTsoft Corp. All rights reserved.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> *  For conditions of distribution and use, see copyright notice in license.txt</i></td></tr>
+<tr><th id="10">10</th><td><i> */</i></td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td><u>#include <a href="File.h.html">"File.h"</a></u></td></tr>
+<tr><th id="13">13</th><td><u>#include <a href="EggTypes.h.html">&lt;nest/format/egg/EggTypes.h&gt;</a></u></td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><b>namespace</b> <span class="namespace">nest</span></td></tr>
+<tr><th id="16">16</th><td>{</td></tr>
+<tr><th id="17">17</th><td><b>namespace</b> <span class="namespace">egg</span></td></tr>
+<tr><th id="18">18</th><td>{</td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><a class="type" href="File.h.html#nest::egg::File" title='nest::egg::File' data-ref="nest::egg::File">File</a>::<dfn class="decl def" id="_ZN4nest3egg4FileC1Ev" title='nest::egg::File::File' data-ref="_ZN4nest3egg4FileC1Ev">File</dfn>()</td></tr>
+<tr><th id="21">21</th><td>{</td></tr>
+<tr><th id="22">22</th><td>    <i>// TODO Auto-generated constructor stub</i></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td>}</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><a class="type" href="File.h.html#nest::egg::File" title='nest::egg::File' data-ref="nest::egg::File">File</a>::<dfn class="virtual decl def" id="_ZN4nest3egg4FileD1Ev" title='nest::egg::File::~File' data-ref="_ZN4nest3egg4FileD1Ev">~File</dfn>()</td></tr>
+<tr><th id="27">27</th><td>{</td></tr>
+<tr><th id="28">28</th><td>    <i>// TODO Auto-generated destructor stub</i></td></tr>
+<tr><th id="29">29</th><td>    <a class="member" href="../Header.h.html#_ZN4nest6Header5ClearEv" title='nest::Header::Clear' data-ref="_ZN4nest6Header5ClearEv">Clear</a>();</td></tr>
+<tr><th id="30">30</th><td>}</td></tr>
+<tr><th id="31">31</th><td></td></tr>
+<tr><th id="32">32</th><td><em>int</em> <a class="type" href="File.h.html#nest::egg::File" title='nest::egg::File' data-ref="nest::egg::File">File</a>::<dfn class="virtual decl def" id="_ZN4nest3egg4File6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE" title='nest::egg::File::OnRead' data-ref="_ZN4nest3egg4File6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE">OnRead</dfn>(<a class="type" href="../../stream/InputStreamRewinder.h.html#nest::InputStreamRewinder" title='nest::InputStreamRewinder' data-ref="nest::InputStreamRewinder">InputStreamRewinder</a>* <dfn class="local col1 decl" id="1rewinder" title='rewinder' data-type='nest::InputStreamRewinder *' data-ref="1rewinder">rewinder</dfn>, <a class="type" href="../../stream/InputStream.h.html#nest::InputStream" title='nest::InputStream' data-ref="nest::InputStream">InputStream</a>* <dfn class="local col2 decl" id="2stream" title='stream' data-type='nest::InputStream *' data-ref="2stream">stream</dfn>)</td></tr>
+<tr><th id="33">33</th><td>{</td></tr>
+<tr><th id="34">34</th><td>    <em>int</em> <dfn class="local col3 decl" id="3res" title='res' data-type='int' data-ref="3res">res</dfn> = <span class="namespace">Result::</span><a class="enum" href="../../define.h.html#Result::ReadError" title='Result::ReadError' data-ref="Result::ReadError">ReadError</a>;</td></tr>
+<tr><th id="35">35</th><td>    <em>int</em> <dfn class="local col4 decl" id="4sig" title='sig' data-type='int' data-ref="4sig">sig</dfn> = <var>0</var>;</td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td>    <a class="macro" href="../Header.h.html#23" title="if (sizeof(sig) == stream-&gt;Read(&amp;sig, sizeof(sig)))" data-ref="_M/IF_READ_STREAM_VAR">IF_READ_STREAM_VAR</a>(<a class="local col2 ref" href="#2stream" title='stream' data-ref="2stream">stream</a>, <a class="local col4 ref" href="#4sig" title='sig' data-ref="4sig">sig</a>)</td></tr>
+<tr><th id="38">38</th><td>    {</td></tr>
+<tr><th id="39">39</th><td>        <b>if</b> (<a class="local col4 ref" href="#4sig" title='sig' data-ref="4sig">sig</a> == <span class="namespace">Magic::</span><a class="ref" href="EggTypes.h.html#nest::egg::Magic::FILE" title='nest::egg::Magic::FILE' data-ref="nest::egg::Magic::FILE">FILE</a>)</td></tr>
+<tr><th id="40">40</th><td>        {</td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td>            <a class="macro" href="../Header.h.html#23" title="if (sizeof(id_) == stream-&gt;Read(&amp;id_, sizeof(id_)))" data-ref="_M/IF_READ_STREAM_VAR">IF_READ_STREAM_VAR</a>(<a class="local col2 ref" href="#2stream" title='stream' data-ref="2stream">stream</a>, <a class="member" href="File.h.html#nest::egg::File::id_" title='nest::egg::File::id_' data-ref="nest::egg::File::id_">id_</a>)</td></tr>
+<tr><th id="43">43</th><td>            {</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td>                <a class="macro" href="../Header.h.html#23" title="if (sizeof(length_) == stream-&gt;Read(&amp;length_, sizeof(length_)))" data-ref="_M/IF_READ_STREAM_VAR">IF_READ_STREAM_VAR</a>(<a class="local col2 ref" href="#2stream" title='stream' data-ref="2stream">stream</a>, <a class="member" href="File.h.html#nest::egg::File::length_" title='nest::egg::File::length_' data-ref="nest::egg::File::length_">length_</a>)</td></tr>
+<tr><th id="46">46</th><td>                {</td></tr>
+<tr><th id="47">47</th><td>                    <a class="local col1 ref" href="#1rewinder" title='rewinder' data-ref="1rewinder">rewinder</a>-&gt;<a class="ref" href="../../stream/InputStreamRewinder.h.html#_ZN4nest19InputStreamRewinder5ClearEv" title='nest::InputStreamRewinder::Clear' data-ref="_ZN4nest19InputStreamRewinder5ClearEv">Clear</a>();</td></tr>
+<tr><th id="48">48</th><td>                    <a class="local col3 ref" href="#3res" title='res' data-ref="3res">res</a> = <span class="namespace">Result::</span><a class="enum" href="../../define.h.html#Result::Success" title='Result::Success' data-ref="Result::Success">Success</a>;</td></tr>
+<tr><th id="49">49</th><td>                }</td></tr>
+<tr><th id="50">50</th><td>            }</td></tr>
+<tr><th id="51">51</th><td>        }</td></tr>
+<tr><th id="52">52</th><td>    }</td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td>    <b>return</b> <a class="local col3 ref" href="#3res" title='res' data-ref="3res">res</a>;</td></tr>
+<tr><th id="55">55</th><td>}</td></tr>
+<tr><th id="56">56</th><td></td></tr>
+<tr><th id="57">57</th><td><em>int</em> <a class="type" href="File.h.html#nest::egg::File" title='nest::egg::File' data-ref="nest::egg::File">File</a>::<dfn class="virtual decl def" id="_ZN4nest3egg4File9_As4BytesEjPb" title='nest::egg::File::_As4Bytes' data-ref="_ZN4nest3egg4File9_As4BytesEjPb">_As4Bytes</dfn>(<em>unsigned</em> <em>int</em> <dfn class="local col5 decl" id="5key" title='key' data-type='unsigned int' data-ref="5key">key</dfn>, <em>bool</em>* <dfn class="local col6 decl" id="6handled" title='handled' data-type='bool *' data-ref="6handled">handled</dfn>)</td></tr>
+<tr><th id="58">58</th><td>{</td></tr>
+<tr><th id="59">59</th><td>    <a class="macro" href="../../nest.h.html#69" title="if (key == key::file::ID) { if (handled) { *handled = true; } return GetID(); }" data-ref="_M/VERIFY_KEY">VERIFY_KEY</a>(key::file::<a class="ref" href="../../nest.h.html#108" title='nest::key::file::ID' data-ref="nest::key::file::ID">ID</a>, <a class="member" href="File.h.html#_ZN4nest3egg4File5GetIDEv" title='nest::egg::File::GetID' data-ref="_ZN4nest3egg4File5GetIDEv">GetID</a>());</td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td>    <b>return</b> <a class="type" href="../Header.h.html#nest::Header" title='nest::Header' data-ref="nest::Header">Header</a>::<a class="virtual member" href="../../Info.h.html#_ZN4nest4Info9_As4BytesEjPb" title='nest::Info::_As4Bytes' data-ref="_ZN4nest4Info9_As4BytesEjPb">_As4Bytes</a>(<a class="local col5 ref" href="#5key" title='key' data-ref="5key">key</a>, <a class="local col6 ref" href="#6handled" title='handled' data-ref="6handled">handled</a>);</td></tr>
+<tr><th id="62">62</th><td>}</td></tr>
+<tr><th id="63">63</th><td></td></tr>
+<tr><th id="64">64</th><td><a class="typedef" href="../../define.h.html#int64" title='int64' data-type='long long' data-ref="int64">int64</a> <a class="type" href="File.h.html#nest::egg::File" title='nest::egg::File' data-ref="nest::egg::File">File</a>::<dfn class="virtual decl def" id="_ZN4nest3egg4File9_As8BytesEjPb" title='nest::egg::File::_As8Bytes' data-ref="_ZN4nest3egg4File9_As8BytesEjPb">_As8Bytes</dfn>(<em>unsigned</em> <em>int</em> <dfn class="local col7 decl" id="7key" title='key' data-type='unsigned int' data-ref="7key">key</dfn>, <em>bool</em>* <dfn class="local col8 decl" id="8handled" title='handled' data-type='bool *' data-ref="8handled">handled</dfn>)</td></tr>
+<tr><th id="65">65</th><td>{</td></tr>
+<tr><th id="66">66</th><td>    <a class="macro" href="../../nest.h.html#69" title="if (key == key::file::size::UNPACKED) { if (handled) { *handled = true; } return GetLength(); }" data-ref="_M/VERIFY_KEY">VERIFY_KEY</a>(key::file::size::<a class="ref" href="../../nest.h.html#124" title='nest::key::file::size::UNPACKED' data-ref="nest::key::file::size::UNPACKED">UNPACKED</a>, <a class="member" href="File.h.html#_ZN4nest3egg4File9GetLengthEv" title='nest::egg::File::GetLength' data-ref="_ZN4nest3egg4File9GetLengthEv">GetLength</a>());</td></tr>
+<tr><th id="67">67</th><td></td></tr>
+<tr><th id="68">68</th><td>    <b>return</b> <a class="type" href="../Header.h.html#nest::Header" title='nest::Header' data-ref="nest::Header">Header</a>::<a class="virtual member" href="../../Info.h.html#_ZN4nest4Info9_As8BytesEjPb" title='nest::Info::_As8Bytes' data-ref="_ZN4nest4Info9_As8BytesEjPb">_As8Bytes</a>(<a class="local col7 ref" href="#7key" title='key' data-ref="7key">key</a>, <a class="local col8 ref" href="#8handled" title='handled' data-ref="8handled">handled</a>);</td></tr>
+<tr><th id="69">69</th><td>}</td></tr>
+<tr><th id="70">70</th><td></td></tr>
+<tr><th id="71">71</th><td>}</td></tr>
+<tr><th id="72">72</th><td>}</td></tr>
+<tr><th id="73">73</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

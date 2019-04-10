@@ -1,0 +1,12 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='83' type='static_tree_desc *'/>
+<offset>128</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='83'>/* the corresponding static tree */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='392' u='w' c='_tr_init'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='395' u='w' c='_tr_init'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='398' u='w' c='_tr_init'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='500' u='r' c='gen_bitlen'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='501' u='r' c='gen_bitlen'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='502' u='r' c='gen_bitlen'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='503' u='r' c='gen_bitlen'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='628' u='r' c='build_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='629' u='r' c='build_tree'/>

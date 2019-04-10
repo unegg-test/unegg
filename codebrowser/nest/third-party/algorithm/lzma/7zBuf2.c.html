@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>7zBuf2.c source code [codebrowser/nest/third-party/algorithm/lzma/7zBuf2.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/third-party/algorithm/lzma/7zBuf2.c'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>nest</a>/<a href='../..'>third-party</a>/<a href='..'>algorithm</a>/<a href='./'>lzma</a>/<a href='7zBuf2.c.html'>7zBuf2.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* 7zBuf2.c -- Byte Buffer</i></td></tr>
+<tr><th id="2">2</th><td><i> 2008-10-04 : Igor Pavlov : Public domain */</i></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="../../../../../include/string.h.html">&lt;string.h&gt;</a></u></td></tr>
+<tr><th id="5">5</th><td><u>#include <a href="7zBuf.h.html">"7zBuf.h"</a></u></td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><em>void</em> <dfn class="decl def" id="DynBuf_Construct" title='DynBuf_Construct' data-ref="DynBuf_Construct">DynBuf_Construct</dfn>(<a class="typedef" href="7zBuf.h.html#CDynBuf" title='CDynBuf' data-type='struct CDynBuf' data-ref="CDynBuf">CDynBuf</a> *<dfn class="local col1 decl" id="1p" title='p' data-type='CDynBuf *' data-ref="1p">p</dfn>)</td></tr>
+<tr><th id="8">8</th><td>{</td></tr>
+<tr><th id="9">9</th><td>    <a class="local col1 ref" href="#1p" title='p' data-ref="1p">p</a>-&gt;<a class="ref" href="7zBuf.h.html#(anonymous)::data" title='(anonymous struct)::data' data-ref="(anonymous)::data">data</a> = <var>0</var>;</td></tr>
+<tr><th id="10">10</th><td>    <a class="local col1 ref" href="#1p" title='p' data-ref="1p">p</a>-&gt;<a class="ref" href="7zBuf.h.html#(anonymous)::size" title='(anonymous struct)::size' data-ref="(anonymous)::size">size</a> = <var>0</var>;</td></tr>
+<tr><th id="11">11</th><td>    <a class="local col1 ref" href="#1p" title='p' data-ref="1p">p</a>-&gt;<a class="ref" href="7zBuf.h.html#(anonymous)::pos" title='(anonymous struct)::pos' data-ref="(anonymous)::pos">pos</a> = <var>0</var>;</td></tr>
+<tr><th id="12">12</th><td>}</td></tr>
+<tr><th id="13">13</th><td></td></tr>
+<tr><th id="14">14</th><td><em>void</em> <dfn class="decl def" id="DynBuf_SeekToBeg" title='DynBuf_SeekToBeg' data-ref="DynBuf_SeekToBeg">DynBuf_SeekToBeg</dfn>(<a class="typedef" href="7zBuf.h.html#CDynBuf" title='CDynBuf' data-type='struct CDynBuf' data-ref="CDynBuf">CDynBuf</a> *<dfn class="local col2 decl" id="2p" title='p' data-type='CDynBuf *' data-ref="2p">p</dfn>)</td></tr>
+<tr><th id="15">15</th><td>{</td></tr>
+<tr><th id="16">16</th><td>    <a class="local col2 ref" href="#2p" title='p' data-ref="2p">p</a>-&gt;<a class="ref" href="7zBuf.h.html#(anonymous)::pos" title='(anonymous struct)::pos' data-ref="(anonymous)::pos">pos</a> = <var>0</var>;</td></tr>
+<tr><th id="17">17</th><td>}</td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><em>int</em> <dfn class="decl def" id="DynBuf_Write" title='DynBuf_Write' data-ref="DynBuf_Write">DynBuf_Write</dfn>(<a class="typedef" href="7zBuf.h.html#CDynBuf" title='CDynBuf' data-type='struct CDynBuf' data-ref="CDynBuf">CDynBuf</a> *<dfn class="local col3 decl" id="3p" title='p' data-type='CDynBuf *' data-ref="3p">p</dfn>, <em>const</em> <a class="typedef" href="Types.h.html#Byte" title='Byte' data-type='unsigned char' data-ref="Byte">Byte</a> *<dfn class="local col4 decl" id="4buf" title='buf' data-type='const Byte *' data-ref="4buf">buf</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col5 decl" id="5size" title='size' data-type='size_t' data-ref="5size">size</dfn>, <a class="typedef" href="Types.h.html#ISzAlloc" title='ISzAlloc' data-type='struct ISzAlloc' data-ref="ISzAlloc">ISzAlloc</a> *<dfn class="local col6 decl" id="6alloc" title='alloc' data-type='ISzAlloc *' data-ref="6alloc">alloc</dfn>)</td></tr>
+<tr><th id="20">20</th><td>{</td></tr>
+<tr><th id="21">21</th><td>    <b>if</b> (<a class="local col5 ref" href="#5size" title='size' data-ref="5size">size</a> &gt; <a class="local col3 ref" href="#3p" title='p' data-ref="3p">p</a>-&gt;<a class="ref" href="7zBuf.h.html#(anonymous)::size" title='(anonymous struct)::size' data-ref="(anonymous)::size">size</a> - <a class="local col3 ref" href="#3p" title='p' data-ref="3p">p</a>-&gt;<a class="ref" href="7zBuf.h.html#(anonymous)::pos" title='(anonymous struct)::pos' data-ref="(anonymous)::pos">pos</a>)</td></tr>
+<tr><th id="22">22</th><td>    {</td></tr>
+<tr><th id="23">23</th><td>        <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col7 decl" id="7newSize" title='newSize' data-type='size_t' data-ref="7newSize">newSize</dfn> = <a class="local col3 ref" href="#3p" title='p' data-ref="3p">p</a>-&gt;<a class="ref" href="7zBuf.h.html#(anonymous)::pos" title='(anonymous struct)::pos' data-ref="(anonymous)::pos">pos</a> + <a class="local col5 ref" href="#5size" title='size' data-ref="5size">size</a>;</td></tr>
+<tr><th id="24">24</th><td>        <a class="typedef" href="Types.h.html#Byte" title='Byte' data-type='unsigned char' data-ref="Byte">Byte</a> *<dfn class="local col8 decl" id="8data" title='data' data-type='Byte *' data-ref="8data">data</dfn>;</td></tr>
+<tr><th id="25">25</th><td>        <a class="local col7 ref" href="#7newSize" title='newSize' data-ref="7newSize">newSize</a> += <a class="local col7 ref" href="#7newSize" title='newSize' data-ref="7newSize">newSize</a> / <var>4</var>;</td></tr>
+<tr><th id="26">26</th><td>        <a class="local col8 ref" href="#8data" title='data' data-ref="8data">data</a> = (<a class="typedef" href="Types.h.html#Byte" title='Byte' data-type='unsigned char' data-ref="Byte">Byte</a> *) <a class="local col6 ref" href="#6alloc" title='alloc' data-ref="6alloc">alloc</a>-&gt;<a class="ref" href="Types.h.html#(anonymous)::Alloc" title='(anonymous struct)::Alloc' data-ref="(anonymous)::Alloc">Alloc</a>(<a class="local col6 ref" href="#6alloc" title='alloc' data-ref="6alloc">alloc</a>, <a class="local col7 ref" href="#7newSize" title='newSize' data-ref="7newSize">newSize</a>);</td></tr>
+<tr><th id="27">27</th><td>        <b>if</b> (<a class="local col8 ref" href="#8data" title='data' data-ref="8data">data</a> == <var>0</var>)</td></tr>
+<tr><th id="28">28</th><td>            <b>return</b> <var>0</var>;</td></tr>
+<tr><th id="29">29</th><td>        <a class="local col3 ref" href="#3p" title='p' data-ref="3p">p</a>-&gt;<a class="ref" href="7zBuf.h.html#(anonymous)::size" title='(anonymous struct)::size' data-ref="(anonymous)::size">size</a> = <a class="local col7 ref" href="#7newSize" title='newSize' data-ref="7newSize">newSize</a>;</td></tr>
+<tr><th id="30">30</th><td>        <a class="ref" href="../../../../../include/string.h.html#memcpy" title='memcpy' data-ref="memcpy">memcpy</a>(<a class="local col8 ref" href="#8data" title='data' data-ref="8data">data</a>, <a class="local col3 ref" href="#3p" title='p' data-ref="3p">p</a>-&gt;<a class="ref" href="7zBuf.h.html#(anonymous)::data" title='(anonymous struct)::data' data-ref="(anonymous)::data">data</a>, <a class="local col3 ref" href="#3p" title='p' data-ref="3p">p</a>-&gt;<a class="ref" href="7zBuf.h.html#(anonymous)::pos" title='(anonymous struct)::pos' data-ref="(anonymous)::pos">pos</a>);</td></tr>
+<tr><th id="31">31</th><td>        <a class="local col6 ref" href="#6alloc" title='alloc' data-ref="6alloc">alloc</a>-&gt;<a class="ref" href="Types.h.html#(anonymous)::Free" title='(anonymous struct)::Free' data-ref="(anonymous)::Free">Free</a>(<a class="local col6 ref" href="#6alloc" title='alloc' data-ref="6alloc">alloc</a>, <a class="local col3 ref" href="#3p" title='p' data-ref="3p">p</a>-&gt;<a class="ref" href="7zBuf.h.html#(anonymous)::data" title='(anonymous struct)::data' data-ref="(anonymous)::data">data</a>);</td></tr>
+<tr><th id="32">32</th><td>        <a class="local col3 ref" href="#3p" title='p' data-ref="3p">p</a>-&gt;<a class="ref" href="7zBuf.h.html#(anonymous)::data" title='(anonymous struct)::data' data-ref="(anonymous)::data">data</a> = <a class="local col8 ref" href="#8data" title='data' data-ref="8data">data</a>;</td></tr>
+<tr><th id="33">33</th><td>    }</td></tr>
+<tr><th id="34">34</th><td>    <a class="ref" href="../../../../../include/string.h.html#memcpy" title='memcpy' data-ref="memcpy">memcpy</a>(<a class="local col3 ref" href="#3p" title='p' data-ref="3p">p</a>-&gt;<a class="ref" href="7zBuf.h.html#(anonymous)::data" title='(anonymous struct)::data' data-ref="(anonymous)::data">data</a> + <a class="local col3 ref" href="#3p" title='p' data-ref="3p">p</a>-&gt;<a class="ref" href="7zBuf.h.html#(anonymous)::pos" title='(anonymous struct)::pos' data-ref="(anonymous)::pos">pos</a>, <a class="local col4 ref" href="#4buf" title='buf' data-ref="4buf">buf</a>, <a class="local col5 ref" href="#5size" title='size' data-ref="5size">size</a>);</td></tr>
+<tr><th id="35">35</th><td>    <a class="local col3 ref" href="#3p" title='p' data-ref="3p">p</a>-&gt;<a class="ref" href="7zBuf.h.html#(anonymous)::pos" title='(anonymous struct)::pos' data-ref="(anonymous)::pos">pos</a> += <a class="local col5 ref" href="#5size" title='size' data-ref="5size">size</a>;</td></tr>
+<tr><th id="36">36</th><td>    <b>return</b> <var>1</var>;</td></tr>
+<tr><th id="37">37</th><td>}</td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><em>void</em> <dfn class="decl def" id="DynBuf_Free" title='DynBuf_Free' data-ref="DynBuf_Free">DynBuf_Free</dfn>(<a class="typedef" href="7zBuf.h.html#CDynBuf" title='CDynBuf' data-type='struct CDynBuf' data-ref="CDynBuf">CDynBuf</a> *<dfn class="local col9 decl" id="9p" title='p' data-type='CDynBuf *' data-ref="9p">p</dfn>, <a class="typedef" href="Types.h.html#ISzAlloc" title='ISzAlloc' data-type='struct ISzAlloc' data-ref="ISzAlloc">ISzAlloc</a> *<dfn class="local col0 decl" id="10alloc" title='alloc' data-type='ISzAlloc *' data-ref="10alloc">alloc</dfn>)</td></tr>
+<tr><th id="40">40</th><td>{</td></tr>
+<tr><th id="41">41</th><td>    <a class="local col0 ref" href="#10alloc" title='alloc' data-ref="10alloc">alloc</a>-&gt;<a class="ref" href="Types.h.html#(anonymous)::Free" title='(anonymous struct)::Free' data-ref="(anonymous)::Free">Free</a>(<a class="local col0 ref" href="#10alloc" title='alloc' data-ref="10alloc">alloc</a>, <a class="local col9 ref" href="#9p" title='p' data-ref="9p">p</a>-&gt;<a class="ref" href="7zBuf.h.html#(anonymous)::data" title='(anonymous struct)::data' data-ref="(anonymous)::data">data</a>);</td></tr>
+<tr><th id="42">42</th><td>    <a class="local col9 ref" href="#9p" title='p' data-ref="9p">p</a>-&gt;<a class="ref" href="7zBuf.h.html#(anonymous)::data" title='(anonymous struct)::data' data-ref="(anonymous)::data">data</a> = <var>0</var>;</td></tr>
+<tr><th id="43">43</th><td>    <a class="local col9 ref" href="#9p" title='p' data-ref="9p">p</a>-&gt;<a class="ref" href="7zBuf.h.html#(anonymous)::size" title='(anonymous struct)::size' data-ref="(anonymous)::size">size</a> = <var>0</var>;</td></tr>
+<tr><th id="44">44</th><td>    <a class="local col9 ref" href="#9p" title='p' data-ref="9p">p</a>-&gt;<a class="ref" href="7zBuf.h.html#(anonymous)::pos" title='(anonymous struct)::pos' data-ref="(anonymous)::pos">pos</a> = <var>0</var>;</td></tr>
+<tr><th id="45">45</th><td>}</td></tr>
+<tr><th id="46">46</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

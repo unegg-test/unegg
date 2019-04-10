@@ -1,0 +1,5 @@
+<inh f='codebrowser/nest/format/egg/ExtraField.h' l='22' c='nest::egg::ExtraField'/>
+<def f='codebrowser/nest/format/egg/WindowsField.h' l='22' ll='34'/>
+<size>32</size>
+<fun r='_ZN4nest3egg12WindowsField23GetLastModifiedDateTimeEv'/>
+<fun r='_ZN4nest3egg12WindowsField12GetAttributeEv'/>

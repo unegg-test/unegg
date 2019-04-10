@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Alloc.h source code [codebrowser/nest/third-party/algorithm/lzma/Alloc.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/third-party/algorithm/lzma/Alloc.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>nest</a>/<a href='../..'>third-party</a>/<a href='..'>algorithm</a>/<a href='./'>lzma</a>/<a href='Alloc.h.html'>Alloc.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* Alloc.h -- Memory allocation functions</i></td></tr>
+<tr><th id="2">2</th><td><i> 2009-02-07 : Igor Pavlov : Public domain */</i></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#<span data-ppcond="4">ifndef</span> <span class="macro" data-ref="_M/__COMMON_ALLOC_H">__COMMON_ALLOC_H</span></u></td></tr>
+<tr><th id="5">5</th><td><u>#define <dfn class="macro" id="_M/__COMMON_ALLOC_H" data-ref="_M/__COMMON_ALLOC_H">__COMMON_ALLOC_H</dfn></u></td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><u>#include &lt;stddef.h&gt;</u></td></tr>
+<tr><th id="8">8</th><td></td></tr>
+<tr><th id="9">9</th><td><u>#<span data-ppcond="9">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="10">10</th><td><b>extern</b> <q>"C"</q></td></tr>
+<tr><th id="11">11</th><td>{</td></tr>
+<tr><th id="12">12</th><td><u>#<span data-ppcond="9">endif</span></u></td></tr>
+<tr><th id="13">13</th><td></td></tr>
+<tr><th id="14">14</th><td><em>void</em> *<dfn class="decl" id="MyAlloc" title='MyAlloc' data-ref="MyAlloc">MyAlloc</dfn>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col4 decl" id="104size" title='size' data-type='size_t' data-ref="104size">size</dfn>);</td></tr>
+<tr><th id="15">15</th><td><em>void</em> <dfn class="decl" id="MyFree" title='MyFree' data-ref="MyFree">MyFree</dfn>(<em>void</em> *<dfn class="local col5 decl" id="105address" title='address' data-type='void *' data-ref="105address">address</dfn>);</td></tr>
+<tr><th id="16">16</th><td></td></tr>
+<tr><th id="17">17</th><td><u>#<span data-ppcond="17">ifdef</span> <span class="macro" data-ref="_M/_WIN32">_WIN32</span></u></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><em>void</em> SetLargePageSize();</td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td><em>void</em> *MidAlloc(size_t size);</td></tr>
+<tr><th id="22">22</th><td><em>void</em> MidFree(<em>void</em> *address);</td></tr>
+<tr><th id="23">23</th><td><em>void</em> *BigAlloc(size_t size);</td></tr>
+<tr><th id="24">24</th><td><em>void</em> BigFree(<em>void</em> *address);</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><u>#<span data-ppcond="17">else</span></u></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><u>#define <dfn class="macro" id="_M/MidAlloc" data-ref="_M/MidAlloc">MidAlloc</dfn>(size) MyAlloc(size)</u></td></tr>
+<tr><th id="29">29</th><td><u>#define <dfn class="macro" id="_M/MidFree" data-ref="_M/MidFree">MidFree</dfn>(address) MyFree(address)</u></td></tr>
+<tr><th id="30">30</th><td><u>#define <dfn class="macro" id="_M/BigAlloc" data-ref="_M/BigAlloc">BigAlloc</dfn>(size) MyAlloc(size)</u></td></tr>
+<tr><th id="31">31</th><td><u>#define <dfn class="macro" id="_M/BigFree" data-ref="_M/BigFree">BigFree</dfn>(address) MyFree(address)</u></td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><u>#<span data-ppcond="17">endif</span></u></td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><u>#<span data-ppcond="35">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="36">36</th><td>}</td></tr>
+<tr><th id="37">37</th><td><u>#<span data-ppcond="35">endif</span></u></td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><u>#<span data-ppcond="4">endif</span></u></td></tr>
+<tr><th id="40">40</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../algorithm/LZMACoder.cpp.html'>codebrowser/nest/algorithm/LZMACoder.cpp</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

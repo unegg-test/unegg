@@ -1,0 +1,269 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Types.h source code [codebrowser/nest/third-party/algorithm/lzma/Types.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/third-party/algorithm/lzma/Types.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>nest</a>/<a href='../..'>third-party</a>/<a href='..'>algorithm</a>/<a href='./'>lzma</a>/<a href='Types.h.html'>Types.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* Types.h -- Basic types</i></td></tr>
+<tr><th id="2">2</th><td><i> 2010-10-09 : Igor Pavlov : Public domain */</i></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#<span data-ppcond="4">ifndef</span> <span class="macro" data-ref="_M/__7Z_TYPES_H">__7Z_TYPES_H</span></u></td></tr>
+<tr><th id="5">5</th><td><u>#define <dfn class="macro" id="_M/__7Z_TYPES_H" data-ref="_M/__7Z_TYPES_H">__7Z_TYPES_H</dfn></u></td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><u>#include &lt;stddef.h&gt;</u></td></tr>
+<tr><th id="8">8</th><td></td></tr>
+<tr><th id="9">9</th><td><u>#<span data-ppcond="9">ifdef</span> <span class="macro" data-ref="_M/_WIN32">_WIN32</span></u></td></tr>
+<tr><th id="10">10</th><td><u>#include &lt;windows.h&gt;</u></td></tr>
+<tr><th id="11">11</th><td><u>#<span data-ppcond="9">endif</span></u></td></tr>
+<tr><th id="12">12</th><td></td></tr>
+<tr><th id="13">13</th><td><u>#<span data-ppcond="13">ifndef</span> <span class="macro" data-ref="_M/EXTERN_C_BEGIN">EXTERN_C_BEGIN</span></u></td></tr>
+<tr><th id="14">14</th><td><u>#<span data-ppcond="14">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="15">15</th><td><u>#define <dfn class="macro" id="_M/EXTERN_C_BEGIN" data-ref="_M/EXTERN_C_BEGIN">EXTERN_C_BEGIN</dfn> extern "C" {</u></td></tr>
+<tr><th id="16">16</th><td><u>#define <dfn class="macro" id="_M/EXTERN_C_END" data-ref="_M/EXTERN_C_END">EXTERN_C_END</dfn> }</u></td></tr>
+<tr><th id="17">17</th><td><u>#<span data-ppcond="14">else</span></u></td></tr>
+<tr><th id="18">18</th><td><u>#define EXTERN_C_BEGIN</u></td></tr>
+<tr><th id="19">19</th><td><u>#define EXTERN_C_END</u></td></tr>
+<tr><th id="20">20</th><td><u>#<span data-ppcond="14">endif</span></u></td></tr>
+<tr><th id="21">21</th><td><u>#<span data-ppcond="13">endif</span></u></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><a class="macro" href="#15" title="extern &quot;C&quot; {" data-ref="_M/EXTERN_C_BEGIN">EXTERN_C_BEGIN</a></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><u>#define <dfn class="macro" id="_M/SZ_OK" data-ref="_M/SZ_OK">SZ_OK</dfn> 0</u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#define <dfn class="macro" id="_M/SZ_ERROR_DATA" data-ref="_M/SZ_ERROR_DATA">SZ_ERROR_DATA</dfn> 1</u></td></tr>
+<tr><th id="28">28</th><td><u>#define <dfn class="macro" id="_M/SZ_ERROR_MEM" data-ref="_M/SZ_ERROR_MEM">SZ_ERROR_MEM</dfn> 2</u></td></tr>
+<tr><th id="29">29</th><td><u>#define <dfn class="macro" id="_M/SZ_ERROR_CRC" data-ref="_M/SZ_ERROR_CRC">SZ_ERROR_CRC</dfn> 3</u></td></tr>
+<tr><th id="30">30</th><td><u>#define <dfn class="macro" id="_M/SZ_ERROR_UNSUPPORTED" data-ref="_M/SZ_ERROR_UNSUPPORTED">SZ_ERROR_UNSUPPORTED</dfn> 4</u></td></tr>
+<tr><th id="31">31</th><td><u>#define <dfn class="macro" id="_M/SZ_ERROR_PARAM" data-ref="_M/SZ_ERROR_PARAM">SZ_ERROR_PARAM</dfn> 5</u></td></tr>
+<tr><th id="32">32</th><td><u>#define <dfn class="macro" id="_M/SZ_ERROR_INPUT_EOF" data-ref="_M/SZ_ERROR_INPUT_EOF">SZ_ERROR_INPUT_EOF</dfn> 6</u></td></tr>
+<tr><th id="33">33</th><td><u>#define <dfn class="macro" id="_M/SZ_ERROR_OUTPUT_EOF" data-ref="_M/SZ_ERROR_OUTPUT_EOF">SZ_ERROR_OUTPUT_EOF</dfn> 7</u></td></tr>
+<tr><th id="34">34</th><td><u>#define <dfn class="macro" id="_M/SZ_ERROR_READ" data-ref="_M/SZ_ERROR_READ">SZ_ERROR_READ</dfn> 8</u></td></tr>
+<tr><th id="35">35</th><td><u>#define <dfn class="macro" id="_M/SZ_ERROR_WRITE" data-ref="_M/SZ_ERROR_WRITE">SZ_ERROR_WRITE</dfn> 9</u></td></tr>
+<tr><th id="36">36</th><td><u>#define <dfn class="macro" id="_M/SZ_ERROR_PROGRESS" data-ref="_M/SZ_ERROR_PROGRESS">SZ_ERROR_PROGRESS</dfn> 10</u></td></tr>
+<tr><th id="37">37</th><td><u>#define <dfn class="macro" id="_M/SZ_ERROR_FAIL" data-ref="_M/SZ_ERROR_FAIL">SZ_ERROR_FAIL</dfn> 11</u></td></tr>
+<tr><th id="38">38</th><td><u>#define <dfn class="macro" id="_M/SZ_ERROR_THREAD" data-ref="_M/SZ_ERROR_THREAD">SZ_ERROR_THREAD</dfn> 12</u></td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><u>#define <dfn class="macro" id="_M/SZ_ERROR_ARCHIVE" data-ref="_M/SZ_ERROR_ARCHIVE">SZ_ERROR_ARCHIVE</dfn> 16</u></td></tr>
+<tr><th id="41">41</th><td><u>#define <dfn class="macro" id="_M/SZ_ERROR_NO_ARCHIVE" data-ref="_M/SZ_ERROR_NO_ARCHIVE">SZ_ERROR_NO_ARCHIVE</dfn> 17</u></td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td><b>typedef</b> <em>int</em> <dfn class="typedef" id="SRes" title='SRes' data-type='int' data-ref="SRes">SRes</dfn>;</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><u>#<span data-ppcond="45">ifdef</span> <span class="macro" data-ref="_M/_WIN32">_WIN32</span></u></td></tr>
+<tr><th id="46">46</th><td><b>typedef</b> DWORD WRes;</td></tr>
+<tr><th id="47">47</th><td><u>#<span data-ppcond="45">else</span></u></td></tr>
+<tr><th id="48">48</th><td><b>typedef</b> <em>int</em> <dfn class="typedef" id="WRes" title='WRes' data-type='int' data-ref="WRes">WRes</dfn>;</td></tr>
+<tr><th id="49">49</th><td><b>typedef</b> <em>void</em>* <dfn class="typedef" id="HANDLE" title='HANDLE' data-type='void *' data-ref="HANDLE">HANDLE</dfn>;</td></tr>
+<tr><th id="50">50</th><td><b>typedef</b> <em>void</em>* <dfn class="typedef" id="LPVOID" title='LPVOID' data-type='void *' data-ref="LPVOID">LPVOID</dfn>;</td></tr>
+<tr><th id="51">51</th><td><u>#<span data-ppcond="45">endif</span></u></td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td><u>#<span data-ppcond="53">ifndef</span> <span class="macro" data-ref="_M/RINOK">RINOK</span></u></td></tr>
+<tr><th id="54">54</th><td><u>#define <dfn class="macro" id="_M/RINOK" data-ref="_M/RINOK">RINOK</dfn>(x) { int __result__ = (x); if (__result__ != 0) return __result__; }</u></td></tr>
+<tr><th id="55">55</th><td><u>#<span data-ppcond="53">endif</span></u></td></tr>
+<tr><th id="56">56</th><td></td></tr>
+<tr><th id="57">57</th><td><b>typedef</b> <em>unsigned</em> <em>char</em> <dfn class="typedef" id="Byte" title='Byte' data-type='unsigned char' data-ref="Byte">Byte</dfn>;</td></tr>
+<tr><th id="58">58</th><td><b>typedef</b> <em>short</em> <dfn class="typedef" id="Int16" title='Int16' data-type='short' data-ref="Int16">Int16</dfn>;</td></tr>
+<tr><th id="59">59</th><td><b>typedef</b> <em>unsigned</em> <em>short</em> <dfn class="typedef" id="UInt16" title='UInt16' data-type='unsigned short' data-ref="UInt16">UInt16</dfn>;</td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td><u>#<span data-ppcond="61">ifdef</span> <span class="macro" data-ref="_M/_LZMA_UINT32_IS_ULONG">_LZMA_UINT32_IS_ULONG</span></u></td></tr>
+<tr><th id="62">62</th><td><b>typedef</b> <em>long</em> Int32;</td></tr>
+<tr><th id="63">63</th><td><b>typedef</b> <em>unsigned</em> <em>long</em> UInt32;</td></tr>
+<tr><th id="64">64</th><td><u>#<span data-ppcond="61">else</span></u></td></tr>
+<tr><th id="65">65</th><td><b>typedef</b> <em>int</em> <dfn class="typedef" id="Int32" title='Int32' data-type='int' data-ref="Int32">Int32</dfn>;</td></tr>
+<tr><th id="66">66</th><td><b>typedef</b> <em>unsigned</em> <em>int</em> <dfn class="typedef" id="UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</dfn>;</td></tr>
+<tr><th id="67">67</th><td><u>#<span data-ppcond="61">endif</span></u></td></tr>
+<tr><th id="68">68</th><td></td></tr>
+<tr><th id="69">69</th><td><u>#<span data-ppcond="69">ifdef</span> <span class="macro" data-ref="_M/_SZ_NO_INT_64">_SZ_NO_INT_64</span></u></td></tr>
+<tr><th id="70">70</th><td></td></tr>
+<tr><th id="71">71</th><td><i>/* define _SZ_NO_INT_64, if your compiler doesn't support 64-bit integers.</i></td></tr>
+<tr><th id="72">72</th><td><i> NOTES: Some code will work incorrectly in that case! */</i></td></tr>
+<tr><th id="73">73</th><td></td></tr>
+<tr><th id="74">74</th><td><b>typedef</b> <em>long</em> Int64;</td></tr>
+<tr><th id="75">75</th><td><b>typedef</b> <em>unsigned</em> <em>long</em> UInt64;</td></tr>
+<tr><th id="76">76</th><td></td></tr>
+<tr><th id="77">77</th><td><u>#<span data-ppcond="69">else</span></u></td></tr>
+<tr><th id="78">78</th><td></td></tr>
+<tr><th id="79">79</th><td><u>#<span data-ppcond="79">if</span> defined(<span class="macro" data-ref="_M/_MSC_VER">_MSC_VER</span>) || defined(<span class="macro" data-ref="_M/__BORLANDC__">__BORLANDC__</span>)</u></td></tr>
+<tr><th id="80">80</th><td><b>typedef</b> __int64 Int64;</td></tr>
+<tr><th id="81">81</th><td><b>typedef</b> <em>unsigned</em> __int64 UInt64;</td></tr>
+<tr><th id="82">82</th><td><u>#define UINT64_CONST(n) n</u></td></tr>
+<tr><th id="83">83</th><td><u>#<span data-ppcond="79">else</span></u></td></tr>
+<tr><th id="84">84</th><td><b>typedef</b> <em>long</em> <em>long</em> <em>int</em> <dfn class="typedef" id="Int64" title='Int64' data-type='long long' data-ref="Int64">Int64</dfn>;</td></tr>
+<tr><th id="85">85</th><td><b>typedef</b> <em>unsigned</em> <em>long</em> <em>long</em> <em>int</em> <dfn class="typedef" id="UInt64" title='UInt64' data-type='unsigned long long' data-ref="UInt64">UInt64</dfn>;</td></tr>
+<tr><th id="86">86</th><td><u>#define <dfn class="macro" id="_M/UINT64_CONST" data-ref="_M/UINT64_CONST">UINT64_CONST</dfn>(n) n ## ULL</u></td></tr>
+<tr><th id="87">87</th><td><u>#<span data-ppcond="79">endif</span></u></td></tr>
+<tr><th id="88">88</th><td></td></tr>
+<tr><th id="89">89</th><td><u>#<span data-ppcond="69">endif</span></u></td></tr>
+<tr><th id="90">90</th><td></td></tr>
+<tr><th id="91">91</th><td><u>#<span data-ppcond="91">ifdef</span> <span class="macro" data-ref="_M/_LZMA_NO_SYSTEM_SIZE_T">_LZMA_NO_SYSTEM_SIZE_T</span></u></td></tr>
+<tr><th id="92">92</th><td><b>typedef</b> UInt32 SizeT;</td></tr>
+<tr><th id="93">93</th><td><u>#<span data-ppcond="91">else</span></u></td></tr>
+<tr><th id="94">94</th><td><b>typedef</b> <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="typedef" id="SizeT" title='SizeT' data-type='size_t' data-ref="SizeT">SizeT</dfn>;</td></tr>
+<tr><th id="95">95</th><td><u>#<span data-ppcond="91">endif</span></u></td></tr>
+<tr><th id="96">96</th><td></td></tr>
+<tr><th id="97">97</th><td><b>typedef</b> <em>int</em> <dfn class="typedef" id="Bool" title='Bool' data-type='int' data-ref="Bool">Bool</dfn>;</td></tr>
+<tr><th id="98">98</th><td><u>#define <dfn class="macro" id="_M/True" data-ref="_M/True">True</dfn> 1</u></td></tr>
+<tr><th id="99">99</th><td><u>#define <dfn class="macro" id="_M/False" data-ref="_M/False">False</dfn> 0</u></td></tr>
+<tr><th id="100">100</th><td></td></tr>
+<tr><th id="101">101</th><td><u>#<span data-ppcond="101">ifdef</span> <span class="macro" data-ref="_M/_WIN32">_WIN32</span></u></td></tr>
+<tr><th id="102">102</th><td><u>#define MY_STD_CALL __stdcall</u></td></tr>
+<tr><th id="103">103</th><td><u>#<span data-ppcond="101">else</span></u></td></tr>
+<tr><th id="104">104</th><td><u>#define <dfn class="macro" id="_M/MY_STD_CALL" data-ref="_M/MY_STD_CALL">MY_STD_CALL</dfn></u></td></tr>
+<tr><th id="105">105</th><td><u>#<span data-ppcond="101">endif</span></u></td></tr>
+<tr><th id="106">106</th><td></td></tr>
+<tr><th id="107">107</th><td><u>#<span data-ppcond="107">ifdef</span> <span class="macro" data-ref="_M/_MSC_VER">_MSC_VER</span></u></td></tr>
+<tr><th id="108">108</th><td></td></tr>
+<tr><th id="109">109</th><td><u>#if _MSC_VER &gt;= 1300</u></td></tr>
+<tr><th id="110">110</th><td><u>#define MY_NO_INLINE __declspec(noinline)</u></td></tr>
+<tr><th id="111">111</th><td><u>#else</u></td></tr>
+<tr><th id="112">112</th><td><u>#define MY_NO_INLINE</u></td></tr>
+<tr><th id="113">113</th><td><u>#endif</u></td></tr>
+<tr><th id="114">114</th><td></td></tr>
+<tr><th id="115">115</th><td><u>#define MY_CDECL __cdecl</u></td></tr>
+<tr><th id="116">116</th><td><u>#define MY_FAST_CALL __fastcall</u></td></tr>
+<tr><th id="117">117</th><td></td></tr>
+<tr><th id="118">118</th><td><u>#<span data-ppcond="107">else</span></u></td></tr>
+<tr><th id="119">119</th><td></td></tr>
+<tr><th id="120">120</th><td><u>#define <dfn class="macro" id="_M/MY_CDECL" data-ref="_M/MY_CDECL">MY_CDECL</dfn></u></td></tr>
+<tr><th id="121">121</th><td><u>#define <dfn class="macro" id="_M/MY_FAST_CALL" data-ref="_M/MY_FAST_CALL">MY_FAST_CALL</dfn></u></td></tr>
+<tr><th id="122">122</th><td></td></tr>
+<tr><th id="123">123</th><td><u>#<span data-ppcond="107">endif</span></u></td></tr>
+<tr><th id="124">124</th><td></td></tr>
+<tr><th id="125">125</th><td><i>/* The following interfaces use first parameter as pointer to structure */</i></td></tr>
+<tr><th id="126">126</th><td></td></tr>
+<tr><th id="127">127</th><td><b>typedef</b> <b>struct</b></td></tr>
+<tr><th id="128">128</th><td>{</td></tr>
+<tr><th id="129">129</th><td>    <a class="typedef" href="#Byte" title='Byte' data-type='unsigned char' data-ref="Byte">Byte</a> (*<dfn class="decl" id="(anonymous)::Read" title='(anonymous struct)::Read' data-ref="(anonymous)::Read">Read</dfn>)(<em>void</em> *<dfn class="local col1 decl" id="1p" title='p' data-type='void *' data-ref="1p">p</dfn>); <i>/* reads one byte, returns 0 in case of EOF or error */</i></td></tr>
+<tr><th id="130">130</th><td>} <dfn class="typedef" id="IByteIn" title='IByteIn' data-type='struct IByteIn' data-ref="IByteIn">IByteIn</dfn>;</td></tr>
+<tr><th id="131">131</th><td></td></tr>
+<tr><th id="132">132</th><td><b>typedef</b> <b>struct</b></td></tr>
+<tr><th id="133">133</th><td>{</td></tr>
+<tr><th id="134">134</th><td>    <em>void</em> (*<dfn class="decl" id="(anonymous)::Write" title='(anonymous struct)::Write' data-ref="(anonymous)::Write">Write</dfn>)(<em>void</em> *<dfn class="local col2 decl" id="2p" title='p' data-type='void *' data-ref="2p">p</dfn>, <a class="typedef" href="#Byte" title='Byte' data-type='unsigned char' data-ref="Byte">Byte</a> <dfn class="local col3 decl" id="3b" title='b' data-type='Byte' data-ref="3b">b</dfn>);</td></tr>
+<tr><th id="135">135</th><td>} <dfn class="typedef" id="IByteOut" title='IByteOut' data-type='struct IByteOut' data-ref="IByteOut">IByteOut</dfn>;</td></tr>
+<tr><th id="136">136</th><td></td></tr>
+<tr><th id="137">137</th><td><b>typedef</b> <b>struct</b></td></tr>
+<tr><th id="138">138</th><td>{</td></tr>
+<tr><th id="139">139</th><td>    <a class="typedef" href="#SRes" title='SRes' data-type='int' data-ref="SRes">SRes</a> (*<dfn class="decl" id="(anonymous)::Read" title='(anonymous struct)::Read' data-ref="(anonymous)::Read">Read</dfn>)(<em>void</em> *<dfn class="local col4 decl" id="4p" title='p' data-type='void *' data-ref="4p">p</dfn>, <em>void</em> *<dfn class="local col5 decl" id="5buf" title='buf' data-type='void *' data-ref="5buf">buf</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> *<dfn class="local col6 decl" id="6size" title='size' data-type='size_t *' data-ref="6size">size</dfn>);</td></tr>
+<tr><th id="140">140</th><td>    <i>/* if (input(*size) != 0 &amp;&amp; output(*size) == 0) means end_of_stream.</i></td></tr>
+<tr><th id="141">141</th><td><i>     (output(*size) &lt; input(*size)) is allowed */</i></td></tr>
+<tr><th id="142">142</th><td>} <dfn class="typedef" id="ISeqInStream" title='ISeqInStream' data-type='struct ISeqInStream' data-ref="ISeqInStream">ISeqInStream</dfn>;</td></tr>
+<tr><th id="143">143</th><td></td></tr>
+<tr><th id="144">144</th><td><i>/* it can return SZ_ERROR_INPUT_EOF */</i></td></tr>
+<tr><th id="145">145</th><td><a class="typedef" href="#SRes" title='SRes' data-type='int' data-ref="SRes">SRes</a> <dfn class="decl" id="SeqInStream_Read" title='SeqInStream_Read' data-ref="SeqInStream_Read">SeqInStream_Read</dfn>(<a class="typedef" href="#ISeqInStream" title='ISeqInStream' data-type='struct ISeqInStream' data-ref="ISeqInStream">ISeqInStream</a> *<dfn class="local col7 decl" id="7stream" title='stream' data-type='ISeqInStream *' data-ref="7stream">stream</dfn>, <em>void</em> *<dfn class="local col8 decl" id="8buf" title='buf' data-type='void *' data-ref="8buf">buf</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col9 decl" id="9size" title='size' data-type='size_t' data-ref="9size">size</dfn>);</td></tr>
+<tr><th id="146">146</th><td><a class="typedef" href="#SRes" title='SRes' data-type='int' data-ref="SRes">SRes</a> <dfn class="decl" id="SeqInStream_Read2" title='SeqInStream_Read2' data-ref="SeqInStream_Read2">SeqInStream_Read2</dfn>(<a class="typedef" href="#ISeqInStream" title='ISeqInStream' data-type='struct ISeqInStream' data-ref="ISeqInStream">ISeqInStream</a> *<dfn class="local col0 decl" id="10stream" title='stream' data-type='ISeqInStream *' data-ref="10stream">stream</dfn>, <em>void</em> *<dfn class="local col1 decl" id="11buf" title='buf' data-type='void *' data-ref="11buf">buf</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col2 decl" id="12size" title='size' data-type='size_t' data-ref="12size">size</dfn>, <a class="typedef" href="#SRes" title='SRes' data-type='int' data-ref="SRes">SRes</a> <dfn class="local col3 decl" id="13errorType" title='errorType' data-type='SRes' data-ref="13errorType">errorType</dfn>);</td></tr>
+<tr><th id="147">147</th><td><a class="typedef" href="#SRes" title='SRes' data-type='int' data-ref="SRes">SRes</a> <dfn class="decl" id="SeqInStream_ReadByte" title='SeqInStream_ReadByte' data-ref="SeqInStream_ReadByte">SeqInStream_ReadByte</dfn>(<a class="typedef" href="#ISeqInStream" title='ISeqInStream' data-type='struct ISeqInStream' data-ref="ISeqInStream">ISeqInStream</a> *<dfn class="local col4 decl" id="14stream" title='stream' data-type='ISeqInStream *' data-ref="14stream">stream</dfn>, <a class="typedef" href="#Byte" title='Byte' data-type='unsigned char' data-ref="Byte">Byte</a> *<dfn class="local col5 decl" id="15buf" title='buf' data-type='Byte *' data-ref="15buf">buf</dfn>);</td></tr>
+<tr><th id="148">148</th><td></td></tr>
+<tr><th id="149">149</th><td><b>typedef</b> <b>struct</b></td></tr>
+<tr><th id="150">150</th><td>{</td></tr>
+<tr><th id="151">151</th><td>    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> (*<dfn class="decl" id="(anonymous)::Write" title='(anonymous struct)::Write' data-ref="(anonymous)::Write">Write</dfn>)(<em>void</em> *<dfn class="local col6 decl" id="16p" title='p' data-type='void *' data-ref="16p">p</dfn>, <em>const</em> <em>void</em> *<dfn class="local col7 decl" id="17buf" title='buf' data-type='const void *' data-ref="17buf">buf</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col8 decl" id="18size" title='size' data-type='size_t' data-ref="18size">size</dfn>);</td></tr>
+<tr><th id="152">152</th><td>    <i>/* Returns: result - the number of actually written bytes.</i></td></tr>
+<tr><th id="153">153</th><td><i>     (result &lt; size) means error */</i></td></tr>
+<tr><th id="154">154</th><td>} <dfn class="typedef" id="ISeqOutStream" title='ISeqOutStream' data-type='struct ISeqOutStream' data-ref="ISeqOutStream">ISeqOutStream</dfn>;</td></tr>
+<tr><th id="155">155</th><td></td></tr>
+<tr><th id="156">156</th><td><b>typedef</b> <b>enum</b></td></tr>
+<tr><th id="157">157</th><td>{</td></tr>
+<tr><th id="158">158</th><td>    <dfn class="enum" id="SZ_SEEK_SET" title='SZ_SEEK_SET' data-ref="SZ_SEEK_SET">SZ_SEEK_SET</dfn> = <var>0</var>, <dfn class="enum" id="SZ_SEEK_CUR" title='SZ_SEEK_CUR' data-ref="SZ_SEEK_CUR">SZ_SEEK_CUR</dfn> = <var>1</var>, <dfn class="enum" id="SZ_SEEK_END" title='SZ_SEEK_END' data-ref="SZ_SEEK_END">SZ_SEEK_END</dfn> = <var>2</var></td></tr>
+<tr><th id="159">159</th><td>} <dfn class="typedef" id="ESzSeek" title='ESzSeek' data-type='enum ESzSeek' data-ref="ESzSeek">ESzSeek</dfn>;</td></tr>
+<tr><th id="160">160</th><td></td></tr>
+<tr><th id="161">161</th><td><b>typedef</b> <b>struct</b></td></tr>
+<tr><th id="162">162</th><td>{</td></tr>
+<tr><th id="163">163</th><td>    <a class="typedef" href="#SRes" title='SRes' data-type='int' data-ref="SRes">SRes</a> (*<dfn class="decl" id="(anonymous)::Read" title='(anonymous struct)::Read' data-ref="(anonymous)::Read">Read</dfn>)(<em>void</em> *<dfn class="local col9 decl" id="19p" title='p' data-type='void *' data-ref="19p">p</dfn>, <em>void</em> *<dfn class="local col0 decl" id="20buf" title='buf' data-type='void *' data-ref="20buf">buf</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> *<dfn class="local col1 decl" id="21size" title='size' data-type='size_t *' data-ref="21size">size</dfn>); <i>/* same as ISeqInStream::Read */</i></td></tr>
+<tr><th id="164">164</th><td>    <a class="typedef" href="#SRes" title='SRes' data-type='int' data-ref="SRes">SRes</a> (*<dfn class="decl" id="(anonymous)::Seek" title='(anonymous struct)::Seek' data-ref="(anonymous)::Seek">Seek</dfn>)(<em>void</em> *<dfn class="local col2 decl" id="22p" title='p' data-type='void *' data-ref="22p">p</dfn>, <a class="typedef" href="#Int64" title='Int64' data-type='long long' data-ref="Int64">Int64</a> *<dfn class="local col3 decl" id="23pos" title='pos' data-type='Int64 *' data-ref="23pos">pos</dfn>, <a class="typedef" href="#ESzSeek" title='ESzSeek' data-type='enum ESzSeek' data-ref="ESzSeek">ESzSeek</a> <dfn class="local col4 decl" id="24origin" title='origin' data-type='ESzSeek' data-ref="24origin">origin</dfn>);</td></tr>
+<tr><th id="165">165</th><td>} <dfn class="typedef" id="ISeekInStream" title='ISeekInStream' data-type='struct ISeekInStream' data-ref="ISeekInStream">ISeekInStream</dfn>;</td></tr>
+<tr><th id="166">166</th><td></td></tr>
+<tr><th id="167">167</th><td><b>typedef</b> <b>struct</b></td></tr>
+<tr><th id="168">168</th><td>{</td></tr>
+<tr><th id="169">169</th><td>    <a class="typedef" href="#SRes" title='SRes' data-type='int' data-ref="SRes">SRes</a> (*<dfn class="decl" id="(anonymous)::Look" title='(anonymous struct)::Look' data-ref="(anonymous)::Look">Look</dfn>)(<em>void</em> *<dfn class="local col5 decl" id="25p" title='p' data-type='void *' data-ref="25p">p</dfn>, <em>const</em> <em>void</em> **<dfn class="local col6 decl" id="26buf" title='buf' data-type='const void **' data-ref="26buf">buf</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> *<dfn class="local col7 decl" id="27size" title='size' data-type='size_t *' data-ref="27size">size</dfn>);</td></tr>
+<tr><th id="170">170</th><td>    <i>/* if (input(*size) != 0 &amp;&amp; output(*size) == 0) means end_of_stream.</i></td></tr>
+<tr><th id="171">171</th><td><i>     (output(*size) &gt; input(*size)) is not allowed</i></td></tr>
+<tr><th id="172">172</th><td><i>     (output(*size) &lt; input(*size)) is allowed */</i></td></tr>
+<tr><th id="173">173</th><td>    <a class="typedef" href="#SRes" title='SRes' data-type='int' data-ref="SRes">SRes</a> (*<dfn class="decl" id="(anonymous)::Skip" title='(anonymous struct)::Skip' data-ref="(anonymous)::Skip">Skip</dfn>)(<em>void</em> *<dfn class="local col8 decl" id="28p" title='p' data-type='void *' data-ref="28p">p</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col9 decl" id="29offset" title='offset' data-type='size_t' data-ref="29offset">offset</dfn>);</td></tr>
+<tr><th id="174">174</th><td>    <i>/* offset must be &lt;= output(*size) of Look */</i></td></tr>
+<tr><th id="175">175</th><td></td></tr>
+<tr><th id="176">176</th><td>    <a class="typedef" href="#SRes" title='SRes' data-type='int' data-ref="SRes">SRes</a> (*<dfn class="decl" id="(anonymous)::Read" title='(anonymous struct)::Read' data-ref="(anonymous)::Read">Read</dfn>)(<em>void</em> *<dfn class="local col0 decl" id="30p" title='p' data-type='void *' data-ref="30p">p</dfn>, <em>void</em> *<dfn class="local col1 decl" id="31buf" title='buf' data-type='void *' data-ref="31buf">buf</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> *<dfn class="local col2 decl" id="32size" title='size' data-type='size_t *' data-ref="32size">size</dfn>);</td></tr>
+<tr><th id="177">177</th><td>    <i>/* reads directly (without buffer). It's same as ISeqInStream::Read */</i></td></tr>
+<tr><th id="178">178</th><td>    <a class="typedef" href="#SRes" title='SRes' data-type='int' data-ref="SRes">SRes</a> (*<dfn class="decl" id="(anonymous)::Seek" title='(anonymous struct)::Seek' data-ref="(anonymous)::Seek">Seek</dfn>)(<em>void</em> *<dfn class="local col3 decl" id="33p" title='p' data-type='void *' data-ref="33p">p</dfn>, <a class="typedef" href="#Int64" title='Int64' data-type='long long' data-ref="Int64">Int64</a> *<dfn class="local col4 decl" id="34pos" title='pos' data-type='Int64 *' data-ref="34pos">pos</dfn>, <a class="typedef" href="#ESzSeek" title='ESzSeek' data-type='enum ESzSeek' data-ref="ESzSeek">ESzSeek</a> <dfn class="local col5 decl" id="35origin" title='origin' data-type='ESzSeek' data-ref="35origin">origin</dfn>);</td></tr>
+<tr><th id="179">179</th><td>} <dfn class="typedef" id="ILookInStream" title='ILookInStream' data-type='struct ILookInStream' data-ref="ILookInStream">ILookInStream</dfn>;</td></tr>
+<tr><th id="180">180</th><td></td></tr>
+<tr><th id="181">181</th><td><a class="typedef" href="#SRes" title='SRes' data-type='int' data-ref="SRes">SRes</a> <dfn class="decl" id="LookInStream_LookRead" title='LookInStream_LookRead' data-ref="LookInStream_LookRead">LookInStream_LookRead</dfn>(<a class="typedef" href="#ILookInStream" title='ILookInStream' data-type='struct ILookInStream' data-ref="ILookInStream">ILookInStream</a> *<dfn class="local col6 decl" id="36stream" title='stream' data-type='ILookInStream *' data-ref="36stream">stream</dfn>, <em>void</em> *<dfn class="local col7 decl" id="37buf" title='buf' data-type='void *' data-ref="37buf">buf</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> *<dfn class="local col8 decl" id="38size" title='size' data-type='size_t *' data-ref="38size">size</dfn>);</td></tr>
+<tr><th id="182">182</th><td><a class="typedef" href="#SRes" title='SRes' data-type='int' data-ref="SRes">SRes</a> <dfn class="decl" id="LookInStream_SeekTo" title='LookInStream_SeekTo' data-ref="LookInStream_SeekTo">LookInStream_SeekTo</dfn>(<a class="typedef" href="#ILookInStream" title='ILookInStream' data-type='struct ILookInStream' data-ref="ILookInStream">ILookInStream</a> *<dfn class="local col9 decl" id="39stream" title='stream' data-type='ILookInStream *' data-ref="39stream">stream</dfn>, <a class="typedef" href="#UInt64" title='UInt64' data-type='unsigned long long' data-ref="UInt64">UInt64</a> <dfn class="local col0 decl" id="40offset" title='offset' data-type='UInt64' data-ref="40offset">offset</dfn>);</td></tr>
+<tr><th id="183">183</th><td></td></tr>
+<tr><th id="184">184</th><td><i>/* reads via ILookInStream::Read */</i></td></tr>
+<tr><th id="185">185</th><td><a class="typedef" href="#SRes" title='SRes' data-type='int' data-ref="SRes">SRes</a> <dfn class="decl" id="LookInStream_Read2" title='LookInStream_Read2' data-ref="LookInStream_Read2">LookInStream_Read2</dfn>(<a class="typedef" href="#ILookInStream" title='ILookInStream' data-type='struct ILookInStream' data-ref="ILookInStream">ILookInStream</a> *<dfn class="local col1 decl" id="41stream" title='stream' data-type='ILookInStream *' data-ref="41stream">stream</dfn>, <em>void</em> *<dfn class="local col2 decl" id="42buf" title='buf' data-type='void *' data-ref="42buf">buf</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col3 decl" id="43size" title='size' data-type='size_t' data-ref="43size">size</dfn>, <a class="typedef" href="#SRes" title='SRes' data-type='int' data-ref="SRes">SRes</a> <dfn class="local col4 decl" id="44errorType" title='errorType' data-type='SRes' data-ref="44errorType">errorType</dfn>);</td></tr>
+<tr><th id="186">186</th><td><a class="typedef" href="#SRes" title='SRes' data-type='int' data-ref="SRes">SRes</a> <dfn class="decl" id="LookInStream_Read" title='LookInStream_Read' data-ref="LookInStream_Read">LookInStream_Read</dfn>(<a class="typedef" href="#ILookInStream" title='ILookInStream' data-type='struct ILookInStream' data-ref="ILookInStream">ILookInStream</a> *<dfn class="local col5 decl" id="45stream" title='stream' data-type='ILookInStream *' data-ref="45stream">stream</dfn>, <em>void</em> *<dfn class="local col6 decl" id="46buf" title='buf' data-type='void *' data-ref="46buf">buf</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col7 decl" id="47size" title='size' data-type='size_t' data-ref="47size">size</dfn>);</td></tr>
+<tr><th id="187">187</th><td></td></tr>
+<tr><th id="188">188</th><td><u>#define <dfn class="macro" id="_M/LookToRead_BUF_SIZE" data-ref="_M/LookToRead_BUF_SIZE">LookToRead_BUF_SIZE</dfn> (1 &lt;&lt; 14)</u></td></tr>
+<tr><th id="189">189</th><td></td></tr>
+<tr><th id="190">190</th><td><b>typedef</b> <b>struct</b></td></tr>
+<tr><th id="191">191</th><td>{</td></tr>
+<tr><th id="192">192</th><td>    <a class="typedef" href="#ILookInStream" title='ILookInStream' data-type='struct ILookInStream' data-ref="ILookInStream">ILookInStream</a> <dfn class="decl" id="(anonymous)::s" title='(anonymous struct)::s' data-ref="(anonymous)::s">s</dfn>;</td></tr>
+<tr><th id="193">193</th><td>    <a class="typedef" href="#ISeekInStream" title='ISeekInStream' data-type='struct ISeekInStream' data-ref="ISeekInStream">ISeekInStream</a> *<dfn class="decl" id="(anonymous)::realStream" title='(anonymous struct)::realStream' data-ref="(anonymous)::realStream">realStream</dfn>;</td></tr>
+<tr><th id="194">194</th><td>    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="(anonymous)::pos" title='(anonymous struct)::pos' data-ref="(anonymous)::pos">pos</dfn>;</td></tr>
+<tr><th id="195">195</th><td>    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="(anonymous)::size" title='(anonymous struct)::size' data-ref="(anonymous)::size">size</dfn>;</td></tr>
+<tr><th id="196">196</th><td>    <a class="typedef" href="#Byte" title='Byte' data-type='unsigned char' data-ref="Byte">Byte</a> <dfn class="decl" id="(anonymous)::buf" title='(anonymous struct)::buf' data-ref="(anonymous)::buf">buf</dfn>[<a class="macro" href="#188" title="(1 &lt;&lt; 14)" data-ref="_M/LookToRead_BUF_SIZE">LookToRead_BUF_SIZE</a>];</td></tr>
+<tr><th id="197">197</th><td>} <dfn class="typedef" id="CLookToRead" title='CLookToRead' data-type='struct CLookToRead' data-ref="CLookToRead">CLookToRead</dfn>;</td></tr>
+<tr><th id="198">198</th><td></td></tr>
+<tr><th id="199">199</th><td><em>void</em> <dfn class="decl" id="LookToRead_CreateVTable" title='LookToRead_CreateVTable' data-ref="LookToRead_CreateVTable">LookToRead_CreateVTable</dfn>(<a class="typedef" href="#CLookToRead" title='CLookToRead' data-type='struct CLookToRead' data-ref="CLookToRead">CLookToRead</a> *<dfn class="local col8 decl" id="48p" title='p' data-type='CLookToRead *' data-ref="48p">p</dfn>, <em>int</em> <dfn class="local col9 decl" id="49lookahead" title='lookahead' data-type='int' data-ref="49lookahead">lookahead</dfn>);</td></tr>
+<tr><th id="200">200</th><td><em>void</em> <dfn class="decl" id="LookToRead_Init" title='LookToRead_Init' data-ref="LookToRead_Init">LookToRead_Init</dfn>(<a class="typedef" href="#CLookToRead" title='CLookToRead' data-type='struct CLookToRead' data-ref="CLookToRead">CLookToRead</a> *<dfn class="local col0 decl" id="50p" title='p' data-type='CLookToRead *' data-ref="50p">p</dfn>);</td></tr>
+<tr><th id="201">201</th><td></td></tr>
+<tr><th id="202">202</th><td><b>typedef</b> <b>struct</b></td></tr>
+<tr><th id="203">203</th><td>{</td></tr>
+<tr><th id="204">204</th><td>    <a class="typedef" href="#ISeqInStream" title='ISeqInStream' data-type='struct ISeqInStream' data-ref="ISeqInStream">ISeqInStream</a> <dfn class="decl" id="(anonymous)::s" title='(anonymous struct)::s' data-ref="(anonymous)::s">s</dfn>;</td></tr>
+<tr><th id="205">205</th><td>    <a class="typedef" href="#ILookInStream" title='ILookInStream' data-type='struct ILookInStream' data-ref="ILookInStream">ILookInStream</a> *<dfn class="decl" id="(anonymous)::realStream" title='(anonymous struct)::realStream' data-ref="(anonymous)::realStream">realStream</dfn>;</td></tr>
+<tr><th id="206">206</th><td>} <dfn class="typedef" id="CSecToLook" title='CSecToLook' data-type='struct CSecToLook' data-ref="CSecToLook">CSecToLook</dfn>;</td></tr>
+<tr><th id="207">207</th><td></td></tr>
+<tr><th id="208">208</th><td><em>void</em> <dfn class="decl" id="SecToLook_CreateVTable" title='SecToLook_CreateVTable' data-ref="SecToLook_CreateVTable">SecToLook_CreateVTable</dfn>(<a class="typedef" href="#CSecToLook" title='CSecToLook' data-type='struct CSecToLook' data-ref="CSecToLook">CSecToLook</a> *<dfn class="local col1 decl" id="51p" title='p' data-type='CSecToLook *' data-ref="51p">p</dfn>);</td></tr>
+<tr><th id="209">209</th><td></td></tr>
+<tr><th id="210">210</th><td><b>typedef</b> <b>struct</b></td></tr>
+<tr><th id="211">211</th><td>{</td></tr>
+<tr><th id="212">212</th><td>    <a class="typedef" href="#ISeqInStream" title='ISeqInStream' data-type='struct ISeqInStream' data-ref="ISeqInStream">ISeqInStream</a> <dfn class="decl" id="(anonymous)::s" title='(anonymous struct)::s' data-ref="(anonymous)::s">s</dfn>;</td></tr>
+<tr><th id="213">213</th><td>    <a class="typedef" href="#ILookInStream" title='ILookInStream' data-type='struct ILookInStream' data-ref="ILookInStream">ILookInStream</a> *<dfn class="decl" id="(anonymous)::realStream" title='(anonymous struct)::realStream' data-ref="(anonymous)::realStream">realStream</dfn>;</td></tr>
+<tr><th id="214">214</th><td>} <dfn class="typedef" id="CSecToRead" title='CSecToRead' data-type='struct CSecToRead' data-ref="CSecToRead">CSecToRead</dfn>;</td></tr>
+<tr><th id="215">215</th><td></td></tr>
+<tr><th id="216">216</th><td><em>void</em> <dfn class="decl" id="SecToRead_CreateVTable" title='SecToRead_CreateVTable' data-ref="SecToRead_CreateVTable">SecToRead_CreateVTable</dfn>(<a class="typedef" href="#CSecToRead" title='CSecToRead' data-type='struct CSecToRead' data-ref="CSecToRead">CSecToRead</a> *<dfn class="local col2 decl" id="52p" title='p' data-type='CSecToRead *' data-ref="52p">p</dfn>);</td></tr>
+<tr><th id="217">217</th><td></td></tr>
+<tr><th id="218">218</th><td><b>typedef</b> <b>struct</b></td></tr>
+<tr><th id="219">219</th><td>{</td></tr>
+<tr><th id="220">220</th><td>    <a class="typedef" href="#SRes" title='SRes' data-type='int' data-ref="SRes">SRes</a> (*<dfn class="decl" id="(anonymous)::Progress" title='(anonymous struct)::Progress' data-ref="(anonymous)::Progress">Progress</dfn>)(<em>void</em> *<dfn class="local col3 decl" id="53p" title='p' data-type='void *' data-ref="53p">p</dfn>, <a class="typedef" href="#UInt64" title='UInt64' data-type='unsigned long long' data-ref="UInt64">UInt64</a> <dfn class="local col4 decl" id="54inSize" title='inSize' data-type='UInt64' data-ref="54inSize">inSize</dfn>, <a class="typedef" href="#UInt64" title='UInt64' data-type='unsigned long long' data-ref="UInt64">UInt64</a> <dfn class="local col5 decl" id="55outSize" title='outSize' data-type='UInt64' data-ref="55outSize">outSize</dfn>);</td></tr>
+<tr><th id="221">221</th><td>    <i>/* Returns: result. (result != SZ_OK) means break.</i></td></tr>
+<tr><th id="222">222</th><td><i>     Value (UInt64)(Int64)-1 for size means unknown value. */</i></td></tr>
+<tr><th id="223">223</th><td>} <dfn class="typedef" id="ICompressProgress" title='ICompressProgress' data-type='struct ICompressProgress' data-ref="ICompressProgress">ICompressProgress</dfn>;</td></tr>
+<tr><th id="224">224</th><td></td></tr>
+<tr><th id="225">225</th><td><b>typedef</b> <b>struct</b></td></tr>
+<tr><th id="226">226</th><td>{</td></tr>
+<tr><th id="227">227</th><td>    <em>void</em> *(*<dfn class="decl" id="(anonymous)::Alloc" title='(anonymous struct)::Alloc' data-ref="(anonymous)::Alloc">Alloc</dfn>)(<em>void</em> *<dfn class="local col6 decl" id="56p" title='p' data-type='void *' data-ref="56p">p</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col7 decl" id="57size" title='size' data-type='size_t' data-ref="57size">size</dfn>);</td></tr>
+<tr><th id="228">228</th><td>    <em>void</em> (*<dfn class="decl" id="(anonymous)::Free" title='(anonymous struct)::Free' data-ref="(anonymous)::Free">Free</dfn>)(<em>void</em> *<dfn class="local col8 decl" id="58p" title='p' data-type='void *' data-ref="58p">p</dfn>, <em>void</em> *<dfn class="local col9 decl" id="59address" title='address' data-type='void *' data-ref="59address">address</dfn>); <i>/* address can be 0 */</i></td></tr>
+<tr><th id="229">229</th><td>} <dfn class="typedef" id="ISzAlloc" title='ISzAlloc' data-type='struct ISzAlloc' data-ref="ISzAlloc">ISzAlloc</dfn>;</td></tr>
+<tr><th id="230">230</th><td></td></tr>
+<tr><th id="231">231</th><td><u>#define <dfn class="macro" id="_M/IAlloc_Alloc" data-ref="_M/IAlloc_Alloc">IAlloc_Alloc</dfn>(p, size) (p)-&gt;Alloc((p), size)</u></td></tr>
+<tr><th id="232">232</th><td><u>#define <dfn class="macro" id="_M/IAlloc_Free" data-ref="_M/IAlloc_Free">IAlloc_Free</dfn>(p, a) (p)-&gt;Free((p), a)</u></td></tr>
+<tr><th id="233">233</th><td></td></tr>
+<tr><th id="234">234</th><td><u>#<span data-ppcond="234">ifdef</span> <span class="macro" data-ref="_M/_WIN32">_WIN32</span></u></td></tr>
+<tr><th id="235">235</th><td></td></tr>
+<tr><th id="236">236</th><td><u>#define CHAR_PATH_SEPARATOR '\\'</u></td></tr>
+<tr><th id="237">237</th><td><u>#define WCHAR_PATH_SEPARATOR L'\\'</u></td></tr>
+<tr><th id="238">238</th><td><u>#define STRING_PATH_SEPARATOR "\\"</u></td></tr>
+<tr><th id="239">239</th><td><u>#define WSTRING_PATH_SEPARATOR L"\\"</u></td></tr>
+<tr><th id="240">240</th><td></td></tr>
+<tr><th id="241">241</th><td><u>#<span data-ppcond="234">else</span></u></td></tr>
+<tr><th id="242">242</th><td></td></tr>
+<tr><th id="243">243</th><td><u>#define <dfn class="macro" id="_M/CHAR_PATH_SEPARATOR" data-ref="_M/CHAR_PATH_SEPARATOR">CHAR_PATH_SEPARATOR</dfn> '/'</u></td></tr>
+<tr><th id="244">244</th><td><u>#define <dfn class="macro" id="_M/WCHAR_PATH_SEPARATOR" data-ref="_M/WCHAR_PATH_SEPARATOR">WCHAR_PATH_SEPARATOR</dfn> L'/'</u></td></tr>
+<tr><th id="245">245</th><td><u>#define <dfn class="macro" id="_M/STRING_PATH_SEPARATOR" data-ref="_M/STRING_PATH_SEPARATOR">STRING_PATH_SEPARATOR</dfn> "/"</u></td></tr>
+<tr><th id="246">246</th><td><u>#define <dfn class="macro" id="_M/WSTRING_PATH_SEPARATOR" data-ref="_M/WSTRING_PATH_SEPARATOR">WSTRING_PATH_SEPARATOR</dfn> L"/"</u></td></tr>
+<tr><th id="247">247</th><td></td></tr>
+<tr><th id="248">248</th><td><u>#<span data-ppcond="234">endif</span></u></td></tr>
+<tr><th id="249">249</th><td></td></tr>
+<tr><th id="250">250</th><td><a class="macro" href="#16" title="}" data-ref="_M/EXTERN_C_END">EXTERN_C_END</a></td></tr>
+<tr><th id="251">251</th><td><u>#<span data-ppcond="4">endif</span></u></td></tr>
+<tr><th id="252">252</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../algorithm/LZMACoder.cpp.html'>codebrowser/nest/algorithm/LZMACoder.cpp</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

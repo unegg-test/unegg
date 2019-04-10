@@ -1,0 +1,8 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzFind.h' l='96' type='Mf_GetNumAvailableBytes_Func'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='735' u='w' c='MatchFinder_CreateVTable'/>
+<offset>128</offset>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='808' u='r' c='ReadMatchDistances'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='1731' u='r' c='LzmaEnc_CodeOneBlock'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='1742' u='r' c='LzmaEnc_CodeOneBlock'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='1853' u='r' c='LzmaEnc_CodeOneBlock'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='2080' u='r' c='LzmaEnc_GetNumAvailableBytes'/>

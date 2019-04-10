@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>7zCrc.c source code [codebrowser/nest/third-party/algorithm/lzma/7zCrc.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/third-party/algorithm/lzma/7zCrc.c'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>nest</a>/<a href='../..'>third-party</a>/<a href='..'>algorithm</a>/<a href='./'>lzma</a>/<a href='7zCrc.c.html'>7zCrc.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* 7zCrc.c -- CRC32 calculation</i></td></tr>
+<tr><th id="2">2</th><td><i> 2009-11-23 : Igor Pavlov : Public domain */</i></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="7zCrc.h.html">"7zCrc.h"</a></u></td></tr>
+<tr><th id="5">5</th><td><u>#include <a href="CpuArch.h.html">"CpuArch.h"</a></u></td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><u>#define <dfn class="macro" id="_M/kCrcPoly" data-ref="_M/kCrcPoly">kCrcPoly</dfn> 0xEDB88320</u></td></tr>
+<tr><th id="8">8</th><td></td></tr>
+<tr><th id="9">9</th><td><u>#undef <a class="macro" href="CpuArch.h.html#52" data-ref="_M/MY_CPU_LE">MY_CPU_LE</a></u></td></tr>
+<tr><th id="10">10</th><td></td></tr>
+<tr><th id="11">11</th><td><u>#<span data-ppcond="11">ifdef</span> <span class="macro" data-ref="_M/MY_CPU_LE">MY_CPU_LE</span></u></td></tr>
+<tr><th id="12">12</th><td><u>#define CRC_NUM_TABLES 8</u></td></tr>
+<tr><th id="13">13</th><td><u>#<span data-ppcond="11">else</span></u></td></tr>
+<tr><th id="14">14</th><td><u>#define <dfn class="macro" id="_M/CRC_NUM_TABLES" data-ref="_M/CRC_NUM_TABLES">CRC_NUM_TABLES</dfn> 1</u></td></tr>
+<tr><th id="15">15</th><td><u>#<span data-ppcond="11">endif</span></u></td></tr>
+<tr><th id="16">16</th><td></td></tr>
+<tr><th id="17">17</th><td><b>typedef</b> <a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> (<a class="macro" href="Types.h.html#121" title="" data-ref="_M/MY_FAST_CALL">MY_FAST_CALL</a> *<dfn class="typedef" id="CRC_FUNC" title='CRC_FUNC' data-type='UInt32 (*)(UInt32, const void *, size_t, const UInt32 *)' data-ref="CRC_FUNC">CRC_FUNC</dfn>)(<a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> <dfn class="local col8 decl" id="8v" title='v' data-type='UInt32' data-ref="8v">v</dfn>, <em>const</em> <em>void</em> *<dfn class="local col9 decl" id="9data" title='data' data-type='const void *' data-ref="9data">data</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col0 decl" id="10size" title='size' data-type='size_t' data-ref="10size">size</dfn>, <em>const</em> <a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> *<dfn class="local col1 decl" id="11table" title='table' data-type='const UInt32 *' data-ref="11table">table</dfn>);</td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><em>static</em> <a class="typedef" href="#CRC_FUNC" title='CRC_FUNC' data-type='UInt32 (*)(UInt32, const void *, size_t, const UInt32 *)' data-ref="CRC_FUNC">CRC_FUNC</a> <dfn class="tu decl def" id="g_CrcUpdate" title='g_CrcUpdate' data-type='CRC_FUNC' data-ref="g_CrcUpdate">g_CrcUpdate</dfn>;</td></tr>
+<tr><th id="20">20</th><td><a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> <dfn class="decl def" id="g_CrcTable" title='g_CrcTable' data-ref="g_CrcTable">g_CrcTable</dfn>[<var>256</var> * <a class="macro" href="#14" title="1" data-ref="_M/CRC_NUM_TABLES">CRC_NUM_TABLES</a>];</td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><u>#<span data-ppcond="22">if</span> <a class="macro" href="#14" title="1" data-ref="_M/CRC_NUM_TABLES">CRC_NUM_TABLES</a> == 1</u></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><u>#define <dfn class="macro" id="_M/CRC_UPDATE_BYTE_2" data-ref="_M/CRC_UPDATE_BYTE_2">CRC_UPDATE_BYTE_2</dfn>(crc, b) (<a class="local col5 ref" href="#15table" title='table' data-ref="15table">table</a>[((crc) ^ (b)) &amp; 0xFF] ^ ((crc) &gt;&gt; 8))</u></td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><em>static</em> <a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> <a class="macro" href="Types.h.html#121" title="" data-ref="_M/MY_FAST_CALL">MY_FAST_CALL</a> <dfn class="tu decl def" id="CrcUpdateT1" title='CrcUpdateT1' data-type='UInt32 CrcUpdateT1(UInt32 v, const void * data, size_t size, const UInt32 * table)' data-ref="CrcUpdateT1">CrcUpdateT1</dfn>(<a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> <dfn class="local col2 decl" id="12v" title='v' data-type='UInt32' data-ref="12v">v</dfn>, <em>const</em> <em>void</em> *<dfn class="local col3 decl" id="13data" title='data' data-type='const void *' data-ref="13data">data</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col4 decl" id="14size" title='size' data-type='size_t' data-ref="14size">size</dfn>, <em>const</em> <a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> *<dfn class="local col5 decl" id="15table" title='table' data-type='const UInt32 *' data-ref="15table">table</dfn>)</td></tr>
+<tr><th id="27">27</th><td>{</td></tr>
+<tr><th id="28">28</th><td>    <em>const</em> <a class="typedef" href="Types.h.html#Byte" title='Byte' data-type='unsigned char' data-ref="Byte">Byte</a> *<dfn class="local col6 decl" id="16p" title='p' data-type='const Byte *' data-ref="16p">p</dfn> = (<em>const</em> <a class="typedef" href="Types.h.html#Byte" title='Byte' data-type='unsigned char' data-ref="Byte">Byte</a> *) <a class="local col3 ref" href="#13data" title='data' data-ref="13data">data</a>;</td></tr>
+<tr><th id="29">29</th><td>    <b>for</b> (; <a class="local col4 ref" href="#14size" title='size' data-ref="14size">size</a> &gt; <var>0</var>; <a class="local col4 ref" href="#14size" title='size' data-ref="14size">size</a>--, <a class="local col6 ref" href="#16p" title='p' data-ref="16p">p</a>++)</td></tr>
+<tr><th id="30">30</th><td>        <a class="local col2 ref" href="#12v" title='v' data-ref="12v">v</a> = <a class="macro" href="#24" title="(table[((v) ^ (*p)) &amp; 0xFF] ^ ((v) &gt;&gt; 8))" data-ref="_M/CRC_UPDATE_BYTE_2">CRC_UPDATE_BYTE_2</a>(<a class="local col2 ref" href="#12v" title='v' data-ref="12v">v</a>, *<a class="local col6 ref" href="#16p" title='p' data-ref="16p">p</a>);</td></tr>
+<tr><th id="31">31</th><td>    <b>return</b> <a class="local col2 ref" href="#12v" title='v' data-ref="12v">v</a>;</td></tr>
+<tr><th id="32">32</th><td>}</td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><u>#<span data-ppcond="22">else</span></u></td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td>UInt32 MY_FAST_CALL CrcUpdateT4(UInt32 v, <em>const</em> <em>void</em> *data, size_t size, <em>const</em> UInt32 *table);</td></tr>
+<tr><th id="37">37</th><td>UInt32 MY_FAST_CALL CrcUpdateT8(UInt32 v, <em>const</em> <em>void</em> *data, size_t size, <em>const</em> UInt32 *table);</td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><u>#<span data-ppcond="22">endif</span></u></td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td><a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> <a class="macro" href="Types.h.html#121" title="" data-ref="_M/MY_FAST_CALL">MY_FAST_CALL</a> <dfn class="decl def" id="CrcUpdate" title='CrcUpdate' data-ref="CrcUpdate">CrcUpdate</dfn>(<a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> <dfn class="local col7 decl" id="17v" title='v' data-type='UInt32' data-ref="17v">v</dfn>, <em>const</em> <em>void</em> *<dfn class="local col8 decl" id="18data" title='data' data-type='const void *' data-ref="18data">data</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col9 decl" id="19size" title='size' data-type='size_t' data-ref="19size">size</dfn>)</td></tr>
+<tr><th id="42">42</th><td>{</td></tr>
+<tr><th id="43">43</th><td>    <b>return</b> <a class="tu ref" href="#g_CrcUpdate" title='g_CrcUpdate' data-use='r' data-ref="g_CrcUpdate">g_CrcUpdate</a>(<a class="local col7 ref" href="#17v" title='v' data-ref="17v">v</a>, <a class="local col8 ref" href="#18data" title='data' data-ref="18data">data</a>, <a class="local col9 ref" href="#19size" title='size' data-ref="19size">size</a>, <a class="ref" href="7zCrc.h.html#g_CrcTable" title='g_CrcTable' data-ref="g_CrcTable">g_CrcTable</a>);</td></tr>
+<tr><th id="44">44</th><td>}</td></tr>
+<tr><th id="45">45</th><td></td></tr>
+<tr><th id="46">46</th><td><a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> <a class="macro" href="Types.h.html#121" title="" data-ref="_M/MY_FAST_CALL">MY_FAST_CALL</a> <dfn class="decl def" id="CrcCalc" title='CrcCalc' data-ref="CrcCalc">CrcCalc</dfn>(<em>const</em> <em>void</em> *<dfn class="local col0 decl" id="20data" title='data' data-type='const void *' data-ref="20data">data</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col1 decl" id="21size" title='size' data-type='size_t' data-ref="21size">size</dfn>)</td></tr>
+<tr><th id="47">47</th><td>{</td></tr>
+<tr><th id="48">48</th><td>    <b>return</b> <a class="tu ref" href="#g_CrcUpdate" title='g_CrcUpdate' data-use='r' data-ref="g_CrcUpdate">g_CrcUpdate</a>(<a class="macro" href="7zCrc.h.html#16" title="0xFFFFFFFF" data-ref="_M/CRC_INIT_VAL">CRC_INIT_VAL</a>, <a class="local col0 ref" href="#20data" title='data' data-ref="20data">data</a>, <a class="local col1 ref" href="#21size" title='size' data-ref="21size">size</a>, <a class="ref" href="7zCrc.h.html#g_CrcTable" title='g_CrcTable' data-ref="g_CrcTable">g_CrcTable</a>) ^ <a class="macro" href="7zCrc.h.html#16" title="0xFFFFFFFF" data-ref="_M/CRC_INIT_VAL">CRC_INIT_VAL</a>;</td></tr>
+<tr><th id="49">49</th><td>}</td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td><em>void</em> <a class="macro" href="Types.h.html#121" title="" data-ref="_M/MY_FAST_CALL">MY_FAST_CALL</a> <dfn class="decl def" id="CrcGenerateTable" title='CrcGenerateTable' data-ref="CrcGenerateTable">CrcGenerateTable</dfn>()</td></tr>
+<tr><th id="52">52</th><td>{</td></tr>
+<tr><th id="53">53</th><td>    <a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> <dfn class="local col2 decl" id="22i" title='i' data-type='UInt32' data-ref="22i">i</dfn>;</td></tr>
+<tr><th id="54">54</th><td>    <b>for</b> (<a class="local col2 ref" href="#22i" title='i' data-ref="22i">i</a> = <var>0</var>; <a class="local col2 ref" href="#22i" title='i' data-ref="22i">i</a> &lt; <var>256</var>; <a class="local col2 ref" href="#22i" title='i' data-ref="22i">i</a>++)</td></tr>
+<tr><th id="55">55</th><td>    {</td></tr>
+<tr><th id="56">56</th><td>        <a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> <dfn class="local col3 decl" id="23r" title='r' data-type='UInt32' data-ref="23r">r</dfn> = <a class="local col2 ref" href="#22i" title='i' data-ref="22i">i</a>;</td></tr>
+<tr><th id="57">57</th><td>        <em>unsigned</em> <dfn class="local col4 decl" id="24j" title='j' data-type='unsigned int' data-ref="24j">j</dfn>;</td></tr>
+<tr><th id="58">58</th><td>        <b>for</b> (<a class="local col4 ref" href="#24j" title='j' data-ref="24j">j</a> = <var>0</var>; <a class="local col4 ref" href="#24j" title='j' data-ref="24j">j</a> &lt; <var>8</var>; <a class="local col4 ref" href="#24j" title='j' data-ref="24j">j</a>++)</td></tr>
+<tr><th id="59">59</th><td>            <a class="local col3 ref" href="#23r" title='r' data-ref="23r">r</a> = (<a class="local col3 ref" href="#23r" title='r' data-ref="23r">r</a> &gt;&gt; <var>1</var>) ^ (<a class="macro" href="#7" title="0xEDB88320" data-ref="_M/kCrcPoly">kCrcPoly</a> &amp; ~((<a class="local col3 ref" href="#23r" title='r' data-ref="23r">r</a> &amp; <var>1</var>) - <var>1</var>));</td></tr>
+<tr><th id="60">60</th><td>        <a class="ref" href="7zCrc.h.html#g_CrcTable" title='g_CrcTable' data-ref="g_CrcTable">g_CrcTable</a>[<a class="local col2 ref" href="#22i" title='i' data-ref="22i">i</a>] = <a class="local col3 ref" href="#23r" title='r' data-ref="23r">r</a>;</td></tr>
+<tr><th id="61">61</th><td>    }</td></tr>
+<tr><th id="62">62</th><td><u>#<span data-ppcond="62">if</span> <a class="macro" href="#14" title="1" data-ref="_M/CRC_NUM_TABLES">CRC_NUM_TABLES</a> == 1</u></td></tr>
+<tr><th id="63">63</th><td>    <a class="tu ref" href="#g_CrcUpdate" title='g_CrcUpdate' data-use='w' data-ref="g_CrcUpdate">g_CrcUpdate</a> = <a class="tu ref" href="#CrcUpdateT1" title='CrcUpdateT1' data-use='r' data-ref="CrcUpdateT1">CrcUpdateT1</a>;</td></tr>
+<tr><th id="64">64</th><td><u>#<span data-ppcond="62">else</span></u></td></tr>
+<tr><th id="65">65</th><td>    <b>for</b> (; i &lt; <var>256</var> * CRC_NUM_TABLES; i++)</td></tr>
+<tr><th id="66">66</th><td>    {</td></tr>
+<tr><th id="67">67</th><td>        UInt32 r = g_CrcTable[i - <var>256</var>];</td></tr>
+<tr><th id="68">68</th><td>        g_CrcTable[i] = g_CrcTable[r &amp; <var>0xFF</var>] ^ (r &gt;&gt; <var>8</var>);</td></tr>
+<tr><th id="69">69</th><td>    }</td></tr>
+<tr><th id="70">70</th><td>    g_CrcUpdate = CrcUpdateT4;</td></tr>
+<tr><th id="71">71</th><td><u>#ifdef MY_CPU_X86_OR_AMD64</u></td></tr>
+<tr><th id="72">72</th><td>    <b>if</b> (!CPU_Is_InOrder())</td></tr>
+<tr><th id="73">73</th><td>    g_CrcUpdate = CrcUpdateT8;</td></tr>
+<tr><th id="74">74</th><td><u>#endif</u></td></tr>
+<tr><th id="75">75</th><td><u>#<span data-ppcond="62">endif</span></u></td></tr>
+<tr><th id="76">76</th><td>}</td></tr>
+<tr><th id="77">77</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,4 @@
+<dec f='include/stdio.h' l='749' type='int fseek(FILE * __stream, long __off, int __whence)'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='218' u='c' c='File_Seek'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='243' u='c' c='File_GetLength'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='245' u='c' c='File_GetLength'/>

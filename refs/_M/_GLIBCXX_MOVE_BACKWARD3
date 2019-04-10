@@ -1,0 +1,15 @@
+<dec f='include/c++/7/bits/stl_algobase.h' l='675'/>
+<use f='include/c++/7/bits/vector.tcc' l='380' u='c'/>
+<use f='include/c++/7/bits/vector.tcc' l='481' u='c'/>
+<use f='include/c++/7/bits/vector.tcc' l='649' u='c'/>
+<use f='include/c++/7/bits/deque.tcc' l='241' u='c'/>
+<use f='include/c++/7/bits/deque.tcc' l='272' u='c'/>
+<use f='include/c++/7/bits/deque.tcc' l='663' u='c'/>
+<use f='include/c++/7/bits/deque.tcc' l='731' u='c'/>
+<use f='include/c++/7/bits/deque.tcc' l='819' u='c'/>
+<use f='include/c++/7/bits/stl_algo.h' l='1389' u='c'/>
+<use f='include/c++/7/bits/stl_algo.h' l='1851' u='c'/>
+<use f='include/c++/7/bits/stl_algo.h' l='2339' u='c'/>
+<use f='include/c++/7/bits/stl_algo.h' l='2354' u='c'/>
+<use f='include/c++/7/bits/stl_algo.h' l='2386' u='c'/>
+<use f='include/c++/7/bits/stl_algo.h' l='2398' u='c'/>

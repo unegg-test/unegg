@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/Workspace.h' l='35' type='nest::Events * nest::Workspace::GetEvent()'/>
+<def f='codebrowser/nest/Workspace.cpp' l='44' ll='48' type='nest::Events * nest::Workspace::GetEvent()'/>

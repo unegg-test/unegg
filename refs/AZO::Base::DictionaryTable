@@ -1,0 +1,13 @@
+<def f='codebrowser/nest/algorithm/azo/Base/DictionaryTableB.h' l='10' ll='33'/>
+<size>1040</size>
+<fun r='_ZN3AZO4Base15DictionaryTableC1EPKhj'/>
+<fun r='_ZN3AZO4Base15DictionaryTable6UpdateEjj'/>
+<fun r='_ZN3AZO4Base15DictionaryTable6UpdateEjjj'/>
+<mbr r='AZO::Base::DictionaryTable::buf_' o='0' t='const byte *'/>
+<mbr r='AZO::Base::DictionaryTable::bufSize_' o='64' t='u_int'/>
+<smbr r='AZO::Base::DictionaryTable::N' t='const u_int'/>
+<mbr r='AZO::Base::DictionaryTable::data_' o='96' t='AZO::Base::DictionaryTable::Data [128]'/>
+<fun r='_ZN3AZO4Base15DictionaryTableC1EPKhj'/>
+<fun r='_ZN3AZO4Base15DictionaryTable6UpdateEjj'/>
+<fun r='_ZN3AZO4Base15DictionaryTable6UpdateEjjj'/>
+<ovr f='codebrowser/nest/algorithm/azo/Decoder/DictionaryTableD.h' l='22' c='AZO::Decoder::DictionaryTable'/>

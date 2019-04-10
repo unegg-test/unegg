@@ -1,0 +1,3 @@
+<dec f='codebrowser/EventHandler.h' l='47' type='void EventHandler::OnFileFinish(size_t index, int res)'/>
+<inh f='codebrowser/nest/Events.h' l='35' c='_ZN4nest6Events12OnFileFinishEmi'/>
+<def f='codebrowser/EventHandler.cpp' l='142' ll='178' type='void EventHandler::OnFileFinish(size_t index, int res)'/>

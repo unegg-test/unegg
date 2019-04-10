@@ -1,0 +1,5 @@
+<dec f='include/x86_64-linux-gnu/sys/cdefs.h' l='254'/>
+<use f='include/pthread.h' l='357' u='c'/>
+<use f='include/pthread.h' l='365' u='c'/>
+<use f='include/stdio.h' l='638' u='c'/>
+<use f='include/unistd.h' l='529' u='c'/>

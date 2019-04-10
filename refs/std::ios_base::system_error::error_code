@@ -1,0 +1,5 @@
+<def f='include/c++/7/bits/ios_base.h' l='236' ll='242'/>
+<size>16</size>
+<fun r='_ZNSt8ios_base12system_error10error_codeC1Ev'/>
+<mbr r='std::ios_base::system_error::error_code::_M_value' o='0' t='int'/>
+<mbr r='std::ios_base::system_error::error_code::_M_cat' o='64' t='const void *'/>

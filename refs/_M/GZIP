@@ -1,0 +1,10 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='23'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='253' u='a'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='376' u='a'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='608' u='a'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='681' u='a'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='869' u='a'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1007' u='a'/>
+<dec f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='83'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='200' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='321' u='c'/>

@@ -1,0 +1,17 @@
+<inh f='codebrowser/nest/algorithm/Coder.h' l='20' c='nest::Coder'/>
+<def f='codebrowser/nest/algorithm/AZOCoder.h' l='21' ll='37'/>
+<size>48</size>
+<fun r='_ZN4nest8AZOCoderC1Ev'/>
+<fun r='_ZN4nest8AZOCoderD1Ev'/>
+<fun r='_ZN4nest8AZOCoder10InitializeEPKhm'/>
+<fun r='_ZN4nest8AZOCoder8FinalizeEv'/>
+<fun r='_ZN4nest8AZOCoder6OnPushEPvm'/>
+<fun r='_ZN4nest8AZOCoder5OnPopEPvPm'/>
+<mbr r='nest::AZOCoder::stream_' o='64' t='AZO_Stream'/>
+<mbr r='nest::AZOCoder::decoder_' o='320' t='AZODecoder *'/>
+<fun r='_ZN4nest8AZOCoderC1Ev'/>
+<fun r='_ZN4nest8AZOCoderD1Ev'/>
+<fun r='_ZN4nest8AZOCoder10InitializeEPKhm'/>
+<fun r='_ZN4nest8AZOCoder8FinalizeEv'/>
+<fun r='_ZN4nest8AZOCoder6OnPushEPvm'/>
+<fun r='_ZN4nest8AZOCoder5OnPopEPvPm'/>

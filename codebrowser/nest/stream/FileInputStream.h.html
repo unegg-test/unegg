@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>FileInputStream.h source code [codebrowser/nest/stream/FileInputStream.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="nest::FileInputStream "/>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/stream/FileInputStream.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>codebrowser</a>/<a href='..'>nest</a>/<a href='./'>stream</a>/<a href='FileInputStream.h.html'>FileInputStream.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * FileInputStream.h</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> *  Created on: 2010. 12. 13.</i></td></tr>
+<tr><th id="5">5</th><td><i> *      Author: Jehoon Shin(Revolution)</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> *  Copyright(c) 2010-Present ESTsoft Corp. All rights reserved.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> *  For conditions of distribution and use, see copyright notice in license.txt</i></td></tr>
+<tr><th id="10">10</th><td><i> */</i></td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td><u>#<span data-ppcond="12">ifndef</span> <span class="macro" data-ref="_M/NEST_STREAM_FILEINPUTSTREAM_H_">NEST_STREAM_FILEINPUTSTREAM_H_</span></u></td></tr>
+<tr><th id="13">13</th><td><u>#define <dfn class="macro" id="_M/NEST_STREAM_FILEINPUTSTREAM_H_" data-ref="_M/NEST_STREAM_FILEINPUTSTREAM_H_">NEST_STREAM_FILEINPUTSTREAM_H_</dfn></u></td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><u>#include <a href="../../../include/c++/7/string.html">&lt;string&gt;</a></u></td></tr>
+<tr><th id="16">16</th><td><u>#include <a href="InputStream.h.html">&lt;nest/stream/InputStream.h&gt;</a></u></td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td><b>namespace</b> <span class="namespace">nest</span></td></tr>
+<tr><th id="19">19</th><td>{</td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td><b>class</b> <dfn class="type def" id="nest::FileInputStream" title='nest::FileInputStream' data-ref="nest::FileInputStream">FileInputStream</dfn>: <b>public</b> <a class="type" href="InputStream.h.html#nest::InputStream" title='nest::InputStream' data-ref="nest::InputStream">InputStream</a></td></tr>
+<tr><th id="22">22</th><td>{</td></tr>
+<tr><th id="23">23</th><td><b>public</b>:</td></tr>
+<tr><th id="24">24</th><td>    <dfn class="decl" id="_ZN4nest15FileInputStreamC1Ev" title='nest::FileInputStream::FileInputStream' data-ref="_ZN4nest15FileInputStreamC1Ev">FileInputStream</dfn>();</td></tr>
+<tr><th id="25">25</th><td>    <b>virtual</b> <dfn class="virtual decl" id="_ZN4nest15FileInputStreamD1Ev" title='nest::FileInputStream::~FileInputStream' data-ref="_ZN4nest15FileInputStreamD1Ev">~FileInputStream</dfn>();</td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td>    <b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN4nest15FileInputStream4OpenEv" title='nest::FileInputStream::Open' data-ref="_ZN4nest15FileInputStream4OpenEv">Open</dfn>();</td></tr>
+<tr><th id="28">28</th><td>    <b>virtual</b> <em>void</em> <dfn class="virtual decl" id="_ZN4nest15FileInputStream5CloseEv" title='nest::FileInputStream::Close' data-ref="_ZN4nest15FileInputStream5CloseEv">Close</dfn>();</td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td>    <b>virtual</b> <a class="typedef" href="../define.h.html#uint64" title='uint64' data-type='unsigned long long' data-ref="uint64">uint64</a> <dfn class="virtual decl" id="_ZN4nest15FileInputStream4SeekEyi" title='nest::FileInputStream::Seek' data-ref="_ZN4nest15FileInputStream4SeekEyi">Seek</dfn>(<a class="typedef" href="../define.h.html#uint64" title='uint64' data-type='unsigned long long' data-ref="uint64">uint64</a> <dfn class="local col8 decl" id="598pos" title='pos' data-type='uint64' data-ref="598pos">pos</dfn>, <em>int</em> <dfn class="local col9 decl" id="599origin" title='origin' data-type='int' data-ref="599origin">origin</dfn>);</td></tr>
+<tr><th id="31">31</th><td>    <b>virtual</b> <a class="typedef" href="../define.h.html#uint64" title='uint64' data-type='unsigned long long' data-ref="uint64">uint64</a> <dfn class="virtual decl" id="_ZN4nest15FileInputStream4TellEv" title='nest::FileInputStream::Tell' data-ref="_ZN4nest15FileInputStream4TellEv">Tell</dfn>();</td></tr>
+<tr><th id="32">32</th><td>    <b>virtual</b> <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="virtual decl" id="_ZN4nest15FileInputStream4ReadEPvm" title='nest::FileInputStream::Read' data-ref="_ZN4nest15FileInputStream4ReadEPvm">Read</dfn>(<em>void</em>* <dfn class="local col0 decl" id="600buf" title='buf' data-type='void *' data-ref="600buf">buf</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col1 decl" id="601size" title='size' data-type='size_t' data-ref="601size">size</dfn>);</td></tr>
+<tr><th id="33">33</th><td>    <b>virtual</b> <a class="typedef" href="../define.h.html#uint64" title='uint64' data-type='unsigned long long' data-ref="uint64">uint64</a> <dfn class="virtual decl" id="_ZN4nest15FileInputStream4SizeEv" title='nest::FileInputStream::Size' data-ref="_ZN4nest15FileInputStream4SizeEv">Size</dfn>();</td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><b>private</b>:</td></tr>
+<tr><th id="36">36</th><td>    <a class="typedef" href="../../../include/stdio.h.html#FILE" title='FILE' data-type='struct _IO_FILE' data-ref="FILE">FILE</a>* <dfn class="decl" id="nest::FileInputStream::file_" title='nest::FileInputStream::file_' data-ref="nest::FileInputStream::file_">file_</dfn>;</td></tr>
+<tr><th id="37">37</th><td>    <a class="typedef" href="../define.h.html#uint64" title='uint64' data-type='unsigned long long' data-ref="uint64">uint64</a> <dfn class="decl" id="nest::FileInputStream::size_" title='nest::FileInputStream::size_' data-ref="nest::FileInputStream::size_">size_</dfn>;</td></tr>
+<tr><th id="38">38</th><td>};</td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td>}</td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><u>#<span data-ppcond="12">endif</span> /* NEST_STREAM_FILEINPUTSTREAM_H_ */</u></td></tr>
+<tr><th id="43">43</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../EventHandler.cpp.html'>codebrowser/EventHandler.cpp</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

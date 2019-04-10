@@ -1,0 +1,7 @@
+<dec f='codebrowser/nest/Utils.h' l='42' type='const char * nest::utf8::path_ellipsis(size_t limitWidth, const char * str)'/>
+<use f='codebrowser/EventHandler.cpp' l='124' u='c' c='_ZN12EventHandler11OnFileStartEm'/>
+<use f='codebrowser/EventHandler.cpp' l='135' u='c' c='_ZN12EventHandler11OnFileStartEm'/>
+<use f='codebrowser/EventHandler.cpp' l='321' u='c' c='_ZN12EventHandler10OnProgressEmii'/>
+<use f='codebrowser/UnEgg.cpp' l='219' u='c' c='_Z18PrintListOfArchivePKc'/>
+<use f='codebrowser/UnEgg.cpp' l='224' u='c' c='_Z18PrintListOfArchivePKc'/>
+<def f='codebrowser/nest/Utils.cpp' l='426' ll='430' type='const char * nest::utf8::path_ellipsis(size_t limitWidth, const char * str)'/>

@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/7zBuf.h' l='21' type='int Buf_Create(CBuf * p, size_t size, ISzAlloc * alloc)'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/7zBuf.c' l='14' ll='29' type='int Buf_Create(CBuf * p, size_t size, ISzAlloc * alloc)'/>

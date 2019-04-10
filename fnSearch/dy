@@ -1,0 +1,4 @@
+DynBuf_Construct|DynBuf_Construct
+DynBuf_Free|DynBuf_Free
+DynBuf_SeekToBeg|DynBuf_SeekToBeg
+DynBuf_Write|DynBuf_Write

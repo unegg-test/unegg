@@ -1,0 +1,13 @@
+<def f='include/c++/7/bits/stl_bvector.h' l='830' ll='832' type='size_type std::vector&lt;bool, type-parameter-0-0&gt;::size() const'/>
+<use f='include/c++/7/bits/stl_bvector.h' l='1033' u='c' c='_ZNSt6vectorIbT_E6resizeEmb'/>
+<use f='include/c++/7/bits/stl_bvector.h' l='1036' u='c' c='_ZNSt6vectorIbT_E6resizeEmb'/>
+<use f='include/c++/7/bits/stl_bvector.h' l='1169' u='c' c='_ZNSt6vectorIbT_E14_M_fill_assignEmb'/>
+<use f='include/c++/7/bits/stl_bvector.h' l='1173' u='c' c='_ZNSt6vectorIbT_E14_M_fill_assignEmb'/>
+<use f='include/c++/7/bits/stl_bvector.h' l='1203' u='c' c='_ZNSt6vectorIbT_E13_M_assign_auxET_S2_St20forward_iterator_tag'/>
+<use f='include/c++/7/bits/stl_bvector.h' l='1208' u='c' c='_ZNSt6vectorIbT_E13_M_assign_auxET_S2_St20forward_iterator_tag'/>
+<use f='include/c++/7/bits/stl_bvector.h' l='1258' u='c' c='_ZNKSt6vectorIbT_E12_M_check_lenEmPKc'/>
+<use f='include/c++/7/bits/stl_bvector.h' l='1261' u='c' c='_ZNKSt6vectorIbT_E12_M_check_lenEmPKc'/>
+<use f='include/c++/7/bits/stl_bvector.h' l='1261' u='c' c='_ZNKSt6vectorIbT_E12_M_check_lenEmPKc'/>
+<use f='include/c++/7/bits/stl_bvector.h' l='1262' u='c' c='_ZNKSt6vectorIbT_E12_M_check_lenEmPKc'/>
+<use f='include/c++/7/bits/vector.tcc' l='732' u='c' c='_ZNSt6vectorIbT_E14_M_fill_insertESt13_Bit_iteratormb'/>
+<use f='include/c++/7/bits/vector.tcc' l='766' u='c' c='_ZNSt6vectorIbT_E15_M_insert_rangeESt13_Bit_iteratorT_S3_St20forward_iterator_tag'/>

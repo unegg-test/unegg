@@ -1,0 +1,5 @@
+_ZSt9boolalphaRSt8ios_base|std::boolalpha
+_ZN3AZO4Base9BoolState7GetProbEv|AZO::Base::BoolState::GetProb
+_ZN3AZO4Base9BoolState8TotalBitEv|AZO::Base::BoolState::TotalBit
+_ZN3AZO4Base9BoolState6UpdateEj|AZO::Base::BoolState::Update
+_ZN3AZO7Decoder9BoolState4CodeERNS0_11EntropyCodeE|AZO::Decoder::BoolState::Code

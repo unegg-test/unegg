@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Allocator.h source code [codebrowser/nest/algorithm/azo/Common/Allocator.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="AZO::Allocator "/>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/algorithm/azo/Common/Allocator.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>nest</a>/<a href='../..'>algorithm</a>/<a href='..'>azo</a>/<a href='./'>Common</a>/<a href='Allocator.h.html'>Allocator.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/AZO_ALLOCATOR_H">AZO_ALLOCATOR_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/AZO_ALLOCATOR_H" data-ref="_M/AZO_ALLOCATOR_H">AZO_ALLOCATOR_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="AZOPrivate.h.html">"../Common/AZOPrivate.h"</a></u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><b>namespace</b> <span class="namespace">AZO</span> {</td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td><b>class</b> <dfn class="type def" id="AZO::Allocator" title='AZO::Allocator' data-ref="AZO::Allocator">Allocator</dfn></td></tr>
+<tr><th id="9">9</th><td>{</td></tr>
+<tr><th id="10">10</th><td><b>public</b>:</td></tr>
+<tr><th id="11">11</th><td>    <em>static</em> <em>void</em> <dfn class="decl def" id="_ZN3AZO9Allocator3SetEPFPvS1_jEPFvS1_S1_ES1_" title='AZO::Allocator::Set' data-ref="_ZN3AZO9Allocator3SetEPFPvS1_jEPFvS1_S1_ES1_">Set</dfn>(<a class="typedef" href="../AZO.h.html#AZO_ALLOC_FUNCTON" title='AZO_ALLOC_FUNCTON' data-type='void *(*)(void *, unsigned int)' data-ref="AZO_ALLOC_FUNCTON">AZO_ALLOC_FUNCTON</a> <dfn class="local col9 decl" id="19allocFunc" title='allocFunc' data-type='AZO_ALLOC_FUNCTON' data-ref="19allocFunc">allocFunc</dfn>, <a class="typedef" href="../AZO.h.html#AZO_FREE_FUNCTON" title='AZO_FREE_FUNCTON' data-type='void (*)(void *, void *)' data-ref="AZO_FREE_FUNCTON">AZO_FREE_FUNCTON</a> <dfn class="local col0 decl" id="20freeFunc" title='freeFunc' data-type='AZO_FREE_FUNCTON' data-ref="20freeFunc">freeFunc</dfn>, <em>void</em>* <dfn class="local col1 decl" id="21opaque" title='opaque' data-type='void *' data-ref="21opaque">opaque</dfn>)</td></tr>
+<tr><th id="12">12</th><td>    {</td></tr>
+<tr><th id="13">13</th><td>        <a class="member" href="#AZO::Allocator::allocFunc_" title='AZO::Allocator::allocFunc_' data-ref="AZO::Allocator::allocFunc_">allocFunc_</a> = <a class="local col9 ref" href="#19allocFunc" title='allocFunc' data-ref="19allocFunc">allocFunc</a>;</td></tr>
+<tr><th id="14">14</th><td>        <a class="member" href="#AZO::Allocator::freeFunc_" title='AZO::Allocator::freeFunc_' data-ref="AZO::Allocator::freeFunc_">freeFunc_</a> = <a class="local col0 ref" href="#20freeFunc" title='freeFunc' data-ref="20freeFunc">freeFunc</a>;</td></tr>
+<tr><th id="15">15</th><td>        <a class="member" href="#AZO::Allocator::opaque_" title='AZO::Allocator::opaque_' data-ref="AZO::Allocator::opaque_">opaque_</a> = <a class="local col1 ref" href="#21opaque" title='opaque' data-ref="21opaque">opaque</a>;</td></tr>
+<tr><th id="16">16</th><td>    }</td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td>    <em>static</em> <em>void</em>* <dfn class="decl" id="_ZN3AZO9Allocator5AllocEj" title='AZO::Allocator::Alloc' data-ref="_ZN3AZO9Allocator5AllocEj">Alloc</dfn>(<a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <dfn class="local col2 decl" id="22n" title='n' data-type='u_int' data-ref="22n">n</dfn>);</td></tr>
+<tr><th id="19">19</th><td>    <em>static</em> <em>void</em> <dfn class="decl" id="_ZN3AZO9Allocator4FreeEPv" title='AZO::Allocator::Free' data-ref="_ZN3AZO9Allocator4FreeEPv">Free</dfn>(<em>void</em> *);</td></tr>
+<tr><th id="20">20</th><td>  </td></tr>
+<tr><th id="21">21</th><td><b>private</b>:</td></tr>
+<tr><th id="22">22</th><td>    <em>static</em> <a class="typedef" href="../AZO.h.html#AZO_ALLOC_FUNCTON" title='AZO_ALLOC_FUNCTON' data-type='void *(*)(void *, unsigned int)' data-ref="AZO_ALLOC_FUNCTON">AZO_ALLOC_FUNCTON</a>   <dfn class="decl" id="AZO::Allocator::allocFunc_" title='AZO::Allocator::allocFunc_' data-ref="AZO::Allocator::allocFunc_">allocFunc_</dfn>;</td></tr>
+<tr><th id="23">23</th><td>    <em>static</em> <a class="typedef" href="../AZO.h.html#AZO_FREE_FUNCTON" title='AZO_FREE_FUNCTON' data-type='void (*)(void *, void *)' data-ref="AZO_FREE_FUNCTON">AZO_FREE_FUNCTON</a>    <dfn class="decl" id="AZO::Allocator::freeFunc_" title='AZO::Allocator::freeFunc_' data-ref="AZO::Allocator::freeFunc_">freeFunc_</dfn>;    </td></tr>
+<tr><th id="24">24</th><td>    <em>static</em> <em>void</em>*               <dfn class="decl" id="AZO::Allocator::opaque_" title='AZO::Allocator::opaque_' data-ref="AZO::Allocator::opaque_">opaque_</dfn>;</td></tr>
+<tr><th id="25">25</th><td>};</td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td>} <i>//namespaces AZO</i></td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><u>#<span data-ppcond="1">endif</span> /*AZO_ALLOCATOR_H*/</u></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../Base/MainCodeB.cpp.html'>codebrowser/nest/algorithm/azo/Base/MainCodeB.cpp</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/format/EggFormatFactory.h' l='27' type='nest::Format * nest::EggFormatFactory::CreateFormat()'/>
+<inh f='codebrowser/nest/format/FormatFactory.h' l='25' c='_ZN4nest13FormatFactory12CreateFormatEv'/>
+<def f='codebrowser/nest/format/EggFormatFactory.cpp' l='27' ll='30' type='nest::Format * nest::EggFormatFactory::CreateFormat()'/>

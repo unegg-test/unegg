@@ -1,0 +1,13 @@
+<inh f='codebrowser/nest/format/Header.h' l='27' c='nest::Header'/>
+<def f='codebrowser/nest/format/egg/File.h' l='22' ll='52'/>
+<size>24</size>
+<fun r='_ZN4nest3egg4FileC1Ev'/>
+<fun r='_ZN4nest3egg4FileD1Ev'/>
+<fun r='_ZN4nest3egg4File5GetIDEv'/>
+<fun r='_ZN4nest3egg4File9GetLengthEv'/>
+<fun r='_ZN4nest3egg4File9OnCleanUpEv'/>
+<fun r='_ZN4nest3egg4File6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<fun r='_ZN4nest3egg4File9_As4BytesEjPb'/>
+<fun r='_ZN4nest3egg4File9_As8BytesEjPb'/>
+<mbr r='nest::egg::File::id_' o='96' t='unsigned int'/>
+<mbr r='nest::egg::File::length_' o='128' t='uint64'/>

@@ -1,0 +1,7 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='101' type='int'/>
+<offset>704</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='101'>/* best guess about the data type: binary or text */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='365' u='w' c='deflateReset'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1230' u='w' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='938' u='r' c='_tr_flush_block'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='939' u='w' c='_tr_flush_block'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='185' type='SRes LookInStream_Read2(ILookInStream * stream, void * buf, size_t size, SRes errorType)'/>
+<doc f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='184'>/* reads via ILookInStream::Read */</doc>
+<def f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='50' ll='62' type='SRes LookInStream_Read2(ILookInStream * stream, void * buf, size_t size, SRes errorType)'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='66' u='c' c='LookInStream_Read'/>

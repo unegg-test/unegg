@@ -1,0 +1,7 @@
+<dec f='codebrowser/nest/format/egg/ExtraField.h' l='39' type='int'/>
+<offset>96</offset>
+<use f='codebrowser/nest/format/egg/ExtraField.cpp' l='43' u='r' c='_ZN4nest3egg10ExtraField6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/egg/ExtraField.cpp' l='43' u='a' c='_ZN4nest3egg10ExtraField6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/egg/ExtraField.cpp' l='43' u='r' c='_ZN4nest3egg10ExtraField6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/egg/ExtraField.cpp' l='45' u='r' c='_ZN4nest3egg10ExtraField6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/egg/ExtraField.cpp' l='113' u='r' c='_ZN4nest3egg10ExtraField12GetSignatureEv'/>

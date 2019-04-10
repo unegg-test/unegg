@@ -1,0 +1,2 @@
+<dec f='include/string.h' l='258' type='char * strrchr(const char * __s, int __c)'/>
+<use f='codebrowser/nest/stream/FileOutputStream.cpp' l='78' u='c' c='_ZN4nest16FileOutputStream14EnsureFilePathEPKc'/>

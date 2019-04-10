@@ -1,0 +1,10 @@
+<def f='include/c++/7/bits/stl_vector.h' l='894' ll='899' type='reference std::vector::back()'/>
+<doc f='include/c++/7/bits/stl_vector.h' l='890'>/**
+       *  Returns a read/write reference to the data at the last
+       *  element of the %vector.
+       */</doc>
+<use f='codebrowser/nest/stream/InputStreamRewinder.h' l='53' u='c' c='_ZN4nest19InputStreamRewinder3PopEv'/>
+<use f='codebrowser/nest/Utils.cpp' l='363' u='c' c='_ZN4nest4utf813path_ellipsisEPcmmPKc'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='112' u='c' c='_ZN4nest17InputStreamLinker4SizeEv'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='134' u='c' c='_ZN4nest17InputStreamLinker10PushStreamEPNS_11InputStreamEyy'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='146' u='c' c='_ZN4nest17InputStreamLinker9PopStreamEv'/>

@@ -1,0 +1,4 @@
+<def f='include/c++/7/bits/stl_deque.h' l='888' type='void std::deque::deque&lt;_Tp, _Alloc&gt;()'/>
+<doc f='include/c++/7/bits/stl_deque.h' l='885'>/**
+       *  @brief  Creates a %deque with no elements.
+       */</doc>

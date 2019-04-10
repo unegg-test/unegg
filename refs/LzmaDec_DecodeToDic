@@ -1,0 +1,23 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.h' l='180' type='SRes LzmaDec_DecodeToDic(CLzmaDec * p, SizeT dicLimit, const Byte * src, SizeT * srcLen, ELzmaFinishMode finishMode, ELzmaStatus * status)'/>
+<doc f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.h' l='160'>/* LzmaDec_DecodeToDic
+
+ The decoding to internal dictionary buffer (CLzmaDec::dic).
+ You must manually update CLzmaDec::dicPos, if it reaches CLzmaDec::dicBufSize !!!
+
+ finishMode:
+ It has meaning only if the decoding reaches output limit (dicLimit).
+ LZMA_FINISH_ANY - Decode just dicLimit bytes.
+ LZMA_FINISH_END - Stream must be finished after dicLimit.
+
+ Returns:
+ SZ_OK
+ status:
+ LZMA_STATUS_FINISHED_WITH_MARK
+ LZMA_STATUS_NOT_FINISHED
+ LZMA_STATUS_NEEDS_MORE_INPUT
+ LZMA_STATUS_MAYBE_FINISHED_WITHOUT_MARK
+ SZ_ERROR_DATA - Data error
+ */</doc>
+<def f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='705' ll='823' type='SRes LzmaDec_DecodeToDic(CLzmaDec * p, SizeT dicLimit, const Byte * src, SizeT * srcLen, ELzmaFinishMode finishMode, ELzmaStatus * status)'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='850' u='c' c='LzmaDec_DecodeToBuf'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='976' u='c' c='LzmaDecode'/>

@@ -1,0 +1,14 @@
+<inh f='codebrowser/nest/format/Header.h' l='27' c='nest::Header'/>
+<def f='codebrowser/nest/format/alz/Global.h' l='23' ll='54'/>
+<size>24</size>
+<fun r='_ZN4nest3alz6GlobalC1Ev'/>
+<fun r='_ZN4nest3alz6GlobalD1Ev'/>
+<fun r='_ZN4nest3alz6Global10GetVersionEv'/>
+<fun r='_ZN4nest3alz6Global9GetDiskIDEv'/>
+<fun r='_ZN4nest3alz6Global12GetSignatureEv'/>
+<fun r='_ZN4nest3alz6Global9OnCleanUpEv'/>
+<fun r='_ZN4nest3alz6Global6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<fun r='_ZN4nest3alz6Global9_As4BytesEjPb'/>
+<mbr r='nest::alz::Global::signature_' o='96' t='unsigned int'/>
+<mbr r='nest::alz::Global::version_' o='128' t='unsigned short'/>
+<mbr r='nest::alz::Global::id_' o='144' t='unsigned short'/>

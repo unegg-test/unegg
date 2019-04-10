@@ -1,0 +1,3 @@
+<def f='codebrowser/nest/format/alz/File.h' l='108' ll='111' type='const char * nest::alz::File::GetVerifyData()'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='458' u='c' c='_ZN4nest9ALZFormat17PreprocessDecryptEmPNS_3alz4FileE'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='206' u='c' c='_ZN4nest3alz4File6_AsPtrEjPb'/>

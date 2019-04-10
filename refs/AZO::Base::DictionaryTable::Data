@@ -1,0 +1,5 @@
+<def f='codebrowser/nest/algorithm/azo/Base/DictionaryTableB.h' l='25' ll='30'/>
+<size>8</size>
+<mbr r='AZO::Base::DictionaryTable::Data::pos' o='0' t='u_int'/>
+<mbr r='AZO::Base::DictionaryTable::Data::len' o='32' t='u_int'/>
+<fun r='_ZN3AZO4Base15DictionaryTable4DataC1Ev'/>

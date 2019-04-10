@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/stream/InputStreamLinker.h' l='53' type='int nest::InputStreamLinker::UpdateStreams()'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='373' u='c' c='_ZN4nest9ALZFormat21PrepareSpannedStreamsEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='351' u='c' c='_ZN4nest9EggFormat21PrepareSpannedStreamsEv'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='150' u='c' c='_ZN4nest17InputStreamLinker9PopStreamEv'/>
+<def f='codebrowser/nest/stream/InputStreamLinker.cpp' l='167' ll='196' type='int nest::InputStreamLinker::UpdateStreams()'/>

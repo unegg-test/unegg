@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/format/egg/FileWrap.h' l='61' type='void nest::egg::FileWrap::OnCleanUp()'/>
+<inh f='codebrowser/nest/format/Header.h' l='42' c='_ZN4nest6Header9OnCleanUpEv'/>
+<def f='codebrowser/nest/format/egg/FileWrap.cpp' l='33' ll='46' type='void nest::egg::FileWrap::OnCleanUp()'/>

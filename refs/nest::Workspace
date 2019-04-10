@@ -1,0 +1,37 @@
+<inh f='codebrowser/nest/Events.h' l='24' c='nest::Events'/>
+<def f='codebrowser/nest/Workspace.h' l='27' ll='79'/>
+<size>192</size>
+<fun r='_ZN4nest9WorkspaceC1Ev'/>
+<fun r='_ZN4nest9WorkspaceC1EPNS_6EventsE'/>
+<fun r='_ZN4nest9WorkspaceD1Ev'/>
+<fun r='_ZN4nest9Workspace8SetEventEPNS_6EventsE'/>
+<fun r='_ZN4nest9Workspace8GetEventEv'/>
+<fun r='_ZN4nest9Workspace4OpenEPKc'/>
+<fun r='_ZN4nest9Workspace5CloseEv'/>
+<fun r='_ZN4nest9Workspace7ExtractEPKc'/>
+<fun r='_ZN4nest9Workspace11GetFilenameEv'/>
+<fun r='_ZN4nest9Workspace8IsOpenedEv'/>
+<fun r='_ZN4nest9Workspace12GetStreamPosEv'/>
+<fun r='_ZN4nest9Workspace13GetStreamSizeEv'/>
+<fun r='_ZN4nest9Workspace7GetInfoEv'/>
+<fun r='_ZN4nest9Workspace11GetLastWorkEv'/>
+<fun r='_ZN4nest9Workspace12GetWorkStackEv'/>
+<fun r='_ZN4nest9Workspace10AddFactoryEPNS_13FormatFactoryE'/>
+<fun r='_ZN4nest9Workspace10InitializeEPS0_'/>
+<fun r='_ZN4nest9Workspace8FinalizeEi'/>
+<fun r='_ZN4nest9Workspace11OnWorkStartEi'/>
+<fun r='_ZN4nest9Workspace12OnWorkFinishEii'/>
+<fun r='_ZN4nest9Workspace11OnFileStartEm'/>
+<fun r='_ZN4nest9Workspace12OnFileFinishEmi'/>
+<fun r='_ZN4nest9Workspace7OnErrorEmi'/>
+<fun r='_ZN4nest9Workspace18OnQueryInputStreamEmPPNS_11InputStreamEPKcm'/>
+<fun r='_ZN4nest9Workspace19OnQueryOutputStreamEmPPNS_12OutputStreamEPKc'/>
+<fun r='_ZN4nest9Workspace15OnQueryPasswordEmPcmm'/>
+<fun r='_ZN4nest9Workspace10OnProgressEmii'/>
+<smbr r='nest::Workspace::factoryList_' t='std::vector&lt;FormatFactory *&gt;'/>
+<mbr r='nest::Workspace::streams_' o='64' t='std::vector&lt;InputStream *&gt;'/>
+<mbr r='nest::Workspace::filename_' o='256' t='std::string'/>
+<mbr r='nest::Workspace::destination_' o='512' t='std::string'/>
+<mbr r='nest::Workspace::format_' o='768' t='nest::Format *'/>
+<mbr r='nest::Workspace::work_' o='832' t='std::stack&lt;int&gt;'/>
+<mbr r='nest::Workspace::event_' o='1472' t='nest::Events *'/>

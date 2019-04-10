@@ -1,0 +1,37 @@
+<def f='codebrowser/nest/third-party/algorithm/zlib/inflate.h' l='81' ll='122'/>
+<size>7152</size>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/inflate.h' l='80'>/* state maintained between inflate() calls.  Approximately 10K bytes. */</doc>
+<mbr r='inflate_state::mode' o='0' t='inflate_mode'/>
+<mbr r='inflate_state::last' o='32' t='int'/>
+<mbr r='inflate_state::wrap' o='64' t='int'/>
+<mbr r='inflate_state::havedict' o='96' t='int'/>
+<mbr r='inflate_state::flags' o='128' t='int'/>
+<mbr r='inflate_state::dmax' o='160' t='unsigned int'/>
+<mbr r='inflate_state::check' o='192' t='unsigned long'/>
+<mbr r='inflate_state::total' o='256' t='unsigned long'/>
+<mbr r='inflate_state::head' o='320' t='gz_headerp'/>
+<mbr r='inflate_state::wbits' o='384' t='unsigned int'/>
+<mbr r='inflate_state::wsize' o='416' t='unsigned int'/>
+<mbr r='inflate_state::whave' o='448' t='unsigned int'/>
+<mbr r='inflate_state::wnext' o='480' t='unsigned int'/>
+<mbr r='inflate_state::window' o='512' t='unsigned char *'/>
+<mbr r='inflate_state::hold' o='576' t='unsigned long'/>
+<mbr r='inflate_state::bits' o='640' t='unsigned int'/>
+<mbr r='inflate_state::length' o='672' t='unsigned int'/>
+<mbr r='inflate_state::offset' o='704' t='unsigned int'/>
+<mbr r='inflate_state::extra' o='736' t='unsigned int'/>
+<mbr r='inflate_state::lencode' o='768' t='const code *'/>
+<mbr r='inflate_state::distcode' o='832' t='const code *'/>
+<mbr r='inflate_state::lenbits' o='896' t='unsigned int'/>
+<mbr r='inflate_state::distbits' o='928' t='unsigned int'/>
+<mbr r='inflate_state::ncode' o='960' t='unsigned int'/>
+<mbr r='inflate_state::nlen' o='992' t='unsigned int'/>
+<mbr r='inflate_state::ndist' o='1024' t='unsigned int'/>
+<mbr r='inflate_state::have' o='1056' t='unsigned int'/>
+<mbr r='inflate_state::next' o='1088' t='code *'/>
+<mbr r='inflate_state::lens' o='1152' t='unsigned short [320]'/>
+<mbr r='inflate_state::work' o='6272' t='unsigned short [288]'/>
+<mbr r='inflate_state::codes' o='10880' t='code [1444]'/>
+<mbr r='inflate_state::sane' o='57088' t='int'/>
+<mbr r='inflate_state::back' o='57120' t='int'/>
+<mbr r='inflate_state::was' o='57152' t='unsigned int'/>

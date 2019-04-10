@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/algorithm/azo/Base/EntropyBitProbB.h' l='18' type='void AZO::Base::EntropyBitProb::Update(u_int value)'/>
+<def f='codebrowser/nest/algorithm/azo/Base/EntropyBitProbB.cpp' l='48' ll='62' type='void AZO::Base::EntropyBitProb::Update(u_int value)'/>

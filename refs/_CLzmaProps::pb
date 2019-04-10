@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.h' l='30' type='unsigned int'/>
+<offset>64</offset>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='135' u='r' c='LzmaDec_DecodeReal'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='491' u='r' c='LzmaDec_TryDummy'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='904' u='w' c='LzmaProps_Decode'/>

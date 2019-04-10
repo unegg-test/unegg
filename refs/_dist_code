@@ -1,0 +1,12 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='316' type='const uch []'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1563' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1563' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1682' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1682' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1785' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1785' macro='1' u='r'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/trees.h' l='73' ll='100' type='const uch [512]'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1045' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1045' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1103' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1103' macro='1' u='r'/>

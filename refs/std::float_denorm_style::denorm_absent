@@ -1,0 +1,19 @@
+<dec f='include/c++/7/limits' l='187' type='0'/>
+<use f='include/c++/7/limits' l='266'/>
+<use f='include/c++/7/limits' l='422'/>
+<use f='include/c++/7/limits' l='492'/>
+<use f='include/c++/7/limits' l='560'/>
+<use f='include/c++/7/limits' l='631'/>
+<use f='include/c++/7/limits' l='703'/>
+<use f='include/c++/7/limits' l='894'/>
+<use f='include/c++/7/limits' l='963'/>
+<use f='include/c++/7/limits' l='1034'/>
+<use f='include/c++/7/limits' l='1103'/>
+<use f='include/c++/7/limits' l='1173'/>
+<use f='include/c++/7/limits' l='1242'/>
+<use f='include/c++/7/limits' l='1315'/>
+<use f='include/c++/7/limits' l='1385'/>
+<use f='include/c++/7/limits' l='1635'/>
+<use f='include/c++/7/limits' l='1710'/>
+<use f='include/c++/7/limits' l='1785'/>
+<doc f='include/c++/7/limits' l='186'>/// The type does not allow denormalized values.</doc>

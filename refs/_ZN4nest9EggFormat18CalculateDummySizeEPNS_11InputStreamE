@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/format/EggFormat.h' l='97' type='unsigned int nest::EggFormat::CalculateDummySize(nest::InputStream * stream)'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='318' u='c' c='_ZN4nest9EggFormat21PrepareSpannedStreamsEv'/>
+<def f='codebrowser/nest/format/EggFormat.cpp' l='387' ll='406' type='unsigned int nest::EggFormat::CalculateDummySize(nest::InputStream * stream)'/>

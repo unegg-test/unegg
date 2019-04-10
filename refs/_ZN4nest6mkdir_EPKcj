@@ -1,0 +1,8 @@
+<def f='codebrowser/nest/Utils.cpp' l='440' ll='447' type='int nest::mkdir_(const char * file, mode_t mode)'/>
+<use f='codebrowser/nest/Utils.cpp' l='459' u='c' c='_ZN4nest7mkdir_rEPKcj'/>
+<use f='codebrowser/nest/Utils.cpp' l='469' u='c' c='_ZN4nest7mkdir_rEPKcj'/>
+<doc f='codebrowser/nest/Utils.cpp' l='434'>/*
+ Recursively creates the given  path, with the given mode
+
+ Returns: 0 on success and -1 on error
+ */</doc>

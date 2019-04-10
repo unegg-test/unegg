@@ -1,0 +1,2 @@
+<def f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='1695' ll='1703' type='void LzmaEnc_Destruct(CLzmaEnc * p, ISzAlloc * alloc, ISzAlloc * allocBig)'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='1707' u='c' c='LzmaEnc_Destroy'/>

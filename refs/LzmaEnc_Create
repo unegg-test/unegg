@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.h' l='52' type='CLzmaEncHandle LzmaEnc_Create(ISzAlloc * alloc)'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='1678' ll='1685' type='CLzmaEncHandle LzmaEnc_Create(ISzAlloc * alloc)'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='2219' u='c' c='LzmaEncode'/>

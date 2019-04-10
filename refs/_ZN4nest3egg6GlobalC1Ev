@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/format/egg/Global.h' l='25' type='void nest::egg::Global::Global()'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='156' u='c' c='_ZN4nest9EggFormat19CheckHeaderInternalEPNS_11InputStreamEPNS_3egg6GlobalE'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='300' u='c' c='_ZN4nest9EggFormat21PrepareSpannedStreamsEv'/>
+<def f='codebrowser/nest/format/egg/Global.cpp' l='20' ll='24' type='void nest::egg::Global::Global()'/>

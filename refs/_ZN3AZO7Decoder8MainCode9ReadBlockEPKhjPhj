@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/algorithm/azo/Decoder/MainCodeD.h' l='28' type='int AZO::Decoder::MainCode::ReadBlock(const byte * in, u_int inSize, byte * out, u_int outSize)'/>
+<def f='codebrowser/nest/algorithm/azo/Decoder/MainCodeD.cpp' l='25' ll='57' type='int AZO::Decoder::MainCode::ReadBlock(const byte * in, u_int inSize, byte * out, u_int outSize)'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/MainCodeD.cpp' l='125' u='c' c='_ZN3AZO7Decoder8MainCode4CodeERPKhRjRPhS5_'/>

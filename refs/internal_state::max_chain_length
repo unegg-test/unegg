@@ -1,0 +1,9 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='165' type='uInt'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='444' u='w' c='deflateParams'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='465' u='w' c='deflateTune'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1034' u='w' c='lm_init'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1067' u='r' c='longest_match'/>
+<offset>1376</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='161'>/* Length of the best match at previous step. Matches not greater than this
+     * are discarded. This is used in the lazy match evaluation.
+     */</doc>

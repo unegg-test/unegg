@@ -1,0 +1,21 @@
+<dec f='codebrowser/nest/format/egg/ExtraField.h' l='32' type='const char * nest::egg::ExtraField::GetDataPtr(size_t index = 0)'/>
+<use f='codebrowser/nest/format/egg/CommentField.h' l='38' u='c' c='_ZN4nest3egg12CommentField9GetLocaleEv'/>
+<use f='codebrowser/nest/format/egg/CommentField.h' l='43' u='c' c='_ZN4nest3egg12CommentField10GetCommentEv'/>
+<use f='codebrowser/nest/format/egg/FilenameField.h' l='42' u='c' c='_ZN4nest3egg13FilenameField9GetLocaleEv'/>
+<use f='codebrowser/nest/format/egg/FilenameField.h' l='47' u='c' c='_ZN4nest3egg13FilenameField15GetParentPathIDEv'/>
+<use f='codebrowser/nest/format/egg/FilenameField.h' l='52' u='c' c='_ZN4nest3egg13FilenameField11GetFileNameEv'/>
+<use f='codebrowser/nest/format/egg/EncryptField.h' l='27' u='c' c='_ZN4nest3egg12EncryptField16GetEncryptMethodEv'/>
+<use f='codebrowser/nest/format/egg/EncryptField.h' l='32' u='c' c='_ZN4nest3egg12EncryptField13GetVerifyDataEv'/>
+<use f='codebrowser/nest/format/egg/EncryptField.h' l='37' u='c' c='_ZN4nest3egg12EncryptField6GetCRCEv'/>
+<use f='codebrowser/nest/format/egg/EncryptField.h' l='48' u='c' c='_ZN4nest3egg12EncryptField12GetAESHeaderEv'/>
+<use f='codebrowser/nest/format/egg/EncryptField.h' l='59' u='c' c='_ZN4nest3egg12EncryptField12GetAESFooterEv'/>
+<use f='codebrowser/nest/format/egg/EncryptField.h' l='61' u='c' c='_ZN4nest3egg12EncryptField12GetAESFooterEv'/>
+<use f='codebrowser/nest/format/egg/WindowsField.h' l='27' u='c' c='_ZN4nest3egg12WindowsField23GetLastModifiedDateTimeEv'/>
+<use f='codebrowser/nest/format/egg/WindowsField.h' l='32' u='c' c='_ZN4nest3egg12WindowsField12GetAttributeEv'/>
+<use f='codebrowser/nest/format/egg/PosixField.h' l='27' u='c' c='_ZN4nest3egg10PosixField7GetModeEv'/>
+<use f='codebrowser/nest/format/egg/PosixField.h' l='32' u='c' c='_ZN4nest3egg10PosixField6GetUIDEv'/>
+<use f='codebrowser/nest/format/egg/PosixField.h' l='37' u='c' c='_ZN4nest3egg10PosixField6GetGIDEv'/>
+<use f='codebrowser/nest/format/egg/PosixField.h' l='42' u='c' c='_ZN4nest3egg10PosixField23GetLastModifiedDateTimeEv'/>
+<use f='codebrowser/nest/format/egg/SplitField.h' l='27' u='c' c='_ZN4nest3egg10SplitField13GetPrevFileIDEv'/>
+<use f='codebrowser/nest/format/egg/SplitField.h' l='32' u='c' c='_ZN4nest3egg10SplitField13GetNextFileIDEv'/>
+<def f='codebrowser/nest/format/egg/ExtraField.cpp' l='131' ll='134' type='const char * nest::egg::ExtraField::GetDataPtr(size_t index = 0)'/>

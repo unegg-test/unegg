@@ -1,0 +1,7 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='173' type='SRes (*)(void *, size_t)'/>
+<offset>64</offset>
+<doc f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='170'>/* if (input(*size) != 0 &amp;&amp; output(*size) == 0) means end_of_stream.
+     (output(*size) &gt; input(*size)) is not allowed
+     (output(*size) &lt; input(*size)) is allowed */</doc>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='47' u='r' c='LookInStream_LookRead'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='137' u='w' c='LookToRead_CreateVTable'/>

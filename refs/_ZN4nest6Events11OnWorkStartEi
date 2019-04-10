@@ -1,0 +1,7 @@
+<dec f='codebrowser/nest/Events.h' l='31' type='int nest::Events::OnWorkStart(int workCode)'/>
+<ovr f='codebrowser/EventHandler.cpp' l='68' c='_ZN12EventHandler11OnWorkStartEi'/>
+<ovr f='codebrowser/nest/Workspace.cpp' l='193' c='_ZN4nest9Workspace11OnWorkStartEi'/>
+<use f='codebrowser/nest/Workspace.cpp' l='208' u='c' c='_ZN4nest9Workspace11OnWorkStartEi'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='787' u='c' c='_ZN4nest9ALZFormat11OnWorkStartEi'/>
+<ovr f='codebrowser/nest/format/EggFormat.cpp' l='1114' c='_ZN4nest9EggFormat11OnWorkStartEi'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='1118' u='c' c='_ZN4nest9EggFormat11OnWorkStartEi'/>

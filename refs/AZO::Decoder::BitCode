@@ -1,0 +1,17 @@
+<def f='codebrowser/nest/algorithm/azo/Decoder/BitCodeD.h' l='20' ll='46'/>
+<size>24</size>
+<fun r='_ZN3AZO7Decoder7BitCodeC1EPKhj'/>
+<fun r='_ZN3AZO7Decoder7BitCode4CodeERT_j'/>
+<fun r='_ZN3AZO7Decoder7BitCode4CodeEPT_j'/>
+<fun r='_ZN3AZO7Decoder7BitCode4CodeERb'/>
+<fun r='_ZN3AZO7Decoder7BitCode11GetReadSizeEv'/>
+<smbr r='AZO::Decoder::BitCode::TYPE_BIT_SIZE' t='const u_int'/>
+<smbr r='AZO::Decoder::BitCode::TYPE_BIT_MASK' t='const TYPE'/>
+<mbr r='AZO::Decoder::BitCode::inBuf_' o='0' t='const TYPE *'/>
+<mbr r='AZO::Decoder::BitCode::bufSize_' o='64' t='u_int'/>
+<mbr r='AZO::Decoder::BitCode::remainBit_' o='96' t='u_int'/>
+<mbr r='AZO::Decoder::BitCode::readSize_' o='128' t='u_int'/>
+<fun r='_ZN3AZO7Decoder7BitCodeC1EPKhj'/>
+<fun r='_ZN3AZO7Decoder7BitCode4CodeERT_j'/>
+<fun r='_ZN3AZO7Decoder7BitCode4CodeEPT_j'/>
+<fun r='_ZN3AZO7Decoder7BitCode4CodeERb'/>

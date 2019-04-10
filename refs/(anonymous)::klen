@@ -1,0 +1,15 @@
+<dec f='codebrowser/nest/third-party/encryption/aes/hmac.h' l='58' type='unsigned int'/>
+<offset>1248</offset>
+<use f='codebrowser/nest/third-party/encryption/aes/hmac.c' l='52' u='r' c='hmac_sha1_key'/>
+<use f='codebrowser/nest/third-party/encryption/aes/hmac.c' l='55' u='r' c='hmac_sha1_key'/>
+<use f='codebrowser/nest/third-party/encryption/aes/hmac.c' l='57' u='r' c='hmac_sha1_key'/>
+<use f='codebrowser/nest/third-party/encryption/aes/hmac.c' l='60' u='r' c='hmac_sha1_key'/>
+<use f='codebrowser/nest/third-party/encryption/aes/hmac.c' l='66' u='r' c='hmac_sha1_key'/>
+<use f='codebrowser/nest/third-party/encryption/aes/hmac.c' l='68' u='w' c='hmac_sha1_key'/>
+<use f='codebrowser/nest/third-party/encryption/aes/hmac.c' l='77' u='r' c='hmac_sha1_data'/>
+<use f='codebrowser/nest/third-party/encryption/aes/hmac.c' l='79' u='r' c='hmac_sha1_data'/>
+<use f='codebrowser/nest/third-party/encryption/aes/hmac.c' l='82' u='w' c='hmac_sha1_data'/>
+<use f='codebrowser/nest/third-party/encryption/aes/hmac.c' l='86' u='r' c='hmac_sha1_data'/>
+<use f='codebrowser/nest/third-party/encryption/aes/hmac.c' l='86' u='r' c='hmac_sha1_data'/>
+<use f='codebrowser/nest/third-party/encryption/aes/hmac.c' l='97' u='w' c='hmac_sha1_data'/>
+<use f='codebrowser/nest/third-party/encryption/aes/hmac.c' l='111' u='r' c='hmac_sha1_end'/>

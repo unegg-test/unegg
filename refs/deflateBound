@@ -1,0 +1,19 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='684' type='uLong deflateBound(z_streamp strm, uLong sourceLen)'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='486' ll='541' type='uLong deflateBound(z_streamp strm, uLong sourceLen)'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='469'>/* =========================================================================
+ * For the default windowBits of 15 and memLevel of 8, this function returns
+ * a close to exact, as well as small, upper bound on the compressed size.
+ * They are coded as constants here for a reason--if the #define&apos;s are
+ * changed, then this function needs to be changed as well.  The return
+ * value for 15 and 8 only works for those exact settings.
+ *
+ * For any setting other than those defaults for windowBits and memLevel,
+ * the value returned is a conservative worst case for the maximum expansion
+ * resulting from using fixed blocks instead of stored blocks, which deflate
+ * can emit on compressed data for some combinations of the parameters.
+ *
+ * This function could be more sophisticated to provide closer upper bounds for
+ * every combination of windowBits and memLevel.  But even the conservative
+ * upper bound of about 14% expansion does not seem onerous for output buffer
+ * allocation.
+ */</doc>

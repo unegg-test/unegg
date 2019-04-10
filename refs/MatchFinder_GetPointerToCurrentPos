@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzFind.h' l='60' type='Byte * MatchFinder_GetPointerToCurrentPos(CMatchFinder * p)'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='45' ll='48' type='Byte * MatchFinder_GetPointerToCurrentPos(CMatchFinder * p)'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='736' u='r' c='MatchFinder_CreateVTable'/>

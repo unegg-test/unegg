@@ -1,0 +1,2 @@
+<def f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='597' ll='618' type='void LzmaEnc_InitPriceTables(UInt32 * ProbPrices)'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='1673' u='c' c='LzmaEnc_Construct'/>

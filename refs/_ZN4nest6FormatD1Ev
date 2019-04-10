@@ -1,0 +1,3 @@
+<def f='codebrowser/nest/format/Format.h' l='35' ll='37' type='void nest::Format::~Format()'/>
+<ovr f='codebrowser/nest/format/ALZFormat.cpp' l='37' c='_ZN4nest9ALZFormatD1Ev'/>
+<ovr f='codebrowser/nest/format/EggFormat.cpp' l='45' c='_ZN4nest9EggFormatD1Ev'/>

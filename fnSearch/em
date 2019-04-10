@@ -1,0 +1,6 @@
+_ZNKSt8_Rb_tree5emptyEv|std::_Rb_tree::empty
+_ZNKSt8multiset5emptyEv|std::multiset::empty
+_ZNKSt3set5emptyEv|std::set::empty
+_ZNKSt6vector5emptyEv|std::vector::empty
+_ZNKSt5deque5emptyEv|std::deque::empty
+_ZNKSt5stack5emptyEv|std::stack::empty

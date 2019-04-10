@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='710' type='int deflateSetHeader(z_streamp strm, gz_headerp head)'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='389' ll='397' type='int deflateSetHeader(z_streamp strm, gz_headerp head)'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='388'>/* ========================================================================= */</doc>

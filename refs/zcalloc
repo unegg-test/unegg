@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zutil.h' l='265' type='voidpf zcalloc(voidpf opaque, unsigned int items, unsigned int size)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='238' u='r' c='deflateInit2_'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='45' u='r' c='inflateBackInit_'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='183' u='r' c='inflateInit2_'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/zutil.c' l='300' ll='308' type='voidpf zcalloc(voidpf opaque, unsigned int items, unsigned int size)'/>

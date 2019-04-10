@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>CpuArch.c source code [codebrowser/nest/third-party/algorithm/lzma/CpuArch.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/third-party/algorithm/lzma/CpuArch.c'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>nest</a>/<a href='../..'>third-party</a>/<a href='..'>algorithm</a>/<a href='./'>lzma</a>/<a href='CpuArch.c.html'>CpuArch.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* CpuArch.c -- CPU specific code</i></td></tr>
+<tr><th id="2">2</th><td><i> 2010-10-26: Igor Pavlov : Public domain */</i></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="CpuArch.h.html">"CpuArch.h"</a></u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><u>#<span data-ppcond="6">ifdef</span> <a class="macro" href="CpuArch.h.html#32" data-ref="_M/MY_CPU_X86_OR_AMD64">MY_CPU_X86_OR_AMD64</a></u></td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td><u>#<span data-ppcond="8">if</span> (defined(<span class="macro" data-ref="_M/_MSC_VER">_MSC_VER</span>) &amp;&amp; !defined(<a class="macro" href="CpuArch.h.html#20" data-ref="_M/MY_CPU_AMD64">MY_CPU_AMD64</a>)) || defined(<span class="macro" data-ref="_M/__GNUC__">__GNUC__</span>)</u></td></tr>
+<tr><th id="9">9</th><td><u>#define <dfn class="macro" id="_M/USE_ASM" data-ref="_M/USE_ASM">USE_ASM</dfn></u></td></tr>
+<tr><th id="10">10</th><td><u>#<span data-ppcond="8">endif</span></u></td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td><u>#<span data-ppcond="12">if</span> defined(<a class="macro" href="#9" data-ref="_M/USE_ASM">USE_ASM</a>) &amp;&amp; !defined(<a class="macro" href="CpuArch.h.html#20" data-ref="_M/MY_CPU_AMD64">MY_CPU_AMD64</a>)</u></td></tr>
+<tr><th id="13">13</th><td><em>static</em> UInt32 CheckFlag(UInt32 flag)</td></tr>
+<tr><th id="14">14</th><td>{</td></tr>
+<tr><th id="15">15</th><td><u>#ifdef _MSC_VER</u></td></tr>
+<tr><th id="16">16</th><td>    <b>__asm</b> pushfd;</td></tr>
+<tr><th id="17">17</th><td>    <b>__asm</b> pop EAX;</td></tr>
+<tr><th id="18">18</th><td>    <b>__asm</b> mov EDX, EAX;</td></tr>
+<tr><th id="19">19</th><td>    <b>__asm</b> xor EAX, flag;</td></tr>
+<tr><th id="20">20</th><td>    <b>__asm</b> push EAX;</td></tr>
+<tr><th id="21">21</th><td>    <b>__asm</b> popfd;</td></tr>
+<tr><th id="22">22</th><td>    <b>__asm</b> pushfd;</td></tr>
+<tr><th id="23">23</th><td>    <b>__asm</b> pop EAX;</td></tr>
+<tr><th id="24">24</th><td>    <b>__asm</b> xor EAX, EDX;</td></tr>
+<tr><th id="25">25</th><td>    <b>__asm</b> push EDX;</td></tr>
+<tr><th id="26">26</th><td>    <b>__asm</b> popfd;</td></tr>
+<tr><th id="27">27</th><td>    <b>__asm</b> and flag, EAX;</td></tr>
+<tr><th id="28">28</th><td><u>#else</u></td></tr>
+<tr><th id="29">29</th><td>    <b>__asm__</b> <em>__volatile__</em> (</td></tr>
+<tr><th id="30">30</th><td>        <q>"pushf\n\t"</q></td></tr>
+<tr><th id="31">31</th><td>        <q>"pop  %%EAX\n\t"</q></td></tr>
+<tr><th id="32">32</th><td>        <q>"movl %%EAX,%%EDX\n\t"</q></td></tr>
+<tr><th id="33">33</th><td>        <q>"xorl %0,%%EAX\n\t"</q></td></tr>
+<tr><th id="34">34</th><td>        <q>"push %%EAX\n\t"</q></td></tr>
+<tr><th id="35">35</th><td>        <q>"popf\n\t"</q></td></tr>
+<tr><th id="36">36</th><td>        <q>"pushf\n\t"</q></td></tr>
+<tr><th id="37">37</th><td>        <q>"pop  %%EAX\n\t"</q></td></tr>
+<tr><th id="38">38</th><td>        <q>"xorl %%EDX,%%EAX\n\t"</q></td></tr>
+<tr><th id="39">39</th><td>        <q>"push %%EDX\n\t"</q></td></tr>
+<tr><th id="40">40</th><td>        <q>"popf\n\t"</q></td></tr>
+<tr><th id="41">41</th><td>        <q>"andl %%EAX, %0\n\t"</q>:</td></tr>
+<tr><th id="42">42</th><td>        <q>"=c"</q> (flag) : <q>"c"</q> (flag));</td></tr>
+<tr><th id="43">43</th><td><u>#endif</u></td></tr>
+<tr><th id="44">44</th><td>    <b>return</b> flag;</td></tr>
+<tr><th id="45">45</th><td>}</td></tr>
+<tr><th id="46">46</th><td><u>#define CHECK_CPUID_IS_SUPPORTED if (CheckFlag(1 &lt;&lt; 18) == 0 || CheckFlag(1 &lt;&lt; 21) == 0) return False;</u></td></tr>
+<tr><th id="47">47</th><td><u>#<span data-ppcond="12">else</span></u></td></tr>
+<tr><th id="48">48</th><td><u>#define <dfn class="macro" id="_M/CHECK_CPUID_IS_SUPPORTED" data-ref="_M/CHECK_CPUID_IS_SUPPORTED">CHECK_CPUID_IS_SUPPORTED</dfn></u></td></tr>
+<tr><th id="49">49</th><td><u>#<span data-ppcond="12">endif</span></u></td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="MyCPUID" title='MyCPUID' data-type='void MyCPUID(UInt32 function, UInt32 * a, UInt32 * b, UInt32 * c, UInt32 * d)' data-ref="MyCPUID">MyCPUID</dfn>(<a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> <dfn class="local col1 decl" id="1function" title='function' data-type='UInt32' data-ref="1function">function</dfn>, <a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> *<dfn class="local col2 decl" id="2a" title='a' data-type='UInt32 *' data-ref="2a">a</dfn>, <a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> *<dfn class="local col3 decl" id="3b" title='b' data-type='UInt32 *' data-ref="3b">b</dfn>, <a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> *<dfn class="local col4 decl" id="4c" title='c' data-type='UInt32 *' data-ref="4c">c</dfn>, <a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> *<dfn class="local col5 decl" id="5d" title='d' data-type='UInt32 *' data-ref="5d">d</dfn>)</td></tr>
+<tr><th id="52">52</th><td>{</td></tr>
+<tr><th id="53">53</th><td><u>#<span data-ppcond="53">ifdef</span> <a class="macro" href="#9" data-ref="_M/USE_ASM">USE_ASM</a></u></td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td><u>#<span data-ppcond="55">ifdef</span> <span class="macro" data-ref="_M/_MSC_VER">_MSC_VER</span></u></td></tr>
+<tr><th id="56">56</th><td></td></tr>
+<tr><th id="57">57</th><td>    UInt32 a2, b2, c2, d2;</td></tr>
+<tr><th id="58">58</th><td>    <b>__asm</b> xor EBX, EBX;</td></tr>
+<tr><th id="59">59</th><td>    <b>__asm</b> xor ECX, ECX;</td></tr>
+<tr><th id="60">60</th><td>    <b>__asm</b> xor EDX, EDX;</td></tr>
+<tr><th id="61">61</th><td>    <b>__asm</b> mov EAX, function;</td></tr>
+<tr><th id="62">62</th><td>    <b>__asm</b> cpuid;</td></tr>
+<tr><th id="63">63</th><td>    <b>__asm</b> mov a2, EAX;</td></tr>
+<tr><th id="64">64</th><td>    <b>__asm</b> mov b2, EBX;</td></tr>
+<tr><th id="65">65</th><td>    <b>__asm</b> mov c2, ECX;</td></tr>
+<tr><th id="66">66</th><td>    <b>__asm</b> mov d2, EDX;</td></tr>
+<tr><th id="67">67</th><td></td></tr>
+<tr><th id="68">68</th><td>    *a = a2;</td></tr>
+<tr><th id="69">69</th><td>    *b = b2;</td></tr>
+<tr><th id="70">70</th><td>    *c = c2;</td></tr>
+<tr><th id="71">71</th><td>    *d = d2;</td></tr>
+<tr><th id="72">72</th><td></td></tr>
+<tr><th id="73">73</th><td><u>#<span data-ppcond="55">else</span></u></td></tr>
+<tr><th id="74">74</th><td></td></tr>
+<tr><th id="75">75</th><td>    <b>__asm__</b> <em>__volatile__</em> (</td></tr>
+<tr><th id="76">76</th><td>        <q>"cpuid"</q></td></tr>
+<tr><th id="77">77</th><td>        : <q>"=a"</q> (*<a class="local col2 ref" href="#2a" title='a' data-ref="2a">a</a>) ,</td></tr>
+<tr><th id="78">78</th><td>        <q>"=b"</q> (*<a class="local col3 ref" href="#3b" title='b' data-ref="3b">b</a>) ,</td></tr>
+<tr><th id="79">79</th><td>        <q>"=c"</q> (*<a class="local col4 ref" href="#4c" title='c' data-ref="4c">c</a>) ,</td></tr>
+<tr><th id="80">80</th><td>        <q>"=d"</q> (*<a class="local col5 ref" href="#5d" title='d' data-ref="5d">d</a>)</td></tr>
+<tr><th id="81">81</th><td>        : <q>"0"</q> (<a class="local col1 ref" href="#1function" title='function' data-ref="1function">function</a>));</td></tr>
+<tr><th id="82">82</th><td></td></tr>
+<tr><th id="83">83</th><td><u>#<span data-ppcond="55">endif</span></u></td></tr>
+<tr><th id="84">84</th><td></td></tr>
+<tr><th id="85">85</th><td><u>#<span data-ppcond="53">else</span></u></td></tr>
+<tr><th id="86">86</th><td></td></tr>
+<tr><th id="87">87</th><td>    <em>int</em> CPUInfo[<var>4</var>];</td></tr>
+<tr><th id="88">88</th><td>    __cpuid(CPUInfo, function);</td></tr>
+<tr><th id="89">89</th><td>    *a = CPUInfo[<var>0</var>];</td></tr>
+<tr><th id="90">90</th><td>    *b = CPUInfo[<var>1</var>];</td></tr>
+<tr><th id="91">91</th><td>    *c = CPUInfo[<var>2</var>];</td></tr>
+<tr><th id="92">92</th><td>    *d = CPUInfo[<var>3</var>];</td></tr>
+<tr><th id="93">93</th><td></td></tr>
+<tr><th id="94">94</th><td><u>#<span data-ppcond="53">endif</span></u></td></tr>
+<tr><th id="95">95</th><td>}</td></tr>
+<tr><th id="96">96</th><td></td></tr>
+<tr><th id="97">97</th><td><a class="typedef" href="Types.h.html#Bool" title='Bool' data-type='int' data-ref="Bool">Bool</a> <dfn class="decl def" id="x86cpuid_CheckAndRead" title='x86cpuid_CheckAndRead' data-ref="x86cpuid_CheckAndRead">x86cpuid_CheckAndRead</dfn>(<a class="typedef" href="CpuArch.h.html#Cx86cpuid" title='Cx86cpuid' data-type='struct Cx86cpuid' data-ref="Cx86cpuid">Cx86cpuid</a> *<dfn class="local col6 decl" id="6p" title='p' data-type='Cx86cpuid *' data-ref="6p">p</dfn>)</td></tr>
+<tr><th id="98">98</th><td>{</td></tr>
+<tr><th id="99">99</th><td>    <a class="macro" href="#48" title="" data-ref="_M/CHECK_CPUID_IS_SUPPORTED">CHECK_CPUID_IS_SUPPORTED</a></td></tr>
+<tr><th id="100">100</th><td>    <a class="tu ref" href="#MyCPUID" title='MyCPUID' data-use='c' data-ref="MyCPUID">MyCPUID</a>(<var>0</var>, &amp;<a class="local col6 ref" href="#6p" title='p' data-ref="6p">p</a>-&gt;<a class="ref" href="CpuArch.h.html#(anonymous)::maxFunc" title='(anonymous struct)::maxFunc' data-ref="(anonymous)::maxFunc">maxFunc</a>, &amp;<a class="local col6 ref" href="#6p" title='p' data-ref="6p">p</a>-&gt;<a class="ref" href="CpuArch.h.html#(anonymous)::vendor" title='(anonymous struct)::vendor' data-ref="(anonymous)::vendor">vendor</a>[<var>0</var>], &amp;<a class="local col6 ref" href="#6p" title='p' data-ref="6p">p</a>-&gt;<a class="ref" href="CpuArch.h.html#(anonymous)::vendor" title='(anonymous struct)::vendor' data-ref="(anonymous)::vendor">vendor</a>[<var>2</var>], &amp;<a class="local col6 ref" href="#6p" title='p' data-ref="6p">p</a>-&gt;<a class="ref" href="CpuArch.h.html#(anonymous)::vendor" title='(anonymous struct)::vendor' data-ref="(anonymous)::vendor">vendor</a>[<var>1</var>]);</td></tr>
+<tr><th id="101">101</th><td>    <a class="tu ref" href="#MyCPUID" title='MyCPUID' data-use='c' data-ref="MyCPUID">MyCPUID</a>(<var>1</var>, &amp;<a class="local col6 ref" href="#6p" title='p' data-ref="6p">p</a>-&gt;<a class="ref" href="CpuArch.h.html#(anonymous)::ver" title='(anonymous struct)::ver' data-ref="(anonymous)::ver">ver</a>, &amp;<a class="local col6 ref" href="#6p" title='p' data-ref="6p">p</a>-&gt;<a class="ref" href="CpuArch.h.html#(anonymous)::b" title='(anonymous struct)::b' data-ref="(anonymous)::b">b</a>, &amp;<a class="local col6 ref" href="#6p" title='p' data-ref="6p">p</a>-&gt;<a class="ref" href="CpuArch.h.html#(anonymous)::c" title='(anonymous struct)::c' data-ref="(anonymous)::c">c</a>, &amp;<a class="local col6 ref" href="#6p" title='p' data-ref="6p">p</a>-&gt;<a class="ref" href="CpuArch.h.html#(anonymous)::d" title='(anonymous struct)::d' data-ref="(anonymous)::d">d</a>);</td></tr>
+<tr><th id="102">102</th><td>    <b>return</b> <a class="macro" href="Types.h.html#98" title="1" data-ref="_M/True">True</a>;</td></tr>
+<tr><th id="103">103</th><td>}</td></tr>
+<tr><th id="104">104</th><td></td></tr>
+<tr><th id="105">105</th><td><em>static</em> <a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> <dfn class="tu decl def" id="kVendors" title='kVendors' data-type='UInt32 [3][3]' data-ref="kVendors">kVendors</dfn>[][<var>3</var>] = { { <var>0x756E6547</var>, <var>0x49656E69</var>, <var>0x6C65746E</var> }, { <var>0x68747541</var>, <var>0x69746E65</var>, <var>0x444D4163</var> }, { <var>0x746E6543</var>, <var>0x48727561</var>,</td></tr>
+<tr><th id="106">106</th><td>    <var>0x736C7561</var> } };</td></tr>
+<tr><th id="107">107</th><td></td></tr>
+<tr><th id="108">108</th><td><em>int</em> <dfn class="decl def" id="x86cpuid_GetFirm" title='x86cpuid_GetFirm' data-ref="x86cpuid_GetFirm">x86cpuid_GetFirm</dfn>(<em>const</em> <a class="typedef" href="CpuArch.h.html#Cx86cpuid" title='Cx86cpuid' data-type='struct Cx86cpuid' data-ref="Cx86cpuid">Cx86cpuid</a> *<dfn class="local col7 decl" id="7p" title='p' data-type='const Cx86cpuid *' data-ref="7p">p</dfn>)</td></tr>
+<tr><th id="109">109</th><td>{</td></tr>
+<tr><th id="110">110</th><td>    <em>unsigned</em> <dfn class="local col8 decl" id="8i" title='i' data-type='unsigned int' data-ref="8i">i</dfn>;</td></tr>
+<tr><th id="111">111</th><td>    <b>for</b> (<a class="local col8 ref" href="#8i" title='i' data-ref="8i">i</a> = <var>0</var>; <a class="local col8 ref" href="#8i" title='i' data-ref="8i">i</a> &lt; <b>sizeof</b>(<a class="tu ref" href="#kVendors" title='kVendors' data-use='r' data-ref="kVendors">kVendors</a>) / <b>sizeof</b>(<a class="tu ref" href="#kVendors" title='kVendors' data-use='r' data-ref="kVendors">kVendors</a>[<a class="local col8 ref" href="#8i" title='i' data-ref="8i">i</a>]); <a class="local col8 ref" href="#8i" title='i' data-ref="8i">i</a>++)</td></tr>
+<tr><th id="112">112</th><td>    {</td></tr>
+<tr><th id="113">113</th><td>        <em>const</em> <a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> *<dfn class="local col9 decl" id="9v" title='v' data-type='const UInt32 *' data-ref="9v">v</dfn> = <a class="tu ref" href="#kVendors" title='kVendors' data-use='r' data-ref="kVendors">kVendors</a>[<a class="local col8 ref" href="#8i" title='i' data-ref="8i">i</a>];</td></tr>
+<tr><th id="114">114</th><td>        <b>if</b> (<a class="local col9 ref" href="#9v" title='v' data-ref="9v">v</a>[<var>0</var>] == <a class="local col7 ref" href="#7p" title='p' data-ref="7p">p</a>-&gt;<a class="ref" href="CpuArch.h.html#(anonymous)::vendor" title='(anonymous struct)::vendor' data-ref="(anonymous)::vendor">vendor</a>[<var>0</var>] &amp;&amp; <a class="local col9 ref" href="#9v" title='v' data-ref="9v">v</a>[<var>1</var>] == <a class="local col7 ref" href="#7p" title='p' data-ref="7p">p</a>-&gt;<a class="ref" href="CpuArch.h.html#(anonymous)::vendor" title='(anonymous struct)::vendor' data-ref="(anonymous)::vendor">vendor</a>[<var>1</var>] &amp;&amp; <a class="local col9 ref" href="#9v" title='v' data-ref="9v">v</a>[<var>2</var>] == <a class="local col7 ref" href="#7p" title='p' data-ref="7p">p</a>-&gt;<a class="ref" href="CpuArch.h.html#(anonymous)::vendor" title='(anonymous struct)::vendor' data-ref="(anonymous)::vendor">vendor</a>[<var>2</var>])</td></tr>
+<tr><th id="115">115</th><td>            <b>return</b> (<em>int</em>) <a class="local col8 ref" href="#8i" title='i' data-ref="8i">i</a>;</td></tr>
+<tr><th id="116">116</th><td>    }</td></tr>
+<tr><th id="117">117</th><td>    <b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="118">118</th><td>}</td></tr>
+<tr><th id="119">119</th><td></td></tr>
+<tr><th id="120">120</th><td><a class="typedef" href="Types.h.html#Bool" title='Bool' data-type='int' data-ref="Bool">Bool</a> <dfn class="decl def" id="CPU_Is_InOrder" title='CPU_Is_InOrder' data-ref="CPU_Is_InOrder">CPU_Is_InOrder</dfn>()</td></tr>
+<tr><th id="121">121</th><td>{</td></tr>
+<tr><th id="122">122</th><td>    <a class="typedef" href="CpuArch.h.html#Cx86cpuid" title='Cx86cpuid' data-type='struct Cx86cpuid' data-ref="Cx86cpuid">Cx86cpuid</a> <dfn class="local col0 decl" id="10p" title='p' data-type='Cx86cpuid' data-ref="10p">p</dfn>;</td></tr>
+<tr><th id="123">123</th><td>    <em>int</em> <dfn class="local col1 decl" id="11firm" title='firm' data-type='int' data-ref="11firm">firm</dfn>;</td></tr>
+<tr><th id="124">124</th><td>    <a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> <dfn class="local col2 decl" id="12family" title='family' data-type='UInt32' data-ref="12family">family</dfn>, <dfn class="local col3 decl" id="13model" title='model' data-type='UInt32' data-ref="13model">model</dfn>;</td></tr>
+<tr><th id="125">125</th><td>    <b>if</b> (!<a class="ref" href="#x86cpuid_CheckAndRead" title='x86cpuid_CheckAndRead' data-ref="x86cpuid_CheckAndRead">x86cpuid_CheckAndRead</a>(&amp;<a class="local col0 ref" href="#10p" title='p' data-ref="10p">p</a>))</td></tr>
+<tr><th id="126">126</th><td>        <b>return</b> <a class="macro" href="Types.h.html#98" title="1" data-ref="_M/True">True</a>;</td></tr>
+<tr><th id="127">127</th><td>    <a class="local col2 ref" href="#12family" title='family' data-ref="12family">family</a> = <a class="macro" href="CpuArch.h.html#141" title="(((&amp;p)-&gt;ver &gt;&gt; 8) &amp; 0xFF00F)" data-ref="_M/x86cpuid_GetFamily">x86cpuid_GetFamily</a>(&amp;<a class="local col0 ref" href="#10p" title='p' data-ref="10p">p</a>);</td></tr>
+<tr><th id="128">128</th><td>    <a class="local col3 ref" href="#13model" title='model' data-ref="13model">model</a> = <a class="macro" href="CpuArch.h.html#142" title="(((&amp;p)-&gt;ver &gt;&gt; 4) &amp; 0xF00F)" data-ref="_M/x86cpuid_GetModel">x86cpuid_GetModel</a>(&amp;<a class="local col0 ref" href="#10p" title='p' data-ref="10p">p</a>);</td></tr>
+<tr><th id="129">129</th><td>    <a class="local col1 ref" href="#11firm" title='firm' data-ref="11firm">firm</a> = <a class="ref" href="#x86cpuid_GetFirm" title='x86cpuid_GetFirm' data-ref="x86cpuid_GetFirm">x86cpuid_GetFirm</a>(&amp;<a class="local col0 ref" href="#10p" title='p' data-ref="10p">p</a>);</td></tr>
+<tr><th id="130">130</th><td>    <b>switch</b> (<a class="local col1 ref" href="#11firm" title='firm' data-ref="11firm">firm</a>)</td></tr>
+<tr><th id="131">131</th><td>    {</td></tr>
+<tr><th id="132">132</th><td>    <b>case</b> <a class="enum" href="CpuArch.h.html#CPU_FIRM_INTEL" title='CPU_FIRM_INTEL' data-ref="CPU_FIRM_INTEL">CPU_FIRM_INTEL</a>:</td></tr>
+<tr><th id="133">133</th><td>        <b>return</b> (<a class="local col2 ref" href="#12family" title='family' data-ref="12family">family</a> &lt; <var>6</var> || (<a class="local col2 ref" href="#12family" title='family' data-ref="12family">family</a> == <var>6</var> &amp;&amp; <a class="local col3 ref" href="#13model" title='model' data-ref="13model">model</a> == <var>0x100C</var>));</td></tr>
+<tr><th id="134">134</th><td>    <b>case</b> <a class="enum" href="CpuArch.h.html#CPU_FIRM_AMD" title='CPU_FIRM_AMD' data-ref="CPU_FIRM_AMD">CPU_FIRM_AMD</a>:</td></tr>
+<tr><th id="135">135</th><td>        <b>return</b> (<a class="local col2 ref" href="#12family" title='family' data-ref="12family">family</a> &lt; <var>5</var> || (<a class="local col2 ref" href="#12family" title='family' data-ref="12family">family</a> == <var>5</var> &amp;&amp; (<a class="local col3 ref" href="#13model" title='model' data-ref="13model">model</a> &lt; <var>6</var> || <a class="local col3 ref" href="#13model" title='model' data-ref="13model">model</a> == <var>0xA</var>)));</td></tr>
+<tr><th id="136">136</th><td>    <b>case</b> <a class="enum" href="CpuArch.h.html#CPU_FIRM_VIA" title='CPU_FIRM_VIA' data-ref="CPU_FIRM_VIA">CPU_FIRM_VIA</a>:</td></tr>
+<tr><th id="137">137</th><td>        <b>return</b> (<a class="local col2 ref" href="#12family" title='family' data-ref="12family">family</a> &lt; <var>6</var> || (<a class="local col2 ref" href="#12family" title='family' data-ref="12family">family</a> == <var>6</var> &amp;&amp; <a class="local col3 ref" href="#13model" title='model' data-ref="13model">model</a> &lt; <var>0xF</var>));</td></tr>
+<tr><th id="138">138</th><td>    }</td></tr>
+<tr><th id="139">139</th><td>    <b>return</b> <a class="macro" href="Types.h.html#98" title="1" data-ref="_M/True">True</a>;</td></tr>
+<tr><th id="140">140</th><td>}</td></tr>
+<tr><th id="141">141</th><td></td></tr>
+<tr><th id="142">142</th><td><u>#<span data-ppcond="142">if</span> !defined(<a class="macro" href="CpuArch.h.html#20" data-ref="_M/MY_CPU_AMD64">MY_CPU_AMD64</a>) &amp;&amp; defined(<span class="macro" data-ref="_M/_WIN32">_WIN32</span>)</u></td></tr>
+<tr><th id="143">143</th><td><em>static</em> Bool CPU_Sys_Is_SSE_Supported()</td></tr>
+<tr><th id="144">144</th><td>{</td></tr>
+<tr><th id="145">145</th><td>    OSVERSIONINFO vi;</td></tr>
+<tr><th id="146">146</th><td>    vi.dwOSVersionInfoSize = <b>sizeof</b>(vi);</td></tr>
+<tr><th id="147">147</th><td>    <b>if</b> (!GetVersionEx(&amp;vi))</td></tr>
+<tr><th id="148">148</th><td>    <b>return</b> False;</td></tr>
+<tr><th id="149">149</th><td>    <b>return</b> (vi.dwMajorVersion &gt;= <var>5</var>);</td></tr>
+<tr><th id="150">150</th><td>}</td></tr>
+<tr><th id="151">151</th><td><u>#define CHECK_SYS_SSE_SUPPORT if (!CPU_Sys_Is_SSE_Supported()) return False;</u></td></tr>
+<tr><th id="152">152</th><td><u>#<span data-ppcond="142">else</span></u></td></tr>
+<tr><th id="153">153</th><td><u>#define <dfn class="macro" id="_M/CHECK_SYS_SSE_SUPPORT" data-ref="_M/CHECK_SYS_SSE_SUPPORT">CHECK_SYS_SSE_SUPPORT</dfn></u></td></tr>
+<tr><th id="154">154</th><td><u>#<span data-ppcond="142">endif</span></u></td></tr>
+<tr><th id="155">155</th><td></td></tr>
+<tr><th id="156">156</th><td><a class="typedef" href="Types.h.html#Bool" title='Bool' data-type='int' data-ref="Bool">Bool</a> <dfn class="decl def" id="CPU_Is_Aes_Supported" title='CPU_Is_Aes_Supported' data-ref="CPU_Is_Aes_Supported">CPU_Is_Aes_Supported</dfn>()</td></tr>
+<tr><th id="157">157</th><td>{</td></tr>
+<tr><th id="158">158</th><td>    <a class="typedef" href="CpuArch.h.html#Cx86cpuid" title='Cx86cpuid' data-type='struct Cx86cpuid' data-ref="Cx86cpuid">Cx86cpuid</a> <dfn class="local col4 decl" id="14p" title='p' data-type='Cx86cpuid' data-ref="14p">p</dfn>;</td></tr>
+<tr><th id="159">159</th><td>    <a class="macro" href="#153" title="" data-ref="_M/CHECK_SYS_SSE_SUPPORT">CHECK_SYS_SSE_SUPPORT</a></td></tr>
+<tr><th id="160">160</th><td>    <b>if</b> (!<a class="ref" href="#x86cpuid_CheckAndRead" title='x86cpuid_CheckAndRead' data-ref="x86cpuid_CheckAndRead">x86cpuid_CheckAndRead</a>(&amp;<a class="local col4 ref" href="#14p" title='p' data-ref="14p">p</a>))</td></tr>
+<tr><th id="161">161</th><td>        <b>return</b> <a class="macro" href="Types.h.html#99" title="0" data-ref="_M/False">False</a>;</td></tr>
+<tr><th id="162">162</th><td>    <b>return</b> (<a class="local col4 ref" href="#14p" title='p' data-ref="14p">p</a>.<a class="ref" href="CpuArch.h.html#(anonymous)::c" title='(anonymous struct)::c' data-ref="(anonymous)::c">c</a> &gt;&gt; <var>25</var>) &amp; <var>1</var>;</td></tr>
+<tr><th id="163">163</th><td>}</td></tr>
+<tr><th id="164">164</th><td></td></tr>
+<tr><th id="165">165</th><td><u>#<span data-ppcond="6">endif</span></u></td></tr>
+<tr><th id="166">166</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='154' type='void compress_block(deflate_state * s, ct_data * ltree, ct_data * dtree)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='993' u='c' c='_tr_flush_block'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1001' u='c' c='_tr_flush_block'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1076' ll='1122' macro='1' type='void compress_block(deflate_state * s, ct_data * ltree, ct_data * dtree)'/>

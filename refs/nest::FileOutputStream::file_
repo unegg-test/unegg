@@ -1,0 +1,10 @@
+<use f='codebrowser/nest/stream/FileOutputStream.h' l='33' u='r' c='_ZN4nest16FileOutputStream8IsOpenedEv'/>
+<dec f='codebrowser/nest/stream/FileOutputStream.h' l='44' type='FILE *'/>
+<offset>320</offset>
+<use f='codebrowser/nest/stream/FileOutputStream.cpp' l='22' u='w' c='_ZN4nest16FileOutputStreamC1Ev'/>
+<use f='codebrowser/nest/stream/FileOutputStream.cpp' l='42' u='w' c='_ZN4nest16FileOutputStream6CreateEPKc'/>
+<use f='codebrowser/nest/stream/FileOutputStream.cpp' l='43' u='r' c='_ZN4nest16FileOutputStream6CreateEPKc'/>
+<use f='codebrowser/nest/stream/FileOutputStream.cpp' l='61' u='r' c='_ZN4nest16FileOutputStream5CloseEv'/>
+<use f='codebrowser/nest/stream/FileOutputStream.cpp' l='63' u='r' c='_ZN4nest16FileOutputStream5CloseEv'/>
+<use f='codebrowser/nest/stream/FileOutputStream.cpp' l='64' u='w' c='_ZN4nest16FileOutputStream5CloseEv'/>
+<use f='codebrowser/nest/stream/FileOutputStream.cpp' l='70' u='r' c='_ZN4nest16FileOutputStream5WriteEPvm'/>

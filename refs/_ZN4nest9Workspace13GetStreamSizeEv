@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/Workspace.h' l='45' type='uint64 nest::Workspace::GetStreamSize()'/>
+<def f='codebrowser/nest/Workspace.cpp' l='155' ll='158' type='uint64 nest::Workspace::GetStreamSize()'/>

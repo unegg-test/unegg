@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.h' l='103' type='1'/>
+<use f='codebrowser/nest/algorithm/LZMACoder.cpp' l='97' c='_ZN4nest9LZMACoder5OnPopEPvPm'/>
+<doc f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.h' l='103'>/* stream was finished with end mark. */</doc>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='821' u='r' c='LzmaDec_DecodeToDic'/>

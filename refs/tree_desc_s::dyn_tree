@@ -1,0 +1,11 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='81' type='ct_data *'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='977' u='w' c='deflateCopy'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='978' u='w' c='deflateCopy'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='979' u='w' c='deflateCopy'/>
+<offset>0</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='81'>/* the dynamic tree */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='391' u='w' c='_tr_init'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='394' u='w' c='_tr_init'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='397' u='w' c='_tr_init'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='498' u='r' c='gen_bitlen'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='627' u='r' c='build_tree'/>

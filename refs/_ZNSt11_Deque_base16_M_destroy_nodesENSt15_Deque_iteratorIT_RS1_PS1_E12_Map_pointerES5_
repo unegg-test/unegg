@@ -1,0 +1,4 @@
+<dec f='include/c++/7/bits/stl_deque.h' l='629' type='void std::_Deque_base::_M_destroy_nodes(_Map_pointer __nstart, _Map_pointer __nfinish)'/>
+<use f='include/c++/7/bits/stl_deque.h' l='665' u='c' c='_ZNSt11_Deque_baseD1Ev'/>
+<use f='include/c++/7/bits/stl_deque.h' l='731' u='c' c='_ZNSt11_Deque_base15_M_create_nodesENSt15_Deque_iteratorIT_RS1_PS1_E12_Map_pointerES5_'/>
+<def f='include/c++/7/bits/stl_deque.h' l='736' ll='744' type='void std::_Deque_base::_M_destroy_nodes(_Map_pointer __nstart, _Map_pointer __nfinish)'/>

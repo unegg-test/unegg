@@ -1,0 +1,4 @@
+_ZNSt13basic_istream5tellgEv|std::basic_istream::tellg
+_ZNSt13basic_ostream5tellpEv|std::basic_ostream::tellp
+_ZN4nest15FileInputStream4TellEv|nest::FileInputStream::Tell
+_ZN4nest17InputStreamLinker4TellEv|nest::InputStreamLinker::Tell

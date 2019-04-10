@@ -1,0 +1,12 @@
+<dec f='codebrowser/nest/format/Header.h' l='31' type='void nest::Header::~Header()'/>
+<inh f='codebrowser/nest/Info.h' l='23' c='_ZN4nest4InfoD1Ev'/>
+<def f='codebrowser/nest/format/Header.cpp' l='24' ll='27' type='void nest::Header::~Header()'/>
+<ovr f='codebrowser/nest/format/alz/File.cpp' l='28' c='_ZN4nest3alz4FileD1Ev'/>
+<ovr f='codebrowser/nest/format/alz/Global.cpp' l='26' c='_ZN4nest3alz6GlobalD1Ev'/>
+<ovr f='codebrowser/nest/format/egg/Block.cpp' l='27' c='_ZN4nest3egg5BlockD1Ev'/>
+<ovr f='codebrowser/nest/format/egg/BlockWrap.cpp' l='25' c='_ZN4nest3egg9BlockWrapD1Ev'/>
+<ovr f='codebrowser/nest/format/egg/ExtraField.cpp' l='27' c='_ZN4nest3egg10ExtraFieldD1Ev'/>
+<ovr f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='34' c='_ZN4nest3egg14ExtraFieldWrapD1Ev'/>
+<ovr f='codebrowser/nest/format/egg/File.cpp' l='26' c='_ZN4nest3egg4FileD1Ev'/>
+<ovr f='codebrowser/nest/format/egg/FileWrap.cpp' l='27' c='_ZN4nest3egg8FileWrapD1Ev'/>
+<ovr f='codebrowser/nest/format/egg/Global.cpp' l='26' c='_ZN4nest3egg6GlobalD1Ev'/>

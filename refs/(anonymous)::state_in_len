@@ -1,0 +1,16 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='226' type='Int32'/>
+<offset>768</offset>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='134' u='w' c='init_RL'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='141' u='r' c='isempty_RL'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='220' u='r' c='add_pair_to_block'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='224' u='r' c='add_pair_to_block'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='238' u='r' c='add_pair_to_block'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='243' u='r' c='add_pair_to_block'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='265' u='r' c='copy_input_until_stop'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='276' u='r' c='copy_input_until_stop'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='280' u='w' c='copy_input_until_stop'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='282' u='w' c='copy_input_until_stop'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='265' u='r' c='copy_input_until_stop'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='276' u='r' c='copy_input_until_stop'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='280' u='w' c='copy_input_until_stop'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='282' u='w' c='copy_input_until_stop'/>

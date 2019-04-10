@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>AESDecoder.cpp source code [codebrowser/nest/encryption/AESDecoder.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/encryption/AESDecoder.cpp'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>codebrowser</a>/<a href='..'>nest</a>/<a href='./'>encryption</a>/<a href='AESDecoder.cpp.html'>AESDecoder.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * AESDecoder.cpp</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> *  Created on: 2011. 3. 29.</i></td></tr>
+<tr><th id="5">5</th><td><i> *      Author: revolution</i></td></tr>
+<tr><th id="6">6</th><td><i> */</i></td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td><u>#include <a href="AESDecoder.h.html">"AESDecoder.h"</a></u></td></tr>
+<tr><th id="9">9</th><td></td></tr>
+<tr><th id="10">10</th><td><b>namespace</b> <span class="namespace">nest</span></td></tr>
+<tr><th id="11">11</th><td>{</td></tr>
+<tr><th id="12">12</th><td></td></tr>
+<tr><th id="13">13</th><td><a class="type" href="AESDecoder.h.html#nest::AESDecoder" title='nest::AESDecoder' data-ref="nest::AESDecoder">AESDecoder</a>::<dfn class="decl def" id="_ZN4nest10AESDecoderC1ENS0_8AESLevelE" title='nest::AESDecoder::AESDecoder' data-ref="_ZN4nest10AESDecoderC1ENS0_8AESLevelE">AESDecoder</dfn>(<a class="type" href="AESDecoder.h.html#nest::AESDecoder::AESLevel" title='nest::AESDecoder::AESLevel' data-ref="nest::AESDecoder::AESLevel">AESLevel</a> <dfn class="local col7 decl" id="67level" title='level' data-type='nest::AESDecoder::AESLevel' data-ref="67level">level</dfn>) :</td></tr>
+<tr><th id="14">14</th><td>    <a class="member" href="AESDecoder.h.html#nest::AESDecoder::level_" title='nest::AESDecoder::level_' data-ref="nest::AESDecoder::level_">level_</a>(<a class="local col7 ref" href="#67level" title='level' data-ref="67level">level</a>)</td></tr>
+<tr><th id="15">15</th><td>{</td></tr>
+<tr><th id="16">16</th><td>    <i>// TODO Auto-generated constructor stub</i></td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td>}</td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><a class="type" href="AESDecoder.h.html#nest::AESDecoder" title='nest::AESDecoder' data-ref="nest::AESDecoder">AESDecoder</a>::<dfn class="virtual decl def" id="_ZN4nest10AESDecoderD1Ev" title='nest::AESDecoder::~AESDecoder' data-ref="_ZN4nest10AESDecoderD1Ev">~AESDecoder</dfn>()</td></tr>
+<tr><th id="21">21</th><td>{</td></tr>
+<tr><th id="22">22</th><td>    <i>// TODO Auto-generated destructor stub</i></td></tr>
+<tr><th id="23">23</th><td>}</td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><em>int</em> <a class="type" href="AESDecoder.h.html#nest::AESDecoder" title='nest::AESDecoder' data-ref="nest::AESDecoder">AESDecoder</a>::<dfn class="virtual decl def" id="_ZN4nest10AESDecoder12OnPreprocessEPKcPKv" title='nest::AESDecoder::OnPreprocess' data-ref="_ZN4nest10AESDecoder12OnPreprocessEPKcPKv">OnPreprocess</dfn>(<em>const</em> <em>char</em>* <dfn class="local col8 decl" id="68password" title='password' data-type='const char *' data-ref="68password">password</dfn>, <em>const</em> <em>void</em>* <dfn class="local col9 decl" id="69header" title='header' data-type='const void *' data-ref="69header">header</dfn>)</td></tr>
+<tr><th id="26">26</th><td>{</td></tr>
+<tr><th id="27">27</th><td>    <em>int</em> <dfn class="local col0 decl" id="70mode" title='mode' data-type='int' data-ref="70mode">mode</dfn> = <a class="member" href="AESDecoder.h.html#nest::AESDecoder::level_" title='nest::AESDecoder::level_' data-ref="nest::AESDecoder::level_">level_</a> == <a class="enum" href="AESDecoder.h.html#nest::AESDecoder::AESLevel::AES128" title='nest::AESDecoder::AESLevel::AES128' data-ref="nest::AESDecoder::AESLevel::AES128">AES128</a> ? <var>1</var> : <var>3</var>;</td></tr>
+<tr><th id="28">28</th><td>    <em>unsigned</em> <em>int</em> <dfn class="local col1 decl" id="71saltSize" title='saltSize' data-type='unsigned int' data-ref="71saltSize">saltSize</dfn> = <a class="macro" href="../third-party/encryption/aes/fileenc.h.html#74" title="(4 * (mode &amp; 3) + 4)" data-ref="_M/SALT_LENGTH">SALT_LENGTH</a>(<a class="local col0 ref" href="#70mode" title='mode' data-ref="70mode">mode</a>);</td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td>    <a class="ref" href="../../../include/string.h.html#memset" title='memset' data-ref="memset">memset</a>(<a class="member" href="AESDecoder.h.html#nest::AESDecoder::salt_" title='nest::AESDecoder::salt_' data-ref="nest::AESDecoder::salt_">salt_</a>, <var>0</var>, <b>sizeof</b>(<a class="member" href="AESDecoder.h.html#nest::AESDecoder::salt_" title='nest::AESDecoder::salt_' data-ref="nest::AESDecoder::salt_">salt_</a>));</td></tr>
+<tr><th id="31">31</th><td>    <a class="ref" href="../../../include/string.h.html#memcpy" title='memcpy' data-ref="memcpy">memcpy</a>(<a class="member" href="AESDecoder.h.html#nest::AESDecoder::salt_" title='nest::AESDecoder::salt_' data-ref="nest::AESDecoder::salt_">salt_</a>, <a class="local col9 ref" href="#69header" title='header' data-ref="69header">header</a>, <a class="local col1 ref" href="#71saltSize" title='saltSize' data-ref="71saltSize">saltSize</a>);</td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td>    <em>unsigned</em> <em>char</em> <dfn class="local col2 decl" id="72tmp_buf" title='tmp_buf' data-type='unsigned char [16]' data-ref="72tmp_buf">tmp_buf</dfn>[<var>16</var>] = { <var>0</var> };</td></tr>
+<tr><th id="34">34</th><td>    <a class="ref" href="../third-party/encryption/aes/fileenc.h.html#fcrypt_init" title='fcrypt_init' data-ref="fcrypt_init">fcrypt_init</a>(<a class="local col0 ref" href="#70mode" title='mode' data-ref="70mode">mode</a>, (<em>const</em> <em>unsigned</em> <em>char</em>*) <a class="local col8 ref" href="#68password" title='password' data-ref="68password">password</a>, <b>static_cast</b>&lt;<em>int</em>&gt; (<a class="ref" href="../../../include/string.h.html#strlen" title='strlen' data-ref="strlen">strlen</a>(<a class="local col8 ref" href="#68password" title='password' data-ref="68password">password</a>)), <a class="member" href="AESDecoder.h.html#nest::AESDecoder::salt_" title='nest::AESDecoder::salt_' data-ref="nest::AESDecoder::salt_">salt_</a>, <a class="local col2 ref" href="#72tmp_buf" title='tmp_buf' data-ref="72tmp_buf">tmp_buf</a>, &amp;<a class="member" href="AESDecoder.h.html#nest::AESDecoder::zcx_" title='nest::AESDecoder::zcx_' data-ref="nest::AESDecoder::zcx_">zcx_</a>);</td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td>    <a class="member" href="AESDecoder.h.html#nest::AESDecoder::verified_" title='nest::AESDecoder::verified_' data-ref="nest::AESDecoder::verified_">verified_</a> = <a class="ref" href="../../../include/string.h.html#memcmp" title='memcmp' data-ref="memcmp">memcmp</a>(<b>static_cast</b>&lt;<em>const</em> <em>unsigned</em> <em>char</em>*&gt; (<a class="local col9 ref" href="#69header" title='header' data-ref="69header">header</a>) + <a class="local col1 ref" href="#71saltSize" title='saltSize' data-ref="71saltSize">saltSize</a>, <a class="local col2 ref" href="#72tmp_buf" title='tmp_buf' data-ref="72tmp_buf">tmp_buf</a>, <a class="macro" href="../third-party/encryption/aes/fileenc.h.html#53" title="2" data-ref="_M/PWD_VER_LENGTH">PWD_VER_LENGTH</a>) == <var>0</var>;</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td>    <b>return</b> <span class="namespace">Result::</span><a class="enum" href="../define.h.html#Result::Success" title='Result::Success' data-ref="Result::Success">Success</a>;</td></tr>
+<tr><th id="39">39</th><td>}</td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td><em>int</em> <a class="type" href="AESDecoder.h.html#nest::AESDecoder" title='nest::AESDecoder' data-ref="nest::AESDecoder">AESDecoder</a>::<dfn class="virtual decl def" id="_ZN4nest10AESDecoder9OnDecryptEPvm" title='nest::AESDecoder::OnDecrypt' data-ref="_ZN4nest10AESDecoder9OnDecryptEPvm">OnDecrypt</dfn>(<em>void</em>* <dfn class="local col3 decl" id="73buffer" title='buffer' data-type='void *' data-ref="73buffer">buffer</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col4 decl" id="74size" title='size' data-type='size_t' data-ref="74size">size</dfn>)</td></tr>
+<tr><th id="42">42</th><td>{</td></tr>
+<tr><th id="43">43</th><td>    <a class="ref" href="../third-party/encryption/aes/fileenc.h.html#fcrypt_decrypt" title='fcrypt_decrypt' data-ref="fcrypt_decrypt">fcrypt_decrypt</a>(<b>static_cast</b>&lt;<em>unsigned</em> <em>char</em>*&gt; (<a class="local col3 ref" href="#73buffer" title='buffer' data-ref="73buffer">buffer</a>), <b>static_cast</b>&lt;<em>int</em>&gt; (<a class="local col4 ref" href="#74size" title='size' data-ref="74size">size</a>), &amp;<a class="member" href="AESDecoder.h.html#nest::AESDecoder::zcx_" title='nest::AESDecoder::zcx_' data-ref="nest::AESDecoder::zcx_">zcx_</a>);</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td>    <b>return</b> <span class="namespace">Result::</span><a class="enum" href="../define.h.html#Result::Success" title='Result::Success' data-ref="Result::Success">Success</a>;</td></tr>
+<tr><th id="46">46</th><td>}</td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td><em>int</em> <a class="type" href="AESDecoder.h.html#nest::AESDecoder" title='nest::AESDecoder' data-ref="nest::AESDecoder">AESDecoder</a>::<dfn class="virtual decl def" id="_ZN4nest10AESDecoder13OnPostprocessEPKv" title='nest::AESDecoder::OnPostprocess' data-ref="_ZN4nest10AESDecoder13OnPostprocessEPKv">OnPostprocess</dfn>(<em>const</em> <em>void</em>* <dfn class="local col5 decl" id="75footer" title='footer' data-type='const void *' data-ref="75footer">footer</dfn>)</td></tr>
+<tr><th id="49">49</th><td>{</td></tr>
+<tr><th id="50">50</th><td>    <em>unsigned</em> <em>char</em> <dfn class="local col6 decl" id="76tmp_buf" title='tmp_buf' data-type='unsigned char [16]' data-ref="76tmp_buf">tmp_buf</dfn>[<var>16</var>] = { <var>0</var> };</td></tr>
+<tr><th id="51">51</th><td>    <a class="ref" href="../third-party/encryption/aes/fileenc.h.html#fcrypt_end" title='fcrypt_end' data-ref="fcrypt_end">fcrypt_end</a>(<a class="local col6 ref" href="#76tmp_buf" title='tmp_buf' data-ref="76tmp_buf">tmp_buf</a>, &amp;<a class="member" href="AESDecoder.h.html#nest::AESDecoder::zcx_" title='nest::AESDecoder::zcx_' data-ref="nest::AESDecoder::zcx_">zcx_</a>);</td></tr>
+<tr><th id="52">52</th><td></td></tr>
+<tr><th id="53">53</th><td>    <a class="member" href="AESDecoder.h.html#nest::AESDecoder::verified_" title='nest::AESDecoder::verified_' data-ref="nest::AESDecoder::verified_">verified_</a> = <a class="ref" href="../../../include/string.h.html#memcmp" title='memcmp' data-ref="memcmp">memcmp</a>(<a class="local col5 ref" href="#75footer" title='footer' data-ref="75footer">footer</a>, <a class="local col6 ref" href="#76tmp_buf" title='tmp_buf' data-ref="76tmp_buf">tmp_buf</a>, <var>10</var>) == <var>0</var>;</td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td>    <b>return</b> <span class="namespace">Result::</span><a class="enum" href="../define.h.html#Result::Success" title='Result::Success' data-ref="Result::Success">Success</a>;</td></tr>
+<tr><th id="56">56</th><td>}</td></tr>
+<tr><th id="57">57</th><td></td></tr>
+<tr><th id="58">58</th><td><em>bool</em> <a class="type" href="AESDecoder.h.html#nest::AESDecoder" title='nest::AESDecoder' data-ref="nest::AESDecoder">AESDecoder</a>::<dfn class="virtual decl def" id="_ZN4nest10AESDecoder8OnVerifyEPKv" title='nest::AESDecoder::OnVerify' data-ref="_ZN4nest10AESDecoder8OnVerifyEPKv">OnVerify</dfn>(<em>const</em> <em>void</em>* <dfn class="local col7 decl" id="77verifyData" title='verifyData' data-type='const void *' data-ref="77verifyData">verifyData</dfn>)</td></tr>
+<tr><th id="59">59</th><td>{</td></tr>
+<tr><th id="60">60</th><td>    <b>return</b> <a class="member" href="AESDecoder.h.html#nest::AESDecoder::verified_" title='nest::AESDecoder::verified_' data-ref="nest::AESDecoder::verified_">verified_</a>;</td></tr>
+<tr><th id="61">61</th><td>}</td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td>}</td></tr>
+<tr><th id="64">64</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

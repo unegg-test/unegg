@@ -1,0 +1,10 @@
+<dec f='codebrowser/nest/third-party/encryption/aes/sha1.h' l='70' type='void sha1_hash(const unsigned char * data, unsigned int len, sha1_ctx * ctx)'/>
+<use f='codebrowser/nest/third-party/encryption/aes/hmac.c' l='60' u='c' c='hmac_sha1_key'/>
+<use f='codebrowser/nest/third-party/encryption/aes/hmac.c' l='63' u='c' c='hmac_sha1_key'/>
+<use f='codebrowser/nest/third-party/encryption/aes/hmac.c' l='94' u='c' c='hmac_sha1_data'/>
+<use f='codebrowser/nest/third-party/encryption/aes/hmac.c' l='102' u='c' c='hmac_sha1_data'/>
+<use f='codebrowser/nest/third-party/encryption/aes/hmac.c' l='122' u='c' c='hmac_sha1_end'/>
+<use f='codebrowser/nest/third-party/encryption/aes/hmac.c' l='123' u='c' c='hmac_sha1_end'/>
+<def f='codebrowser/nest/third-party/encryption/aes/sha1.c' l='189' ll='213' type='void sha1_hash(const unsigned char * data, unsigned int len, sha1_ctx * ctx)'/>
+<use f='codebrowser/nest/third-party/encryption/aes/sha1.c' l='272' u='c' c='sha1'/>
+<doc f='codebrowser/nest/third-party/encryption/aes/sha1.c' l='187'>/* call the hash_compile function as required.              */</doc>

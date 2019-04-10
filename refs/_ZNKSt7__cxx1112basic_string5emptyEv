@@ -1,0 +1,10 @@
+<def f='include/c++/7/bits/basic_string.h' l='1020' ll='1022' type='bool std::__cxx11::basic_string::empty() const'/>
+<doc f='include/c++/7/bits/basic_string.h' l='1016'>/**
+       *  Returns true if the %string is empty.  Equivalent to 
+       *  &lt;code&gt;*this == &quot;&quot;&lt;/code&gt;.
+       */</doc>
+<use f='include/c++/7/bits/locale_facets_nonio.tcc' l='276' u='c' c='_ZNKSt7__cxx119money_get10_M_extractET0_S1_RSt8ios_baseRSt12_Ios_IostateRNS_12basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='444' u='c' c='_ZN4nest9ALZFormat17PreprocessDecryptEmPNS_3alz4FileE'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='668' u='c' c='_ZN4nest9ALZFormat9_As4BytesEjPb'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='725' u='c' c='_ZN4nest9ALZFormat6_AsPtrEjPb'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='928' u='c' c='_ZN4nest9EggFormat17PreprocessDecryptEmPNS_3egg12EncryptFieldE'/>

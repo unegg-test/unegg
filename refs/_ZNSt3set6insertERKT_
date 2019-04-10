@@ -1,0 +1,15 @@
+<def f='include/c++/7/bits/stl_set.h' l='498' ll='504' type='std::pair&lt;iterator, bool&gt; std::set::insert(const value_type &amp; __x)'/>
+<use f='codebrowser/CommandLine.cpp' l='31' u='c' c='_ZN11CommandLine16ParseCommandlineEiPPc'/>
+<doc f='include/c++/7/bits/stl_set.h' l='485'>/**
+       *  @brief Attempts to insert an element into the %set.
+       *  @param  __x  Element to be inserted.
+       *  @return  A pair, of which the first element is an iterator that points
+       *           to the possibly inserted element, and the second is a bool
+       *           that is true if the element was actually inserted.
+       *
+       *  This function attempts to insert an element into the %set.  A %set
+       *  relies on unique keys and thus an element is only inserted if it is
+       *  not already present in the %set.
+       *
+       *  Insertion requires logarithmic time.
+       */</doc>

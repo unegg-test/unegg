@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='340'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='400' u='c'/>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='338'>/*-- Constants for the fast MTF decoder. --*/</doc>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='361' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='464' u='c'/>

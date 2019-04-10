@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='126' type='int'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='629' u='r' c='build_tree'/>
+<offset>160</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='126'>/* max number of elements in the tree */</doc>

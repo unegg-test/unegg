@@ -1,0 +1,25 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/7zFile.h' l='28' type='FILE *'/>
+<dec f='codebrowser/nest/third-party/algorithm/lzma/7zFile.h' l='57' type='CSzFile'/>
+<dec f='codebrowser/nest/third-party/algorithm/lzma/7zFile.h' l='65' type='CSzFile'/>
+<dec f='codebrowser/nest/third-party/algorithm/lzma/7zFile.h' l='73' type='CSzFile'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='33' u='w' c='File_Construct'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='48' u='w' c='File_Open'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='49' u='r' c='File_Open'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='94' u='r' c='File_Close'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='96' u='r' c='File_Close'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='99' u='w' c='File_Close'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='132' u='r' c='File_Read'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='135' u='r' c='File_Read'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='167' u='r' c='File_Write'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='170' u='r' c='File_Write'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='218' u='r' c='File_Seek'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='219' u='r' c='File_Seek'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='242' u='r' c='File_GetLength'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='243' u='r' c='File_GetLength'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='244' u='r' c='File_GetLength'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='245' u='r' c='File_GetLength'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='256' u='a' c='FileSeqInStream_Read'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='269' u='a' c='FileInStream_Read'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='275' u='a' c='FileInStream_Seek'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='289' u='a' c='FileOutStream_Write'/>
+<offset>64</offset>

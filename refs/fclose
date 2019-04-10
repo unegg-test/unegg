@@ -1,0 +1,6 @@
+<dec f='include/stdio.h' l='237' type='int fclose(FILE * __stream)'/>
+<use f='codebrowser/nest/stream/FileInputStream.cpp' l='47' u='c' c='_ZN4nest15FileInputStream5CloseEv'/>
+<use f='codebrowser/nest/stream/FileOutputStream.cpp' l='63' u='c' c='_ZN4nest16FileOutputStream5CloseEv'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1447' u='c' c='bzopen_or_bzdopen'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1530' u='c' c='BZ2_bzclose'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='96' u='c' c='File_Close'/>

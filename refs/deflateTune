@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='667' type='int deflateTune(z_streamp strm, int good_length, int max_lazy, int nice_length, int max_chain)'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='451' ll='467' type='int deflateTune(z_streamp strm, int good_length, int max_lazy, int nice_length, int max_chain)'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='450'>/* ========================================================================= */</doc>

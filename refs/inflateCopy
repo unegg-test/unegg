@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='821' type='int inflateCopy(z_streamp dest, z_streamp source)'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1406' ll='1451' type='int inflateCopy(z_streamp dest, z_streamp source)'/>

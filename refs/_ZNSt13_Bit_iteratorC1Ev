@@ -1,0 +1,6 @@
+<def f='include/c++/7/bits/stl_bvector.h' l='220' type='void std::_Bit_iterator::_Bit_iterator()'/>
+<use f='include/c++/7/bits/stl_bvector.h' l='427' u='c' c='_ZNSt13_Bvector_base13_Bvector_implC1Ev'/>
+<use f='include/c++/7/bits/stl_bvector.h' l='427' u='c' c='_ZNSt13_Bvector_base13_Bvector_implC1Ev'/>
+<use f='include/c++/7/bits/stl_bvector.h' l='431' u='c' c='_ZNSt13_Bvector_base13_Bvector_implC1ERKN9__gnu_cxx14__alloc_traitsIT_E6rebindImE5otherE'/>
+<use f='include/c++/7/bits/stl_bvector.h' l='431' u='c' c='_ZNSt13_Bvector_base13_Bvector_implC1ERKN9__gnu_cxx14__alloc_traitsIT_E6rebindImE5otherE'/>
+<use f='include/c++/7/bits/stl_bvector.h' l='503' u='c' c='_ZNSt13_Bvector_base13_M_deallocateEv'/>

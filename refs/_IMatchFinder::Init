@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzFind.h' l='94' type='Mf_Init_Func'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='733' u='w' c='MatchFinder_CreateVTable'/>
+<offset>0</offset>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='1716' u='r' c='LzmaEnc_CodeOneBlock'/>

@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='859' type='int inflatePrime(z_streamp strm, int bits, int value)'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='209' ll='228' type='int inflatePrime(z_streamp strm, int bits, int value)'/>

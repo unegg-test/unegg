@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/encryption/aes/fileenc.h' l='87' type='aes_ctx [1]'/>
+<offset>256</offset>
+<doc f='codebrowser/nest/third-party/encryption/aes/fileenc.h' l='87'>/* encryption context     */</doc>
+<use f='codebrowser/nest/third-party/encryption/aes/fileenc.c' l='63' u='r' c='encr_data'/>
+<use f='codebrowser/nest/third-party/encryption/aes/fileenc.c' l='104' u='r' c='fcrypt_init'/>

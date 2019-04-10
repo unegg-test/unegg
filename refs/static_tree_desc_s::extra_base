@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='125' type='int'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='502' u='r' c='gen_bitlen'/>
+<offset>128</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='125'>/* base index for extra_bits */</doc>

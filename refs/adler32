@@ -1,0 +1,13 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='1469' type='uLong adler32(uLong adler, const Bytef * buf, uInt len)'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/adler32.c' l='60' ll='128' type='uLong adler32(uLong adler, const Bytef * buf, uInt len)'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/adler32.c' l='59'>/* ========================================================================= */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='328' u='c' c='deflateSetDictionary'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='379' u='c' c='deflateReset'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='678' u='c' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1005' u='c' c='read_buf'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='666' u='c' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='808' u='c' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='413' u='c' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='413' u='c' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1268' u='c' c='inflateSetDictionary'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1269' u='c' c='inflateSetDictionary'/>

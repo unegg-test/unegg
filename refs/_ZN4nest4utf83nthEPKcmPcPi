@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/Utils.h' l='32' type='bool nest::utf8::nth(const char * s, size_t n, char * buffer, int * len = __null)'/>
+<def f='codebrowser/nest/Utils.cpp' l='154' ll='171' type='bool nest::utf8::nth(const char * s, size_t n, char * buffer, int * len = __null)'/>

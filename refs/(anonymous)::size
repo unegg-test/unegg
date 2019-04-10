@@ -1,0 +1,50 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='195' type='size_t'/>
+<offset>384</offset>
+<dec f='codebrowser/nest/third-party/algorithm/lzma/7zBuf.h' l='17' type='size_t'/>
+<dec f='codebrowser/nest/third-party/algorithm/lzma/7zBuf.h' l='27' type='size_t'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zBuf.c' l='11' u='w' c='Buf_Init'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zBuf.c' l='16' u='w' c='Buf_Create'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zBuf.c' l='25' u='w' c='Buf_Create'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zBuf.c' l='35' u='w' c='Buf_Free'/>
+<offset>64</offset>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zBuf2.c' l='10' u='w' c='DynBuf_Construct'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zBuf2.c' l='21' u='r' c='DynBuf_Write'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zBuf2.c' l='29' u='w' c='DynBuf_Write'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zBuf2.c' l='43' u='w' c='DynBuf_Free'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='73' u='r' c='LookToRead_Look_Lookahead'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='79' u='w' c='LookToRead_Look_Lookahead'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='91' u='r' c='LookToRead_Look_Exact'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='98' u='w' c='LookToRead_Look_Exact'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='116' u='r' c='LookToRead_Read'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='130' u='w' c='LookToRead_Seek'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='144' u='w' c='LookToRead_Init'/>
+<dec f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='92' type='unsigned int'/>
+<offset>192</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='92'>/* buffer size, zero if not allocated yet */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='98' u='w' c='gz_open'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='242' u='r' c='gzbuffer'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='58' u='r' c='gz_avail'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='112' u='r' c='gz_head'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='124' u='w' c='gz_head'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='135' u='w' c='gz_head'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='317' u='r' c='gz_make'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='322' u='r' c='gz_make'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='417' u='r' c='gzread'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='512' u='r' c='gzungetc'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='519' u='r' c='gzungetc'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='527' u='r' c='gzungetc'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='644' u='r' c='gzclose_r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='46' u='w' c='gz_init'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='49' u='r' c='gz_init'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='68' u='r' c='gz_comp'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='85' u='r' c='gz_comp'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='126' u='r' c='gz_zero'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='126' u='r' c='gz_zero'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='127' u='r' c='gz_zero'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='175' u='r' c='gzwrite'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='186' u='r' c='gzwrite'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='191' u='r' c='gzwrite'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='248' u='r' c='gzputc'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='299' u='r' c='gzprintf'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='314' u='r' c='gzprintf'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='488' u='r' c='gzsetparams'/>

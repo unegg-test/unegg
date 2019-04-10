@@ -1,0 +1,16 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.h' l='57' type='unsigned int'/>
+<offset>288</offset>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='206' u='w' c='BZ2_bzCompressInit'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='351' u='w' c='copy_output_until_stop'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='352' u='r' c='copy_output_until_stop'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='518' u='w' c='BZ2_bzDecompressInit'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='552' u='w' c='unRLE_obuf_to_output_FAST'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='553' u='r' c='unRLE_obuf_to_output_FAST'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='664' u='r' c='unRLE_obuf_to_output_FAST'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='665' u='w' c='unRLE_obuf_to_output_FAST'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='666' u='r' c='unRLE_obuf_to_output_FAST'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='722' u='w' c='unRLE_obuf_to_output_SMALL'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='723' u='r' c='unRLE_obuf_to_output_SMALL'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='771' u='w' c='unRLE_obuf_to_output_SMALL'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='772' u='r' c='unRLE_obuf_to_output_SMALL'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1076' u='r' c='BZ2_bzWriteClose64'/>

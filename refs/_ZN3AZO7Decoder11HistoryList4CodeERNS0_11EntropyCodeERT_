@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/algorithm/azo/Decoder/HistoryListD.h' l='19' type='bool AZO::Decoder::HistoryList::Code(AZO::Decoder::EntropyCode &amp; entropy, T &amp; value)'/>
+<def f='codebrowser/nest/algorithm/azo/Decoder/HistoryListD.cpp' l='10' ll='28' type='bool AZO::Decoder::HistoryList::Code(AZO::Decoder::EntropyCode &amp; entropy, T &amp; value)'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/DistanceCodeD.cpp' l='25' u='c' c='_ZN3AZO7Decoder12DistanceCode4CodeERNS0_11EntropyCodeE'/>

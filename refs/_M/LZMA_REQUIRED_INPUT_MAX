@@ -1,0 +1,8 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.h' l='47'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.h' l='67' u='c'/>
+<doc f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.h' l='44'>/* LZMA_REQUIRED_INPUT_MAX = number of required input bytes for worst case.
+ Num bits = log2((2^11 / 31) ^ 22) + 26 &lt; 134 + 26 = 160; */</doc>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='761' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='780' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='792' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='795' u='c'/>

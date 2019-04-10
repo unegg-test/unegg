@@ -1,0 +1,3 @@
+_ZNKSt8_Rb_tree8key_compEv|std::_Rb_tree::key_comp
+_ZNKSt8multiset8key_compEv|std::multiset::key_comp
+_ZNKSt3set8key_compEv|std::set::key_comp

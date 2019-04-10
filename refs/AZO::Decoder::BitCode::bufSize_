@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/algorithm/azo/Decoder/BitCodeD.h' l='43' type='u_int'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/BitCodeD.cpp' l='20' u='w' c='_ZN3AZO7Decoder7BitCodeC1EPKhj'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/BitCodeD.cpp' l='31' u='r' c='_ZN3AZO7Decoder7BitCode4CodeERT_j'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/BitCodeD.cpp' l='88' u='r' c='_ZN3AZO7Decoder7BitCode4CodeERb'/>
+<offset>64</offset>

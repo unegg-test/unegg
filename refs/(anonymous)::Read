@@ -1,0 +1,21 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='129' type='Byte (*)(void *)'/>
+<dec f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='139' type='SRes (*)(void *, void *, size_t *)'/>
+<dec f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='163' type='SRes (*)(void *, void *, size_t *)'/>
+<dec f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='176' type='SRes (*)(void *, void *, size_t *)'/>
+<offset>128</offset>
+<doc f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='129'>/* reads one byte, returns 0 in case of EOF or error */</doc>
+<doc f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='163'>/* same as ISeqInStream::Read */</doc>
+<doc f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='174'>/* offset must be &lt;= output(*size) of Look */</doc>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='261' u='w' c='FileSeqInStream_CreateVTable'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='280' u='w' c='FileInStream_CreateVTable'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='13' u='r' c='SeqInStream_Read2'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='30' u='r' c='SeqInStream_ReadByte'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='55' u='r' c='LookInStream_Read2'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='78' u='r' c='LookToRead_Look_Lookahead'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='97' u='r' c='LookToRead_Look_Exact'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='118' u='r' c='LookToRead_Read'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='138' u='w' c='LookToRead_CreateVTable'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='155' u='w' c='SecToLook_CreateVTable'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='161' u='r' c='SecToRead_Read'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='166' u='w' c='SecToRead_CreateVTable'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='87' u='r' c='MatchFinder_ReadBlock'/>

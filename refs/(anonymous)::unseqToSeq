@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='238' type='UChar [256]'/>
+<offset>3072</offset>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='112' u='w' c='makeMaps_e'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='167' u='r' c='generateMTFValues'/>

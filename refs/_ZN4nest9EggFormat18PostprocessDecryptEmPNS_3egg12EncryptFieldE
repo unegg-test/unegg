@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/format/EggFormat.h' l='110' type='int nest::EggFormat::PostprocessDecrypt(size_t index, egg::EncryptField * header)'/>
+<def f='codebrowser/nest/format/EggFormat.cpp' l='982' ll='985' type='int nest::EggFormat::PostprocessDecrypt(size_t index, egg::EncryptField * header)'/>

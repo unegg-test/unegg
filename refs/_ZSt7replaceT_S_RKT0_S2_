@@ -1,0 +1,2 @@
+<dec f='include/c++/7/bits/algorithmfwd.h' l='754' type='void std::replace(_FIter , _FIter , const _Tp &amp; , const _Tp &amp; )'/>
+<def f='include/c++/7/bits/stl_algo.h' l='4363' ll='4379' type='void std::replace(_ForwardIterator __first, _ForwardIterator __last, const _Tp &amp; __old_value, const _Tp &amp; __new_value)'/>

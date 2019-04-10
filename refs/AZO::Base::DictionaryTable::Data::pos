@@ -1,0 +1,6 @@
+<dec f='codebrowser/nest/algorithm/azo/Base/DictionaryTableB.h' l='26' type='u_int'/>
+<use f='codebrowser/nest/algorithm/azo/Base/DictionaryTableB.h' l='29' u='w' c='_ZN3AZO4Base15DictionaryTable4DataC1Ev'/>
+<use f='codebrowser/nest/algorithm/azo/Base/DictionaryTableB.cpp' l='23' u='w' c='_ZN3AZO4Base15DictionaryTable6UpdateEjj'/>
+<use f='codebrowser/nest/algorithm/azo/Base/DictionaryTableB.cpp' l='32' u='w' c='_ZN3AZO4Base15DictionaryTable6UpdateEjjj'/>
+<offset>0</offset>
+<use f='codebrowser/nest/algorithm/azo/Decoder/DictionaryTableD.cpp' l='51' u='r' c='_ZN3AZO7Decoder15DictionaryTable3GetEjRjS2_'/>

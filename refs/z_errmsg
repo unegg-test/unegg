@@ -1,0 +1,9 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zutil.h' l='43' type='const char *const [10]'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/zutil.h' l='43'>/* indexed by 2-zlib_error */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='296' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='598' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='600' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='806' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='811' macro='1' u='r'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/zutil.c' l='14' ll='24' type='const char *const [10]'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/zutil.c' l='136' macro='1' u='r'/>

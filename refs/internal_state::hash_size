@@ -1,0 +1,13 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='137' type='uInt'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='277' u='w' c='deflateInit2_'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='278' u='r' c='deflateInit2_'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='283' u='r' c='deflateInit2_'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='194' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='195' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='958' u='r' c='deflateCopy'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='970' u='r' c='deflateCopy'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='194' u='r' c='lm_init'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='195' u='r' c='lm_init'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1345' u='r' c='fill_window'/>
+<offset>928</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='137'>/* number of elements in hash table */</doc>

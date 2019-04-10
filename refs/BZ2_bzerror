@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.h' l='268' type='const char * BZ2_bzerror(BZFILE * b, int * errnum)'/>
+<def f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1559' ll='1566' type='const char * BZ2_bzerror(BZFILE * b, int * errnum)'/>

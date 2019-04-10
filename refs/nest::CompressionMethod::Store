@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/nest.h' l='164' type='0'/>
+<use f='codebrowser/nest/format/alz/File.h' l='70' u='r' c='_ZN4nest3alz4File17GetCompressMethodEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='496' c='_ZN4nest9ALZFormat13GenerateCoderEiPPNS_5CoderEPm'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='481' c='_ZN4nest9EggFormat13GenerateCoderEiPPNS_5CoderEPm'/>
+<use f='codebrowser/nest/format/egg/Block.cpp' l='94' c='_ZN4nest3egg5Block22GetComressMethodStringEv'/>

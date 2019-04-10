@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.h' l='175' type='void BZ2_bzWrite(int * bzerror, BZFILE * b, void * buf, int len)'/>
+<def f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='964' ll='1005' type='void BZ2_bzWrite(int * bzerror, BZFILE * b, void * buf, int len)'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1496' u='c' c='BZ2_bzwrite'/>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='963'>/*---------------------------------------------------*/</doc>

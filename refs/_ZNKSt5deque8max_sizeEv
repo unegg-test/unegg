@@ -1,0 +1,2 @@
+<def f='include/c++/7/bits/stl_deque.h' l='1275' ll='1277' type='size_type std::deque::max_size() const'/>
+<doc f='include/c++/7/bits/stl_deque.h' l='1274'>/**  Returns the size() of the largest possible %deque.  */</doc>

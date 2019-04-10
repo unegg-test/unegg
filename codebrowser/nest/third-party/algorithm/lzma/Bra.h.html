@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Bra.h source code [codebrowser/nest/third-party/algorithm/lzma/Bra.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/third-party/algorithm/lzma/Bra.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>nest</a>/<a href='../..'>third-party</a>/<a href='..'>algorithm</a>/<a href='./'>lzma</a>/<a href='Bra.h.html'>Bra.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* Bra.h -- Branch converters for executables</i></td></tr>
+<tr><th id="2">2</th><td><i> 2009-02-07 : Igor Pavlov : Public domain */</i></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#<span data-ppcond="4">ifndef</span> <span class="macro" data-ref="_M/__BRA_H">__BRA_H</span></u></td></tr>
+<tr><th id="5">5</th><td><u>#define <dfn class="macro" id="_M/__BRA_H" data-ref="_M/__BRA_H">__BRA_H</dfn></u></td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><u>#include <a href="Types.h.html">"Types.h"</a></u></td></tr>
+<tr><th id="8">8</th><td></td></tr>
+<tr><th id="9">9</th><td><u>#<span data-ppcond="9">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="10">10</th><td><b>extern</b> <q>"C"</q></td></tr>
+<tr><th id="11">11</th><td>{</td></tr>
+<tr><th id="12">12</th><td><u>#<span data-ppcond="9">endif</span></u></td></tr>
+<tr><th id="13">13</th><td></td></tr>
+<tr><th id="14">14</th><td><i>/*</i></td></tr>
+<tr><th id="15">15</th><td><i> These functions convert relative addresses to absolute addresses</i></td></tr>
+<tr><th id="16">16</th><td><i> in CALL instructions to increase the compression ratio.</i></td></tr>
+<tr><th id="17">17</th><td><i></i></td></tr>
+<tr><th id="18">18</th><td><i> In:</i></td></tr>
+<tr><th id="19">19</th><td><i> data     - data buffer</i></td></tr>
+<tr><th id="20">20</th><td><i> size     - size of data</i></td></tr>
+<tr><th id="21">21</th><td><i> ip       - current virtual Instruction Pinter (IP) value</i></td></tr>
+<tr><th id="22">22</th><td><i> state    - state variable for x86 converter</i></td></tr>
+<tr><th id="23">23</th><td><i> encoding - 0 (for decoding), 1 (for encoding)</i></td></tr>
+<tr><th id="24">24</th><td><i></i></td></tr>
+<tr><th id="25">25</th><td><i> Out:</i></td></tr>
+<tr><th id="26">26</th><td><i> state    - state variable for x86 converter</i></td></tr>
+<tr><th id="27">27</th><td><i></i></td></tr>
+<tr><th id="28">28</th><td><i> Returns:</i></td></tr>
+<tr><th id="29">29</th><td><i> The number of processed bytes. If you call these functions with multiple calls,</i></td></tr>
+<tr><th id="30">30</th><td><i> you must start next call with first byte after block of processed bytes.</i></td></tr>
+<tr><th id="31">31</th><td><i></i></td></tr>
+<tr><th id="32">32</th><td><i> Type   Endian  Alignment  LookAhead</i></td></tr>
+<tr><th id="33">33</th><td><i></i></td></tr>
+<tr><th id="34">34</th><td><i> x86    little      1          4</i></td></tr>
+<tr><th id="35">35</th><td><i> ARMT   little      2          2</i></td></tr>
+<tr><th id="36">36</th><td><i> ARM    little      4          0</i></td></tr>
+<tr><th id="37">37</th><td><i> PPC     big        4          0</i></td></tr>
+<tr><th id="38">38</th><td><i> SPARC   big        4          0</i></td></tr>
+<tr><th id="39">39</th><td><i> IA64   little     16          0</i></td></tr>
+<tr><th id="40">40</th><td><i></i></td></tr>
+<tr><th id="41">41</th><td><i> size must be &gt;= Alignment + LookAhead, if it's not last block.</i></td></tr>
+<tr><th id="42">42</th><td><i> If (size &lt; Alignment + LookAhead), converter returns 0.</i></td></tr>
+<tr><th id="43">43</th><td><i></i></td></tr>
+<tr><th id="44">44</th><td><i> Example:</i></td></tr>
+<tr><th id="45">45</th><td><i></i></td></tr>
+<tr><th id="46">46</th><td><i> UInt32 ip = 0;</i></td></tr>
+<tr><th id="47">47</th><td><i> for ()</i></td></tr>
+<tr><th id="48">48</th><td><i> {</i></td></tr>
+<tr><th id="49">49</th><td><i> ; size must be &gt;= Alignment + LookAhead, if it's not last block</i></td></tr>
+<tr><th id="50">50</th><td><i> SizeT processed = Convert(data, size, ip, 1);</i></td></tr>
+<tr><th id="51">51</th><td><i> data += processed;</i></td></tr>
+<tr><th id="52">52</th><td><i> size -= processed;</i></td></tr>
+<tr><th id="53">53</th><td><i> ip += processed;</i></td></tr>
+<tr><th id="54">54</th><td><i> }</i></td></tr>
+<tr><th id="55">55</th><td><i> */</i></td></tr>
+<tr><th id="56">56</th><td></td></tr>
+<tr><th id="57">57</th><td><u>#define <dfn class="macro" id="_M/x86_Convert_Init" data-ref="_M/x86_Convert_Init">x86_Convert_Init</dfn>(state) { state = 0; }</u></td></tr>
+<tr><th id="58">58</th><td><a class="typedef" href="Types.h.html#SizeT" title='SizeT' data-type='size_t' data-ref="SizeT">SizeT</a> <dfn class="decl" id="x86_Convert" title='x86_Convert' data-ref="x86_Convert">x86_Convert</dfn>(<a class="typedef" href="Types.h.html#Byte" title='Byte' data-type='unsigned char' data-ref="Byte">Byte</a> *<dfn class="local col1 decl" id="1data" title='data' data-type='Byte *' data-ref="1data">data</dfn>, <a class="typedef" href="Types.h.html#SizeT" title='SizeT' data-type='size_t' data-ref="SizeT">SizeT</a> <dfn class="local col2 decl" id="2size" title='size' data-type='SizeT' data-ref="2size">size</dfn>, <a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> <dfn class="local col3 decl" id="3ip" title='ip' data-type='UInt32' data-ref="3ip">ip</dfn>, <a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> *<dfn class="local col4 decl" id="4state" title='state' data-type='UInt32 *' data-ref="4state">state</dfn>, <em>int</em> <dfn class="local col5 decl" id="5encoding" title='encoding' data-type='int' data-ref="5encoding">encoding</dfn>);</td></tr>
+<tr><th id="59">59</th><td><a class="typedef" href="Types.h.html#SizeT" title='SizeT' data-type='size_t' data-ref="SizeT">SizeT</a> <a class="decl" href="Bra.c.html#ARM_Convert" title='ARM_Convert' data-ref="ARM_Convert" id="ARM_Convert">ARM_Convert</a>(<a class="typedef" href="Types.h.html#Byte" title='Byte' data-type='unsigned char' data-ref="Byte">Byte</a> *<dfn class="local col6 decl" id="6data" title='data' data-type='Byte *' data-ref="6data">data</dfn>, <a class="typedef" href="Types.h.html#SizeT" title='SizeT' data-type='size_t' data-ref="SizeT">SizeT</a> <dfn class="local col7 decl" id="7size" title='size' data-type='SizeT' data-ref="7size">size</dfn>, <a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> <dfn class="local col8 decl" id="8ip" title='ip' data-type='UInt32' data-ref="8ip">ip</dfn>, <em>int</em> <dfn class="local col9 decl" id="9encoding" title='encoding' data-type='int' data-ref="9encoding">encoding</dfn>);</td></tr>
+<tr><th id="60">60</th><td><a class="typedef" href="Types.h.html#SizeT" title='SizeT' data-type='size_t' data-ref="SizeT">SizeT</a> <a class="decl" href="Bra.c.html#ARMT_Convert" title='ARMT_Convert' data-ref="ARMT_Convert" id="ARMT_Convert">ARMT_Convert</a>(<a class="typedef" href="Types.h.html#Byte" title='Byte' data-type='unsigned char' data-ref="Byte">Byte</a> *<dfn class="local col0 decl" id="10data" title='data' data-type='Byte *' data-ref="10data">data</dfn>, <a class="typedef" href="Types.h.html#SizeT" title='SizeT' data-type='size_t' data-ref="SizeT">SizeT</a> <dfn class="local col1 decl" id="11size" title='size' data-type='SizeT' data-ref="11size">size</dfn>, <a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> <dfn class="local col2 decl" id="12ip" title='ip' data-type='UInt32' data-ref="12ip">ip</dfn>, <em>int</em> <dfn class="local col3 decl" id="13encoding" title='encoding' data-type='int' data-ref="13encoding">encoding</dfn>);</td></tr>
+<tr><th id="61">61</th><td><a class="typedef" href="Types.h.html#SizeT" title='SizeT' data-type='size_t' data-ref="SizeT">SizeT</a> <a class="decl" href="Bra.c.html#PPC_Convert" title='PPC_Convert' data-ref="PPC_Convert" id="PPC_Convert">PPC_Convert</a>(<a class="typedef" href="Types.h.html#Byte" title='Byte' data-type='unsigned char' data-ref="Byte">Byte</a> *<dfn class="local col4 decl" id="14data" title='data' data-type='Byte *' data-ref="14data">data</dfn>, <a class="typedef" href="Types.h.html#SizeT" title='SizeT' data-type='size_t' data-ref="SizeT">SizeT</a> <dfn class="local col5 decl" id="15size" title='size' data-type='SizeT' data-ref="15size">size</dfn>, <a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> <dfn class="local col6 decl" id="16ip" title='ip' data-type='UInt32' data-ref="16ip">ip</dfn>, <em>int</em> <dfn class="local col7 decl" id="17encoding" title='encoding' data-type='int' data-ref="17encoding">encoding</dfn>);</td></tr>
+<tr><th id="62">62</th><td><a class="typedef" href="Types.h.html#SizeT" title='SizeT' data-type='size_t' data-ref="SizeT">SizeT</a> <a class="decl" href="Bra.c.html#SPARC_Convert" title='SPARC_Convert' data-ref="SPARC_Convert" id="SPARC_Convert">SPARC_Convert</a>(<a class="typedef" href="Types.h.html#Byte" title='Byte' data-type='unsigned char' data-ref="Byte">Byte</a> *<dfn class="local col8 decl" id="18data" title='data' data-type='Byte *' data-ref="18data">data</dfn>, <a class="typedef" href="Types.h.html#SizeT" title='SizeT' data-type='size_t' data-ref="SizeT">SizeT</a> <dfn class="local col9 decl" id="19size" title='size' data-type='SizeT' data-ref="19size">size</dfn>, <a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> <dfn class="local col0 decl" id="20ip" title='ip' data-type='UInt32' data-ref="20ip">ip</dfn>, <em>int</em> <dfn class="local col1 decl" id="21encoding" title='encoding' data-type='int' data-ref="21encoding">encoding</dfn>);</td></tr>
+<tr><th id="63">63</th><td><a class="typedef" href="Types.h.html#SizeT" title='SizeT' data-type='size_t' data-ref="SizeT">SizeT</a> <dfn class="decl" id="IA64_Convert" title='IA64_Convert' data-ref="IA64_Convert">IA64_Convert</dfn>(<a class="typedef" href="Types.h.html#Byte" title='Byte' data-type='unsigned char' data-ref="Byte">Byte</a> *<dfn class="local col2 decl" id="22data" title='data' data-type='Byte *' data-ref="22data">data</dfn>, <a class="typedef" href="Types.h.html#SizeT" title='SizeT' data-type='size_t' data-ref="SizeT">SizeT</a> <dfn class="local col3 decl" id="23size" title='size' data-type='SizeT' data-ref="23size">size</dfn>, <a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> <dfn class="local col4 decl" id="24ip" title='ip' data-type='UInt32' data-ref="24ip">ip</dfn>, <em>int</em> <dfn class="local col5 decl" id="25encoding" title='encoding' data-type='int' data-ref="25encoding">encoding</dfn>);</td></tr>
+<tr><th id="64">64</th><td></td></tr>
+<tr><th id="65">65</th><td><u>#<span data-ppcond="65">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="66">66</th><td>}</td></tr>
+<tr><th id="67">67</th><td><u>#<span data-ppcond="65">endif</span></u></td></tr>
+<tr><th id="68">68</th><td></td></tr>
+<tr><th id="69">69</th><td><u>#<span data-ppcond="4">endif</span></u></td></tr>
+<tr><th id="70">70</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='Bra.c.html'>codebrowser/nest/third-party/algorithm/lzma/Bra.c</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

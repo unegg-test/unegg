@@ -1,0 +1,7 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='617' type='int deflateCopy(z_streamp dest, z_streamp source)'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='930' ll='983' type='int deflateCopy(z_streamp dest, z_streamp source)'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='925'>/* =========================================================================
+ * Copy the source state to the destination state.
+ * To simplify the source, this is not supported for 16-bit MSDOS (which
+ * doesn&apos;t have enough memory anyway to duplicate compression states).
+ */</doc>

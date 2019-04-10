@@ -1,0 +1,10 @@
+<use f='codebrowser/nest/algorithm/azo/Common/BufferMan.h' l='19' u='r' c='_ZN3AZO9BufferMan5ClearEv'/>
+<use f='codebrowser/nest/algorithm/azo/Common/BufferMan.h' l='22' u='r' c='_ZN3AZO9BufferMan7GetSizeEv'/>
+<use f='codebrowser/nest/algorithm/azo/Common/BufferMan.h' l='24' u='r' c='_ZN3AZO9BufferMan13GetRemainSizeEv'/>
+<dec f='codebrowser/nest/algorithm/azo/Common/BufferMan.h' l='30' type='u_int'/>
+<use f='codebrowser/nest/algorithm/azo/Common/BufferMan.cpp' l='12' u='w' c='_ZN3AZO9BufferManC1Ev'/>
+<use f='codebrowser/nest/algorithm/azo/Common/BufferMan.cpp' l='25' u='r' c='_ZN3AZO9BufferMan8CapacityEj'/>
+<use f='codebrowser/nest/algorithm/azo/Common/BufferMan.cpp' l='34' u='r' c='_ZN3AZO9BufferMan8CapacityEj'/>
+<use f='codebrowser/nest/algorithm/azo/Common/BufferMan.cpp' l='42' u='w' c='_ZN3AZO9BufferMan8CapacityEj'/>
+<use f='codebrowser/nest/algorithm/azo/Common/BufferMan.cpp' l='65' u='r' c='_ZN3AZO9BufferMan3AddEPKhj'/>
+<offset>128</offset>

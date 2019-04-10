@@ -1,0 +1,11 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='106' type='int'/>
+<offset>736</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='106'>/* compression strategy */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='105' u='w' c='gz_open'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='128' u='w' c='gz_open'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='131' u='w' c='gz_open'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='134' u='w' c='gz_open'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='137' u='w' c='gz_open'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='38' u='r' c='gz_init'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='477' u='r' c='gzsetparams'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='495' u='w' c='gzsetparams'/>

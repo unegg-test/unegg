@@ -1,0 +1,8 @@
+<dec f='codebrowser/nest/Workspace.h' l='77' type='std::stack&lt;int&gt;'/>
+<offset>832</offset>
+<use f='codebrowser/nest/Workspace.cpp' l='167' u='m' c='_ZN4nest9Workspace11GetLastWorkEv'/>
+<use f='codebrowser/nest/Workspace.cpp' l='172' u='a' c='_ZN4nest9Workspace12GetWorkStackEv'/>
+<use f='codebrowser/nest/Workspace.cpp' l='197' u='m' c='_ZN4nest9Workspace11OnWorkStartEi'/>
+<use f='codebrowser/nest/Workspace.cpp' l='204' u='m' c='_ZN4nest9Workspace11OnWorkStartEi'/>
+<use f='codebrowser/nest/Workspace.cpp' l='222' u='m' c='_ZN4nest9Workspace12OnWorkFinishEii'/>
+<use f='codebrowser/nest/Workspace.cpp' l='224' u='m' c='_ZN4nest9Workspace12OnWorkFinishEii'/>

@@ -1,0 +1,15 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/Bcj2.h' l='28' type='int Bcj2_Decode(const Byte * buf0, SizeT size0, const Byte * buf1, SizeT size1, const Byte * buf2, SizeT size2, const Byte * buf3, SizeT size3, Byte * outBuf, SizeT outSize)'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/Bcj2.c' l='33' ll='127' type='int Bcj2_Decode(const Byte * buf0, SizeT size0, const Byte * buf1, SizeT size1, const Byte * buf2, SizeT size2, const Byte * buf3, SizeT size3, Byte * outBuf, SizeT outSize)'/>
+<doc f='codebrowser/nest/third-party/algorithm/lzma/Bcj2.h' l='14'>/*
+ Conditions:
+ outSize &lt;= FullOutputSize,
+ where FullOutputSize is full size of output stream of x86_2 filter.
+
+ If buf0 overlaps outBuf, there are two required conditions:
+ 1) (buf0 &gt;= outBuf)
+ 2) (buf0 + size0 &gt;= outBuf + FullOutputSize).
+
+ Returns:
+ SZ_OK
+ SZ_ERROR_DATA - Data error
+ */</doc>

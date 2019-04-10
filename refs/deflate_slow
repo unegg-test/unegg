@@ -1,0 +1,26 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='80' type='block_state deflate_slow(deflate_state * s, int flush)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='138'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='138'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='139'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='139'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='140'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='140'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='141'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='141'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='142'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='142'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='143'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='143'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='138'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='138'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='139'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='139'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='140'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='140'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='141'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='141'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='142'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='142'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='143'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='143'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1616' ll='1733' macro='1' type='block_state deflate_slow(deflate_state * s, int flush)'/>

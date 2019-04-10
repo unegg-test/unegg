@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/7zCrc.h' l='14' type='void CrcGenerateTable()'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/7zCrc.c' l='51' ll='76' type='void CrcGenerateTable()'/>
+<doc f='codebrowser/nest/third-party/algorithm/lzma/7zCrc.h' l='13'>/* Call CrcGenerateTable one time before other CRC functions */</doc>

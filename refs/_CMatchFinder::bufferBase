@@ -1,0 +1,14 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzFind.h' l='33' type='Byte *'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='21' u='r' c='LzInWindow_Free'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='22' u='w' c='LzInWindow_Free'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='36' u='r' c='LzInWindow_Create'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='40' u='w' c='LzInWindow_Create'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='42' u='r' c='LzInWindow_Create'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='84' u='r' c='MatchFinder_ReadBlock'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='103' u='r' c='MatchFinder_MoveBlock'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='106' u='r' c='MatchFinder_MoveBlock'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='114' u='r' c='MatchFinder_NeedMove'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='145' u='w' c='MatchFinder_Construct'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='288' u='r' c='MatchFinder_Init'/>
+<offset>512</offset>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='2031' u='w' c='LzmaEnc_SetInputBuf'/>

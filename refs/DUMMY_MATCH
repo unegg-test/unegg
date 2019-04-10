@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='475' type='2'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='541' u='r' c='LzmaDec_TryDummy'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='772' u='r' c='LzmaDec_DecodeToDic'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='804' u='r' c='LzmaDec_DecodeToDic'/>

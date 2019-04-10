@@ -1,0 +1,3 @@
+<dec f='codebrowser/EventHandler.h' l='38' type='void EventHandler::SetRedirect(bool redirect)'/>
+<def f='codebrowser/EventHandler.cpp' l='38' ll='41' type='void EventHandler::SetRedirect(bool redirect)'/>
+<use f='codebrowser/UnEgg.cpp' l='370' u='c' c='main'/>

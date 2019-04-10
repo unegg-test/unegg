@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/algorithm/azo/Base/EntropyBitProbB.h' l='34' type='static int AZO::Base::EntropyBitProb::Compare(EntropyBitProb&lt;N&gt; e1, EntropyBitProb&lt;N&gt; e2, u_int value)'/>
+<def f='codebrowser/nest/algorithm/azo/Base/EntropyBitProbB.cpp' l='64' ll='98' type='static int AZO::Base::EntropyBitProb::Compare(EntropyBitProb&lt;N&gt; e1, EntropyBitProb&lt;N&gt; e2, u_int value)'/>

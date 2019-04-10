@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.h' l='248' type='int BZ2_bzread(BZFILE * b, void * buf, int len)'/>
+<def f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1478' ll='1488' type='int BZ2_bzread(BZFILE * b, void * buf, int len)'/>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1477'>/*---------------------------------------------------*/</doc>

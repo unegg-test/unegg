@@ -1,0 +1,11 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='99' type='int'/>
+<offset>480</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='99'>/* true if end of input file reached */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='76' u='w' c='gz_reset'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='313' u='w' c='gzseek64'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='437' u='r' c='gzeof'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='475' u='w' c='gzclearerr'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='41' u='w' c='gz_load'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='57' u='r' c='gz_avail'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='350' u='r' c='gz_skip'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='412' u='r' c='gzread'/>

@@ -1,0 +1,14 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='121'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='259' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='260' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='261' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='404' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='406' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='407' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='408' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='409' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='256' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='257' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='267' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='463' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='304' u='c'/>

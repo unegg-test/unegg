@@ -1,0 +1,16 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='485' type='Int32 BZ2_indexIntoF(Int32 , Int32 * )'/>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='482'>/*-- externs for decompression. --*/</doc>
+<def f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='687' ll='698' type='Int32 BZ2_indexIntoF(Int32 indx, Int32 * cftab)'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='735' macro='1' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='741' macro='1' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='747' macro='1' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='752' macro='1' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='755' macro='1' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='784' macro='1' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='789' macro='1' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='794' macro='1' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='798' macro='1' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='800' macro='1' u='c'/>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='686'>/*---------------------------------------------------*/</doc>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='551' macro='1' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='554' macro='1' u='c'/>

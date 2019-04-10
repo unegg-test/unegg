@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>aes.h source code [codebrowser/nest/third-party/encryption/aes/aes.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/third-party/encryption/aes/aes.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>nest</a>/<a href='../..'>third-party</a>/<a href='..'>encryption</a>/<a href='./'>aes</a>/<a href='aes.h.html'>aes.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> ---------------------------------------------------------------------------</i></td></tr>
+<tr><th id="3">3</th><td><i> Copyright (c) 2002, Dr Brian Gladman &lt;                 &gt;, Worcester, UK.</i></td></tr>
+<tr><th id="4">4</th><td><i> All rights reserved.</i></td></tr>
+<tr><th id="5">5</th><td><i></i></td></tr>
+<tr><th id="6">6</th><td><i> LICENSE TERMS</i></td></tr>
+<tr><th id="7">7</th><td><i></i></td></tr>
+<tr><th id="8">8</th><td><i> The free distribution and use of this software in both source and binary</i></td></tr>
+<tr><th id="9">9</th><td><i> form is allowed (with or without changes) provided that:</i></td></tr>
+<tr><th id="10">10</th><td><i></i></td></tr>
+<tr><th id="11">11</th><td><i>   1. distributions of this source code include the above copyright</i></td></tr>
+<tr><th id="12">12</th><td><i>      notice, this list of conditions and the following disclaimer;</i></td></tr>
+<tr><th id="13">13</th><td><i></i></td></tr>
+<tr><th id="14">14</th><td><i>   2. distributions in binary form include the above copyright</i></td></tr>
+<tr><th id="15">15</th><td><i>      notice, this list of conditions and the following disclaimer</i></td></tr>
+<tr><th id="16">16</th><td><i>      in the documentation and/or other associated materials;</i></td></tr>
+<tr><th id="17">17</th><td><i></i></td></tr>
+<tr><th id="18">18</th><td><i>   3. the copyright holder's name is not used to endorse products</i></td></tr>
+<tr><th id="19">19</th><td><i>      built using this software without specific written permission.</i></td></tr>
+<tr><th id="20">20</th><td><i></i></td></tr>
+<tr><th id="21">21</th><td><i> ALTERNATIVELY, provided that this notice is retained in full, this product</i></td></tr>
+<tr><th id="22">22</th><td><i> may be distributed under the terms of the GNU General Public License (GPL),</i></td></tr>
+<tr><th id="23">23</th><td><i> in which case the provisions of the GPL apply INSTEAD OF those given above.</i></td></tr>
+<tr><th id="24">24</th><td><i></i></td></tr>
+<tr><th id="25">25</th><td><i> DISCLAIMER</i></td></tr>
+<tr><th id="26">26</th><td><i></i></td></tr>
+<tr><th id="27">27</th><td><i> This software is provided 'as is' with no explicit or implied warranties</i></td></tr>
+<tr><th id="28">28</th><td><i> in respect of its properties, including, but not limited to, correctness</i></td></tr>
+<tr><th id="29">29</th><td><i> and/or fitness for purpose.</i></td></tr>
+<tr><th id="30">30</th><td><i> ---------------------------------------------------------------------------</i></td></tr>
+<tr><th id="31">31</th><td><i> Issue Date: 24/01/2003</i></td></tr>
+<tr><th id="32">32</th><td><i></i></td></tr>
+<tr><th id="33">33</th><td><i> This file contains the definitions required to use AES and Rijndael in C.</i></td></tr>
+<tr><th id="34">34</th><td><i>*/</i></td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td><u>#<span data-ppcond="36">ifndef</span> <span class="macro" data-ref="_M/_AES_H">_AES_H</span></u></td></tr>
+<tr><th id="37">37</th><td><u>#define <dfn class="macro" id="_M/_AES_H" data-ref="_M/_AES_H">_AES_H</dfn></u></td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><u>#<span data-ppcond="39">if</span> defined(<span class="macro" data-ref="_M/__cplusplus">__cplusplus</span>)</u></td></tr>
+<tr><th id="40">40</th><td><b>extern</b> <q>"C"</q></td></tr>
+<tr><th id="41">41</th><td>{</td></tr>
+<tr><th id="42">42</th><td><u>#<span data-ppcond="39">endif</span></u></td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td><i>/* If a table pointer is needed in the AES context, include the define  */</i></td></tr>
+<tr><th id="45">45</th><td><i>/* #define AES_TABLE_PTR                                                */</i></td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td><i>/*  This include is used to find 8 and 32 bit unsigned integer types    */</i></td></tr>
+<tr><th id="48">48</th><td><u>#include "limits.h"</u></td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td><u>#<span data-ppcond="50">if</span> <span class="macro" title="(127*2 +1)" data-ref="_M/UCHAR_MAX">UCHAR_MAX</span> == 0xff                       /* an unsigned 8 bit type   */</u></td></tr>
+<tr><th id="51">51</th><td>  <b>typedef</b> <em>unsigned</em> <em>char</em>      <dfn class="typedef" id="aes_08t" title='aes_08t' data-type='unsigned char' data-ref="aes_08t">aes_08t</dfn>;</td></tr>
+<tr><th id="52">52</th><td><u>#<span data-ppcond="50">else</span></u></td></tr>
+<tr><th id="53">53</th><td><u>#error Please define aes_08t as an 8-bit unsigned integer type in aes.h</u></td></tr>
+<tr><th id="54">54</th><td><u>#<span data-ppcond="50">endif</span></u></td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td><u>#<span data-ppcond="56">if</span> <span class="macro" title="(2147483647 *2U +1U)" data-ref="_M/UINT_MAX">UINT_MAX</span> == 0xffffffff                  /* an unsigned 32 bit type  */</u></td></tr>
+<tr><th id="57">57</th><td>  <b>typedef</b>   <em>unsigned</em> <em>int</em>     <dfn class="typedef" id="aes_32t" title='aes_32t' data-type='unsigned int' data-ref="aes_32t">aes_32t</dfn>;</td></tr>
+<tr><th id="58">58</th><td><u>#<span data-ppcond="56">elif</span> ULONG_MAX == 0xffffffff</u></td></tr>
+<tr><th id="59">59</th><td>  <b>typedef</b>   <em>unsigned</em> <em>int</em>    aes_32t;</td></tr>
+<tr><th id="60">60</th><td><u>#else</u></td></tr>
+<tr><th id="61">61</th><td><u>#error Please define aes_32t as a 32-bit unsigned integer type in aes.h</u></td></tr>
+<tr><th id="62">62</th><td><u>#<span data-ppcond="56">endif</span></u></td></tr>
+<tr><th id="63">63</th><td></td></tr>
+<tr><th id="64">64</th><td><i>/* This BLOCK_SIZE is in BYTES.  It can have the values 16, 24, 32 or   */</i></td></tr>
+<tr><th id="65">65</th><td><i>/* undefined for use with aescrypt.c and aeskey.c, or 16, 20, 24, 28,   */</i></td></tr>
+<tr><th id="66">66</th><td><i>/* 32 or undefined for use with aescrypp.c and aeskeypp.c.   When the   */</i></td></tr>
+<tr><th id="67">67</th><td><i>/* BLOCK_SIZE is left undefined a version that provides a dynamically   */</i></td></tr>
+<tr><th id="68">68</th><td><i>/* variable block size is produced but this is MUCH slower.             */</i></td></tr>
+<tr><th id="69">69</th><td></td></tr>
+<tr><th id="70">70</th><td><u>#define <dfn class="macro" id="_M/BLOCK_SIZE" data-ref="_M/BLOCK_SIZE">BLOCK_SIZE</dfn>  16</u></td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td><i>/* key schedule length (in 32-bit words)                                */</i></td></tr>
+<tr><th id="73">73</th><td></td></tr>
+<tr><th id="74">74</th><td><u>#<span data-ppcond="74">if</span> !defined(<a class="macro" href="#70" data-ref="_M/BLOCK_SIZE">BLOCK_SIZE</a>)</u></td></tr>
+<tr><th id="75">75</th><td><u>#define KS_LENGTH   128</u></td></tr>
+<tr><th id="76">76</th><td><u>#<span data-ppcond="74">else</span></u></td></tr>
+<tr><th id="77">77</th><td><u>#define <dfn class="macro" id="_M/KS_LENGTH" data-ref="_M/KS_LENGTH">KS_LENGTH</dfn>   (4 * BLOCK_SIZE)</u></td></tr>
+<tr><th id="78">78</th><td><u>#<span data-ppcond="74">endif</span></u></td></tr>
+<tr><th id="79">79</th><td></td></tr>
+<tr><th id="80">80</th><td><b>typedef</b> <em>unsigned</em> <em>int</em> <dfn class="typedef" id="aes_fret" title='aes_fret' data-type='unsigned int' data-ref="aes_fret">aes_fret</dfn>;   <i>/* type for function return value      */</i></td></tr>
+<tr><th id="81">81</th><td><u>#define <dfn class="macro" id="_M/aes_bad" data-ref="_M/aes_bad">aes_bad</dfn>      0           /* bad function return value           */</u></td></tr>
+<tr><th id="82">82</th><td><u>#define <dfn class="macro" id="_M/aes_good" data-ref="_M/aes_good">aes_good</dfn>     1           /* good function return value          */</u></td></tr>
+<tr><th id="83">83</th><td><u>#<span data-ppcond="83">ifndef</span> <span class="macro" data-ref="_M/AES_DLL">AES_DLL</span>                  /* implement normal or DLL functions   */</u></td></tr>
+<tr><th id="84">84</th><td><u>#define <dfn class="macro" id="_M/aes_rval" data-ref="_M/aes_rval">aes_rval</dfn>     <a class="typedef" href="#aes_fret" title='aes_fret' data-type='unsigned int' data-ref="aes_fret">aes_fret</a></u></td></tr>
+<tr><th id="85">85</th><td><u>#<span data-ppcond="83">else</span></u></td></tr>
+<tr><th id="86">86</th><td><u>#define aes_rval     aes_fret __declspec(dllexport) _stdcall</u></td></tr>
+<tr><th id="87">87</th><td><u>#<span data-ppcond="83">endif</span></u></td></tr>
+<tr><th id="88">88</th><td></td></tr>
+<tr><th id="89">89</th><td><b>typedef</b> <b>struct</b>                     <i>/* the AES context for encryption    */</i></td></tr>
+<tr><th id="90">90</th><td>{   <a class="typedef" href="#aes_32t" title='aes_32t' data-type='unsigned int' data-ref="aes_32t">aes_32t</a>    <dfn class="decl" id="(anonymous)::k_sch" title='(anonymous struct)::k_sch' data-ref="(anonymous)::k_sch">k_sch</dfn>[<a class="macro" href="#77" title="(4 * 16)" data-ref="_M/KS_LENGTH">KS_LENGTH</a>];   <i>/* the encryption key schedule       */</i></td></tr>
+<tr><th id="91">91</th><td>    <a class="typedef" href="#aes_32t" title='aes_32t' data-type='unsigned int' data-ref="aes_32t">aes_32t</a>    <dfn class="decl" id="(anonymous)::n_rnd" title='(anonymous struct)::n_rnd' data-ref="(anonymous)::n_rnd">n_rnd</dfn>;              <i>/* the number of cipher rounds       */</i></td></tr>
+<tr><th id="92">92</th><td>    <a class="typedef" href="#aes_32t" title='aes_32t' data-type='unsigned int' data-ref="aes_32t">aes_32t</a>    <dfn class="decl" id="(anonymous)::n_blk" title='(anonymous struct)::n_blk' data-ref="(anonymous)::n_blk">n_blk</dfn>;              <i>/* the number of bytes in the state  */</i></td></tr>
+<tr><th id="93">93</th><td><u>#<span data-ppcond="93">if</span> defined(<span class="macro" data-ref="_M/AES_TABLE_PTR">AES_TABLE_PTR</span>)         /* where global variables are not    */</u></td></tr>
+<tr><th id="94">94</th><td>    <em>void</em>      *t_ptr;              <i>/* available this pointer is used    */</i></td></tr>
+<tr><th id="95">95</th><td><u>#<span data-ppcond="93">endif</span>                             /* to point to the fixed tables      */</u></td></tr>
+<tr><th id="96">96</th><td>} <dfn class="typedef" id="aes_ctx" title='aes_ctx' data-type='struct aes_ctx' data-ref="aes_ctx">aes_ctx</dfn>;</td></tr>
+<tr><th id="97">97</th><td></td></tr>
+<tr><th id="98">98</th><td><i>/* The block length (blen) is input in bytes when it is in the range    */</i></td></tr>
+<tr><th id="99">99</th><td><i>/* 16 &lt;= blen &lt;= 32 or in bits when in the range 128 &lt;= blen &lt;= 256     */</i></td></tr>
+<tr><th id="100">100</th><td><i>/* Only 16 bytes (128 bits) is legal for AES but the files aescrypt.c   */</i></td></tr>
+<tr><th id="101">101</th><td><i>/* and aeskey.c provide support for 16, 24 and 32 byte (128, 192 and    */</i></td></tr>
+<tr><th id="102">102</th><td><i>/* 256 bit) blocks while aescrypp.c and aeskeypp.c provide support for  */</i></td></tr>
+<tr><th id="103">103</th><td><i>/* 16, 20, 24, 28 and 32 byte (128, 160, 192, 224 and 256 bit) blocks.  */</i></td></tr>
+<tr><th id="104">104</th><td><i>/* The value aes_good is returned if the requested block size is legal, */</i></td></tr>
+<tr><th id="105">105</th><td><i>/* otherwise aes_bad is returned.                                       */</i></td></tr>
+<tr><th id="106">106</th><td></td></tr>
+<tr><th id="107">107</th><td><u>#<span data-ppcond="107">if</span> !defined(<a class="macro" href="#70" data-ref="_M/BLOCK_SIZE">BLOCK_SIZE</a>)</u></td></tr>
+<tr><th id="108">108</th><td>aes_rval aes_set_block_size(<em>unsigned</em> <em>int</em> blen, aes_ctx cx[<var>1</var>]);</td></tr>
+<tr><th id="109">109</th><td><u>#<span data-ppcond="107">endif</span></u></td></tr>
+<tr><th id="110">110</th><td></td></tr>
+<tr><th id="111">111</th><td><i>/* The key length (klen) is input in bytes when it is in the range      */</i></td></tr>
+<tr><th id="112">112</th><td><i>/* 16 &lt;= klen &lt;= 32 or in bits when in the range 128 &lt;= klen &lt;= 256     */</i></td></tr>
+<tr><th id="113">113</th><td><i>/* The files aescrypt.c and aeskey.c provide support for 16, 24 and     */</i></td></tr>
+<tr><th id="114">114</th><td><i>/* 32 byte (128, 192 and 256 bit) keys while aescrypp.c and aeskeypp.c  */</i></td></tr>
+<tr><th id="115">115</th><td><i>/* provide support for 16, 20, 24, 28 and 32 byte (128, 160, 192, 224   */</i></td></tr>
+<tr><th id="116">116</th><td><i>/* and 256 bit) keys.  The value aes_good is returned if the requested  */</i></td></tr>
+<tr><th id="117">117</th><td><i>/* key size is legal, otherwise aes_bad is returned.                    */</i></td></tr>
+<tr><th id="118">118</th><td></td></tr>
+<tr><th id="119">119</th><td><a class="macro" href="#84" title="aes_fret" data-ref="_M/aes_rval">aes_rval</a> <dfn class="decl" id="aes_set_encrypt_key" title='aes_set_encrypt_key' data-ref="aes_set_encrypt_key">aes_set_encrypt_key</dfn>(<em>const</em> <em>unsigned</em> <em>char</em> <dfn class="local col1 decl" id="1in_key" title='in_key' data-type='const unsigned char *' data-ref="1in_key">in_key</dfn>[],</td></tr>
+<tr><th id="120">120</th><td>                                        <em>unsigned</em> <em>int</em> <dfn class="local col2 decl" id="2klen" title='klen' data-type='unsigned int' data-ref="2klen">klen</dfn>, <a class="typedef" href="#aes_ctx" title='aes_ctx' data-type='struct aes_ctx' data-ref="aes_ctx">aes_ctx</a> <dfn class="local col3 decl" id="3cx" title='cx' data-type='aes_ctx *' data-ref="3cx">cx</dfn>[<var>1</var>]);</td></tr>
+<tr><th id="121">121</th><td><a class="macro" href="#84" title="aes_fret" data-ref="_M/aes_rval">aes_rval</a> <dfn class="decl" id="aes_encrypt_block" title='aes_encrypt_block' data-ref="aes_encrypt_block">aes_encrypt_block</dfn>(<em>const</em> <em>unsigned</em> <em>char</em> <dfn class="local col4 decl" id="4in_blk" title='in_blk' data-type='const unsigned char *' data-ref="4in_blk">in_blk</dfn>[],</td></tr>
+<tr><th id="122">122</th><td>                            <em>unsigned</em> <em>char</em> <dfn class="local col5 decl" id="5out_blk" title='out_blk' data-type='unsigned char *' data-ref="5out_blk">out_blk</dfn>[], <em>const</em> <a class="typedef" href="#aes_ctx" title='aes_ctx' data-type='struct aes_ctx' data-ref="aes_ctx">aes_ctx</a> <dfn class="local col6 decl" id="6cx" title='cx' data-type='const aes_ctx *' data-ref="6cx">cx</dfn>[<var>1</var>]);</td></tr>
+<tr><th id="123">123</th><td></td></tr>
+<tr><th id="124">124</th><td><a class="macro" href="#84" title="aes_fret" data-ref="_M/aes_rval">aes_rval</a> <dfn class="decl" id="aes_set_decrypt_key" title='aes_set_decrypt_key' data-ref="aes_set_decrypt_key">aes_set_decrypt_key</dfn>(<em>const</em> <em>unsigned</em> <em>char</em> <dfn class="local col7 decl" id="7in_key" title='in_key' data-type='const unsigned char *' data-ref="7in_key">in_key</dfn>[],</td></tr>
+<tr><th id="125">125</th><td>                                        <em>unsigned</em> <em>int</em> <dfn class="local col8 decl" id="8klen" title='klen' data-type='unsigned int' data-ref="8klen">klen</dfn>, <a class="typedef" href="#aes_ctx" title='aes_ctx' data-type='struct aes_ctx' data-ref="aes_ctx">aes_ctx</a> <dfn class="local col9 decl" id="9cx" title='cx' data-type='aes_ctx *' data-ref="9cx">cx</dfn>[<var>1</var>]);</td></tr>
+<tr><th id="126">126</th><td><a class="macro" href="#84" title="aes_fret" data-ref="_M/aes_rval">aes_rval</a> <dfn class="decl" id="aes_decrypt_block" title='aes_decrypt_block' data-ref="aes_decrypt_block">aes_decrypt_block</dfn>(<em>const</em> <em>unsigned</em> <em>char</em> <dfn class="local col0 decl" id="10in_blk" title='in_blk' data-type='const unsigned char *' data-ref="10in_blk">in_blk</dfn>[],</td></tr>
+<tr><th id="127">127</th><td>                            <em>unsigned</em> <em>char</em> <dfn class="local col1 decl" id="11out_blk" title='out_blk' data-type='unsigned char *' data-ref="11out_blk">out_blk</dfn>[], <em>const</em> <a class="typedef" href="#aes_ctx" title='aes_ctx' data-type='struct aes_ctx' data-ref="aes_ctx">aes_ctx</a> <dfn class="local col2 decl" id="12cx" title='cx' data-type='const aes_ctx *' data-ref="12cx">cx</dfn>[<var>1</var>]);</td></tr>
+<tr><th id="128">128</th><td></td></tr>
+<tr><th id="129">129</th><td><u>#<span data-ppcond="129">if</span> defined(<span class="macro" data-ref="_M/__cplusplus">__cplusplus</span>)</u></td></tr>
+<tr><th id="130">130</th><td>}</td></tr>
+<tr><th id="131">131</th><td><u>#<span data-ppcond="129">endif</span></u></td></tr>
+<tr><th id="132">132</th><td></td></tr>
+<tr><th id="133">133</th><td><u>#<span data-ppcond="36">endif</span></u></td></tr>
+<tr><th id="134">134</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../encryption/AESDecoder.cpp.html'>codebrowser/nest/encryption/AESDecoder.cpp</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/encryption/aes/prng.h' l='73' type='void prng_rand(unsigned char * data, unsigned int data_len, prng_ctx * ctx)'/>
+<def f='codebrowser/nest/third-party/encryption/aes/prng.c' l='122' ll='144' type='void prng_rand(unsigned char * data, unsigned int data_len, prng_ctx * ctx)'/>
+<doc f='codebrowser/nest/third-party/encryption/aes/prng.c' l='120'>/* provide random bytes from the random data pool   */</doc>
+<doc f='codebrowser/nest/third-party/encryption/aes/prng.h' l='72'>/* obtain random bytes from the generator   */</doc>

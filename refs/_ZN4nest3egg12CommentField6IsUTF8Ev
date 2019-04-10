@@ -1,0 +1,5 @@
+<def f='codebrowser/nest/format/egg/CommentField.h' l='31' ll='34' type='bool nest::egg::CommentField::IsUTF8()'/>
+<use f='codebrowser/nest/format/egg/CommentField.h' l='38' u='c' c='_ZN4nest3egg12CommentField9GetLocaleEv'/>
+<use f='codebrowser/nest/format/egg/CommentField.h' l='43' u='c' c='_ZN4nest3egg12CommentField10GetCommentEv'/>
+<use f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='106' u='c' c='_ZN4nest3egg14ExtraFieldWrap9_As4BytesEjPb'/>
+<use f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='109' u='c' c='_ZN4nest3egg14ExtraFieldWrap9_As4BytesEjPb'/>

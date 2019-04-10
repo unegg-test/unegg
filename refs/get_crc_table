@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='1606' type='const uLongf * get_crc_table()'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/crc32.c' l='207' ll='214' type='const uLongf * get_crc_table()'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/crc32.c' l='204'>/* =========================================================================
+ * This function can be used by asm versions of crc32()
+ */</doc>

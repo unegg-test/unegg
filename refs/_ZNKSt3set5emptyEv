@@ -1,0 +1,2 @@
+<def f='include/c++/7/bits/stl_set.h' l='403' ll='405' type='bool std::set::empty() const'/>
+<doc f='include/c++/7/bits/stl_set.h' l='402'>///  Returns true if the %set is empty.</doc>

@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/format/alz/File.h' l='119' type='int nest::alz::File::_As4Bytes(unsigned int key, bool * handled)'/>
+<inh f='codebrowser/nest/Info.h' l='38' c='_ZN4nest4Info9_As4BytesEjPb'/>
+<def f='codebrowser/nest/format/alz/File.cpp' l='169' ll='178' type='int nest::alz::File::_As4Bytes(unsigned int key, bool * handled)'/>

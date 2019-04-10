@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/format/EggFormat.h' l='59' type='int nest::EggFormat::Initialize(nest::Workspace * sender)'/>
+<doc f='codebrowser/nest/format/EggFormat.h' l='58'>// Events Implementation</doc>
+<inh f='codebrowser/nest/Events.h' l='28' c='_ZN4nest6Events10InitializeEPNS_9WorkspaceE'/>
+<def f='codebrowser/nest/format/EggFormat.cpp' l='1096' ll='1104' type='int nest::EggFormat::Initialize(nest::Workspace * sender)'/>

@@ -1,0 +1,16 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='210' type='uch [573]'/>
+<offset>42336</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='206'>/* The sons of heap[n] are heap[2*n] and heap[2*n+1]. heap[0] is not used.
+     * The same heap array is used to build all trees.
+     */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='469' u='r' c='pqdownheap'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='469' u='r' c='pqdownheap'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='473' u='r' c='pqdownheap'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='473' u='r' c='pqdownheap'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='643' u='w' c='build_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='657' u='w' c='build_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='681' u='w' c='build_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='681' u='r' c='build_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='681' u='r' c='build_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='682' u='r' c='build_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='682' u='r' c='build_tree'/>

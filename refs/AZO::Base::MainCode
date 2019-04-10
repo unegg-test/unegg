@@ -1,0 +1,33 @@
+<def f='codebrowser/nest/algorithm/azo/Base/MainCodeB.h' l='10' ll='46'/>
+<size>72</size>
+<smbr r='AZO::Base::MainCode::MAIN_HEAD_SIZE' t='const u_int'/>
+<smbr r='AZO::Base::MainCode::BLOCK_SIZE_SIZE' t='const u_int'/>
+<smbr r='AZO::Base::MainCode::BLOCK_HEAD_SIZE' t='const u_int'/>
+<fun r='_ZN3AZO4Base8MainCodeC1Ev'/>
+<fun r='_ZN3AZO4Base8MainCodeD1Ev'/>
+<fun r='_ZN3AZO4Base8MainCode13AllocInBufferEj'/>
+<fun r='_ZN3AZO4Base8MainCode14AllocOutBufferEj'/>
+<fun r='_ZN3AZO4Base8MainCode11GetInBufferERPKhRjj'/>
+<fun r='_ZN3AZO4Base8MainCode12GetInBuffer2ERPKhRjj'/>
+<fun r='_ZN3AZO4Base8MainCode14RemoveInBufferERPKhRjj'/>
+<fun r='_ZN3AZO4Base8MainCode12GetOutBufferERPhRjj'/>
+<fun r='_ZN3AZO4Base8MainCode15RemoveOutBufferERPhRjj'/>
+<fun r='_ZN3AZO4Base8MainCode15InBufferUseSizeEv'/>
+<fun r='_ZN3AZO4Base8MainCode16OutBufferUseSizeEv'/>
+<mbr r='AZO::Base::MainCode::inBuf_' o='0' t='AZO::BufferMan'/>
+<mbr r='AZO::Base::MainCode::outBuf_' o='192' t='AZO::BufferMan'/>
+<mbr r='AZO::Base::MainCode::blockSize_' o='384' t='u_int'/>
+<mbr r='AZO::Base::MainCode::coderObj_' o='448' t='void *'/>
+<mbr r='AZO::Base::MainCode::init_' o='512' t='bool'/>
+<mbr r='AZO::Base::MainCode::finish_' o='520' t='bool'/>
+<mbr r='AZO::Base::MainCode::useFilter_' o='528' t='bool'/>
+<fun r='_ZN3AZO4Base8MainCodeC1Ev'/>
+<fun r='_ZN3AZO4Base8MainCodeD1Ev'/>
+<fun r='_ZN3AZO4Base8MainCode13AllocInBufferEj'/>
+<fun r='_ZN3AZO4Base8MainCode14AllocOutBufferEj'/>
+<fun r='_ZN3AZO4Base8MainCode11GetInBufferERPKhRjj'/>
+<fun r='_ZN3AZO4Base8MainCode12GetInBuffer2ERPKhRjj'/>
+<fun r='_ZN3AZO4Base8MainCode14RemoveInBufferERPKhRjj'/>
+<fun r='_ZN3AZO4Base8MainCode12GetOutBufferERPhRjj'/>
+<fun r='_ZN3AZO4Base8MainCode15RemoveOutBufferERPhRjj'/>
+<ovr f='codebrowser/nest/algorithm/azo/Decoder/MainCodeD.h' l='9' c='AZO::Decoder::MainCode'/>

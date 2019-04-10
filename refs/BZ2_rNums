@@ -1,0 +1,16 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='131' type='Int32 [512]'/>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='129'>/*-- Stuff for randomising repetitive blocks. --*/</doc>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='565' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='571' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='577' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='582' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='585' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='735' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='741' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='747' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='752' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='755' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='552' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='571' macro='1' u='r'/>
+<def f='codebrowser/nest/third-party/algorithm/bzip2/randtable.c' l='26' ll='79' type='Int32 [512]'/>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/randtable.c' l='25'>/*---------------------------------------------*/</doc>

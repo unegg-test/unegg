@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>MainCodeD.h source code [codebrowser/nest/algorithm/azo/Decoder/MainCodeD.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="AZO::Decoder::MainCode "/>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/algorithm/azo/Decoder/MainCodeD.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>nest</a>/<a href='../..'>algorithm</a>/<a href='..'>azo</a>/<a href='./'>Decoder</a>/<a href='MainCodeD.h.html'>MainCodeD.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/AZO_DECODER_MainCode_H">AZO_DECODER_MainCode_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/AZO_DECODER_MainCode_H" data-ref="_M/AZO_DECODER_MainCode_H">AZO_DECODER_MainCode_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="../Base/MainCodeB.h.html">"../Base/MainCodeB.h"</a></u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><b>namespace</b> <span class="namespace">AZO</span> {</td></tr>
+<tr><th id="7">7</th><td><b>namespace</b> <span class="namespace">Decoder</span> {</td></tr>
+<tr><th id="8">8</th><td></td></tr>
+<tr><th id="9">9</th><td><b>class</b> <dfn class="type def" id="AZO::Decoder::MainCode" title='AZO::Decoder::MainCode' data-ref="AZO::Decoder::MainCode">MainCode</dfn> : <b>public</b> <span class="namespace">Base::</span><a class="type" href="../Base/MainCodeB.h.html#AZO::Base::MainCode" title='AZO::Base::MainCode' data-ref="AZO::Base::MainCode">MainCode</a></td></tr>
+<tr><th id="10">10</th><td>{</td></tr>
+<tr><th id="11">11</th><td><b>public</b>: </td></tr>
+<tr><th id="12">12</th><td>    <a class="decl" href="MainCodeD.cpp.html#_ZN3AZO7Decoder8MainCodeC1Ev" title='AZO::Decoder::MainCode::MainCode' data-ref="_ZN3AZO7Decoder8MainCodeC1Ev" id="_ZN3AZO7Decoder8MainCodeC1Ev">MainCode</a>();</td></tr>
+<tr><th id="13">13</th><td>    <a class="decl" href="MainCodeD.cpp.html#_ZN3AZO7Decoder8MainCodeD1Ev" title='AZO::Decoder::MainCode::~MainCode' data-ref="_ZN3AZO7Decoder8MainCodeD1Ev" id="_ZN3AZO7Decoder8MainCodeD1Ev">~MainCode</a>();</td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td>    <em>int</em> <a class="decl" href="MainCodeD.cpp.html#_ZN3AZO7Decoder8MainCode4CodeERPKhRjRPhS5_" title='AZO::Decoder::MainCode::Code' data-ref="_ZN3AZO7Decoder8MainCode4CodeERPKhRjRPhS5_" id="_ZN3AZO7Decoder8MainCode4CodeERPKhRjRPhS5_">Code</a>(<em>const</em> <a class="typedef" href="../Common/AZOType.h.html#AZO::byte" title='AZO::byte' data-type='uint8_t' data-ref="AZO::byte">byte</a>*&amp; <dfn class="local col1 decl" id="1in" title='in' data-type='const byte *&amp;' data-ref="1in">in</dfn>, <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a>&amp; <dfn class="local col2 decl" id="2iuAvailSize" title='iuAvailSize' data-type='u_int &amp;' data-ref="2iuAvailSize">iuAvailSize</dfn>, </td></tr>
+<tr><th id="16">16</th><td>             <a class="typedef" href="../Common/AZOType.h.html#AZO::byte" title='AZO::byte' data-type='uint8_t' data-ref="AZO::byte">byte</a>*&amp; <dfn class="local col3 decl" id="3out" title='out' data-type='byte *&amp;' data-ref="3out">out</dfn>, <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a>&amp; <dfn class="local col4 decl" id="4outAvailSize" title='outAvailSize' data-type='u_int &amp;' data-ref="4outAvailSize">outAvailSize</dfn>);</td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td><b>private</b>:</td></tr>
+<tr><th id="19">19</th><td>	<b>template</b> &lt;<b>typename</b> T&gt;</td></tr>
+<tr><th id="20">20</th><td>	<em>void</em> <dfn class="decl def" id="_ZN3AZO7Decoder8MainCode10ReadNumberERT_PKhj" title='AZO::Decoder::MainCode::ReadNumber' data-ref="_ZN3AZO7Decoder8MainCode10ReadNumberERT_PKhj">ReadNumber</dfn>(T&amp; <dfn class="local col5 decl" id="5num" title='num' data-type='T &amp;' data-ref="5num">num</dfn>, <em>const</em> <a class="typedef" href="../Common/AZOType.h.html#AZO::byte" title='AZO::byte' data-type='uint8_t' data-ref="AZO::byte">byte</a>* <dfn class="local col6 decl" id="6out" title='out' data-type='const byte *' data-ref="6out">out</dfn>, <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <dfn class="local col7 decl" id="7size" title='size' data-type='u_int' data-ref="7size">size</dfn>)</td></tr>
+<tr><th id="21">21</th><td>    {</td></tr>
+<tr><th id="22">22</th><td>	    <a class="local col5 ref" href="#5num" title='num' data-ref="5num">num</a> = <var>0</var>;</td></tr>
+<tr><th id="23">23</th><td>        <b>for</b>(<a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <dfn class="local col8 decl" id="8i" title='i' data-type='u_int' data-ref="8i">i</dfn>=<var>0</var>; <a class="local col8 ref" href="#8i" title='i' data-ref="8i">i</a>&lt;<a class="local col7 ref" href="#7size" title='size' data-ref="7size">size</a>; ++<a class="local col8 ref" href="#8i" title='i' data-ref="8i">i</a>) {</td></tr>
+<tr><th id="24">24</th><td>		    <a class="local col5 ref" href="#5num" title='num' data-ref="5num">num</a> += (*<a class="local col6 ref" href="#6out" title='out' data-ref="6out">out</a>++ &lt;&lt; (<a class="local col7 ref" href="#7size" title='size' data-ref="7size">size</a>-<a class="local col8 ref" href="#8i" title='i' data-ref="8i">i</a>-<var>1</var>)*<var>8</var>);</td></tr>
+<tr><th id="25">25</th><td>        }</td></tr>
+<tr><th id="26">26</th><td>    }</td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td>    <em>int</em> <a class="decl" href="MainCodeD.cpp.html#_ZN3AZO7Decoder8MainCode9ReadBlockEPKhjPhj" title='AZO::Decoder::MainCode::ReadBlock' data-ref="_ZN3AZO7Decoder8MainCode9ReadBlockEPKhjPhj" id="_ZN3AZO7Decoder8MainCode9ReadBlockEPKhjPhj">ReadBlock</a>(<em>const</em> <a class="typedef" href="../Common/AZOType.h.html#AZO::byte" title='AZO::byte' data-type='uint8_t' data-ref="AZO::byte">byte</a>* <dfn class="local col9 decl" id="9in" title='in' data-type='const byte *' data-ref="9in">in</dfn>, <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <dfn class="local col0 decl" id="10inSize" title='inSize' data-type='u_int' data-ref="10inSize">inSize</dfn>, <a class="typedef" href="../Common/AZOType.h.html#AZO::byte" title='AZO::byte' data-type='uint8_t' data-ref="AZO::byte">byte</a>* <dfn class="local col1 decl" id="11out" title='out' data-type='byte *' data-ref="11out">out</dfn>, <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <dfn class="local col2 decl" id="12outSize" title='outSize' data-type='u_int' data-ref="12outSize">outSize</dfn>);</td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><b>private</b>:</td></tr>
+<tr><th id="31">31</th><td>    <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <dfn class="decl" id="AZO::Decoder::MainCode::compressSize_" title='AZO::Decoder::MainCode::compressSize_' data-ref="AZO::Decoder::MainCode::compressSize_">compressSize_</dfn>;</td></tr>
+<tr><th id="32">32</th><td>    <em>bool</em> <dfn class="decl" id="AZO::Decoder::MainCode::setSizeInfo_" title='AZO::Decoder::MainCode::setSizeInfo_' data-ref="AZO::Decoder::MainCode::setSizeInfo_">setSizeInfo_</dfn>;</td></tr>
+<tr><th id="33">33</th><td>};</td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td>} <i>//namespaces Decoder</i></td></tr>
+<tr><th id="36">36</th><td>} <i>//namespaces AZO</i></td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td><u>#<span data-ppcond="1">endif</span> /*AZO_DECODER_MainCode_H*/</u></td></tr>
+<tr><th id="39">39</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='MainCodeD.cpp.html'>codebrowser/nest/algorithm/azo/Decoder/MainCodeD.cpp</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

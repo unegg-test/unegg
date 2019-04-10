@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/format/EggFormat.h' l='45' type='int nest::EggFormat::Extract()'/>
+<inh f='codebrowser/nest/format/Format.h' l='53' c='_ZN4nest6Format7ExtractEv'/>
+<def f='codebrowser/nest/format/EggFormat.cpp' l='125' ll='142' type='int nest::EggFormat::Extract()'/>

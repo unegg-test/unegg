@@ -1,0 +1,9 @@
+<def f='include/c++/7/bits/stl_set.h' l='737' ll='739' type='size_type std::set::count(const key_type &amp; __x) const'/>
+<doc f='include/c++/7/bits/stl_set.h' l='729'>/**
+       *  @brief  Finds the number of elements.
+       *  @param  __x  Element to located.
+       *  @return  Number of elements with specified key.
+       *
+       *  This function only makes sense for multisets; for set the result will
+       *  either be 0 (not present) or 1 (present).
+       */</doc>

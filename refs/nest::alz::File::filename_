@@ -1,0 +1,6 @@
+<use f='codebrowser/nest/format/alz/File.h' l='95' u='m' c='_ZN4nest3alz4File11GetFilenameEv'/>
+<dec f='codebrowser/nest/format/alz/File.h' l='134' type='std::string'/>
+<offset>512</offset>
+<use f='codebrowser/nest/format/alz/File.cpp' l='47' u='m' c='_ZN4nest3alz4File9OnCleanUpEv'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='129' u='a' c='_ZN4nest3alz4File6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='152' u='m' c='_ZN4nest3alz4File6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>

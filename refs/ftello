@@ -1,0 +1,2 @@
+<dec f='include/stdio.h' l='778' type='__off_t ftello(FILE * __stream)'/>
+<use f='codebrowser/nest/stream/FileInputStream.cpp' l='59' u='c' c='_ZN4nest15FileInputStream4TellEv'/>

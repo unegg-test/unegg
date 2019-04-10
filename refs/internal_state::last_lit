@@ -1,0 +1,51 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='236' type='uInt'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1563' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1563' macro='1' u='w'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1563' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1600' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1600' macro='1' u='w'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1600' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1682' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1682' macro='1' u='w'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1682' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1709' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1709' macro='1' u='w'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1709' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1728' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1728' macro='1' u='w'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1728' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1785' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1785' macro='1' u='w'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1785' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1793' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1793' macro='1' u='w'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1793' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1827' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1827' macro='1' u='w'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1827' macro='1' u='r'/>
+<offset>47072</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='217'>/* Size of match buffer for literals/lengths.  There are 4 reasons for
+     * limiting lit_bufsize to 64K:
+     *   - frequencies can be kept in 16 bit counters
+     *   - if compression is not successful for the first block, all input
+     *     data is still in the window so we can still emit a stored block even
+     *     when input comes from standard input.  (This can also be done for
+     *     all blocks if lit_bufsize is not greater than 32K.)
+     *   - if compression is not successful for a file smaller than 64K, we can
+     *     even emit a stored file instead of a stored block (saving 5 bytes).
+     *     This is applicable only for zip (not gzip or zlib).
+     *   - creating new Huffman trees less frequently may not provide fast
+     *     adaptation to changes in the input data statistics. (Take for
+     *     example a binary file with poorly compressible code followed by
+     *     a highly compressible string table.) Smaller buffer sizes give
+     *     fast adaptation but have of course the overhead of transmitting
+     *     trees more frequently.
+     *   - I can&apos;t count above 4
+     */</doc>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='236'>/* running index in l_buf */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='427' u='w' c='init_block'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1031' u='r' c='_tr_tally'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1032' u='w' c='_tr_tally'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1066' u='r' c='_tr_tally'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1087' u='r' c='compress_block'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1118' u='r' c='compress_block'/>

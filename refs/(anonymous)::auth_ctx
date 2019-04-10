@@ -1,0 +1,8 @@
+<dec f='codebrowser/nest/third-party/encryption/aes/fileenc.h' l='88' type='hmac_ctx [1]'/>
+<offset>2368</offset>
+<doc f='codebrowser/nest/third-party/encryption/aes/fileenc.h' l='88'>/* authentication context */</doc>
+<use f='codebrowser/nest/third-party/encryption/aes/fileenc.c' l='107' u='r' c='fcrypt_init'/>
+<use f='codebrowser/nest/third-party/encryption/aes/fileenc.c' l='108' u='r' c='fcrypt_init'/>
+<use f='codebrowser/nest/third-party/encryption/aes/fileenc.c' l='122' u='r' c='fcrypt_encrypt'/>
+<use f='codebrowser/nest/third-party/encryption/aes/fileenc.c' l='129' u='r' c='fcrypt_decrypt'/>
+<use f='codebrowser/nest/third-party/encryption/aes/fileenc.c' l='137' u='r' c='fcrypt_end'/>

@@ -1,0 +1,2 @@
+<dec f='include/c++/7/bits/stl_deque.h' l='2018' type='void std::deque::_M_range_insert_aux(iterator __pos, _InputIterator __first, _InputIterator __last, std::input_iterator_tag )'/>
+<def f='include/c++/7/bits/deque.tcc' l='572' ll='579' type='void std::deque::_M_range_insert_aux(iterator __pos, _InputIterator __first, _InputIterator __last, std::input_iterator_tag )'/>

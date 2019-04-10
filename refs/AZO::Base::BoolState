@@ -1,0 +1,14 @@
+<def f='codebrowser/nest/algorithm/azo/Base/BoolStateB.h' l='12' ll='38'/>
+<fun r='_ZN3AZO4Base9BoolStateC1Ev'/>
+<fun r='_ZN3AZO4Base9BoolStateD1Ev'/>
+<fun r='_ZN3AZO4Base9BoolState6UpdateEj'/>
+<fun r='_ZN3AZO4Base9BoolState7GetProbEv'/>
+<fun r='_ZN3AZO4Base9BoolState8TotalBitEv'/>
+<mbr r='AZO::Base::BoolState::state_' t='u_int'/>
+<smbr r='AZO::Base::BoolState::ARRAY_N' t='const u_int'/>
+<smbr r='AZO::Base::BoolState::TOTAL_BIT' t='const u_int'/>
+<smbr r='AZO::Base::BoolState::TOTAL_COUNT' t='const u_int'/>
+<mbr r='AZO::Base::BoolState::prob_' t='uint32_t [ARRAY_N]'/>
+<fun r='_ZN3AZO4Base9BoolStateC1Ev'/>
+<fun r='_ZN3AZO4Base9BoolStateD1Ev'/>
+<fun r='_ZN3AZO4Base9BoolState6UpdateEj'/>

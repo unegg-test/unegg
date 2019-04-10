@@ -1,0 +1,6 @@
+<dec f='codebrowser/nest/algorithm/azo/Decoder/MainCodeD.h' l='32' type='bool'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/MainCodeD.cpp' l='12' u='w' c='_ZN3AZO7Decoder8MainCodeC1Ev'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/MainCodeD.cpp' l='84' u='r' c='_ZN3AZO7Decoder8MainCode4CodeERPKhRjRPhS5_'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/MainCodeD.cpp' l='103' u='w' c='_ZN3AZO7Decoder8MainCode4CodeERPKhRjRPhS5_'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/MainCodeD.cpp' l='132' u='w' c='_ZN3AZO7Decoder8MainCode4CodeERPKhRjRPhS5_'/>
+<offset>576</offset>

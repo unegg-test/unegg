@@ -1,0 +1,4 @@
+<def f='codebrowser/nest/algorithm/azo/Decoder/MainCodeD.h' l='20' ll='26' type='void AZO::Decoder::MainCode::ReadNumber(T &amp; num, const byte * out, u_int size)'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/MainCodeD.cpp' l='90' u='c' c='_ZN3AZO7Decoder8MainCode4CodeERPKhRjRPhS5_'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/MainCodeD.cpp' l='91' u='c' c='_ZN3AZO7Decoder8MainCode4CodeERPKhRjRPhS5_'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/MainCodeD.cpp' l='94' u='c' c='_ZN3AZO7Decoder8MainCode4CodeERPKhRjRPhS5_'/>

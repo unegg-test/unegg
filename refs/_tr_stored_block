@@ -1,0 +1,7 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='298' type='void _tr_stored_block(deflate_state * s, charf * buf, ulg stored_len, int last)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='844' u='c' c='deflate'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='871' ll='883' type='void _tr_stored_block(deflate_state * s, charf * buf, ulg stored_len, int last)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='985' u='c' c='_tr_flush_block'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='868'>/* ===========================================================================
+ * Send a stored block
+ */</doc>

@@ -1,0 +1,3 @@
+<dec f='include/math.h' l='218'/>
+<use f='include/math.h' l='219' u='c'/>
+<use f='include/c++/7/cmath' l='853' u='c'/>

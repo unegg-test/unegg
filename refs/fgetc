@@ -1,0 +1,2 @@
+<dec f='include/stdio.h' l='531' type='int fgetc(FILE * __stream)'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='908' u='c' c='myfeof'/>

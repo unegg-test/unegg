@@ -1,0 +1,5 @@
+<def f='codebrowser/nest/algorithm/azo/AZO.h' l='20' type='const int'/>
+<use f='codebrowser/nest/algorithm/azo/unAZO.cpp' l='37' u='r' c='_Z18AZO_DecompressInitPPv'/>
+<use f='codebrowser/nest/algorithm/azo/unAZO.cpp' l='57' u='r' c='_Z14AZO_DecompressPvP10AZO_Stream'/>
+<use f='codebrowser/nest/algorithm/azo/unAZO.cpp' l='80' u='r' c='_Z17AZO_DecompressEndPv'/>
+<use f='codebrowser/nest/algorithm/azo/unAZO.cpp' l='95' u='r' c='_Z20AZO_BufferDecompressPcPjPKcj'/>

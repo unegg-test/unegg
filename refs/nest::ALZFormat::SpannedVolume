@@ -1,0 +1,5 @@
+<def f='codebrowser/nest/format/ALZFormat.h' l='89' ll='94'/>
+<size>24</size>
+<mbr r='nest::ALZFormat::SpannedVolume::stream' o='0' t='nest::InputStream *'/>
+<mbr r='nest::ALZFormat::SpannedVolume::offset' o='64' t='uint64'/>
+<mbr r='nest::ALZFormat::SpannedVolume::size' o='128' t='uint64'/>

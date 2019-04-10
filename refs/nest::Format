@@ -1,0 +1,17 @@
+<def f='codebrowser/nest/format/Format.h' l='23' ll='59'/>
+<ovr f='codebrowser/nest/format/EggFormat.h' l='33' c='nest::EggFormat'/>
+<size>16</size>
+<fun r='_ZN4nest6FormatC1Ev'/>
+<fun r='_ZN4nest6FormatC1EPNS_6EventsE'/>
+<fun r='_ZN4nest6FormatD1Ev'/>
+<fun r='_ZN4nest6Format8SetEventEPNS_6EventsE'/>
+<fun r='_ZN4nest6Format8GetEventEv'/>
+<fun r='_ZN4nest6Format4OpenEPNS_11InputStreamE'/>
+<fun r='_ZN4nest6Format5CloseEv'/>
+<fun r='_ZN4nest6Format11CheckHeaderEPNS_11InputStreamE'/>
+<fun r='_ZN4nest6Format4ScanEv'/>
+<fun r='_ZN4nest6Format7ExtractEv'/>
+<fun r='_ZN4nest6Format14GetInputStreamEv'/>
+<fun r='_ZN4nest6Format7GetInfoEv'/>
+<mbr r='nest::Format::event' o='64' t='nest::Events *'/>
+<ovr f='codebrowser/nest/format/ALZFormat.h' l='28' c='nest::ALZFormat'/>

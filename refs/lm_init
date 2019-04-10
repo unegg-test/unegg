@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='84' type='void lm_init(deflate_state * s)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='383' u='c' c='deflateReset'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1022' ll='1047' macro='1' type='void lm_init(deflate_state * s)'/>

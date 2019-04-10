@@ -1,0 +1,2 @@
+<def f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='133' ll='134' macro='1' type='static_tree_desc'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='395' u='a' c='_tr_init'/>

@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/format/egg/Block.h' l='67' type='const void * nest::egg::Block::_AsPtr(unsigned int key, bool * handled)'/>
+<inh f='codebrowser/nest/Info.h' l='41' c='_ZN4nest4Info6_AsPtrEjPb'/>
+<def f='codebrowser/nest/format/egg/Block.cpp' l='109' ll='114' type='const void * nest::egg::Block::_AsPtr(unsigned int key, bool * handled)'/>

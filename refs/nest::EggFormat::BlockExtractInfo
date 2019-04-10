@@ -1,0 +1,7 @@
+<def f='codebrowser/nest/format/EggFormat.h' l='75' ll='82'/>
+<size>40</size>
+<mbr r='nest::EggFormat::BlockExtractInfo::coder' o='0' t='nest::Coder *'/>
+<mbr r='nest::EggFormat::BlockExtractInfo::dataHeaderSize' o='64' t='size_t'/>
+<mbr r='nest::EggFormat::BlockExtractInfo::crc' o='128' t='unsigned int'/>
+<mbr r='nest::EggFormat::BlockExtractInfo::rawDataRemained' o='192' t='uint64'/>
+<mbr r='nest::EggFormat::BlockExtractInfo::dataRemained' o='256' t='uint64'/>

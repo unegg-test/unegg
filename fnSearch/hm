@@ -1,0 +1,5 @@
+hmac_sha1|hmac_sha1
+hmac_sha1_begin|hmac_sha1_begin
+hmac_sha1_data|hmac_sha1_data
+hmac_sha1_end|hmac_sha1_end
+hmac_sha1_key|hmac_sha1_key

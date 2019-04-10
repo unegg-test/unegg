@@ -1,0 +1,8 @@
+<dec f='codebrowser/nest/format/EggFormat.h' l='118' type='std::vector&lt;egg::BlockWrap *&gt;'/>
+<offset>2112</offset>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='362' u='m' c='_ZN4nest9EggFormat15ReadSolidBlocksEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='375' u='m' c='_ZN4nest9EggFormat15ReadSolidBlocksEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='560' u='m' c='_ZN4nest9EggFormat19ExtractSolidArchiveEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='652' u='m' c='_ZN4nest9EggFormat19ExtractSolidArchiveEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='654' u='m' c='_ZN4nest9EggFormat19ExtractSolidArchiveEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='1091' u='m' c='_ZN4nest9EggFormat12_AsChildInfoEjmPb'/>

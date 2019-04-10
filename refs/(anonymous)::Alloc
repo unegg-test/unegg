@@ -1,0 +1,12 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='227' type='void *(*)(void *, size_t)'/>
+<offset>0</offset>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zBuf.c' l='22' u='r' c='Buf_Create'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zBuf2.c' l='26' u='r' c='DynBuf_Write'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='40' u='r' c='LzInWindow_Create'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='177' u='r' c='AllocRefs'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='916' u='r' c='LzmaDec_AllocateProbs2'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='943' u='r' c='LzmaDec_Allocate'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='470' u='r' c='RangeEnc_Alloc'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='1681' u='r' c='LzmaEnc_Create'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='1890' u='r' c='LzmaEnc_Alloc'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='1891' u='r' c='LzmaEnc_Alloc'/>

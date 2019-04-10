@@ -1,0 +1,15 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='193' type='ISeekInStream *'/>
+<dec f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='205' type='ILookInStream *'/>
+<dec f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='213' type='ILookInStream *'/>
+<offset>64</offset>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='78' u='r' c='LookToRead_Look_Lookahead'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='78' u='r' c='LookToRead_Look_Lookahead'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='97' u='r' c='LookToRead_Look_Exact'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='97' u='r' c='LookToRead_Look_Exact'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='118' u='r' c='LookToRead_Read'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='118' u='r' c='LookToRead_Read'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='131' u='r' c='LookToRead_Seek'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='131' u='r' c='LookToRead_Seek'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='150' u='r' c='SecToLook_Read'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='161' u='r' c='SecToRead_Read'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='161' u='r' c='SecToRead_Read'/>

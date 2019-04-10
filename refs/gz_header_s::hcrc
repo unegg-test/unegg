@@ -1,0 +1,14 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='124' type='int'/>
+<offset>544</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='124'>/* true if there was or will be a header crc */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='526' u='r' c='deflateBound'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='628' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='645' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='688' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='699' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='717' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='730' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='748' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='761' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='771' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='791' u='w' c='inflate'/>

@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>unAZO.cpp source code [codebrowser/nest/algorithm/azo/unAZO.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/algorithm/azo/unAZO.cpp'; var root_path = '../../../..'; var data_path = '../../../../../data';</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>codebrowser</a>/<a href='../..'>nest</a>/<a href='..'>algorithm</a>/<a href='./'>azo</a>/<a href='unAZO.cpp.html'>unAZO.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * unAZO.cpp</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> *  Created on: 2010. 12. 16.</i></td></tr>
+<tr><th id="5">5</th><td><i> *      Author: Yoonsik Oh(Boom)</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> *  Copyright(c) 2010-Present ESTsoft Corp. All rights reserved.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> *  For conditions of distribution and use, see copyright notice in license.txt</i></td></tr>
+<tr><th id="10">10</th><td><i> */</i></td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td><u>#<span data-ppcond="12">ifndef</span> <span class="macro" data-ref="_M/AZO_UNAZO_CPP">AZO_UNAZO_CPP</span></u></td></tr>
+<tr><th id="13">13</th><td><u>#define <dfn class="macro" id="_M/AZO_UNAZO_CPP" data-ref="_M/AZO_UNAZO_CPP">AZO_UNAZO_CPP</dfn></u></td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><u>#include <a href="AZO.h.html">"AZO.h"</a></u></td></tr>
+<tr><th id="16">16</th><td><u>#include <a href="Common/Allocator.h.html">"Common/Allocator.h"</a></u></td></tr>
+<tr><th id="17">17</th><td><u>#include <a href="Decoder/MainCodeD.h.html">"Decoder/MainCodeD.h"</a></u></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><b>using</b> <b>namespace</b> <span class="namespace">AZO</span>;</td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td><em>int</em> <dfn class="decl def" id="_Z11AZO_Versionv" title='AZO_Version' data-ref="_Z11AZO_Versionv">AZO_Version</dfn>()</td></tr>
+<tr><th id="22">22</th><td>{</td></tr>
+<tr><th id="23">23</th><td>    <b>return</b> <a class="ref" href="AZO.h.html#AZO_VERSION" title='AZO_VERSION' data-ref="AZO_VERSION">AZO_VERSION</a>;</td></tr>
+<tr><th id="24">24</th><td>}</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><em>void</em> <dfn class="decl def" id="_Z13AZO_AllocatorPFPvS_jEPFvS_S_ES_" title='AZO_Allocator' data-ref="_Z13AZO_AllocatorPFPvS_jEPFvS_S_ES_">AZO_Allocator</dfn>(<a class="typedef" href="AZO.h.html#AZO_ALLOC_FUNCTON" title='AZO_ALLOC_FUNCTON' data-type='void *(*)(void *, unsigned int)' data-ref="AZO_ALLOC_FUNCTON">AZO_ALLOC_FUNCTON</a> <dfn class="local col1 decl" id="1allocFunc" title='allocFunc' data-type='AZO_ALLOC_FUNCTON' data-ref="1allocFunc">allocFunc</dfn>, </td></tr>
+<tr><th id="27">27</th><td>                   <a class="typedef" href="AZO.h.html#AZO_FREE_FUNCTON" title='AZO_FREE_FUNCTON' data-type='void (*)(void *, void *)' data-ref="AZO_FREE_FUNCTON">AZO_FREE_FUNCTON</a> <dfn class="local col2 decl" id="2freeFunc" title='freeFunc' data-type='AZO_FREE_FUNCTON' data-ref="2freeFunc">freeFunc</dfn>, </td></tr>
+<tr><th id="28">28</th><td>                   <em>void</em>* <dfn class="local col3 decl" id="3opaque" title='opaque' data-type='void *' data-ref="3opaque">opaque</dfn>)</td></tr>
+<tr><th id="29">29</th><td>{</td></tr>
+<tr><th id="30">30</th><td>    <a class="type" href="Common/Allocator.h.html#AZO::Allocator" title='AZO::Allocator' data-ref="AZO::Allocator">Allocator</a>::<a class="ref" href="Common/Allocator.h.html#_ZN3AZO9Allocator3SetEPFPvS1_jEPFvS1_S1_ES1_" title='AZO::Allocator::Set' data-ref="_ZN3AZO9Allocator3SetEPFPvS1_jEPFvS1_S1_ES1_">Set</a>(<a class="local col1 ref" href="#1allocFunc" title='allocFunc' data-ref="1allocFunc">allocFunc</a>, <a class="local col2 ref" href="#2freeFunc" title='freeFunc' data-ref="2freeFunc">freeFunc</a>, <a class="local col3 ref" href="#3opaque" title='opaque' data-ref="3opaque">opaque</a>);</td></tr>
+<tr><th id="31">31</th><td>}</td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><i>//Compress</i></td></tr>
+<tr><th id="34">34</th><td><em>int</em> <dfn class="decl def" id="_Z18AZO_DecompressInitPPv" title='AZO_DecompressInit' data-ref="_Z18AZO_DecompressInitPPv">AZO_DecompressInit</dfn>(<a class="typedef" href="AZO.h.html#AZO_HCOMPRESS" title='AZO_HCOMPRESS' data-type='void *' data-ref="AZO_HCOMPRESS">AZO_HCOMPRESS</a>* <dfn class="local col4 decl" id="4pHandle" title='pHandle' data-type='AZO_HCOMPRESS *' data-ref="4pHandle">pHandle</dfn> <i>/*OUT*/</i>)</td></tr>
+<tr><th id="35">35</th><td>{</td></tr>
+<tr><th id="36">36</th><td>    <b>if</b>(<a class="local col4 ref" href="#4pHandle" title='pHandle' data-ref="4pHandle">pHandle</a> == <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>) {</td></tr>
+<tr><th id="37">37</th><td>        <b>return</b> <a class="ref" href="AZO.h.html#AZO_PARAM_ERROR" title='AZO_PARAM_ERROR' data-ref="AZO_PARAM_ERROR">AZO_PARAM_ERROR</a>;</td></tr>
+<tr><th id="38">38</th><td>    }</td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td>    <em>void</em>* <dfn class="local col5 decl" id="5buf" title='buf' data-type='void *' data-ref="5buf">buf</dfn> = <a class="type" href="Common/Allocator.h.html#AZO::Allocator" title='AZO::Allocator' data-ref="AZO::Allocator">Allocator</a>::<a class="ref" href="Common/Allocator.h.html#_ZN3AZO9Allocator5AllocEj" title='AZO::Allocator::Alloc' data-ref="_ZN3AZO9Allocator5AllocEj">Alloc</a>(<b>sizeof</b>(<span class="namespace">Decoder::</span><a class="type" href="Decoder/MainCodeD.h.html#AZO::Decoder::MainCode" title='AZO::Decoder::MainCode' data-ref="AZO::Decoder::MainCode">MainCode</a>));</td></tr>
+<tr><th id="41">41</th><td>    <b>if</b>(<a class="local col5 ref" href="#5buf" title='buf' data-ref="5buf">buf</a> == <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>) {</td></tr>
+<tr><th id="42">42</th><td>        <b>return</b> <a class="ref" href="AZO.h.html#AZO_MEM_ERROR" title='AZO_MEM_ERROR' data-ref="AZO_MEM_ERROR">AZO_MEM_ERROR</a>;</td></tr>
+<tr><th id="43">43</th><td>    }</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td>    <span class="namespace">Decoder::</span><a class="type" href="Decoder/MainCodeD.h.html#AZO::Decoder::MainCode" title='AZO::Decoder::MainCode' data-ref="AZO::Decoder::MainCode">MainCode</a>* <dfn class="local col6 decl" id="6coder" title='coder' data-type='Decoder::MainCode *' data-ref="6coder">coder</dfn> = <b>new</b> (<a class="local col5 ref" href="#5buf" title='buf' data-ref="5buf">buf</a>) <span class="namespace">Decoder::</span><a class="type" href="Decoder/MainCodeD.h.html#AZO::Decoder::MainCode" title='AZO::Decoder::MainCode' data-ref="AZO::Decoder::MainCode">MainCode</a><a class="ref" href="Decoder/MainCodeD.h.html#_ZN3AZO7Decoder8MainCodeC1Ev" title='AZO::Decoder::MainCode::MainCode' data-ref="_ZN3AZO7Decoder8MainCodeC1Ev">(</a>);</td></tr>
+<tr><th id="46">46</th><td>    *<a class="local col4 ref" href="#4pHandle" title='pHandle' data-ref="4pHandle">pHandle</a> = <b>static_cast</b>&lt;<a class="typedef" href="AZO.h.html#AZO_HCOMPRESS" title='AZO_HCOMPRESS' data-type='void *' data-ref="AZO_HCOMPRESS">AZO_HCOMPRESS</a>&gt;(<a class="local col6 ref" href="#6coder" title='coder' data-ref="6coder">coder</a>);</td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td>    <b>return</b> <a class="ref" href="AZO.h.html#AZO_OK" title='AZO_OK' data-ref="AZO_OK">AZO_OK</a>;</td></tr>
+<tr><th id="49">49</th><td>}</td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td><em>int</em> <dfn class="decl def" id="_Z14AZO_DecompressPvP10AZO_Stream" title='AZO_Decompress' data-ref="_Z14AZO_DecompressPvP10AZO_Stream">AZO_Decompress</dfn>(<a class="typedef" href="AZO.h.html#AZO_HCOMPRESS" title='AZO_HCOMPRESS' data-type='void *' data-ref="AZO_HCOMPRESS">AZO_HCOMPRESS</a> <dfn class="local col7 decl" id="7handle" title='handle' data-type='AZO_HCOMPRESS' data-ref="7handle">handle</dfn>, </td></tr>
+<tr><th id="52">52</th><td>                 <a class="type" href="AZO.h.html#AZO_Stream" title='AZO_Stream' data-ref="AZO_Stream">AZO_Stream</a>* <dfn class="local col8 decl" id="8stream" title='stream' data-type='AZO_Stream *' data-ref="8stream">stream</dfn> <i>/*INOUT*/</i>)</td></tr>
+<tr><th id="53">53</th><td>{</td></tr>
+<tr><th id="54">54</th><td>    <span class="namespace">Decoder::</span><a class="type" href="Decoder/MainCodeD.h.html#AZO::Decoder::MainCode" title='AZO::Decoder::MainCode' data-ref="AZO::Decoder::MainCode">MainCode</a>* <dfn class="local col9 decl" id="9coder" title='coder' data-type='Decoder::MainCode *' data-ref="9coder">coder</dfn> = <b>static_cast</b>&lt;<span class="namespace">Decoder::</span><a class="type" href="Decoder/MainCodeD.h.html#AZO::Decoder::MainCode" title='AZO::Decoder::MainCode' data-ref="AZO::Decoder::MainCode">MainCode</a>*&gt;(<a class="local col7 ref" href="#7handle" title='handle' data-ref="7handle">handle</a>);</td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td>    <b>if</b>(<a class="local col9 ref" href="#9coder" title='coder' data-ref="9coder">coder</a> == <span class="macro" title="__null" data-ref="_M/NULL">NULL</span> || <a class="local col8 ref" href="#8stream" title='stream' data-ref="8stream">stream</a> == <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>) {</td></tr>
+<tr><th id="57">57</th><td>        <b>return</b> <a class="ref" href="AZO.h.html#AZO_PARAM_ERROR" title='AZO_PARAM_ERROR' data-ref="AZO_PARAM_ERROR">AZO_PARAM_ERROR</a>;</td></tr>
+<tr><th id="58">58</th><td>    }</td></tr>
+<tr><th id="59">59</th><td></td></tr>
+<tr><th id="60">60</th><td>    <em>const</em> <a class="typedef" href="Common/AZOType.h.html#AZO::byte" title='AZO::byte' data-type='uint8_t' data-ref="AZO::byte">byte</a>* <dfn class="local col0 decl" id="10in" title='in' data-type='const byte *' data-ref="10in">in</dfn> = <b>reinterpret_cast</b>&lt;<em>const</em>  <a class="typedef" href="Common/AZOType.h.html#AZO::byte" title='AZO::byte' data-type='uint8_t' data-ref="AZO::byte">byte</a>*&gt;(<a class="local col8 ref" href="#8stream" title='stream' data-ref="8stream">stream</a>-&gt;<a class="ref" href="AZO.h.html#AZO_Stream::next_in" title='AZO_Stream::next_in' data-ref="AZO_Stream::next_in">next_in</a>);</td></tr>
+<tr><th id="61">61</th><td>    <a class="typedef" href="../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <dfn class="local col1 decl" id="11iuAvailSize" title='iuAvailSize' data-type='u_int' data-ref="11iuAvailSize">iuAvailSize</dfn> = <a class="local col8 ref" href="#8stream" title='stream' data-ref="8stream">stream</a>-&gt;<a class="ref" href="AZO.h.html#AZO_Stream::avail_in" title='AZO_Stream::avail_in' data-ref="AZO_Stream::avail_in">avail_in</a>;</td></tr>
+<tr><th id="62">62</th><td>    <a class="typedef" href="Common/AZOType.h.html#AZO::byte" title='AZO::byte' data-type='uint8_t' data-ref="AZO::byte">byte</a>* <dfn class="local col2 decl" id="12out" title='out' data-type='byte *' data-ref="12out">out</dfn> = <b>reinterpret_cast</b>&lt;<a class="typedef" href="Common/AZOType.h.html#AZO::byte" title='AZO::byte' data-type='uint8_t' data-ref="AZO::byte">byte</a>*&gt;(<a class="local col8 ref" href="#8stream" title='stream' data-ref="8stream">stream</a>-&gt;<a class="ref" href="AZO.h.html#AZO_Stream::next_out" title='AZO_Stream::next_out' data-ref="AZO_Stream::next_out">next_out</a>);</td></tr>
+<tr><th id="63">63</th><td>    <a class="typedef" href="../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <dfn class="local col3 decl" id="13outAvailSize" title='outAvailSize' data-type='u_int' data-ref="13outAvailSize">outAvailSize</dfn> = <a class="local col8 ref" href="#8stream" title='stream' data-ref="8stream">stream</a>-&gt;<a class="ref" href="AZO.h.html#AZO_Stream::avail_out" title='AZO_Stream::avail_out' data-ref="AZO_Stream::avail_out">avail_out</a>;</td></tr>
+<tr><th id="64">64</th><td></td></tr>
+<tr><th id="65">65</th><td>    <em>int</em> <dfn class="local col4 decl" id="14ret" title='ret' data-type='int' data-ref="14ret">ret</dfn> = <a class="local col9 ref" href="#9coder" title='coder' data-ref="9coder">coder</a>-&gt;<a class="ref" href="Decoder/MainCodeD.h.html#_ZN3AZO7Decoder8MainCode4CodeERPKhRjRPhS5_" title='AZO::Decoder::MainCode::Code' data-ref="_ZN3AZO7Decoder8MainCode4CodeERPKhRjRPhS5_">Code</a>(<span class='refarg'><a class="local col0 ref" href="#10in" title='in' data-ref="10in">in</a></span>, <span class='refarg'><a class="local col1 ref" href="#11iuAvailSize" title='iuAvailSize' data-ref="11iuAvailSize">iuAvailSize</a></span>, <span class='refarg'><a class="local col2 ref" href="#12out" title='out' data-ref="12out">out</a></span>, <span class='refarg'><a class="local col3 ref" href="#13outAvailSize" title='outAvailSize' data-ref="13outAvailSize">outAvailSize</a></span>);</td></tr>
+<tr><th id="66">66</th><td></td></tr>
+<tr><th id="67">67</th><td>    <a class="local col8 ref" href="#8stream" title='stream' data-ref="8stream">stream</a>-&gt;<a class="ref" href="AZO.h.html#AZO_Stream::next_in" title='AZO_Stream::next_in' data-ref="AZO_Stream::next_in">next_in</a> = <b>reinterpret_cast</b>&lt;<em>const</em> <em>char</em>*&gt;(<a class="local col0 ref" href="#10in" title='in' data-ref="10in">in</a>);</td></tr>
+<tr><th id="68">68</th><td>    <a class="local col8 ref" href="#8stream" title='stream' data-ref="8stream">stream</a>-&gt;<a class="ref" href="AZO.h.html#AZO_Stream::avail_in" title='AZO_Stream::avail_in' data-ref="AZO_Stream::avail_in">avail_in</a> = <a class="local col1 ref" href="#11iuAvailSize" title='iuAvailSize' data-ref="11iuAvailSize">iuAvailSize</a>;</td></tr>
+<tr><th id="69">69</th><td>    <a class="local col8 ref" href="#8stream" title='stream' data-ref="8stream">stream</a>-&gt;<a class="ref" href="AZO.h.html#AZO_Stream::next_out" title='AZO_Stream::next_out' data-ref="AZO_Stream::next_out">next_out</a> = <b>reinterpret_cast</b>&lt;<em>char</em>*&gt;(<a class="local col2 ref" href="#12out" title='out' data-ref="12out">out</a>);</td></tr>
+<tr><th id="70">70</th><td>    <a class="local col8 ref" href="#8stream" title='stream' data-ref="8stream">stream</a>-&gt;<a class="ref" href="AZO.h.html#AZO_Stream::avail_out" title='AZO_Stream::avail_out' data-ref="AZO_Stream::avail_out">avail_out</a> = <a class="local col3 ref" href="#13outAvailSize" title='outAvailSize' data-ref="13outAvailSize">outAvailSize</a>;</td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td>    <b>return</b> <a class="local col4 ref" href="#14ret" title='ret' data-ref="14ret">ret</a>;</td></tr>
+<tr><th id="73">73</th><td>}</td></tr>
+<tr><th id="74">74</th><td></td></tr>
+<tr><th id="75">75</th><td><em>int</em> <dfn class="decl def" id="_Z17AZO_DecompressEndPv" title='AZO_DecompressEnd' data-ref="_Z17AZO_DecompressEndPv">AZO_DecompressEnd</dfn>(<a class="typedef" href="AZO.h.html#AZO_HCOMPRESS" title='AZO_HCOMPRESS' data-type='void *' data-ref="AZO_HCOMPRESS">AZO_HCOMPRESS</a> <dfn class="local col5 decl" id="15handle" title='handle' data-type='AZO_HCOMPRESS' data-ref="15handle">handle</dfn>)</td></tr>
+<tr><th id="76">76</th><td>{</td></tr>
+<tr><th id="77">77</th><td>    <span class="namespace">Decoder::</span><a class="type" href="Decoder/MainCodeD.h.html#AZO::Decoder::MainCode" title='AZO::Decoder::MainCode' data-ref="AZO::Decoder::MainCode">MainCode</a>* <dfn class="local col6 decl" id="16coder" title='coder' data-type='Decoder::MainCode *' data-ref="16coder">coder</dfn> = <b>static_cast</b>&lt;<span class="namespace">Decoder::</span><a class="type" href="Decoder/MainCodeD.h.html#AZO::Decoder::MainCode" title='AZO::Decoder::MainCode' data-ref="AZO::Decoder::MainCode">MainCode</a>*&gt;(<a class="local col5 ref" href="#15handle" title='handle' data-ref="15handle">handle</a>);</td></tr>
+<tr><th id="78">78</th><td></td></tr>
+<tr><th id="79">79</th><td>    <b>if</b>(<a class="local col6 ref" href="#16coder" title='coder' data-ref="16coder">coder</a> == <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>) {</td></tr>
+<tr><th id="80">80</th><td>        <b>return</b> <a class="ref" href="AZO.h.html#AZO_PARAM_ERROR" title='AZO_PARAM_ERROR' data-ref="AZO_PARAM_ERROR">AZO_PARAM_ERROR</a>;</td></tr>
+<tr><th id="81">81</th><td>    }</td></tr>
+<tr><th id="82">82</th><td></td></tr>
+<tr><th id="83">83</th><td>    <a class="local col6 ref" href="#16coder" title='coder' data-ref="16coder">coder</a>-&gt;<a class="ref" href="Decoder/MainCodeD.h.html#_ZN3AZO7Decoder8MainCodeD1Ev" title='AZO::Decoder::MainCode::~MainCode' data-ref="_ZN3AZO7Decoder8MainCodeD1Ev">~MainCode</a>();</td></tr>
+<tr><th id="84">84</th><td>    <a class="type" href="Common/Allocator.h.html#AZO::Allocator" title='AZO::Allocator' data-ref="AZO::Allocator">Allocator</a>::<a class="ref" href="Common/Allocator.h.html#_ZN3AZO9Allocator4FreeEPv" title='AZO::Allocator::Free' data-ref="_ZN3AZO9Allocator4FreeEPv">Free</a>(<a class="local col6 ref" href="#16coder" title='coder' data-ref="16coder">coder</a>);</td></tr>
+<tr><th id="85">85</th><td></td></tr>
+<tr><th id="86">86</th><td>    <b>return</b> <a class="ref" href="AZO.h.html#AZO_OK" title='AZO_OK' data-ref="AZO_OK">AZO_OK</a>;</td></tr>
+<tr><th id="87">87</th><td>}</td></tr>
+<tr><th id="88">88</th><td></td></tr>
+<tr><th id="89">89</th><td><em>int</em> <dfn class="decl def" id="_Z20AZO_BufferDecompressPcPjPKcj" title='AZO_BufferDecompress' data-ref="_Z20AZO_BufferDecompressPcPjPKcj">AZO_BufferDecompress</dfn>(<em>char</em>* <dfn class="local col7 decl" id="17dest" title='dest' data-type='char *' data-ref="17dest">dest</dfn>,</td></tr>
+<tr><th id="90">90</th><td>                         <a class="typedef" href="../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a>* <dfn class="local col8 decl" id="18destLen" title='destLen' data-type='u_int *' data-ref="18destLen">destLen</dfn>,</td></tr>
+<tr><th id="91">91</th><td>                         <em>const</em> <em>char</em>* <dfn class="local col9 decl" id="19source" title='source' data-type='const char *' data-ref="19source">source</dfn>,</td></tr>
+<tr><th id="92">92</th><td>                         <a class="typedef" href="../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <dfn class="local col0 decl" id="20sourceLen" title='sourceLen' data-type='u_int' data-ref="20sourceLen">sourceLen</dfn>)</td></tr>
+<tr><th id="93">93</th><td>{</td></tr>
+<tr><th id="94">94</th><td>    <b>if</b>(<a class="local col7 ref" href="#17dest" title='dest' data-ref="17dest">dest</a> == <span class="macro" title="__null" data-ref="_M/NULL">NULL</span> || <a class="local col8 ref" href="#18destLen" title='destLen' data-ref="18destLen">destLen</a> == <span class="macro" title="__null" data-ref="_M/NULL">NULL</span> || <a class="local col9 ref" href="#19source" title='source' data-ref="19source">source</a> == <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>) {</td></tr>
+<tr><th id="95">95</th><td>        <b>return</b> <a class="ref" href="AZO.h.html#AZO_PARAM_ERROR" title='AZO_PARAM_ERROR' data-ref="AZO_PARAM_ERROR">AZO_PARAM_ERROR</a>;</td></tr>
+<tr><th id="96">96</th><td>    }</td></tr>
+<tr><th id="97">97</th><td></td></tr>
+<tr><th id="98">98</th><td>    <em>void</em>* <dfn class="local col1 decl" id="21buf" title='buf' data-type='void *' data-ref="21buf">buf</dfn> = <a class="type" href="Common/Allocator.h.html#AZO::Allocator" title='AZO::Allocator' data-ref="AZO::Allocator">Allocator</a>::<a class="ref" href="Common/Allocator.h.html#_ZN3AZO9Allocator5AllocEj" title='AZO::Allocator::Alloc' data-ref="_ZN3AZO9Allocator5AllocEj">Alloc</a>(<b>sizeof</b>(<span class="namespace">Decoder::</span><a class="type" href="Decoder/MainCodeD.h.html#AZO::Decoder::MainCode" title='AZO::Decoder::MainCode' data-ref="AZO::Decoder::MainCode">MainCode</a>));</td></tr>
+<tr><th id="99">99</th><td>    <b>if</b>(<a class="local col1 ref" href="#21buf" title='buf' data-ref="21buf">buf</a> == <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>) {</td></tr>
+<tr><th id="100">100</th><td>        <b>return</b> <a class="ref" href="AZO.h.html#AZO_MEM_ERROR" title='AZO_MEM_ERROR' data-ref="AZO_MEM_ERROR">AZO_MEM_ERROR</a>;</td></tr>
+<tr><th id="101">101</th><td>    }</td></tr>
+<tr><th id="102">102</th><td></td></tr>
+<tr><th id="103">103</th><td>    <span class="namespace">Decoder::</span><a class="type" href="Decoder/MainCodeD.h.html#AZO::Decoder::MainCode" title='AZO::Decoder::MainCode' data-ref="AZO::Decoder::MainCode">MainCode</a>* <dfn class="local col2 decl" id="22coder" title='coder' data-type='Decoder::MainCode *' data-ref="22coder">coder</dfn> = <b>new</b> (<a class="local col1 ref" href="#21buf" title='buf' data-ref="21buf">buf</a>) <span class="namespace">Decoder::</span><a class="type" href="Decoder/MainCodeD.h.html#AZO::Decoder::MainCode" title='AZO::Decoder::MainCode' data-ref="AZO::Decoder::MainCode">MainCode</a><a class="ref" href="Decoder/MainCodeD.h.html#_ZN3AZO7Decoder8MainCodeC1Ev" title='AZO::Decoder::MainCode::MainCode' data-ref="_ZN3AZO7Decoder8MainCodeC1Ev">(</a>);</td></tr>
+<tr><th id="104">104</th><td></td></tr>
+<tr><th id="105">105</th><td>    <em>const</em> <a class="typedef" href="Common/AZOType.h.html#AZO::byte" title='AZO::byte' data-type='uint8_t' data-ref="AZO::byte">byte</a>* <dfn class="local col3 decl" id="23in" title='in' data-type='const byte *' data-ref="23in">in</dfn> = <b>reinterpret_cast</b>&lt;<em>const</em>  <a class="typedef" href="Common/AZOType.h.html#AZO::byte" title='AZO::byte' data-type='uint8_t' data-ref="AZO::byte">byte</a>*&gt;(<a class="local col9 ref" href="#19source" title='source' data-ref="19source">source</a>);</td></tr>
+<tr><th id="106">106</th><td>    <a class="typedef" href="../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <dfn class="local col4 decl" id="24iuAvailSize" title='iuAvailSize' data-type='u_int' data-ref="24iuAvailSize">iuAvailSize</dfn> = <a class="local col0 ref" href="#20sourceLen" title='sourceLen' data-ref="20sourceLen">sourceLen</a>;</td></tr>
+<tr><th id="107">107</th><td>    <a class="typedef" href="Common/AZOType.h.html#AZO::byte" title='AZO::byte' data-type='uint8_t' data-ref="AZO::byte">byte</a>* <dfn class="local col5 decl" id="25out" title='out' data-type='byte *' data-ref="25out">out</dfn> = <b>reinterpret_cast</b>&lt;<a class="typedef" href="Common/AZOType.h.html#AZO::byte" title='AZO::byte' data-type='uint8_t' data-ref="AZO::byte">byte</a>*&gt;(<a class="local col7 ref" href="#17dest" title='dest' data-ref="17dest">dest</a>);</td></tr>
+<tr><th id="108">108</th><td>    <a class="typedef" href="../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <dfn class="local col6 decl" id="26outAvailSize" title='outAvailSize' data-type='u_int' data-ref="26outAvailSize">outAvailSize</dfn> = *<a class="local col8 ref" href="#18destLen" title='destLen' data-ref="18destLen">destLen</a>;</td></tr>
+<tr><th id="109">109</th><td></td></tr>
+<tr><th id="110">110</th><td>    <em>int</em> <dfn class="local col7 decl" id="27ret" title='ret' data-type='int' data-ref="27ret">ret</dfn> = <a class="local col2 ref" href="#22coder" title='coder' data-ref="22coder">coder</a>-&gt;<a class="ref" href="Decoder/MainCodeD.h.html#_ZN3AZO7Decoder8MainCode4CodeERPKhRjRPhS5_" title='AZO::Decoder::MainCode::Code' data-ref="_ZN3AZO7Decoder8MainCode4CodeERPKhRjRPhS5_">Code</a>(<span class='refarg'><a class="local col3 ref" href="#23in" title='in' data-ref="23in">in</a></span>, <span class='refarg'><a class="local col4 ref" href="#24iuAvailSize" title='iuAvailSize' data-ref="24iuAvailSize">iuAvailSize</a></span>, <span class='refarg'><a class="local col5 ref" href="#25out" title='out' data-ref="25out">out</a></span>, <span class='refarg'><a class="local col6 ref" href="#26outAvailSize" title='outAvailSize' data-ref="26outAvailSize">outAvailSize</a></span>);</td></tr>
+<tr><th id="111">111</th><td>    </td></tr>
+<tr><th id="112">112</th><td>    *<a class="local col8 ref" href="#18destLen" title='destLen' data-ref="18destLen">destLen</a> -= <a class="local col6 ref" href="#26outAvailSize" title='outAvailSize' data-ref="26outAvailSize">outAvailSize</a>;</td></tr>
+<tr><th id="113">113</th><td></td></tr>
+<tr><th id="114">114</th><td>    <a class="local col2 ref" href="#22coder" title='coder' data-ref="22coder">coder</a>-&gt;<a class="ref" href="Decoder/MainCodeD.h.html#_ZN3AZO7Decoder8MainCodeD1Ev" title='AZO::Decoder::MainCode::~MainCode' data-ref="_ZN3AZO7Decoder8MainCodeD1Ev">~MainCode</a>();</td></tr>
+<tr><th id="115">115</th><td>    <a class="type" href="Common/Allocator.h.html#AZO::Allocator" title='AZO::Allocator' data-ref="AZO::Allocator">Allocator</a>::<a class="ref" href="Common/Allocator.h.html#_ZN3AZO9Allocator4FreeEPv" title='AZO::Allocator::Free' data-ref="_ZN3AZO9Allocator4FreeEPv">Free</a>(<a class="local col2 ref" href="#22coder" title='coder' data-ref="22coder">coder</a>);</td></tr>
+<tr><th id="116">116</th><td></td></tr>
+<tr><th id="117">117</th><td>    <b>return</b> <a class="local col7 ref" href="#27ret" title='ret' data-ref="27ret">ret</a>;</td></tr>
+<tr><th id="118">118</th><td>}</td></tr>
+<tr><th id="119">119</th><td></td></tr>
+<tr><th id="120">120</th><td></td></tr>
+<tr><th id="121">121</th><td><u>#<span data-ppcond="12">endif</span> /*AZO_UNAZO_CPP*/</u></td></tr>
+<tr><th id="122">122</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

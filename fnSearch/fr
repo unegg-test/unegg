@@ -1,0 +1,8 @@
+_ZNSt21front_insert_iteratordeEv|std::front_insert_iterator::operator*
+_ZNSt21front_insert_iteratorppEv|std::front_insert_iterator::operator++
+_ZNSt21front_insert_iteratoraSENT_15const_referenceE|std::front_insert_iterator::operator=
+_ZSt14front_inserterRT_|std::front_inserter
+_ZNSt6vector5frontEv|std::vector::front
+_ZNSt5deque5frontEv|std::deque::front
+_ZSt5frexpfPi|std::frexp
+_ZN3AZO9Allocator4FreeEPv|AZO::Allocator::Free

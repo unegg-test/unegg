@@ -1,0 +1,8 @@
+<dec f='codebrowser/nest/algorithm/azo/Decoder/BlockCodeD.h' l='35' type='byte *'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/BlockCodeD.cpp' l='21' u='w' c='_ZN3AZO7Decoder9BlockCodeC1EPhj'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/BlockCodeD.cpp' l='34' u='r' c='_ZN3AZO7Decoder9BlockCode9CopyBlockEjjj'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/BlockCodeD.cpp' l='34' u='r' c='_ZN3AZO7Decoder9BlockCode9CopyBlockEjjj'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/BlockCodeD.cpp' l='50' u='r' c='_ZN3AZO7Decoder9BlockCode7GetCodeERNS0_11EntropyCodeEj'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/BlockCodeD.cpp' l='50' u='r' c='_ZN3AZO7Decoder9BlockCode7GetCodeERNS0_11EntropyCodeEj'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/BlockCodeD.cpp' l='74' u='r' c='_ZN3AZO7Decoder9BlockCode4CodeERNS0_11EntropyCodeE'/>
+<offset>0</offset>

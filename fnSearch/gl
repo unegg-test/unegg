@@ -1,0 +1,16 @@
+_ZN4nest3egg6Global5GetIDEv|nest::egg::Global::GetID
+_ZN4nest3egg6Global11GetReservedEv|nest::egg::Global::GetReserved
+_ZN4nest3egg6Global10GetVersionEv|nest::egg::Global::GetVersion
+_ZN4nest3alz6Global9GetDiskIDEv|nest::alz::Global::GetDiskID
+_ZN4nest3alz6Global12GetSignatureEv|nest::alz::Global::GetSignature
+_ZN4nest3alz6Global10GetVersionEv|nest::alz::Global::GetVersion
+_ZN4nest3alz6GlobalC1Ev|nest::alz::Global::Global
+_ZN4nest3alz6Global9OnCleanUpEv|nest::alz::Global::OnCleanUp
+_ZN4nest3alz6Global6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE|nest::alz::Global::OnRead
+_ZN4nest3alz6Global9_As4BytesEjPb|nest::alz::Global::_As4Bytes
+_ZN4nest3alz6GlobalD1Ev|nest::alz::Global::~Global
+_ZN4nest3egg6GlobalC1Ev|nest::egg::Global::Global
+_ZN4nest3egg6Global9OnCleanUpEv|nest::egg::Global::OnCleanUp
+_ZN4nest3egg6Global6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE|nest::egg::Global::OnRead
+_ZN4nest3egg6Global9_As4BytesEjPb|nest::egg::Global::_As4Bytes
+_ZN4nest3egg6GlobalD1Ev|nest::egg::Global::~Global

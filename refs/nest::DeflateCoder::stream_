@@ -1,0 +1,16 @@
+<dec f='codebrowser/nest/algorithm/DeflateCoder.h' l='35' type='z_stream'/>
+<use f='codebrowser/nest/algorithm/DeflateCoder.cpp' l='33' u='a' c='_ZN4nest12DeflateCoder10InitializeEPKhm'/>
+<use f='codebrowser/nest/algorithm/DeflateCoder.cpp' l='33' u='r' c='_ZN4nest12DeflateCoder10InitializeEPKhm'/>
+<use f='codebrowser/nest/algorithm/DeflateCoder.cpp' l='34' u='m' c='_ZN4nest12DeflateCoder10InitializeEPKhm'/>
+<use f='codebrowser/nest/algorithm/DeflateCoder.cpp' l='35' u='m' c='_ZN4nest12DeflateCoder10InitializeEPKhm'/>
+<use f='codebrowser/nest/algorithm/DeflateCoder.cpp' l='36' u='m' c='_ZN4nest12DeflateCoder10InitializeEPKhm'/>
+<use f='codebrowser/nest/algorithm/DeflateCoder.cpp' l='38' u='a' c='_ZN4nest12DeflateCoder10InitializeEPKhm'/>
+<use f='codebrowser/nest/algorithm/DeflateCoder.cpp' l='47' u='a' c='_ZN4nest12DeflateCoder8FinalizeEv'/>
+<use f='codebrowser/nest/algorithm/DeflateCoder.cpp' l='52' u='m' c='_ZN4nest12DeflateCoder6OnPushEPvm'/>
+<use f='codebrowser/nest/algorithm/DeflateCoder.cpp' l='53' u='m' c='_ZN4nest12DeflateCoder6OnPushEPvm'/>
+<use f='codebrowser/nest/algorithm/DeflateCoder.cpp' l='60' u='m' c='_ZN4nest12DeflateCoder5OnPopEPvPm'/>
+<use f='codebrowser/nest/algorithm/DeflateCoder.cpp' l='61' u='m' c='_ZN4nest12DeflateCoder5OnPopEPvPm'/>
+<use f='codebrowser/nest/algorithm/DeflateCoder.cpp' l='63' u='a' c='_ZN4nest12DeflateCoder5OnPopEPvPm'/>
+<use f='codebrowser/nest/algorithm/DeflateCoder.cpp' l='72' u='m' c='_ZN4nest12DeflateCoder5OnPopEPvPm'/>
+<use f='codebrowser/nest/algorithm/DeflateCoder.cpp' l='74' u='m' c='_ZN4nest12DeflateCoder5OnPopEPvPm'/>
+<offset>64</offset>

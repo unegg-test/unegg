@@ -1,0 +1,15 @@
+<def f='include/c++/7/bits/basic_string.h' l='420' ll='423' type='void std::__cxx11::basic_string::basic_string&lt;_CharT, _Traits, _Alloc&gt;()'/>
+<doc f='include/c++/7/bits/basic_string.h' l='417'>/**
+       *  @brief  Default constructor creates an empty string.
+       */</doc>
+<use f='codebrowser/EventHandler.cpp' l='184' u='c' c='_ZN12EventHandler7OnErrorEmi'/>
+<use f='include/c++/7/bits/locale_facets.tcc' l='209' u='c' c='_ZNKSt7num_get16_M_extract_floatET0_S0_RSt8ios_baseRSt12_Ios_IostateRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/c++/7/bits/locale_facets.tcc' l='466' u='c' c='_ZNKSt7num_get14_M_extract_intET0_S0_RSt8ios_baseRSt12_Ios_IostateRT_'/>
+<use f='include/c++/7/bits/locale_facets.tcc' l='694' u='c' c='_ZNKSt7num_get6do_getET0_S0_RSt8ios_baseRSt12_Ios_IostateRf'/>
+<use f='include/c++/7/bits/locale_facets.tcc' l='709' u='c' c='_ZNKSt7num_get6do_getET0_S0_RSt8ios_baseRSt12_Ios_IostateRd'/>
+<use f='include/c++/7/bits/locale_facets.tcc' l='741' u='c' c='_ZNKSt7num_get6do_getET0_S0_RSt8ios_baseRSt12_Ios_IostateRe'/>
+<use f='include/c++/7/bits/locale_facets_nonio.tcc' l='160' u='c' c='_ZNKSt7__cxx119money_get10_M_extractET0_S1_RSt8ios_baseRSt12_Ios_IostateRNS_12basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/c++/7/bits/locale_facets_nonio.tcc' l='173' u='c' c='_ZNKSt7__cxx119money_get10_M_extractET0_S1_RSt8ios_baseRSt12_Ios_IostateRNS_12basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='include/c++/7/bits/locale_facets_nonio.tcc' l='373' u='c' c='_ZNKSt7__cxx119money_get6do_getET0_S1_bRSt8ios_baseRSt12_Ios_IostateRe'/>
+<use f='include/c++/7/bits/locale_facets_nonio.tcc' l='391' u='c' c='_ZNKSt7__cxx119money_get6do_getET0_S1_bRSt8ios_baseRSt12_Ios_IostateRNS_12basic_stringIT_St11char_traitsIS7_ESaIS7_EEE'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='243' u='c' c='_ZN4nest9ALZFormat11ScanFootersEv'/>

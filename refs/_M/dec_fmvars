@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/encryption/aes/aesopt.h' l='880'/>
+<use f='codebrowser/nest/third-party/encryption/aes/aesopt.h' l='886' u='w'/>
+<dec f='codebrowser/nest/third-party/encryption/aes/aesopt.h' l='887'/>
+<use f='codebrowser/nest/third-party/encryption/aes/aescrypt.c' l='220' u='w'/>
+<doc f='codebrowser/nest/third-party/encryption/aes/aesopt.h' l='878'>/* parallel. NOTE: x must be a simple variable, NOT an expression in these macros.  */</doc>

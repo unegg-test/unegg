@@ -1,0 +1,8 @@
+<dec f='codebrowser/nest/define.h' l='41' type='11'/>
+<use f='codebrowser/EventHandler.cpp' l='205' c='_ZN12EventHandler7OnErrorEmi'/>
+<use f='codebrowser/nest/Workspace.cpp' l='124' u='r' c='_ZN4nest9Workspace7ExtractEPKc'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='112' u='r' c='_ZN4nest9ALZFormat4ScanEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='387' u='r' c='_ZN4nest9ALZFormat7ExtractEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='92' u='r' c='_ZN4nest9EggFormat4ScanEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='127' u='r' c='_ZN4nest9EggFormat7ExtractEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='505' u='r' c='_ZN4nest9EggFormat20ExtractNormalArchiveEv'/>

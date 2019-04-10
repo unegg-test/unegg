@@ -1,0 +1,2 @@
+<def f='codebrowser/nest/algorithm/azo/Decoder/DictionaryTableD.h' l='25' ll='26' type='void AZO::Decoder::DictionaryTable::DictionaryTable(const byte * buf, u_int size)'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/MatchCodeD.h' l='15' u='c' c='_ZN3AZO7Decoder9MatchCodeC1EPKhj'/>

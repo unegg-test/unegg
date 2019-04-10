@@ -1,0 +1,2 @@
+<def f='codebrowser/nest/format/egg/PosixField.h' l='30' ll='33' type='int nest::egg::PosixField::GetUID()'/>
+<use f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='135' u='c' c='_ZN4nest3egg14ExtraFieldWrap9_As4BytesEjPb'/>

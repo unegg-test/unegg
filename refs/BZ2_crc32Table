@@ -1,0 +1,17 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='155' type='UInt32 [256]'/>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='153'>/*-- Stuff for doing CRCs. --*/</doc>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='221' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='302' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='320' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='548' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='616' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='627' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='718' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='767' macro='1' u='r'/>
+<def f='codebrowser/nest/third-party/algorithm/bzip2/crctable.c' l='31' ll='99' type='UInt32 [256]'/>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/crctable.c' l='24'>/*--
+  I think this is an implementation of the AUTODIN-II,
+  Ethernet &amp; FDDI 32-bit CRC standard.  Vaguely derived
+  from code by Rob Warnock, in Section 51 of the
+  comp.compression FAQ.
+--*/</doc>

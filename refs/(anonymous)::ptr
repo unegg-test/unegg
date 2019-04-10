@@ -1,0 +1,6 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='216' type='UInt32 *'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/blocksort.c' l='1033' u='r' c='BZ2_blockSort'/>
+<offset>448</offset>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='215'>/* aliases for arr1 and arr2 */</doc>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='201' u='w' c='BZ2_bzCompressInit'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='150' u='r' c='generateMTFValues'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/format/EggFormat.h' l='100' type='int nest::EggFormat::QueryExtractStream(size_t index, nest::OutputStream ** stream)'/>
+<def f='codebrowser/nest/format/EggFormat.cpp' l='418' ll='424' type='int nest::EggFormat::QueryExtractStream(size_t index, nest::OutputStream ** stream)'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='522' u='c' c='_ZN4nest9EggFormat20ExtractNormalArchiveEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='577' u='c' c='_ZN4nest9EggFormat19ExtractSolidArchiveEv'/>

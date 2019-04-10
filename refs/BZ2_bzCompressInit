@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.h' l='100' type='int BZ2_bzCompressInit(bz_stream * strm, int blockSize100k, int verbosity, int workFactor)'/>
+<def f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='148' ll='211' type='int BZ2_bzCompressInit(bz_stream * strm, int blockSize100k, int verbosity, int workFactor)'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='951' u='c' c='BZ2_bzWriteOpen'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1270' u='c' c='BZ2_bzBuffToBuffCompress'/>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='147'>/*---------------------------------------------------*/</doc>

@@ -1,0 +1,11 @@
+<dec f='include/stdio.h' l='141'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='376' u='c'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='143' u='c'/>
+<use f='codebrowser/nest/format/egg/FileWrap.cpp' l='77' u='c'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='53' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='210' u='c'/>
+<dec f='include/fcntl.h' l='137'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='184' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='296' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='309' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='404' u='c'/>

@@ -1,0 +1,9 @@
+<def f='include/c++/7/bits/stl_stack.h' l='99' ll='277'/>
+<mbr r='std::stack::c' t='_Sequence'/>
+<fun r='_ZNSt5stackC1ERKT0_'/>
+<fun r='_ZNKSt5stack5emptyEv'/>
+<fun r='_ZNKSt5stack4sizeEv'/>
+<fun r='_ZNSt5stack3topEv'/>
+<fun r='_ZNKSt5stack3topEv'/>
+<fun r='_ZNSt5stack4pushERKNT0_10value_typeE'/>
+<fun r='_ZNSt5stack3popEv'/>

@@ -1,0 +1,7 @@
+<def f='include/c++/7/bits/stl_set.h' l='722' ll='724' type='void std::set::clear()'/>
+<doc f='include/c++/7/bits/stl_set.h' l='716'>/**
+       *  Erases all elements in a %set.  Note that this function only erases
+       *  the elements, and that if the elements themselves are pointers, the
+       *  pointed-to memory is not touched in any way.  Managing the pointer is
+       *  the user&apos;s responsibility.
+       */</doc>

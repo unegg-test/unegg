@@ -1,0 +1,7 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='397' type='UChar [256]'/>
+<offset>27744</offset>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='33' u='w' c='makeMaps_d'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='399' u='r' c='BZ2_decompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='477' u='r' c='BZ2_decompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='479' u='r' c='BZ2_decompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='480' u='r' c='BZ2_decompress'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.h' l='160' type='int BZ2_bzRead(int * bzerror, BZFILE * b, void * buf, int len)'/>
+<def f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1161' ll='1217' type='int BZ2_bzRead(int * bzerror, BZFILE * b, void * buf, int len)'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1482' u='c' c='BZ2_bzread'/>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1160'>/*---------------------------------------------------*/</doc>

@@ -1,0 +1,5 @@
+<def f='codebrowser/nest/algorithm/azo/Decoder/BoolStateD.h' l='22' ll='35'/>
+<fun r='_ZN3AZO7Decoder9BoolStateC1Ev'/>
+<fun r='_ZN3AZO7Decoder9BoolStateD1Ev'/>
+<fun r='_ZN3AZO7Decoder9BoolState4CodeERNS0_11EntropyCodeE'/>
+<fun r='_ZN3AZO7Decoder9BoolState4CodeERNS0_11EntropyCodeE'/>

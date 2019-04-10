@@ -1,0 +1,7 @@
+<dec f='codebrowser/nest/format/egg/ExtraField.h' l='30' type='bool nest::egg::ExtraField::GetBitFlag(size_t index)'/>
+<use f='codebrowser/nest/format/egg/CommentField.h' l='28' u='c' c='_ZN4nest3egg12CommentField11IsEncryptedEv'/>
+<use f='codebrowser/nest/format/egg/CommentField.h' l='33' u='c' c='_ZN4nest3egg12CommentField6IsUTF8Ev'/>
+<use f='codebrowser/nest/format/egg/FilenameField.h' l='27' u='c' c='_ZN4nest3egg13FilenameField11IsEncryptedEv'/>
+<use f='codebrowser/nest/format/egg/FilenameField.h' l='32' u='c' c='_ZN4nest3egg13FilenameField6IsUTF8Ev'/>
+<use f='codebrowser/nest/format/egg/FilenameField.h' l='37' u='c' c='_ZN4nest3egg13FilenameField10IsAbsoluteEv'/>
+<def f='codebrowser/nest/format/egg/ExtraField.cpp' l='121' ll='124' type='bool nest::egg::ExtraField::GetBitFlag(size_t index)'/>

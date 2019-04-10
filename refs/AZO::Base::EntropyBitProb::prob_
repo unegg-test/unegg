@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/algorithm/azo/Base/EntropyBitProbB.h' l='31' type='uint32_t [ARRAY_N]'/>
+<use f='codebrowser/nest/algorithm/azo/Base/EntropyBitProbB.cpp' l='23' c='_ZN3AZO4Base14EntropyBitProb4InitEv'/>
+<use f='codebrowser/nest/algorithm/azo/Base/EntropyBitProbB.cpp' l='29' u='r' c='_ZN3AZO4Base14EntropyBitProb7GetProbEj'/>
+<use f='codebrowser/nest/algorithm/azo/Base/EntropyBitProbB.cpp' l='40' u='a' c='_ZN3AZO4Base14EntropyBitProb9IncreProbEjj'/>

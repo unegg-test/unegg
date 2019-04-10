@@ -1,0 +1,6 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='176'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1572' u='c'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='172'>/* Attempt to find a better match only when the current match is strictly
+     * smaller than this value. This mechanism is used only for compression
+     * levels &gt;= 4.
+     */</doc>

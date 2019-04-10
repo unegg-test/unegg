@@ -1,0 +1,10 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='118' type='uInt'/>
+<offset>256</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='118'>/* extra field length (valid if extra != Z_NULL) */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='515' u='r' c='deflateBound'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='642' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='643' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='686' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='702' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='710' u='w' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='724' u='r' c='inflate'/>

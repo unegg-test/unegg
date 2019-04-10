@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='82' type='block_state deflate_rle(deflate_state * s, int flush)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='821' u='c' c='deflate'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1741' ll='1801' macro='1' type='block_state deflate_rle(deflate_state * s, int flush)'/>

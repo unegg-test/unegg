@@ -1,0 +1,6 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.h' l='233' type='const char * BZ2_bzlibVersion()'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='53' u='c' c='BZ2_bz__AssertH__fail'/>
+<def f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1366' ll='1369' type='const char * BZ2_bzlibVersion()'/>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1363'>/*--
+   return version like &quot;0.9.5d, 4-Sept-1999&quot;.
+--*/</doc>

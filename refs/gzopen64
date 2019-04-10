@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='1566' type='gzFile gzopen64(const char * , const char * )'/>
+<dec f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='65' type='gzFile gzopen64(const char * , const char * )'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='204' ll='209' type='gzFile gzopen64(const char * path, const char * mode)'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='203'>/* -- see zlib.h -- */</doc>

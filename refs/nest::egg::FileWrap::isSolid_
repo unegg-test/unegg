@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/format/egg/FileWrap.h' l='76' type='bool'/>
+<offset>1088</offset>
+<use f='codebrowser/nest/format/egg/FileWrap.cpp' l='21' u='w' c='_ZN4nest3egg8FileWrapC1Eb'/>
+<use f='codebrowser/nest/format/egg/FileWrap.cpp' l='58' u='r' c='_ZN4nest3egg8FileWrap6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>

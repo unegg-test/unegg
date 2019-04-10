@@ -1,0 +1,7 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='293' type='void _tr_init(deflate_state * s)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='382' u='c' c='deflateReset'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='292'>/* in trees.c */</doc>
+<def f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='386' ll='410' type='void _tr_init(deflate_state * s)'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='383'>/* ===========================================================================
+ * Initialize the tree data structures for a new zlib stream.
+ */</doc>

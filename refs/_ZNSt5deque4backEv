@@ -1,0 +1,5 @@
+<def f='include/c++/7/bits/stl_deque.h' l='1472' ll='1479' type='reference std::deque::back()'/>
+<doc f='include/c++/7/bits/stl_deque.h' l='1468'>/**
+       *  Returns a read/write reference to the data at the last element of the
+       *  %deque.
+       */</doc>

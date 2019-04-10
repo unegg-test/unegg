@@ -1,0 +1,6 @@
+<dec f='codebrowser/nest/Workspace.h' l='41' type='const char * nest::Workspace::GetFilename()'/>
+<use f='codebrowser/EventHandler.cpp' l='47' u='c' c='_ZN12EventHandler10InitializeEPN4nest9WorkspaceE'/>
+<use f='codebrowser/EventHandler.cpp' l='76' u='c' c='_ZN12EventHandler11OnWorkStartEi'/>
+<use f='codebrowser/EventHandler.cpp' l='80' u='c' c='_ZN12EventHandler11OnWorkStartEi'/>
+<use f='codebrowser/EventHandler.cpp' l='84' u='c' c='_ZN12EventHandler11OnWorkStartEi'/>
+<def f='codebrowser/nest/Workspace.cpp' l='140' ll='143' type='const char * nest::Workspace::GetFilename()'/>

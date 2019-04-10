@@ -1,0 +1,6 @@
+<use f='codebrowser/nest/format/alz/File.h' l='70' u='r' c='_ZN4nest3alz4File17GetCompressMethodEv'/>
+<dec f='codebrowser/nest/format/alz/File.h' l='129' type='unsigned short'/>
+<offset>224</offset>
+<use f='codebrowser/nest/format/alz/File.cpp' l='22' u='w' c='_ZN4nest3alz4FileC1Ev'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='36' u='w' c='_ZN4nest3alz4File9OnCleanUpEv'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='100' u='a' c='_ZN4nest3alz4File6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>

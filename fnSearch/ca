@@ -1,0 +1,3 @@
+_ZNKSt6vector8capacityEv|std::vector::capacity
+_ZN3AZO9BufferMan8CapacityEj|AZO::BufferMan::Capacity
+_ZN4nest9EggFormat18CalculateDummySizeEPNS_11InputStreamE|nest::EggFormat::CalculateDummySize

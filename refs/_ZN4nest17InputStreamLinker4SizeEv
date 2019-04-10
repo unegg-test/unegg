@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/stream/InputStreamLinker.h' l='36' type='uint64 nest::InputStreamLinker::Size()'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='57' u='c' c='_ZN4nest17InputStreamLinker4SeekEyi'/>
+<inh f='codebrowser/nest/stream/InputStream.h' l='36' c='_ZN4nest11InputStream4SizeEv'/>
+<def f='codebrowser/nest/stream/InputStreamLinker.cpp' l='108' ll='113' type='uint64 nest::InputStreamLinker::Size()'/>

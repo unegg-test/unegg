@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/format/EggFormat.h' l='42' type='void nest::EggFormat::Close()'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='47' u='c' c='_ZN4nest9EggFormatD1Ev'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='54' u='c' c='_ZN4nest9EggFormat4OpenEPNS_11InputStreamE'/>
+<inh f='codebrowser/nest/format/Format.h' l='50' c='_ZN4nest6Format5CloseEv'/>
+<def f='codebrowser/nest/format/EggFormat.cpp' l='79' ll='83' type='void nest::EggFormat::Close()'/>

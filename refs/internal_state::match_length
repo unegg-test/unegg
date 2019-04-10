@@ -1,0 +1,34 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='153' type='uInt'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1039' u='w' c='lm_init'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1557' u='w' c='deflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1560' u='r' c='deflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1564' u='r' c='deflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1566' u='r' c='deflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1572' u='r' c='deflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1574' u='w' c='deflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1581' u='w' c='deflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1586' u='r' c='deflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1587' u='w' c='deflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1648' u='r' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1649' u='w' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1657' u='w' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1660' u='r' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1662' u='r' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1670' u='w' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1676' u='r' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1698' u='w' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1763' u='w' c='deflate_rle'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1775' u='w' c='deflate_rle'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1776' u='r' c='deflate_rle'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1777' u='w' c='deflate_rle'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1782' u='r' c='deflate_rle'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1785' u='r' c='deflate_rle'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1787' u='r' c='deflate_rle'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1788' u='r' c='deflate_rle'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1789' u='w' c='deflate_rle'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1825' u='w' c='deflate_huff'/>
+<offset>1152</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='149'>/* Window position at the beginning of the current output block. Gets
+     * negative when the window is moved backwards.
+     */</doc>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='153'>/* length of best match */</doc>

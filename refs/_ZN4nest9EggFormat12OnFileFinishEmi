@@ -1,0 +1,6 @@
+<dec f='codebrowser/nest/format/EggFormat.h' l='66' type='void nest::EggFormat::OnFileFinish(size_t index, int res)'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='204' u='c' c='_ZN4nest9EggFormat9ScanFilesEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='529' u='c' c='_ZN4nest9EggFormat20ExtractNormalArchiveEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='716' u='c' c='_ZN4nest9EggFormat19ExtractSolidArchiveEv'/>
+<inh f='codebrowser/nest/Events.h' l='35' c='_ZN4nest6Events12OnFileFinishEmi'/>
+<def f='codebrowser/nest/format/EggFormat.cpp' l='1142' ll='1148' type='void nest::EggFormat::OnFileFinish(size_t index, int res)'/>

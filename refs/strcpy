@@ -1,0 +1,6 @@
+<dec f='include/string.h' l='125' type='char * strcpy(char *__restrict __dest, const char *__restrict __src)'/>
+<doc f='include/string.h' l='124'>/* Copy SRC to DEST.  */</doc>
+<use f='codebrowser/UnEgg.cpp' l='298' u='c' c='_Z14ExtractArchiveR11CommandLine'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='286' u='c' c='_ZN4nest9ALZFormat18GenerateVolumeNameEmPcm'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='156' u='c' c='gz_open'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='514' u='c' c='gz_error'/>

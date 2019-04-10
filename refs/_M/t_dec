@@ -1,0 +1,49 @@
+<dec f='codebrowser/nest/third-party/encryption/aes/aesopt.h' l='741'/>
+<use f='codebrowser/nest/third-party/encryption/aes/aesopt.h' l='759' u='c'/>
+<use f='codebrowser/nest/third-party/encryption/aes/aesopt.h' l='774' u='c'/>
+<use f='codebrowser/nest/third-party/encryption/aes/aesopt.h' l='782' u='c'/>
+<use f='codebrowser/nest/third-party/encryption/aes/aesopt.h' l='822' u='c'/>
+<use f='codebrowser/nest/third-party/encryption/aes/aesopt.h' l='825' u='c'/>
+<doc f='codebrowser/nest/third-party/encryption/aes/aesopt.h' l='701'>/*  If there are no global variables, the AES tables are placed in
+    a structure and a pointer is added to the AES context. If this
+    facility is used, the calling program has to ensure that this
+    pointer is managed appropriately. In particular, the value of
+    the t_dec(in,it) item in the table structure must be set to zero
+    in order to ensure that the tables are initialised. In practice
+    the three code sequences in aeskey.c that control the calls to
+    gen_tabs() and the gen_tabs() routine itself will require some
+    changes for a specific implementation. If global variables are
+    available it will generally be preferable to use them with the
+    precomputed FIXED_TABLES option that uses static global tables.
+
+    The following defines can be used to control the way the tables
+    are defined, initialised and used in embedded environments that
+    require special features for these purposes
+
+    the &apos;t_dec&apos; construction is used to declare fixed table arrays
+    the &apos;t_set&apos; construction is used to set fixed table values
+    the &apos;t_use&apos; construction is used to access fixed table values
+
+    256 byte tables:
+
+        t_xxx(s,box)    =&gt; forward S box
+        t_xxx(i,box)    =&gt; inverse S box
+
+    256 32-bit word OR 4 x 256 32-bit word tables:
+
+        t_xxx(f,n)      =&gt; forward normal round
+        t_xxx(f,l)      =&gt; forward last round
+        t_xxx(i,n)      =&gt; inverse normal round
+        t_xxx(i,l)      =&gt; inverse last round
+        t_xxx(l,s)      =&gt; key schedule table
+        t_xxx(i,m)      =&gt; key schedule table
+
+    Other variables and tables:
+
+        t_xxx(in,it)    =&gt; the table initialsation flag
+        t_xxx(r,c)      =&gt; the rcon table
+*/</doc>
+<use f='codebrowser/nest/third-party/encryption/aes/aestab.c' l='200' u='c'/>
+<use f='codebrowser/nest/third-party/encryption/aes/aestab.c' l='229' u='c'/>
+<use f='codebrowser/nest/third-party/encryption/aes/aestab.c' l='237' u='c'/>
+<use f='codebrowser/nest/third-party/encryption/aes/aestab.c' l='269' u='c'/>

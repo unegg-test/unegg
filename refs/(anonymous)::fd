@@ -1,0 +1,13 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='89' type='int'/>
+<offset>32</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='89'>/* file descriptor */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='159' u='w' c='gz_open'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='174' u='r' c='gz_open'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='184' u='r' c='gz_open'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='268' u='r' c='gzrewind'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='309' u='r' c='gzseek64'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='404' u='r' c='gzoffset64'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='31' u='r' c='gz_load'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='651' u='r' c='gzclose_r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='79' u='r' c='gz_comp'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='528' u='r' c='gzclose_w'/>

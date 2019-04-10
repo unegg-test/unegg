@@ -1,0 +1,15 @@
+<dec f='codebrowser/nest/algorithm/azo/Base/DictionaryTableB.h' l='32' type='AZO::Base::DictionaryTable::Data [128]'/>
+<use f='codebrowser/nest/algorithm/azo/Base/DictionaryTableB.cpp' l='15' u='m' c='_ZN3AZO4Base15DictionaryTableC1EPKhj'/>
+<use f='codebrowser/nest/algorithm/azo/Base/DictionaryTableB.cpp' l='21' u='r' c='_ZN3AZO4Base15DictionaryTable6UpdateEjj'/>
+<use f='codebrowser/nest/algorithm/azo/Base/DictionaryTableB.cpp' l='21' u='r' c='_ZN3AZO4Base15DictionaryTable6UpdateEjj'/>
+<use f='codebrowser/nest/algorithm/azo/Base/DictionaryTableB.cpp' l='21' u='r' c='_ZN3AZO4Base15DictionaryTable6UpdateEjj'/>
+<use f='codebrowser/nest/algorithm/azo/Base/DictionaryTableB.cpp' l='22' u='m' c='_ZN3AZO4Base15DictionaryTable6UpdateEjj'/>
+<use f='codebrowser/nest/algorithm/azo/Base/DictionaryTableB.cpp' l='23' u='m' c='_ZN3AZO4Base15DictionaryTable6UpdateEjj'/>
+<use f='codebrowser/nest/algorithm/azo/Base/DictionaryTableB.cpp' l='30' u='r' c='_ZN3AZO4Base15DictionaryTable6UpdateEjjj'/>
+<use f='codebrowser/nest/algorithm/azo/Base/DictionaryTableB.cpp' l='30' u='r' c='_ZN3AZO4Base15DictionaryTable6UpdateEjjj'/>
+<use f='codebrowser/nest/algorithm/azo/Base/DictionaryTableB.cpp' l='30' u='r' c='_ZN3AZO4Base15DictionaryTable6UpdateEjjj'/>
+<use f='codebrowser/nest/algorithm/azo/Base/DictionaryTableB.cpp' l='31' u='m' c='_ZN3AZO4Base15DictionaryTable6UpdateEjjj'/>
+<use f='codebrowser/nest/algorithm/azo/Base/DictionaryTableB.cpp' l='32' u='m' c='_ZN3AZO4Base15DictionaryTable6UpdateEjjj'/>
+<offset>96</offset>
+<use f='codebrowser/nest/algorithm/azo/Decoder/DictionaryTableD.cpp' l='50' u='m' c='_ZN3AZO7Decoder15DictionaryTable3GetEjRjS2_'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/DictionaryTableD.cpp' l='51' u='m' c='_ZN3AZO7Decoder15DictionaryTable3GetEjRjS2_'/>

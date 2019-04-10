@@ -1,0 +1,4 @@
+<use f='codebrowser/nest/algorithm/azo/Base/BoolStateB.h' l='27' u='r' c='_ZN3AZO4Base9BoolState8TotalBitEv'/>
+<dec f='codebrowser/nest/algorithm/azo/Base/BoolStateB.h' l='34' type='const u_int'/>
+<use f='codebrowser/nest/algorithm/azo/Base/BoolStateB.h' l='35' u='r'/>
+<use f='codebrowser/nest/algorithm/azo/Base/BoolStateB.cpp' l='27' u='r' c='_ZN3AZO4Base9BoolState6UpdateEj'/>

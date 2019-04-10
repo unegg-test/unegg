@@ -1,0 +1,2 @@
+<def f='codebrowser/nest/algorithm/azo/Decoder/BitCodeD.h' l='36' type='u_int AZO::Decoder::BitCode::GetReadSize()'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.h' l='26' u='c' c='_ZN3AZO7Decoder11EntropyCode7GetSizeEv'/>

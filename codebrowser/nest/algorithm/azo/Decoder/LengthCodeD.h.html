@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>LengthCodeD.h source code [codebrowser/nest/algorithm/azo/Decoder/LengthCodeD.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="AZO::Decoder::LengthCode "/>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/algorithm/azo/Decoder/LengthCodeD.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>nest</a>/<a href='../..'>algorithm</a>/<a href='..'>azo</a>/<a href='./'>Decoder</a>/<a href='LengthCodeD.h.html'>LengthCodeD.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/AZO_DECODER_LENGTHCODE_H">AZO_DECODER_LENGTHCODE_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/AZO_DECODER_LENGTHCODE_H" data-ref="_M/AZO_DECODER_LENGTHCODE_H">AZO_DECODER_LENGTHCODE_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="PredictProbD.h.html">"PredictProbD.h"</a></u></td></tr>
+<tr><th id="5">5</th><td><u>#include <a href="PredictProbD.h.html">"PredictProbD.h"</a></u></td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><b>namespace</b> <span class="namespace">AZO</span> {</td></tr>
+<tr><th id="8">8</th><td><b>namespace</b> <span class="namespace">Decoder</span> {</td></tr>
+<tr><th id="9">9</th><td></td></tr>
+<tr><th id="10">10</th><td><b>class</b> <dfn class="type def" id="AZO::Decoder::LengthCode" title='AZO::Decoder::LengthCode' data-ref="AZO::Decoder::LengthCode">LengthCode</dfn></td></tr>
+<tr><th id="11">11</th><td>{</td></tr>
+<tr><th id="12">12</th><td><b>public</b>:</td></tr>
+<tr><th id="13">13</th><td>    <dfn class="decl def" id="_ZN3AZO7Decoder10LengthCodeC1Ev" title='AZO::Decoder::LengthCode::LengthCode' data-ref="_ZN3AZO7Decoder10LengthCodeC1Ev">LengthCode</dfn>() {}</td></tr>
+<tr><th id="14">14</th><td>    </td></tr>
+<tr><th id="15">15</th><td>    <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <a class="decl" href="LengthCodeD.cpp.html#_ZN3AZO7Decoder10LengthCode4CodeERNS0_11EntropyCodeEh" title='AZO::Decoder::LengthCode::Code' data-ref="_ZN3AZO7Decoder10LengthCode4CodeERNS0_11EntropyCodeEh" id="_ZN3AZO7Decoder10LengthCode4CodeERNS0_11EntropyCodeEh">Code</a>(<a class="type" href="EntropyCodeD.h.html#AZO::Decoder::EntropyCode" title='AZO::Decoder::EntropyCode' data-ref="AZO::Decoder::EntropyCode">EntropyCode</a>&amp; <dfn class="local col0 decl" id="50entropy" title='entropy' data-type='AZO::Decoder::EntropyCode &amp;' data-ref="50entropy">entropy</dfn>, <a class="typedef" href="../Common/AZOType.h.html#AZO::uint8_t" title='AZO::uint8_t' data-type='unsigned char' data-ref="AZO::uint8_t">uint8_t</a> <dfn class="local col1 decl" id="51distCode" title='distCode' data-type='uint8_t' data-ref="51distCode">distCode</dfn>);</td></tr>
+<tr><th id="16">16</th><td></td></tr>
+<tr><th id="17">17</th><td><b>private</b>:    </td></tr>
+<tr><th id="18">18</th><td>    <a class="type" href="PredictProbD.h.html#AZO::Decoder::PredictProb" title='AZO::Decoder::PredictProb' data-ref="AZO::Decoder::PredictProb">PredictProb</a>&lt;<a class="ref" href="../Common/AZOOption.h.html#AZO::MATCH_DIST_CODE_SIZE" title='AZO::MATCH_DIST_CODE_SIZE' data-ref="AZO::MATCH_DIST_CODE_SIZE">MATCH_DIST_CODE_SIZE</a>, <a class="ref" href="../Common/AZOOption.h.html#AZO::MATCH_LENGTH_CODE_SIZE" title='AZO::MATCH_LENGTH_CODE_SIZE' data-ref="AZO::MATCH_LENGTH_CODE_SIZE">MATCH_LENGTH_CODE_SIZE</a>, <a class="ref" href="../Common/AZOOption.h.html#AZO::LENGTHCODE_PREDICT_SHIFT" title='AZO::LENGTHCODE_PREDICT_SHIFT' data-ref="AZO::LENGTHCODE_PREDICT_SHIFT">LENGTHCODE_PREDICT_SHIFT</a>&gt; <dfn class="decl" id="AZO::Decoder::LengthCode::prob_" title='AZO::Decoder::LengthCode::prob_' data-ref="AZO::Decoder::LengthCode::prob_">prob_</dfn>;    </td></tr>
+<tr><th id="19">19</th><td>};</td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td>} <i>//namespaces Decoder</i></td></tr>
+<tr><th id="22">22</th><td>} <i>//namespaces AZO</i></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><u>#include <a href="LengthCodeD.cpp.html">"LengthCodeD.cpp"</a></u></td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><u>#<span data-ppcond="1">endif</span> /*AZO_DECODER_LENGTHCODE_H*/</u></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='BlockCodeD.cpp.html'>codebrowser/nest/algorithm/azo/Decoder/BlockCodeD.cpp</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

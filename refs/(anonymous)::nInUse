@@ -1,0 +1,18 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='236' type='Int32'/>
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='394' type='Int32'/>
+<offset>25536</offset>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='235'>/* map of bytes used in block */</doc>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='393'>/* map of bytes used in block */</doc>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='109' u='w' c='makeMaps_e'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='112' u='r' c='makeMaps_e'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='113' u='w' c='makeMaps_e'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='155' u='r' c='generateMTFValues'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='161' u='r' c='generateMTFValues'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='264' u='r' c='sendMTFValues'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='266' u='r' c='sendMTFValues'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='30' u='w' c='makeMaps_d'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='33' u='r' c='makeMaps_d'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='34' u='w' c='makeMaps_d'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='283' u='r' c='BZ2_decompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='284' u='r' c='BZ2_decompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='351' u='r' c='BZ2_decompress'/>

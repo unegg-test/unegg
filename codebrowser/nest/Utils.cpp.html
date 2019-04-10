@@ -1,0 +1,504 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Utils.cpp source code [codebrowser/nest/Utils.cpp] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="nest::utf8::_path_token_info "/>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/Utils.cpp'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>nest</a>/<a href='Utils.cpp.html'>Utils.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Utils.cpp</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> *  Created on: 2010. 12. 10.</i></td></tr>
+<tr><th id="5">5</th><td><i> *      Author: Jehoon Shin(Revolution)</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> *  Copyright(c) 2010-Present ESTsoft Corp. All rights reserved.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> *  For conditions of distribution and use, see copyright notice in license.txt</i></td></tr>
+<tr><th id="10">10</th><td><i> */</i></td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td><u>#include <a href="Utils.h.html">"Utils.h"</a></u></td></tr>
+<tr><th id="13">13</th><td><u>#include <a href="../../include/x86_64-linux-gnu/sys/stat.h.html">&lt;sys/stat.h&gt;</a></u></td></tr>
+<tr><th id="14">14</th><td><u>#include <a href="../../include/errno.h.html">&lt;errno.h&gt;</a></u></td></tr>
+<tr><th id="15">15</th><td><u>#include <a href="../../include/iconv.h.html">&lt;iconv.h&gt;</a></u></td></tr>
+<tr><th id="16">16</th><td><u>#include <a href="../../include/c++/7/vector.html">&lt;vector&gt;</a></u></td></tr>
+<tr><th id="17">17</th><td><u>#include <a href="../../include/c++/7/algorithm.html">&lt;algorithm&gt;</a></u></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><u>#<span data-ppcond="19">ifdef</span> <span class="macro" data-ref="_M/__MINGW32__">__MINGW32__</span></u></td></tr>
+<tr><th id="20">20</th><td><u>#include &lt;io.h&gt;</u></td></tr>
+<tr><th id="21">21</th><td><u>#<span data-ppcond="19">endif</span></u></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><b>namespace</b> <span class="namespace">nest</span></td></tr>
+<tr><th id="24">24</th><td>{</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><b>namespace</b> <span class="namespace">utf8</span></td></tr>
+<tr><th id="27">27</th><td>{</td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><a class="typedef" href="../../include/iconv.h.html#iconv_t" title='iconv_t' data-type='void *' data-ref="iconv_t">iconv_t</a> <dfn class="decl def" id="nest::utf8::g_iconv" title='nest::utf8::g_iconv' data-ref="nest::utf8::g_iconv">g_iconv</dfn> = <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="30">30</th><td><em>char</em> <dfn class="decl def" id="nest::utf8::g_utf8buf" title='nest::utf8::g_utf8buf' data-ref="nest::utf8::g_utf8buf">g_utf8buf</dfn>[<var>65536</var>] = { <var>0</var>, };</td></tr>
+<tr><th id="31">31</th><td><span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl def" id="nest::utf8::g_utf8bufSize" title='nest::utf8::g_utf8bufSize' data-ref="nest::utf8::g_utf8bufSize">g_utf8bufSize</dfn> = <b>sizeof</b>(<a class="ref" href="#nest::utf8::g_utf8buf" title='nest::utf8::g_utf8buf' data-ref="nest::utf8::g_utf8buf">g_utf8buf</a>);</td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><em>void</em> <dfn class="decl def" id="_ZN4nest4utf810initializeEv" title='nest::utf8::initialize' data-ref="_ZN4nest4utf810initializeEv">initialize</dfn>()</td></tr>
+<tr><th id="34">34</th><td>{</td></tr>
+<tr><th id="35">35</th><td>    <b>if</b> (!<a class="ref" href="#nest::utf8::g_iconv" title='nest::utf8::g_iconv' data-ref="nest::utf8::g_iconv">g_iconv</a>)</td></tr>
+<tr><th id="36">36</th><td>    {</td></tr>
+<tr><th id="37">37</th><td>        <a class="ref" href="#nest::utf8::g_iconv" title='nest::utf8::g_iconv' data-ref="nest::utf8::g_iconv">g_iconv</a> = <a class="ref" href="../../include/iconv.h.html#iconv_open" title='iconv_open' data-ref="iconv_open">iconv_open</a>(<q>"UTF-8"</q>, <q>"EUC-KR"</q>);</td></tr>
+<tr><th id="38">38</th><td>    }</td></tr>
+<tr><th id="39">39</th><td>}</td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td><em>void</em> <dfn class="decl def" id="_ZN4nest4utf88finalizeEv" title='nest::utf8::finalize' data-ref="_ZN4nest4utf88finalizeEv">finalize</dfn>()</td></tr>
+<tr><th id="42">42</th><td>{</td></tr>
+<tr><th id="43">43</th><td>    <b>if</b> (<a class="ref" href="#nest::utf8::g_iconv" title='nest::utf8::g_iconv' data-ref="nest::utf8::g_iconv">g_iconv</a>)</td></tr>
+<tr><th id="44">44</th><td>    {</td></tr>
+<tr><th id="45">45</th><td>        <a class="ref" href="../../include/iconv.h.html#iconv_close" title='iconv_close' data-ref="iconv_close">iconv_close</a>(<a class="ref" href="#nest::utf8::g_iconv" title='nest::utf8::g_iconv' data-ref="nest::utf8::g_iconv">g_iconv</a>);</td></tr>
+<tr><th id="46">46</th><td>        <a class="ref" href="#nest::utf8::g_iconv" title='nest::utf8::g_iconv' data-ref="nest::utf8::g_iconv">g_iconv</a> = <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="47">47</th><td>    }</td></tr>
+<tr><th id="48">48</th><td>}</td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td><span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl def" id="_ZN4nest4utf86strlenEPKcm" title='nest::utf8::strlen' data-ref="_ZN4nest4utf86strlenEPKcm">strlen</dfn>(<em>const</em> <em>char</em>* <dfn class="local col8 decl" id="928s" title='s' data-type='const char *' data-ref="928s">s</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col9 decl" id="929size" title='size' data-type='size_t' data-ref="929size">size</dfn>)</td></tr>
+<tr><th id="51">51</th><td>{</td></tr>
+<tr><th id="52">52</th><td>    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col0 decl" id="930i" title='i' data-type='size_t' data-ref="930i">i</dfn> = <var>0</var>;</td></tr>
+<tr><th id="53">53</th><td>    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col1 decl" id="931j" title='j' data-type='size_t' data-ref="931j">j</dfn> = <var>0</var>;</td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td>    <b>if</b> (<a class="local col8 ref" href="#928s" title='s' data-ref="928s">s</a>)</td></tr>
+<tr><th id="56">56</th><td>    {</td></tr>
+<tr><th id="57">57</th><td>        <b>while</b> (<a class="local col8 ref" href="#928s" title='s' data-ref="928s">s</a>[<a class="local col0 ref" href="#930i" title='i' data-ref="930i">i</a>])</td></tr>
+<tr><th id="58">58</th><td>        {</td></tr>
+<tr><th id="59">59</th><td>            <b>if</b> (<a class="local col9 ref" href="#929size" title='size' data-ref="929size">size</a> != (<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span>) (-<var>1</var>) &amp;&amp; <a class="local col0 ref" href="#930i" title='i' data-ref="930i">i</a> &gt; <a class="local col9 ref" href="#929size" title='size' data-ref="929size">size</a>)</td></tr>
+<tr><th id="60">60</th><td>            {</td></tr>
+<tr><th id="61">61</th><td>                <b>break</b>;</td></tr>
+<tr><th id="62">62</th><td>            }</td></tr>
+<tr><th id="63">63</th><td></td></tr>
+<tr><th id="64">64</th><td>            <b>if</b> ((<a class="local col8 ref" href="#928s" title='s' data-ref="928s">s</a>[<a class="local col0 ref" href="#930i" title='i' data-ref="930i">i</a>] &amp; <var>0xc0</var>) != <var>0x80</var>)</td></tr>
+<tr><th id="65">65</th><td>            {</td></tr>
+<tr><th id="66">66</th><td>                <a class="local col1 ref" href="#931j" title='j' data-ref="931j">j</a>++;</td></tr>
+<tr><th id="67">67</th><td>            }</td></tr>
+<tr><th id="68">68</th><td></td></tr>
+<tr><th id="69">69</th><td>            <a class="local col0 ref" href="#930i" title='i' data-ref="930i">i</a>++;</td></tr>
+<tr><th id="70">70</th><td>        }</td></tr>
+<tr><th id="71">71</th><td>    }</td></tr>
+<tr><th id="72">72</th><td></td></tr>
+<tr><th id="73">73</th><td>    <b>return</b> <a class="local col1 ref" href="#931j" title='j' data-ref="931j">j</a>;</td></tr>
+<tr><th id="74">74</th><td>}</td></tr>
+<tr><th id="75">75</th><td></td></tr>
+<tr><th id="76">76</th><td><span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl def" id="_ZN4nest4utf87strsizeEPKc" title='nest::utf8::strsize' data-ref="_ZN4nest4utf87strsizeEPKc">strsize</dfn>(<em>const</em> <em>char</em>* <dfn class="local col2 decl" id="932s" title='s' data-type='const char *' data-ref="932s">s</dfn>)</td></tr>
+<tr><th id="77">77</th><td>{</td></tr>
+<tr><th id="78">78</th><td>    <b>return</b> ::<a class="ref" href="../../include/string.h.html#strlen" title='strlen' data-ref="strlen">strlen</a>(<a class="local col2 ref" href="#932s" title='s' data-ref="932s">s</a>);</td></tr>
+<tr><th id="79">79</th><td>}</td></tr>
+<tr><th id="80">80</th><td></td></tr>
+<tr><th id="81">81</th><td><em>int</em> <dfn class="decl def" id="_ZN4nest4utf87charlenEc" title='nest::utf8::charlen' data-ref="_ZN4nest4utf87charlenEc">charlen</dfn>(<em>char</em> <dfn class="local col3 decl" id="933s" title='s' data-type='char' data-ref="933s">s</dfn>)</td></tr>
+<tr><th id="82">82</th><td>{</td></tr>
+<tr><th id="83">83</th><td>    <em>int</em> <dfn class="local col4 decl" id="934res" title='res' data-type='int' data-ref="934res">res</dfn> = <var>1</var>;</td></tr>
+<tr><th id="84">84</th><td></td></tr>
+<tr><th id="85">85</th><td>    <b>if</b> (<a class="local col3 ref" href="#933s" title='s' data-ref="933s">s</a> &amp; <var>128</var>)</td></tr>
+<tr><th id="86">86</th><td>    {</td></tr>
+<tr><th id="87">87</th><td>        <a class="local col3 ref" href="#933s" title='s' data-ref="933s">s</a> &lt;&lt;= <var>1</var>;</td></tr>
+<tr><th id="88">88</th><td>        <b>for</b> (<em>int</em> <dfn class="local col5 decl" id="935i" title='i' data-type='int' data-ref="935i">i</dfn> = <var>0</var>; <a class="local col5 ref" href="#935i" title='i' data-ref="935i">i</a> &lt; <var>7</var>; ++<a class="local col5 ref" href="#935i" title='i' data-ref="935i">i</a>)</td></tr>
+<tr><th id="89">89</th><td>        {</td></tr>
+<tr><th id="90">90</th><td>            <b>if</b> (<a class="local col3 ref" href="#933s" title='s' data-ref="933s">s</a> &amp; <var>128</var>)</td></tr>
+<tr><th id="91">91</th><td>            {</td></tr>
+<tr><th id="92">92</th><td>                ++<a class="local col4 ref" href="#934res" title='res' data-ref="934res">res</a>;</td></tr>
+<tr><th id="93">93</th><td>            }</td></tr>
+<tr><th id="94">94</th><td>            <b>else</b></td></tr>
+<tr><th id="95">95</th><td>            {</td></tr>
+<tr><th id="96">96</th><td>                <b>break</b>;</td></tr>
+<tr><th id="97">97</th><td>            }</td></tr>
+<tr><th id="98">98</th><td>            <a class="local col3 ref" href="#933s" title='s' data-ref="933s">s</a> &lt;&lt;= <var>1</var>;</td></tr>
+<tr><th id="99">99</th><td>        }</td></tr>
+<tr><th id="100">100</th><td>    }</td></tr>
+<tr><th id="101">101</th><td></td></tr>
+<tr><th id="102">102</th><td>    <b>return</b> <a class="local col4 ref" href="#934res" title='res' data-ref="934res">res</a>;</td></tr>
+<tr><th id="103">103</th><td>}</td></tr>
+<tr><th id="104">104</th><td></td></tr>
+<tr><th id="105">105</th><td><em>const</em> <em>char</em>* <dfn class="decl def" id="_ZN4nest4utf84nextEPKc" title='nest::utf8::next' data-ref="_ZN4nest4utf84nextEPKc">next</dfn>(<em>const</em> <em>char</em>* <dfn class="local col6 decl" id="936s" title='s' data-type='const char *' data-ref="936s">s</dfn>)</td></tr>
+<tr><th id="106">106</th><td>{</td></tr>
+<tr><th id="107">107</th><td>    <b>if</b> (<a class="local col6 ref" href="#936s" title='s' data-ref="936s">s</a> &amp;&amp; *<a class="local col6 ref" href="#936s" title='s' data-ref="936s">s</a>)</td></tr>
+<tr><th id="108">108</th><td>    {</td></tr>
+<tr><th id="109">109</th><td>        <em>int</em> <dfn class="local col7 decl" id="937size" title='size' data-type='int' data-ref="937size">size</dfn> = <a class="ref" href="#_ZN4nest4utf87charlenEc" title='nest::utf8::charlen' data-ref="_ZN4nest4utf87charlenEc">charlen</a>(*<a class="local col6 ref" href="#936s" title='s' data-ref="936s">s</a>);</td></tr>
+<tr><th id="110">110</th><td>        <b>return</b> (<a class="local col6 ref" href="#936s" title='s' data-ref="936s">s</a> + <a class="local col7 ref" href="#937size" title='size' data-ref="937size">size</a>);</td></tr>
+<tr><th id="111">111</th><td>    }</td></tr>
+<tr><th id="112">112</th><td></td></tr>
+<tr><th id="113">113</th><td>    <b>return</b> <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="114">114</th><td>}</td></tr>
+<tr><th id="115">115</th><td></td></tr>
+<tr><th id="116">116</th><td><em>const</em> <em>char</em>* <dfn class="decl def" id="_ZN4nest4utf84prevEPKc" title='nest::utf8::prev' data-ref="_ZN4nest4utf84prevEPKc">prev</dfn>(<em>const</em> <em>char</em>* <dfn class="local col8 decl" id="938s" title='s' data-type='const char *' data-ref="938s">s</dfn>)</td></tr>
+<tr><th id="117">117</th><td>{</td></tr>
+<tr><th id="118">118</th><td>    <b>if</b> (<a class="local col8 ref" href="#938s" title='s' data-ref="938s">s</a> &amp;&amp; *<a class="local col8 ref" href="#938s" title='s' data-ref="938s">s</a>)</td></tr>
+<tr><th id="119">119</th><td>    {</td></tr>
+<tr><th id="120">120</th><td>        --<a class="local col8 ref" href="#938s" title='s' data-ref="938s">s</a>;</td></tr>
+<tr><th id="121">121</th><td>        <b>if</b> ((*<a class="local col8 ref" href="#938s" title='s' data-ref="938s">s</a> &amp; <var>128</var>) == <var>0</var>)</td></tr>
+<tr><th id="122">122</th><td>        {</td></tr>
+<tr><th id="123">123</th><td>            <b>return</b> <a class="local col8 ref" href="#938s" title='s' data-ref="938s">s</a>;</td></tr>
+<tr><th id="124">124</th><td>        }</td></tr>
+<tr><th id="125">125</th><td></td></tr>
+<tr><th id="126">126</th><td>        <b>while</b> ((*<a class="local col8 ref" href="#938s" title='s' data-ref="938s">s</a> &amp; <var>192</var>) == <var>128</var>)</td></tr>
+<tr><th id="127">127</th><td>        {</td></tr>
+<tr><th id="128">128</th><td>            --<a class="local col8 ref" href="#938s" title='s' data-ref="938s">s</a>;</td></tr>
+<tr><th id="129">129</th><td>        }</td></tr>
+<tr><th id="130">130</th><td></td></tr>
+<tr><th id="131">131</th><td>        <b>return</b> <a class="local col8 ref" href="#938s" title='s' data-ref="938s">s</a>;</td></tr>
+<tr><th id="132">132</th><td>    }</td></tr>
+<tr><th id="133">133</th><td></td></tr>
+<tr><th id="134">134</th><td>    <b>return</b> <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="135">135</th><td>}</td></tr>
+<tr><th id="136">136</th><td></td></tr>
+<tr><th id="137">137</th><td><em>const</em> <em>char</em>* <dfn class="decl def" id="_ZN4nest4utf86offsetEPKcm" title='nest::utf8::offset' data-ref="_ZN4nest4utf86offsetEPKcm">offset</dfn>(<em>const</em> <em>char</em>* <dfn class="local col9 decl" id="939s" title='s' data-type='const char *' data-ref="939s">s</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col0 decl" id="940n" title='n' data-type='size_t' data-ref="940n">n</dfn>)</td></tr>
+<tr><th id="138">138</th><td>{</td></tr>
+<tr><th id="139">139</th><td>    <b>if</b> (<a class="local col9 ref" href="#939s" title='s' data-ref="939s">s</a> &amp;&amp; <a class="local col0 ref" href="#940n" title='n' data-ref="940n">n</a>)</td></tr>
+<tr><th id="140">140</th><td>    {</td></tr>
+<tr><th id="141">141</th><td>        <b>for</b> (<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col1 decl" id="941i" title='i' data-type='size_t' data-ref="941i">i</dfn> = <var>0</var>; <a class="local col1 ref" href="#941i" title='i' data-ref="941i">i</a> &lt; <a class="local col0 ref" href="#940n" title='n' data-ref="940n">n</a>; ++<a class="local col1 ref" href="#941i" title='i' data-ref="941i">i</a>)</td></tr>
+<tr><th id="142">142</th><td>        {</td></tr>
+<tr><th id="143">143</th><td>            <a class="local col9 ref" href="#939s" title='s' data-ref="939s">s</a> = <a class="ref" href="#_ZN4nest4utf84nextEPKc" title='nest::utf8::next' data-ref="_ZN4nest4utf84nextEPKc">next</a>(<a class="local col9 ref" href="#939s" title='s' data-ref="939s">s</a>);</td></tr>
+<tr><th id="144">144</th><td>            <b>if</b> (!<a class="local col9 ref" href="#939s" title='s' data-ref="939s">s</a>)</td></tr>
+<tr><th id="145">145</th><td>            {</td></tr>
+<tr><th id="146">146</th><td>                <b>break</b>;</td></tr>
+<tr><th id="147">147</th><td>            }</td></tr>
+<tr><th id="148">148</th><td>        }</td></tr>
+<tr><th id="149">149</th><td>    }</td></tr>
+<tr><th id="150">150</th><td></td></tr>
+<tr><th id="151">151</th><td>    <b>return</b> <a class="local col9 ref" href="#939s" title='s' data-ref="939s">s</a>;</td></tr>
+<tr><th id="152">152</th><td>}</td></tr>
+<tr><th id="153">153</th><td></td></tr>
+<tr><th id="154">154</th><td><em>bool</em> <dfn class="decl def" id="_ZN4nest4utf83nthEPKcmPcPi" title='nest::utf8::nth' data-ref="_ZN4nest4utf83nthEPKcmPcPi">nth</dfn>(<em>const</em> <em>char</em>* <dfn class="local col2 decl" id="942s" title='s' data-type='const char *' data-ref="942s">s</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col3 decl" id="943n" title='n' data-type='size_t' data-ref="943n">n</dfn>, <em>char</em> <dfn class="local col4 decl" id="944buffer" title='buffer' data-type='char *' data-ref="944buffer">buffer</dfn>[<var>6</var>], <em>int</em>* <dfn class="local col5 decl" id="945len" title='len' data-type='int *' data-ref="945len">len</dfn>)</td></tr>
+<tr><th id="155">155</th><td>{</td></tr>
+<tr><th id="156">156</th><td>    <em>const</em> <em>char</em>* <dfn class="local col6 decl" id="946pos" title='pos' data-type='const char *' data-ref="946pos">pos</dfn> = <a class="ref" href="#_ZN4nest4utf86offsetEPKcm" title='nest::utf8::offset' data-ref="_ZN4nest4utf86offsetEPKcm">offset</a>(<a class="local col2 ref" href="#942s" title='s' data-ref="942s">s</a>, <a class="local col3 ref" href="#943n" title='n' data-ref="943n">n</a>);</td></tr>
+<tr><th id="157">157</th><td>    <b>if</b> (<a class="local col6 ref" href="#946pos" title='pos' data-ref="946pos">pos</a>)</td></tr>
+<tr><th id="158">158</th><td>    {</td></tr>
+<tr><th id="159">159</th><td>        <a class="ref" href="../../include/string.h.html#memset" title='memset' data-ref="memset">memset</a>(<a class="local col4 ref" href="#944buffer" title='buffer' data-ref="944buffer">buffer</a>, <var>0</var>, <var>6</var>);</td></tr>
+<tr><th id="160">160</th><td>        <em>int</em> <dfn class="local col7 decl" id="947l" title='l' data-type='int' data-ref="947l">l</dfn> = <a class="ref" href="#_ZN4nest4utf87charlenEc" title='nest::utf8::charlen' data-ref="_ZN4nest4utf87charlenEc">charlen</a>(*<a class="local col6 ref" href="#946pos" title='pos' data-ref="946pos">pos</a>);</td></tr>
+<tr><th id="161">161</th><td>        <b>if</b> (<a class="local col5 ref" href="#945len" title='len' data-ref="945len">len</a>)</td></tr>
+<tr><th id="162">162</th><td>        {</td></tr>
+<tr><th id="163">163</th><td>            *<a class="local col5 ref" href="#945len" title='len' data-ref="945len">len</a> = <a class="local col7 ref" href="#947l" title='l' data-ref="947l">l</a>;</td></tr>
+<tr><th id="164">164</th><td>        }</td></tr>
+<tr><th id="165">165</th><td>        <a class="ref" href="../../include/string.h.html#strncpy" title='strncpy' data-ref="strncpy">strncpy</a>(<a class="local col4 ref" href="#944buffer" title='buffer' data-ref="944buffer">buffer</a>, <a class="local col6 ref" href="#946pos" title='pos' data-ref="946pos">pos</a>, <a class="local col7 ref" href="#947l" title='l' data-ref="947l">l</a>);</td></tr>
+<tr><th id="166">166</th><td></td></tr>
+<tr><th id="167">167</th><td>        <b>return</b> <b>true</b>;</td></tr>
+<tr><th id="168">168</th><td>    }</td></tr>
+<tr><th id="169">169</th><td></td></tr>
+<tr><th id="170">170</th><td>    <b>return</b> <b>false</b>;</td></tr>
+<tr><th id="171">171</th><td>}</td></tr>
+<tr><th id="172">172</th><td></td></tr>
+<tr><th id="173">173</th><td><em>const</em> <em>char</em>* <dfn class="decl def" id="_ZN4nest4utf84findEPKcS2_" title='nest::utf8::find' data-ref="_ZN4nest4utf84findEPKcS2_">find</dfn>(<em>const</em> <em>char</em>* <dfn class="local col8 decl" id="948s" title='s' data-type='const char *' data-ref="948s">s</dfn>, <em>const</em> <em>char</em>* <dfn class="local col9 decl" id="949substr" title='substr' data-type='const char *' data-ref="949substr">substr</dfn>)</td></tr>
+<tr><th id="174">174</th><td>{</td></tr>
+<tr><th id="175">175</th><td>    <b>return</b> <a class="ref" href="../../include/string.h.html#strstr" title='strstr' data-ref="strstr">strstr</a>(<a class="local col8 ref" href="#948s" title='s' data-ref="948s">s</a>, <a class="local col9 ref" href="#949substr" title='substr' data-ref="949substr">substr</a>);</td></tr>
+<tr><th id="176">176</th><td>}</td></tr>
+<tr><th id="177">177</th><td></td></tr>
+<tr><th id="178">178</th><td><em>const</em> <em>char</em>* <dfn class="decl def" id="_ZN4nest4utf86find_rEPKcS2_" title='nest::utf8::find_r' data-ref="_ZN4nest4utf86find_rEPKcS2_">find_r</dfn>(<em>const</em> <em>char</em>* <dfn class="local col0 decl" id="950s" title='s' data-type='const char *' data-ref="950s">s</dfn>, <em>const</em> <em>char</em>* <dfn class="local col1 decl" id="951substr" title='substr' data-type='const char *' data-ref="951substr">substr</dfn>)</td></tr>
+<tr><th id="179">179</th><td>{</td></tr>
+<tr><th id="180">180</th><td>    <em>const</em> <em>char</em>* <dfn class="local col2 decl" id="952res" title='res' data-type='const char *' data-ref="952res">res</dfn> = <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>;</td></tr>
+<tr><th id="181">181</th><td></td></tr>
+<tr><th id="182">182</th><td>    <b>do</b></td></tr>
+<tr><th id="183">183</th><td>    {</td></tr>
+<tr><th id="184">184</th><td>        <a class="local col0 ref" href="#950s" title='s' data-ref="950s">s</a> = <a class="ref" href="#_ZN4nest4utf84findEPKcS2_" title='nest::utf8::find' data-ref="_ZN4nest4utf84findEPKcS2_">find</a>(<a class="local col0 ref" href="#950s" title='s' data-ref="950s">s</a>, <a class="local col1 ref" href="#951substr" title='substr' data-ref="951substr">substr</a>);</td></tr>
+<tr><th id="185">185</th><td>        <b>if</b> (<a class="local col0 ref" href="#950s" title='s' data-ref="950s">s</a>)</td></tr>
+<tr><th id="186">186</th><td>        {</td></tr>
+<tr><th id="187">187</th><td>            <a class="local col2 ref" href="#952res" title='res' data-ref="952res">res</a> = <a class="local col0 ref" href="#950s" title='s' data-ref="950s">s</a>++;</td></tr>
+<tr><th id="188">188</th><td>        }</td></tr>
+<tr><th id="189">189</th><td>    } <b>while</b> (<a class="local col0 ref" href="#950s" title='s' data-ref="950s">s</a>);</td></tr>
+<tr><th id="190">190</th><td></td></tr>
+<tr><th id="191">191</th><td>    <b>return</b> <a class="local col2 ref" href="#952res" title='res' data-ref="952res">res</a>;</td></tr>
+<tr><th id="192">192</th><td>}</td></tr>
+<tr><th id="193">193</th><td></td></tr>
+<tr><th id="194">194</th><td><span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl def" id="_ZN4nest4utf83p2iEPKcm" title='nest::utf8::p2i' data-ref="_ZN4nest4utf83p2iEPKcm">p2i</dfn>(<em>const</em> <em>char</em>* <dfn class="local col3 decl" id="953s" title='s' data-type='const char *' data-ref="953s">s</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col4 decl" id="954pos" title='pos' data-type='size_t' data-ref="954pos">pos</dfn>)</td></tr>
+<tr><th id="195">195</th><td>{</td></tr>
+<tr><th id="196">196</th><td>    <b>return</b> <a class="ref" href="#_ZN4nest4utf86strlenEPKcm" title='nest::utf8::strlen' data-ref="_ZN4nest4utf86strlenEPKcm">strlen</a>(<a class="local col3 ref" href="#953s" title='s' data-ref="953s">s</a>, <a class="local col4 ref" href="#954pos" title='pos' data-ref="954pos">pos</a>) - <var>1</var>;</td></tr>
+<tr><th id="197">197</th><td>}</td></tr>
+<tr><th id="198">198</th><td></td></tr>
+<tr><th id="199">199</th><td><span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl def" id="_ZN4nest4utf83i2pEPKcm" title='nest::utf8::i2p' data-ref="_ZN4nest4utf83i2pEPKcm">i2p</dfn>(<em>const</em> <em>char</em>* <dfn class="local col5 decl" id="955s" title='s' data-type='const char *' data-ref="955s">s</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col6 decl" id="956index" title='index' data-type='size_t' data-ref="956index">index</dfn>)</td></tr>
+<tr><th id="200">200</th><td>{</td></tr>
+<tr><th id="201">201</th><td>    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col7 decl" id="957res" title='res' data-type='size_t' data-ref="957res">res</dfn> = <var>0</var>;</td></tr>
+<tr><th id="202">202</th><td></td></tr>
+<tr><th id="203">203</th><td>    <b>for</b> (<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col8 decl" id="958i" title='i' data-type='size_t' data-ref="958i">i</dfn> = <var>0</var>; <a class="local col8 ref" href="#958i" title='i' data-ref="958i">i</a> &lt; <a class="local col6 ref" href="#956index" title='index' data-ref="956index">index</a>; ++<a class="local col8 ref" href="#958i" title='i' data-ref="958i">i</a>)</td></tr>
+<tr><th id="204">204</th><td>    {</td></tr>
+<tr><th id="205">205</th><td>        <em>int</em> <dfn class="local col9 decl" id="959len" title='len' data-type='int' data-ref="959len">len</dfn> = <a class="ref" href="#_ZN4nest4utf87charlenEc" title='nest::utf8::charlen' data-ref="_ZN4nest4utf87charlenEc">charlen</a>(*<a class="local col5 ref" href="#955s" title='s' data-ref="955s">s</a>);</td></tr>
+<tr><th id="206">206</th><td>        <a class="local col7 ref" href="#957res" title='res' data-ref="957res">res</a> += <a class="local col9 ref" href="#959len" title='len' data-ref="959len">len</a>;</td></tr>
+<tr><th id="207">207</th><td>        <a class="local col5 ref" href="#955s" title='s' data-ref="955s">s</a> += <a class="local col9 ref" href="#959len" title='len' data-ref="959len">len</a>;</td></tr>
+<tr><th id="208">208</th><td>    }</td></tr>
+<tr><th id="209">209</th><td></td></tr>
+<tr><th id="210">210</th><td>    <b>return</b> <a class="local col7 ref" href="#957res" title='res' data-ref="957res">res</a>;</td></tr>
+<tr><th id="211">211</th><td>}</td></tr>
+<tr><th id="212">212</th><td></td></tr>
+<tr><th id="213">213</th><td><span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl def" id="_ZN4nest4utf810euckr2utf8EPKcPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" title='nest::utf8::euckr2utf8' data-ref="_ZN4nest4utf810euckr2utf8EPKcPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE">euckr2utf8</dfn>(<em>const</em> <em>char</em>* <dfn class="local col0 decl" id="960str" title='str' data-type='const char *' data-ref="960str">str</dfn>, <span class="namespace">std::</span><a class="typedef" href="../../include/c++/7/bits/stringfwd.h.html#std::__cxx11::string" title='std::__cxx11::string' data-type='basic_string&lt;char&gt;' data-ref="std::__cxx11::string">string</a>* <dfn class="local col1 decl" id="961utf8" title='utf8' data-type='std::string *' data-ref="961utf8">utf8</dfn>)</td></tr>
+<tr><th id="214">214</th><td>{</td></tr>
+<tr><th id="215">215</th><td>    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col2 decl" id="962len" title='len' data-type='size_t' data-ref="962len">len</dfn> = ::<a class="ref" href="../../include/string.h.html#strlen" title='strlen' data-ref="strlen">strlen</a>(<a class="local col0 ref" href="#960str" title='str' data-ref="960str">str</a>);</td></tr>
+<tr><th id="216">216</th><td>    <b>if</b> (!<a class="local col2 ref" href="#962len" title='len' data-ref="962len">len</a>)</td></tr>
+<tr><th id="217">217</th><td>    {</td></tr>
+<tr><th id="218">218</th><td>        <a class="local col1 ref" href="#961utf8" title='utf8' data-ref="961utf8">utf8</a>-&gt;<a class="ref" href="../../include/c++/7/bits/basic_string.h.html#_ZNSt7__cxx1112basic_string5clearEv" title='std::__cxx11::basic_string::clear' data-ref="_ZNSt7__cxx1112basic_string5clearEv">clear</a>();</td></tr>
+<tr><th id="219">219</th><td></td></tr>
+<tr><th id="220">220</th><td>        <b>return</b> <var>0</var>;</td></tr>
+<tr><th id="221">221</th><td>    }</td></tr>
+<tr><th id="222">222</th><td></td></tr>
+<tr><th id="223">223</th><td>    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col3 decl" id="963utf8len" title='utf8len' data-type='size_t' data-ref="963utf8len">utf8len</dfn> = <var>2</var> * <a class="local col2 ref" href="#962len" title='len' data-ref="962len">len</a>;</td></tr>
+<tr><th id="224">224</th><td>    <em>char</em>* <dfn class="local col4 decl" id="964buffer" title='buffer' data-type='char *' data-ref="964buffer">buffer</dfn> = (<em>char</em>*) <a class="ref" href="../../include/stdlib.h.html#malloc" title='malloc' data-ref="malloc">malloc</a>(<a class="local col3 ref" href="#963utf8len" title='utf8len' data-ref="963utf8len">utf8len</a>);</td></tr>
+<tr><th id="225">225</th><td>    <em>char</em>* <dfn class="local col5 decl" id="965utf8start" title='utf8start' data-type='char *' data-ref="965utf8start">utf8start</dfn> = <a class="local col4 ref" href="#964buffer" title='buffer' data-ref="964buffer">buffer</a>;</td></tr>
+<tr><th id="226">226</th><td><u>#<span data-ppcond="226">ifdef</span> <span class="macro" data-ref="_M/__MINGW32__">__MINGW32__</span></u></td></tr>
+<tr><th id="227">227</th><td>    size_t res = iconv(g_iconv, (<em>const</em> <em>char</em>**) &amp;str, &amp;len, &amp;utf8start, &amp;utf8len);</td></tr>
+<tr><th id="228">228</th><td><u>#<span data-ppcond="226">else</span></u></td></tr>
+<tr><th id="229">229</th><td>    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col6 decl" id="966res" title='res' data-type='size_t' data-ref="966res">res</dfn> = <a class="ref" href="../../include/iconv.h.html#iconv" title='iconv' data-ref="iconv">iconv</a>(<a class="ref" href="#nest::utf8::g_iconv" title='nest::utf8::g_iconv' data-ref="nest::utf8::g_iconv">g_iconv</a>, (<em>char</em>**) &amp;<a class="local col0 ref" href="#960str" title='str' data-ref="960str">str</a>, &amp;<a class="local col2 ref" href="#962len" title='len' data-ref="962len">len</a>, &amp;<a class="local col5 ref" href="#965utf8start" title='utf8start' data-ref="965utf8start">utf8start</a>, &amp;<a class="local col3 ref" href="#963utf8len" title='utf8len' data-ref="963utf8len">utf8len</a>);</td></tr>
+<tr><th id="230">230</th><td><u>#<span data-ppcond="226">endif</span></u></td></tr>
+<tr><th id="231">231</th><td></td></tr>
+<tr><th id="232">232</th><td>    <b>if</b> (<a class="local col6 ref" href="#966res" title='res' data-ref="966res">res</a> == (<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span>) (-<var>1</var>))</td></tr>
+<tr><th id="233">233</th><td>    {</td></tr>
+<tr><th id="234">234</th><td>        <a class="local col1 ref" href="#961utf8" title='utf8' data-ref="961utf8">utf8</a>-&gt;<a class="ref" href="../../include/c++/7/bits/basic_string.h.html#_ZNSt7__cxx1112basic_string5clearEv" title='std::__cxx11::basic_string::clear' data-ref="_ZNSt7__cxx1112basic_string5clearEv">clear</a>();</td></tr>
+<tr><th id="235">235</th><td>    }</td></tr>
+<tr><th id="236">236</th><td>    <b>else</b></td></tr>
+<tr><th id="237">237</th><td>    {</td></tr>
+<tr><th id="238">238</th><td>        <a class="local col4 ref" href="#964buffer" title='buffer' data-ref="964buffer">buffer</a>[<a class="ref" href="#_ZN4nest4utf83i2pEPKcm" title='nest::utf8::i2p' data-ref="_ZN4nest4utf83i2pEPKcm">i2p</a>(<a class="local col4 ref" href="#964buffer" title='buffer' data-ref="964buffer">buffer</a>, <a class="local col3 ref" href="#963utf8len" title='utf8len' data-ref="963utf8len">utf8len</a>)] = <var>0</var>;</td></tr>
+<tr><th id="239">239</th><td>        *<a class="local col1 ref" href="#961utf8" title='utf8' data-ref="961utf8">utf8</a> <a class="ref" href="../../include/c++/7/bits/basic_string.h.html#_ZNSt7__cxx1112basic_stringaSEPKT_" title='std::__cxx11::basic_string::operator=' data-ref="_ZNSt7__cxx1112basic_stringaSEPKT_">=</a> <a class="local col4 ref" href="#964buffer" title='buffer' data-ref="964buffer">buffer</a>;</td></tr>
+<tr><th id="240">240</th><td>    }</td></tr>
+<tr><th id="241">241</th><td>    <a class="ref" href="../../include/stdlib.h.html#free" title='free' data-ref="free">free</a>(<a class="local col4 ref" href="#964buffer" title='buffer' data-ref="964buffer">buffer</a>);</td></tr>
+<tr><th id="242">242</th><td></td></tr>
+<tr><th id="243">243</th><td>    <b>return</b> <a class="local col6 ref" href="#966res" title='res' data-ref="966res">res</a>;</td></tr>
+<tr><th id="244">244</th><td>}</td></tr>
+<tr><th id="245">245</th><td></td></tr>
+<tr><th id="246">246</th><td><span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl def" id="_ZN4nest4utf811console_lenEPKcm" title='nest::utf8::console_len' data-ref="_ZN4nest4utf811console_lenEPKcm">console_len</dfn>(<em>const</em> <em>char</em>* <dfn class="local col7 decl" id="967str" title='str' data-type='const char *' data-ref="967str">str</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col8 decl" id="968bytes" title='bytes' data-type='size_t' data-ref="968bytes">bytes</dfn>)</td></tr>
+<tr><th id="247">247</th><td>{</td></tr>
+<tr><th id="248">248</th><td>    <em>char</em>* <dfn class="local col9 decl" id="969p" title='p' data-type='char *' data-ref="969p">p</dfn> = (<em>char</em>*) <a class="local col7 ref" href="#967str" title='str' data-ref="967str">str</a>;</td></tr>
+<tr><th id="249">249</th><td>    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col0 decl" id="970res" title='res' data-type='size_t' data-ref="970res">res</dfn> = <var>0</var>;</td></tr>
+<tr><th id="250">250</th><td>    <b>while</b> (*<a class="local col9 ref" href="#969p" title='p' data-ref="969p">p</a>)</td></tr>
+<tr><th id="251">251</th><td>    {</td></tr>
+<tr><th id="252">252</th><td>        <b>if</b> (<a class="local col8 ref" href="#968bytes" title='bytes' data-ref="968bytes">bytes</a> &amp;&amp; <a class="local col8 ref" href="#968bytes" title='bytes' data-ref="968bytes">bytes</a> &lt; (<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span>)(<a class="local col9 ref" href="#969p" title='p' data-ref="969p">p</a> - <a class="local col7 ref" href="#967str" title='str' data-ref="967str">str</a>))</td></tr>
+<tr><th id="253">253</th><td>        {</td></tr>
+<tr><th id="254">254</th><td>            <b>break</b>;</td></tr>
+<tr><th id="255">255</th><td>        }</td></tr>
+<tr><th id="256">256</th><td>        ++<a class="local col0 ref" href="#970res" title='res' data-ref="970res">res</a>;</td></tr>
+<tr><th id="257">257</th><td>        <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col1 decl" id="971len" title='len' data-type='size_t' data-ref="971len">len</dfn> = <a class="ref" href="#_ZN4nest4utf87charlenEc" title='nest::utf8::charlen' data-ref="_ZN4nest4utf87charlenEc">charlen</a>(*<a class="local col9 ref" href="#969p" title='p' data-ref="969p">p</a>);</td></tr>
+<tr><th id="258">258</th><td>        <b>if</b> (<a class="local col1 ref" href="#971len" title='len' data-ref="971len">len</a> &gt; <var>1</var>)</td></tr>
+<tr><th id="259">259</th><td>        {</td></tr>
+<tr><th id="260">260</th><td>            ++<a class="local col0 ref" href="#970res" title='res' data-ref="970res">res</a>;</td></tr>
+<tr><th id="261">261</th><td>        }</td></tr>
+<tr><th id="262">262</th><td>        <a class="local col9 ref" href="#969p" title='p' data-ref="969p">p</a> += <a class="local col1 ref" href="#971len" title='len' data-ref="971len">len</a>;</td></tr>
+<tr><th id="263">263</th><td>    }</td></tr>
+<tr><th id="264">264</th><td></td></tr>
+<tr><th id="265">265</th><td>    <b>return</b> <a class="local col0 ref" href="#970res" title='res' data-ref="970res">res</a>;</td></tr>
+<tr><th id="266">266</th><td>}</td></tr>
+<tr><th id="267">267</th><td></td></tr>
+<tr><th id="268">268</th><td><em>void</em> <dfn class="decl def" id="_ZN4nest4utf85limitEPcmmPKc" title='nest::utf8::limit' data-ref="_ZN4nest4utf85limitEPcmmPKc">limit</dfn>(<em>char</em>* <dfn class="local col2 decl" id="972buffer" title='buffer' data-type='char *' data-ref="972buffer">buffer</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col3 decl" id="973bufSize" title='bufSize' data-type='size_t' data-ref="973bufSize">bufSize</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col4 decl" id="974limitWidth" title='limitWidth' data-type='size_t' data-ref="974limitWidth">limitWidth</dfn>, <em>const</em> <em>char</em>* <dfn class="local col5 decl" id="975str" title='str' data-type='const char *' data-ref="975str">str</dfn>)</td></tr>
+<tr><th id="269">269</th><td>{</td></tr>
+<tr><th id="270">270</th><td>    <b>if</b> (<a class="local col4 ref" href="#974limitWidth" title='limitWidth' data-ref="974limitWidth">limitWidth</a> &amp;&amp; <a class="local col3 ref" href="#973bufSize" title='bufSize' data-ref="973bufSize">bufSize</a>)</td></tr>
+<tr><th id="271">271</th><td>    {</td></tr>
+<tr><th id="272">272</th><td>        --<a class="local col3 ref" href="#973bufSize" title='bufSize' data-ref="973bufSize">bufSize</a>;</td></tr>
+<tr><th id="273">273</th><td>        <em>char</em>* <dfn class="local col6 decl" id="976sp" title='sp' data-type='char *' data-ref="976sp">sp</dfn> = (<em>char</em>*) <a class="local col5 ref" href="#975str" title='str' data-ref="975str">str</a>;</td></tr>
+<tr><th id="274">274</th><td>        <em>char</em>* <dfn class="local col7 decl" id="977op" title='op' data-type='char *' data-ref="977op">op</dfn> = <a class="local col2 ref" href="#972buffer" title='buffer' data-ref="972buffer">buffer</a>;</td></tr>
+<tr><th id="275">275</th><td>        <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col8 decl" id="978os" title='os' data-type='size_t' data-ref="978os">os</dfn> = <var>0</var>;</td></tr>
+<tr><th id="276">276</th><td>        <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col9 decl" id="979cp" title='cp' data-type='size_t' data-ref="979cp">cp</dfn> = <var>0</var>;</td></tr>
+<tr><th id="277">277</th><td>        <b>while</b> (*<a class="local col6 ref" href="#976sp" title='sp' data-ref="976sp">sp</a> &amp;&amp; <a class="local col9 ref" href="#979cp" title='cp' data-ref="979cp">cp</a> &lt; <a class="local col4 ref" href="#974limitWidth" title='limitWidth' data-ref="974limitWidth">limitWidth</a> &amp;&amp; <a class="local col8 ref" href="#978os" title='os' data-ref="978os">os</a> &lt; <a class="local col3 ref" href="#973bufSize" title='bufSize' data-ref="973bufSize">bufSize</a>)</td></tr>
+<tr><th id="278">278</th><td>        {</td></tr>
+<tr><th id="279">279</th><td>            <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col0 decl" id="980len" title='len' data-type='size_t' data-ref="980len">len</dfn> = <a class="ref" href="#_ZN4nest4utf87charlenEc" title='nest::utf8::charlen' data-ref="_ZN4nest4utf87charlenEc">charlen</a>(*<a class="local col6 ref" href="#976sp" title='sp' data-ref="976sp">sp</a>);</td></tr>
+<tr><th id="280">280</th><td>            <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col1 decl" id="981width" title='width' data-type='size_t' data-ref="981width">width</dfn> = (<a class="local col0 ref" href="#980len" title='len' data-ref="980len">len</a> &gt; <var>1</var> ? <var>2</var> : <var>1</var>);</td></tr>
+<tr><th id="281">281</th><td>            <b>if</b> (<a class="local col8 ref" href="#978os" title='os' data-ref="978os">os</a> + <a class="local col0 ref" href="#980len" title='len' data-ref="980len">len</a> &lt; <a class="local col3 ref" href="#973bufSize" title='bufSize' data-ref="973bufSize">bufSize</a> &amp;&amp; <a class="local col9 ref" href="#979cp" title='cp' data-ref="979cp">cp</a> + <a class="local col1 ref" href="#981width" title='width' data-ref="981width">width</a> &lt;= <a class="local col4 ref" href="#974limitWidth" title='limitWidth' data-ref="974limitWidth">limitWidth</a>)</td></tr>
+<tr><th id="282">282</th><td>            {</td></tr>
+<tr><th id="283">283</th><td>                <a class="ref" href="../../include/string.h.html#memcpy" title='memcpy' data-ref="memcpy">memcpy</a>(<a class="local col7 ref" href="#977op" title='op' data-ref="977op">op</a>, <a class="local col6 ref" href="#976sp" title='sp' data-ref="976sp">sp</a>, <a class="local col0 ref" href="#980len" title='len' data-ref="980len">len</a>);</td></tr>
+<tr><th id="284">284</th><td>                <a class="local col7 ref" href="#977op" title='op' data-ref="977op">op</a> += <a class="local col0 ref" href="#980len" title='len' data-ref="980len">len</a>;</td></tr>
+<tr><th id="285">285</th><td>                <a class="local col8 ref" href="#978os" title='os' data-ref="978os">os</a> += <a class="local col0 ref" href="#980len" title='len' data-ref="980len">len</a>;</td></tr>
+<tr><th id="286">286</th><td>            }</td></tr>
+<tr><th id="287">287</th><td>            <a class="local col6 ref" href="#976sp" title='sp' data-ref="976sp">sp</a> += <a class="local col0 ref" href="#980len" title='len' data-ref="980len">len</a>;</td></tr>
+<tr><th id="288">288</th><td>            <a class="local col9 ref" href="#979cp" title='cp' data-ref="979cp">cp</a> += <a class="local col1 ref" href="#981width" title='width' data-ref="981width">width</a>;</td></tr>
+<tr><th id="289">289</th><td>        }</td></tr>
+<tr><th id="290">290</th><td>        *<a class="local col7 ref" href="#977op" title='op' data-ref="977op">op</a> = <var>0</var>;</td></tr>
+<tr><th id="291">291</th><td>    }</td></tr>
+<tr><th id="292">292</th><td>    <b>else</b> <b>if</b> (<a class="local col3 ref" href="#973bufSize" title='bufSize' data-ref="973bufSize">bufSize</a>)</td></tr>
+<tr><th id="293">293</th><td>    {</td></tr>
+<tr><th id="294">294</th><td>        *<a class="local col2 ref" href="#972buffer" title='buffer' data-ref="972buffer">buffer</a> = <var>0</var>;</td></tr>
+<tr><th id="295">295</th><td>    }</td></tr>
+<tr><th id="296">296</th><td>}</td></tr>
+<tr><th id="297">297</th><td></td></tr>
+<tr><th id="298">298</th><td><em>const</em> <em>char</em>* <dfn class="decl def" id="_ZN4nest4utf85limitEmPKc" title='nest::utf8::limit' data-ref="_ZN4nest4utf85limitEmPKc">limit</dfn>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col2 decl" id="982limitWidth" title='limitWidth' data-type='size_t' data-ref="982limitWidth">limitWidth</dfn>, <em>const</em> <em>char</em>* <dfn class="local col3 decl" id="983str" title='str' data-type='const char *' data-ref="983str">str</dfn>)</td></tr>
+<tr><th id="299">299</th><td>{</td></tr>
+<tr><th id="300">300</th><td>    <a class="ref" href="#_ZN4nest4utf85limitEPcmmPKc" title='nest::utf8::limit' data-ref="_ZN4nest4utf85limitEPcmmPKc">limit</a>(<a class="ref" href="Utils.h.html#nest::_nest_buffer_" title='nest::_nest_buffer_' data-ref="nest::_nest_buffer_">_nest_buffer_</a>, <b>sizeof</b>(<a class="ref" href="Utils.h.html#nest::_nest_buffer_" title='nest::_nest_buffer_' data-ref="nest::_nest_buffer_">_nest_buffer_</a>), <a class="local col2 ref" href="#982limitWidth" title='limitWidth' data-ref="982limitWidth">limitWidth</a>, <a class="local col3 ref" href="#983str" title='str' data-ref="983str">str</a>);</td></tr>
+<tr><th id="301">301</th><td></td></tr>
+<tr><th id="302">302</th><td>    <b>return</b> <a class="ref" href="Utils.h.html#nest::_nest_buffer_" title='nest::_nest_buffer_' data-ref="nest::_nest_buffer_">_nest_buffer_</a>;</td></tr>
+<tr><th id="303">303</th><td>}</td></tr>
+<tr><th id="304">304</th><td></td></tr>
+<tr><th id="305">305</th><td><b>struct</b> <dfn class="type def" id="nest::utf8::_path_token_info" title='nest::utf8::_path_token_info' data-ref="nest::utf8::_path_token_info">_path_token_info</dfn></td></tr>
+<tr><th id="306">306</th><td>{</td></tr>
+<tr><th id="307">307</th><td>    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="tu decl" id="nest::utf8::_path_token_info::pos" title='nest::utf8::_path_token_info::pos' data-type='size_t' data-ref="nest::utf8::_path_token_info::pos">pos</dfn>;</td></tr>
+<tr><th id="308">308</th><td>    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="tu decl" id="nest::utf8::_path_token_info::length" title='nest::utf8::_path_token_info::length' data-type='size_t' data-ref="nest::utf8::_path_token_info::length">length</dfn>;</td></tr>
+<tr><th id="309">309</th><td>};</td></tr>
+<tr><th id="310">310</th><td></td></tr>
+<tr><th id="311">311</th><td><em>void</em> <dfn class="decl def" id="_ZN4nest4utf813path_ellipsisEPcmmPKc" title='nest::utf8::path_ellipsis' data-ref="_ZN4nest4utf813path_ellipsisEPcmmPKc">path_ellipsis</dfn>(<em>char</em>* <dfn class="local col4 decl" id="984buffer" title='buffer' data-type='char *' data-ref="984buffer">buffer</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col5 decl" id="985bufSize" title='bufSize' data-type='size_t' data-ref="985bufSize">bufSize</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col6 decl" id="986limitWidth" title='limitWidth' data-type='size_t' data-ref="986limitWidth">limitWidth</dfn>, <em>const</em> <em>char</em>* <dfn class="local col7 decl" id="987str" title='str' data-type='const char *' data-ref="987str">str</dfn>)</td></tr>
+<tr><th id="312">312</th><td>{</td></tr>
+<tr><th id="313">313</th><td>    <b>if</b> (<a class="local col6 ref" href="#986limitWidth" title='limitWidth' data-ref="986limitWidth">limitWidth</a> &amp;&amp; <a class="local col5 ref" href="#985bufSize" title='bufSize' data-ref="985bufSize">bufSize</a>)</td></tr>
+<tr><th id="314">314</th><td>    {</td></tr>
+<tr><th id="315">315</th><td>        <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col8 decl" id="988conwidth" title='conwidth' data-type='size_t' data-ref="988conwidth">conwidth</dfn> = <a class="ref" href="#_ZN4nest4utf811console_lenEPKcm" title='nest::utf8::console_len' data-ref="_ZN4nest4utf811console_lenEPKcm">console_len</a>(<a class="local col7 ref" href="#987str" title='str' data-ref="987str">str</a>);</td></tr>
+<tr><th id="316">316</th><td>        <em>bool</em> <dfn class="local col9 decl" id="989done" title='done' data-type='bool' data-ref="989done">done</dfn> = <b>false</b>;</td></tr>
+<tr><th id="317">317</th><td></td></tr>
+<tr><th id="318">318</th><td>        <b>if</b> (<a class="local col8 ref" href="#988conwidth" title='conwidth' data-ref="988conwidth">conwidth</a> &gt; <a class="local col6 ref" href="#986limitWidth" title='limitWidth' data-ref="986limitWidth">limitWidth</a>)</td></tr>
+<tr><th id="319">319</th><td>        {</td></tr>
+<tr><th id="320">320</th><td>            <span class="namespace">std::</span><a class="type" href="../../include/c++/7/bits/stl_vector.h.html#std::vector" title='std::vector' data-ref="std::vector">vector</a>&lt;<a class="type" href="#nest::utf8::_path_token_info" title='nest::utf8::_path_token_info' data-ref="nest::utf8::_path_token_info">_path_token_info</a>&gt; <a class="ref fake" href="../../include/c++/7/bits/stl_vector.h.html#_ZNSt6vectorC1Ev" title='std::vector::vector&lt;_Tp, _Alloc&gt;' data-ref="_ZNSt6vectorC1Ev"></a><dfn class="local col0 decl" id="990tokens" title='tokens' data-type='std::vector&lt;_path_token_info&gt;' data-ref="990tokens">tokens</dfn>;</td></tr>
+<tr><th id="321">321</th><td>            <span class="namespace">std::</span><a class="type" href="../../include/c++/7/bits/stl_vector.h.html#std::vector" title='std::vector' data-ref="std::vector">vector</a>&lt;<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span>&gt; <a class="ref fake" href="../../include/c++/7/bits/stl_vector.h.html#_ZNSt6vectorC1Ev" title='std::vector::vector&lt;_Tp, _Alloc&gt;' data-ref="_ZNSt6vectorC1Ev"></a><dfn class="local col1 decl" id="991removed" title='removed' data-type='std::vector&lt;size_t&gt;' data-ref="991removed">removed</dfn>;</td></tr>
+<tr><th id="322">322</th><td>            <em>const</em> <em>char</em>* <dfn class="local col2 decl" id="992srcptr" title='srcptr' data-type='const char *' data-ref="992srcptr">srcptr</dfn> = <a class="local col7 ref" href="#987str" title='str' data-ref="987str">str</a>;</td></tr>
+<tr><th id="323">323</th><td>            <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col3 decl" id="993old" title='old' data-type='size_t' data-ref="993old">old</dfn> = <var>0</var>;</td></tr>
+<tr><th id="324">324</th><td>            <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col4 decl" id="994pos" title='pos' data-type='size_t' data-ref="994pos">pos</dfn> = <var>0</var>;</td></tr>
+<tr><th id="325">325</th><td>            <b>while</b> (*<a class="local col2 ref" href="#992srcptr" title='srcptr' data-ref="992srcptr">srcptr</a>)</td></tr>
+<tr><th id="326">326</th><td>            {</td></tr>
+<tr><th id="327">327</th><td>                <b>if</b> (*<a class="local col2 ref" href="#992srcptr" title='srcptr' data-ref="992srcptr">srcptr</a> == <kbd>'/'</kbd>)</td></tr>
+<tr><th id="328">328</th><td>                {</td></tr>
+<tr><th id="329">329</th><td>                    <a class="type" href="#nest::utf8::_path_token_info" title='nest::utf8::_path_token_info' data-ref="nest::utf8::_path_token_info">_path_token_info</a> <a class="tu ref fake" href="#305" title='nest::utf8::_path_token_info::_path_token_info' data-use='c' data-ref="_ZN4nest4utf816_path_token_infoC1Ev"></a><dfn class="local col5 decl" id="995info" title='info' data-type='nest::utf8::_path_token_info' data-ref="995info">info</dfn>;</td></tr>
+<tr><th id="330">330</th><td>                    <a class="local col5 ref" href="#995info" title='info' data-ref="995info">info</a>.<a class="tu ref" href="#nest::utf8::_path_token_info::pos" title='nest::utf8::_path_token_info::pos' data-use='w' data-ref="nest::utf8::_path_token_info::pos">pos</a> = <a class="local col3 ref" href="#993old" title='old' data-ref="993old">old</a>;</td></tr>
+<tr><th id="331">331</th><td>                    <a class="local col5 ref" href="#995info" title='info' data-ref="995info">info</a>.<a class="tu ref" href="#nest::utf8::_path_token_info::length" title='nest::utf8::_path_token_info::length' data-use='w' data-ref="nest::utf8::_path_token_info::length">length</a> = <a class="local col4 ref" href="#994pos" title='pos' data-ref="994pos">pos</a> - <a class="local col3 ref" href="#993old" title='old' data-ref="993old">old</a> + <var>1</var>;</td></tr>
+<tr><th id="332">332</th><td>                    <a class="local col3 ref" href="#993old" title='old' data-ref="993old">old</a> = <a class="local col4 ref" href="#994pos" title='pos' data-ref="994pos">pos</a> + <var>1</var>;</td></tr>
+<tr><th id="333">333</th><td>                    <a class="local col0 ref" href="#990tokens" title='tokens' data-ref="990tokens">tokens</a>.<a class="ref" href="../../include/c++/7/bits/stl_vector.h.html#_ZNSt6vector9push_backERKT_" title='std::vector::push_back' data-ref="_ZNSt6vector9push_backERKT_">push_back</a>(<a class="local col5 ref" href="#995info" title='info' data-ref="995info">info</a>);</td></tr>
+<tr><th id="334">334</th><td>                }</td></tr>
+<tr><th id="335">335</th><td>                <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col6 decl" id="996len" title='len' data-type='size_t' data-ref="996len">len</dfn> = <a class="ref" href="#_ZN4nest4utf87charlenEc" title='nest::utf8::charlen' data-ref="_ZN4nest4utf87charlenEc">charlen</a>(*<a class="local col2 ref" href="#992srcptr" title='srcptr' data-ref="992srcptr">srcptr</a>);</td></tr>
+<tr><th id="336">336</th><td>                <a class="local col2 ref" href="#992srcptr" title='srcptr' data-ref="992srcptr">srcptr</a> += <a class="local col6 ref" href="#996len" title='len' data-ref="996len">len</a>;</td></tr>
+<tr><th id="337">337</th><td>                <a class="local col4 ref" href="#994pos" title='pos' data-ref="994pos">pos</a> += <a class="local col6 ref" href="#996len" title='len' data-ref="996len">len</a>;</td></tr>
+<tr><th id="338">338</th><td>            }</td></tr>
+<tr><th id="339">339</th><td></td></tr>
+<tr><th id="340">340</th><td>            <b>if</b> (<a class="local col0 ref" href="#990tokens" title='tokens' data-ref="990tokens">tokens</a>.<a class="ref" href="../../include/c++/7/bits/stl_vector.h.html#_ZNKSt6vector4sizeEv" title='std::vector::size' data-ref="_ZNKSt6vector4sizeEv">size</a>())</td></tr>
+<tr><th id="341">341</th><td>            {</td></tr>
+<tr><th id="342">342</th><td>                <span class="namespace">std::</span><a class="type" href="../../include/c++/7/bits/stl_vector.h.html#std::vector" title='std::vector' data-ref="std::vector">vector</a>&lt;<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span>&gt; <a class="ref fake" href="../../include/c++/7/bits/stl_vector.h.html#_ZNSt6vectorC1Ev" title='std::vector::vector&lt;_Tp, _Alloc&gt;' data-ref="_ZNSt6vectorC1Ev"></a><dfn class="local col7 decl" id="997calc" title='calc' data-type='std::vector&lt;size_t&gt;' data-ref="997calc">calc</dfn>;</td></tr>
+<tr><th id="343">343</th><td>                <a class="local col7 ref" href="#997calc" title='calc' data-ref="997calc">calc</a>.<a class="ref" href="../../include/c++/7/bits/stl_vector.h.html#_ZNSt6vector6resizeEmT_" title='std::vector::resize' data-ref="_ZNSt6vector6resizeEmT_">resize</a>(<a class="local col0 ref" href="#990tokens" title='tokens' data-ref="990tokens">tokens</a>.<a class="ref" href="../../include/c++/7/bits/stl_vector.h.html#_ZNKSt6vector4sizeEv" title='std::vector::size' data-ref="_ZNKSt6vector4sizeEv">size</a>());</td></tr>
+<tr><th id="344">344</th><td>                <b>for</b> (<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col8 decl" id="998i" title='i' data-type='size_t' data-ref="998i">i</dfn> = <var>0</var>; <a class="local col8 ref" href="#998i" title='i' data-ref="998i">i</a> &lt; <a class="local col0 ref" href="#990tokens" title='tokens' data-ref="990tokens">tokens</a>.<a class="ref" href="../../include/c++/7/bits/stl_vector.h.html#_ZNKSt6vector4sizeEv" title='std::vector::size' data-ref="_ZNKSt6vector4sizeEv">size</a>(); ++<a class="local col8 ref" href="#998i" title='i' data-ref="998i">i</a>)</td></tr>
+<tr><th id="345">345</th><td>                {</td></tr>
+<tr><th id="346">346</th><td>                    <a class="local col7 ref" href="#997calc" title='calc' data-ref="997calc">calc</a><a class="ref" href="../../include/c++/7/bits/stl_vector.h.html#_ZNSt6vectorixEm" title='std::vector::operator[]' data-ref="_ZNSt6vectorixEm">[<a class="local col8 ref" href="#998i" title='i' data-ref="998i">i</a>]</a> = <a class="local col8 ref" href="#998i" title='i' data-ref="998i">i</a>;</td></tr>
+<tr><th id="347">347</th><td>                }</td></tr>
+<tr><th id="348">348</th><td></td></tr>
+<tr><th id="349">349</th><td>                <a class="local col8 ref" href="#988conwidth" title='conwidth' data-ref="988conwidth">conwidth</a> += <var>4</var>;</td></tr>
+<tr><th id="350">350</th><td>                <b>while</b> (<a class="local col7 ref" href="#997calc" title='calc' data-ref="997calc">calc</a>.<a class="ref" href="../../include/c++/7/bits/stl_vector.h.html#_ZNKSt6vector4sizeEv" title='std::vector::size' data-ref="_ZNKSt6vector4sizeEv">size</a>() &amp;&amp; <a class="local col8 ref" href="#988conwidth" title='conwidth' data-ref="988conwidth">conwidth</a> &gt; <a class="local col6 ref" href="#986limitWidth" title='limitWidth' data-ref="986limitWidth">limitWidth</a>)</td></tr>
+<tr><th id="351">351</th><td>                {</td></tr>
+<tr><th id="352">352</th><td>                    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col9 decl" id="999p" title='p' data-type='size_t' data-ref="999p">p</dfn> = (<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span>) (<a class="local col7 ref" href="#997calc" title='calc' data-ref="997calc">calc</a>.<a class="ref" href="../../include/c++/7/bits/stl_vector.h.html#_ZNKSt6vector4sizeEv" title='std::vector::size' data-ref="_ZNKSt6vector4sizeEv">size</a>() / <var>2.0f</var> + <var>0.49f</var>);</td></tr>
+<tr><th id="353">353</th><td>                    <a class="type" href="#nest::utf8::_path_token_info" title='nest::utf8::_path_token_info' data-ref="nest::utf8::_path_token_info">_path_token_info</a>&amp; <dfn class="local col0 decl" id="1000token" title='token' data-type='nest::utf8::_path_token_info &amp;' data-ref="1000token">token</dfn> = <a class="local col0 ref" href="#990tokens" title='tokens' data-ref="990tokens">tokens</a><a class="ref" href="../../include/c++/7/bits/stl_vector.h.html#_ZNSt6vectorixEm" title='std::vector::operator[]' data-ref="_ZNSt6vectorixEm">[<a class="local col7 ref" href="#997calc" title='calc' data-ref="997calc">calc</a><a class="ref" href="../../include/c++/7/bits/stl_vector.h.html#_ZNSt6vectorixEm" title='std::vector::operator[]' data-ref="_ZNSt6vectorixEm">[<a class="local col9 ref" href="#999p" title='p' data-ref="999p">p</a>]</a>]</a>;</td></tr>
+<tr><th id="354">354</th><td>                    <a class="local col8 ref" href="#988conwidth" title='conwidth' data-ref="988conwidth">conwidth</a> -= <a class="ref" href="#_ZN4nest4utf811console_lenEPKcm" title='nest::utf8::console_len' data-ref="_ZN4nest4utf811console_lenEPKcm">console_len</a>(<a class="local col7 ref" href="#987str" title='str' data-ref="987str">str</a> + <a class="local col0 ref" href="#1000token" title='token' data-ref="1000token">token</a>.<a class="tu ref" href="#nest::utf8::_path_token_info::pos" title='nest::utf8::_path_token_info::pos' data-use='r' data-ref="nest::utf8::_path_token_info::pos">pos</a>, <a class="local col0 ref" href="#1000token" title='token' data-ref="1000token">token</a>.<a class="tu ref" href="#nest::utf8::_path_token_info::length" title='nest::utf8::_path_token_info::length' data-use='r' data-ref="nest::utf8::_path_token_info::length">length</a>);</td></tr>
+<tr><th id="355">355</th><td>                    <a class="local col1 ref" href="#991removed" title='removed' data-ref="991removed">removed</a>.<a class="ref" href="../../include/c++/7/bits/stl_vector.h.html#_ZNSt6vector9push_backERKT_" title='std::vector::push_back' data-ref="_ZNSt6vector9push_backERKT_">push_back</a>(<a class="local col7 ref" href="#997calc" title='calc' data-ref="997calc">calc</a><a class="ref" href="../../include/c++/7/bits/stl_vector.h.html#_ZNSt6vectorixEm" title='std::vector::operator[]' data-ref="_ZNSt6vectorixEm">[<a class="local col9 ref" href="#999p" title='p' data-ref="999p">p</a>]</a>);</td></tr>
+<tr><th id="356">356</th><td>                    <a class="local col7 ref" href="#997calc" title='calc' data-ref="997calc">calc</a>.<a class="ref" href="../../include/c++/7/bits/stl_vector.h.html#_ZNSt6vector5eraseEN9__gnu_cxx17__normal_iteratorINSt12_Vector_baseIT_T0_E7pointerESt6vectorIS3_S4_EEE" title='std::vector::erase' data-ref="_ZNSt6vector5eraseEN9__gnu_cxx17__normal_iteratorINSt12_Vector_baseIT_T0_E7pointerESt6vectorIS3_S4_EEE">erase</a>(<a class="local col7 ref" href="#997calc" title='calc' data-ref="997calc">calc</a>.<a class="ref" href="../../include/c++/7/bits/stl_vector.h.html#_ZNSt6vector5beginEv" title='std::vector::begin' data-ref="_ZNSt6vector5beginEv">begin</a>() <a class="ref" href="../../include/c++/7/bits/stl_iterator.h.html#__gnu_cxx::__normal_iterator::operator+" title='__gnu_cxx::__normal_iterator::operator+' data-ref="__gnu_cxx::__normal_iterator::operator+">+</a> <a class="local col9 ref" href="#999p" title='p' data-ref="999p">p</a>);</td></tr>
+<tr><th id="357">357</th><td>                }</td></tr>
+<tr><th id="358">358</th><td></td></tr>
+<tr><th id="359">359</th><td>                <b>if</b> (<a class="local col8 ref" href="#988conwidth" title='conwidth' data-ref="988conwidth">conwidth</a> &lt;= <a class="local col6 ref" href="#986limitWidth" title='limitWidth' data-ref="986limitWidth">limitWidth</a>)</td></tr>
+<tr><th id="360">360</th><td>                {</td></tr>
+<tr><th id="361">361</th><td>                    <span class="namespace">std::</span><a class="ref" href="../../include/c++/7/bits/stl_algo.h.html#_ZSt4sortT_S_T0_" title='std::sort' data-ref="_ZSt4sortT_S_T0_">sort</a>(<a class="local col1 ref" href="#991removed" title='removed' data-ref="991removed">removed</a>.<a class="ref" href="../../include/c++/7/bits/stl_vector.h.html#_ZNSt6vector5beginEv" title='std::vector::begin' data-ref="_ZNSt6vector5beginEv">begin</a>(), <a class="local col1 ref" href="#991removed" title='removed' data-ref="991removed">removed</a>.<a class="ref" href="../../include/c++/7/bits/stl_vector.h.html#_ZNSt6vector3endEv" title='std::vector::end' data-ref="_ZNSt6vector3endEv">end</a>(), <span class="namespace">std::</span><a class="type" href="../../include/c++/7/bits/stl_function.h.html#std::less" title='std::less' data-ref="std::less">less</a>&lt;<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span>&gt;<a class="ref" href="../../include/c++/7/bits/stl_function.h.html#381" title='std::less&lt;unsigned long&gt;::less' data-ref="_ZNSt4lessImEC1Ev">(</a>));</td></tr>
+<tr><th id="362">362</th><td>                    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col1 decl" id="1001min" title='min' data-type='size_t' data-ref="1001min">min</dfn> = <a class="local col1 ref" href="#991removed" title='removed' data-ref="991removed">removed</a><a class="ref" href="../../include/c++/7/bits/stl_vector.h.html#_ZNSt6vectorixEm" title='std::vector::operator[]' data-ref="_ZNSt6vectorixEm">[<var>0</var>]</a>;</td></tr>
+<tr><th id="363">363</th><td>                    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col2 decl" id="1002max" title='max' data-type='size_t' data-ref="1002max">max</dfn> = <a class="local col1 ref" href="#991removed" title='removed' data-ref="991removed">removed</a>.<a class="ref" href="../../include/c++/7/bits/stl_vector.h.html#_ZNSt6vector4backEv" title='std::vector::back' data-ref="_ZNSt6vector4backEv">back</a>();</td></tr>
+<tr><th id="364">364</th><td>                    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col3 decl" id="1003minp" title='minp' data-type='size_t' data-ref="1003minp">minp</dfn> = <a class="local col0 ref" href="#990tokens" title='tokens' data-ref="990tokens">tokens</a><a class="ref" href="../../include/c++/7/bits/stl_vector.h.html#_ZNSt6vectorixEm" title='std::vector::operator[]' data-ref="_ZNSt6vectorixEm">[<a class="local col1 ref" href="#1001min" title='min' data-ref="1001min">min</a>]</a>.<a class="tu ref" href="#nest::utf8::_path_token_info::pos" title='nest::utf8::_path_token_info::pos' data-use='r' data-ref="nest::utf8::_path_token_info::pos">pos</a>;</td></tr>
+<tr><th id="365">365</th><td>                    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col4 decl" id="1004maxp" title='maxp' data-type='size_t' data-ref="1004maxp">maxp</dfn> = <a class="local col0 ref" href="#990tokens" title='tokens' data-ref="990tokens">tokens</a><a class="ref" href="../../include/c++/7/bits/stl_vector.h.html#_ZNSt6vectorixEm" title='std::vector::operator[]' data-ref="_ZNSt6vectorixEm">[<a class="local col2 ref" href="#1002max" title='max' data-ref="1002max">max</a>]</a>.<a class="tu ref" href="#nest::utf8::_path_token_info::pos" title='nest::utf8::_path_token_info::pos' data-use='r' data-ref="nest::utf8::_path_token_info::pos">pos</a> + <a class="local col0 ref" href="#990tokens" title='tokens' data-ref="990tokens">tokens</a><a class="ref" href="../../include/c++/7/bits/stl_vector.h.html#_ZNSt6vectorixEm" title='std::vector::operator[]' data-ref="_ZNSt6vectorixEm">[<a class="local col2 ref" href="#1002max" title='max' data-ref="1002max">max</a>]</a>.<a class="tu ref" href="#nest::utf8::_path_token_info::length" title='nest::utf8::_path_token_info::length' data-use='r' data-ref="nest::utf8::_path_token_info::length">length</a> - <var>1</var>;</td></tr>
+<tr><th id="366">366</th><td></td></tr>
+<tr><th id="367">367</th><td>                    <em>char</em>* <dfn class="local col5 decl" id="1005outptr" title='outptr' data-type='char *' data-ref="1005outptr">outptr</dfn> = <a class="local col4 ref" href="#984buffer" title='buffer' data-ref="984buffer">buffer</a>;</td></tr>
+<tr><th id="368">368</th><td>                    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col6 decl" id="1006srcpos" title='srcpos' data-type='size_t' data-ref="1006srcpos">srcpos</dfn> = <var>0</var>;</td></tr>
+<tr><th id="369">369</th><td></td></tr>
+<tr><th id="370">370</th><td>                    <b>for</b> (<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col7 decl" id="1007i" title='i' data-type='size_t' data-ref="1007i">i</dfn> = <var>0</var>; <a class="local col7 ref" href="#1007i" title='i' data-ref="1007i">i</a> &lt; ::<a class="ref" href="../../include/string.h.html#strlen" title='strlen' data-ref="strlen">strlen</a>(<a class="local col7 ref" href="#987str" title='str' data-ref="987str">str</a>) &amp;&amp; <a class="local col6 ref" href="#1006srcpos" title='srcpos' data-ref="1006srcpos">srcpos</a> &lt; <a class="local col5 ref" href="#985bufSize" title='bufSize' data-ref="985bufSize">bufSize</a> - <var>1</var>; ++<a class="local col7 ref" href="#1007i" title='i' data-ref="1007i">i</a>)</td></tr>
+<tr><th id="371">371</th><td>                    {</td></tr>
+<tr><th id="372">372</th><td>                        <b>if</b> (<a class="local col7 ref" href="#1007i" title='i' data-ref="1007i">i</a> &lt; <a class="local col3 ref" href="#1003minp" title='minp' data-ref="1003minp">minp</a>)</td></tr>
+<tr><th id="373">373</th><td>                        {</td></tr>
+<tr><th id="374">374</th><td>                            *<a class="local col5 ref" href="#1005outptr" title='outptr' data-ref="1005outptr">outptr</a>++ = <a class="local col7 ref" href="#987str" title='str' data-ref="987str">str</a>[<a class="local col7 ref" href="#1007i" title='i' data-ref="1007i">i</a>];</td></tr>
+<tr><th id="375">375</th><td>                            ++<a class="local col6 ref" href="#1006srcpos" title='srcpos' data-ref="1006srcpos">srcpos</a>;</td></tr>
+<tr><th id="376">376</th><td>                        }</td></tr>
+<tr><th id="377">377</th><td>                        <b>if</b> (<a class="local col7 ref" href="#1007i" title='i' data-ref="1007i">i</a> &gt;= <a class="local col3 ref" href="#1003minp" title='minp' data-ref="1003minp">minp</a> &amp;&amp; <a class="local col7 ref" href="#1007i" title='i' data-ref="1007i">i</a> &lt; <a class="local col3 ref" href="#1003minp" title='minp' data-ref="1003minp">minp</a> + <var>3</var>)</td></tr>
+<tr><th id="378">378</th><td>                        {</td></tr>
+<tr><th id="379">379</th><td>                            *<a class="local col5 ref" href="#1005outptr" title='outptr' data-ref="1005outptr">outptr</a>++ = <kbd>'.'</kbd>;</td></tr>
+<tr><th id="380">380</th><td>                            ++<a class="local col6 ref" href="#1006srcpos" title='srcpos' data-ref="1006srcpos">srcpos</a>;</td></tr>
+<tr><th id="381">381</th><td>                        }</td></tr>
+<tr><th id="382">382</th><td>                        <b>if</b> (<a class="local col7 ref" href="#1007i" title='i' data-ref="1007i">i</a> &gt;= <a class="local col4 ref" href="#1004maxp" title='maxp' data-ref="1004maxp">maxp</a>)</td></tr>
+<tr><th id="383">383</th><td>                        {</td></tr>
+<tr><th id="384">384</th><td>                            *<a class="local col5 ref" href="#1005outptr" title='outptr' data-ref="1005outptr">outptr</a>++ = <a class="local col7 ref" href="#987str" title='str' data-ref="987str">str</a>[<a class="local col7 ref" href="#1007i" title='i' data-ref="1007i">i</a>];</td></tr>
+<tr><th id="385">385</th><td>                            ++<a class="local col6 ref" href="#1006srcpos" title='srcpos' data-ref="1006srcpos">srcpos</a>;</td></tr>
+<tr><th id="386">386</th><td>                        }</td></tr>
+<tr><th id="387">387</th><td>                    }</td></tr>
+<tr><th id="388">388</th><td>                    *<a class="local col5 ref" href="#1005outptr" title='outptr' data-ref="1005outptr">outptr</a> = <var>0</var>;</td></tr>
+<tr><th id="389">389</th><td></td></tr>
+<tr><th id="390">390</th><td>                    <a class="local col9 ref" href="#989done" title='done' data-ref="989done">done</a> = <b>true</b>;</td></tr>
+<tr><th id="391">391</th><td>                }</td></tr>
+<tr><th id="392">392</th><td>            }</td></tr>
+<tr><th id="393">393</th><td>        }</td></tr>
+<tr><th id="394">394</th><td></td></tr>
+<tr><th id="395">395</th><td>        <b>if</b> (!<a class="local col9 ref" href="#989done" title='done' data-ref="989done">done</a>)</td></tr>
+<tr><th id="396">396</th><td>        {</td></tr>
+<tr><th id="397">397</th><td>            <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col8 decl" id="1008console_width" title='console_width' data-type='size_t' data-ref="1008console_width">console_width</dfn> = <a class="ref" href="#_ZN4nest4utf811console_lenEPKcm" title='nest::utf8::console_len' data-ref="_ZN4nest4utf811console_lenEPKcm">console_len</a>(<a class="local col7 ref" href="#987str" title='str' data-ref="987str">str</a>);</td></tr>
+<tr><th id="398">398</th><td>            <b>if</b> (<a class="local col8 ref" href="#1008console_width" title='console_width' data-ref="1008console_width">console_width</a> &gt; <a class="local col6 ref" href="#986limitWidth" title='limitWidth' data-ref="986limitWidth">limitWidth</a>)</td></tr>
+<tr><th id="399">399</th><td>            {</td></tr>
+<tr><th id="400">400</th><td>                <em>const</em> <em>char</em>* <dfn class="local col9 decl" id="1009src" title='src' data-type='const char *' data-ref="1009src">src</dfn> = <a class="local col7 ref" href="#987str" title='str' data-ref="987str">str</a>;</td></tr>
+<tr><th id="401">401</th><td>                <b>while</b> (<a class="local col8 ref" href="#1008console_width" title='console_width' data-ref="1008console_width">console_width</a> + <var>3</var> &gt; <a class="local col6 ref" href="#986limitWidth" title='limitWidth' data-ref="986limitWidth">limitWidth</a> &amp;&amp; *<a class="local col9 ref" href="#1009src" title='src' data-ref="1009src">src</a>)</td></tr>
+<tr><th id="402">402</th><td>                {</td></tr>
+<tr><th id="403">403</th><td>                    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col0 decl" id="1010len" title='len' data-type='size_t' data-ref="1010len">len</dfn> = <a class="ref" href="#_ZN4nest4utf87charlenEc" title='nest::utf8::charlen' data-ref="_ZN4nest4utf87charlenEc">charlen</a>(*<a class="local col9 ref" href="#1009src" title='src' data-ref="1009src">src</a>);</td></tr>
+<tr><th id="404">404</th><td>                    <a class="local col8 ref" href="#1008console_width" title='console_width' data-ref="1008console_width">console_width</a> -= <a class="local col0 ref" href="#1010len" title='len' data-ref="1010len">len</a> &gt; <var>1</var> ? <var>2</var> : <var>1</var>;</td></tr>
+<tr><th id="405">405</th><td>                    <a class="local col9 ref" href="#1009src" title='src' data-ref="1009src">src</a> += <a class="local col0 ref" href="#1010len" title='len' data-ref="1010len">len</a>;</td></tr>
+<tr><th id="406">406</th><td>                }</td></tr>
+<tr><th id="407">407</th><td></td></tr>
+<tr><th id="408">408</th><td>                <a class="ref" href="../../include/string.h.html#strncpy" title='strncpy' data-ref="strncpy">strncpy</a>(<a class="local col4 ref" href="#984buffer" title='buffer' data-ref="984buffer">buffer</a>, <q>"..."</q>, <a class="local col5 ref" href="#985bufSize" title='bufSize' data-ref="985bufSize">bufSize</a> &lt; <a class="local col6 ref" href="#986limitWidth" title='limitWidth' data-ref="986limitWidth">limitWidth</a> ? <a class="local col5 ref" href="#985bufSize" title='bufSize' data-ref="985bufSize">bufSize</a> : <a class="local col6 ref" href="#986limitWidth" title='limitWidth' data-ref="986limitWidth">limitWidth</a>);</td></tr>
+<tr><th id="409">409</th><td>                <b>if</b> (<a class="local col5 ref" href="#985bufSize" title='bufSize' data-ref="985bufSize">bufSize</a> &gt; <var>3</var>)</td></tr>
+<tr><th id="410">410</th><td>                {</td></tr>
+<tr><th id="411">411</th><td>                    <a class="ref" href="../../include/string.h.html#strncpy" title='strncpy' data-ref="strncpy">strncpy</a>(<a class="local col4 ref" href="#984buffer" title='buffer' data-ref="984buffer">buffer</a> + <var>3</var>, <a class="local col9 ref" href="#1009src" title='src' data-ref="1009src">src</a>, <a class="local col5 ref" href="#985bufSize" title='bufSize' data-ref="985bufSize">bufSize</a> - <var>3</var>);</td></tr>
+<tr><th id="412">412</th><td>                }</td></tr>
+<tr><th id="413">413</th><td>            }</td></tr>
+<tr><th id="414">414</th><td>            <b>else</b></td></tr>
+<tr><th id="415">415</th><td>            {</td></tr>
+<tr><th id="416">416</th><td>                <a class="ref" href="../../include/string.h.html#strncpy" title='strncpy' data-ref="strncpy">strncpy</a>(<a class="local col4 ref" href="#984buffer" title='buffer' data-ref="984buffer">buffer</a>, <a class="local col7 ref" href="#987str" title='str' data-ref="987str">str</a>, <a class="local col5 ref" href="#985bufSize" title='bufSize' data-ref="985bufSize">bufSize</a>);</td></tr>
+<tr><th id="417">417</th><td>            }</td></tr>
+<tr><th id="418">418</th><td>        }</td></tr>
+<tr><th id="419">419</th><td>    }</td></tr>
+<tr><th id="420">420</th><td>    <b>else</b> <b>if</b> (<a class="local col5 ref" href="#985bufSize" title='bufSize' data-ref="985bufSize">bufSize</a>)</td></tr>
+<tr><th id="421">421</th><td>    {</td></tr>
+<tr><th id="422">422</th><td>        *<a class="local col4 ref" href="#984buffer" title='buffer' data-ref="984buffer">buffer</a> = <var>0</var>;</td></tr>
+<tr><th id="423">423</th><td>    }</td></tr>
+<tr><th id="424">424</th><td>}</td></tr>
+<tr><th id="425">425</th><td></td></tr>
+<tr><th id="426">426</th><td><em>const</em> <em>char</em>* <dfn class="decl def" id="_ZN4nest4utf813path_ellipsisEmPKc" title='nest::utf8::path_ellipsis' data-ref="_ZN4nest4utf813path_ellipsisEmPKc">path_ellipsis</dfn>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col1 decl" id="1011limitWidth" title='limitWidth' data-type='size_t' data-ref="1011limitWidth">limitWidth</dfn>, <em>const</em> <em>char</em>* <dfn class="local col2 decl" id="1012str" title='str' data-type='const char *' data-ref="1012str">str</dfn>)</td></tr>
+<tr><th id="427">427</th><td>{</td></tr>
+<tr><th id="428">428</th><td>    <a class="ref" href="#_ZN4nest4utf813path_ellipsisEPcmmPKc" title='nest::utf8::path_ellipsis' data-ref="_ZN4nest4utf813path_ellipsisEPcmmPKc">path_ellipsis</a>(<a class="ref" href="Utils.h.html#nest::_nest_buffer_" title='nest::_nest_buffer_' data-ref="nest::_nest_buffer_">_nest_buffer_</a>, <b>sizeof</b>(<a class="ref" href="Utils.h.html#nest::_nest_buffer_" title='nest::_nest_buffer_' data-ref="nest::_nest_buffer_">_nest_buffer_</a>), <a class="local col1 ref" href="#1011limitWidth" title='limitWidth' data-ref="1011limitWidth">limitWidth</a>, <a class="local col2 ref" href="#1012str" title='str' data-ref="1012str">str</a>);</td></tr>
+<tr><th id="429">429</th><td>    <b>return</b> <a class="ref" href="Utils.h.html#nest::_nest_buffer_" title='nest::_nest_buffer_' data-ref="nest::_nest_buffer_">_nest_buffer_</a>;</td></tr>
+<tr><th id="430">430</th><td>}</td></tr>
+<tr><th id="431">431</th><td></td></tr>
+<tr><th id="432">432</th><td>}</td></tr>
+<tr><th id="433">433</th><td></td></tr>
+<tr><th id="434">434</th><td><i>/*</i></td></tr>
+<tr><th id="435">435</th><td><i> Recursively creates the given  path, with the given mode</i></td></tr>
+<tr><th id="436">436</th><td><i></i></td></tr>
+<tr><th id="437">437</th><td><i> Returns: 0 on success and -1 on error</i></td></tr>
+<tr><th id="438">438</th><td><i> */</i></td></tr>
+<tr><th id="439">439</th><td></td></tr>
+<tr><th id="440">440</th><td><em>int</em> <dfn class="decl def" id="_ZN4nest6mkdir_EPKcj" title='nest::mkdir_' data-ref="_ZN4nest6mkdir_EPKcj">mkdir_</dfn>(<em>const</em> <em>char</em>* <dfn class="local col3 decl" id="1013file" title='file' data-type='const char *' data-ref="1013file">file</dfn>, <a class="typedef" href="../../include/x86_64-linux-gnu/sys/types.h.html#mode_t" title='mode_t' data-type='__mode_t' data-ref="mode_t">mode_t</a> <dfn class="local col4 decl" id="1014mode" title='mode' data-type='mode_t' data-ref="1014mode">mode</dfn>)</td></tr>
+<tr><th id="441">441</th><td>{</td></tr>
+<tr><th id="442">442</th><td><u>#<span data-ppcond="442">ifdef</span> <span class="macro" data-ref="_M/__MINGW32__">__MINGW32__</span></u></td></tr>
+<tr><th id="443">443</th><td>    <b>return</b> mkdir(file);</td></tr>
+<tr><th id="444">444</th><td><u>#<span data-ppcond="442">else</span></u></td></tr>
+<tr><th id="445">445</th><td>    <b>return</b> <a class="ref" href="../../include/x86_64-linux-gnu/sys/stat.h.html#mkdir" title='mkdir' data-ref="mkdir">mkdir</a>(<a class="local col3 ref" href="#1013file" title='file' data-ref="1013file">file</a>, <a class="local col4 ref" href="#1014mode" title='mode' data-ref="1014mode">mode</a>);</td></tr>
+<tr><th id="446">446</th><td><u>#<span data-ppcond="442">endif</span></u></td></tr>
+<tr><th id="447">447</th><td>}</td></tr>
+<tr><th id="448">448</th><td></td></tr>
+<tr><th id="449">449</th><td><em>int</em> <dfn class="decl def" id="_ZN4nest7mkdir_rEPKcj" title='nest::mkdir_r' data-ref="_ZN4nest7mkdir_rEPKcj">mkdir_r</dfn>(<em>const</em> <em>char</em> *<dfn class="local col5 decl" id="1015dir" title='dir' data-type='const char *' data-ref="1015dir">dir</dfn>, <a class="typedef" href="../../include/x86_64-linux-gnu/sys/types.h.html#mode_t" title='mode_t' data-type='__mode_t' data-ref="mode_t">mode_t</a> <dfn class="local col6 decl" id="1016mode" title='mode' data-type='mode_t' data-ref="1016mode">mode</dfn>)</td></tr>
+<tr><th id="450">450</th><td>{</td></tr>
+<tr><th id="451">451</th><td>    <em>const</em> <em>char</em> *<dfn class="local col7 decl" id="1017p" title='p' data-type='const char *' data-ref="1017p">p</dfn> = <a class="local col5 ref" href="#1015dir" title='dir' data-ref="1015dir">dir</a> + <var>1</var>;</td></tr>
+<tr><th id="452">452</th><td></td></tr>
+<tr><th id="453">453</th><td>    <b>while</b> (*<a class="local col7 ref" href="#1017p" title='p' data-ref="1017p">p</a>)</td></tr>
+<tr><th id="454">454</th><td>    {</td></tr>
+<tr><th id="455">455</th><td>        <b>if</b> (*<a class="local col7 ref" href="#1017p" title='p' data-ref="1017p">p</a> == <kbd>'/'</kbd>)</td></tr>
+<tr><th id="456">456</th><td>        {</td></tr>
+<tr><th id="457">457</th><td>            *((<em>char</em>*) <a class="local col7 ref" href="#1017p" title='p' data-ref="1017p">p</a>) = <kbd>'\0'</kbd>;</td></tr>
+<tr><th id="458">458</th><td></td></tr>
+<tr><th id="459">459</th><td>            <b>if</b> (<a class="ref" href="#_ZN4nest6mkdir_EPKcj" title='nest::mkdir_' data-ref="_ZN4nest6mkdir_EPKcj">mkdir_</a>(<a class="local col5 ref" href="#1015dir" title='dir' data-ref="1015dir">dir</a>, <a class="local col6 ref" href="#1016mode" title='mode' data-ref="1016mode">mode</a>) == -<var>1</var> &amp;&amp; <a class="macro" href="../../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a> != <a class="macro" href="../../include/asm-generic/errno-base.h.html#20" title="17" data-ref="_M/EEXIST">EEXIST</a>)</td></tr>
+<tr><th id="460">460</th><td>                <b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="461">461</th><td></td></tr>
+<tr><th id="462">462</th><td>            *((<em>char</em>*) <a class="local col7 ref" href="#1017p" title='p' data-ref="1017p">p</a>) = <kbd>'/'</kbd>;</td></tr>
+<tr><th id="463">463</th><td>        }</td></tr>
+<tr><th id="464">464</th><td></td></tr>
+<tr><th id="465">465</th><td>        <a class="local col7 ref" href="#1017p" title='p' data-ref="1017p">p</a>++;</td></tr>
+<tr><th id="466">466</th><td>    }</td></tr>
+<tr><th id="467">467</th><td></td></tr>
+<tr><th id="468">468</th><td>    <b>if</b> (*(<a class="local col7 ref" href="#1017p" title='p' data-ref="1017p">p</a> - <var>1</var>) != <kbd>'/'</kbd>)</td></tr>
+<tr><th id="469">469</th><td>        <b>if</b> (<a class="ref" href="#_ZN4nest6mkdir_EPKcj" title='nest::mkdir_' data-ref="_ZN4nest6mkdir_EPKcj">mkdir_</a>(<a class="local col5 ref" href="#1015dir" title='dir' data-ref="1015dir">dir</a>, <a class="local col6 ref" href="#1016mode" title='mode' data-ref="1016mode">mode</a>) == -<var>1</var> &amp;&amp; <a class="macro" href="../../include/x86_64-linux-gnu/bits/errno.h.html#54" title="(*__errno_location ())" data-ref="_M/errno">errno</a> != <a class="macro" href="../../include/asm-generic/errno-base.h.html#20" title="17" data-ref="_M/EEXIST">EEXIST</a>)</td></tr>
+<tr><th id="470">470</th><td>            <b>return</b> -<var>1</var>;</td></tr>
+<tr><th id="471">471</th><td></td></tr>
+<tr><th id="472">472</th><td>    <b>return</b> <var>0</var>;</td></tr>
+<tr><th id="473">473</th><td>}</td></tr>
+<tr><th id="474">474</th><td></td></tr>
+<tr><th id="475">475</th><td><em>char</em> <dfn class="decl def" id="_ZN4nest6chrlwrEc" title='nest::chrlwr' data-ref="_ZN4nest6chrlwrEc">chrlwr</dfn>(<em>char</em> <dfn class="local col8 decl" id="1018c" title='c' data-type='char' data-ref="1018c">c</dfn>)</td></tr>
+<tr><th id="476">476</th><td>{</td></tr>
+<tr><th id="477">477</th><td>    <b>if</b> ((<a class="local col8 ref" href="#1018c" title='c' data-ref="1018c">c</a> &lt;= <kbd>'A'</kbd>) &amp;&amp; (<a class="local col8 ref" href="#1018c" title='c' data-ref="1018c">c</a> &gt;= <kbd>'Z'</kbd>))</td></tr>
+<tr><th id="478">478</th><td>    {</td></tr>
+<tr><th id="479">479</th><td>        <a class="local col8 ref" href="#1018c" title='c' data-ref="1018c">c</a> &lt;&lt;= <var>5</var>;</td></tr>
+<tr><th id="480">480</th><td>    }</td></tr>
+<tr><th id="481">481</th><td></td></tr>
+<tr><th id="482">482</th><td>    <b>return</b> <a class="local col8 ref" href="#1018c" title='c' data-ref="1018c">c</a>;</td></tr>
+<tr><th id="483">483</th><td>}</td></tr>
+<tr><th id="484">484</th><td></td></tr>
+<tr><th id="485">485</th><td>}</td></tr>
+<tr><th id="486">486</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

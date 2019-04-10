@@ -1,0 +1,19 @@
+<dec f='include/c++/7/bits/stl_vector.h' l='780' type='void std::vector::reserve(size_type __n)'/>
+<def f='include/c++/7/bits/vector.tcc' l='63' ll='85' type='void std::vector::reserve(size_type __n)'/>
+<doc f='include/c++/7/bits/stl_vector.h' l='762'>/**
+       *  @brief  Attempt to preallocate enough memory for specified number of
+       *          elements.
+       *  @param  __n  Number of elements required.
+       *  @throw  std::length_error  If @a n exceeds @c max_size().
+       *
+       *  This function attempts to reserve enough memory for the
+       *  %vector to hold the specified number of elements.  If the
+       *  number requested is more than max_size(), length_error is
+       *  thrown.
+       *
+       *  The advantage of this function is that if optimal code is a
+       *  necessity and the user can determine the number of elements
+       *  that will be required, the user can reserve the memory in
+       *  %advance, and thus prevent a possible reallocation of memory
+       *  and copying of %vector data.
+       */</doc>

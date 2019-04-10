@@ -1,0 +1,10 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='120' type='Bytef *'/>
+<offset>320</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='120'>/* pointer to zero-terminated file name or Z_NULL */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='516' u='r' c='deflateBound'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='630' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='711' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='727' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='746' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='748' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='757' u='w' c='inflate'/>

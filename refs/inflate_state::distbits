@@ -1,0 +1,12 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/inflate.h' l='109' type='unsigned int'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='113' u='w' c='fixedtables'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='462' u='w' c='inflateBack'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='464' u='a' c='inflateBack'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='540' u='r' c='inflateBack'/>
+<offset>928</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/inflate.h' l='109'>/* index bits for distcode */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inffast.c' l='116' u='r' c='inflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='280' u='w' c='fixedtables'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='993' u='w' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='995' u='a' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1067' u='r' c='inflate'/>

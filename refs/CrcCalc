@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/7zCrc.h' l='21' type='UInt32 CrcCalc(const void * data, size_t size)'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/7zCrc.c' l='46' ll='49' type='UInt32 CrcCalc(const void * data, size_t size)'/>

@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/format/ALZFormat.h' l='50' type='int nest::ALZFormat::ExtractIndividualFile(size_t index, nest::OutputStream * stream)'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='408' u='c' c='_ZN4nest9ALZFormat7ExtractEv'/>
+<def f='codebrowser/nest/format/ALZFormat.cpp' l='508' ll='651' type='int nest::ALZFormat::ExtractIndividualFile(size_t index, nest::OutputStream * stream)'/>

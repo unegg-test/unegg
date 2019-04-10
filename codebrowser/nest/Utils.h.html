@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Utils.h source code [codebrowser/nest/Utils.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/Utils.h'; var root_path = '../..'; var data_path = '../../../data';</script>
+<script src='../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='..'>codebrowser</a>/<a href='./'>nest</a>/<a href='Utils.h.html'>Utils.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Utils.h</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> *  Created on: 2010. 12. 10.</i></td></tr>
+<tr><th id="5">5</th><td><i> *      Author: Jehoon Shin(Revolution)</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> *  Copyright(c) 2010-Present ESTsoft Corp. All rights reserved.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> *  For conditions of distribution and use, see copyright notice in license.txt</i></td></tr>
+<tr><th id="10">10</th><td><i> */</i></td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td><u>#<span data-ppcond="12">ifndef</span> <span class="macro" data-ref="_M/NEST_UTILS_H_">NEST_UTILS_H_</span></u></td></tr>
+<tr><th id="13">13</th><td><u>#define <dfn class="macro" id="_M/NEST_UTILS_H_" data-ref="_M/NEST_UTILS_H_">NEST_UTILS_H_</dfn></u></td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><u>#include <a href="nest.h.html">&lt;nest/nest.h&gt;</a></u></td></tr>
+<tr><th id="16">16</th><td><u>#include <a href="../../include/c++/7/string.html">&lt;string&gt;</a></u></td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td><b>namespace</b> <span class="namespace">nest</span></td></tr>
+<tr><th id="19">19</th><td>{</td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td><b>namespace</b> <span class="namespace">utf8</span></td></tr>
+<tr><th id="22">22</th><td>{</td></tr>
+<tr><th id="23">23</th><td><em>void</em> <dfn class="decl" id="_ZN4nest4utf810initializeEv" title='nest::utf8::initialize' data-ref="_ZN4nest4utf810initializeEv">initialize</dfn>();</td></tr>
+<tr><th id="24">24</th><td><em>void</em> <dfn class="decl" id="_ZN4nest4utf88finalizeEv" title='nest::utf8::finalize' data-ref="_ZN4nest4utf88finalizeEv">finalize</dfn>();</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td><span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="_ZN4nest4utf86strlenEPKcm" title='nest::utf8::strlen' data-ref="_ZN4nest4utf86strlenEPKcm">strlen</dfn>(<em>const</em> <em>char</em>* <dfn class="local col6 decl" id="3366s" title='s' data-type='const char *' data-ref="3366s">s</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col7 decl" id="3367size" title='size' data-type='size_t' data-ref="3367size">size</dfn> = (<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span>)(-<var>1</var>));</td></tr>
+<tr><th id="27">27</th><td><span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="_ZN4nest4utf87strsizeEPKc" title='nest::utf8::strsize' data-ref="_ZN4nest4utf87strsizeEPKc">strsize</dfn>(<em>const</em> <em>char</em>* <dfn class="local col8 decl" id="3368s" title='s' data-type='const char *' data-ref="3368s">s</dfn>);</td></tr>
+<tr><th id="28">28</th><td><em>int</em> <dfn class="decl" id="_ZN4nest4utf87charlenEc" title='nest::utf8::charlen' data-ref="_ZN4nest4utf87charlenEc">charlen</dfn>(<em>char</em> <dfn class="local col9 decl" id="3369s" title='s' data-type='char' data-ref="3369s">s</dfn>);</td></tr>
+<tr><th id="29">29</th><td><em>const</em> <em>char</em>* <dfn class="decl" id="_ZN4nest4utf84nextEPKc" title='nest::utf8::next' data-ref="_ZN4nest4utf84nextEPKc">next</dfn>(<em>const</em> <em>char</em>* <dfn class="local col0 decl" id="3370s" title='s' data-type='const char *' data-ref="3370s">s</dfn>);</td></tr>
+<tr><th id="30">30</th><td><em>const</em> <em>char</em>* <dfn class="decl" id="_ZN4nest4utf84prevEPKc" title='nest::utf8::prev' data-ref="_ZN4nest4utf84prevEPKc">prev</dfn>(<em>const</em> <em>char</em>* <dfn class="local col1 decl" id="3371s" title='s' data-type='const char *' data-ref="3371s">s</dfn>);</td></tr>
+<tr><th id="31">31</th><td><em>const</em> <em>char</em>* <dfn class="decl" id="_ZN4nest4utf86offsetEPKcm" title='nest::utf8::offset' data-ref="_ZN4nest4utf86offsetEPKcm">offset</dfn>(<em>const</em> <em>char</em>* <dfn class="local col2 decl" id="3372s" title='s' data-type='const char *' data-ref="3372s">s</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col3 decl" id="3373n" title='n' data-type='size_t' data-ref="3373n">n</dfn>);</td></tr>
+<tr><th id="32">32</th><td><em>bool</em> <dfn class="decl" id="_ZN4nest4utf83nthEPKcmPcPi" title='nest::utf8::nth' data-ref="_ZN4nest4utf83nthEPKcmPcPi">nth</dfn>(<em>const</em> <em>char</em>* <dfn class="local col4 decl" id="3374s" title='s' data-type='const char *' data-ref="3374s">s</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col5 decl" id="3375n" title='n' data-type='size_t' data-ref="3375n">n</dfn>, <em>char</em> <dfn class="local col6 decl" id="3376buffer" title='buffer' data-type='char *' data-ref="3376buffer">buffer</dfn>[<var>6</var>], <em>int</em>* <dfn class="local col7 decl" id="3377len" title='len' data-type='int *' data-ref="3377len">len</dfn> = <span class="macro" title="__null" data-ref="_M/NULL">NULL</span>);</td></tr>
+<tr><th id="33">33</th><td><em>const</em> <em>char</em>* <dfn class="decl" id="_ZN4nest4utf84findEPKcS2_" title='nest::utf8::find' data-ref="_ZN4nest4utf84findEPKcS2_">find</dfn>(<em>const</em> <em>char</em>* <dfn class="local col8 decl" id="3378s" title='s' data-type='const char *' data-ref="3378s">s</dfn>, <em>const</em> <em>char</em>* <dfn class="local col9 decl" id="3379substr" title='substr' data-type='const char *' data-ref="3379substr">substr</dfn>);</td></tr>
+<tr><th id="34">34</th><td><em>const</em> <em>char</em>* <dfn class="decl" id="_ZN4nest4utf86find_rEPKcS2_" title='nest::utf8::find_r' data-ref="_ZN4nest4utf86find_rEPKcS2_">find_r</dfn>(<em>const</em> <em>char</em>* <dfn class="local col0 decl" id="3380s" title='s' data-type='const char *' data-ref="3380s">s</dfn>, <em>const</em> <em>char</em>* <dfn class="local col1 decl" id="3381substr" title='substr' data-type='const char *' data-ref="3381substr">substr</dfn>);</td></tr>
+<tr><th id="35">35</th><td><span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="_ZN4nest4utf83p2iEPKcm" title='nest::utf8::p2i' data-ref="_ZN4nest4utf83p2iEPKcm">p2i</dfn>(<em>const</em> <em>char</em>* <dfn class="local col2 decl" id="3382s" title='s' data-type='const char *' data-ref="3382s">s</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col3 decl" id="3383pos" title='pos' data-type='size_t' data-ref="3383pos">pos</dfn>);</td></tr>
+<tr><th id="36">36</th><td><span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="_ZN4nest4utf83i2pEPKcm" title='nest::utf8::i2p' data-ref="_ZN4nest4utf83i2pEPKcm">i2p</dfn>(<em>const</em> <em>char</em>* <dfn class="local col4 decl" id="3384s" title='s' data-type='const char *' data-ref="3384s">s</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col5 decl" id="3385index" title='index' data-type='size_t' data-ref="3385index">index</dfn>);</td></tr>
+<tr><th id="37">37</th><td><span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="_ZN4nest4utf810euckr2utf8EPKcPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" title='nest::utf8::euckr2utf8' data-ref="_ZN4nest4utf810euckr2utf8EPKcPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE">euckr2utf8</dfn>(<em>const</em> <em>char</em>* <dfn class="local col6 decl" id="3386str" title='str' data-type='const char *' data-ref="3386str">str</dfn>, <span class="namespace">std::</span><a class="typedef" href="../../include/c++/7/bits/stringfwd.h.html#std::__cxx11::string" title='std::__cxx11::string' data-type='basic_string&lt;char&gt;' data-ref="std::__cxx11::string">string</a>* <dfn class="local col7 decl" id="3387utf8" title='utf8' data-type='std::string *' data-ref="3387utf8">utf8</dfn>);</td></tr>
+<tr><th id="38">38</th><td><span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="_ZN4nest4utf811console_lenEPKcm" title='nest::utf8::console_len' data-ref="_ZN4nest4utf811console_lenEPKcm">console_len</dfn>(<em>const</em> <em>char</em>* <dfn class="local col8 decl" id="3388str" title='str' data-type='const char *' data-ref="3388str">str</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col9 decl" id="3389bytes" title='bytes' data-type='size_t' data-ref="3389bytes">bytes</dfn> = <var>0</var>);</td></tr>
+<tr><th id="39">39</th><td><em>void</em> <dfn class="decl" id="_ZN4nest4utf85limitEPcmmPKc" title='nest::utf8::limit' data-ref="_ZN4nest4utf85limitEPcmmPKc">limit</dfn>(<em>char</em>* <dfn class="local col0 decl" id="3390buffer" title='buffer' data-type='char *' data-ref="3390buffer">buffer</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col1 decl" id="3391size" title='size' data-type='size_t' data-ref="3391size">size</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col2 decl" id="3392limitWidth" title='limitWidth' data-type='size_t' data-ref="3392limitWidth">limitWidth</dfn>, <em>const</em> <em>char</em>* <dfn class="local col3 decl" id="3393str" title='str' data-type='const char *' data-ref="3393str">str</dfn>);</td></tr>
+<tr><th id="40">40</th><td><em>const</em> <em>char</em>* <dfn class="decl" id="_ZN4nest4utf85limitEmPKc" title='nest::utf8::limit' data-ref="_ZN4nest4utf85limitEmPKc">limit</dfn>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col4 decl" id="3394limitWidth" title='limitWidth' data-type='size_t' data-ref="3394limitWidth">limitWidth</dfn>, <em>const</em> <em>char</em>* <dfn class="local col5 decl" id="3395str" title='str' data-type='const char *' data-ref="3395str">str</dfn>);</td></tr>
+<tr><th id="41">41</th><td><em>void</em> <dfn class="decl" id="_ZN4nest4utf813path_ellipsisEPcmmPKc" title='nest::utf8::path_ellipsis' data-ref="_ZN4nest4utf813path_ellipsisEPcmmPKc">path_ellipsis</dfn>(<em>char</em>* <dfn class="local col6 decl" id="3396buffer" title='buffer' data-type='char *' data-ref="3396buffer">buffer</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col7 decl" id="3397size" title='size' data-type='size_t' data-ref="3397size">size</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col8 decl" id="3398limitWidth" title='limitWidth' data-type='size_t' data-ref="3398limitWidth">limitWidth</dfn>, <em>const</em> <em>char</em>* <dfn class="local col9 decl" id="3399str" title='str' data-type='const char *' data-ref="3399str">str</dfn>);</td></tr>
+<tr><th id="42">42</th><td><em>const</em> <em>char</em>* <dfn class="decl" id="_ZN4nest4utf813path_ellipsisEmPKc" title='nest::utf8::path_ellipsis' data-ref="_ZN4nest4utf813path_ellipsisEmPKc">path_ellipsis</dfn>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col0 decl" id="3400limitWidth" title='limitWidth' data-type='size_t' data-ref="3400limitWidth">limitWidth</dfn>, <em>const</em> <em>char</em>* <dfn class="local col1 decl" id="3401str" title='str' data-type='const char *' data-ref="3401str">str</dfn>);</td></tr>
+<tr><th id="43">43</th><td>}</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><em>static</em> <em>char</em> <dfn class="decl def" id="nest::_nest_buffer_" title='nest::_nest_buffer_' data-ref="nest::_nest_buffer_">_nest_buffer_</dfn>[<var>10240</var>] = { <var>0</var>, };</td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td><u>#define <dfn class="macro" id="_M/PRINTF" data-ref="_M/PRINTF">PRINTF</dfn>(fmt, arg1, args, ...) \</u></td></tr>
+<tr><th id="48">48</th><td><u>    snprintf(_nest_buffer_, 1024, fmt, arg1); \</u></td></tr>
+<tr><th id="49">49</th><td><u>    printf(_nest_buffer_, args);</u></td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td><u>#define <dfn class="macro" id="_M/PRINTF2" data-ref="_M/PRINTF2">PRINTF2</dfn>(fmt, arg1, arg2, args, ...) \</u></td></tr>
+<tr><th id="52">52</th><td><u>    snprintf(_nest_buffer_, 1024, fmt, arg1, arg2); \</u></td></tr>
+<tr><th id="53">53</th><td><u>    printf(_nest_buffer_, args);</u></td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td><u>#define <dfn class="macro" id="_M/PRINTF3" data-ref="_M/PRINTF3">PRINTF3</dfn>(fmt, arg1, arg2, arg3, args, ...) \</u></td></tr>
+<tr><th id="56">56</th><td><u>    snprintf(_nest_buffer_, 1024, fmt, arg1, arg2, arg3); \</u></td></tr>
+<tr><th id="57">57</th><td><u>    printf(_nest_buffer_, args);</u></td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td><em>int</em> <dfn class="decl" id="_ZN4nest7mkdir_rEPKcj" title='nest::mkdir_r' data-ref="_ZN4nest7mkdir_rEPKcj">mkdir_r</dfn>(<em>const</em> <em>char</em>* <dfn class="local col2 decl" id="3402dir" title='dir' data-type='const char *' data-ref="3402dir">dir</dfn>, <a class="typedef" href="../../include/x86_64-linux-gnu/sys/types.h.html#mode_t" title='mode_t' data-type='__mode_t' data-ref="mode_t">mode_t</a> <dfn class="local col3 decl" id="3403mode" title='mode' data-type='mode_t' data-ref="3403mode">mode</dfn>);</td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td>}</td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td><u>#<span data-ppcond="12">endif</span> /* NEST_UTILS_H_ */</u></td></tr>
+<tr><th id="64">64</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../CommandLine.cpp.html'>codebrowser/CommandLine.cpp</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

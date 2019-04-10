@@ -1,0 +1,4 @@
+<def f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='65' ll='66' macro='1' type='const int [30]'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='134'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='134'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1107' u='r' c='compress_block'/>

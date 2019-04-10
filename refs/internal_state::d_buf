@@ -1,0 +1,14 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='238' type='ushf *'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='300' u='w' c='deflateInit2_'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='974' u='w' c='deflateCopy'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1563' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1600' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1682' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1709' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1728' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1785' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1793' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1827' macro='1' u='r'/>
+<offset>47104</offset>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1031' u='r' c='_tr_tally'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1088' u='r' c='compress_block'/>

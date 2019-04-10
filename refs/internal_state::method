@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='104' type='Byte'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='305' u='w' c='deflateInit2_'/>
+<offset>480</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='104'>/* STORED (for zip only) or DEFLATED */</doc>

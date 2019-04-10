@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/stream/InputStream.h' l='29' type='void nest::InputStream::Finalize()'/>
+<use f='codebrowser/nest/Workspace.cpp' l='116' u='c' c='_ZN4nest9Workspace5CloseEv'/>
+<def f='codebrowser/nest/stream/InputStream.cpp' l='24' ll='27' type='void nest::InputStream::Finalize()'/>
+<ovr f='codebrowser/nest/stream/InputStreamLinker.cpp' l='208' c='_ZN4nest17InputStreamLinker8FinalizeEv'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='220' u='c' c='_ZN4nest17InputStreamLinker8FinalizeEv'/>

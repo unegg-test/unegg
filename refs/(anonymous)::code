@@ -1,0 +1,14 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.h' l='55' type='UInt32'/>
+<offset>352</offset>
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='260' type='Int32 [6][258]'/>
+<offset>314048</offset>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='490' u='a' c='sendMTFValues'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='560' u='a' c='sendMTFValues'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='586' u='r' c='sendMTFValues'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='149' u='r' c='LzmaDec_DecodeReal'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='409' u='w' c='LzmaDec_DecodeReal'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='481' u='r' c='LzmaDec_TryDummy'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='666' u='w' c='LzmaDec_InitRc'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='736' u='r' c='LzmaDec_DecodeToDic'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='820' u='r' c='LzmaDec_DecodeToDic'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='822' u='r' c='LzmaDec_DecodeToDic'/>

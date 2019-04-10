@@ -1,0 +1,3 @@
+<def f='codebrowser/nest/format/egg/CommentField.h' l='36' ll='39' type='unsigned short nest::egg::CommentField::GetLocale()'/>
+<use f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='105' u='c' c='_ZN4nest3egg14ExtraFieldWrap9_As4BytesEjPb'/>
+<use f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='108' u='c' c='_ZN4nest3egg14ExtraFieldWrap9_As4BytesEjPb'/>

@@ -1,0 +1,4 @@
+<def f='codebrowser/nest/algorithm/crc32.hpp' l='55' ll='63' type='void nest::CRC32Update(unsigned int * pCrc32, const unsigned char * lpData, const unsigned int uSize)'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='578' u='c' c='_ZN4nest9ALZFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='621' u='c' c='_ZN4nest9EggFormat19ExtractSolidArchiveEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='819' u='c' c='_ZN4nest9EggFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>

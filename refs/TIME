@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/inflate.h' l='23' type='2'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/inflate.h' l='23'>/* i: waiting for modification time (gzip) */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='688' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='689' c='inflate'/>

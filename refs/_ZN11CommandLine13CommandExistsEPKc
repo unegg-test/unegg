@@ -1,0 +1,4 @@
+<dec f='codebrowser/CommandLine.h' l='25' type='bool CommandLine::CommandExists(const char * c)'/>
+<def f='codebrowser/CommandLine.cpp' l='41' ll='44' type='bool CommandLine::CommandExists(const char * c)'/>
+<use f='codebrowser/UnEgg.cpp' l='326' u='c' c='_Z18ProcessCommandlineR11CommandLine'/>
+<use f='codebrowser/UnEgg.cpp' l='367' u='c' c='main'/>

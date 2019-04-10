@@ -1,0 +1,25 @@
+<inh f='codebrowser/nest/encryption/Decoder.h' l='16' c='nest::Decoder'/>
+<def f='codebrowser/nest/encryption/ZipDecoder.h' l='17' ll='37'/>
+<size>32</size>
+<doc f='codebrowser/nest/encryption/ZipDecoder.h' l='16'>// Do not support multibyte string</doc>
+<fun r='_ZN4nest10ZipDecoderC1Ev'/>
+<fun r='_ZN4nest10ZipDecoderD1Ev'/>
+<fun r='_ZN4nest10ZipDecoder12OnPreprocessEPKcPKv'/>
+<fun r='_ZN4nest10ZipDecoder9OnDecryptEPvm'/>
+<fun r='_ZN4nest10ZipDecoder13OnPostprocessEPKv'/>
+<fun r='_ZN4nest10ZipDecoder8OnVerifyEPKv'/>
+<fun r='_ZN4nest10ZipDecoder8InitKeysEPKc'/>
+<fun r='_ZN4nest10ZipDecoder10UpdateKeysEj'/>
+<fun r='_ZN4nest10ZipDecoder11DecryptByteEv'/>
+<mbr r='nest::ZipDecoder::crc_' o='64' t='unsigned int'/>
+<mbr r='nest::ZipDecoder::keys_' o='96' t='unsigned int [3]'/>
+<mbr r='nest::ZipDecoder::verifyData_' o='192' t='unsigned char'/>
+<fun r='_ZN4nest10ZipDecoderC1Ev'/>
+<fun r='_ZN4nest10ZipDecoderD1Ev'/>
+<fun r='_ZN4nest10ZipDecoder11DecryptByteEv'/>
+<fun r='_ZN4nest10ZipDecoder8InitKeysEPKc'/>
+<fun r='_ZN4nest10ZipDecoder10UpdateKeysEj'/>
+<fun r='_ZN4nest10ZipDecoder12OnPreprocessEPKcPKv'/>
+<fun r='_ZN4nest10ZipDecoder9OnDecryptEPvm'/>
+<fun r='_ZN4nest10ZipDecoder13OnPostprocessEPKv'/>
+<fun r='_ZN4nest10ZipDecoder8OnVerifyEPKv'/>

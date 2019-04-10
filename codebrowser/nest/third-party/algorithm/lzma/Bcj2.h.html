@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Bcj2.h source code [codebrowser/nest/third-party/algorithm/lzma/Bcj2.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/third-party/algorithm/lzma/Bcj2.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>nest</a>/<a href='../..'>third-party</a>/<a href='..'>algorithm</a>/<a href='./'>lzma</a>/<a href='Bcj2.h.html'>Bcj2.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* Bcj2.h -- Converter for x86 code (BCJ2)</i></td></tr>
+<tr><th id="2">2</th><td><i> 2009-02-07 : Igor Pavlov : Public domain */</i></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#<span data-ppcond="4">ifndef</span> <span class="macro" data-ref="_M/__BCJ2_H">__BCJ2_H</span></u></td></tr>
+<tr><th id="5">5</th><td><u>#define <dfn class="macro" id="_M/__BCJ2_H" data-ref="_M/__BCJ2_H">__BCJ2_H</dfn></u></td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><u>#include <a href="Types.h.html">"Types.h"</a></u></td></tr>
+<tr><th id="8">8</th><td></td></tr>
+<tr><th id="9">9</th><td><u>#<span data-ppcond="9">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="10">10</th><td><b>extern</b> <q>"C"</q></td></tr>
+<tr><th id="11">11</th><td>{</td></tr>
+<tr><th id="12">12</th><td><u>#<span data-ppcond="9">endif</span></u></td></tr>
+<tr><th id="13">13</th><td></td></tr>
+<tr><th id="14">14</th><td><i>/*</i></td></tr>
+<tr><th id="15">15</th><td><i> Conditions:</i></td></tr>
+<tr><th id="16">16</th><td><i> outSize &lt;= FullOutputSize,</i></td></tr>
+<tr><th id="17">17</th><td><i> where FullOutputSize is full size of output stream of x86_2 filter.</i></td></tr>
+<tr><th id="18">18</th><td><i></i></td></tr>
+<tr><th id="19">19</th><td><i> If buf0 overlaps outBuf, there are two required conditions:</i></td></tr>
+<tr><th id="20">20</th><td><i> 1) (buf0 &gt;= outBuf)</i></td></tr>
+<tr><th id="21">21</th><td><i> 2) (buf0 + size0 &gt;= outBuf + FullOutputSize).</i></td></tr>
+<tr><th id="22">22</th><td><i></i></td></tr>
+<tr><th id="23">23</th><td><i> Returns:</i></td></tr>
+<tr><th id="24">24</th><td><i> SZ_OK</i></td></tr>
+<tr><th id="25">25</th><td><i> SZ_ERROR_DATA - Data error</i></td></tr>
+<tr><th id="26">26</th><td><i> */</i></td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><em>int</em> <a class="decl" href="Bcj2.c.html#Bcj2_Decode" title='Bcj2_Decode' data-ref="Bcj2_Decode" id="Bcj2_Decode">Bcj2_Decode</a>(<em>const</em> <a class="typedef" href="Types.h.html#Byte" title='Byte' data-type='unsigned char' data-ref="Byte">Byte</a> *<dfn class="local col1 decl" id="1buf0" title='buf0' data-type='const Byte *' data-ref="1buf0">buf0</dfn>, <a class="typedef" href="Types.h.html#SizeT" title='SizeT' data-type='size_t' data-ref="SizeT">SizeT</a> <dfn class="local col2 decl" id="2size0" title='size0' data-type='SizeT' data-ref="2size0">size0</dfn>, <em>const</em> <a class="typedef" href="Types.h.html#Byte" title='Byte' data-type='unsigned char' data-ref="Byte">Byte</a> *<dfn class="local col3 decl" id="3buf1" title='buf1' data-type='const Byte *' data-ref="3buf1">buf1</dfn>, <a class="typedef" href="Types.h.html#SizeT" title='SizeT' data-type='size_t' data-ref="SizeT">SizeT</a> <dfn class="local col4 decl" id="4size1" title='size1' data-type='SizeT' data-ref="4size1">size1</dfn>, <em>const</em> <a class="typedef" href="Types.h.html#Byte" title='Byte' data-type='unsigned char' data-ref="Byte">Byte</a> *<dfn class="local col5 decl" id="5buf2" title='buf2' data-type='const Byte *' data-ref="5buf2">buf2</dfn>, <a class="typedef" href="Types.h.html#SizeT" title='SizeT' data-type='size_t' data-ref="SizeT">SizeT</a> <dfn class="local col6 decl" id="6size2" title='size2' data-type='SizeT' data-ref="6size2">size2</dfn>, <em>const</em> <a class="typedef" href="Types.h.html#Byte" title='Byte' data-type='unsigned char' data-ref="Byte">Byte</a> *<dfn class="local col7 decl" id="7buf3" title='buf3' data-type='const Byte *' data-ref="7buf3">buf3</dfn>, <a class="typedef" href="Types.h.html#SizeT" title='SizeT' data-type='size_t' data-ref="SizeT">SizeT</a> <dfn class="local col8 decl" id="8size3" title='size3' data-type='SizeT' data-ref="8size3">size3</dfn>,</td></tr>
+<tr><th id="29">29</th><td>    <a class="typedef" href="Types.h.html#Byte" title='Byte' data-type='unsigned char' data-ref="Byte">Byte</a> *<dfn class="local col9 decl" id="9outBuf" title='outBuf' data-type='Byte *' data-ref="9outBuf">outBuf</dfn>, <a class="typedef" href="Types.h.html#SizeT" title='SizeT' data-type='size_t' data-ref="SizeT">SizeT</a> <dfn class="local col0 decl" id="10outSize" title='outSize' data-type='SizeT' data-ref="10outSize">outSize</dfn>);</td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><u>#<span data-ppcond="31">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="32">32</th><td>}</td></tr>
+<tr><th id="33">33</th><td><u>#<span data-ppcond="31">endif</span></u></td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><u>#<span data-ppcond="4">endif</span></u></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='Bcj2.c.html'>codebrowser/nest/third-party/algorithm/lzma/Bcj2.c</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

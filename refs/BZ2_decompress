@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='488' type='Int32 BZ2_decompress(DState * )'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='842' u='c' c='BZ2_bzDecompress'/>
+<def f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='106' ll='641' type='Int32 BZ2_decompress(DState * s)'/>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='105'>/*---------------------------------------------------*/</doc>

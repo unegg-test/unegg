@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='124' type='const intf *'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='501' u='r' c='gen_bitlen'/>
+<offset>64</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='124'>/* extra bits for each code or NULL */</doc>

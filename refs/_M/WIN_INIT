@@ -1,0 +1,8 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='288'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1413' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1414' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1418' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1423' u='c'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='284'>/* In order to simplify the code, particularly on 16 bit machines, match
+ * distances are limited to MAX_DIST instead of WSIZE.
+ */</doc>

@@ -1,0 +1,10 @@
+<def f='codebrowser/nest/nest.h' l='105' macro='1' type='unsigned int'/>
+<use f='codebrowser/nest/nest.h' l='53' u='r'/>
+<use f='codebrowser/nest/nest.h' l='53' u='r'/>
+<use f='codebrowser/nest/nest.h' l='53' u='r'/>
+<use f='codebrowser/nest/nest.h' l='53' u='r'/>
+<use f='codebrowser/nest/nest.h' l='53' u='r'/>
+<use f='codebrowser/EventHandler.cpp' l='116' u='r' c='_ZN12EventHandler11OnFileStartEm'/>
+<use f='codebrowser/UnEgg.cpp' l='171' u='r' c='_Z18PrintListOfArchivePKc'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='760' u='r' c='_ZN4nest9ALZFormat12_AsChildInfoEjmPb'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='1090' u='r' c='_ZN4nest9EggFormat12_AsChildInfoEjmPb'/>

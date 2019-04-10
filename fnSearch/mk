@@ -1,0 +1,4 @@
+mknod|mknod
+mknodat|mknodat
+_ZN4nest6mkdir_EPKcj|nest::mkdir_
+_ZN4nest7mkdir_rEPKcj|nest::mkdir_r

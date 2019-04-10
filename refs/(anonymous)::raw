@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='101' type='long'/>
+<offset>576</offset>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='308' u='r' c='gzseek64'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='214' u='w' c='gz_head'/>

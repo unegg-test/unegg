@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/algorithm/azo/Common/ProbCount.h' l='14' type='uint32_t'/>
+<use f='codebrowser/nest/algorithm/azo/Common/ProbCount.cpp' l='13' u='w' c='_ZN3AZO9ProbCountC1Ei'/>
+<use f='codebrowser/nest/algorithm/azo/Common/ProbCount.cpp' l='23' u='w' c='_ZN3AZO9ProbCount9IncreProbERKT_i'/>

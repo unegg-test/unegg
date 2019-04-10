@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/algorithm/azo/Base/MainCodeB.h' l='13' type='const u_int'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/MainCodeD.cpp' l='67' u='r' c='_ZN3AZO7Decoder8MainCode4CodeERPKhRjRPhS5_'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/MainCodeD.cpp' l='77' u='r' c='_ZN3AZO7Decoder8MainCode4CodeERPKhRjRPhS5_'/>

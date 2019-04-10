@@ -1,0 +1,3 @@
+<dec f='codebrowser/EventHandler.h' l='52' type='int EventHandler::OnQueryOutputStream(size_t index, nest::OutputStream ** stream, const char * virtualName)'/>
+<inh f='codebrowser/nest/Events.h' l='39' c='_ZN4nest6Events19OnQueryOutputStreamEmPPNS_12OutputStreamEPKc'/>
+<def f='codebrowser/EventHandler.cpp' l='231' ll='292' type='int EventHandler::OnQueryOutputStream(size_t index, nest::OutputStream ** stream, const char * virtualName)'/>

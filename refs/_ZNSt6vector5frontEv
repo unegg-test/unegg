@@ -1,0 +1,5 @@
+<def f='include/c++/7/bits/stl_vector.h' l='872' ll='877' type='reference std::vector::front()'/>
+<doc f='include/c++/7/bits/stl_vector.h' l='868'>/**
+       *  Returns a read/write reference to the data at the first
+       *  element of the %vector.
+       */</doc>

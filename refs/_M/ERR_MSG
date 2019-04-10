@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zutil.h' l='46'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/zutil.h' l='44'>/* (size given to avoid silly warnings with Visual C++) */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='296' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/zutil.c' l='136' u='c'/>

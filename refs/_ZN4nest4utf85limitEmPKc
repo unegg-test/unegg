@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/Utils.h' l='40' type='const char * nest::utf8::limit(size_t limitWidth, const char * str)'/>
+<def f='codebrowser/nest/Utils.cpp' l='298' ll='303' type='const char * nest::utf8::limit(size_t limitWidth, const char * str)'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='434' type='Int32 *'/>
+<offset>513024</offset>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='163' u='w' c='BZ2_decompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='190' u='r' c='BZ2_decompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='637' u='w' c='BZ2_decompress'/>

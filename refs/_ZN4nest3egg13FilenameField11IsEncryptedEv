@@ -1,0 +1,2 @@
+<def f='codebrowser/nest/format/egg/FilenameField.h' l='25' ll='28' type='bool nest::egg::FilenameField::IsEncrypted()'/>
+<use f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='126' u='c' c='_ZN4nest3egg14ExtraFieldWrap9_As4BytesEjPb'/>

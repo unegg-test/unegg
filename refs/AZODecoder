@@ -1,0 +1,7 @@
+<def f='codebrowser/nest/algorithm/azo/AZOWrapper.h' l='17' ll='57'/>
+<size>8</size>
+<fun r='_ZN10AZODecoderC1Ev'/>
+<fun r='_ZN10AZODecoderD1Ev'/>
+<fun r='_ZN10AZODecoder10DecompressERPKcRjRPcS3_'/>
+<fun r='_ZN10AZODecoder10DecompressER10AZO_Stream'/>
+<mbr r='AZODecoder::handle_' o='0' t='AZO_HDECOMPRESS'/>

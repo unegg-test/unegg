@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.h' l='36' type='UInt32 LzmaEncProps_GetDictSize(const CLzmaEncProps * props2)'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='86' ll='91' type='UInt32 LzmaEncProps_GetDictSize(const CLzmaEncProps * props2)'/>

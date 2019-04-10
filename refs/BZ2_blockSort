@@ -1,0 +1,16 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='273' type='void BZ2_blockSort(EState * )'/>
+<def f='codebrowser/nest/third-party/algorithm/bzip2/blocksort.c' l='1031' ll='1089' type='void BZ2_blockSort(EState * s)'/>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/blocksort.c' l='1019'>/* Pre:
+      nblock &gt; 0
+      arr2 exists for [0 .. nblock-1 +N_OVERSHOOT]
+      ((UChar*)arr2)  [0 .. nblock-1] holds block
+      arr1 exists for [0 .. nblock-1]
+
+   Post:
+      ((UChar*)arr2) [0 .. nblock-1] holds block
+      All other areas of block destroyed
+      ftab [ 0 .. 65536 ] destroyed
+      arr1 [0 .. nblock-1] holds sorted order
+*/</doc>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='270'>/*-- externs for compression. --*/</doc>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='616' u='c' c='BZ2_compressBlock'/>

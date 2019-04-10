@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.h' l='24' type='BOOL AZO::Decoder::EntropyCode::Code(u_int cumCount, u_int totalBit)'/>
+<def f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='76' ll='100' type='BOOL AZO::Decoder::EntropyCode::Code(u_int cumCount, u_int totalBit)'/>

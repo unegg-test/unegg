@@ -1,0 +1,8 @@
+<def f='codebrowser/nest/algorithm/azo/Decoder/MatchCodeD.h' l='11' ll='24'/>
+<size>75328</size>
+<fun r='_ZN3AZO7Decoder9MatchCodeC1EPKhj'/>
+<fun r='_ZN3AZO7Decoder9MatchCode4CodeERNS0_11EntropyCodeEjRjS4_'/>
+<mbr r='AZO::Decoder::MatchCode::dictTable_' o='0' t='AZO::Decoder::DictionaryTable'/>
+<mbr r='AZO::Decoder::MatchCode::distProb_' o='28992' t='AZO::Decoder::DistanceCode'/>
+<mbr r='AZO::Decoder::MatchCode::lenProb_' o='41440' t='AZO::Decoder::LengthCode'/>
+<fun r='_ZN3AZO7Decoder9MatchCode4CodeERNS0_11EntropyCodeEjRjS4_'/>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>7zCrc.h source code [codebrowser/nest/third-party/algorithm/lzma/7zCrc.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/third-party/algorithm/lzma/7zCrc.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>nest</a>/<a href='../..'>third-party</a>/<a href='..'>algorithm</a>/<a href='./'>lzma</a>/<a href='7zCrc.h.html'>7zCrc.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* 7zCrc.h -- CRC32 calculation</i></td></tr>
+<tr><th id="2">2</th><td><i> 2009-11-21 : Igor Pavlov : Public domain */</i></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#<span data-ppcond="4">ifndef</span> <span class="macro" data-ref="_M/__7Z_CRC_H">__7Z_CRC_H</span></u></td></tr>
+<tr><th id="5">5</th><td><u>#define <dfn class="macro" id="_M/__7Z_CRC_H" data-ref="_M/__7Z_CRC_H">__7Z_CRC_H</dfn></u></td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><u>#include <a href="Types.h.html">"Types.h"</a></u></td></tr>
+<tr><th id="8">8</th><td></td></tr>
+<tr><th id="9">9</th><td><a class="macro" href="Types.h.html#18" title="" data-ref="_M/EXTERN_C_BEGIN">EXTERN_C_BEGIN</a></td></tr>
+<tr><th id="10">10</th><td></td></tr>
+<tr><th id="11">11</th><td><b>extern</b> <a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> <dfn class="decl" id="g_CrcTable" title='g_CrcTable' data-ref="g_CrcTable">g_CrcTable</dfn>[];</td></tr>
+<tr><th id="12">12</th><td></td></tr>
+<tr><th id="13">13</th><td><i>/* Call CrcGenerateTable one time before other CRC functions */</i></td></tr>
+<tr><th id="14">14</th><td><em>void</em> <a class="macro" href="Types.h.html#121" title="" data-ref="_M/MY_FAST_CALL">MY_FAST_CALL</a> <a class="decl" href="7zCrc.c.html#CrcGenerateTable" title='CrcGenerateTable' data-ref="CrcGenerateTable" id="CrcGenerateTable">CrcGenerateTable</a>(<em>void</em>);</td></tr>
+<tr><th id="15">15</th><td></td></tr>
+<tr><th id="16">16</th><td><u>#define <dfn class="macro" id="_M/CRC_INIT_VAL" data-ref="_M/CRC_INIT_VAL">CRC_INIT_VAL</dfn> 0xFFFFFFFF</u></td></tr>
+<tr><th id="17">17</th><td><u>#define <dfn class="macro" id="_M/CRC_GET_DIGEST" data-ref="_M/CRC_GET_DIGEST">CRC_GET_DIGEST</dfn>(crc) ((crc) ^ CRC_INIT_VAL)</u></td></tr>
+<tr><th id="18">18</th><td><u>#define <dfn class="macro" id="_M/CRC_UPDATE_BYTE" data-ref="_M/CRC_UPDATE_BYTE">CRC_UPDATE_BYTE</dfn>(crc, b) (g_CrcTable[((crc) ^ (b)) &amp; 0xFF] ^ ((crc) &gt;&gt; 8))</u></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> <a class="macro" href="Types.h.html#121" title="" data-ref="_M/MY_FAST_CALL">MY_FAST_CALL</a> <a class="decl" href="7zCrc.c.html#CrcUpdate" title='CrcUpdate' data-ref="CrcUpdate" id="CrcUpdate">CrcUpdate</a>(<a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> <dfn class="local col1 decl" id="1crc" title='crc' data-type='UInt32' data-ref="1crc">crc</dfn>, <em>const</em> <em>void</em> *<dfn class="local col2 decl" id="2data" title='data' data-type='const void *' data-ref="2data">data</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col3 decl" id="3size" title='size' data-type='size_t' data-ref="3size">size</dfn>);</td></tr>
+<tr><th id="21">21</th><td><a class="typedef" href="Types.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> <a class="macro" href="Types.h.html#121" title="" data-ref="_M/MY_FAST_CALL">MY_FAST_CALL</a> <a class="decl" href="7zCrc.c.html#CrcCalc" title='CrcCalc' data-ref="CrcCalc" id="CrcCalc">CrcCalc</a>(<em>const</em> <em>void</em> *<dfn class="local col4 decl" id="4data" title='data' data-type='const void *' data-ref="4data">data</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col5 decl" id="5size" title='size' data-type='size_t' data-ref="5size">size</dfn>);</td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><a class="macro" href="Types.h.html#19" title="" data-ref="_M/EXTERN_C_END">EXTERN_C_END</a></td></tr>
+<tr><th id="24">24</th><td><u>#<span data-ppcond="4">endif</span></u></td></tr>
+<tr><th id="25">25</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='7zCrc.c.html'>codebrowser/nest/third-party/algorithm/lzma/7zCrc.c</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,11 @@
+<def f='codebrowser/nest/stream/InputStreamRewinder.h' l='22' ll='70'/>
+<size>40</size>
+<fun r='_ZN4nest19InputStreamRewinderC1ERNS_11InputStreamE'/>
+<fun r='_ZN4nest19InputStreamRewinderC1EPNS_11InputStreamE'/>
+<fun r='_ZN4nest19InputStreamRewinderD1Ev'/>
+<fun r='_ZN4nest19InputStreamRewinder4PushEv'/>
+<fun r='_ZN4nest19InputStreamRewinder3PopEv'/>
+<fun r='_ZN4nest19InputStreamRewinder5ClearEv'/>
+<fun r='_ZN4nest19InputStreamRewinder7IsEmptyEv'/>
+<mbr r='nest::InputStreamRewinder::stack_' o='64' t='std::vector&lt;uint64&gt;'/>
+<mbr r='nest::InputStreamRewinder::stream_' o='256' t='nest::InputStream *'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/Workspace.h' l='56' type='void nest::Workspace::Finalize(int res)'/>
+<inh f='codebrowser/nest/Events.h' l='29' c='_ZN4nest6Events8FinalizeEi'/>
+<def f='codebrowser/nest/Workspace.cpp' l='185' ll='191' type='void nest::Workspace::Finalize(int res)'/>
+<use f='codebrowser/nest/Workspace.cpp' l='226' u='c' c='_ZN4nest9Workspace12OnWorkFinishEii'/>

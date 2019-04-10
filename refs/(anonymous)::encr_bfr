@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/encryption/aes/fileenc.h' l='86' type='unsigned char [16]'/>
+<offset>128</offset>
+<doc f='codebrowser/nest/third-party/encryption/aes/fileenc.h' l='86'>/* encrypt buffer         */</doc>
+<use f='codebrowser/nest/third-party/encryption/aes/fileenc.c' l='63' u='r' c='encr_data'/>
+<use f='codebrowser/nest/third-party/encryption/aes/fileenc.c' l='67' u='r' c='encr_data'/>

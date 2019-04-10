@@ -1,0 +1,8 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='188' type='int'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='443' u='w' c='deflateParams'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='464' u='w' c='deflateTune'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1033' u='w' c='lm_init'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1072' u='r' c='longest_match'/>
+<offset>1536</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='186'>/* Use a faster search when the previous match is longer than this */</doc>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='188'>/* Stop searching when current match exceeds this */</doc>

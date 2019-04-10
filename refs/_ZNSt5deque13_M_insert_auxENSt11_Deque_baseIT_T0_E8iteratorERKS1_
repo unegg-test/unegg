@@ -1,0 +1,2 @@
+<dec f='include/c++/7/bits/stl_deque.h' l='2036' type='iterator std::deque::_M_insert_aux(iterator __pos, const value_type &amp; __x)'/>
+<def f='include/c++/7/bits/deque.tcc' l='627' ll='667' type='typename deque&lt;_Tp, _Alloc&gt;::iterator std::deque::_M_insert_aux(iterator __pos, const value_type &amp; __x)'/>

@@ -1,0 +1,14 @@
+<inh f='codebrowser/nest/format/Header.h' l='27' c='nest::Header'/>
+<def f='codebrowser/nest/format/egg/Global.h' l='22' ll='51'/>
+<size>24</size>
+<fun r='_ZN4nest3egg6GlobalC1Ev'/>
+<fun r='_ZN4nest3egg6GlobalD1Ev'/>
+<fun r='_ZN4nest3egg6Global10GetVersionEv'/>
+<fun r='_ZN4nest3egg6Global5GetIDEv'/>
+<fun r='_ZN4nest3egg6Global11GetReservedEv'/>
+<fun r='_ZN4nest3egg6Global9OnCleanUpEv'/>
+<fun r='_ZN4nest3egg6Global6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<fun r='_ZN4nest3egg6Global9_As4BytesEjPb'/>
+<mbr r='nest::egg::Global::version_' o='80' t='unsigned short'/>
+<mbr r='nest::egg::Global::id_' o='96' t='unsigned int'/>
+<mbr r='nest::egg::Global::reserved_' o='128' t='unsigned int'/>

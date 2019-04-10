@@ -1,0 +1,6 @@
+<def f='codebrowser/nest/algorithm/azo/Decoder/SymbolCodeD.h' l='11' ll='21'/>
+<fun r='_ZN3AZO7Decoder10SymbolCodeC1Ev'/>
+<fun r='_ZN3AZO7Decoder10SymbolCode4CodeERNS0_11EntropyCodeE'/>
+<mbr r='AZO::Decoder::SymbolCode::history_' t='HistoryList&lt;T, HISTORY_N&gt;'/>
+<mbr r='AZO::Decoder::SymbolCode::prob_' t='EntropyBitProb&lt;N&gt;'/>
+<fun r='_ZN3AZO7Decoder10SymbolCode4CodeERNS0_11EntropyCodeE'/>

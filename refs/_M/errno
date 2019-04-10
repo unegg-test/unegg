@@ -1,0 +1,9 @@
+<dec f='include/x86_64-linux-gnu/bits/errno.h' l='54'/>
+<use f='include/errno.h' l='45' u='a'/>
+<use f='codebrowser/nest/Utils.cpp' l='459' u='c'/>
+<use f='codebrowser/nest/Utils.cpp' l='469' u='c'/>
+<doc f='include/x86_64-linux-gnu/bits/errno.h' l='53'>/* When using threads, errno is a per-thread value.  */</doc>
+<use f='codebrowser/nest/stream/FileOutputStream.cpp' l='100' u='c'/>
+<use f='codebrowser/nest/stream/FileOutputStream.cpp' l='101' u='c'/>
+<use f='codebrowser/nest/stream/FileOutputStream.cpp' l='109' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='53' u='c'/>

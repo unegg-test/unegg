@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.h' l='70'/>
+<use f='codebrowser/nest/algorithm/LZMACoder.cpp' l='48' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='966' u='c'/>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>BufferMan.h source code [codebrowser/nest/algorithm/azo/Common/BufferMan.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="AZO::BufferMan "/>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/algorithm/azo/Common/BufferMan.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>nest</a>/<a href='../..'>algorithm</a>/<a href='..'>azo</a>/<a href='./'>Common</a>/<a href='BufferMan.h.html'>BufferMan.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/AZO_BUFFERMAN_H">AZO_BUFFERMAN_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/AZO_BUFFERMAN_H" data-ref="_M/AZO_BUFFERMAN_H">AZO_BUFFERMAN_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="AZOPrivate.h.html">"../Common/AZOPrivate.h"</a></u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><b>namespace</b> <span class="namespace">AZO</span> {</td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td><b>class</b> <dfn class="type def" id="AZO::BufferMan" title='AZO::BufferMan' data-ref="AZO::BufferMan">BufferMan</dfn></td></tr>
+<tr><th id="9">9</th><td>{</td></tr>
+<tr><th id="10">10</th><td><b>public</b>:</td></tr>
+<tr><th id="11">11</th><td>    <a class="decl" href="BufferMan.cpp.html#_ZN3AZO9BufferManC1Ev" title='AZO::BufferMan::BufferMan' data-ref="_ZN3AZO9BufferManC1Ev" id="_ZN3AZO9BufferManC1Ev">BufferMan</a>();</td></tr>
+<tr><th id="12">12</th><td>    <a class="decl" href="BufferMan.cpp.html#_ZN3AZO9BufferManD1Ev" title='AZO::BufferMan::~BufferMan' data-ref="_ZN3AZO9BufferManD1Ev" id="_ZN3AZO9BufferManD1Ev">~BufferMan</a>();</td></tr>
+<tr><th id="13">13</th><td></td></tr>
+<tr><th id="14">14</th><td>    <em>bool</em> <a class="decl" href="BufferMan.cpp.html#_ZN3AZO9BufferMan8CapacityEj" title='AZO::BufferMan::Capacity' data-ref="_ZN3AZO9BufferMan8CapacityEj" id="_ZN3AZO9BufferMan8CapacityEj">Capacity</a>(<a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <dfn class="local col1 decl" id="1size" title='size' data-type='u_int' data-ref="1size">size</dfn>);</td></tr>
+<tr><th id="15">15</th><td>    <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <a class="decl" href="BufferMan.cpp.html#_ZN3AZO9BufferMan3AddEPKhj" title='AZO::BufferMan::Add' data-ref="_ZN3AZO9BufferMan3AddEPKhj" id="_ZN3AZO9BufferMan3AddEPKhj">Add</a>(<em>const</em> <a class="typedef" href="AZOType.h.html#AZO::byte" title='AZO::byte' data-type='uint8_t' data-ref="AZO::byte">byte</a>* <dfn class="local col2 decl" id="2buf" title='buf' data-type='const byte *' data-ref="2buf">buf</dfn>, <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <dfn class="local col3 decl" id="3size" title='size' data-type='u_int' data-ref="3size">size</dfn>);</td></tr>
+<tr><th id="16">16</th><td>    <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <a class="decl" href="BufferMan.cpp.html#_ZN3AZO9BufferMan3GetEPhj" title='AZO::BufferMan::Get' data-ref="_ZN3AZO9BufferMan3GetEPhj" id="_ZN3AZO9BufferMan3GetEPhj">Get</a>(<a class="typedef" href="AZOType.h.html#AZO::byte" title='AZO::byte' data-type='uint8_t' data-ref="AZO::byte">byte</a>* <dfn class="local col4 decl" id="4buf" title='buf' data-type='byte *' data-ref="4buf">buf</dfn>, <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <dfn class="local col5 decl" id="5size" title='size' data-type='u_int' data-ref="5size">size</dfn>);</td></tr>
+<tr><th id="17">17</th><td>    <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <a class="decl" href="BufferMan.cpp.html#_ZN3AZO9BufferMan5AheadEj" title='AZO::BufferMan::Ahead' data-ref="_ZN3AZO9BufferMan5AheadEj" id="_ZN3AZO9BufferMan5AheadEj">Ahead</a>(<a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <dfn class="local col6 decl" id="6size" title='size' data-type='u_int' data-ref="6size">size</dfn>);</td></tr>
+<tr><th id="18">18</th><td>    <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <a class="decl" href="BufferMan.cpp.html#_ZN3AZO9BufferMan6RemoveEj" title='AZO::BufferMan::Remove' data-ref="_ZN3AZO9BufferMan6RemoveEj" id="_ZN3AZO9BufferMan6RemoveEj">Remove</a>(<a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <dfn class="local col7 decl" id="7size" title='size' data-type='u_int' data-ref="7size">size</dfn>);</td></tr>
+<tr><th id="19">19</th><td>    <em>void</em> <dfn class="decl def" id="_ZN3AZO9BufferMan5ClearEv" title='AZO::BufferMan::Clear' data-ref="_ZN3AZO9BufferMan5ClearEv">Clear</dfn>() { <a class="member" href="BufferMan.cpp.html#_ZN3AZO9BufferMan6RemoveEj" title='AZO::BufferMan::Remove' data-ref="_ZN3AZO9BufferMan6RemoveEj">Remove</a>(<a class="member" href="#AZO::BufferMan::size_" title='AZO::BufferMan::size_' data-ref="AZO::BufferMan::size_">size_</a>); }</td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td>    <a class="typedef" href="AZOType.h.html#AZO::byte" title='AZO::byte' data-type='uint8_t' data-ref="AZO::byte">byte</a>* <a class="decl" href="BufferMan.cpp.html#_ZN3AZO9BufferMan9GetBufPtrEv" title='AZO::BufferMan::GetBufPtr' data-ref="_ZN3AZO9BufferMan9GetBufPtrEv" id="_ZN3AZO9BufferMan9GetBufPtrEv">GetBufPtr</a>();</td></tr>
+<tr><th id="22">22</th><td>    <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <dfn class="decl def" id="_ZN3AZO9BufferMan7GetSizeEv" title='AZO::BufferMan::GetSize' data-ref="_ZN3AZO9BufferMan7GetSizeEv">GetSize</dfn>()      { <b>return</b> <a class="member" href="#AZO::BufferMan::size_" title='AZO::BufferMan::size_' data-ref="AZO::BufferMan::size_">size_</a>; }</td></tr>
+<tr><th id="23">23</th><td>    <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <dfn class="decl def" id="_ZN3AZO9BufferMan10GetUseSizeEv" title='AZO::BufferMan::GetUseSize' data-ref="_ZN3AZO9BufferMan10GetUseSizeEv">GetUseSize</dfn>() { <b>return</b> <a class="member" href="#AZO::BufferMan::wrPtr_" title='AZO::BufferMan::wrPtr_' data-ref="AZO::BufferMan::wrPtr_">wrPtr_</a>-<a class="member" href="#AZO::BufferMan::rdPtr_" title='AZO::BufferMan::rdPtr_' data-ref="AZO::BufferMan::rdPtr_">rdPtr_</a>; }</td></tr>
+<tr><th id="24">24</th><td>    <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <dfn class="decl def" id="_ZN3AZO9BufferMan13GetRemainSizeEv" title='AZO::BufferMan::GetRemainSize' data-ref="_ZN3AZO9BufferMan13GetRemainSizeEv">GetRemainSize</dfn>() { <b>return</b> <a class="member" href="#AZO::BufferMan::size_" title='AZO::BufferMan::size_' data-ref="AZO::BufferMan::size_">size_</a> - <a class="member" href="#_ZN3AZO9BufferMan10GetUseSizeEv" title='AZO::BufferMan::GetUseSize' data-ref="_ZN3AZO9BufferMan10GetUseSizeEv">GetUseSize</a>(); }</td></tr>
+<tr><th id="25">25</th><td>  </td></tr>
+<tr><th id="26">26</th><td><b>private</b>:</td></tr>
+<tr><th id="27">27</th><td>    <a class="typedef" href="AZOType.h.html#AZO::byte" title='AZO::byte' data-type='uint8_t' data-ref="AZO::byte">byte</a>*       <dfn class="decl" id="AZO::BufferMan::buf_" title='AZO::BufferMan::buf_' data-ref="AZO::BufferMan::buf_">buf_</dfn>;</td></tr>
+<tr><th id="28">28</th><td>    <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a>       <dfn class="decl" id="AZO::BufferMan::rdPtr_" title='AZO::BufferMan::rdPtr_' data-ref="AZO::BufferMan::rdPtr_">rdPtr_</dfn>;</td></tr>
+<tr><th id="29">29</th><td>    <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a>       <dfn class="decl" id="AZO::BufferMan::wrPtr_" title='AZO::BufferMan::wrPtr_' data-ref="AZO::BufferMan::wrPtr_">wrPtr_</dfn>;</td></tr>
+<tr><th id="30">30</th><td>    <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a>       <dfn class="decl" id="AZO::BufferMan::size_" title='AZO::BufferMan::size_' data-ref="AZO::BufferMan::size_">size_</dfn>;</td></tr>
+<tr><th id="31">31</th><td>};</td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td>} <i>//namespaces AZO</i></td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><u>#include <a href="BufferMan.cpp.html">"BufferMan.cpp"</a></u></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><u>#<span data-ppcond="1">endif</span> /*AZO_BUFFERMAN_H*/</u></td></tr>
+<tr><th id="38">38</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../Base/MainCodeB.cpp.html'>codebrowser/nest/algorithm/azo/Base/MainCodeB.cpp</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,2 @@
+<def f='codebrowser/nest/algorithm/azo/Decoder/MatchCodeD.h' l='14' ll='15' type='void AZO::Decoder::MatchCode::MatchCode(const byte * buf, u_int size)'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/BlockCodeD.cpp' l='22' u='c' c='_ZN3AZO7Decoder9BlockCodeC1EPhj'/>

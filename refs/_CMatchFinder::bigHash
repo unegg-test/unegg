@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzFind.h' l='45' type='int'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='137' u='w' c='MatchFinder_SetDefaultSettings'/>
+<offset>928</offset>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='1901' u='w' c='LzmaEnc_Alloc'/>

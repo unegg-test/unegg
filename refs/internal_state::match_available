@@ -1,0 +1,9 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='155' type='int'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1040' u='w' c='lm_init'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1697' u='w' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1703' u='r' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1720' u='w' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1726' u='r' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1729' u='w' c='deflate_slow'/>
+<offset>1216</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='155'>/* set if previous match exists */</doc>

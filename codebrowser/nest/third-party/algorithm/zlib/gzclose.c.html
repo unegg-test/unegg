@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>gzclose.c source code [codebrowser/nest/third-party/algorithm/zlib/gzclose.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/third-party/algorithm/zlib/gzclose.c'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>nest</a>/<a href='../..'>third-party</a>/<a href='..'>algorithm</a>/<a href='./'>zlib</a>/<a href='gzclose.c.html'>gzclose.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* gzclose.c -- zlib gzclose() function</i></td></tr>
+<tr><th id="2">2</th><td><i> * Copyright (C) 2004, 2010 Mark Adler</i></td></tr>
+<tr><th id="3">3</th><td><i> * For conditions of distribution and use, see copyright notice in zlib.h</i></td></tr>
+<tr><th id="4">4</th><td><i> */</i></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><u>#include <a href="gzguts.h.html">"gzguts.h"</a></u></td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td><i>/* gzclose() is in a separate file so that it is linked in only if it is used.</i></td></tr>
+<tr><th id="9">9</th><td><i>   That way the other gzclose functions can be used instead to avoid linking in</i></td></tr>
+<tr><th id="10">10</th><td><i>   unneeded compression or decompression routines. */</i></td></tr>
+<tr><th id="11">11</th><td><em>int</em> <a class="macro" href="zconf.h.html#322" title="" data-ref="_M/ZEXPORT">ZEXPORT</a> <dfn class="decl def" id="gzclose" title='gzclose' data-ref="gzclose">gzclose</dfn>(file)</td></tr>
+<tr><th id="12">12</th><td>    <a class="typedef" href="zlib.h.html#gzFile" title='gzFile' data-type='voidp' data-ref="gzFile">gzFile</a> <dfn class="local col0 decl" id="20file" title='file' data-type='gzFile' data-ref="20file">file</dfn>;</td></tr>
+<tr><th id="13">13</th><td>{</td></tr>
+<tr><th id="14">14</th><td><u>#<span data-ppcond="14">ifndef</span> <span class="macro" data-ref="_M/NO_GZCOMPRESS">NO_GZCOMPRESS</span></u></td></tr>
+<tr><th id="15">15</th><td>    <a class="typedef" href="gzguts.h.html#gz_statep" title='gz_statep' data-type='gz_state *' data-ref="gz_statep">gz_statep</a> <dfn class="local col1 decl" id="21state" title='state' data-type='gz_statep' data-ref="21state">state</dfn>;</td></tr>
+<tr><th id="16">16</th><td></td></tr>
+<tr><th id="17">17</th><td>    <b>if</b> (<a class="local col0 ref" href="#20file" title='file' data-ref="20file">file</a> == <span class="macro" title="((void*)0)" data-ref="_M/NULL">NULL</span>)</td></tr>
+<tr><th id="18">18</th><td>        <b>return</b> <a class="macro" href="zlib.h.html#177" title="(-2)" data-ref="_M/Z_STREAM_ERROR">Z_STREAM_ERROR</a>;</td></tr>
+<tr><th id="19">19</th><td>    <a class="local col1 ref" href="#21state" title='state' data-ref="21state">state</a> = (<a class="typedef" href="gzguts.h.html#gz_statep" title='gz_statep' data-type='gz_state *' data-ref="gz_statep">gz_statep</a>)<a class="local col0 ref" href="#20file" title='file' data-ref="20file">file</a>;</td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td>    <b>return</b> <a class="local col1 ref" href="#21state" title='state' data-ref="21state">state</a>-&gt;<a class="ref" href="gzguts.h.html#(anonymous)::mode" title='(anonymous struct)::mode' data-ref="(anonymous)::mode">mode</a> == <a class="macro" href="gzguts.h.html#76" title="7247" data-ref="_M/GZ_READ">GZ_READ</a> ? <a class="ref" href="zlib.h.html#gzclose_r" title='gzclose_r' data-ref="gzclose_r">gzclose_r</a>(<a class="local col0 ref" href="#20file" title='file' data-ref="20file">file</a>) : <a class="ref" href="zlib.h.html#gzclose_w" title='gzclose_w' data-ref="gzclose_w">gzclose_w</a>(<a class="local col0 ref" href="#20file" title='file' data-ref="20file">file</a>);</td></tr>
+<tr><th id="22">22</th><td><u>#<span data-ppcond="14">else</span></u></td></tr>
+<tr><th id="23">23</th><td>    <b>return</b> gzclose_r(file);</td></tr>
+<tr><th id="24">24</th><td><u>#<span data-ppcond="14">endif</span></u></td></tr>
+<tr><th id="25">25</th><td>}</td></tr>
+<tr><th id="26">26</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

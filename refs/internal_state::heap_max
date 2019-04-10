@@ -1,0 +1,9 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='205' type='int'/>
+<offset>42304</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='205'>/* element of largest frequency */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='516' u='r' c='gen_bitlen'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='518' u='r' c='gen_bitlen'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='638' u='w' c='build_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='676' u='w' c='build_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='677' u='w' c='build_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='696' u='w' c='build_tree'/>

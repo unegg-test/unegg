@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/algorithm/AZOCoder.h' l='25' type='void nest::AZOCoder::~AZOCoder()'/>
+<inh f='codebrowser/nest/algorithm/Coder.h' l='23' c='_ZN4nest5CoderD1Ev'/>
+<def f='codebrowser/nest/algorithm/AZOCoder.cpp' l='23' ll='26' type='void nest::AZOCoder::~AZOCoder()'/>

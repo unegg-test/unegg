@@ -1,0 +1,52 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='194' type='size_t'/>
+<offset>320</offset>
+<dec f='codebrowser/nest/third-party/algorithm/lzma/7zBuf.h' l='28' type='size_t'/>
+<offset>128</offset>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zBuf2.c' l='11' u='w' c='DynBuf_Construct'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zBuf2.c' l='16' u='w' c='DynBuf_SeekToBeg'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zBuf2.c' l='21' u='r' c='DynBuf_Write'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zBuf2.c' l='23' u='r' c='DynBuf_Write'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zBuf2.c' l='30' u='r' c='DynBuf_Write'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zBuf2.c' l='34' u='r' c='DynBuf_Write'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zBuf2.c' l='35' u='w' c='DynBuf_Write'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zBuf2.c' l='44' u='w' c='DynBuf_Free'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='73' u='r' c='LookToRead_Look_Lookahead'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='76' u='w' c='LookToRead_Look_Lookahead'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='83' u='r' c='LookToRead_Look_Lookahead'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='91' u='r' c='LookToRead_Look_Exact'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='94' u='w' c='LookToRead_Look_Exact'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='102' u='r' c='LookToRead_Look_Exact'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='109' u='w' c='LookToRead_Skip'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='116' u='r' c='LookToRead_Read'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='121' u='r' c='LookToRead_Read'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='122' u='w' c='LookToRead_Read'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='130' u='w' c='LookToRead_Seek'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='144' u='w' c='LookToRead_Init'/>
+<dec f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='91' type='long'/>
+<offset>128</offset>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='82' u='w' c='gz_reset'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='301' u='r' c='gzseek64'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='308' u='r' c='gzseek64'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='317' u='w' c='gzseek64'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='318' u='r' c='gzseek64'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='325' u='r' c='gzseek64'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='338' u='w' c='gzseek64'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='347' u='r' c='gzseek64'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='376' u='r' c='gztell64'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='214' u='r' c='gz_head'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='345' u='w' c='gz_skip'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='446' u='w' c='gzread'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='473' u='w' c='gzgetc'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='514' u='w' c='gzungetc'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='535' u='w' c='gzungetc'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='593' u='w' c='gzgets'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='134' u='w' c='gz_zero'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='196' u='w' c='gzwrite'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='211' u='w' c='gzwrite'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='252' u='w' c='gzputc'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='345' u='w' c='gzprintf'/>
+<dec f='codebrowser/nest/third-party/encryption/aes/prng.h' l='65' type='unsigned int'/>
+<use f='codebrowser/nest/third-party/encryption/aes/prng.c' l='124' u='r' c='prng_rand'/>
+<use f='codebrowser/nest/third-party/encryption/aes/prng.c' l='143' u='w' c='prng_rand'/>
+<offset>4160</offset>
+<doc f='codebrowser/nest/third-party/encryption/aes/prng.h' l='65'>/* output buffer position   */</doc>

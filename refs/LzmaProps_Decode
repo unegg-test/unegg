@@ -1,0 +1,9 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.h' l='40' type='SRes LzmaProps_Decode(CLzmaProps * p, const Byte * data, unsigned int size)'/>
+<doc f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.h' l='34'>/* LzmaProps_Decode - decodes properties
+ Returns:
+ SZ_OK
+ SZ_ERROR_UNSUPPORTED - Unsupported properties
+ */</doc>
+<def f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='884' ll='908' type='SRes LzmaProps_Decode(CLzmaProps * p, const Byte * data, unsigned int size)'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='927' u='c' c='LzmaDec_AllocateProbs'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='937' u='c' c='LzmaDec_Allocate'/>

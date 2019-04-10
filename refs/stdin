@@ -1,0 +1,11 @@
+<dec f='include/stdio.h' l='168' type='struct _IO_FILE *'/>
+<use f='include/x86_64-linux-gnu/bits/stdio.h' l='46' macro='1' u='r'/>
+<use f='include/x86_64-linux-gnu/bits/stdio.h' l='72' macro='1' u='r'/>
+<use f='include/x86_64-linux-gnu/bits/stdio.h' l='72' macro='1' u='r'/>
+<use f='include/x86_64-linux-gnu/bits/stdio.h' l='72' macro='1' u='r'/>
+<use f='include/x86_64-linux-gnu/bits/stdio.h' l='72' macro='1' u='r'/>
+<use f='codebrowser/EventHandler.cpp' l='246' macro='1' u='r'/>
+<use f='codebrowser/EventHandler.cpp' l='297' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1422' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1447' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1529' macro='1' u='r'/>

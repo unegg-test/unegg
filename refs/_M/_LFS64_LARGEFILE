@@ -1,0 +1,4 @@
+<dec f='include/x86_64-linux-gnu/bits/posix_opt.h' l='118'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/zconf.h' l='397' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='1565' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='1574' u='c'/>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/inflate.h' l='84' type='int'/>
+<offset>64</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/inflate.h' l='84'>/* bit 0 true for zlib, bit 1 true for gzip */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='163' u='w' c='inflateReset2'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='625' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='631' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='641' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1160' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1184' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1227' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1263' u='r' c='inflateSetDictionary'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1303' u='r' c='inflateGetHeader'/>

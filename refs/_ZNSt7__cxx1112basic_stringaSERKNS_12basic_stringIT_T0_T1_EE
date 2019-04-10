@@ -1,0 +1,7 @@
+<def f='include/c++/7/bits/basic_string.h' l='653' ll='686' type='basic_string&lt;_CharT, _Traits, _Alloc&gt; &amp; std::__cxx11::basic_string::operator=(const basic_string&lt;_CharT, _Traits, _Alloc&gt; &amp; __str)'/>
+<doc f='include/c++/7/bits/basic_string.h' l='649'>/**
+       *  @brief  Assign the value of @a str to this string.
+       *  @param  __str  Source string.
+       */</doc>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='281' u='c' c='_ZN4nest9ALZFormat18GenerateVolumeNameEmPcm'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='261' u='c' c='_ZN4nest9EggFormat18GenerateVolumeNameEmPcm'/>

@@ -1,0 +1,7 @@
+<def f='codebrowser/nest/Utils.cpp' l='29' type='iconv_t'/>
+<use f='codebrowser/nest/Utils.cpp' l='35' u='r' c='_ZN4nest4utf810initializeEv'/>
+<use f='codebrowser/nest/Utils.cpp' l='37' u='w' c='_ZN4nest4utf810initializeEv'/>
+<use f='codebrowser/nest/Utils.cpp' l='43' u='r' c='_ZN4nest4utf88finalizeEv'/>
+<use f='codebrowser/nest/Utils.cpp' l='45' u='r' c='_ZN4nest4utf88finalizeEv'/>
+<use f='codebrowser/nest/Utils.cpp' l='46' u='w' c='_ZN4nest4utf88finalizeEv'/>
+<use f='codebrowser/nest/Utils.cpp' l='229' u='r' c='_ZN4nest4utf810euckr2utf8EPKcPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>

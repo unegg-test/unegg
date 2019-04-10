@@ -1,0 +1,9 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='105' type='int'/>
+<offset>704</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='104'>/* just for writing */</doc>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='105'>/* compression level */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='104' u='w' c='gz_open'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='108' u='w' c='gz_open'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='37' u='r' c='gz_init'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='477' u='r' c='gzsetparams'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='494' u='w' c='gzsetparams'/>

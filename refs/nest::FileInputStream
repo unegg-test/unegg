@@ -1,0 +1,13 @@
+<inh f='codebrowser/nest/stream/InputStream.h' l='22' c='nest::InputStream'/>
+<def f='codebrowser/nest/stream/FileInputStream.h' l='21' ll='38'/>
+<size>56</size>
+<fun r='_ZN4nest15FileInputStreamC1Ev'/>
+<fun r='_ZN4nest15FileInputStreamD1Ev'/>
+<fun r='_ZN4nest15FileInputStream4OpenEv'/>
+<fun r='_ZN4nest15FileInputStream5CloseEv'/>
+<fun r='_ZN4nest15FileInputStream4SeekEyi'/>
+<fun r='_ZN4nest15FileInputStream4TellEv'/>
+<fun r='_ZN4nest15FileInputStream4ReadEPvm'/>
+<fun r='_ZN4nest15FileInputStream4SizeEv'/>
+<mbr r='nest::FileInputStream::file_' o='320' t='FILE *'/>
+<mbr r='nest::FileInputStream::size_' o='384' t='uint64'/>

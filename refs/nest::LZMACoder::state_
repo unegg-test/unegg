@@ -1,0 +1,8 @@
+<dec f='codebrowser/nest/algorithm/LZMACoder.h' l='38' type='CLzmaDec'/>
+<use f='codebrowser/nest/algorithm/LZMACoder.cpp' l='48' u='a' c='_ZN4nest9LZMACoder10InitializeEPKhm'/>
+<use f='codebrowser/nest/algorithm/LZMACoder.cpp' l='48' u='a' c='_ZN4nest9LZMACoder10InitializeEPKhm'/>
+<use f='codebrowser/nest/algorithm/LZMACoder.cpp' l='49' u='a' c='_ZN4nest9LZMACoder10InitializeEPKhm'/>
+<use f='codebrowser/nest/algorithm/LZMACoder.cpp' l='52' u='a' c='_ZN4nest9LZMACoder10InitializeEPKhm'/>
+<use f='codebrowser/nest/algorithm/LZMACoder.cpp' l='62' u='a' c='_ZN4nest9LZMACoder8FinalizeEv'/>
+<use f='codebrowser/nest/algorithm/LZMACoder.cpp' l='83' u='a' c='_ZN4nest9LZMACoder5OnPopEPvPm'/>
+<offset>64</offset>

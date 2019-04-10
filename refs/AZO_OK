@@ -1,0 +1,8 @@
+<def f='codebrowser/nest/algorithm/azo/AZO.h' l='18' type='const int'/>
+<doc f='codebrowser/nest/algorithm/azo/AZO.h' l='17'>// return error</doc>
+<use f='codebrowser/nest/algorithm/azo/Decoder/BlockCodeD.cpp' l='70' u='r' c='_ZN3AZO7Decoder9BlockCode4CodeERNS0_11EntropyCodeE'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/MainCodeD.cpp' l='32' u='r' c='_ZN3AZO7Decoder8MainCode9ReadBlockEPKhjPhj'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/MainCodeD.cpp' l='62' u='r' c='_ZN3AZO7Decoder8MainCode4CodeERPKhRjRPhS5_'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/MainCodeD.cpp' l='127' u='r' c='_ZN3AZO7Decoder8MainCode4CodeERPKhRjRPhS5_'/>
+<use f='codebrowser/nest/algorithm/azo/unAZO.cpp' l='48' u='r' c='_Z18AZO_DecompressInitPPv'/>
+<use f='codebrowser/nest/algorithm/azo/unAZO.cpp' l='86' u='r' c='_Z17AZO_DecompressEndPv'/>

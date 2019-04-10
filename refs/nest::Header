@@ -1,0 +1,20 @@
+<inh f='codebrowser/nest/Info.h' l='20' c='nest::Info'/>
+<def f='codebrowser/nest/format/Header.h' l='27' ll='47'/>
+<ovr f='codebrowser/nest/format/egg/ExtraField.h' l='22' c='nest::egg::ExtraField'/>
+<ovr f='codebrowser/nest/format/egg/ExtraFieldWrap.h' l='23' c='nest::egg::ExtraFieldWrap'/>
+<ovr f='codebrowser/nest/format/egg/Global.h' l='22' c='nest::egg::Global'/>
+<ovr f='codebrowser/nest/format/egg/File.h' l='22' c='nest::egg::File'/>
+<ovr f='codebrowser/nest/format/egg/Block.h' l='22' c='nest::egg::Block'/>
+<ovr f='codebrowser/nest/format/egg/BlockWrap.h' l='24' c='nest::egg::BlockWrap'/>
+<ovr f='codebrowser/nest/format/egg/FileWrap.h' l='29' c='nest::egg::FileWrap'/>
+<size>16</size>
+<fun r='_ZN4nest6HeaderC1Ev'/>
+<fun r='_ZN4nest6HeaderD1Ev'/>
+<fun r='_ZN4nest6Header5ClearEv'/>
+<fun r='_ZN4nest6Header4ReadEPNS_11InputStreamE'/>
+<fun r='_ZN4nest6Header8IsLoadedEv'/>
+<fun r='_ZN4nest6Header9OnCleanUpEv'/>
+<fun r='_ZN4nest6Header6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<mbr r='nest::Header::loaded_' o='64' t='bool'/>
+<ovr f='codebrowser/nest/format/alz/Global.h' l='23' c='nest::alz::Global'/>
+<ovr f='codebrowser/nest/format/alz/File.h' l='22' c='nest::alz::File'/>

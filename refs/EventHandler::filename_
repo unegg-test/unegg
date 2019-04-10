@@ -1,0 +1,9 @@
+<dec f='codebrowser/EventHandler.h' l='65' type='std::string'/>
+<use f='codebrowser/EventHandler.cpp' l='64' u='m' c='_ZN12EventHandler8FinalizeEi'/>
+<use f='codebrowser/EventHandler.cpp' l='118' u='w' c='_ZN12EventHandler11OnFileStartEm'/>
+<use f='codebrowser/EventHandler.cpp' l='124' u='m' c='_ZN12EventHandler11OnFileStartEm'/>
+<use f='codebrowser/EventHandler.cpp' l='131' u='m' c='_ZN12EventHandler11OnFileStartEm'/>
+<use f='codebrowser/EventHandler.cpp' l='135' u='m' c='_ZN12EventHandler11OnFileStartEm'/>
+<use f='codebrowser/EventHandler.cpp' l='243' u='m' c='_ZN12EventHandler19OnQueryOutputStreamEmPPN4nest12OutputStreamEPKc'/>
+<use f='codebrowser/EventHandler.cpp' l='321' u='m' c='_ZN12EventHandler10OnProgressEmii'/>
+<offset>256</offset>

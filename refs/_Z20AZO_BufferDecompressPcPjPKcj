@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/algorithm/azo/AZO.h' l='61' type='int AZO_BufferDecompress(char * dest, unsigned int * destLen, const char * source, unsigned int sourceLen)'/>
+<def f='codebrowser/nest/algorithm/azo/unAZO.cpp' l='89' ll='118' type='int AZO_BufferDecompress(char * dest, u_int * destLen, const char * source, u_int sourceLen)'/>

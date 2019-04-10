@@ -1,0 +1,6 @@
+<dec f='codebrowser/nest/third-party/encryption/aes/hmac.h' l='61' type='void hmac_sha1_begin(hmac_ctx * cx)'/>
+<use f='codebrowser/nest/third-party/encryption/aes/fileenc.c' l='107' u='c' c='fcrypt_init'/>
+<def f='codebrowser/nest/third-party/encryption/aes/hmac.c' l='44' ll='47' type='void hmac_sha1_begin(hmac_ctx * cx)'/>
+<use f='codebrowser/nest/third-party/encryption/aes/hmac.c' l='137' u='c' c='hmac_sha1'/>
+<doc f='codebrowser/nest/third-party/encryption/aes/hmac.c' l='43'>/* initialise the HMAC context to zero */</doc>
+<use f='codebrowser/nest/third-party/encryption/aes/pwd2key.c' l='58' u='c' c='derive_key'/>

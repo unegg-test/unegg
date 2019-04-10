@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='147' type='void gen_codes(ct_data * tree, int max_code, ushf * bl_count)'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='581' ll='613' macro='1' type='void gen_codes(ct_data * tree, int max_code, ushf * bl_count)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='704' u='c' c='build_tree'/>

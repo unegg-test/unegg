@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.h' l='80' type='0'/>
+<use f='codebrowser/nest/algorithm/LZMACoder.cpp' l='78' u='r' c='_ZN4nest9LZMACoder5OnPopEPvPm'/>
+<doc f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.h' l='80'>/* finish at any point */</doc>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='741' u='r' c='LzmaDec_DecodeToDic'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='842' u='r' c='LzmaDec_DecodeToBuf'/>

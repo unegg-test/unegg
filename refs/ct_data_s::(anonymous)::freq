@@ -1,0 +1,46 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='64' type='ush'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1563' macro='1' u='w'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1563' macro='1' u='w'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1600' macro='1' u='w'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1682' macro='1' u='w'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1682' macro='1' u='w'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1709' macro='1' u='w'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1728' macro='1' u='w'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1785' macro='1' u='w'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1785' macro='1' u='w'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1793' macro='1' u='w'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1827' macro='1' u='w'/>
+<offset>0</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='64'>/* frequency count */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='421' macro='1' u='w'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='422' macro='1' u='w'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='423' macro='1' u='w'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='425' macro='1' u='w'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='469' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='469' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='469' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='469' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='473' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='473' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='473' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='473' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='530' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='565' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='641' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='656' macro='1' u='w'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='680' macro='1' u='w'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='680' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='680' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='732' macro='1' u='w'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='734' macro='1' u='w'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='735' macro='1' u='w'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='737' macro='1' u='w'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='739' macro='1' u='w'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1035' macro='1' u='w'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1044' macro='1' u='w'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1045' macro='1' u='w'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1149' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1153' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1153' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1154' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1157' macro='1' u='r'/>

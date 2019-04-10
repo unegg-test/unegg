@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='75'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='74'>/* gzip modes, also provide a little integrity check on the passed structure */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='103' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='145' u='c'/>

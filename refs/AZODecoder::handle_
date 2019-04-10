@@ -1,0 +1,6 @@
+<use f='codebrowser/nest/algorithm/azo/AZOWrapper.h' l='21' u='w' c='_ZN10AZODecoderC1Ev'/>
+<use f='codebrowser/nest/algorithm/azo/AZOWrapper.h' l='23' u='a' c='_ZN10AZODecoderC1Ev'/>
+<use f='codebrowser/nest/algorithm/azo/AZOWrapper.h' l='28' u='r' c='_ZN10AZODecoderD1Ev'/>
+<use f='codebrowser/nest/algorithm/azo/AZOWrapper.h' l='52' u='r' c='_ZN10AZODecoder10DecompressER10AZO_Stream'/>
+<dec f='codebrowser/nest/algorithm/azo/AZOWrapper.h' l='56' type='AZO_HDECOMPRESS'/>
+<offset>0</offset>

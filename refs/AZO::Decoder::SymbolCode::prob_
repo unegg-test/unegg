@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/algorithm/azo/Decoder/SymbolCodeD.h' l='20' type='EntropyBitProb&lt;N&gt;'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/SymbolCodeD.cpp' l='14' u='c' c='_ZN3AZO7Decoder10SymbolCode4CodeERNS0_11EntropyCodeE'/>

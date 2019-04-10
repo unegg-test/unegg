@@ -1,0 +1,465 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>aescrypt.c source code [codebrowser/nest/third-party/encryption/aes/aescrypt.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/third-party/encryption/aes/aescrypt.c'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>nest</a>/<a href='../..'>third-party</a>/<a href='..'>encryption</a>/<a href='./'>aes</a>/<a href='aescrypt.c.html'>aescrypt.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> ---------------------------------------------------------------------------</i></td></tr>
+<tr><th id="3">3</th><td><i> Copyright (c) 2002, Dr Brian Gladman &lt;                 &gt;, Worcester, UK.</i></td></tr>
+<tr><th id="4">4</th><td><i> All rights reserved.</i></td></tr>
+<tr><th id="5">5</th><td><i></i></td></tr>
+<tr><th id="6">6</th><td><i> LICENSE TERMS</i></td></tr>
+<tr><th id="7">7</th><td><i></i></td></tr>
+<tr><th id="8">8</th><td><i> The free distribution and use of this software in both source and binary</i></td></tr>
+<tr><th id="9">9</th><td><i> form is allowed (with or without changes) provided that:</i></td></tr>
+<tr><th id="10">10</th><td><i></i></td></tr>
+<tr><th id="11">11</th><td><i>   1. distributions of this source code include the above copyright</i></td></tr>
+<tr><th id="12">12</th><td><i>      notice, this list of conditions and the following disclaimer;</i></td></tr>
+<tr><th id="13">13</th><td><i></i></td></tr>
+<tr><th id="14">14</th><td><i>   2. distributions in binary form include the above copyright</i></td></tr>
+<tr><th id="15">15</th><td><i>      notice, this list of conditions and the following disclaimer</i></td></tr>
+<tr><th id="16">16</th><td><i>      in the documentation and/or other associated materials;</i></td></tr>
+<tr><th id="17">17</th><td><i></i></td></tr>
+<tr><th id="18">18</th><td><i>   3. the copyright holder's name is not used to endorse products</i></td></tr>
+<tr><th id="19">19</th><td><i>      built using this software without specific written permission.</i></td></tr>
+<tr><th id="20">20</th><td><i></i></td></tr>
+<tr><th id="21">21</th><td><i> ALTERNATIVELY, provided that this notice is retained in full, this product</i></td></tr>
+<tr><th id="22">22</th><td><i> may be distributed under the terms of the GNU General Public License (GPL),</i></td></tr>
+<tr><th id="23">23</th><td><i> in which case the provisions of the GPL apply INSTEAD OF those given above.</i></td></tr>
+<tr><th id="24">24</th><td><i></i></td></tr>
+<tr><th id="25">25</th><td><i> DISCLAIMER</i></td></tr>
+<tr><th id="26">26</th><td><i></i></td></tr>
+<tr><th id="27">27</th><td><i> This software is provided 'as is' with no explicit or implied warranties</i></td></tr>
+<tr><th id="28">28</th><td><i> in respect of its properties, including, but not limited to, correctness</i></td></tr>
+<tr><th id="29">29</th><td><i> and/or fitness for purpose.</i></td></tr>
+<tr><th id="30">30</th><td><i> ---------------------------------------------------------------------------</i></td></tr>
+<tr><th id="31">31</th><td><i> Issue Date: 24/01/2003</i></td></tr>
+<tr><th id="32">32</th><td><i></i></td></tr>
+<tr><th id="33">33</th><td><i> This file contains the code for implementing encryption and decryption</i></td></tr>
+<tr><th id="34">34</th><td><i> for AES (Rijndael) for block and key sizes of 16, 24 and 32 bytes. It</i></td></tr>
+<tr><th id="35">35</th><td><i> can optionally be replaced by code written in assembler using NASM.</i></td></tr>
+<tr><th id="36">36</th><td><i>*/</i></td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td><u>#include <a href="aesopt.h.html">"aesopt.h"</a></u></td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><u>#<span data-ppcond="40">if</span> defined(<span class="macro" data-ref="_M/__cplusplus">__cplusplus</span>)</u></td></tr>
+<tr><th id="41">41</th><td><b>extern</b> <q>"C"</q></td></tr>
+<tr><th id="42">42</th><td>{</td></tr>
+<tr><th id="43">43</th><td><u>#<span data-ppcond="40">endif</span></u></td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td><u>#<span data-ppcond="45">if</span> defined(<a class="macro" href="aes.h.html#70" data-ref="_M/BLOCK_SIZE">BLOCK_SIZE</a>) &amp;&amp; (<a class="macro" href="aes.h.html#70" title="16" data-ref="_M/BLOCK_SIZE">BLOCK_SIZE</a> &amp; 7)</u></td></tr>
+<tr><th id="46">46</th><td><u>#error An illegal block size has been specified.</u></td></tr>
+<tr><th id="47">47</th><td><u>#<span data-ppcond="45">endif</span></u></td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td><u>#define <dfn class="macro" id="_M/unused" data-ref="_M/unused">unused</dfn>  77  /* Sunset Strip */</u></td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td><u>#define <dfn class="macro" id="_M/si" data-ref="_M/si">si</dfn>(y,x,k,c) (s(y,c) = word_in(x + 4 * c) ^ k[c])</u></td></tr>
+<tr><th id="52">52</th><td><u>#define <dfn class="macro" id="_M/so" data-ref="_M/so">so</dfn>(y,x,c)   word_out(y + 4 * c, s(x,c))</u></td></tr>
+<tr><th id="53">53</th><td></td></tr>
+<tr><th id="54">54</th><td><u>#<span data-ppcond="54">if</span> <a class="macro" href="aes.h.html#70" title="16" data-ref="_M/BLOCK_SIZE">BLOCK_SIZE</a> == 16</u></td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td><u>#<span data-ppcond="56">if</span> defined(<a class="macro" href="aesopt.h.html#398" data-ref="_M/ARRAYS">ARRAYS</a>)</u></td></tr>
+<tr><th id="57">57</th><td><u>#define <dfn class="macro" id="_M/locals" data-ref="_M/locals">locals</dfn>(y,x)     x[4],y[4]</u></td></tr>
+<tr><th id="58">58</th><td><u>#<span data-ppcond="56">else</span></u></td></tr>
+<tr><th id="59">59</th><td><u>#define locals(y,x)     x##0,x##1,x##2,x##3,y##0,y##1,y##2,y##3</u></td></tr>
+<tr><th id="60">60</th><td> <i>/*</i></td></tr>
+<tr><th id="61">61</th><td><i>   the following defines prevent the compiler requiring the declaration</i></td></tr>
+<tr><th id="62">62</th><td><i>   of generated but unused variables in the fwd_var and inv_var macros</i></td></tr>
+<tr><th id="63">63</th><td><i> */</i></td></tr>
+<tr><th id="64">64</th><td><u>#define b04 unused</u></td></tr>
+<tr><th id="65">65</th><td><u>#define b05 unused</u></td></tr>
+<tr><th id="66">66</th><td><u>#define b06 unused</u></td></tr>
+<tr><th id="67">67</th><td><u>#define b07 unused</u></td></tr>
+<tr><th id="68">68</th><td><u>#define b14 unused</u></td></tr>
+<tr><th id="69">69</th><td><u>#define b15 unused</u></td></tr>
+<tr><th id="70">70</th><td><u>#define b16 unused</u></td></tr>
+<tr><th id="71">71</th><td><u>#define b17 unused</u></td></tr>
+<tr><th id="72">72</th><td><u>#<span data-ppcond="56">endif</span></u></td></tr>
+<tr><th id="73">73</th><td><u>#define <dfn class="macro" id="_M/l_copy" data-ref="_M/l_copy">l_copy</dfn>(y, x)    s(y,0) = s(x,0); s(y,1) = s(x,1); \</u></td></tr>
+<tr><th id="74">74</th><td><u>                        s(y,2) = s(x,2); s(y,3) = s(x,3);</u></td></tr>
+<tr><th id="75">75</th><td><u>#define <dfn class="macro" id="_M/state_in" data-ref="_M/state_in">state_in</dfn>(y,x,k) si(y,x,k,0); si(y,x,k,1); si(y,x,k,2); si(y,x,k,3)</u></td></tr>
+<tr><th id="76">76</th><td><u>#define <dfn class="macro" id="_M/state_out" data-ref="_M/state_out">state_out</dfn>(y,x)  so(y,x,0); so(y,x,1); so(y,x,2); so(y,x,3)</u></td></tr>
+<tr><th id="77">77</th><td><u>#define <dfn class="macro" id="_M/round" data-ref="_M/round">round</dfn>(rm,y,x,k) rm(y,x,k,0); rm(y,x,k,1); rm(y,x,k,2); rm(y,x,k,3)</u></td></tr>
+<tr><th id="78">78</th><td></td></tr>
+<tr><th id="79">79</th><td><u>#<span data-ppcond="54">elif</span> BLOCK_SIZE == 24</u></td></tr>
+<tr><th id="80">80</th><td></td></tr>
+<tr><th id="81">81</th><td><u>#if defined(ARRAYS)</u></td></tr>
+<tr><th id="82">82</th><td><u>#define locals(y,x)     x[6],y[6]</u></td></tr>
+<tr><th id="83">83</th><td><u>#else</u></td></tr>
+<tr><th id="84">84</th><td><u>#define locals(y,x)     x##0,x##1,x##2,x##3,x##4,x##5, \</u></td></tr>
+<tr><th id="85">85</th><td><u>                        y##0,y##1,y##2,y##3,y##4,y##5</u></td></tr>
+<tr><th id="86">86</th><td><u>#define b06 unused</u></td></tr>
+<tr><th id="87">87</th><td><u>#define b07 unused</u></td></tr>
+<tr><th id="88">88</th><td><u>#define b16 unused</u></td></tr>
+<tr><th id="89">89</th><td><u>#define b17 unused</u></td></tr>
+<tr><th id="90">90</th><td><u>#endif</u></td></tr>
+<tr><th id="91">91</th><td><u>#define l_copy(y, x)    s(y,0) = s(x,0); s(y,1) = s(x,1); \</u></td></tr>
+<tr><th id="92">92</th><td><u>                        s(y,2) = s(x,2); s(y,3) = s(x,3); \</u></td></tr>
+<tr><th id="93">93</th><td><u>                        s(y,4) = s(x,4); s(y,5) = s(x,5);</u></td></tr>
+<tr><th id="94">94</th><td><u>#define state_in(y,x,k) si(y,x,k,0); si(y,x,k,1); si(y,x,k,2); \</u></td></tr>
+<tr><th id="95">95</th><td><u>                        si(y,x,k,3); si(y,x,k,4); si(y,x,k,5)</u></td></tr>
+<tr><th id="96">96</th><td><u>#define state_out(y,x)  so(y,x,0); so(y,x,1); so(y,x,2); \</u></td></tr>
+<tr><th id="97">97</th><td><u>                        so(y,x,3); so(y,x,4); so(y,x,5)</u></td></tr>
+<tr><th id="98">98</th><td><u>#define round(rm,y,x,k) rm(y,x,k,0); rm(y,x,k,1); rm(y,x,k,2); \</u></td></tr>
+<tr><th id="99">99</th><td><u>                        rm(y,x,k,3); rm(y,x,k,4); rm(y,x,k,5)</u></td></tr>
+<tr><th id="100">100</th><td><u>#else</u></td></tr>
+<tr><th id="101">101</th><td></td></tr>
+<tr><th id="102">102</th><td><u>#if defined(ARRAYS)</u></td></tr>
+<tr><th id="103">103</th><td><u>#define locals(y,x)     x[8],y[8]</u></td></tr>
+<tr><th id="104">104</th><td><u>#else</u></td></tr>
+<tr><th id="105">105</th><td><u>#define locals(y,x)     x##0,x##1,x##2,x##3,x##4,x##5,x##6,x##7, \</u></td></tr>
+<tr><th id="106">106</th><td><u>                        y##0,y##1,y##2,y##3,y##4,y##5,y##6,y##7</u></td></tr>
+<tr><th id="107">107</th><td><u>#endif</u></td></tr>
+<tr><th id="108">108</th><td><u>#define l_copy(y, x)    s(y,0) = s(x,0); s(y,1) = s(x,1); \</u></td></tr>
+<tr><th id="109">109</th><td><u>                        s(y,2) = s(x,2); s(y,3) = s(x,3); \</u></td></tr>
+<tr><th id="110">110</th><td><u>                        s(y,4) = s(x,4); s(y,5) = s(x,5); \</u></td></tr>
+<tr><th id="111">111</th><td><u>                        s(y,6) = s(x,6); s(y,7) = s(x,7);</u></td></tr>
+<tr><th id="112">112</th><td></td></tr>
+<tr><th id="113">113</th><td><u>#if BLOCK_SIZE == 32</u></td></tr>
+<tr><th id="114">114</th><td></td></tr>
+<tr><th id="115">115</th><td><u>#define state_in(y,x,k) si(y,x,k,0); si(y,x,k,1); si(y,x,k,2); si(y,x,k,3); \</u></td></tr>
+<tr><th id="116">116</th><td><u>                        si(y,x,k,4); si(y,x,k,5); si(y,x,k,6); si(y,x,k,7)</u></td></tr>
+<tr><th id="117">117</th><td><u>#define state_out(y,x)  so(y,x,0); so(y,x,1); so(y,x,2); so(y,x,3); \</u></td></tr>
+<tr><th id="118">118</th><td><u>                        so(y,x,4); so(y,x,5); so(y,x,6); so(y,x,7)</u></td></tr>
+<tr><th id="119">119</th><td><u>#define round(rm,y,x,k) rm(y,x,k,0); rm(y,x,k,1); rm(y,x,k,2); rm(y,x,k,3); \</u></td></tr>
+<tr><th id="120">120</th><td><u>                        rm(y,x,k,4); rm(y,x,k,5); rm(y,x,k,6); rm(y,x,k,7)</u></td></tr>
+<tr><th id="121">121</th><td><u>#else</u></td></tr>
+<tr><th id="122">122</th><td></td></tr>
+<tr><th id="123">123</th><td><u>#define state_in(y,x,k) \</u></td></tr>
+<tr><th id="124">124</th><td><u>switch(nc) \</u></td></tr>
+<tr><th id="125">125</th><td><u>{   case 8: si(y,x,k,7); si(y,x,k,6); \</u></td></tr>
+<tr><th id="126">126</th><td><u>    case 6: si(y,x,k,5); si(y,x,k,4); \</u></td></tr>
+<tr><th id="127">127</th><td><u>    case 4: si(y,x,k,3); si(y,x,k,2); \</u></td></tr>
+<tr><th id="128">128</th><td><u>            si(y,x,k,1); si(y,x,k,0); \</u></td></tr>
+<tr><th id="129">129</th><td><u>}</u></td></tr>
+<tr><th id="130">130</th><td></td></tr>
+<tr><th id="131">131</th><td><u>#define state_out(y,x) \</u></td></tr>
+<tr><th id="132">132</th><td><u>switch(nc) \</u></td></tr>
+<tr><th id="133">133</th><td><u>{   case 8: so(y,x,7); so(y,x,6); \</u></td></tr>
+<tr><th id="134">134</th><td><u>    case 6: so(y,x,5); so(y,x,4); \</u></td></tr>
+<tr><th id="135">135</th><td><u>    case 4: so(y,x,3); so(y,x,2); \</u></td></tr>
+<tr><th id="136">136</th><td><u>            so(y,x,1); so(y,x,0); \</u></td></tr>
+<tr><th id="137">137</th><td><u>}</u></td></tr>
+<tr><th id="138">138</th><td></td></tr>
+<tr><th id="139">139</th><td><u>#if defined(FAST_VARIABLE)</u></td></tr>
+<tr><th id="140">140</th><td></td></tr>
+<tr><th id="141">141</th><td><u>#define round(rm,y,x,k) \</u></td></tr>
+<tr><th id="142">142</th><td><u>switch(nc) \</u></td></tr>
+<tr><th id="143">143</th><td><u>{   case 8: rm(y,x,k,7); rm(y,x,k,6); \</u></td></tr>
+<tr><th id="144">144</th><td><u>            rm(y,x,k,5); rm(y,x,k,4); \</u></td></tr>
+<tr><th id="145">145</th><td><u>            rm(y,x,k,3); rm(y,x,k,2); \</u></td></tr>
+<tr><th id="146">146</th><td><u>            rm(y,x,k,1); rm(y,x,k,0); \</u></td></tr>
+<tr><th id="147">147</th><td><u>            break; \</u></td></tr>
+<tr><th id="148">148</th><td><u>    case 6: rm(y,x,k,5); rm(y,x,k,4); \</u></td></tr>
+<tr><th id="149">149</th><td><u>            rm(y,x,k,3); rm(y,x,k,2); \</u></td></tr>
+<tr><th id="150">150</th><td><u>            rm(y,x,k,1); rm(y,x,k,0); \</u></td></tr>
+<tr><th id="151">151</th><td><u>            break; \</u></td></tr>
+<tr><th id="152">152</th><td><u>    case 4: rm(y,x,k,3); rm(y,x,k,2); \</u></td></tr>
+<tr><th id="153">153</th><td><u>            rm(y,x,k,1); rm(y,x,k,0); \</u></td></tr>
+<tr><th id="154">154</th><td><u>            break; \</u></td></tr>
+<tr><th id="155">155</th><td><u>}</u></td></tr>
+<tr><th id="156">156</th><td><u>#else</u></td></tr>
+<tr><th id="157">157</th><td></td></tr>
+<tr><th id="158">158</th><td><u>#define round(rm,y,x,k) \</u></td></tr>
+<tr><th id="159">159</th><td><u>switch(nc) \</u></td></tr>
+<tr><th id="160">160</th><td><u>{   case 8: rm(y,x,k,7); rm(y,x,k,6); \</u></td></tr>
+<tr><th id="161">161</th><td><u>    case 6: rm(y,x,k,5); rm(y,x,k,4); \</u></td></tr>
+<tr><th id="162">162</th><td><u>    case 4: rm(y,x,k,3); rm(y,x,k,2); \</u></td></tr>
+<tr><th id="163">163</th><td><u>            rm(y,x,k,1); rm(y,x,k,0); \</u></td></tr>
+<tr><th id="164">164</th><td><u>}</u></td></tr>
+<tr><th id="165">165</th><td></td></tr>
+<tr><th id="166">166</th><td><u>#endif</u></td></tr>
+<tr><th id="167">167</th><td></td></tr>
+<tr><th id="168">168</th><td><u>#endif</u></td></tr>
+<tr><th id="169">169</th><td><u>#<span data-ppcond="54">endif</span></u></td></tr>
+<tr><th id="170">170</th><td></td></tr>
+<tr><th id="171">171</th><td><u>#<span data-ppcond="171">if</span> defined(<a class="macro" href="aesopt.h.html#278" data-ref="_M/ENCRYPTION">ENCRYPTION</a>) &amp;&amp; !defined(<span class="macro" data-ref="_M/AES_ASM">AES_ASM</span>)</u></td></tr>
+<tr><th id="172">172</th><td></td></tr>
+<tr><th id="173">173</th><td><i>/* Given the column (c) of the output state variable, the following</i></td></tr>
+<tr><th id="174">174</th><td><i>   macros give the input state variables which are needed in its</i></td></tr>
+<tr><th id="175">175</th><td><i>   computation for each row (r) of the state. All the alternative</i></td></tr>
+<tr><th id="176">176</th><td><i>   macros give the same end values but expand into different ways</i></td></tr>
+<tr><th id="177">177</th><td><i>   of calculating these values.  In particular the complex macro</i></td></tr>
+<tr><th id="178">178</th><td><i>   used for dynamically variable block sizes is designed to expand</i></td></tr>
+<tr><th id="179">179</th><td><i>   to a compile time constant whenever possible but will expand to</i></td></tr>
+<tr><th id="180">180</th><td><i>   conditional clauses on some branches (I am grateful to Frank</i></td></tr>
+<tr><th id="181">181</th><td><i>   Yellin for this construction)</i></td></tr>
+<tr><th id="182">182</th><td><i>*/</i></td></tr>
+<tr><th id="183">183</th><td></td></tr>
+<tr><th id="184">184</th><td><u>#<span data-ppcond="184">if</span> defined(<a class="macro" href="aes.h.html#70" data-ref="_M/BLOCK_SIZE">BLOCK_SIZE</a>)</u></td></tr>
+<tr><th id="185">185</th><td><u>#<span data-ppcond="185">if</span> <a class="macro" href="aes.h.html#70" title="16" data-ref="_M/BLOCK_SIZE">BLOCK_SIZE</a> == 16</u></td></tr>
+<tr><th id="186">186</th><td><u># define <dfn class="macro" id="_M/fwd_var" data-ref="_M/fwd_var">fwd_var</dfn>(x,r,c) s(x,((r+c)%nc))</u></td></tr>
+<tr><th id="187">187</th><td><u>#<span data-ppcond="185">else</span></u></td></tr>
+<tr><th id="188">188</th><td><u>#define fwd_var(x,r,c) s(x,(r+c+(((r&gt;1)&amp;&amp;(nc&gt;9-r))?1:0))%nc)</u></td></tr>
+<tr><th id="189">189</th><td><u>#<span data-ppcond="185">endif</span></u></td></tr>
+<tr><th id="190">190</th><td><u>#<span data-ppcond="184">else</span></u></td></tr>
+<tr><th id="191">191</th><td><u>#define fwd_var(x,r,c)\</u></td></tr>
+<tr><th id="192">192</th><td><u> ( r == 0 ?    s(x,c) \</u></td></tr>
+<tr><th id="193">193</th><td><u> : r == 1 ?           \</u></td></tr>
+<tr><th id="194">194</th><td><u>    ( c == 0 ? s(x,1) \</u></td></tr>
+<tr><th id="195">195</th><td><u>    : c == 1 ? s(x,2) \</u></td></tr>
+<tr><th id="196">196</th><td><u>    : c == 2 ? s(x,3) \</u></td></tr>
+<tr><th id="197">197</th><td><u>    : c == 3 ? nc == 4 ? s(x,0) : s(x,4) \</u></td></tr>
+<tr><th id="198">198</th><td><u>    : c == 4 ? s(x,5) \</u></td></tr>
+<tr><th id="199">199</th><td><u>    : c == 5 ? nc == 8 ? s(x,6) : s(x,0) \</u></td></tr>
+<tr><th id="200">200</th><td><u>    : c == 6 ? s(x,7) : s(x,0)) \</u></td></tr>
+<tr><th id="201">201</th><td><u> : r == 2 ? \</u></td></tr>
+<tr><th id="202">202</th><td><u>    ( c == 0 ? nc == 8 ? s(x,3) : s(x,2) \</u></td></tr>
+<tr><th id="203">203</th><td><u>    : c == 1 ? nc == 8 ? s(x,4) : s(x,3) \</u></td></tr>
+<tr><th id="204">204</th><td><u>    : c == 2 ? nc == 4 ? s(x,0) : nc == 8 ? s(x,5) : s(x,4) \</u></td></tr>
+<tr><th id="205">205</th><td><u>    : c == 3 ? nc == 4 ? s(x,1) : nc == 8 ? s(x,6) : s(x,5) \</u></td></tr>
+<tr><th id="206">206</th><td><u>    : c == 4 ? nc == 8 ? s(x,7) : s(x,0) \</u></td></tr>
+<tr><th id="207">207</th><td><u>    : c == 5 ? nc == 8 ? s(x,0) : s(x,1) \</u></td></tr>
+<tr><th id="208">208</th><td><u>    : c == 6 ? s(x,1) : s(x,2)) \</u></td></tr>
+<tr><th id="209">209</th><td><u> : \</u></td></tr>
+<tr><th id="210">210</th><td><u>    ( c == 0 ? nc == 8 ? s(x,4) : s(x,3) \</u></td></tr>
+<tr><th id="211">211</th><td><u>    : c == 1 ? nc == 4 ? s(x,0) : nc == 8 ? s(x,5) : s(x,4) \</u></td></tr>
+<tr><th id="212">212</th><td><u>    : c == 2 ? nc == 4 ? s(x,1) : nc == 8 ? s(x,6) : s(x,5) \</u></td></tr>
+<tr><th id="213">213</th><td><u>    : c == 3 ? nc == 4 ? s(x,2) : nc == 8 ? s(x,7) : s(x,0) \</u></td></tr>
+<tr><th id="214">214</th><td><u>    : c == 4 ? nc == 8 ? s(x,0) : s(x,1) \</u></td></tr>
+<tr><th id="215">215</th><td><u>    : c == 5 ? nc == 8 ? s(x,1) : s(x,2) \</u></td></tr>
+<tr><th id="216">216</th><td><u>    : c == 6 ? s(x,2) : s(x,3)))</u></td></tr>
+<tr><th id="217">217</th><td><u>#<span data-ppcond="184">endif</span></u></td></tr>
+<tr><th id="218">218</th><td></td></tr>
+<tr><th id="219">219</th><td><u>#<span data-ppcond="219">if</span> defined(<a class="macro" href="aesopt.h.html#659" data-ref="_M/FT4_SET">FT4_SET</a>)</u></td></tr>
+<tr><th id="220">220</th><td><u>#undef  <a class="macro" href="aesopt.h.html#887" data-ref="_M/dec_fmvars">dec_fmvars</a></u></td></tr>
+<tr><th id="221">221</th><td><u>#define <dfn class="macro" id="_M/dec_fmvars" data-ref="_M/dec_fmvars">dec_fmvars</dfn></u></td></tr>
+<tr><th id="222">222</th><td><u>#define <dfn class="macro" id="_M/fwd_rnd" data-ref="_M/fwd_rnd">fwd_rnd</dfn>(y,x,k,c)    (s(y,c) = (k)[c] ^ four_tables(x,t_use(f,n),fwd_var,rf1,c))</u></td></tr>
+<tr><th id="223">223</th><td><u>#<span data-ppcond="219">elif</span> defined(FT1_SET)</u></td></tr>
+<tr><th id="224">224</th><td><u>#undef  dec_fmvars</u></td></tr>
+<tr><th id="225">225</th><td><u>#define dec_fmvars</u></td></tr>
+<tr><th id="226">226</th><td><u>#define fwd_rnd(y,x,k,c)    (s(y,c) = (k)[c] ^ one_table(x,upr,t_use(f,n),fwd_var,rf1,c))</u></td></tr>
+<tr><th id="227">227</th><td><u>#else</u></td></tr>
+<tr><th id="228">228</th><td><u>#define fwd_rnd(y,x,k,c)    (s(y,c) = fwd_mcol(no_table(x,t_use(s,box),fwd_var,rf1,c)) ^ (k)[c])</u></td></tr>
+<tr><th id="229">229</th><td><u>#<span data-ppcond="219">endif</span></u></td></tr>
+<tr><th id="230">230</th><td></td></tr>
+<tr><th id="231">231</th><td><u>#<span data-ppcond="231">if</span> defined(<a class="macro" href="aesopt.h.html#666" data-ref="_M/FL4_SET">FL4_SET</a>)</u></td></tr>
+<tr><th id="232">232</th><td><u>#define <dfn class="macro" id="_M/fwd_lrnd" data-ref="_M/fwd_lrnd">fwd_lrnd</dfn>(y,x,k,c)   (s(y,c) = (k)[c] ^ four_tables(x,t_use(f,l),fwd_var,rf1,c))</u></td></tr>
+<tr><th id="233">233</th><td><u>#<span data-ppcond="231">elif</span> defined(FL1_SET)</u></td></tr>
+<tr><th id="234">234</th><td><u>#define fwd_lrnd(y,x,k,c)   (s(y,c) = (k)[c] ^ one_table(x,ups,t_use(f,l),fwd_var,rf1,c))</u></td></tr>
+<tr><th id="235">235</th><td><u>#else</u></td></tr>
+<tr><th id="236">236</th><td><u>#define fwd_lrnd(y,x,k,c)   (s(y,c) = no_table(x,t_use(s,box),fwd_var,rf1,c) ^ (k)[c])</u></td></tr>
+<tr><th id="237">237</th><td><u>#<span data-ppcond="231">endif</span></u></td></tr>
+<tr><th id="238">238</th><td></td></tr>
+<tr><th id="239">239</th><td><a class="macro" href="aes.h.html#84" title="aes_fret" data-ref="_M/aes_rval">aes_rval</a> <dfn class="decl def" id="aes_encrypt_block" title='aes_encrypt_block' data-ref="aes_encrypt_block">aes_encrypt_block</dfn>(<em>const</em> <em>unsigned</em> <em>char</em> <dfn class="local col1 decl" id="1in_blk" title='in_blk' data-type='const unsigned char *' data-ref="1in_blk">in_blk</dfn>[], <em>unsigned</em> <em>char</em> <dfn class="local col2 decl" id="2out_blk" title='out_blk' data-type='unsigned char *' data-ref="2out_blk">out_blk</dfn>[], <em>const</em> <a class="typedef" href="aes.h.html#aes_ctx" title='aes_ctx' data-type='struct aes_ctx' data-ref="aes_ctx">aes_ctx</a> <dfn class="local col3 decl" id="3cx" title='cx' data-type='const aes_ctx *' data-ref="3cx">cx</dfn>[<var>1</var>])</td></tr>
+<tr><th id="240">240</th><td>{   <a class="typedef" href="aes.h.html#aes_32t" title='aes_32t' data-type='unsigned int' data-ref="aes_32t">aes_32t</a>        <a class="macro" href="#57" title="b1[4],b0[4]" data-ref="_M/locals">locals</a>(<dfn class="local col5 decl" id="5b0" title='b0' data-type='aes_32t [4]' data-ref="5b0">b0</dfn>, <dfn class="local col4 decl" id="4b1" title='b1' data-type='aes_32t [4]' data-ref="4b1">b1</dfn>);</td></tr>
+<tr><th id="241">241</th><td>    <em>const</em> <a class="typedef" href="aes.h.html#aes_32t" title='aes_32t' data-type='unsigned int' data-ref="aes_32t">aes_32t</a>  *<dfn class="local col6 decl" id="6kp" title='kp' data-type='const aes_32t *' data-ref="6kp">kp</dfn> = <a class="local col3 ref" href="#3cx" title='cx' data-ref="3cx">cx</a>-&gt;<a class="ref" href="aes.h.html#(anonymous)::k_sch" title='(anonymous struct)::k_sch' data-ref="(anonymous)::k_sch">k_sch</a>;</td></tr>
+<tr><th id="242">242</th><td>    <a class="macro" href="#221" title="" data-ref="_M/dec_fmvars">dec_fmvars</a>  <i>/* declare variables for fwd_mcol() if needed */</i></td></tr>
+<tr><th id="243">243</th><td></td></tr>
+<tr><th id="244">244</th><td>    <b>if</b>(!(<a class="local col3 ref" href="#3cx" title='cx' data-ref="3cx">cx</a>-&gt;<a class="ref" href="aes.h.html#(anonymous)::n_blk" title='(anonymous struct)::n_blk' data-ref="(anonymous)::n_blk">n_blk</a> &amp; <var>1</var>)) <b>return</b> <a class="macro" href="aes.h.html#81" title="0" data-ref="_M/aes_bad">aes_bad</a>;</td></tr>
+<tr><th id="245">245</th><td></td></tr>
+<tr><th id="246">246</th><td>    <a class="macro" href="#75" title="(b0[0] = (((aes_32t)((in_blk + 4 * 0)[3]) &lt;&lt; 24) | ((aes_32t)((in_blk + 4 * 0)[2]) &lt;&lt; 16) | ((aes_32t)((in_blk + 4 * 0)[1]) &lt;&lt; 8) | ((in_blk + 4 * 0)[0])) ^ kp[0]); (b0[1] = (((aes_32t)((in_blk + 4 * 1)[3]) &lt;&lt; 24) | ((aes_32t)((in_blk + 4 * 1)[2]) &lt;&lt; 16) | ((aes_32t)((in_blk + 4 * 1)[1]) &lt;&lt; 8) | ((in_blk + 4 * 1)[0])) ^ kp[1]); (b0[2] = (((aes_32t)((in_blk + 4 * 2)[3]) &lt;&lt; 24) | ((aes_32t)((in_blk + 4 * 2)[2]) &lt;&lt; 16) | ((aes_32t)((in_blk + 4 * 2)[1]) &lt;&lt; 8) | ((in_blk + 4 * 2)[0])) ^ kp[2]); (b0[3] = (((aes_32t)((in_blk + 4 * 3)[3]) &lt;&lt; 24) | ((aes_32t)((in_blk + 4 * 3)[2]) &lt;&lt; 16) | ((aes_32t)((in_blk + 4 * 3)[1]) &lt;&lt; 8) | ((in_blk + 4 * 3)[0])) ^ kp[3])" data-ref="_M/state_in">state_in</a>(<a class="local col5 ref" href="#240" title='b0' data-ref="5b0">b0</a>, <a class="local col1 ref" href="#1in_blk" title='in_blk' data-ref="1in_blk">in_blk</a>, <a class="local col6 ref" href="#6kp" title='kp' data-ref="6kp">kp</a>);</td></tr>
+<tr><th id="247">247</th><td></td></tr>
+<tr><th id="248">248</th><td><u>#<span data-ppcond="248">if</span> (<a class="macro" href="aesopt.h.html#366" title="2" data-ref="_M/ENC_UNROLL">ENC_UNROLL</a> == <a class="macro" href="aesopt.h.html#177" title="2" data-ref="_M/FULL">FULL</a>)</u></td></tr>
+<tr><th id="249">249</th><td></td></tr>
+<tr><th id="250">250</th><td>    <a class="local col6 ref" href="#6kp" title='kp' data-ref="6kp">kp</a> += (<a class="local col3 ref" href="#3cx" title='cx' data-ref="3cx">cx</a>-&gt;<a class="ref" href="aes.h.html#(anonymous)::n_rnd" title='(anonymous struct)::n_rnd' data-ref="(anonymous)::n_rnd">n_rnd</a> - <var>9</var>) * <a class="macro" href="aesopt.h.html#848" title="(16 &gt;&gt; 2)" data-ref="_M/nc">nc</a>;</td></tr>
+<tr><th id="251">251</th><td></td></tr>
+<tr><th id="252">252</th><td>    <i>/*lint -e{616} control flows into case/default */</i></td></tr>
+<tr><th id="253">253</th><td>    <b>switch</b>(<a class="local col3 ref" href="#3cx" title='cx' data-ref="3cx">cx</a>-&gt;<a class="ref" href="aes.h.html#(anonymous)::n_rnd" title='(anonymous struct)::n_rnd' data-ref="(anonymous)::n_rnd">n_rnd</a>)</td></tr>
+<tr><th id="254">254</th><td>    {</td></tr>
+<tr><th id="255">255</th><td>    <b>case</b> <var>14</var>:</td></tr>
+<tr><th id="256">256</th><td>        <a class="macro" href="#77" title="(b1[0] = (kp - 4 * (16 &gt;&gt; 2))[0] ^ ( t_fn[0][((aes_08t)((b0[((0+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b0[((1+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b0[((2+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b0[((3+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b1[1] = (kp - 4 * (16 &gt;&gt; 2))[1] ^ ( t_fn[0][((aes_08t)((b0[((0+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b0[((1+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b0[((2+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b0[((3+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b1[2] = (kp - 4 * (16 &gt;&gt; 2))[2] ^ ( t_fn[0][((aes_08t)((b0[((0+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b0[((1+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b0[((2+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b0[((3+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b1[3] = (kp - 4 * (16 &gt;&gt; 2))[3] ^ ( t_fn[0][((aes_08t)((b0[((0+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b0[((1+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b0[((2+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b0[((3+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))]))" data-ref="_M/round">round</a>(fwd_rnd,  <a class="local col4 ref" href="#240" title='b1' data-ref="4b1">b1</a>, <a class="local col5 ref" href="#240" title='b0' data-ref="5b0">b0</a>, <a class="local col6 ref" href="#6kp" title='kp' data-ref="6kp">kp</a> - <var>4</var> * <a class="macro" href="aesopt.h.html#848" title="(16 &gt;&gt; 2)" data-ref="_M/nc">nc</a>);</td></tr>
+<tr><th id="257">257</th><td>        <a class="macro" href="#77" title="(b0[0] = (kp - 3 * (16 &gt;&gt; 2))[0] ^ ( t_fn[0][((aes_08t)((b1[((0+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b1[((1+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b1[((2+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b1[((3+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b0[1] = (kp - 3 * (16 &gt;&gt; 2))[1] ^ ( t_fn[0][((aes_08t)((b1[((0+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b1[((1+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b1[((2+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b1[((3+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b0[2] = (kp - 3 * (16 &gt;&gt; 2))[2] ^ ( t_fn[0][((aes_08t)((b1[((0+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b1[((1+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b1[((2+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b1[((3+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b0[3] = (kp - 3 * (16 &gt;&gt; 2))[3] ^ ( t_fn[0][((aes_08t)((b1[((0+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b1[((1+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b1[((2+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b1[((3+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))]))" data-ref="_M/round">round</a>(fwd_rnd,  <a class="local col5 ref" href="#240" title='b0' data-ref="5b0">b0</a>, <a class="local col4 ref" href="#240" title='b1' data-ref="4b1">b1</a>, <a class="local col6 ref" href="#6kp" title='kp' data-ref="6kp">kp</a> - <var>3</var> * <a class="macro" href="aesopt.h.html#848" title="(16 &gt;&gt; 2)" data-ref="_M/nc">nc</a>);</td></tr>
+<tr><th id="258">258</th><td>    <b>case</b> <var>12</var>:</td></tr>
+<tr><th id="259">259</th><td>        <a class="macro" href="#77" title="(b1[0] = (kp - 2 * (16 &gt;&gt; 2))[0] ^ ( t_fn[0][((aes_08t)((b0[((0+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b0[((1+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b0[((2+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b0[((3+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b1[1] = (kp - 2 * (16 &gt;&gt; 2))[1] ^ ( t_fn[0][((aes_08t)((b0[((0+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b0[((1+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b0[((2+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b0[((3+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b1[2] = (kp - 2 * (16 &gt;&gt; 2))[2] ^ ( t_fn[0][((aes_08t)((b0[((0+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b0[((1+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b0[((2+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b0[((3+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b1[3] = (kp - 2 * (16 &gt;&gt; 2))[3] ^ ( t_fn[0][((aes_08t)((b0[((0+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b0[((1+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b0[((2+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b0[((3+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))]))" data-ref="_M/round">round</a>(fwd_rnd,  <a class="local col4 ref" href="#240" title='b1' data-ref="4b1">b1</a>, <a class="local col5 ref" href="#240" title='b0' data-ref="5b0">b0</a>, <a class="local col6 ref" href="#6kp" title='kp' data-ref="6kp">kp</a> - <var>2</var> * <a class="macro" href="aesopt.h.html#848" title="(16 &gt;&gt; 2)" data-ref="_M/nc">nc</a>);</td></tr>
+<tr><th id="260">260</th><td>        <a class="macro" href="#77" title="(b0[0] = (kp - (16 &gt;&gt; 2))[0] ^ ( t_fn[0][((aes_08t)((b1[((0+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b1[((1+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b1[((2+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b1[((3+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b0[1] = (kp - (16 &gt;&gt; 2))[1] ^ ( t_fn[0][((aes_08t)((b1[((0+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b1[((1+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b1[((2+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b1[((3+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b0[2] = (kp - (16 &gt;&gt; 2))[2] ^ ( t_fn[0][((aes_08t)((b1[((0+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b1[((1+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b1[((2+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b1[((3+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b0[3] = (kp - (16 &gt;&gt; 2))[3] ^ ( t_fn[0][((aes_08t)((b1[((0+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b1[((1+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b1[((2+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b1[((3+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))]))" data-ref="_M/round">round</a>(fwd_rnd,  <a class="local col5 ref" href="#240" title='b0' data-ref="5b0">b0</a>, <a class="local col4 ref" href="#240" title='b1' data-ref="4b1">b1</a>, <a class="local col6 ref" href="#6kp" title='kp' data-ref="6kp">kp</a> -     <a class="macro" href="aesopt.h.html#848" title="(16 &gt;&gt; 2)" data-ref="_M/nc">nc</a>);</td></tr>
+<tr><th id="261">261</th><td>    <b>case</b> <var>10</var>:</td></tr>
+<tr><th id="262">262</th><td>        <a class="macro" href="#77" title="(b1[0] = (kp)[0] ^ ( t_fn[0][((aes_08t)((b0[((0+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b0[((1+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b0[((2+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b0[((3+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b1[1] = (kp)[1] ^ ( t_fn[0][((aes_08t)((b0[((0+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b0[((1+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b0[((2+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b0[((3+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b1[2] = (kp)[2] ^ ( t_fn[0][((aes_08t)((b0[((0+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b0[((1+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b0[((2+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b0[((3+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b1[3] = (kp)[3] ^ ( t_fn[0][((aes_08t)((b0[((0+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b0[((1+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b0[((2+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b0[((3+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))]))" data-ref="_M/round">round</a>(fwd_rnd,  <a class="local col4 ref" href="#240" title='b1' data-ref="4b1">b1</a>, <a class="local col5 ref" href="#240" title='b0' data-ref="5b0">b0</a>, <a class="local col6 ref" href="#6kp" title='kp' data-ref="6kp">kp</a>         );</td></tr>
+<tr><th id="263">263</th><td>        <a class="macro" href="#77" title="(b0[0] = (kp + (16 &gt;&gt; 2))[0] ^ ( t_fn[0][((aes_08t)((b1[((0+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b1[((1+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b1[((2+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b1[((3+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b0[1] = (kp + (16 &gt;&gt; 2))[1] ^ ( t_fn[0][((aes_08t)((b1[((0+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b1[((1+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b1[((2+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b1[((3+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b0[2] = (kp + (16 &gt;&gt; 2))[2] ^ ( t_fn[0][((aes_08t)((b1[((0+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b1[((1+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b1[((2+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b1[((3+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b0[3] = (kp + (16 &gt;&gt; 2))[3] ^ ( t_fn[0][((aes_08t)((b1[((0+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b1[((1+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b1[((2+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b1[((3+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))]))" data-ref="_M/round">round</a>(fwd_rnd,  <a class="local col5 ref" href="#240" title='b0' data-ref="5b0">b0</a>, <a class="local col4 ref" href="#240" title='b1' data-ref="4b1">b1</a>, <a class="local col6 ref" href="#6kp" title='kp' data-ref="6kp">kp</a> +     <a class="macro" href="aesopt.h.html#848" title="(16 &gt;&gt; 2)" data-ref="_M/nc">nc</a>);</td></tr>
+<tr><th id="264">264</th><td>        <a class="macro" href="#77" title="(b1[0] = (kp + 2 * (16 &gt;&gt; 2))[0] ^ ( t_fn[0][((aes_08t)((b0[((0+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b0[((1+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b0[((2+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b0[((3+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b1[1] = (kp + 2 * (16 &gt;&gt; 2))[1] ^ ( t_fn[0][((aes_08t)((b0[((0+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b0[((1+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b0[((2+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b0[((3+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b1[2] = (kp + 2 * (16 &gt;&gt; 2))[2] ^ ( t_fn[0][((aes_08t)((b0[((0+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b0[((1+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b0[((2+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b0[((3+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b1[3] = (kp + 2 * (16 &gt;&gt; 2))[3] ^ ( t_fn[0][((aes_08t)((b0[((0+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b0[((1+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b0[((2+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b0[((3+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))]))" data-ref="_M/round">round</a>(fwd_rnd,  <a class="local col4 ref" href="#240" title='b1' data-ref="4b1">b1</a>, <a class="local col5 ref" href="#240" title='b0' data-ref="5b0">b0</a>, <a class="local col6 ref" href="#6kp" title='kp' data-ref="6kp">kp</a> + <var>2</var> * <a class="macro" href="aesopt.h.html#848" title="(16 &gt;&gt; 2)" data-ref="_M/nc">nc</a>);</td></tr>
+<tr><th id="265">265</th><td>        <a class="macro" href="#77" title="(b0[0] = (kp + 3 * (16 &gt;&gt; 2))[0] ^ ( t_fn[0][((aes_08t)((b1[((0+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b1[((1+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b1[((2+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b1[((3+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b0[1] = (kp + 3 * (16 &gt;&gt; 2))[1] ^ ( t_fn[0][((aes_08t)((b1[((0+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b1[((1+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b1[((2+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b1[((3+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b0[2] = (kp + 3 * (16 &gt;&gt; 2))[2] ^ ( t_fn[0][((aes_08t)((b1[((0+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b1[((1+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b1[((2+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b1[((3+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b0[3] = (kp + 3 * (16 &gt;&gt; 2))[3] ^ ( t_fn[0][((aes_08t)((b1[((0+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b1[((1+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b1[((2+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b1[((3+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))]))" data-ref="_M/round">round</a>(fwd_rnd,  <a class="local col5 ref" href="#240" title='b0' data-ref="5b0">b0</a>, <a class="local col4 ref" href="#240" title='b1' data-ref="4b1">b1</a>, <a class="local col6 ref" href="#6kp" title='kp' data-ref="6kp">kp</a> + <var>3</var> * <a class="macro" href="aesopt.h.html#848" title="(16 &gt;&gt; 2)" data-ref="_M/nc">nc</a>);</td></tr>
+<tr><th id="266">266</th><td>        <a class="macro" href="#77" title="(b1[0] = (kp + 4 * (16 &gt;&gt; 2))[0] ^ ( t_fn[0][((aes_08t)((b0[((0+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b0[((1+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b0[((2+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b0[((3+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b1[1] = (kp + 4 * (16 &gt;&gt; 2))[1] ^ ( t_fn[0][((aes_08t)((b0[((0+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b0[((1+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b0[((2+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b0[((3+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b1[2] = (kp + 4 * (16 &gt;&gt; 2))[2] ^ ( t_fn[0][((aes_08t)((b0[((0+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b0[((1+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b0[((2+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b0[((3+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b1[3] = (kp + 4 * (16 &gt;&gt; 2))[3] ^ ( t_fn[0][((aes_08t)((b0[((0+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b0[((1+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b0[((2+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b0[((3+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))]))" data-ref="_M/round">round</a>(fwd_rnd,  <a class="local col4 ref" href="#240" title='b1' data-ref="4b1">b1</a>, <a class="local col5 ref" href="#240" title='b0' data-ref="5b0">b0</a>, <a class="local col6 ref" href="#6kp" title='kp' data-ref="6kp">kp</a> + <var>4</var> * <a class="macro" href="aesopt.h.html#848" title="(16 &gt;&gt; 2)" data-ref="_M/nc">nc</a>);</td></tr>
+<tr><th id="267">267</th><td>        <a class="macro" href="#77" title="(b0[0] = (kp + 5 * (16 &gt;&gt; 2))[0] ^ ( t_fn[0][((aes_08t)((b1[((0+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b1[((1+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b1[((2+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b1[((3+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b0[1] = (kp + 5 * (16 &gt;&gt; 2))[1] ^ ( t_fn[0][((aes_08t)((b1[((0+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b1[((1+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b1[((2+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b1[((3+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b0[2] = (kp + 5 * (16 &gt;&gt; 2))[2] ^ ( t_fn[0][((aes_08t)((b1[((0+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b1[((1+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b1[((2+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b1[((3+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b0[3] = (kp + 5 * (16 &gt;&gt; 2))[3] ^ ( t_fn[0][((aes_08t)((b1[((0+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b1[((1+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b1[((2+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b1[((3+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))]))" data-ref="_M/round">round</a>(fwd_rnd,  <a class="local col5 ref" href="#240" title='b0' data-ref="5b0">b0</a>, <a class="local col4 ref" href="#240" title='b1' data-ref="4b1">b1</a>, <a class="local col6 ref" href="#6kp" title='kp' data-ref="6kp">kp</a> + <var>5</var> * <a class="macro" href="aesopt.h.html#848" title="(16 &gt;&gt; 2)" data-ref="_M/nc">nc</a>);</td></tr>
+<tr><th id="268">268</th><td>        <a class="macro" href="#77" title="(b1[0] = (kp + 6 * (16 &gt;&gt; 2))[0] ^ ( t_fn[0][((aes_08t)((b0[((0+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b0[((1+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b0[((2+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b0[((3+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b1[1] = (kp + 6 * (16 &gt;&gt; 2))[1] ^ ( t_fn[0][((aes_08t)((b0[((0+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b0[((1+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b0[((2+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b0[((3+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b1[2] = (kp + 6 * (16 &gt;&gt; 2))[2] ^ ( t_fn[0][((aes_08t)((b0[((0+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b0[((1+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b0[((2+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b0[((3+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b1[3] = (kp + 6 * (16 &gt;&gt; 2))[3] ^ ( t_fn[0][((aes_08t)((b0[((0+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b0[((1+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b0[((2+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b0[((3+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))]))" data-ref="_M/round">round</a>(fwd_rnd,  <a class="local col4 ref" href="#240" title='b1' data-ref="4b1">b1</a>, <a class="local col5 ref" href="#240" title='b0' data-ref="5b0">b0</a>, <a class="local col6 ref" href="#6kp" title='kp' data-ref="6kp">kp</a> + <var>6</var> * <a class="macro" href="aesopt.h.html#848" title="(16 &gt;&gt; 2)" data-ref="_M/nc">nc</a>);</td></tr>
+<tr><th id="269">269</th><td>        <a class="macro" href="#77" title="(b0[0] = (kp + 7 * (16 &gt;&gt; 2))[0] ^ ( t_fn[0][((aes_08t)((b1[((0+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b1[((1+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b1[((2+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b1[((3+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b0[1] = (kp + 7 * (16 &gt;&gt; 2))[1] ^ ( t_fn[0][((aes_08t)((b1[((0+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b1[((1+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b1[((2+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b1[((3+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b0[2] = (kp + 7 * (16 &gt;&gt; 2))[2] ^ ( t_fn[0][((aes_08t)((b1[((0+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b1[((1+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b1[((2+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b1[((3+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b0[3] = (kp + 7 * (16 &gt;&gt; 2))[3] ^ ( t_fn[0][((aes_08t)((b1[((0+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b1[((1+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b1[((2+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b1[((3+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))]))" data-ref="_M/round">round</a>(fwd_rnd,  <a class="local col5 ref" href="#240" title='b0' data-ref="5b0">b0</a>, <a class="local col4 ref" href="#240" title='b1' data-ref="4b1">b1</a>, <a class="local col6 ref" href="#6kp" title='kp' data-ref="6kp">kp</a> + <var>7</var> * <a class="macro" href="aesopt.h.html#848" title="(16 &gt;&gt; 2)" data-ref="_M/nc">nc</a>);</td></tr>
+<tr><th id="270">270</th><td>        <a class="macro" href="#77" title="(b1[0] = (kp + 8 * (16 &gt;&gt; 2))[0] ^ ( t_fn[0][((aes_08t)((b0[((0+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b0[((1+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b0[((2+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b0[((3+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b1[1] = (kp + 8 * (16 &gt;&gt; 2))[1] ^ ( t_fn[0][((aes_08t)((b0[((0+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b0[((1+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b0[((2+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b0[((3+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b1[2] = (kp + 8 * (16 &gt;&gt; 2))[2] ^ ( t_fn[0][((aes_08t)((b0[((0+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b0[((1+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b0[((2+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b0[((3+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b1[3] = (kp + 8 * (16 &gt;&gt; 2))[3] ^ ( t_fn[0][((aes_08t)((b0[((0+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fn[1][((aes_08t)((b0[((1+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fn[2][((aes_08t)((b0[((2+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fn[3][((aes_08t)((b0[((3+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))]))" data-ref="_M/round">round</a>(fwd_rnd,  <a class="local col4 ref" href="#240" title='b1' data-ref="4b1">b1</a>, <a class="local col5 ref" href="#240" title='b0' data-ref="5b0">b0</a>, <a class="local col6 ref" href="#6kp" title='kp' data-ref="6kp">kp</a> + <var>8</var> * <a class="macro" href="aesopt.h.html#848" title="(16 &gt;&gt; 2)" data-ref="_M/nc">nc</a>);</td></tr>
+<tr><th id="271">271</th><td>        <a class="macro" href="#77" title="(b0[0] = (kp + 9 * (16 &gt;&gt; 2))[0] ^ ( t_fl[0][((aes_08t)((b1[((0+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fl[1][((aes_08t)((b1[((1+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fl[2][((aes_08t)((b1[((2+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fl[3][((aes_08t)((b1[((3+0)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b0[1] = (kp + 9 * (16 &gt;&gt; 2))[1] ^ ( t_fl[0][((aes_08t)((b1[((0+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fl[1][((aes_08t)((b1[((1+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fl[2][((aes_08t)((b1[((2+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fl[3][((aes_08t)((b1[((3+1)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b0[2] = (kp + 9 * (16 &gt;&gt; 2))[2] ^ ( t_fl[0][((aes_08t)((b1[((0+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fl[1][((aes_08t)((b1[((1+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fl[2][((aes_08t)((b1[((2+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fl[3][((aes_08t)((b1[((3+2)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))])); (b0[3] = (kp + 9 * (16 &gt;&gt; 2))[3] ^ ( t_fl[0][((aes_08t)((b1[((0+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((0)))))] ^ t_fl[1][((aes_08t)((b1[((1+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((1)))))] ^ t_fl[2][((aes_08t)((b1[((2+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((2)))))] ^ t_fl[3][((aes_08t)((b1[((3+3)%(16 &gt;&gt; 2))]) &gt;&gt; (8 * ((3)))))]))" data-ref="_M/round">round</a>(fwd_lrnd, <a class="local col5 ref" href="#240" title='b0' data-ref="5b0">b0</a>, <a class="local col4 ref" href="#240" title='b1' data-ref="4b1">b1</a>, <a class="local col6 ref" href="#6kp" title='kp' data-ref="6kp">kp</a> + <var>9</var> * <a class="macro" href="aesopt.h.html#848" title="(16 &gt;&gt; 2)" data-ref="_M/nc">nc</a>);</td></tr>
+<tr><th id="272">272</th><td>    <b>default</b>:</td></tr>
+<tr><th id="273">273</th><td>        ;</td></tr>
+<tr><th id="274">274</th><td>    }</td></tr>
+<tr><th id="275">275</th><td><u>#<span data-ppcond="248">else</span></u></td></tr>
+<tr><th id="276">276</th><td></td></tr>
+<tr><th id="277">277</th><td><u>#if (ENC_UNROLL == PARTIAL)</u></td></tr>
+<tr><th id="278">278</th><td>    {   aes_32t    rnd;</td></tr>
+<tr><th id="279">279</th><td>        <b>for</b>(rnd = <var>0</var>; rnd &lt; (cx-&gt;n_rnd &gt;&gt; <var>1</var>) - <var>1</var>; ++rnd)</td></tr>
+<tr><th id="280">280</th><td>        {</td></tr>
+<tr><th id="281">281</th><td>            kp += nc;</td></tr>
+<tr><th id="282">282</th><td>            round(fwd_rnd, b1, b0, kp);</td></tr>
+<tr><th id="283">283</th><td>            kp += nc;</td></tr>
+<tr><th id="284">284</th><td>            round(fwd_rnd, b0, b1, kp);</td></tr>
+<tr><th id="285">285</th><td>        }</td></tr>
+<tr><th id="286">286</th><td>        kp += nc;</td></tr>
+<tr><th id="287">287</th><td>        round(fwd_rnd,  b1, b0, kp);</td></tr>
+<tr><th id="288">288</th><td><u>#else</u></td></tr>
+<tr><th id="289">289</th><td>    {   aes_32t    rnd, *p0 = b0, *p1 = b1, *pt;</td></tr>
+<tr><th id="290">290</th><td>        <b>for</b>(rnd = <var>0</var>; rnd &lt; cx-&gt;n_rnd - <var>1</var>; ++rnd)</td></tr>
+<tr><th id="291">291</th><td>        {</td></tr>
+<tr><th id="292">292</th><td>            kp += nc;</td></tr>
+<tr><th id="293">293</th><td>            round(fwd_rnd, p1, p0, kp);</td></tr>
+<tr><th id="294">294</th><td>            pt = p0, p0 = p1, p1 = pt;</td></tr>
+<tr><th id="295">295</th><td>        }</td></tr>
+<tr><th id="296">296</th><td><u>#endif</u></td></tr>
+<tr><th id="297">297</th><td>        kp += nc;</td></tr>
+<tr><th id="298">298</th><td>        round(fwd_lrnd, b0, b1, kp);</td></tr>
+<tr><th id="299">299</th><td>    }</td></tr>
+<tr><th id="300">300</th><td><u>#<span data-ppcond="248">endif</span></u></td></tr>
+<tr><th id="301">301</th><td></td></tr>
+<tr><th id="302">302</th><td>    <a class="macro" href="#76" title="{ (out_blk + 4 * 0)[0] = ((aes_08t)((b0[0]) &gt;&gt; (8 * (0)))); (out_blk + 4 * 0)[1] = ((aes_08t)((b0[0]) &gt;&gt; (8 * (1)))); (out_blk + 4 * 0)[2] = ((aes_08t)((b0[0]) &gt;&gt; (8 * (2)))); (out_blk + 4 * 0)[3] = ((aes_08t)((b0[0]) &gt;&gt; (8 * (3)))); }; { (out_blk + 4 * 1)[0] = ((aes_08t)((b0[1]) &gt;&gt; (8 * (0)))); (out_blk + 4 * 1)[1] = ((aes_08t)((b0[1]) &gt;&gt; (8 * (1)))); (out_blk + 4 * 1)[2] = ((aes_08t)((b0[1]) &gt;&gt; (8 * (2)))); (out_blk + 4 * 1)[3] = ((aes_08t)((b0[1]) &gt;&gt; (8 * (3)))); }; { (out_blk + 4 * 2)[0] = ((aes_08t)((b0[2]) &gt;&gt; (8 * (0)))); (out_blk + 4 * 2)[1] = ((aes_08t)((b0[2]) &gt;&gt; (8 * (1)))); (out_blk + 4 * 2)[2] = ((aes_08t)((b0[2]) &gt;&gt; (8 * (2)))); (out_blk + 4 * 2)[3] = ((aes_08t)((b0[2]) &gt;&gt; (8 * (3)))); }; { (out_blk + 4 * 3)[0] = ((aes_08t)((b0[3]) &gt;&gt; (8 * (0)))); (out_blk + 4 * 3)[1] = ((aes_08t)((b0[3]) &gt;&gt; (8 * (1)))); (out_blk + 4 * 3)[2] = ((aes_08t)((b0[3]) &gt;&gt; (8 * (2)))); (out_blk + 4 * 3)[3] = ((aes_08t)((b0[3]) &gt;&gt; (8 * (3)))); }" data-ref="_M/state_out">state_out</a>(<a class="local col2 ref" href="#2out_blk" title='out_blk' data-ref="2out_blk">out_blk</a>, <a class="local col5 ref" href="#240" title='b0' data-ref="5b0">b0</a>);</td></tr>
+<tr><th id="303">303</th><td>    <b>return</b> <a class="macro" href="aes.h.html#82" title="1" data-ref="_M/aes_good">aes_good</a>;</td></tr>
+<tr><th id="304">304</th><td>}</td></tr>
+<tr><th id="305">305</th><td></td></tr>
+<tr><th id="306">306</th><td><u>#<span data-ppcond="171">endif</span></u></td></tr>
+<tr><th id="307">307</th><td></td></tr>
+<tr><th id="308">308</th><td><u>#<span data-ppcond="308">if</span> defined(<span class="macro" data-ref="_M/DECRYPTION">DECRYPTION</span>) &amp;&amp; !defined(<span class="macro" data-ref="_M/AES_ASM">AES_ASM</span>)</u></td></tr>
+<tr><th id="309">309</th><td></td></tr>
+<tr><th id="310">310</th><td><i>/* Given the column (c) of the output state variable, the following</i></td></tr>
+<tr><th id="311">311</th><td><i>   macros give the input state variables which are needed in its</i></td></tr>
+<tr><th id="312">312</th><td><i>   computation for each row (r) of the state. All the alternative</i></td></tr>
+<tr><th id="313">313</th><td><i>   macros give the same end values but expand into different ways</i></td></tr>
+<tr><th id="314">314</th><td><i>   of calculating these values.  In particular the complex macro</i></td></tr>
+<tr><th id="315">315</th><td><i>   used for dynamically variable block sizes is designed to expand</i></td></tr>
+<tr><th id="316">316</th><td><i>   to a compile time constant whenever possible but will expand to</i></td></tr>
+<tr><th id="317">317</th><td><i>   conditional clauses on some branches (I am grateful to Frank</i></td></tr>
+<tr><th id="318">318</th><td><i>   Yellin for this construction)</i></td></tr>
+<tr><th id="319">319</th><td><i>*/</i></td></tr>
+<tr><th id="320">320</th><td></td></tr>
+<tr><th id="321">321</th><td><u>#if defined(BLOCK_SIZE)</u></td></tr>
+<tr><th id="322">322</th><td><u>#if BLOCK_SIZE == 16</u></td></tr>
+<tr><th id="323">323</th><td><u>#define inv_var(x,r,c) s(x,((4+c-r)%nc))</u></td></tr>
+<tr><th id="324">324</th><td><u>#else</u></td></tr>
+<tr><th id="325">325</th><td><u>#define inv_var(x,r,c) s(x,(840+c-r-(((r&gt;1)&amp;&amp;(nc&gt;9-r))?1:0))%nc)</u></td></tr>
+<tr><th id="326">326</th><td><u>#endif</u></td></tr>
+<tr><th id="327">327</th><td><u>#else</u></td></tr>
+<tr><th id="328">328</th><td><u>#define inv_var(x,r,c)\</u></td></tr>
+<tr><th id="329">329</th><td><u> ( r == 0 ?    s(x,c) \</u></td></tr>
+<tr><th id="330">330</th><td><u> : r == 1 ?           \</u></td></tr>
+<tr><th id="331">331</th><td><u>    ( c == 0 ? nc == 4 ? s(x,3) : nc == 8 ? s(x,7) : s(x,5) \</u></td></tr>
+<tr><th id="332">332</th><td><u>    : c == 1 ? s(x,0) \</u></td></tr>
+<tr><th id="333">333</th><td><u>    : c == 2 ? s(x,1) \</u></td></tr>
+<tr><th id="334">334</th><td><u>    : c == 3 ? s(x,2) \</u></td></tr>
+<tr><th id="335">335</th><td><u>    : c == 4 ? s(x,3) \</u></td></tr>
+<tr><th id="336">336</th><td><u>    : c == 5 ? s(x,4) \</u></td></tr>
+<tr><th id="337">337</th><td><u>    : c == 6 ? s(x,5) : s(x,6)) \</u></td></tr>
+<tr><th id="338">338</th><td><u> : r == 2 ? \</u></td></tr>
+<tr><th id="339">339</th><td><u>    ( c == 0 ? nc == 4 ? s(x,2) : nc == 8 ? s(x,5) : s(x,4) \</u></td></tr>
+<tr><th id="340">340</th><td><u>    : c == 1 ? nc == 4 ? s(x,3) : nc == 8 ? s(x,6) : s(x,5) \</u></td></tr>
+<tr><th id="341">341</th><td><u>    : c == 2 ? nc == 8 ? s(x,7) : s(x,0) \</u></td></tr>
+<tr><th id="342">342</th><td><u>    : c == 3 ? nc == 8 ? s(x,0) : s(x,1) \</u></td></tr>
+<tr><th id="343">343</th><td><u>    : c == 4 ? nc == 8 ? s(x,1) : s(x,2) \</u></td></tr>
+<tr><th id="344">344</th><td><u>    : c == 5 ? nc == 8 ? s(x,2) : s(x,3) \</u></td></tr>
+<tr><th id="345">345</th><td><u>    : c == 6 ? s(x,3) : s(x,4)) \</u></td></tr>
+<tr><th id="346">346</th><td><u> : \</u></td></tr>
+<tr><th id="347">347</th><td><u>    ( c == 0 ? nc == 4 ? s(x,1) : nc == 8 ? s(x,4) : s(x,3) \</u></td></tr>
+<tr><th id="348">348</th><td><u>    : c == 1 ? nc == 4 ? s(x,2) : nc == 8 ? s(x,5) : s(x,4) \</u></td></tr>
+<tr><th id="349">349</th><td><u>    : c == 2 ? nc == 4 ? s(x,3) : nc == 8 ? s(x,6) : s(x,5) \</u></td></tr>
+<tr><th id="350">350</th><td><u>    : c == 3 ? nc == 8 ? s(x,7) : s(x,0) \</u></td></tr>
+<tr><th id="351">351</th><td><u>    : c == 4 ? nc == 8 ? s(x,0) : s(x,1) \</u></td></tr>
+<tr><th id="352">352</th><td><u>    : c == 5 ? nc == 8 ? s(x,1) : s(x,2) \</u></td></tr>
+<tr><th id="353">353</th><td><u>    : c == 6 ? s(x,2) : s(x,3)))</u></td></tr>
+<tr><th id="354">354</th><td><u>#endif</u></td></tr>
+<tr><th id="355">355</th><td></td></tr>
+<tr><th id="356">356</th><td><u>#if defined(IT4_SET)</u></td></tr>
+<tr><th id="357">357</th><td><u>#undef  dec_imvars</u></td></tr>
+<tr><th id="358">358</th><td><u>#define dec_imvars</u></td></tr>
+<tr><th id="359">359</th><td><u>#define inv_rnd(y,x,k,c)    (s(y,c) = (k)[c] ^ four_tables(x,t_use(i,n),inv_var,rf1,c))</u></td></tr>
+<tr><th id="360">360</th><td><u>#elif defined(IT1_SET)</u></td></tr>
+<tr><th id="361">361</th><td><u>#undef  dec_imvars</u></td></tr>
+<tr><th id="362">362</th><td><u>#define dec_imvars</u></td></tr>
+<tr><th id="363">363</th><td><u>#define inv_rnd(y,x,k,c)    (s(y,c) = (k)[c] ^ one_table(x,upr,t_use(i,n),inv_var,rf1,c))</u></td></tr>
+<tr><th id="364">364</th><td><u>#else</u></td></tr>
+<tr><th id="365">365</th><td><u>#define inv_rnd(y,x,k,c)    (s(y,c) = inv_mcol(no_table(x,t_use(i,box),inv_var,rf1,c) ^ (k)[c]))</u></td></tr>
+<tr><th id="366">366</th><td><u>#endif</u></td></tr>
+<tr><th id="367">367</th><td></td></tr>
+<tr><th id="368">368</th><td><u>#if defined(IL4_SET)</u></td></tr>
+<tr><th id="369">369</th><td><u>#define inv_lrnd(y,x,k,c)   (s(y,c) = (k)[c] ^ four_tables(x,t_use(i,l),inv_var,rf1,c))</u></td></tr>
+<tr><th id="370">370</th><td><u>#elif defined(IL1_SET)</u></td></tr>
+<tr><th id="371">371</th><td><u>#define inv_lrnd(y,x,k,c)   (s(y,c) = (k)[c] ^ one_table(x,ups,t_use(i,l),inv_var,rf1,c))</u></td></tr>
+<tr><th id="372">372</th><td><u>#else</u></td></tr>
+<tr><th id="373">373</th><td><u>#define inv_lrnd(y,x,k,c)   (s(y,c) = no_table(x,t_use(i,box),inv_var,rf1,c) ^ (k)[c])</u></td></tr>
+<tr><th id="374">374</th><td><u>#endif</u></td></tr>
+<tr><th id="375">375</th><td></td></tr>
+<tr><th id="376">376</th><td>aes_rval aes_decrypt_block(<em>const</em> <em>unsigned</em> <em>char</em> in_blk[], <em>unsigned</em> <em>char</em> out_blk[], <em>const</em> aes_ctx cx[<var>1</var>])</td></tr>
+<tr><th id="377">377</th><td>{   aes_32t        locals(b0, b1);</td></tr>
+<tr><th id="378">378</th><td>    <em>const</em> aes_32t  *kp = cx-&gt;k_sch + nc * cx-&gt;n_rnd;</td></tr>
+<tr><th id="379">379</th><td>    dec_imvars  <i>/* declare variables for inv_mcol() if needed */</i></td></tr>
+<tr><th id="380">380</th><td></td></tr>
+<tr><th id="381">381</th><td>    <b>if</b>(!(cx-&gt;n_blk &amp; <var>2</var>)) <b>return</b> aes_bad;</td></tr>
+<tr><th id="382">382</th><td></td></tr>
+<tr><th id="383">383</th><td>    state_in(b0, in_blk, kp);</td></tr>
+<tr><th id="384">384</th><td></td></tr>
+<tr><th id="385">385</th><td><u>#if (DEC_UNROLL == FULL)</u></td></tr>
+<tr><th id="386">386</th><td></td></tr>
+<tr><th id="387">387</th><td>    kp = cx-&gt;k_sch + <var>9</var> * nc;</td></tr>
+<tr><th id="388">388</th><td></td></tr>
+<tr><th id="389">389</th><td>    <i>/*lint -e{616} control flows into case/default */</i></td></tr>
+<tr><th id="390">390</th><td>    <b>switch</b>(cx-&gt;n_rnd)</td></tr>
+<tr><th id="391">391</th><td>    {</td></tr>
+<tr><th id="392">392</th><td>    <b>case</b> <var>14</var>:</td></tr>
+<tr><th id="393">393</th><td>        round(inv_rnd,  b1, b0, kp + <var>4</var> * nc);</td></tr>
+<tr><th id="394">394</th><td>        round(inv_rnd,  b0, b1, kp + <var>3</var> * nc);</td></tr>
+<tr><th id="395">395</th><td>    <b>case</b> <var>12</var>:</td></tr>
+<tr><th id="396">396</th><td>        round(inv_rnd,  b1, b0, kp + <var>2</var> * nc);</td></tr>
+<tr><th id="397">397</th><td>        round(inv_rnd,  b0, b1, kp + nc    );</td></tr>
+<tr><th id="398">398</th><td>    <b>case</b> <var>10</var>:</td></tr>
+<tr><th id="399">399</th><td>        round(inv_rnd,  b1, b0, kp         );</td></tr>
+<tr><th id="400">400</th><td>        round(inv_rnd,  b0, b1, kp -     nc);</td></tr>
+<tr><th id="401">401</th><td>        round(inv_rnd,  b1, b0, kp - <var>2</var> * nc);</td></tr>
+<tr><th id="402">402</th><td>        round(inv_rnd,  b0, b1, kp - <var>3</var> * nc);</td></tr>
+<tr><th id="403">403</th><td>        round(inv_rnd,  b1, b0, kp - <var>4</var> * nc);</td></tr>
+<tr><th id="404">404</th><td>        round(inv_rnd,  b0, b1, kp - <var>5</var> * nc);</td></tr>
+<tr><th id="405">405</th><td>        round(inv_rnd,  b1, b0, kp - <var>6</var> * nc);</td></tr>
+<tr><th id="406">406</th><td>        round(inv_rnd,  b0, b1, kp - <var>7</var> * nc);</td></tr>
+<tr><th id="407">407</th><td>        round(inv_rnd,  b1, b0, kp - <var>8</var> * nc);</td></tr>
+<tr><th id="408">408</th><td>        round(inv_lrnd, b0, b1, kp - <var>9</var> * nc);</td></tr>
+<tr><th id="409">409</th><td>    <b>default</b>:</td></tr>
+<tr><th id="410">410</th><td>        ;</td></tr>
+<tr><th id="411">411</th><td>    }</td></tr>
+<tr><th id="412">412</th><td><u>#else</u></td></tr>
+<tr><th id="413">413</th><td></td></tr>
+<tr><th id="414">414</th><td><u>#if (DEC_UNROLL == PARTIAL)</u></td></tr>
+<tr><th id="415">415</th><td>    {   aes_32t    rnd;</td></tr>
+<tr><th id="416">416</th><td>        <b>for</b>(rnd = <var>0</var>; rnd &lt; (cx-&gt;n_rnd &gt;&gt; <var>1</var>) - <var>1</var>; ++rnd)</td></tr>
+<tr><th id="417">417</th><td>        {</td></tr>
+<tr><th id="418">418</th><td>            kp -= nc;</td></tr>
+<tr><th id="419">419</th><td>            round(inv_rnd, b1, b0, kp);</td></tr>
+<tr><th id="420">420</th><td>            kp -= nc;</td></tr>
+<tr><th id="421">421</th><td>            round(inv_rnd, b0, b1, kp);</td></tr>
+<tr><th id="422">422</th><td>        }</td></tr>
+<tr><th id="423">423</th><td>        kp -= nc;</td></tr>
+<tr><th id="424">424</th><td>        round(inv_rnd, b1, b0, kp);</td></tr>
+<tr><th id="425">425</th><td><u>#else</u></td></tr>
+<tr><th id="426">426</th><td>    {   aes_32t    rnd, *p0 = b0, *p1 = b1, *pt;</td></tr>
+<tr><th id="427">427</th><td>        <b>for</b>(rnd = <var>0</var>; rnd &lt; cx-&gt;n_rnd - <var>1</var>; ++rnd)</td></tr>
+<tr><th id="428">428</th><td>        {</td></tr>
+<tr><th id="429">429</th><td>            kp -= nc;</td></tr>
+<tr><th id="430">430</th><td>            round(inv_rnd, p1, p0, kp);</td></tr>
+<tr><th id="431">431</th><td>            pt = p0, p0 = p1, p1 = pt;</td></tr>
+<tr><th id="432">432</th><td>        }</td></tr>
+<tr><th id="433">433</th><td><u>#endif</u></td></tr>
+<tr><th id="434">434</th><td>        kp -= nc;</td></tr>
+<tr><th id="435">435</th><td>        round(inv_lrnd, b0, b1, kp);</td></tr>
+<tr><th id="436">436</th><td>    }</td></tr>
+<tr><th id="437">437</th><td><u>#endif</u></td></tr>
+<tr><th id="438">438</th><td></td></tr>
+<tr><th id="439">439</th><td>    state_out(out_blk, b0);</td></tr>
+<tr><th id="440">440</th><td>    <b>return</b> aes_good;</td></tr>
+<tr><th id="441">441</th><td>}</td></tr>
+<tr><th id="442">442</th><td></td></tr>
+<tr><th id="443">443</th><td><u>#<span data-ppcond="308">endif</span></u></td></tr>
+<tr><th id="444">444</th><td></td></tr>
+<tr><th id="445">445</th><td><u>#<span data-ppcond="445">if</span> defined(<span class="macro" data-ref="_M/__cplusplus">__cplusplus</span>)</u></td></tr>
+<tr><th id="446">446</th><td>}</td></tr>
+<tr><th id="447">447</th><td><u>#<span data-ppcond="445">endif</span></u></td></tr>
+<tr><th id="448">448</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

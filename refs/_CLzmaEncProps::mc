@@ -1,0 +1,8 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.h' l='29' type='UInt32'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='48' u='w' c='LzmaEncProps_Init'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='75' u='r' c='LzmaEncProps_Normalize'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='76' u='w' c='LzmaEncProps_Normalize'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='402' u='r' c='LzmaEnc_SetProps'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='428' u='r' c='LzmaEnc_SetProps'/>
+<offset>288</offset>
+<doc f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.h' l='29'>/* 1 &lt;= mc &lt;= (1 &lt;&lt; 30), default = 32 */</doc>

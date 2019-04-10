@@ -1,0 +1,13 @@
+<def f='codebrowser/nest/encryption/Decoder.h' l='16' ll='32'/>
+<size>8</size>
+<fun r='_ZN4nest7DecoderD1Ev'/>
+<fun r='_ZN4nest7Decoder17PreprocessDecryptEPKcPKv'/>
+<fun r='_ZN4nest7Decoder13DecryptBufferEPvm'/>
+<fun r='_ZN4nest7Decoder18PostprocessDecryptEPKv'/>
+<fun r='_ZN4nest7Decoder9VerifyNowEPKv'/>
+<fun r='_ZN4nest7Decoder12OnPreprocessEPKcPKv'/>
+<fun r='_ZN4nest7Decoder9OnDecryptEPvm'/>
+<fun r='_ZN4nest7Decoder13OnPostprocessEPKv'/>
+<fun r='_ZN4nest7Decoder8OnVerifyEPKv'/>
+<ovr f='codebrowser/nest/encryption/AESDecoder.h' l='17' c='nest::AESDecoder'/>
+<ovr f='codebrowser/nest/encryption/ZipDecoder.h' l='17' c='nest::ZipDecoder'/>

@@ -1,0 +1,6 @@
+<dec f='codebrowser/nest/define.h' l='34' type='4'/>
+<use f='codebrowser/EventHandler.cpp' l='161' c='_ZN12EventHandler12OnFileFinishEmi'/>
+<use f='codebrowser/EventHandler.cpp' l='190' c='_ZN12EventHandler7OnErrorEmi'/>
+<use f='codebrowser/EventHandler.cpp' l='269' u='r' c='_ZN12EventHandler19OnQueryOutputStreamEmPPN4nest12OutputStreamEPKc'/>
+<use f='codebrowser/UnEgg.cpp' l='90' c='_Z10PrintErrori'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='580' u='r' c='_ZN4nest9EggFormat19ExtractSolidArchiveEv'/>

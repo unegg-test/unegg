@@ -1,0 +1,13 @@
+<def f='include/c++/7/bits/stl_set.h' l='764' ll='766' type='iterator std::set::find(const key_type &amp; __x)'/>
+<use f='codebrowser/CommandLine.cpp' l='43' u='c' c='_ZN11CommandLine13CommandExistsEPKc'/>
+<doc f='include/c++/7/bits/stl_set.h' l='753'>/**
+       *  @brief Tries to locate an element in a %set.
+       *  @param  __x  Element to be located.
+       *  @return  Iterator pointing to sought-after element, or end() if not
+       *           found.
+       *
+       *  This function takes a key and tries to locate the element with which
+       *  the key matches.  If successful the function returns an iterator
+       *  pointing to the sought after element.  If unsuccessful it returns the
+       *  past-the-end ( @c end() ) iterator.
+       */</doc>

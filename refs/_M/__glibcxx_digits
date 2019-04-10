@@ -1,0 +1,17 @@
+<dec f='include/c++/7/ext/numeric_traits.h' l='44'/>
+<use f='include/c++/7/ext/numeric_traits.h' l='64' u='c'/>
+<use f='include/c++/7/ext/numeric_traits.h' l='80' u='w'/>
+<dec f='include/c++/7/limits' l='150'/>
+<use f='include/c++/7/limits' l='467' u='c'/>
+<use f='include/c++/7/limits' l='534' u='c'/>
+<use f='include/c++/7/limits' l='605' u='c'/>
+<use f='include/c++/7/limits' l='677' u='c'/>
+<use f='include/c++/7/limits' l='869' u='c'/>
+<use f='include/c++/7/limits' l='937' u='c'/>
+<use f='include/c++/7/limits' l='1009' u='c'/>
+<use f='include/c++/7/limits' l='1077' u='c'/>
+<use f='include/c++/7/limits' l='1148' u='c'/>
+<use f='include/c++/7/limits' l='1216' u='c'/>
+<use f='include/c++/7/limits' l='1289' u='c'/>
+<use f='include/c++/7/limits' l='1359' u='c'/>
+<use f='include/c++/7/limits' l='1823' u='w'/>

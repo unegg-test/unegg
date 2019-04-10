@@ -1,0 +1,6 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='294' type='int _tr_tally(deflate_state * s, unsigned int dist, unsigned int lc)'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1026' ll='1071' type='int _tr_tally(deflate_state * s, unsigned int dist, unsigned int lc)'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1022'>/* ===========================================================================
+ * Save the match info and tally the frequency counts. Return true if
+ * the current block must be flushed.
+ */</doc>

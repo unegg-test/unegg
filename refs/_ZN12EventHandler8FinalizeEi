@@ -1,0 +1,3 @@
+<dec f='codebrowser/EventHandler.h' l='41' type='void EventHandler::Finalize(int res)'/>
+<inh f='codebrowser/nest/Events.h' l='29' c='_ZN4nest6Events8FinalizeEi'/>
+<def f='codebrowser/EventHandler.cpp' l='53' ll='66' type='void EventHandler::Finalize(int res)'/>

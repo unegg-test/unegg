@@ -1,0 +1,12 @@
+<def f='include/c++/7/bits/stl_vector.h' l='812' ll='817' type='const_reference std::vector::operator[](size_type __n) const'/>
+<doc f='include/c++/7/bits/stl_vector.h' l='801'>/**
+       *  @brief  Subscript access to the data contained in the %vector.
+       *  @param __n The index of the element for which data should be
+       *  accessed.
+       *  @return  Read-only (constant) reference to data.
+       *
+       *  This operator allows for easy, array-style, data access.
+       *  Note that data access with this operator is unchecked and
+       *  out_of_range lookups are not defined. (For checked lookups
+       *  see at().)
+       */</doc>

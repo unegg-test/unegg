@@ -1,0 +1,16 @@
+<inh f='codebrowser/nest/algorithm/Coder.h' l='20' c='nest::Coder'/>
+<def f='codebrowser/nest/algorithm/DeflateCoder.h' l='21' ll='36'/>
+<size>120</size>
+<fun r='_ZN4nest12DeflateCoderC1Ev'/>
+<fun r='_ZN4nest12DeflateCoderD1Ev'/>
+<fun r='_ZN4nest12DeflateCoder10InitializeEPKhm'/>
+<fun r='_ZN4nest12DeflateCoder8FinalizeEv'/>
+<fun r='_ZN4nest12DeflateCoder6OnPushEPvm'/>
+<fun r='_ZN4nest12DeflateCoder5OnPopEPvPm'/>
+<mbr r='nest::DeflateCoder::stream_' o='64' t='z_stream'/>
+<fun r='_ZN4nest12DeflateCoderC1Ev'/>
+<fun r='_ZN4nest12DeflateCoderD1Ev'/>
+<fun r='_ZN4nest12DeflateCoder10InitializeEPKhm'/>
+<fun r='_ZN4nest12DeflateCoder8FinalizeEv'/>
+<fun r='_ZN4nest12DeflateCoder6OnPushEPvm'/>
+<fun r='_ZN4nest12DeflateCoder5OnPopEPvPm'/>

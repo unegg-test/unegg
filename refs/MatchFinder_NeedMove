@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzFind.h' l='59' type='int MatchFinder_NeedMove(CMatchFinder * p)'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='109' ll='115' type='int MatchFinder_NeedMove(CMatchFinder * p)'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='127' u='c' c='MatchFinder_CheckAndMoveAndRead'/>

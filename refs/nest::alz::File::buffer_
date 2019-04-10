@@ -1,0 +1,13 @@
+<use f='codebrowser/nest/format/alz/File.h' l='30' u='r' c='_ZN4nest3alz4File12GetSignatureEv'/>
+<use f='codebrowser/nest/format/alz/File.h' l='35' u='a' c='_ZN4nest3alz4File17GetFilenameLengthEv'/>
+<use f='codebrowser/nest/format/alz/File.h' l='40' u='a' c='_ZN4nest3alz4File12GetAttributeEv'/>
+<use f='codebrowser/nest/format/alz/File.h' l='45' u='a' c='_ZN4nest3alz4File11GetDateTimeEv'/>
+<use f='codebrowser/nest/format/alz/File.h' l='50' u='a' c='_ZN4nest3alz4File11GetBitFlagsEv'/>
+<dec f='codebrowser/nest/format/alz/File.h' l='127' type='unsigned char [13]'/>
+<offset>72</offset>
+<use f='codebrowser/nest/format/alz/File.cpp' l='25' u='r' c='_ZN4nest3alz4FileC1Ev'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='25' u='r' c='_ZN4nest3alz4FileC1Ev'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='46' u='r' c='_ZN4nest3alz4File9OnCleanUpEv'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='46' u='r' c='_ZN4nest3alz4File9OnCleanUpEv'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='85' u='r' c='_ZN4nest3alz4File6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='92' u='r' c='_ZN4nest3alz4File6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>

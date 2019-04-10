@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='175'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='255' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='806' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/uncompr.c' l='51' u='c'/>

@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='1319' type='int gzflush(gzFile file, int flush)'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='426' ll='455' type='int gzflush(gzFile file, int flush)'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='425'>/* -- see zlib.h -- */</doc>

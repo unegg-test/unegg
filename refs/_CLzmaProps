@@ -1,0 +1,6 @@
+<def f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.h' l='28' ll='32'/>
+<size>16</size>
+<mbr r='_CLzmaProps::lc' o='0' t='unsigned int'/>
+<mbr r='_CLzmaProps::lp' o='32' t='unsigned int'/>
+<mbr r='_CLzmaProps::pb' o='64' t='unsigned int'/>
+<mbr r='_CLzmaProps::dicSize' o='96' t='UInt32'/>

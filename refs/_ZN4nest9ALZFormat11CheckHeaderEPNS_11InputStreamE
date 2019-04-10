@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/format/ALZFormat.h' l='37' type='int nest::ALZFormat::CheckHeader(nest::InputStream * stream)'/>
+<inh f='codebrowser/nest/format/Format.h' l='51' c='_ZN4nest6Format11CheckHeaderEPNS_11InputStreamE'/>
+<def f='codebrowser/nest/format/ALZFormat.cpp' l='79' ll='83' type='int nest::ALZFormat::CheckHeader(nest::InputStream * stream)'/>
+<use f='codebrowser/nest/format/ALZFormatFactory.cpp' l='38' u='c' c='_ZN4nest16ALZFormatFactory11CheckHeaderEPNS_11InputStreamE'/>

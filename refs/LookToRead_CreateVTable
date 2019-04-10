@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='199' type='void LookToRead_CreateVTable(CLookToRead * p, int lookahead)'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='134' ll='140' type='void LookToRead_CreateVTable(CLookToRead * p, int lookahead)'/>

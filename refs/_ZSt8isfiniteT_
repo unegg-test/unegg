@@ -1,0 +1,1 @@
+<def f='include/c++/7/cmath' l='857' ll='863' type='typename __gnu_cxx::__enable_if&lt;__is_arithmetic&lt;_Tp&gt;::__value, int&gt;::__type std::isfinite(_Tp __f)'/>

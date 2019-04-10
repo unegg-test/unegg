@@ -1,0 +1,2 @@
+<def f='include/c++/7/bits/stl_deque.h' l='1156' ll='1158' type='allocator_type std::deque::get_allocator() const'/>
+<doc f='include/c++/7/bits/stl_deque.h' l='1155'>/// Get a copy of the memory allocation object.</doc>

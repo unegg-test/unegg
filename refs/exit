@@ -1,0 +1,5 @@
+<dec f='include/stdlib.h' l='543' type='void exit(int __status)'/>
+<doc f='include/stdlib.h' l='540'>/* Call all functions registered with `atexit&apos; and `on_exit&apos;,
+   in the reverse of the order in which they were registered,
+   perform stdio cleanup, and terminate program execution with STATUS.  */</doc>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='84' u='c' c='BZ2_bz__AssertH__fail'/>

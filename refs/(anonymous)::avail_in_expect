@@ -1,0 +1,14 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='207' type='UInt32'/>
+<offset>128</offset>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='206'>/* remembers avail_in when flush/finish requested */</doc>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='318' u='r' c='copy_input_until_stop'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='325' u='w' c='copy_input_until_stop'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='373' u='r' c='handle_compress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='378' u='r' c='handle_compress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='384' u='r' c='handle_compress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='429' u='w' c='BZ2_bzCompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='435' u='w' c='BZ2_bzCompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='444' u='r' c='BZ2_bzCompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='447' u='r' c='BZ2_bzCompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='454' u='r' c='BZ2_bzCompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='458' u='r' c='BZ2_bzCompress'/>

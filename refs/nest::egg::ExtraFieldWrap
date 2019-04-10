@@ -1,0 +1,15 @@
+<inh f='codebrowser/nest/format/Header.h' l='27' c='nest::Header'/>
+<def f='codebrowser/nest/format/egg/ExtraFieldWrap.h' l='23' ll='56'/>
+<size>72</size>
+<fun r='_ZN4nest3egg14ExtraFieldWrapC1Ev'/>
+<fun r='_ZN4nest3egg14ExtraFieldWrapD1Ev'/>
+<fun r='_ZN4nest3egg14ExtraFieldWrap11FieldExistsEi'/>
+<fun r='_ZN4nest3egg14ExtraFieldWrap8GetExtraEi'/>
+<fun r='_ZN4nest3egg14ExtraFieldWrap12MagicToIndexEi'/>
+<fun r='_ZN4nest3egg14ExtraFieldWrap9OnCleanUpEv'/>
+<fun r='_ZN4nest3egg14ExtraFieldWrap6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<fun r='_ZN4nest3egg14ExtraFieldWrap9_As4BytesEjPb'/>
+<fun r='_ZN4nest3egg14ExtraFieldWrap9_As8BytesEjPb'/>
+<fun r='_ZN4nest3egg14ExtraFieldWrap7_AsSizeEjPb'/>
+<fun r='_ZN4nest3egg14ExtraFieldWrap6_AsPtrEjPb'/>
+<mbr r='nest::egg::ExtraFieldWrap::extras_' o='128' t='nest::egg::ExtraField *[7]'/>

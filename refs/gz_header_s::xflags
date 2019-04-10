@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='115' type='int'/>
+<offset>128</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='115'>/* extra flags (not used when writing a gzip file) */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='699' u='w' c='inflate'/>

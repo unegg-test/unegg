@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/encryption/aes/fileenc.h' l='109' type='void fcrypt_decrypt(unsigned char * data, unsigned int data_len, fcrypt_ctx * cx)'/>
+<use f='codebrowser/nest/encryption/AESDecoder.cpp' l='43' u='c' c='_ZN4nest10AESDecoder9OnDecryptEPvm'/>
+<def f='codebrowser/nest/third-party/encryption/aes/fileenc.c' l='127' ll='131' type='void fcrypt_decrypt(unsigned char * data, unsigned int data_len, fcrypt_ctx * cx)'/>
+<doc f='codebrowser/nest/third-party/encryption/aes/fileenc.c' l='125'>/* perform &apos;in place&apos; authentication and decryption */</doc>

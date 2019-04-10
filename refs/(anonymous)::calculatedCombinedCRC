@@ -1,0 +1,9 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='391' type='UInt32'/>
+<offset>25504</offset>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='515' u='w' c='BZ2_bzDecompressInit'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='832' u='w' c='BZ2_bzDecompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='833' u='r' c='BZ2_bzDecompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='834' u='r' c='BZ2_bzDecompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='835' u='w' c='BZ2_bzDecompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='846' u='r' c='BZ2_bzDecompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='847' u='r' c='BZ2_bzDecompress'/>

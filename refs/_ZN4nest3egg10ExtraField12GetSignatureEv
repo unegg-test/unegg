@@ -1,0 +1,6 @@
+<dec f='codebrowser/nest/format/egg/ExtraField.h' l='28' type='int nest::egg::ExtraField::GetSignature()'/>
+<def f='codebrowser/nest/format/egg/ExtraField.cpp' l='111' ll='114' type='int nest::egg::ExtraField::GetSignature()'/>
+<use f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='59' u='c' c='_ZN4nest3egg14ExtraFieldWrap6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='61' u='c' c='_ZN4nest3egg14ExtraFieldWrap6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='70' u='c' c='_ZN4nest3egg14ExtraFieldWrap6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='78' u='c' c='_ZN4nest3egg14ExtraFieldWrap6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>

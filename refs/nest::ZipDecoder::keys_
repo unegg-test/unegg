@@ -1,0 +1,18 @@
+<dec f='codebrowser/nest/encryption/ZipDecoder.h' l='35' type='unsigned int [3]'/>
+<use f='codebrowser/nest/encryption/ZipDecoder.cpp' l='27' u='r' c='_ZN4nest10ZipDecoder11DecryptByteEv'/>
+<use f='codebrowser/nest/encryption/ZipDecoder.cpp' l='34' u='w' c='_ZN4nest10ZipDecoder8InitKeysEPKc'/>
+<use f='codebrowser/nest/encryption/ZipDecoder.cpp' l='35' u='w' c='_ZN4nest10ZipDecoder8InitKeysEPKc'/>
+<use f='codebrowser/nest/encryption/ZipDecoder.cpp' l='36' u='w' c='_ZN4nest10ZipDecoder8InitKeysEPKc'/>
+<use f='codebrowser/nest/encryption/ZipDecoder.cpp' l='47' u='w' c='_ZN4nest10ZipDecoder10UpdateKeysEj'/>
+<use f='codebrowser/nest/encryption/ZipDecoder.cpp' l='47' u='r' c='_ZN4nest10ZipDecoder10UpdateKeysEj'/>
+<use f='codebrowser/nest/encryption/ZipDecoder.cpp' l='47' u='r' c='_ZN4nest10ZipDecoder10UpdateKeysEj'/>
+<use f='codebrowser/nest/encryption/ZipDecoder.cpp' l='48' u='w' c='_ZN4nest10ZipDecoder10UpdateKeysEj'/>
+<use f='codebrowser/nest/encryption/ZipDecoder.cpp' l='48' u='r' c='_ZN4nest10ZipDecoder10UpdateKeysEj'/>
+<use f='codebrowser/nest/encryption/ZipDecoder.cpp' l='48' u='r' c='_ZN4nest10ZipDecoder10UpdateKeysEj'/>
+<use f='codebrowser/nest/encryption/ZipDecoder.cpp' l='49' u='w' c='_ZN4nest10ZipDecoder10UpdateKeysEj'/>
+<use f='codebrowser/nest/encryption/ZipDecoder.cpp' l='49' u='r' c='_ZN4nest10ZipDecoder10UpdateKeysEj'/>
+<use f='codebrowser/nest/encryption/ZipDecoder.cpp' l='50' u='w' c='_ZN4nest10ZipDecoder10UpdateKeysEj'/>
+<use f='codebrowser/nest/encryption/ZipDecoder.cpp' l='50' u='r' c='_ZN4nest10ZipDecoder10UpdateKeysEj'/>
+<use f='codebrowser/nest/encryption/ZipDecoder.cpp' l='50' u='r' c='_ZN4nest10ZipDecoder10UpdateKeysEj'/>
+<use f='codebrowser/nest/encryption/ZipDecoder.cpp' l='50' u='r' c='_ZN4nest10ZipDecoder10UpdateKeysEj'/>
+<offset>96</offset>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='48'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='200' u='c'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='46'>/* maximum heap size */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='131' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='134' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='511' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='586' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='594' u='c'/>

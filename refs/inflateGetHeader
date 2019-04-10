@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='908' type='int inflateGetHeader(z_streamp strm, gz_headerp head)'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1294' ll='1309' type='int inflateGetHeader(z_streamp strm, gz_headerp head)'/>

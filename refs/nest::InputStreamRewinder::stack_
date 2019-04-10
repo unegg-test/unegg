@@ -1,0 +1,9 @@
+<use f='codebrowser/nest/stream/InputStreamRewinder.h' l='40' u='m' c='_ZN4nest19InputStreamRewinderD1Ev'/>
+<use f='codebrowser/nest/stream/InputStreamRewinder.h' l='42' u='m' c='_ZN4nest19InputStreamRewinderD1Ev'/>
+<use f='codebrowser/nest/stream/InputStreamRewinder.h' l='48' u='m' c='_ZN4nest19InputStreamRewinder4PushEv'/>
+<use f='codebrowser/nest/stream/InputStreamRewinder.h' l='53' u='m' c='_ZN4nest19InputStreamRewinder3PopEv'/>
+<use f='codebrowser/nest/stream/InputStreamRewinder.h' l='54' u='m' c='_ZN4nest19InputStreamRewinder3PopEv'/>
+<use f='codebrowser/nest/stream/InputStreamRewinder.h' l='59' u='m' c='_ZN4nest19InputStreamRewinder5ClearEv'/>
+<use f='codebrowser/nest/stream/InputStreamRewinder.h' l='64' u='m' c='_ZN4nest19InputStreamRewinder7IsEmptyEv'/>
+<dec f='codebrowser/nest/stream/InputStreamRewinder.h' l='68' type='std::vector&lt;uint64&gt;'/>
+<offset>64</offset>

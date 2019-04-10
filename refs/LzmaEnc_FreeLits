@@ -1,0 +1,4 @@
+<def f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='1687' ll='1693' type='void LzmaEnc_FreeLits(CLzmaEnc * p, ISzAlloc * alloc)'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='1701' u='c' c='LzmaEnc_Destruct'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='1889' u='c' c='LzmaEnc_Alloc'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='1894' u='c' c='LzmaEnc_Alloc'/>

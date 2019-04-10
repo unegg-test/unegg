@@ -1,0 +1,4 @@
+<def f='codebrowser/nest/algorithm/crc32.hpp' l='20' ll='48' type='unsigned int [256]'/>
+<use f='codebrowser/nest/algorithm/crc32.hpp' l='61' u='r' c='_ZN4nestL11CRC32UpdateEPjPKhj'/>
+<use f='codebrowser/nest/encryption/ZipDecoder.cpp' l='47' u='r' c='_ZN4nest10ZipDecoder10UpdateKeysEj'/>
+<use f='codebrowser/nest/encryption/ZipDecoder.cpp' l='50' u='r' c='_ZN4nest10ZipDecoder10UpdateKeysEj'/>

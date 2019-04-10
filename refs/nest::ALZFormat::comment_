@@ -1,0 +1,6 @@
+<dec f='codebrowser/nest/format/ALZFormat.h' l='101' type='std::string'/>
+<offset>1344</offset>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='239' u='a' c='_ZN4nest9ALZFormat11ScanFootersEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='668' u='m' c='_ZN4nest9ALZFormat9_As4BytesEjPb'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='725' u='m' c='_ZN4nest9ALZFormat6_AsPtrEjPb'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='727' u='m' c='_ZN4nest9ALZFormat6_AsPtrEjPb'/>

@@ -1,0 +1,8 @@
+<inh f='codebrowser/nest/format/FormatFactory.h' l='22' c='nest::FormatFactory'/>
+<def f='codebrowser/nest/format/EggFormatFactory.h' l='21' ll='32'/>
+<size>8</size>
+<fun r='_ZN4nest16EggFormatFactoryC1Ev'/>
+<fun r='_ZN4nest16EggFormatFactoryD1Ev'/>
+<fun r='_ZN4nest16EggFormatFactory12CreateFormatEv'/>
+<fun r='_ZN4nest16EggFormatFactory11CheckHeaderEPNS_11InputStreamE'/>
+<smbr r='nest::EggFormatFactory::staticFormat_' t='nest::EggFormat'/>

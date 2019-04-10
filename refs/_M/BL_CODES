@@ -1,0 +1,8 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='42'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='194' u='c'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='40'>/* number of distance codes */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='68' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='71' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='137' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='423' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='826' u='c'/>

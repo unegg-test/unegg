@@ -1,0 +1,5 @@
+<use f='codebrowser/nest/algorithm/azo/Decoder/DistanceCodeD.h' l='25' u='w' c='_ZN3AZO7Decoder12DistanceCodeC1Ev'/>
+<dec f='codebrowser/nest/algorithm/azo/Decoder/DistanceCodeD.h' l='30' type='HistoryList&lt;u_int, DISTANCE_HISTORY_SIZE&gt;'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/DistanceCodeD.cpp' l='25' u='m' c='_ZN3AZO7Decoder12DistanceCode4CodeERNS0_11EntropyCodeE'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/DistanceCodeD.cpp' l='34' u='m' c='_ZN3AZO7Decoder12DistanceCode4CodeERNS0_11EntropyCodeE'/>
+<offset>0</offset>

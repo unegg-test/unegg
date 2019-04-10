@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='160' type='void copy_block(deflate_state * s, charf * buf, unsigned int len, int header)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='882' u='c' c='_tr_stored_block'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1222' ll='1244' macro='1' type='void copy_block(deflate_state * s, charf * buf, unsigned int len, int header)'/>

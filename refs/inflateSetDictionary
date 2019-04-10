@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='784' type='int inflateSetDictionary(z_streamp strm, const Bytef * dictionary, uInt dictLength)'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1252' ll='1292' type='int inflateSetDictionary(z_streamp strm, const Bytef * dictionary, uInt dictLength)'/>

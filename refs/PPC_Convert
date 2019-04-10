@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/Bra.h' l='61' type='SizeT PPC_Convert(Byte * data, SizeT size, UInt32 ip, int encoding)'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/Bra.c' l='65' ll='91' type='SizeT PPC_Convert(Byte * data, SizeT size, UInt32 ip, int encoding)'/>

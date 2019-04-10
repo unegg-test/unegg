@@ -1,0 +1,6 @@
+<dec f='codebrowser/nest/stream/InputStreamLinker.h' l='60' type='int nest::InputStreamLinker::OpenInternal(size_t index)'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='37' u='c' c='_ZN4nest17InputStreamLinker4OpenEv'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='64' u='c' c='_ZN4nest17InputStreamLinker4SeekEyi'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='90' u='c' c='_ZN4nest17InputStreamLinker4ReadEPvm'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='182' u='c' c='_ZN4nest17InputStreamLinker13UpdateStreamsEv'/>
+<def f='codebrowser/nest/stream/InputStreamLinker.cpp' l='252' ll='269' type='int nest::InputStreamLinker::OpenInternal(size_t index)'/>

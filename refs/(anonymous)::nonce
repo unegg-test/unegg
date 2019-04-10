@@ -1,0 +1,6 @@
+<dec f='codebrowser/nest/third-party/encryption/aes/fileenc.h' l='85' type='unsigned char [16]'/>
+<offset>0</offset>
+<doc f='codebrowser/nest/third-party/encryption/aes/fileenc.h' l='85'>/* the CTR nonce          */</doc>
+<use f='codebrowser/nest/third-party/encryption/aes/fileenc.c' l='60' u='w' c='encr_data'/>
+<use f='codebrowser/nest/third-party/encryption/aes/fileenc.c' l='63' u='r' c='encr_data'/>
+<use f='codebrowser/nest/third-party/encryption/aes/fileenc.c' l='101' u='r' c='fcrypt_init'/>

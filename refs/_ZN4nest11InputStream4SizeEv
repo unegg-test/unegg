@@ -1,0 +1,9 @@
+<dec f='codebrowser/nest/stream/InputStream.h' l='36' type='uint64 nest::InputStream::Size()'/>
+<use f='codebrowser/nest/Workspace.cpp' l='157' u='c' c='_ZN4nest9Workspace13GetStreamSizeEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='333' u='c' c='_ZN4nest9ALZFormat21PrepareSpannedStreamsEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='341' u='c' c='_ZN4nest9ALZFormat21PrepareSpannedStreamsEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='318' u='c' c='_ZN4nest9EggFormat21PrepareSpannedStreamsEv'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='131' u='c' c='_ZN4nest3alz4File6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<ovr f='codebrowser/nest/stream/FileInputStream.cpp' l='67' c='_ZN4nest15FileInputStream4SizeEv'/>
+<ovr f='codebrowser/nest/stream/InputStreamLinker.cpp' l='108' c='_ZN4nest17InputStreamLinker4SizeEv'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='126' u='c' c='_ZN4nest17InputStreamLinker10PushStreamEPNS_11InputStreamEyy'/>

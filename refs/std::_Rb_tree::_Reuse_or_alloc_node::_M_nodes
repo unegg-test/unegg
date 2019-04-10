@@ -1,0 +1,24 @@
+<use f='include/c++/7/bits/stl_tree.h' l='463' u='w' c='_ZNSt8_Rb_tree20_Reuse_or_alloc_nodeC1ERSt8_Rb_treeIT_T0_T1_T2_T3_E'/>
+<use f='include/c++/7/bits/stl_tree.h' l='469' u='r' c='_ZNSt8_Rb_tree20_Reuse_or_alloc_nodeC1ERSt8_Rb_treeIT_T0_T1_T2_T3_E'/>
+<use f='include/c++/7/bits/stl_tree.h' l='470' u='w' c='_ZNSt8_Rb_tree20_Reuse_or_alloc_nodeC1ERSt8_Rb_treeIT_T0_T1_T2_T3_E'/>
+<use f='include/c++/7/bits/stl_tree.h' l='470' u='r' c='_ZNSt8_Rb_tree20_Reuse_or_alloc_nodeC1ERSt8_Rb_treeIT_T0_T1_T2_T3_E'/>
+<use f='include/c++/7/bits/stl_tree.h' l='473' u='w' c='_ZNSt8_Rb_tree20_Reuse_or_alloc_nodeC1ERSt8_Rb_treeIT_T0_T1_T2_T3_E'/>
+<use f='include/c++/7/bits/stl_tree.h' l='506' u='r' c='_ZNSt8_Rb_tree20_Reuse_or_alloc_node10_M_extractEv'/>
+<use f='include/c++/7/bits/stl_tree.h' l='507' u='r' c='_ZNSt8_Rb_tree20_Reuse_or_alloc_node10_M_extractEv'/>
+<use f='include/c++/7/bits/stl_tree.h' l='509' u='r' c='_ZNSt8_Rb_tree20_Reuse_or_alloc_node10_M_extractEv'/>
+<use f='include/c++/7/bits/stl_tree.h' l='510' u='w' c='_ZNSt8_Rb_tree20_Reuse_or_alloc_node10_M_extractEv'/>
+<use f='include/c++/7/bits/stl_tree.h' l='510' u='r' c='_ZNSt8_Rb_tree20_Reuse_or_alloc_node10_M_extractEv'/>
+<use f='include/c++/7/bits/stl_tree.h' l='511' u='r' c='_ZNSt8_Rb_tree20_Reuse_or_alloc_node10_M_extractEv'/>
+<use f='include/c++/7/bits/stl_tree.h' l='513' u='r' c='_ZNSt8_Rb_tree20_Reuse_or_alloc_node10_M_extractEv'/>
+<use f='include/c++/7/bits/stl_tree.h' l='515' u='r' c='_ZNSt8_Rb_tree20_Reuse_or_alloc_node10_M_extractEv'/>
+<use f='include/c++/7/bits/stl_tree.h' l='517' u='r' c='_ZNSt8_Rb_tree20_Reuse_or_alloc_node10_M_extractEv'/>
+<use f='include/c++/7/bits/stl_tree.h' l='519' u='w' c='_ZNSt8_Rb_tree20_Reuse_or_alloc_node10_M_extractEv'/>
+<use f='include/c++/7/bits/stl_tree.h' l='519' u='r' c='_ZNSt8_Rb_tree20_Reuse_or_alloc_node10_M_extractEv'/>
+<use f='include/c++/7/bits/stl_tree.h' l='521' u='r' c='_ZNSt8_Rb_tree20_Reuse_or_alloc_node10_M_extractEv'/>
+<use f='include/c++/7/bits/stl_tree.h' l='522' u='w' c='_ZNSt8_Rb_tree20_Reuse_or_alloc_node10_M_extractEv'/>
+<use f='include/c++/7/bits/stl_tree.h' l='522' u='r' c='_ZNSt8_Rb_tree20_Reuse_or_alloc_node10_M_extractEv'/>
+<use f='include/c++/7/bits/stl_tree.h' l='524' u='r' c='_ZNSt8_Rb_tree20_Reuse_or_alloc_node10_M_extractEv'/>
+<use f='include/c++/7/bits/stl_tree.h' l='525' u='w' c='_ZNSt8_Rb_tree20_Reuse_or_alloc_node10_M_extractEv'/>
+<use f='include/c++/7/bits/stl_tree.h' l='525' u='r' c='_ZNSt8_Rb_tree20_Reuse_or_alloc_node10_M_extractEv'/>
+<use f='include/c++/7/bits/stl_tree.h' l='529' u='r' c='_ZNSt8_Rb_tree20_Reuse_or_alloc_node10_M_extractEv'/>
+<dec f='include/c++/7/bits/stl_tree.h' l='538' type='_Base_ptr'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='169'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='437' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='590' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='843' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='811' u='c'/>

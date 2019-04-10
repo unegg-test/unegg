@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.h' l='54' type='SRes LzmaEnc_SetProps(CLzmaEncHandle p, const CLzmaEncProps * props)'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='392' ll='444' type='SRes LzmaEnc_SetProps(CLzmaEncHandle pp, const CLzmaEncProps * props2)'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='1666' u='c' c='LzmaEnc_Construct'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='2224' u='c' c='LzmaEncode'/>

@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/Workspace.h' l='39' type='int nest::Workspace::Extract(const char * destination)'/>
+<use f='codebrowser/UnEgg.cpp' l='300' u='c' c='_Z14ExtractArchiveR11CommandLine'/>
+<def f='codebrowser/nest/Workspace.cpp' l='122' ll='138' type='int nest::Workspace::Extract(const char * destination)'/>

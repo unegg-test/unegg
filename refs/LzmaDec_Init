@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.h' l='72' type='void LzmaDec_Init(CLzmaDec * p)'/>
+<use f='codebrowser/nest/algorithm/LZMACoder.cpp' l='52' u='c' c='_ZN4nest9LZMACoder10InitializeEPKhm'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='687' ll='691' type='void LzmaDec_Init(CLzmaDec * p)'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='973' u='c' c='LzmaDecode'/>

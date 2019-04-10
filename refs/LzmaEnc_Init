@@ -1,0 +1,3 @@
+<def f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='1924' ll='1979' type='void LzmaEnc_Init(CLzmaEnc * p)'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='2005' u='c' c='LzmaEnc_AllocAndInit'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='2106' u='c' c='LzmaEnc_CodeOneMemBlock'/>

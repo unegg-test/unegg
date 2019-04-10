@@ -1,0 +1,23 @@
+<inh f='codebrowser/nest/format/Header.h' l='27' c='nest::Header'/>
+<def f='codebrowser/nest/format/egg/Block.h' l='22' ll='78'/>
+<size>32</size>
+<fun r='_ZN4nest3egg5BlockC1Ev'/>
+<fun r='_ZN4nest3egg5BlockD1Ev'/>
+<fun r='_ZN4nest3egg5Block17GetCompressMethodEv'/>
+<fun r='_ZN4nest3egg5Block13GetMethodHintEv'/>
+<fun r='_ZN4nest3egg5Block19GetUncompressedSizeEv'/>
+<fun r='_ZN4nest3egg5Block17GetCompressedSizeEv'/>
+<fun r='_ZN4nest3egg5Block6GetCRCEv'/>
+<fun r='_ZN4nest3egg5Block13GetDataOffsetEv'/>
+<fun r='_ZN4nest3egg5Block9OnCleanUpEv'/>
+<fun r='_ZN4nest3egg5Block6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<fun r='_ZN4nest3egg5Block9_As4BytesEjPb'/>
+<fun r='_ZN4nest3egg5Block9_As8BytesEjPb'/>
+<fun r='_ZN4nest3egg5Block6_AsPtrEjPb'/>
+<fun r='_ZN4nest3egg5Block22GetComressMethodStringEv'/>
+<mbr r='nest::egg::Block::compMethod_' o='72' t='unsigned char'/>
+<mbr r='nest::egg::Block::methodHint_' o='80' t='unsigned char'/>
+<mbr r='nest::egg::Block::uncompSize_' o='96' t='unsigned int'/>
+<mbr r='nest::egg::Block::compSize_' o='128' t='unsigned int'/>
+<mbr r='nest::egg::Block::crc_' o='160' t='unsigned int'/>
+<mbr r='nest::egg::Block::dataOffset_' o='192' t='uint64'/>

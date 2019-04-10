@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='146' type='SRes SeqInStream_Read2(ISeqInStream * stream, void * buf, size_t size, SRes errorType)'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='8' ll='20' type='SRes SeqInStream_Read2(ISeqInStream * stream, void * buf, size_t size, SRes errorType)'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='24' u='c' c='SeqInStream_Read'/>

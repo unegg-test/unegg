@@ -1,0 +1,13 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='183' type='int'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='304' u='w' c='deflateInit2_'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='434' u='r' c='deflateParams'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='446' u='w' c='deflateParams'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='621' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='638' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='658' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='820' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='821' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1660' u='r' c='deflate_slow'/>
+<offset>1472</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='183'>/* favor or force Huffman coding*/</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='990' u='r' c='_tr_flush_block'/>

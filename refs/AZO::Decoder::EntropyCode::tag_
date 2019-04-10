@@ -1,0 +1,11 @@
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.h' l='16' u='w' c='_ZN3AZO7Decoder11EntropyCodeC1EPKhj'/>
+<dec f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.h' l='39' type='RANGE_TYPE'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='20' u='w' c='_ZN3AZO7Decoder11EntropyCode10InitializeEv'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='33' u='w' c='_ZN3AZO7Decoder11EntropyCode7RescaleEv'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='33' u='w' c='_ZN3AZO7Decoder11EntropyCode7RescaleEv'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='43' u='w' c='_ZN3AZO7Decoder11EntropyCode7RescaleEv'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='43' u='w' c='_ZN3AZO7Decoder11EntropyCode7RescaleEv'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='44' u='w' c='_ZN3AZO7Decoder11EntropyCode7RescaleEv'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='66' u='r' c='_ZN3AZO7Decoder11EntropyCode4CodeEj'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='88' u='r' c='_ZN3AZO7Decoder11EntropyCode4CodeEjj'/>
+<offset>256</offset>

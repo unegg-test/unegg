@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Format.h source code [codebrowser/nest/format/Format.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="nest::Format "/>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/format/Format.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>codebrowser</a>/<a href='..'>nest</a>/<a href='./'>format</a>/<a href='Format.h.html'>Format.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Format.h</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> *  Created on: 2011. 5. 26.</i></td></tr>
+<tr><th id="5">5</th><td><i> *      Author: Jehoon Shin(Revolution)</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> *  Copyright(c) 2010-Present ESTsoft Corp. All rights reserved.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> *  For conditions of distribution and use, see copyright notice in license.txt</i></td></tr>
+<tr><th id="10">10</th><td><i> */</i></td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td><u>#<span data-ppcond="12">ifndef</span> <span class="macro" data-ref="_M/NEST_FORMAT_FORMAT_H">NEST_FORMAT_FORMAT_H</span></u></td></tr>
+<tr><th id="13">13</th><td><u>#define	<dfn class="macro" id="_M/NEST_FORMAT_FORMAT_H" data-ref="_M/NEST_FORMAT_FORMAT_H">NEST_FORMAT_FORMAT_H</dfn></u></td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><u>#include <a href="../nest.h.html">&lt;nest/nest.h&gt;</a></u></td></tr>
+<tr><th id="16">16</th><td><u>#include <a href="../Events.h.html">&lt;nest/Events.h&gt;</a></u></td></tr>
+<tr><th id="17">17</th><td><u>#include <a href="../Info.h.html">&lt;nest/Info.h&gt;</a></u></td></tr>
+<tr><th id="18">18</th><td><u>#include <a href="../stream/InputStream.h.html">&lt;nest/stream/InputStream.h&gt;</a></u></td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><b>namespace</b> <span class="namespace">nest</span></td></tr>
+<tr><th id="21">21</th><td>{</td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><b>class</b> <dfn class="type def" id="nest::Format" title='nest::Format' data-ref="nest::Format">Format</dfn> {</td></tr>
+<tr><th id="24">24</th><td><b>public</b>:</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td>    <dfn class="decl def" id="_ZN4nest6FormatC1Ev" title='nest::Format::Format' data-ref="_ZN4nest6FormatC1Ev">Format</dfn>()</td></tr>
+<tr><th id="27">27</th><td>    {</td></tr>
+<tr><th id="28">28</th><td>    }</td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td>    <dfn class="decl def" id="_ZN4nest6FormatC1EPNS_6EventsE" title='nest::Format::Format' data-ref="_ZN4nest6FormatC1EPNS_6EventsE">Format</dfn>(<a class="type" href="../Events.h.html#nest::Events" title='nest::Events' data-ref="nest::Events">Events</a>* <dfn class="local col6 decl" id="96evnt" title='evnt' data-type='nest::Events *' data-ref="96evnt">evnt</dfn>) :</td></tr>
+<tr><th id="31">31</th><td>    <a class="member" href="#nest::Format::event" title='nest::Format::event' data-ref="nest::Format::event">event</a>(<a class="local col6 ref" href="#96evnt" title='evnt' data-ref="96evnt">evnt</a>)</td></tr>
+<tr><th id="32">32</th><td>    {</td></tr>
+<tr><th id="33">33</th><td>    }</td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td>    <b>virtual</b> <dfn class="virtual decl def" id="_ZN4nest6FormatD1Ev" title='nest::Format::~Format' data-ref="_ZN4nest6FormatD1Ev">~Format</dfn>()</td></tr>
+<tr><th id="36">36</th><td>    {</td></tr>
+<tr><th id="37">37</th><td>    }</td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td>    <em>void</em> <dfn class="decl def" id="_ZN4nest6Format8SetEventEPNS_6EventsE" title='nest::Format::SetEvent' data-ref="_ZN4nest6Format8SetEventEPNS_6EventsE">SetEvent</dfn>(<a class="type" href="../Events.h.html#nest::Events" title='nest::Events' data-ref="nest::Events">Events</a>* <dfn class="local col7 decl" id="97evnt" title='evnt' data-type='nest::Events *' data-ref="97evnt">evnt</dfn>)</td></tr>
+<tr><th id="40">40</th><td>    {</td></tr>
+<tr><th id="41">41</th><td>        <a class="member" href="#nest::Format::event" title='nest::Format::event' data-ref="nest::Format::event">event</a> = <a class="local col7 ref" href="#97evnt" title='evnt' data-ref="97evnt">evnt</a>;</td></tr>
+<tr><th id="42">42</th><td>    }</td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td>    <a class="type" href="../Events.h.html#nest::Events" title='nest::Events' data-ref="nest::Events">Events</a>* <dfn class="decl def" id="_ZN4nest6Format8GetEventEv" title='nest::Format::GetEvent' data-ref="_ZN4nest6Format8GetEventEv">GetEvent</dfn>()</td></tr>
+<tr><th id="45">45</th><td>    {</td></tr>
+<tr><th id="46">46</th><td>        <b>return</b> <a class="member" href="#nest::Format::event" title='nest::Format::event' data-ref="nest::Format::event">event</a>;</td></tr>
+<tr><th id="47">47</th><td>    }</td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td>    <b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN4nest6Format4OpenEPNS_11InputStreamE" title='nest::Format::Open' data-ref="_ZN4nest6Format4OpenEPNS_11InputStreamE">Open</dfn>(<a class="type" href="../stream/InputStream.h.html#nest::InputStream" title='nest::InputStream' data-ref="nest::InputStream">InputStream</a>* <dfn class="local col8 decl" id="98stream" title='stream' data-type='nest::InputStream *' data-ref="98stream">stream</dfn>) = <var>0</var>;</td></tr>
+<tr><th id="50">50</th><td>    <b>virtual</b> <em>void</em> <dfn class="virtual decl" id="_ZN4nest6Format5CloseEv" title='nest::Format::Close' data-ref="_ZN4nest6Format5CloseEv">Close</dfn>() = <var>0</var>;</td></tr>
+<tr><th id="51">51</th><td>    <b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN4nest6Format11CheckHeaderEPNS_11InputStreamE" title='nest::Format::CheckHeader' data-ref="_ZN4nest6Format11CheckHeaderEPNS_11InputStreamE">CheckHeader</dfn>(<a class="type" href="../stream/InputStream.h.html#nest::InputStream" title='nest::InputStream' data-ref="nest::InputStream">InputStream</a>* <dfn class="local col9 decl" id="99stream" title='stream' data-type='nest::InputStream *' data-ref="99stream">stream</dfn>) = <var>0</var>;</td></tr>
+<tr><th id="52">52</th><td>    <b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN4nest6Format4ScanEv" title='nest::Format::Scan' data-ref="_ZN4nest6Format4ScanEv">Scan</dfn>() = <var>0</var>;</td></tr>
+<tr><th id="53">53</th><td>    <b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN4nest6Format7ExtractEv" title='nest::Format::Extract' data-ref="_ZN4nest6Format7ExtractEv">Extract</dfn>() = <var>0</var>;</td></tr>
+<tr><th id="54">54</th><td>    <b>virtual</b> <a class="type" href="../stream/InputStream.h.html#nest::InputStream" title='nest::InputStream' data-ref="nest::InputStream">InputStream</a>* <dfn class="virtual decl" id="_ZN4nest6Format14GetInputStreamEv" title='nest::Format::GetInputStream' data-ref="_ZN4nest6Format14GetInputStreamEv">GetInputStream</dfn>() = <var>0</var>;</td></tr>
+<tr><th id="55">55</th><td>    <b>virtual</b> <a class="type" href="../Info.h.html#nest::Info" title='nest::Info' data-ref="nest::Info">Info</a>* <dfn class="virtual decl" id="_ZN4nest6Format7GetInfoEv" title='nest::Format::GetInfo' data-ref="_ZN4nest6Format7GetInfoEv">GetInfo</dfn>() = <var>0</var>;</td></tr>
+<tr><th id="56">56</th><td></td></tr>
+<tr><th id="57">57</th><td><b>protected</b>:</td></tr>
+<tr><th id="58">58</th><td>    <a class="type" href="../Events.h.html#nest::Events" title='nest::Events' data-ref="nest::Events">Events</a>* <dfn class="decl" id="nest::Format::event" title='nest::Format::event' data-ref="nest::Format::event">event</dfn>;</td></tr>
+<tr><th id="59">59</th><td>};</td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td>}</td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td><u>#<span data-ppcond="12">endif</span>	/* NEST_FORMAT_FORMAT_H */</u></td></tr>
+<tr><th id="64">64</th><td></td></tr>
+<tr><th id="65">65</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../EventHandler.cpp.html'>codebrowser/EventHandler.cpp</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

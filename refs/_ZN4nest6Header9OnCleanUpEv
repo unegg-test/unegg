@@ -1,0 +1,11 @@
+<dec f='codebrowser/nest/format/Header.h' l='42' type='void nest::Header::OnCleanUp()'/>
+<ovr f='codebrowser/nest/format/egg/File.h' l='40' c='_ZN4nest3egg4File9OnCleanUpEv'/>
+<ovr f='codebrowser/nest/format/egg/Block.h' l='59' c='_ZN4nest3egg5Block9OnCleanUpEv'/>
+<use f='codebrowser/nest/format/Header.cpp' l='31' u='c' c='_ZN4nest6Header5ClearEv'/>
+<ovr f='codebrowser/nest/format/alz/File.cpp' l='33' c='_ZN4nest3alz4File9OnCleanUpEv'/>
+<ovr f='codebrowser/nest/format/alz/Global.cpp' l='32' c='_ZN4nest3alz6Global9OnCleanUpEv'/>
+<ovr f='codebrowser/nest/format/egg/BlockWrap.cpp' l='31' c='_ZN4nest3egg9BlockWrap9OnCleanUpEv'/>
+<ovr f='codebrowser/nest/format/egg/ExtraField.cpp' l='33' c='_ZN4nest3egg10ExtraField9OnCleanUpEv'/>
+<ovr f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='40' c='_ZN4nest3egg14ExtraFieldWrap9OnCleanUpEv'/>
+<ovr f='codebrowser/nest/format/egg/FileWrap.cpp' l='33' c='_ZN4nest3egg8FileWrap9OnCleanUpEv'/>
+<ovr f='codebrowser/nest/format/egg/Global.cpp' l='32' c='_ZN4nest3egg6Global9OnCleanUpEv'/>

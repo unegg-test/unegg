@@ -1,0 +1,9 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='444'/>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='442'>/*-- Macros for decompression. --*/</doc>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='565' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='571' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='577' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='582' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='585' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='570' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='573' u='c'/>

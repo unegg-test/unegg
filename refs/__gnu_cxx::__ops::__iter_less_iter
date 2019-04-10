@@ -1,0 +1,18 @@
+<def f='include/c++/7/bits/predefined_ops.h' l='47' ll='49' type='__gnu_cxx::__ops::_Iter_less_iter __gnu_cxx::__ops::__iter_less_iter()'/>
+<use f='include/c++/7/bits/stl_algobase.h' l='906' u='c' c='_ZNSt25__lexicographical_compare4__lcET_S0_T0_S1_'/>
+<use f='include/c++/7/bits/stl_algo.h' l='1761' u='c' c='_ZSt17partial_sort_copyT_S_T0_S0_'/>
+<use f='include/c++/7/bits/stl_algo.h' l='2588' u='c' c='_ZSt13inplace_mergeT_S_S_'/>
+<use f='include/c++/7/bits/stl_algo.h' l='2844' u='c' c='_ZSt8includesT_S_T0_S0_'/>
+<use f='include/c++/7/bits/stl_algo.h' l='2966' u='c' c='_ZSt16next_permutationT_S_'/>
+<use f='include/c++/7/bits/stl_algo.h' l='3066' u='c' c='_ZSt16prev_permutationT_S_'/>
+<use f='include/c++/7/bits/stl_algo.h' l='4690' u='c' c='_ZSt12partial_sortT_S_S_'/>
+<use f='include/c++/7/bits/stl_algo.h' l='4767' u='c' c='_ZSt11nth_elementT_S_S_'/>
+<use f='include/c++/7/bits/stl_algo.h' l='4836' u='c' c='_ZSt4sortT_S_'/>
+<use f='include/c++/7/bits/stl_algo.h' l='4939' u='c' c='_ZSt5mergeT_S_T0_S0_T1_'/>
+<use f='include/c++/7/bits/stl_algo.h' l='5042' u='c' c='_ZSt11stable_sortT_S_'/>
+<use f='include/c++/7/bits/stl_algo.h' l='5158' u='c' c='_ZSt9set_unionT_S_T0_S0_T1_'/>
+<use f='include/c++/7/bits/stl_algo.h' l='5275' u='c' c='_ZSt16set_intersectionT_S_T0_S0_T1_'/>
+<use f='include/c++/7/bits/stl_algo.h' l='5395' u='c' c='_ZSt14set_differenceT_S_T0_S0_T1_'/>
+<use f='include/c++/7/bits/stl_algo.h' l='5525' u='c' c='_ZSt24set_symmetric_differenceT_S_T0_S0_T1_'/>
+<use f='include/c++/7/bits/stl_algo.h' l='5614' u='c' c='_ZSt11min_elementT_S_'/>
+<use f='include/c++/7/bits/stl_algo.h' l='5678' u='c' c='_ZSt11max_elementT_S_'/>

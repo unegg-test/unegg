@@ -1,0 +1,4 @@
+<def f='codebrowser/nest/algorithm/azo/Common/AZOOption.h' l='20' type='const u_int'/>
+<use f='codebrowser/nest/algorithm/azo/Base/DictionaryTableB.cpp' l='15' u='r' c='_ZN3AZO4Base15DictionaryTableC1EPKhj'/>
+<use f='codebrowser/nest/algorithm/azo/Common/MatchCodeTable.h' l='20' u='r'/>
+<use f='codebrowser/nest/algorithm/azo/Common/MatchCodeTable.h' l='151' u='r' c='_ZN3AZO18GetMatchLengthCodeEj'/>

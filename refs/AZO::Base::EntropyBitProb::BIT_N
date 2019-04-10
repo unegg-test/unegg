@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/algorithm/azo/Base/EntropyBitProbB.h' l='25' type='const u_int'/>
+<use f='codebrowser/nest/algorithm/azo/Base/EntropyBitProbB.h' l='26' u='r'/>
+<use f='codebrowser/nest/algorithm/azo/Base/EntropyBitProbB.cpp' l='54' u='r' c='_ZN3AZO4Base14EntropyBitProb6UpdateEj'/>
+<use f='codebrowser/nest/algorithm/azo/Base/EntropyBitProbB.cpp' l='71' u='r' c='_ZN3AZO4Base14EntropyBitProb7CompareENS0_14EntropyBitProbIXT_EEES4_j'/>

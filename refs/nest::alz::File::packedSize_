@@ -1,0 +1,7 @@
+<use f='codebrowser/nest/format/alz/File.h' l='80' u='r' c='_ZN4nest3alz4File13GetPackedSizeEv'/>
+<dec f='codebrowser/nest/format/alz/File.h' l='130' type='uint64'/>
+<offset>256</offset>
+<use f='codebrowser/nest/format/alz/File.cpp' l='22' u='w' c='_ZN4nest3alz4FileC1Ev'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='37' u='w' c='_ZN4nest3alz4File9OnCleanUpEv'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='95' u='w' c='_ZN4nest3alz4File6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='107' u='a' c='_ZN4nest3alz4File6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>

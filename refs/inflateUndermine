@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='1607' type='int inflateUndermine(z_streamp , int )'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1453' ll='1468' type='int inflateUndermine(z_streamp strm, int subvert)'/>

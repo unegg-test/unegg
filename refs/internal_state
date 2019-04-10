@@ -1,0 +1,70 @@
+<def f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='1600'/>
+<size>4</size>
+<mbr r='internal_state::dummy' o='0' t='int'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='94' ll='270'/>
+<size>5936</size>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='90'>/* A Pos is an index in the character window. We use short instead of int to
+ * save space in the various tables. IPos is used only for parameter passing.
+ */</doc>
+<mbr r='internal_state::strm' o='0' t='z_streamp'/>
+<mbr r='internal_state::status' o='64' t='int'/>
+<mbr r='internal_state::pending_buf' o='128' t='Bytef *'/>
+<mbr r='internal_state::pending_buf_size' o='192' t='ulg'/>
+<mbr r='internal_state::pending_out' o='256' t='Bytef *'/>
+<mbr r='internal_state::pending' o='320' t='uInt'/>
+<mbr r='internal_state::wrap' o='352' t='int'/>
+<mbr r='internal_state::gzhead' o='384' t='gz_headerp'/>
+<mbr r='internal_state::gzindex' o='448' t='uInt'/>
+<mbr r='internal_state::method' o='480' t='Byte'/>
+<mbr r='internal_state::last_flush' o='512' t='int'/>
+<mbr r='internal_state::w_size' o='544' t='uInt'/>
+<mbr r='internal_state::w_bits' o='576' t='uInt'/>
+<mbr r='internal_state::w_mask' o='608' t='uInt'/>
+<mbr r='internal_state::window' o='640' t='Bytef *'/>
+<mbr r='internal_state::window_size' o='704' t='ulg'/>
+<mbr r='internal_state::prev' o='768' t='Posf *'/>
+<mbr r='internal_state::head' o='832' t='Posf *'/>
+<mbr r='internal_state::ins_h' o='896' t='uInt'/>
+<mbr r='internal_state::hash_size' o='928' t='uInt'/>
+<mbr r='internal_state::hash_bits' o='960' t='uInt'/>
+<mbr r='internal_state::hash_mask' o='992' t='uInt'/>
+<mbr r='internal_state::hash_shift' o='1024' t='uInt'/>
+<mbr r='internal_state::block_start' o='1088' t='long'/>
+<mbr r='internal_state::match_length' o='1152' t='uInt'/>
+<mbr r='internal_state::prev_match' o='1184' t='IPos'/>
+<mbr r='internal_state::match_available' o='1216' t='int'/>
+<mbr r='internal_state::strstart' o='1248' t='uInt'/>
+<mbr r='internal_state::match_start' o='1280' t='uInt'/>
+<mbr r='internal_state::lookahead' o='1312' t='uInt'/>
+<mbr r='internal_state::prev_length' o='1344' t='uInt'/>
+<mbr r='internal_state::max_chain_length' o='1376' t='uInt'/>
+<mbr r='internal_state::max_lazy_match' o='1408' t='uInt'/>
+<mbr r='internal_state::level' o='1440' t='int'/>
+<mbr r='internal_state::strategy' o='1472' t='int'/>
+<mbr r='internal_state::good_match' o='1504' t='uInt'/>
+<mbr r='internal_state::nice_match' o='1536' t='int'/>
+<mbr r='internal_state::dyn_ltree' o='1568' t='struct ct_data_s [573]'/>
+<mbr r='internal_state::dyn_dtree' o='19904' t='struct ct_data_s [61]'/>
+<mbr r='internal_state::bl_tree' o='21856' t='struct ct_data_s [39]'/>
+<mbr r='internal_state::l_desc' o='23104' t='struct tree_desc_s'/>
+<mbr r='internal_state::d_desc' o='23296' t='struct tree_desc_s'/>
+<mbr r='internal_state::bl_desc' o='23488' t='struct tree_desc_s'/>
+<mbr r='internal_state::bl_count' o='23680' t='ush [16]'/>
+<mbr r='internal_state::heap' o='23936' t='int [573]'/>
+<mbr r='internal_state::heap_len' o='42272' t='int'/>
+<mbr r='internal_state::heap_max' o='42304' t='int'/>
+<mbr r='internal_state::depth' o='42336' t='uch [573]'/>
+<mbr r='internal_state::l_buf' o='46976' t='uchf *'/>
+<mbr r='internal_state::lit_bufsize' o='47040' t='uInt'/>
+<mbr r='internal_state::last_lit' o='47072' t='uInt'/>
+<mbr r='internal_state::d_buf' o='47104' t='ushf *'/>
+<mbr r='internal_state::opt_len' o='47168' t='ulg'/>
+<mbr r='internal_state::static_len' o='47232' t='ulg'/>
+<mbr r='internal_state::matches' o='47296' t='uInt'/>
+<mbr r='internal_state::last_eob_len' o='47328' t='int'/>
+<mbr r='internal_state::bi_buf' o='47360' t='ush'/>
+<mbr r='internal_state::bi_valid' o='47392' t='int'/>
+<mbr r='internal_state::high_water' o='47424' t='ulg'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/zutil.c' l='11'/>
+<size>4</size>
+<mbr r='internal_state::dummy' o='0' t='int'/>

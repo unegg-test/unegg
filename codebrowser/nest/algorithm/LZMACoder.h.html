@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>LZMACoder.h source code [codebrowser/nest/algorithm/LZMACoder.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="nest::LZMACoder "/>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/algorithm/LZMACoder.h'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>codebrowser</a>/<a href='..'>nest</a>/<a href='./'>algorithm</a>/<a href='LZMACoder.h.html'>LZMACoder.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * LZMACoder.h</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> *  Created on: 2010. 12. 16.</i></td></tr>
+<tr><th id="5">5</th><td><i> *      Author: Jehoon Shin(Revolution)</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> *  Copyright(c) 2010-Present ESTsoft Corp. All rights reserved.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> *  For conditions of distribution and use, see copyright notice in license.txt</i></td></tr>
+<tr><th id="10">10</th><td><i> */</i></td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td><u>#<span data-ppcond="12">ifndef</span> <span class="macro" data-ref="_M/NEST_ALGORITHM_LZMACODER_H_">NEST_ALGORITHM_LZMACODER_H_</span></u></td></tr>
+<tr><th id="13">13</th><td><u>#define <dfn class="macro" id="_M/NEST_ALGORITHM_LZMACODER_H_" data-ref="_M/NEST_ALGORITHM_LZMACODER_H_">NEST_ALGORITHM_LZMACODER_H_</dfn></u></td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><u>#include <a href="Coder.h.html">&lt;nest/algorithm/Coder.h&gt;</a></u></td></tr>
+<tr><th id="16">16</th><td><u>#include <a href="../third-party/algorithm/lzma/LzmaDec.h.html">&lt;nest/third-party/algorithm/lzma/LzmaDec.h&gt;</a></u></td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td><b>namespace</b> <span class="namespace">nest</span></td></tr>
+<tr><th id="19">19</th><td>{</td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td><b>class</b> <dfn class="type def" id="nest::LZMACoder" title='nest::LZMACoder' data-ref="nest::LZMACoder">LZMACoder</dfn>: <b>public</b> <a class="type" href="Coder.h.html#nest::Coder" title='nest::Coder' data-ref="nest::Coder">Coder</a></td></tr>
+<tr><th id="22">22</th><td>{</td></tr>
+<tr><th id="23">23</th><td><b>public</b>:</td></tr>
+<tr><th id="24">24</th><td>	<a class="decl" href="LZMACoder.cpp.html#_ZN4nest9LZMACoderC1Ev" title='nest::LZMACoder::LZMACoder' data-ref="_ZN4nest9LZMACoderC1Ev" id="_ZN4nest9LZMACoderC1Ev">LZMACoder</a>();</td></tr>
+<tr><th id="25">25</th><td>	<b>virtual</b> <a class="virtual decl" href="LZMACoder.cpp.html#_ZN4nest9LZMACoderD1Ev" title='nest::LZMACoder::~LZMACoder' data-ref="_ZN4nest9LZMACoderD1Ev" id="_ZN4nest9LZMACoderD1Ev">~LZMACoder</a>();</td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td>	<b>virtual</b> <em>int</em> <a class="virtual decl" href="LZMACoder.cpp.html#_ZN4nest9LZMACoder10InitializeEPKhm" title='nest::LZMACoder::Initialize' data-ref="_ZN4nest9LZMACoder10InitializeEPKhm" id="_ZN4nest9LZMACoder10InitializeEPKhm">Initialize</a>(<em>const</em> <em>unsigned</em> <em>char</em>* <dfn class="local col8 decl" id="98dataHeader" title='dataHeader' data-type='const unsigned char *' data-ref="98dataHeader">dataHeader</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col9 decl" id="99size" title='size' data-type='size_t' data-ref="99size">size</dfn>);</td></tr>
+<tr><th id="28">28</th><td>	<b>virtual</b> <em>void</em> <a class="virtual decl" href="LZMACoder.cpp.html#_ZN4nest9LZMACoder8FinalizeEv" title='nest::LZMACoder::Finalize' data-ref="_ZN4nest9LZMACoder8FinalizeEv" id="_ZN4nest9LZMACoder8FinalizeEv">Finalize</a>();</td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td><b>protected</b>:</td></tr>
+<tr><th id="31">31</th><td>	<b>virtual</b> <em>int</em> <a class="virtual decl" href="LZMACoder.cpp.html#_ZN4nest9LZMACoder6OnPushEPvm" title='nest::LZMACoder::OnPush' data-ref="_ZN4nest9LZMACoder6OnPushEPvm" id="_ZN4nest9LZMACoder6OnPushEPvm">OnPush</a>(<em>void</em>* <dfn class="local col0 decl" id="100inputBuffer" title='inputBuffer' data-type='void *' data-ref="100inputBuffer">inputBuffer</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col1 decl" id="101size" title='size' data-type='size_t' data-ref="101size">size</dfn>);</td></tr>
+<tr><th id="32">32</th><td>	<b>virtual</b> <em>int</em> <a class="virtual decl" href="LZMACoder.cpp.html#_ZN4nest9LZMACoder5OnPopEPvPm" title='nest::LZMACoder::OnPop' data-ref="_ZN4nest9LZMACoder5OnPopEPvPm" id="_ZN4nest9LZMACoder5OnPopEPvPm">OnPop</a>(<em>void</em>* <dfn class="local col2 decl" id="102outputBuffer" title='outputBuffer' data-type='void *' data-ref="102outputBuffer">outputBuffer</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span>* <dfn class="local col3 decl" id="103size" title='size' data-type='size_t *' data-ref="103size">size</dfn>);</td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><b>private</b>:</td></tr>
+<tr><th id="35">35</th><td>	<em>static</em> <em>const</em> <em>int</em> <dfn class="decl" id="nest::LZMACoder::IN_BUF_SIZE" title='nest::LZMACoder::IN_BUF_SIZE' data-ref="nest::LZMACoder::IN_BUF_SIZE">IN_BUF_SIZE</dfn> = <var>1</var> &lt;&lt; <var>16</var>;</td></tr>
+<tr><th id="36">36</th><td>	<em>static</em> <em>const</em> <em>int</em> <dfn class="decl" id="nest::LZMACoder::OUT_BUF_SIZE" title='nest::LZMACoder::OUT_BUF_SIZE' data-ref="nest::LZMACoder::OUT_BUF_SIZE">OUT_BUF_SIZE</dfn> = <var>1</var> &lt;&lt; <var>16</var>;</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td>	<a class="typedef" href="../third-party/algorithm/lzma/LzmaDec.h.html#CLzmaDec" title='CLzmaDec' data-type='struct CLzmaDec' data-ref="CLzmaDec">CLzmaDec</a> <dfn class="decl" id="nest::LZMACoder::state_" title='nest::LZMACoder::state_' data-ref="nest::LZMACoder::state_">state_</dfn>;</td></tr>
+<tr><th id="39">39</th><td>	<em>unsigned</em> <em>char</em>* <dfn class="decl" id="nest::LZMACoder::input_" title='nest::LZMACoder::input_' data-ref="nest::LZMACoder::input_">input_</dfn>;</td></tr>
+<tr><th id="40">40</th><td>	<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="nest::LZMACoder::inputSize_" title='nest::LZMACoder::inputSize_' data-ref="nest::LZMACoder::inputSize_">inputSize_</dfn>;</td></tr>
+<tr><th id="41">41</th><td>	<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="nest::LZMACoder::inputPos_" title='nest::LZMACoder::inputPos_' data-ref="nest::LZMACoder::inputPos_">inputPos_</dfn>;</td></tr>
+<tr><th id="42">42</th><td>	<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="nest::LZMACoder::outputPos_" title='nest::LZMACoder::outputPos_' data-ref="nest::LZMACoder::outputPos_">outputPos_</dfn>;</td></tr>
+<tr><th id="43">43</th><td>};</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td>}</td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td><u>#<span data-ppcond="12">endif</span> /* NEST_ALGORITHM_LZMACODER_H_ */</u></td></tr>
+<tr><th id="48">48</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='LZMACoder.cpp.html'>codebrowser/nest/algorithm/LZMACoder.cpp</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

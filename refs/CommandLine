@@ -1,0 +1,20 @@
+<def f='codebrowser/CommandLine.h' l='19' ll='37'/>
+<size>80</size>
+<fun r='_ZN11CommandLineC1EiPPc'/>
+<fun r='_ZN11CommandLineD1Ev'/>
+<fun r='_ZN11CommandLine13CommandExistsEPKc'/>
+<fun r='_ZN11CommandLine15GetCommandCountEv'/>
+<fun r='_ZN11CommandLine11GetCommandsEv'/>
+<fun r='_ZN11CommandLine16GetArgumentCountEv'/>
+<fun r='_ZN11CommandLine11GetArgumentEm'/>
+<fun r='_ZN11CommandLine16ParseCommandlineEiPPc'/>
+<mbr r='CommandLine::commands_' o='64' t='std::set&lt;std::string&gt;'/>
+<mbr r='CommandLine::args_' o='448' t='std::vector&lt;std::string&gt;'/>
+<fun r='_ZN11CommandLineC1EiPPc'/>
+<fun r='_ZN11CommandLineD1Ev'/>
+<fun r='_ZN11CommandLine16ParseCommandlineEiPPc'/>
+<fun r='_ZN11CommandLine13CommandExistsEPKc'/>
+<fun r='_ZN11CommandLine15GetCommandCountEv'/>
+<fun r='_ZN11CommandLine11GetCommandsEv'/>
+<fun r='_ZN11CommandLine16GetArgumentCountEv'/>
+<fun r='_ZN11CommandLine11GetArgumentEm'/>

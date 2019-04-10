@@ -1,0 +1,9 @@
+_ZSt7advanceRT_T0_|std::advance
+_ZSt13adjacent_findT_S_|std::adjacent_find
+_ZN4nest9Workspace10AddFactoryEPNS_13FormatFactoryE|nest::Workspace::AddFactory
+_ZN3AZO4Base11HistoryList3AddERKT_|AZO::Base::HistoryList::Add
+_ZN3AZO9BufferMan3AddEPKhj|AZO::BufferMan::Add
+_ZN3AZO7Decoder15DictionaryTable3AddEjj|AZO::Decoder::DictionaryTable::Add
+adler32|adler32
+adler32_combine|adler32_combine
+adler32_combine64|adler32_combine64

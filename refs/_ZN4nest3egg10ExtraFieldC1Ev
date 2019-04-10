@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/format/egg/ExtraField.h' l='25' type='void nest::egg::ExtraField::ExtraField()'/>
+<def f='codebrowser/nest/format/egg/ExtraField.cpp' l='20' ll='25' type='void nest::egg::ExtraField::ExtraField()'/>
+<use f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='57' u='c' c='_ZN4nest3egg14ExtraFieldWrap6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>

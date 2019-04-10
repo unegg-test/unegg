@@ -1,0 +1,19 @@
+<inh f='codebrowser/nest/format/Header.h' l='27' c='nest::Header'/>
+<def f='codebrowser/nest/format/egg/BlockWrap.h' l='24' ll='61'/>
+<size>128</size>
+<fun r='_ZN4nest3egg9BlockWrapC1Ev'/>
+<fun r='_ZN4nest3egg9BlockWrapD1Ev'/>
+<fun r='_ZN4nest3egg9BlockWrap8GetBlockEv'/>
+<fun r='_ZN4nest3egg9BlockWrap9GetExtrasEv'/>
+<fun r='_ZN4nest3egg9BlockWrap13GetDataOffsetEv'/>
+<fun r='_ZN4nest3egg9BlockWrap9OnCleanUpEv'/>
+<fun r='_ZN4nest3egg9BlockWrap6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<fun r='_ZN4nest3egg9BlockWrap9_As4BytesEjPb'/>
+<fun r='_ZN4nest3egg9BlockWrap9_As8BytesEjPb'/>
+<fun r='_ZN4nest3egg9BlockWrap7_AsSizeEjPb'/>
+<fun r='_ZN4nest3egg9BlockWrap6_AsPtrEjPb'/>
+<fun r='_ZN4nest3egg9BlockWrap7_AsInfoEjPb'/>
+<fun r='_ZN4nest3egg9BlockWrap12_AsChildInfoEjmPb'/>
+<mbr r='nest::egg::BlockWrap::block_' o='128' t='nest::egg::Block'/>
+<mbr r='nest::egg::BlockWrap::extras_' o='384' t='nest::egg::ExtraFieldWrap'/>
+<mbr r='nest::egg::BlockWrap::dataOffset_' o='960' t='uint64'/>

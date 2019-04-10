@@ -1,0 +1,61 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='148' type='long'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='337' u='w' c='deflateSetDictionary'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='852' u='w' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1037' u='w' c='lm_init'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1337' u='w' c='fill_window'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1495' u='r' c='deflate_stored'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1437' u='r' c='deflate_stored'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1438' u='r' c='deflate_stored'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1440' u='r' c='deflate_stored'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1442' u='w' c='deflate_stored'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1505' u='r' c='deflate_stored'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1437' u='r' c='deflate_stored'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1438' u='r' c='deflate_stored'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1440' u='r' c='deflate_stored'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1442' u='w' c='deflate_stored'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1437' u='r' c='deflate_stored'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1438' u='r' c='deflate_stored'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1440' u='r' c='deflate_stored'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1442' u='w' c='deflate_stored'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1437' u='r' c='deflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1438' u='r' c='deflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1440' u='r' c='deflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1442' u='w' c='deflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1437' u='r' c='deflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1438' u='r' c='deflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1440' u='r' c='deflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1442' u='w' c='deflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1437' u='r' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1438' u='r' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1440' u='r' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1442' u='w' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1437' u='r' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1438' u='r' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1440' u='r' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1442' u='w' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1437' u='r' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1438' u='r' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1440' u='r' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1442' u='w' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1437' u='r' c='deflate_rle'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1438' u='r' c='deflate_rle'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1440' u='r' c='deflate_rle'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1442' u='w' c='deflate_rle'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1437' u='r' c='deflate_rle'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1438' u='r' c='deflate_rle'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1440' u='r' c='deflate_rle'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1442' u='w' c='deflate_rle'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1437' u='r' c='deflate_huff'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1438' u='r' c='deflate_huff'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1440' u='r' c='deflate_huff'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1442' u='w' c='deflate_huff'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1437' u='r' c='deflate_huff'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1438' u='r' c='deflate_huff'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1440' u='r' c='deflate_huff'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1442' u='w' c='deflate_huff'/>
+<offset>1088</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='142'>/* Number of bits by which ins_h must be shifted at each input
+     * step. It must be such that after MIN_MATCH steps, the oldest
+     * byte no longer takes part in the hash key, that is:
+     *   hash_shift * MIN_MATCH &gt;= hash_bits
+     */</doc>

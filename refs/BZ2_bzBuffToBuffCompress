@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.h' l='204' type='int BZ2_bzBuffToBuffCompress(char * dest, unsigned int * destLen, char * source, unsigned int sourceLen, int blockSize100k, int verbosity, int workFactor)'/>
+<def f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1247' ll='1295' type='int BZ2_bzBuffToBuffCompress(char * dest, unsigned int * destLen, char * source, unsigned int sourceLen, int blockSize100k, int verbosity, int workFactor)'/>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1246'>/*---------------------------------------------------*/</doc>

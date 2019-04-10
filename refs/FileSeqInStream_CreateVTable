@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/7zFile.h' l='60' type='void FileSeqInStream_CreateVTable(CFileSeqInStream * p)'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='259' ll='262' type='void FileSeqInStream_CreateVTable(CFileSeqInStream * p)'/>

@@ -1,0 +1,17 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.h' l='61' type='UInt32 [4]'/>
+<offset>608</offset>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='134' u='r' c='LzmaDec_DecodeReal'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='134' u='r' c='LzmaDec_DecodeReal'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='134' u='r' c='LzmaDec_DecodeReal'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='134' u='r' c='LzmaDec_DecodeReal'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='413' u='w' c='LzmaDec_DecodeReal'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='414' u='w' c='LzmaDec_DecodeReal'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='415' u='w' c='LzmaDec_DecodeReal'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='416' u='w' c='LzmaDec_DecodeReal'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='430' u='r' c='LzmaDec_WriteRem'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='515' u='r' c='LzmaDec_TryDummy'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='515' u='r' c='LzmaDec_TryDummy'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='700' u='w' c='LzmaDec_InitStateReal'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='700' u='w' c='LzmaDec_InitStateReal'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='700' u='w' c='LzmaDec_InitStateReal'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='700' u='w' c='LzmaDec_InitStateReal'/>

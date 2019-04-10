@@ -1,0 +1,6 @@
+<def f='codebrowser/nest/algorithm/azo/Decoder/PredictProbD.h' l='11' ll='23'/>
+<fun r='_ZN3AZO7Decoder11PredictProbC1Ev'/>
+<fun r='_ZN3AZO7Decoder11PredictProb4CodeERNS0_11EntropyCodeEj'/>
+<mbr r='AZO::Decoder::PredictProb::prob1_' t='EntropyBitProb&lt;N&gt; [KEY]'/>
+<mbr r='AZO::Decoder::PredictProb::prob2_' t='EntropyBitProb&lt;N&gt; [KEY &gt;&gt; SHIFT]'/>
+<fun r='_ZN3AZO7Decoder11PredictProb4CodeERNS0_11EntropyCodeEj'/>

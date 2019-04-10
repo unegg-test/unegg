@@ -1,0 +1,9 @@
+<dec f='codebrowser/nest/third-party/encryption/aes/hmac.h' l='65' type='void hmac_sha1_data(const unsigned char * data, unsigned int data_len, hmac_ctx * cx)'/>
+<use f='codebrowser/nest/third-party/encryption/aes/fileenc.c' l='122' u='c' c='fcrypt_encrypt'/>
+<use f='codebrowser/nest/third-party/encryption/aes/fileenc.c' l='129' u='c' c='fcrypt_decrypt'/>
+<def f='codebrowser/nest/third-party/encryption/aes/hmac.c' l='74' ll='103' type='void hmac_sha1_data(const unsigned char * data, unsigned int data_len, hmac_ctx * cx)'/>
+<use f='codebrowser/nest/third-party/encryption/aes/hmac.c' l='112' u='c' c='hmac_sha1_end'/>
+<use f='codebrowser/nest/third-party/encryption/aes/hmac.c' l='139' u='c' c='hmac_sha1'/>
+<doc f='codebrowser/nest/third-party/encryption/aes/hmac.c' l='73'>/* note that this call terminates the key input phase   */</doc>
+<use f='codebrowser/nest/third-party/encryption/aes/pwd2key.c' l='63' u='c' c='derive_key'/>
+<use f='codebrowser/nest/third-party/encryption/aes/pwd2key.c' l='86' u='c' c='derive_key'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/format/EggFormat.h' l='41' type='int nest::EggFormat::Open(nest::InputStream * stream)'/>
+<doc f='codebrowser/nest/format/EggFormat.h' l='40'>// Format Implementation</doc>
+<inh f='codebrowser/nest/format/Format.h' l='49' c='_ZN4nest6Format4OpenEPNS_11InputStreamE'/>
+<def f='codebrowser/nest/format/EggFormat.cpp' l='50' ll='77' type='int nest::EggFormat::Open(nest::InputStream * stream)'/>

@@ -1,0 +1,6 @@
+_ZN4nest6Header8IsLoadedEv|nest::Header::IsLoaded
+_ZSt3hexRSt8ios_base|std::hex
+_ZN4nest6Header5ClearEv|nest::Header::Clear
+_ZN4nest6HeaderC1Ev|nest::Header::Header
+_ZN4nest6Header4ReadEPNS_11InputStreamE|nest::Header::Read
+_ZN4nest6HeaderD1Ev|nest::Header::~Header

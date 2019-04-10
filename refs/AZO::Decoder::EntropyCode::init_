@@ -1,0 +1,4 @@
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.h' l='16' u='w' c='_ZN3AZO7Decoder11EntropyCodeC1EPKhj'/>
+<dec f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.h' l='40' type='bool'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='23' u='w' c='_ZN3AZO7Decoder11EntropyCode10InitializeEv'/>
+<offset>288</offset>

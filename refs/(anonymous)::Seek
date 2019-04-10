@@ -1,0 +1,8 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='164' type='SRes (*)(void *, Int64 *, ESzSeek)'/>
+<dec f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='178' type='SRes (*)(void *, Int64 *, ESzSeek)'/>
+<offset>192</offset>
+<doc f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='177'>/* reads directly (without buffer). It&apos;s same as ISeqInStream::Read */</doc>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='281' u='w' c='FileInStream_CreateVTable'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='37' u='r' c='LookInStream_SeekTo'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='131' u='r' c='LookToRead_Seek'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='139' u='w' c='LookToRead_CreateVTable'/>

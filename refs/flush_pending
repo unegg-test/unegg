@@ -1,0 +1,21 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='86' type='void flush_pending(z_streamp strm)'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='562' ll='579' macro='1' type='void flush_pending(z_streamp strm)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='691' u='c' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='720' u='c' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='751' u='c' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='773' u='c' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='788' u='c' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='856' u='c' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='886' u='c' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1443' u='c' c='deflate_stored'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1443' u='c' c='deflate_stored'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1443' u='c' c='deflate_stored'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1443' u='c' c='deflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1443' u='c' c='deflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1443' u='c' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1443' u='c' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1443' u='c' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1443' u='c' c='deflate_rle'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1443' u='c' c='deflate_rle'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1443' u='c' c='deflate_huff'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1443' u='c' c='deflate_huff'/>

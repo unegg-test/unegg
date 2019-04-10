@@ -1,0 +1,6 @@
+<def f='include/c++/7/bits/stl_stack.h' l='184' ll='186' type='bool std::stack::empty() const'/>
+<doc f='include/c++/7/bits/stl_stack.h' l='181'>/**
+       *  Returns true if the %stack is empty.
+       */</doc>
+<use f='codebrowser/nest/Workspace.cpp' l='197' u='c' c='_ZN4nest9Workspace11OnWorkStartEi'/>
+<use f='codebrowser/nest/Workspace.cpp' l='224' u='c' c='_ZN4nest9Workspace12OnWorkFinishEii'/>

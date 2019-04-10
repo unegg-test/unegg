@@ -1,0 +1,25 @@
+<inh f='codebrowser/nest/stream/InputStream.h' l='22' c='nest::InputStream'/>
+<def f='codebrowser/nest/stream/InputStreamLinker.h' l='23' ll='66'/>
+<size>80</size>
+<fun r='_ZN4nest17InputStreamLinkerC1Ev'/>
+<fun r='_ZN4nest17InputStreamLinkerD1Ev'/>
+<fun r='_ZN4nest17InputStreamLinker4OpenEv'/>
+<fun r='_ZN4nest17InputStreamLinker5CloseEv'/>
+<fun r='_ZN4nest17InputStreamLinker8FinalizeEv'/>
+<fun r='_ZN4nest17InputStreamLinker4SeekEyi'/>
+<fun r='_ZN4nest17InputStreamLinker4TellEv'/>
+<fun r='_ZN4nest17InputStreamLinker4ReadEPvm'/>
+<fun r='_ZN4nest17InputStreamLinker4SizeEv'/>
+<fun r='_ZN4nest17InputStreamLinker10PushStreamEPNS_11InputStreamEyy'/>
+<fun r='_ZN4nest17InputStreamLinker9PopStreamEv'/>
+<fun r='_ZN4nest17InputStreamLinker6PopAllEv'/>
+<fun r='_ZN4nest17InputStreamLinker8GetBlockEm'/>
+<fun r='_ZN4nest17InputStreamLinker13GetBlockCountEv'/>
+<fun r='_ZN4nest17InputStreamLinker13UpdateStreamsEv'/>
+<smbr r='nest::InputStreamLinker::NOT_SET' t='const size_t'/>
+<smbr r='nest::InputStreamLinker::NOT_SET64' t='const uint64'/>
+<fun r='_ZN4nest17InputStreamLinker15PositionToIndexEy'/>
+<fun r='_ZN4nest17InputStreamLinker12OpenInternalEm'/>
+<mbr r='nest::InputStreamLinker::position_' o='320' t='uint64'/>
+<mbr r='nest::InputStreamLinker::curBlock_' o='384' t='size_t'/>
+<mbr r='nest::InputStreamLinker::blocks_' o='448' t='std::vector&lt;StreamBlock&gt;'/>

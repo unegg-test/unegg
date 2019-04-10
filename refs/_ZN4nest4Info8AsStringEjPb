@@ -1,0 +1,11 @@
+<dec f='codebrowser/nest/Info.h' l='30' type='const char * nest::Info::AsString(unsigned int key, bool * handled = __null)'/>
+<use f='codebrowser/EventHandler.cpp' l='118' u='c' c='_ZN12EventHandler11OnFileStartEm'/>
+<use f='codebrowser/UnEgg.cpp' l='122' u='c' c='_Z18PrintListOfArchivePKc'/>
+<use f='codebrowser/UnEgg.cpp' l='136' u='c' c='_Z18PrintListOfArchivePKc'/>
+<use f='codebrowser/UnEgg.cpp' l='201' u='c' c='_Z18PrintListOfArchivePKc'/>
+<use f='codebrowser/UnEgg.cpp' l='209' u='c' c='_Z18PrintListOfArchivePKc'/>
+<use f='codebrowser/UnEgg.cpp' l='219' u='c' c='_Z18PrintListOfArchivePKc'/>
+<use f='codebrowser/UnEgg.cpp' l='224' u='c' c='_Z18PrintListOfArchivePKc'/>
+<use f='codebrowser/UnEgg.cpp' l='251' u='c' c='_Z18PrintListOfArchivePKc'/>
+<use f='codebrowser/UnEgg.cpp' l='259' u='c' c='_Z18PrintListOfArchivePKc'/>
+<def f='codebrowser/nest/Info.cpp' l='52' ll='55' type='const char * nest::Info::AsString(unsigned int key, bool * handled = __null)'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.h' l='29' type='void AZO::Decoder::EntropyCode::Rescale()'/>
+<def f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='27' ll='51' type='void AZO::Decoder::EntropyCode::Rescale()'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='71' u='c' c='_ZN3AZO7Decoder11EntropyCode4CodeEj'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='97' u='c' c='_ZN3AZO7Decoder11EntropyCode4CodeEjj'/>

@@ -1,0 +1,4 @@
+<def f='include/c++/7/limits' l='1065' ll='1066' type='static unsigned int std::numeric_limits&lt;unsigned int&gt;::min()'/>
+<use f='codebrowser/nest/algorithm/azo/Base/EntropyCodeB.cpp' l='11' u='c' c='_ZN3AZO4Base11EntropyCodeC1Ev'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='59' u='c' c='_ZN3AZO7Decoder11EntropyCode4CodeEj'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='81' u='c' c='_ZN3AZO7Decoder11EntropyCode4CodeEjj'/>

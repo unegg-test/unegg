@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='119' type='uInt'/>
+<offset>288</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='119'>/* space at extra (only when reading header) */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='726' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='727' u='r' c='inflate'/>

@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>fileenc.c source code [codebrowser/nest/third-party/encryption/aes/fileenc.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/third-party/encryption/aes/fileenc.c'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>nest</a>/<a href='../..'>third-party</a>/<a href='..'>encryption</a>/<a href='./'>aes</a>/<a href='fileenc.c.html'>fileenc.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> ---------------------------------------------------------------------------</i></td></tr>
+<tr><th id="3">3</th><td><i> Copyright (c) 2002, Dr Brian Gladman &lt;                 &gt;, Worcester, UK.</i></td></tr>
+<tr><th id="4">4</th><td><i> All rights reserved.</i></td></tr>
+<tr><th id="5">5</th><td><i></i></td></tr>
+<tr><th id="6">6</th><td><i> LICENSE TERMS</i></td></tr>
+<tr><th id="7">7</th><td><i></i></td></tr>
+<tr><th id="8">8</th><td><i> The free distribution and use of this software in both source and binary</i></td></tr>
+<tr><th id="9">9</th><td><i> form is allowed (with or without changes) provided that:</i></td></tr>
+<tr><th id="10">10</th><td><i></i></td></tr>
+<tr><th id="11">11</th><td><i>   1. distributions of this source code include the above copyright</i></td></tr>
+<tr><th id="12">12</th><td><i>      notice, this list of conditions and the following disclaimer;</i></td></tr>
+<tr><th id="13">13</th><td><i></i></td></tr>
+<tr><th id="14">14</th><td><i>   2. distributions in binary form include the above copyright</i></td></tr>
+<tr><th id="15">15</th><td><i>      notice, this list of conditions and the following disclaimer</i></td></tr>
+<tr><th id="16">16</th><td><i>      in the documentation and/or other associated materials;</i></td></tr>
+<tr><th id="17">17</th><td><i></i></td></tr>
+<tr><th id="18">18</th><td><i>   3. the copyright holder's name is not used to endorse products</i></td></tr>
+<tr><th id="19">19</th><td><i>      built using this software without specific written permission.</i></td></tr>
+<tr><th id="20">20</th><td><i></i></td></tr>
+<tr><th id="21">21</th><td><i> ALTERNATIVELY, provided that this notice is retained in full, this product</i></td></tr>
+<tr><th id="22">22</th><td><i> may be distributed under the terms of the GNU General Public License (GPL),</i></td></tr>
+<tr><th id="23">23</th><td><i> in which case the provisions of the GPL apply INSTEAD OF those given above.</i></td></tr>
+<tr><th id="24">24</th><td><i></i></td></tr>
+<tr><th id="25">25</th><td><i> DISCLAIMER</i></td></tr>
+<tr><th id="26">26</th><td><i></i></td></tr>
+<tr><th id="27">27</th><td><i> This software is provided 'as is' with no explicit or implied warranties</i></td></tr>
+<tr><th id="28">28</th><td><i> in respect of its properties, including, but not limited to, correctness</i></td></tr>
+<tr><th id="29">29</th><td><i> and/or fitness for purpose.</i></td></tr>
+<tr><th id="30">30</th><td><i> -------------------------------------------------------------------------</i></td></tr>
+<tr><th id="31">31</th><td><i> Issue Date: 24/01/2003</i></td></tr>
+<tr><th id="32">32</th><td><i></i></td></tr>
+<tr><th id="33">33</th><td><i> This file implements password based file encryption and authentication </i></td></tr>
+<tr><th id="34">34</th><td><i> using AES in CTR mode, HMAC-SHA1 authentication and RFC2898 password </i></td></tr>
+<tr><th id="35">35</th><td><i> based key derivation.</i></td></tr>
+<tr><th id="36">36</th><td><i></i></td></tr>
+<tr><th id="37">37</th><td><i>*/</i></td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><u>#include <a href="../../../../../include/memory.h.html">&lt;memory.h&gt;</a></u></td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td><u>#include <a href="fileenc.h.html">"fileenc.h"</a></u></td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td><u>#<span data-ppcond="43">if</span> defined(<span class="macro" data-ref="_M/__cplusplus">__cplusplus</span>)</u></td></tr>
+<tr><th id="44">44</th><td><b>extern</b> <q>"C"</q></td></tr>
+<tr><th id="45">45</th><td>{</td></tr>
+<tr><th id="46">46</th><td><u>#<span data-ppcond="43">endif</span></u></td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td><i>/* subroutine for data encryption/decryption    */</i></td></tr>
+<tr><th id="49">49</th><td><i>/* this could be speeded up a lot by aligning   */</i></td></tr>
+<tr><th id="50">50</th><td><i  data-doc="encr_data">/* buffers and using 32 bit operations          */</i></td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="encr_data" title='encr_data' data-type='void encr_data(unsigned char * data, unsigned int d_len, fcrypt_ctx * cx)' data-ref="encr_data">encr_data</dfn>(<em>unsigned</em> <em>char</em> <dfn class="local col1 decl" id="1data" title='data' data-type='unsigned char *' data-ref="1data">data</dfn>[], <em>unsigned</em> <em>int</em> <dfn class="local col2 decl" id="2d_len" title='d_len' data-type='unsigned int' data-ref="2d_len">d_len</dfn>, <a class="typedef" href="fileenc.h.html#fcrypt_ctx" title='fcrypt_ctx' data-type='struct fcrypt_ctx' data-ref="fcrypt_ctx">fcrypt_ctx</a> <dfn class="local col3 decl" id="3cx" title='cx' data-type='fcrypt_ctx *' data-ref="3cx">cx</dfn>[<var>1</var>])</td></tr>
+<tr><th id="53">53</th><td>{   <em>unsigned</em> <em>int</em> <dfn class="local col4 decl" id="4i" title='i' data-type='unsigned int' data-ref="4i">i</dfn> = <var>0</var>, <dfn class="local col5 decl" id="5pos" title='pos' data-type='unsigned int' data-ref="5pos">pos</dfn> = <a class="local col3 ref" href="#3cx" title='cx' data-ref="3cx">cx</a>-&gt;<a class="ref" href="fileenc.h.html#(anonymous)::encr_pos" title='(anonymous struct)::encr_pos' data-ref="(anonymous)::encr_pos">encr_pos</a>;</td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td>    <b>while</b>(<a class="local col4 ref" href="#4i" title='i' data-ref="4i">i</a> &lt; <a class="local col2 ref" href="#2d_len" title='d_len' data-ref="2d_len">d_len</a>)</td></tr>
+<tr><th id="56">56</th><td>    {</td></tr>
+<tr><th id="57">57</th><td>        <b>if</b>(<a class="local col5 ref" href="#5pos" title='pos' data-ref="5pos">pos</a> == <a class="macro" href="aes.h.html#70" title="16" data-ref="_M/BLOCK_SIZE">BLOCK_SIZE</a>)</td></tr>
+<tr><th id="58">58</th><td>        {   <em>unsigned</em> <em>int</em> <dfn class="local col6 decl" id="6j" title='j' data-type='unsigned int' data-ref="6j">j</dfn> = <var>0</var>;</td></tr>
+<tr><th id="59">59</th><td>            <i>/* increment encryption nonce   */</i></td></tr>
+<tr><th id="60">60</th><td>            <b>while</b>(<a class="local col6 ref" href="#6j" title='j' data-ref="6j">j</a> &lt; <var>8</var> &amp;&amp; !++<a class="local col3 ref" href="#3cx" title='cx' data-ref="3cx">cx</a>-&gt;<a class="ref" href="fileenc.h.html#(anonymous)::nonce" title='(anonymous struct)::nonce' data-ref="(anonymous)::nonce">nonce</a>[<a class="local col6 ref" href="#6j" title='j' data-ref="6j">j</a>])</td></tr>
+<tr><th id="61">61</th><td>                ++<a class="local col6 ref" href="#6j" title='j' data-ref="6j">j</a>;</td></tr>
+<tr><th id="62">62</th><td>            <i>/* encrypt the nonce to form next xor buffer    */</i></td></tr>
+<tr><th id="63">63</th><td>            <a class="ref" href="aes.h.html#aes_encrypt_block" title='aes_encrypt_block' data-ref="aes_encrypt_block">aes_encrypt_block</a>(<a class="local col3 ref" href="#3cx" title='cx' data-ref="3cx">cx</a>-&gt;<a class="ref" href="fileenc.h.html#(anonymous)::nonce" title='(anonymous struct)::nonce' data-ref="(anonymous)::nonce">nonce</a>, <a class="local col3 ref" href="#3cx" title='cx' data-ref="3cx">cx</a>-&gt;<a class="ref" href="fileenc.h.html#(anonymous)::encr_bfr" title='(anonymous struct)::encr_bfr' data-ref="(anonymous)::encr_bfr">encr_bfr</a>, <a class="local col3 ref" href="#3cx" title='cx' data-ref="3cx">cx</a>-&gt;<a class="ref" href="fileenc.h.html#(anonymous)::encr_ctx" title='(anonymous struct)::encr_ctx' data-ref="(anonymous)::encr_ctx">encr_ctx</a>);</td></tr>
+<tr><th id="64">64</th><td>            <a class="local col5 ref" href="#5pos" title='pos' data-ref="5pos">pos</a> = <var>0</var>;</td></tr>
+<tr><th id="65">65</th><td>        }</td></tr>
+<tr><th id="66">66</th><td></td></tr>
+<tr><th id="67">67</th><td>        <a class="local col1 ref" href="#1data" title='data' data-ref="1data">data</a>[<a class="local col4 ref" href="#4i" title='i' data-ref="4i">i</a>++] ^= <a class="local col3 ref" href="#3cx" title='cx' data-ref="3cx">cx</a>-&gt;<a class="ref" href="fileenc.h.html#(anonymous)::encr_bfr" title='(anonymous struct)::encr_bfr' data-ref="(anonymous)::encr_bfr">encr_bfr</a>[<a class="local col5 ref" href="#5pos" title='pos' data-ref="5pos">pos</a>++];</td></tr>
+<tr><th id="68">68</th><td>    }</td></tr>
+<tr><th id="69">69</th><td></td></tr>
+<tr><th id="70">70</th><td>    <a class="local col3 ref" href="#3cx" title='cx' data-ref="3cx">cx</a>-&gt;<a class="ref" href="fileenc.h.html#(anonymous)::encr_pos" title='(anonymous struct)::encr_pos' data-ref="(anonymous)::encr_pos">encr_pos</a> = <a class="local col5 ref" href="#5pos" title='pos' data-ref="5pos">pos</a>;</td></tr>
+<tr><th id="71">71</th><td>}</td></tr>
+<tr><th id="72">72</th><td></td></tr>
+<tr><th id="73">73</th><td><em>int</em> <dfn class="decl def" id="fcrypt_init" title='fcrypt_init' data-ref="fcrypt_init">fcrypt_init</dfn>(</td></tr>
+<tr><th id="74">74</th><td>    <em>int</em> <dfn class="local col7 decl" id="7mode" title='mode' data-type='int' data-ref="7mode">mode</dfn>,                               <i>/* the mode to be used (input)          */</i></td></tr>
+<tr><th id="75">75</th><td>    <em>const</em> <em>unsigned</em> <em>char</em> <dfn class="local col8 decl" id="8pwd" title='pwd' data-type='const unsigned char *' data-ref="8pwd">pwd</dfn>[],              <i>/* the user specified password (input)  */</i></td></tr>
+<tr><th id="76">76</th><td>    <em>unsigned</em> <em>int</em> <dfn class="local col9 decl" id="9pwd_len" title='pwd_len' data-type='unsigned int' data-ref="9pwd_len">pwd_len</dfn>,                   <i>/* the length of the password (input)   */</i></td></tr>
+<tr><th id="77">77</th><td>    <em>const</em> <em>unsigned</em> <em>char</em> <dfn class="local col0 decl" id="10salt" title='salt' data-type='const unsigned char *' data-ref="10salt">salt</dfn>[],             <i>/* the salt (input)                     */</i></td></tr>
+<tr><th id="78">78</th><td><u>#<span data-ppcond="78">ifdef</span> <a class="macro" href="fileenc.h.html#45" data-ref="_M/PASSWORD_VERIFIER">PASSWORD_VERIFIER</a></u></td></tr>
+<tr><th id="79">79</th><td>    <em>unsigned</em> <em>char</em> <dfn class="local col1 decl" id="11pwd_ver" title='pwd_ver' data-type='unsigned char *' data-ref="11pwd_ver">pwd_ver</dfn>[<a class="macro" href="fileenc.h.html#53" title="2" data-ref="_M/PWD_VER_LENGTH">PWD_VER_LENGTH</a>],  <i>/* 2 byte password verifier (output)    */</i></td></tr>
+<tr><th id="80">80</th><td><u>#<span data-ppcond="78">endif</span></u></td></tr>
+<tr><th id="81">81</th><td>    <a class="typedef" href="fileenc.h.html#fcrypt_ctx" title='fcrypt_ctx' data-type='struct fcrypt_ctx' data-ref="fcrypt_ctx">fcrypt_ctx</a>      <dfn class="local col2 decl" id="12cx" title='cx' data-type='fcrypt_ctx *' data-ref="12cx">cx</dfn>[<var>1</var>])                  <i>/* the file encryption context (output) */</i></td></tr>
+<tr><th id="82">82</th><td>{   <em>unsigned</em> <em>char</em> <dfn class="local col3 decl" id="13kbuf" title='kbuf' data-type='unsigned char [66]' data-ref="13kbuf">kbuf</dfn>[<var>2</var> * <a class="macro" href="fileenc.h.html#47" title="32" data-ref="_M/MAX_KEY_LENGTH">MAX_KEY_LENGTH</a> + <a class="macro" href="fileenc.h.html#53" title="2" data-ref="_M/PWD_VER_LENGTH">PWD_VER_LENGTH</a>];</td></tr>
+<tr><th id="83">83</th><td></td></tr>
+<tr><th id="84">84</th><td>    <b>if</b>(<a class="local col9 ref" href="#9pwd_len" title='pwd_len' data-ref="9pwd_len">pwd_len</a> &gt; <a class="macro" href="fileenc.h.html#48" title="128" data-ref="_M/MAX_PWD_LENGTH">MAX_PWD_LENGTH</a>)</td></tr>
+<tr><th id="85">85</th><td>        <b>return</b> <a class="macro" href="fileenc.h.html#59" title="-100" data-ref="_M/PASSWORD_TOO_LONG">PASSWORD_TOO_LONG</a>;</td></tr>
+<tr><th id="86">86</th><td></td></tr>
+<tr><th id="87">87</th><td>    <b>if</b>(<a class="local col7 ref" href="#7mode" title='mode' data-ref="7mode">mode</a> &lt; <var>1</var> || <a class="local col7 ref" href="#7mode" title='mode' data-ref="7mode">mode</a> &gt; <var>3</var>)</td></tr>
+<tr><th id="88">88</th><td>        <b>return</b> <a class="macro" href="fileenc.h.html#60" title="-101" data-ref="_M/BAD_MODE">BAD_MODE</a>;</td></tr>
+<tr><th id="89">89</th><td></td></tr>
+<tr><th id="90">90</th><td>    <a class="local col2 ref" href="#12cx" title='cx' data-ref="12cx">cx</a>-&gt;<a class="ref" href="fileenc.h.html#(anonymous)::mode" title='(anonymous struct)::mode' data-ref="(anonymous)::mode">mode</a> = <a class="local col7 ref" href="#7mode" title='mode' data-ref="7mode">mode</a>;</td></tr>
+<tr><th id="91">91</th><td>    <a class="local col2 ref" href="#12cx" title='cx' data-ref="12cx">cx</a>-&gt;<a class="ref" href="fileenc.h.html#(anonymous)::pwd_len" title='(anonymous struct)::pwd_len' data-ref="(anonymous)::pwd_len">pwd_len</a> = <a class="local col9 ref" href="#9pwd_len" title='pwd_len' data-ref="9pwd_len">pwd_len</a>;</td></tr>
+<tr><th id="92">92</th><td></td></tr>
+<tr><th id="93">93</th><td>    <i>/* derive the encryption and authetication keys and the password verifier   */</i></td></tr>
+<tr><th id="94">94</th><td>    <a class="ref" href="pwd2key.h.html#derive_key" title='derive_key' data-ref="derive_key">derive_key</a>(<a class="local col8 ref" href="#8pwd" title='pwd' data-ref="8pwd">pwd</a>, <a class="local col9 ref" href="#9pwd_len" title='pwd_len' data-ref="9pwd_len">pwd_len</a>, <a class="local col0 ref" href="#10salt" title='salt' data-ref="10salt">salt</a>, <a class="macro" href="fileenc.h.html#74" title="(4 * (mode &amp; 3) + 4)" data-ref="_M/SALT_LENGTH">SALT_LENGTH</a>(<a class="local col7 ref" href="#7mode" title='mode' data-ref="7mode">mode</a>), <a class="macro" href="fileenc.h.html#50" title="1000" data-ref="_M/KEYING_ITERATIONS">KEYING_ITERATIONS</a>,</td></tr>
+<tr><th id="95">95</th><td>                        <a class="local col3 ref" href="#13kbuf" title='kbuf' data-ref="13kbuf">kbuf</a>, <var>2</var> * <a class="macro" href="fileenc.h.html#73" title="(8 * (mode &amp; 3) + 8)" data-ref="_M/KEY_LENGTH">KEY_LENGTH</a>(<a class="local col7 ref" href="#7mode" title='mode' data-ref="7mode">mode</a>) + <a class="macro" href="fileenc.h.html#53" title="2" data-ref="_M/PWD_VER_LENGTH">PWD_VER_LENGTH</a>);</td></tr>
+<tr><th id="96">96</th><td></td></tr>
+<tr><th id="97">97</th><td>    <i>/* initialise the encryption nonce and buffer pos   */</i></td></tr>
+<tr><th id="98">98</th><td>    <a class="local col2 ref" href="#12cx" title='cx' data-ref="12cx">cx</a>-&gt;<a class="ref" href="fileenc.h.html#(anonymous)::encr_pos" title='(anonymous struct)::encr_pos' data-ref="(anonymous)::encr_pos">encr_pos</a> = <a class="macro" href="aes.h.html#70" title="16" data-ref="_M/BLOCK_SIZE">BLOCK_SIZE</a>;</td></tr>
+<tr><th id="99">99</th><td>    <i>/* if we need a random component in the encryption  */</i></td></tr>
+<tr><th id="100">100</th><td>    <i>/* nonce, this is where it would have to be set     */</i></td></tr>
+<tr><th id="101">101</th><td>    <a class="ref" href="../../../../../include/string.h.html#memset" title='memset' data-ref="memset">memset</a>(<a class="local col2 ref" href="#12cx" title='cx' data-ref="12cx">cx</a>-&gt;<a class="ref" href="fileenc.h.html#(anonymous)::nonce" title='(anonymous struct)::nonce' data-ref="(anonymous)::nonce">nonce</a>, <var>0</var>, <a class="macro" href="aes.h.html#70" title="16" data-ref="_M/BLOCK_SIZE">BLOCK_SIZE</a> * <b>sizeof</b>(<em>unsigned</em> <em>char</em>));</td></tr>
+<tr><th id="102">102</th><td></td></tr>
+<tr><th id="103">103</th><td>    <i>/* initialise for encryption using key 1            */</i></td></tr>
+<tr><th id="104">104</th><td>    <a class="ref" href="aes.h.html#aes_set_encrypt_key" title='aes_set_encrypt_key' data-ref="aes_set_encrypt_key">aes_set_encrypt_key</a>(<a class="local col3 ref" href="#13kbuf" title='kbuf' data-ref="13kbuf">kbuf</a>, <a class="macro" href="fileenc.h.html#73" title="(8 * (mode &amp; 3) + 8)" data-ref="_M/KEY_LENGTH">KEY_LENGTH</a>(<a class="local col7 ref" href="#7mode" title='mode' data-ref="7mode">mode</a>), <a class="local col2 ref" href="#12cx" title='cx' data-ref="12cx">cx</a>-&gt;<a class="ref" href="fileenc.h.html#(anonymous)::encr_ctx" title='(anonymous struct)::encr_ctx' data-ref="(anonymous)::encr_ctx">encr_ctx</a>);</td></tr>
+<tr><th id="105">105</th><td></td></tr>
+<tr><th id="106">106</th><td>    <i>/* initialise for authentication using key 2        */</i></td></tr>
+<tr><th id="107">107</th><td>    <a class="ref" href="hmac.h.html#hmac_sha1_begin" title='hmac_sha1_begin' data-ref="hmac_sha1_begin">hmac_sha1_begin</a>(<a class="local col2 ref" href="#12cx" title='cx' data-ref="12cx">cx</a>-&gt;<a class="ref" href="fileenc.h.html#(anonymous)::auth_ctx" title='(anonymous struct)::auth_ctx' data-ref="(anonymous)::auth_ctx">auth_ctx</a>);</td></tr>
+<tr><th id="108">108</th><td>    <a class="ref" href="hmac.h.html#hmac_sha1_key" title='hmac_sha1_key' data-ref="hmac_sha1_key">hmac_sha1_key</a>(<a class="local col3 ref" href="#13kbuf" title='kbuf' data-ref="13kbuf">kbuf</a> + <a class="macro" href="fileenc.h.html#73" title="(8 * (mode &amp; 3) + 8)" data-ref="_M/KEY_LENGTH">KEY_LENGTH</a>(<a class="local col7 ref" href="#7mode" title='mode' data-ref="7mode">mode</a>), <a class="macro" href="fileenc.h.html#73" title="(8 * (mode &amp; 3) + 8)" data-ref="_M/KEY_LENGTH">KEY_LENGTH</a>(<a class="local col7 ref" href="#7mode" title='mode' data-ref="7mode">mode</a>), <a class="local col2 ref" href="#12cx" title='cx' data-ref="12cx">cx</a>-&gt;<a class="ref" href="fileenc.h.html#(anonymous)::auth_ctx" title='(anonymous struct)::auth_ctx' data-ref="(anonymous)::auth_ctx">auth_ctx</a>);</td></tr>
+<tr><th id="109">109</th><td></td></tr>
+<tr><th id="110">110</th><td><u>#<span data-ppcond="110">ifdef</span> <a class="macro" href="fileenc.h.html#45" data-ref="_M/PASSWORD_VERIFIER">PASSWORD_VERIFIER</a></u></td></tr>
+<tr><th id="111">111</th><td>    <a class="ref" href="../../../../../include/string.h.html#memcpy" title='memcpy' data-ref="memcpy">memcpy</a>(<a class="local col1 ref" href="#11pwd_ver" title='pwd_ver' data-ref="11pwd_ver">pwd_ver</a>, <a class="local col3 ref" href="#13kbuf" title='kbuf' data-ref="13kbuf">kbuf</a> + <var>2</var> * <a class="macro" href="fileenc.h.html#73" title="(8 * (mode &amp; 3) + 8)" data-ref="_M/KEY_LENGTH">KEY_LENGTH</a>(<a class="local col7 ref" href="#7mode" title='mode' data-ref="7mode">mode</a>), <a class="macro" href="fileenc.h.html#53" title="2" data-ref="_M/PWD_VER_LENGTH">PWD_VER_LENGTH</a>);</td></tr>
+<tr><th id="112">112</th><td><u>#<span data-ppcond="110">endif</span></u></td></tr>
+<tr><th id="113">113</th><td></td></tr>
+<tr><th id="114">114</th><td>    <b>return</b> <a class="macro" href="fileenc.h.html#58" title="0" data-ref="_M/GOOD_RETURN">GOOD_RETURN</a>;</td></tr>
+<tr><th id="115">115</th><td>}</td></tr>
+<tr><th id="116">116</th><td></td></tr>
+<tr><th id="117">117</th><td><i>/* perform 'in place' encryption and authentication */</i></td></tr>
+<tr><th id="118">118</th><td></td></tr>
+<tr><th id="119">119</th><td><em>void</em> <dfn class="decl def" id="fcrypt_encrypt" title='fcrypt_encrypt' data-ref="fcrypt_encrypt">fcrypt_encrypt</dfn>(<em>unsigned</em> <em>char</em> <dfn class="local col4 decl" id="14data" title='data' data-type='unsigned char *' data-ref="14data">data</dfn>[], <em>unsigned</em> <em>int</em> <dfn class="local col5 decl" id="15data_len" title='data_len' data-type='unsigned int' data-ref="15data_len">data_len</dfn>, <a class="typedef" href="fileenc.h.html#fcrypt_ctx" title='fcrypt_ctx' data-type='struct fcrypt_ctx' data-ref="fcrypt_ctx">fcrypt_ctx</a> <dfn class="local col6 decl" id="16cx" title='cx' data-type='fcrypt_ctx *' data-ref="16cx">cx</dfn>[<var>1</var>])</td></tr>
+<tr><th id="120">120</th><td>{</td></tr>
+<tr><th id="121">121</th><td>    <a class="tu ref" href="#encr_data" title='encr_data' data-use='c' data-ref="encr_data">encr_data</a>(<a class="local col4 ref" href="#14data" title='data' data-ref="14data">data</a>, <a class="local col5 ref" href="#15data_len" title='data_len' data-ref="15data_len">data_len</a>, <a class="local col6 ref" href="#16cx" title='cx' data-ref="16cx">cx</a>);</td></tr>
+<tr><th id="122">122</th><td>    <a class="ref" href="hmac.h.html#hmac_sha1_data" title='hmac_sha1_data' data-ref="hmac_sha1_data">hmac_sha1_data</a>(<a class="local col4 ref" href="#14data" title='data' data-ref="14data">data</a>, <a class="local col5 ref" href="#15data_len" title='data_len' data-ref="15data_len">data_len</a>, <a class="local col6 ref" href="#16cx" title='cx' data-ref="16cx">cx</a>-&gt;<a class="ref" href="fileenc.h.html#(anonymous)::auth_ctx" title='(anonymous struct)::auth_ctx' data-ref="(anonymous)::auth_ctx">auth_ctx</a>);</td></tr>
+<tr><th id="123">123</th><td>}</td></tr>
+<tr><th id="124">124</th><td></td></tr>
+<tr><th id="125">125</th><td><i>/* perform 'in place' authentication and decryption */</i></td></tr>
+<tr><th id="126">126</th><td></td></tr>
+<tr><th id="127">127</th><td><em>void</em> <dfn class="decl def" id="fcrypt_decrypt" title='fcrypt_decrypt' data-ref="fcrypt_decrypt">fcrypt_decrypt</dfn>(<em>unsigned</em> <em>char</em> <dfn class="local col7 decl" id="17data" title='data' data-type='unsigned char *' data-ref="17data">data</dfn>[], <em>unsigned</em> <em>int</em> <dfn class="local col8 decl" id="18data_len" title='data_len' data-type='unsigned int' data-ref="18data_len">data_len</dfn>, <a class="typedef" href="fileenc.h.html#fcrypt_ctx" title='fcrypt_ctx' data-type='struct fcrypt_ctx' data-ref="fcrypt_ctx">fcrypt_ctx</a> <dfn class="local col9 decl" id="19cx" title='cx' data-type='fcrypt_ctx *' data-ref="19cx">cx</dfn>[<var>1</var>])</td></tr>
+<tr><th id="128">128</th><td>{</td></tr>
+<tr><th id="129">129</th><td>    <a class="ref" href="hmac.h.html#hmac_sha1_data" title='hmac_sha1_data' data-ref="hmac_sha1_data">hmac_sha1_data</a>(<a class="local col7 ref" href="#17data" title='data' data-ref="17data">data</a>, <a class="local col8 ref" href="#18data_len" title='data_len' data-ref="18data_len">data_len</a>, <a class="local col9 ref" href="#19cx" title='cx' data-ref="19cx">cx</a>-&gt;<a class="ref" href="fileenc.h.html#(anonymous)::auth_ctx" title='(anonymous struct)::auth_ctx' data-ref="(anonymous)::auth_ctx">auth_ctx</a>);</td></tr>
+<tr><th id="130">130</th><td>    <a class="tu ref" href="#encr_data" title='encr_data' data-use='c' data-ref="encr_data">encr_data</a>(<a class="local col7 ref" href="#17data" title='data' data-ref="17data">data</a>, <a class="local col8 ref" href="#18data_len" title='data_len' data-ref="18data_len">data_len</a>, <a class="local col9 ref" href="#19cx" title='cx' data-ref="19cx">cx</a>);</td></tr>
+<tr><th id="131">131</th><td>}</td></tr>
+<tr><th id="132">132</th><td></td></tr>
+<tr><th id="133">133</th><td><i>/* close encryption/decryption and return the MAC value */</i></td></tr>
+<tr><th id="134">134</th><td></td></tr>
+<tr><th id="135">135</th><td><em>int</em> <dfn class="decl def" id="fcrypt_end" title='fcrypt_end' data-ref="fcrypt_end">fcrypt_end</dfn>(<em>unsigned</em> <em>char</em> <dfn class="local col0 decl" id="20mac" title='mac' data-type='unsigned char *' data-ref="20mac">mac</dfn>[], <a class="typedef" href="fileenc.h.html#fcrypt_ctx" title='fcrypt_ctx' data-type='struct fcrypt_ctx' data-ref="fcrypt_ctx">fcrypt_ctx</a> <dfn class="local col1 decl" id="21cx" title='cx' data-type='fcrypt_ctx *' data-ref="21cx">cx</dfn>[<var>1</var>])</td></tr>
+<tr><th id="136">136</th><td>{</td></tr>
+<tr><th id="137">137</th><td>    <a class="ref" href="hmac.h.html#hmac_sha1_end" title='hmac_sha1_end' data-ref="hmac_sha1_end">hmac_sha1_end</a>(<a class="local col0 ref" href="#20mac" title='mac' data-ref="20mac">mac</a>, <a class="macro" href="fileenc.h.html#75" title="(10)" data-ref="_M/MAC_LENGTH">MAC_LENGTH</a>(cx-&gt;mode), <a class="local col1 ref" href="#21cx" title='cx' data-ref="21cx">cx</a>-&gt;<a class="ref" href="fileenc.h.html#(anonymous)::auth_ctx" title='(anonymous struct)::auth_ctx' data-ref="(anonymous)::auth_ctx">auth_ctx</a>);</td></tr>
+<tr><th id="138">138</th><td>    <b>return</b> <a class="macro" href="fileenc.h.html#75" title="(10)" data-ref="_M/MAC_LENGTH">MAC_LENGTH</a>(cx-&gt;mode);    <i>/* return MAC length in bytes   */</i></td></tr>
+<tr><th id="139">139</th><td>}</td></tr>
+<tr><th id="140">140</th><td></td></tr>
+<tr><th id="141">141</th><td><u>#<span data-ppcond="141">if</span> defined(<span class="macro" data-ref="_M/__cplusplus">__cplusplus</span>)</u></td></tr>
+<tr><th id="142">142</th><td>}</td></tr>
+<tr><th id="143">143</th><td><u>#<span data-ppcond="141">endif</span></u></td></tr>
+<tr><th id="144">144</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

@@ -1,0 +1,12 @@
+<dec f='codebrowser/nest/format/EggFormat.h' l='117' type='std::vector&lt;egg::FileWrap *&gt;'/>
+<offset>1920</offset>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='202' u='m' c='_ZN4nest9EggFormat9ScanFilesEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='203' u='m' c='_ZN4nest9EggFormat9ScanFilesEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='204' u='m' c='_ZN4nest9EggFormat9ScanFilesEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='420' u='m' c='_ZN4nest9EggFormat18QueryExtractStreamEmPPNS_12OutputStreamE'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='516' u='m' c='_ZN4nest9EggFormat20ExtractNormalArchiveEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='566' u='m' c='_ZN4nest9EggFormat19ExtractSolidArchiveEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='573' u='m' c='_ZN4nest9EggFormat19ExtractSolidArchiveEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='746' u='m' c='_ZN4nest9EggFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='1036' u='m' c='_ZN4nest9EggFormat7_AsSizeEjPb'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='1090' u='m' c='_ZN4nest9EggFormat12_AsChildInfoEjmPb'/>

@@ -1,0 +1,4 @@
+<def f='codebrowser/nest/format/egg/FileWrap.h' l='45' ll='48' type='nest::egg::ExtraField * nest::egg::FileWrap::GetExtra(int magic)'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='420' u='c' c='_ZN4nest9EggFormat18QueryExtractStreamEmPPNS_12OutputStreamE'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='458' u='c' c='_ZN4nest9EggFormat11IsTargetDirEPNS_3egg8FileWrapE'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='465' u='c' c='_ZN4nest9EggFormat11IsTargetDirEPNS_3egg8FileWrapE'/>

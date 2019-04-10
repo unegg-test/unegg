@@ -1,0 +1,2 @@
+<dec f='include/c++/7/bits/algorithmfwd.h' l='725' type='void std::nth_element(_RAIter , _RAIter , _RAIter , _Compare )'/>
+<def f='include/c++/7/bits/stl_algo.h' l='4788' ll='4808' type='void std::nth_element(_RandomAccessIterator __first, _RandomAccessIterator __nth, _RandomAccessIterator __last, _Compare __comp)'/>

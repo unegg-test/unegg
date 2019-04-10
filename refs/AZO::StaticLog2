@@ -1,0 +1,7 @@
+<def f='codebrowser/nest/algorithm/azo/Common/AZOPrivate.h' l='26' ll='28'/>
+<def f='codebrowser/nest/algorithm/azo/Common/AZOPrivate.h' l='30' ll='33'/>
+<def f='codebrowser/nest/algorithm/azo/Common/AZOPrivate.h' l='35' ll='38'/>
+<size>1</size>
+<smbr r='AZO::StaticLog2::value' t='const size_t'/>
+<smbr r='AZO::StaticLog2{1}::value' t='const u_int'/>
+<smbr r='AZO::StaticLog2{0}::value' t='const u_int'/>

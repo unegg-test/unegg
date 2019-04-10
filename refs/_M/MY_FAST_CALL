@@ -1,0 +1,14 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='121'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zCrc.h' l='14' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zCrc.h' l='20' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zCrc.h' l='21' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zCrc.c' l='17' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zCrc.c' l='26' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zCrc.c' l='41' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zCrc.c' l='46' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zCrc.c' l='51' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='129' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='422' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='448' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='510' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='771' u='c'/>

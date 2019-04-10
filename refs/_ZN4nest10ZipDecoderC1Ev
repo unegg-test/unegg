@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/encryption/ZipDecoder.h' l='20' type='void nest::ZipDecoder::ZipDecoder()'/>
+<def f='codebrowser/nest/encryption/ZipDecoder.cpp' l='14' ll='18' type='void nest::ZipDecoder::ZipDecoder()'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='438' u='c' c='_ZN4nest9ALZFormat17PreprocessDecryptEmPNS_3alz4FileE'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='914' u='c' c='_ZN4nest9EggFormat17PreprocessDecryptEmPNS_3egg12EncryptFieldE'/>

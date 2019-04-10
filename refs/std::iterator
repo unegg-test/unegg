@@ -1,0 +1,6 @@
+<def f='include/c++/7/bits/stl_iterator_base_types.h' l='118' ll='130'/>
+<ovr f='include/c++/7/bits/stl_iterator.h' l='455' c='std::back_insert_iterator'/>
+<ovr f='include/c++/7/bits/stl_iterator.h' l='547' c='std::front_insert_iterator'/>
+<ovr f='include/c++/7/bits/stl_iterator.h' l='642' c='std::insert_iterator'/>
+<ovr f='include/c++/7/bits/stl_bvector.h' l='136' c='std::_Bit_iterator_base'/>
+<ovr f='include/c++/7/bits/streambuf_iterator.h' l='216' c='std::ostreambuf_iterator'/>

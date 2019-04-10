@@ -1,0 +1,9 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='99' type='Bytef *'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='369' u='w' c='deflateReset'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='570' u='r' c='flush_pending'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='572' u='w' c='flush_pending'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='577' u='w' c='flush_pending'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='973' u='w' c='deflateCopy'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='973' u='r' c='deflateCopy'/>
+<offset>256</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='99'>/* next pending byte to output to the stream */</doc>

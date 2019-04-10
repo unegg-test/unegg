@@ -1,0 +1,8 @@
+atof|atof
+atoi|atoi
+atol|atol
+atoll|atoll
+_ZNSt6vector2atEm|std::vector::at
+_ZNSt5deque2atEm|std::deque::at
+_ZSt4atanf|std::atan
+_ZSt5atan2ff|std::atan2

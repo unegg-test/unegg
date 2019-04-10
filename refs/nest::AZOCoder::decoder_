@@ -1,0 +1,6 @@
+<dec f='codebrowser/nest/algorithm/AZOCoder.h' l='36' type='AZODecoder *'/>
+<use f='codebrowser/nest/algorithm/AZOCoder.cpp' l='32' u='w' c='_ZN4nest8AZOCoder10InitializeEPKhm'/>
+<use f='codebrowser/nest/algorithm/AZOCoder.cpp' l='42' u='r' c='_ZN4nest8AZOCoder8FinalizeEv'/>
+<use f='codebrowser/nest/algorithm/AZOCoder.cpp' l='43' u='w' c='_ZN4nest8AZOCoder8FinalizeEv'/>
+<use f='codebrowser/nest/algorithm/AZOCoder.cpp' l='59' u='r' c='_ZN4nest8AZOCoder5OnPopEPvPm'/>
+<offset>320</offset>

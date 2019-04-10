@@ -1,0 +1,67 @@
+<dec f='codebrowser/nest/third-party/encryption/aes/fileenc.h' l='91' type='unsigned int'/>
+<offset>3712</offset>
+<doc f='codebrowser/nest/third-party/encryption/aes/fileenc.h' l='91'>/* File encryption mode   */</doc>
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='203' type='Int32'/>
+<offset>64</offset>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='202'>/* or outputting data */</doc>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='191' u='w' c='BZ2_bzCompressInit'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='293' u='r' c='copy_input_until_stop'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='372' u='r' c='handle_compress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='377' u='r' c='handle_compress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='384' u='r' c='handle_compress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='386' u='r' c='handle_compress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='417' u='r' c='BZ2_bzCompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='430' u='w' c='BZ2_bzCompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='436' u='w' c='BZ2_bzCompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='449' u='w' c='BZ2_bzCompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='460' u='w' c='BZ2_bzCompress'/>
+<dec f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='88' type='int'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzclose.c' l='21' u='r' c='gzclose'/>
+<offset>0</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='87'>/* used for both reading and writing */</doc>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='88'>/* see gzip modes above */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='74' u='r' c='gz_reset'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='103' u='w' c='gz_open'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='112' u='w' c='gz_open'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='116' u='w' c='gz_open'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='119' u='w' c='gz_open'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='145' u='r' c='gz_open'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='167' u='r' c='gz_open'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='170' u='r' c='gz_open'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='179' u='r' c='gz_open'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='180' u='w' c='gz_open'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='183' u='r' c='gz_open'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='238' u='r' c='gzbuffer'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='238' u='r' c='gzbuffer'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='264' u='r' c='gzrewind'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='288' u='r' c='gzseek64'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='288' u='r' c='gzseek64'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='307' u='r' c='gzseek64'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='323' u='r' c='gzseek64'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='333' u='r' c='gzseek64'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='372' u='r' c='gztell64'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='372' u='r' c='gztell64'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='400' u='r' c='gzoffset64'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='400' u='r' c='gzoffset64'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='407' u='r' c='gzoffset64'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='432' u='r' c='gzeof'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='432' u='r' c='gzeof'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='436' u='r' c='gzeof'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='451' u='r' c='gzerror'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='451' u='r' c='gzerror'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='470' u='r' c='gzclearerr'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='470' u='r' c='gzclearerr'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='474' u='r' c='gzclearerr'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='379' u='r' c='gzread'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='467' u='r' c='gzgetc'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='495' u='r' c='gzungetc'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='556' u='r' c='gzgets'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='615' u='r' c='gzdirect'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='640' u='r' c='gzclose_r'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='160' u='r' c='gzwrite'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='236' u='r' c='gzputc'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='295' u='r' c='gzprintf'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='438' u='r' c='gzflush'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='473' u='r' c='gzsetparams'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='512' u='r' c='gzclose_w'/>
+<use f='codebrowser/nest/third-party/encryption/aes/fileenc.c' l='90' u='w' c='fcrypt_init'/>

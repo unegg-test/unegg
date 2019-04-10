@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/algorithm/azo/Decoder/EntropyBitProbD.h' l='20' type='u_int AZO::Decoder::EntropyBitProb::Code(AZO::Decoder::EntropyCode &amp; entropy)'/>
+<def f='codebrowser/nest/algorithm/azo/Decoder/EntropyBitProbD.cpp' l='9' ll='26' type='u_int AZO::Decoder::EntropyBitProb::Code(AZO::Decoder::EntropyCode &amp; entropy)'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/DistanceCodeD.cpp' l='27' u='c' c='_ZN3AZO7Decoder12DistanceCode4CodeERNS0_11EntropyCodeE'/>

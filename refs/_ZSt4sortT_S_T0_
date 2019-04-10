@@ -1,0 +1,3 @@
+<dec f='include/c++/7/bits/algorithmfwd.h' l='820' type='void std::sort(_RAIter , _RAIter , _Compare )'/>
+<def f='include/c++/7/bits/stl_algo.h' l='4855' ll='4869' type='void std::sort(_RandomAccessIterator __first, _RandomAccessIterator __last, _Compare __comp)'/>
+<use f='codebrowser/nest/Utils.cpp' l='361' u='c' c='_ZN4nest4utf813path_ellipsisEPcmmPKc'/>

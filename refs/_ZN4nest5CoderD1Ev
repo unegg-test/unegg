@@ -1,0 +1,7 @@
+<dec f='codebrowser/nest/algorithm/Coder.h' l='23' type='void nest::Coder::~Coder()'/>
+<ovr f='codebrowser/nest/algorithm/AZOCoder.cpp' l='23' c='_ZN4nest8AZOCoderD1Ev'/>
+<ovr f='codebrowser/nest/algorithm/BZipCoder.cpp' l='23' c='_ZN4nest9BZipCoderD1Ev'/>
+<def f='codebrowser/nest/algorithm/Coder.cpp' l='17' ll='20' type='void nest::Coder::~Coder()'/>
+<ovr f='codebrowser/nest/algorithm/DeflateCoder.cpp' l='24' c='_ZN4nest12DeflateCoderD1Ev'/>
+<ovr f='codebrowser/nest/algorithm/LZMACoder.cpp' l='38' c='_ZN4nest9LZMACoderD1Ev'/>
+<ovr f='codebrowser/nest/algorithm/StoreCoder.cpp' l='22' c='_ZN4nest10StoreCoderD1Ev'/>

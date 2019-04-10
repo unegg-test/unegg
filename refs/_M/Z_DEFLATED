@@ -1,0 +1,8 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='205'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='203'>/* Possible values of the data_type field (though see inflate()) */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='204' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='259' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='655' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='37' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='650' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='674' u='c'/>

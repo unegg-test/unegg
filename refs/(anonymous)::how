@@ -1,0 +1,14 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='102' type='int'/>
+<offset>640</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='102'>/* 0: get header, 1: copy, 2: decompress */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='77' u='w' c='gz_reset'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='307' u='r' c='gzseek64'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='200' u='w' c='gz_head'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='221' u='w' c='gz_head'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='290' u='w' c='gz_decomp'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='310' u='r' c='gz_make'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='316' u='r' c='gz_make'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='321' u='r' c='gz_make'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='417' u='r' c='gzread'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='427' u='r' c='gzread'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='620' u='r' c='gzdirect'/>

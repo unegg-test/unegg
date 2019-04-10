@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/CpuArch.h' l='138' type='Bool x86cpuid_CheckAndRead(Cx86cpuid * p)'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/CpuArch.c' l='97' ll='103' type='Bool x86cpuid_CheckAndRead(Cx86cpuid * p)'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/CpuArch.c' l='125' u='c' c='CPU_Is_InOrder'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/CpuArch.c' l='160' u='c' c='CPU_Is_Aes_Supported'/>

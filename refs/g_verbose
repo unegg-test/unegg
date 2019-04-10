@@ -1,0 +1,9 @@
+<def f='codebrowser/UnEgg.cpp' l='36' type='int'/>
+<use f='codebrowser/UnEgg.cpp' l='56' u='r' c='_Z19PrintProgramDetailsv'/>
+<use f='codebrowser/UnEgg.cpp' l='86' u='r' c='_Z10PrintErrori'/>
+<use f='codebrowser/UnEgg.cpp' l='118' u='r' c='_Z18PrintListOfArchivePKc'/>
+<use f='codebrowser/UnEgg.cpp' l='147' u='r' c='_Z18PrintListOfArchivePKc'/>
+<use f='codebrowser/UnEgg.cpp' l='173' u='r' c='_Z18PrintListOfArchivePKc'/>
+<use f='codebrowser/UnEgg.cpp' l='304' u='r' c='_Z14ExtractArchiveR11CommandLine'/>
+<use f='codebrowser/UnEgg.cpp' l='369' u='r' c='main'/>
+<use f='codebrowser/UnEgg.cpp' l='424' u='w' c='main'/>

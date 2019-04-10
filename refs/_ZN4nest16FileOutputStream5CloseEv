@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/stream/FileOutputStream.h' l='29' type='void nest::FileOutputStream::Close()'/>
+<use f='codebrowser/nest/stream/FileOutputStream.cpp' l='31' u='c' c='_ZN4nest16FileOutputStreamD1Ev'/>
+<use f='codebrowser/nest/stream/FileOutputStream.cpp' l='36' u='c' c='_ZN4nest16FileOutputStream6CreateEPKc'/>
+<inh f='codebrowser/nest/stream/OutputStream.h' l='29' c='_ZN4nest12OutputStream5CloseEv'/>
+<def f='codebrowser/nest/stream/FileOutputStream.cpp' l='59' ll='66' type='void nest::FileOutputStream::Close()'/>

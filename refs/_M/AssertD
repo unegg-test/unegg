@@ -1,0 +1,8 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='70'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/blocksort.c' l='162' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/blocksort.c' l='358' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/blocksort.c' l='689' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/blocksort.c' l='710' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/blocksort.c' l='711' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='165' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='168' u='c'/>

@@ -1,0 +1,7 @@
+<def f='include/c++/7/bits/stl_set.h' l='333' ll='335' type='iterator std::set::begin() const'/>
+<doc f='include/c++/7/bits/stl_set.h' l='328'>/**
+       *  Returns a read-only (constant) iterator that points to the first
+       *  element in the %set.  Iteration is done in ascending order according
+       *  to the keys.
+       */</doc>
+<use f='codebrowser/UnEgg.cpp' l='373' u='c' c='main'/>

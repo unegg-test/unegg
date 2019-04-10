@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/format/EggFormat.h' l='37' type='void nest::EggFormat::EggFormat(nest::Events * evnt)'/>
+<def f='codebrowser/nest/format/EggFormat.cpp' l='39' ll='43' type='void nest::EggFormat::EggFormat(nest::Events * evnt)'/>

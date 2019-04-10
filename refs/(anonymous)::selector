@@ -1,0 +1,14 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='256' type='UChar [18002]'/>
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='402' type='UChar [18002]'/>
+<offset>63072</offset>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='404' u='w' c='sendMTFValues'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='466' u='r' c='sendMTFValues'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='552' u='r' c='sendMTFValues'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='558' u='r' c='sendMTFValues'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='560' u='r' c='sendMTFValues'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='585' u='r' c='sendMTFValues'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='586' u='r' c='sendMTFValues'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='312' u='w' c='BZ2_decompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='81' u='r' c='BZ2_decompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='81' u='r' c='BZ2_decompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='81' u='r' c='BZ2_decompress'/>

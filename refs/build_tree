@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='148' type='void build_tree(deflate_state * s, tree_desc * desc)'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='623' ll='705' macro='1' type='void build_tree(deflate_state * s, tree_desc * desc)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='817' u='c' c='build_bl_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='942' u='c' c='_tr_flush_block'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='946' u='c' c='_tr_flush_block'/>

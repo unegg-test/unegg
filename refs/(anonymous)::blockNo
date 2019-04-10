@@ -1,0 +1,7 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='250' type='Int32'/>
+<offset>5280</offset>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='125' u='w' c='prepare_new_block'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='189' u='w' c='BZ2_bzCompressInit'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='609' u='r' c='BZ2_compressBlock'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='614' u='r' c='BZ2_compressBlock'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='622' u='r' c='BZ2_compressBlock'/>

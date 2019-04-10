@@ -1,0 +1,10 @@
+<def f='codebrowser/nest/algorithm/azo/Base/EntropyCodeB.h' l='10' ll='24'/>
+<size>8</size>
+<smbr r='AZO::Base::EntropyCode::ONE' t='const RANGE_TYPE'/>
+<smbr r='AZO::Base::EntropyCode::MSB' t='const RANGE_TYPE'/>
+<smbr r='AZO::Base::EntropyCode::sMSB' t='const RANGE_TYPE'/>
+<fun r='_ZN3AZO4Base11EntropyCodeC1Ev'/>
+<mbr r='AZO::Base::EntropyCode::low_' o='0' t='RANGE_TYPE'/>
+<mbr r='AZO::Base::EntropyCode::up_' o='32' t='RANGE_TYPE'/>
+<fun r='_ZN3AZO4Base11EntropyCodeC1Ev'/>
+<ovr f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.h' l='10' c='AZO::Decoder::EntropyCode'/>

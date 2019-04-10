@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='1354' type='int gzrewind(gzFile file)'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='253' ll='272' type='int gzrewind(gzFile file)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='328' u='c' c='gzseek64'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='252'>/* -- see zlib.h -- */</doc>

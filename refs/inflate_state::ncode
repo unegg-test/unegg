@@ -1,0 +1,8 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/inflate.h' l='111' type='unsigned int'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='356' u='w' c='inflateBack'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='369' u='r' c='inflateBack'/>
+<offset>960</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/inflate.h' l='110'>/* dynamic table building */</doc>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/inflate.h' l='111'>/* number of code length code lengths */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='887' u='w' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='900' u='r' c='inflate'/>

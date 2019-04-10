@@ -1,0 +1,3 @@
+<dec f='codebrowser/EventHandler.h' l='56' type='int EventHandler::OnProgress(size_t index, int current, int max)'/>
+<inh f='codebrowser/nest/Events.h' l='41' c='_ZN4nest6Events10OnProgressEmii'/>
+<def f='codebrowser/EventHandler.cpp' l='316' ll='326' type='int EventHandler::OnProgress(size_t index, int current, int max)'/>

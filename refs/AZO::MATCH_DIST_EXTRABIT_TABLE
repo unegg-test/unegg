@@ -1,0 +1,3 @@
+<def f='codebrowser/nest/algorithm/azo/Common/MatchCodeTable.h' l='85' type='const u_int [128]'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/DistanceCodeD.cpp' l='30' u='r' c='_ZN3AZO7Decoder12DistanceCode4CodeERNS0_11EntropyCodeE'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/DistanceCodeD.cpp' l='31' u='r' c='_ZN3AZO7Decoder12DistanceCode4CodeERNS0_11EntropyCodeE'/>

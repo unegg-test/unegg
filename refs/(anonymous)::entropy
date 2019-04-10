@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/encryption/aes/prng.h' l='66' type='prng_entropy_fn'/>
+<use f='codebrowser/nest/third-party/encryption/aes/prng.c' l='89' u='r' c='update_pool'/>
+<use f='codebrowser/nest/third-party/encryption/aes/prng.c' l='107' u='w' c='prng_init'/>
+<offset>4224</offset>
+<doc f='codebrowser/nest/third-party/encryption/aes/prng.h' l='66'>/* entropy function pointer */</doc>

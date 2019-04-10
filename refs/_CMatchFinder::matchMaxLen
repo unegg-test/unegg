@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzFind.h' l='27' type='UInt32'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='201' u='w' c='MatchFinder_Create'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='275' u='r' c='MatchFinder_SetLimits'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='276' u='r' c='MatchFinder_SetLimits'/>
+<offset>256</offset>

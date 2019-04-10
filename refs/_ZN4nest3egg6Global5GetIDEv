@@ -1,0 +1,3 @@
+<def f='codebrowser/nest/format/egg/Global.h' l='32' ll='35' type='unsigned int nest::egg::Global::GetID()'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='313' u='c' c='_ZN4nest9EggFormat21PrepareSpannedStreamsEv'/>
+<use f='codebrowser/nest/format/egg/Global.cpp' l='70' u='c' c='_ZN4nest3egg6Global9_As4BytesEjPb'/>

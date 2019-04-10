@@ -1,0 +1,9 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='197' type='struct tree_desc_s'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='978' u='m' c='deflateCopy'/>
+<offset>23296</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='197'>/* desc. for distance tree */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='394' u='m' c='_tr_init'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='395' u='m' c='_tr_init'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='814' u='m' c='build_bl_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='946' u='a' c='_tr_flush_block'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='999' u='m' c='_tr_flush_block'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/format/ALZFormat.h' l='68' type='int nest::ALZFormat::OnWorkStart(int workCode)'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='87' u='c' c='_ZN4nest9ALZFormat19CheckHeaderInternalEPNS_11InputStreamEPNS_3alz6GlobalE'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='116' u='c' c='_ZN4nest9ALZFormat4ScanEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='391' u='c' c='_ZN4nest9ALZFormat7ExtractEv'/>
+<def f='codebrowser/nest/format/ALZFormat.cpp' l='783' ll='791' type='int nest::ALZFormat::OnWorkStart(int workCode)'/>

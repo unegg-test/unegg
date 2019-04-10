@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>randtable.c source code [codebrowser/nest/third-party/algorithm/bzip2/randtable.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/third-party/algorithm/bzip2/randtable.c'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>nest</a>/<a href='../..'>third-party</a>/<a href='..'>algorithm</a>/<a href='./'>bzip2</a>/<a href='randtable.c.html'>randtable.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td></td></tr>
+<tr><th id="2">2</th><td><i>/*-------------------------------------------------------------*/</i></td></tr>
+<tr><th id="3">3</th><td><i>/*--- Table for randomising repetitive blocks               ---*/</i></td></tr>
+<tr><th id="4">4</th><td><i>/*---                                           randtable.c ---*/</i></td></tr>
+<tr><th id="5">5</th><td><i>/*-------------------------------------------------------------*/</i></td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><i>/* ------------------------------------------------------------------</i></td></tr>
+<tr><th id="8">8</th><td><i>   This file is part of bzip2/libbzip2, a program and library for</i></td></tr>
+<tr><th id="9">9</th><td><i>   lossless, block-sorting data compression.</i></td></tr>
+<tr><th id="10">10</th><td><i></i></td></tr>
+<tr><th id="11">11</th><td><i>   bzip2/libbzip2 version 1.0.6 of 6 September 2010</i></td></tr>
+<tr><th id="12">12</th><td><i>   Copyright (C) 1996-2010 Julian Seward &lt;jseward@bzip.org&gt;</i></td></tr>
+<tr><th id="13">13</th><td><i></i></td></tr>
+<tr><th id="14">14</th><td><i>   Please read the WARNING, DISCLAIMER and PATENTS sections in the </i></td></tr>
+<tr><th id="15">15</th><td><i>   README file.</i></td></tr>
+<tr><th id="16">16</th><td><i></i></td></tr>
+<tr><th id="17">17</th><td><i>   This program is released under the terms of the license contained</i></td></tr>
+<tr><th id="18">18</th><td><i>   in the file LICENSE.</i></td></tr>
+<tr><th id="19">19</th><td><i>   ------------------------------------------------------------------ */</i></td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><u>#include <a href="bzlib_private.h.html">"bzlib_private.h"</a></u></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><i>/*---------------------------------------------*/</i></td></tr>
+<tr><th id="26">26</th><td><a class="typedef" href="bzlib_private.h.html#Int32" title='Int32' data-type='int' data-ref="Int32">Int32</a> <dfn class="decl def" id="BZ2_rNums" title='BZ2_rNums' data-ref="BZ2_rNums">BZ2_rNums</dfn>[<var>512</var>] = { </td></tr>
+<tr><th id="27">27</th><td>   <var>619</var>, <var>720</var>, <var>127</var>, <var>481</var>, <var>931</var>, <var>816</var>, <var>813</var>, <var>233</var>, <var>566</var>, <var>247</var>, </td></tr>
+<tr><th id="28">28</th><td>   <var>985</var>, <var>724</var>, <var>205</var>, <var>454</var>, <var>863</var>, <var>491</var>, <var>741</var>, <var>242</var>, <var>949</var>, <var>214</var>, </td></tr>
+<tr><th id="29">29</th><td>   <var>733</var>, <var>859</var>, <var>335</var>, <var>708</var>, <var>621</var>, <var>574</var>, <var>73</var>, <var>654</var>, <var>730</var>, <var>472</var>, </td></tr>
+<tr><th id="30">30</th><td>   <var>419</var>, <var>436</var>, <var>278</var>, <var>496</var>, <var>867</var>, <var>210</var>, <var>399</var>, <var>680</var>, <var>480</var>, <var>51</var>, </td></tr>
+<tr><th id="31">31</th><td>   <var>878</var>, <var>465</var>, <var>811</var>, <var>169</var>, <var>869</var>, <var>675</var>, <var>611</var>, <var>697</var>, <var>867</var>, <var>561</var>, </td></tr>
+<tr><th id="32">32</th><td>   <var>862</var>, <var>687</var>, <var>507</var>, <var>283</var>, <var>482</var>, <var>129</var>, <var>807</var>, <var>591</var>, <var>733</var>, <var>623</var>, </td></tr>
+<tr><th id="33">33</th><td>   <var>150</var>, <var>238</var>, <var>59</var>, <var>379</var>, <var>684</var>, <var>877</var>, <var>625</var>, <var>169</var>, <var>643</var>, <var>105</var>, </td></tr>
+<tr><th id="34">34</th><td>   <var>170</var>, <var>607</var>, <var>520</var>, <var>932</var>, <var>727</var>, <var>476</var>, <var>693</var>, <var>425</var>, <var>174</var>, <var>647</var>, </td></tr>
+<tr><th id="35">35</th><td>   <var>73</var>, <var>122</var>, <var>335</var>, <var>530</var>, <var>442</var>, <var>853</var>, <var>695</var>, <var>249</var>, <var>445</var>, <var>515</var>, </td></tr>
+<tr><th id="36">36</th><td>   <var>909</var>, <var>545</var>, <var>703</var>, <var>919</var>, <var>874</var>, <var>474</var>, <var>882</var>, <var>500</var>, <var>594</var>, <var>612</var>, </td></tr>
+<tr><th id="37">37</th><td>   <var>641</var>, <var>801</var>, <var>220</var>, <var>162</var>, <var>819</var>, <var>984</var>, <var>589</var>, <var>513</var>, <var>495</var>, <var>799</var>, </td></tr>
+<tr><th id="38">38</th><td>   <var>161</var>, <var>604</var>, <var>958</var>, <var>533</var>, <var>221</var>, <var>400</var>, <var>386</var>, <var>867</var>, <var>600</var>, <var>782</var>, </td></tr>
+<tr><th id="39">39</th><td>   <var>382</var>, <var>596</var>, <var>414</var>, <var>171</var>, <var>516</var>, <var>375</var>, <var>682</var>, <var>485</var>, <var>911</var>, <var>276</var>, </td></tr>
+<tr><th id="40">40</th><td>   <var>98</var>, <var>553</var>, <var>163</var>, <var>354</var>, <var>666</var>, <var>933</var>, <var>424</var>, <var>341</var>, <var>533</var>, <var>870</var>, </td></tr>
+<tr><th id="41">41</th><td>   <var>227</var>, <var>730</var>, <var>475</var>, <var>186</var>, <var>263</var>, <var>647</var>, <var>537</var>, <var>686</var>, <var>600</var>, <var>224</var>, </td></tr>
+<tr><th id="42">42</th><td>   <var>469</var>, <var>68</var>, <var>770</var>, <var>919</var>, <var>190</var>, <var>373</var>, <var>294</var>, <var>822</var>, <var>808</var>, <var>206</var>, </td></tr>
+<tr><th id="43">43</th><td>   <var>184</var>, <var>943</var>, <var>795</var>, <var>384</var>, <var>383</var>, <var>461</var>, <var>404</var>, <var>758</var>, <var>839</var>, <var>887</var>, </td></tr>
+<tr><th id="44">44</th><td>   <var>715</var>, <var>67</var>, <var>618</var>, <var>276</var>, <var>204</var>, <var>918</var>, <var>873</var>, <var>777</var>, <var>604</var>, <var>560</var>, </td></tr>
+<tr><th id="45">45</th><td>   <var>951</var>, <var>160</var>, <var>578</var>, <var>722</var>, <var>79</var>, <var>804</var>, <var>96</var>, <var>409</var>, <var>713</var>, <var>940</var>, </td></tr>
+<tr><th id="46">46</th><td>   <var>652</var>, <var>934</var>, <var>970</var>, <var>447</var>, <var>318</var>, <var>353</var>, <var>859</var>, <var>672</var>, <var>112</var>, <var>785</var>, </td></tr>
+<tr><th id="47">47</th><td>   <var>645</var>, <var>863</var>, <var>803</var>, <var>350</var>, <var>139</var>, <var>93</var>, <var>354</var>, <var>99</var>, <var>820</var>, <var>908</var>, </td></tr>
+<tr><th id="48">48</th><td>   <var>609</var>, <var>772</var>, <var>154</var>, <var>274</var>, <var>580</var>, <var>184</var>, <var>79</var>, <var>626</var>, <var>630</var>, <var>742</var>, </td></tr>
+<tr><th id="49">49</th><td>   <var>653</var>, <var>282</var>, <var>762</var>, <var>623</var>, <var>680</var>, <var>81</var>, <var>927</var>, <var>626</var>, <var>789</var>, <var>125</var>, </td></tr>
+<tr><th id="50">50</th><td>   <var>411</var>, <var>521</var>, <var>938</var>, <var>300</var>, <var>821</var>, <var>78</var>, <var>343</var>, <var>175</var>, <var>128</var>, <var>250</var>, </td></tr>
+<tr><th id="51">51</th><td>   <var>170</var>, <var>774</var>, <var>972</var>, <var>275</var>, <var>999</var>, <var>639</var>, <var>495</var>, <var>78</var>, <var>352</var>, <var>126</var>, </td></tr>
+<tr><th id="52">52</th><td>   <var>857</var>, <var>956</var>, <var>358</var>, <var>619</var>, <var>580</var>, <var>124</var>, <var>737</var>, <var>594</var>, <var>701</var>, <var>612</var>, </td></tr>
+<tr><th id="53">53</th><td>   <var>669</var>, <var>112</var>, <var>134</var>, <var>694</var>, <var>363</var>, <var>992</var>, <var>809</var>, <var>743</var>, <var>168</var>, <var>974</var>, </td></tr>
+<tr><th id="54">54</th><td>   <var>944</var>, <var>375</var>, <var>748</var>, <var>52</var>, <var>600</var>, <var>747</var>, <var>642</var>, <var>182</var>, <var>862</var>, <var>81</var>, </td></tr>
+<tr><th id="55">55</th><td>   <var>344</var>, <var>805</var>, <var>988</var>, <var>739</var>, <var>511</var>, <var>655</var>, <var>814</var>, <var>334</var>, <var>249</var>, <var>515</var>, </td></tr>
+<tr><th id="56">56</th><td>   <var>897</var>, <var>955</var>, <var>664</var>, <var>981</var>, <var>649</var>, <var>113</var>, <var>974</var>, <var>459</var>, <var>893</var>, <var>228</var>, </td></tr>
+<tr><th id="57">57</th><td>   <var>433</var>, <var>837</var>, <var>553</var>, <var>268</var>, <var>926</var>, <var>240</var>, <var>102</var>, <var>654</var>, <var>459</var>, <var>51</var>, </td></tr>
+<tr><th id="58">58</th><td>   <var>686</var>, <var>754</var>, <var>806</var>, <var>760</var>, <var>493</var>, <var>403</var>, <var>415</var>, <var>394</var>, <var>687</var>, <var>700</var>, </td></tr>
+<tr><th id="59">59</th><td>   <var>946</var>, <var>670</var>, <var>656</var>, <var>610</var>, <var>738</var>, <var>392</var>, <var>760</var>, <var>799</var>, <var>887</var>, <var>653</var>, </td></tr>
+<tr><th id="60">60</th><td>   <var>978</var>, <var>321</var>, <var>576</var>, <var>617</var>, <var>626</var>, <var>502</var>, <var>894</var>, <var>679</var>, <var>243</var>, <var>440</var>, </td></tr>
+<tr><th id="61">61</th><td>   <var>680</var>, <var>879</var>, <var>194</var>, <var>572</var>, <var>640</var>, <var>724</var>, <var>926</var>, <var>56</var>, <var>204</var>, <var>700</var>, </td></tr>
+<tr><th id="62">62</th><td>   <var>707</var>, <var>151</var>, <var>457</var>, <var>449</var>, <var>797</var>, <var>195</var>, <var>791</var>, <var>558</var>, <var>945</var>, <var>679</var>, </td></tr>
+<tr><th id="63">63</th><td>   <var>297</var>, <var>59</var>, <var>87</var>, <var>824</var>, <var>713</var>, <var>663</var>, <var>412</var>, <var>693</var>, <var>342</var>, <var>606</var>, </td></tr>
+<tr><th id="64">64</th><td>   <var>134</var>, <var>108</var>, <var>571</var>, <var>364</var>, <var>631</var>, <var>212</var>, <var>174</var>, <var>643</var>, <var>304</var>, <var>329</var>, </td></tr>
+<tr><th id="65">65</th><td>   <var>343</var>, <var>97</var>, <var>430</var>, <var>751</var>, <var>497</var>, <var>314</var>, <var>983</var>, <var>374</var>, <var>822</var>, <var>928</var>, </td></tr>
+<tr><th id="66">66</th><td>   <var>140</var>, <var>206</var>, <var>73</var>, <var>263</var>, <var>980</var>, <var>736</var>, <var>876</var>, <var>478</var>, <var>430</var>, <var>305</var>, </td></tr>
+<tr><th id="67">67</th><td>   <var>170</var>, <var>514</var>, <var>364</var>, <var>692</var>, <var>829</var>, <var>82</var>, <var>855</var>, <var>953</var>, <var>676</var>, <var>246</var>, </td></tr>
+<tr><th id="68">68</th><td>   <var>369</var>, <var>970</var>, <var>294</var>, <var>750</var>, <var>807</var>, <var>827</var>, <var>150</var>, <var>790</var>, <var>288</var>, <var>923</var>, </td></tr>
+<tr><th id="69">69</th><td>   <var>804</var>, <var>378</var>, <var>215</var>, <var>828</var>, <var>592</var>, <var>281</var>, <var>565</var>, <var>555</var>, <var>710</var>, <var>82</var>, </td></tr>
+<tr><th id="70">70</th><td>   <var>896</var>, <var>831</var>, <var>547</var>, <var>261</var>, <var>524</var>, <var>462</var>, <var>293</var>, <var>465</var>, <var>502</var>, <var>56</var>, </td></tr>
+<tr><th id="71">71</th><td>   <var>661</var>, <var>821</var>, <var>976</var>, <var>991</var>, <var>658</var>, <var>869</var>, <var>905</var>, <var>758</var>, <var>745</var>, <var>193</var>, </td></tr>
+<tr><th id="72">72</th><td>   <var>768</var>, <var>550</var>, <var>608</var>, <var>933</var>, <var>378</var>, <var>286</var>, <var>215</var>, <var>979</var>, <var>792</var>, <var>961</var>, </td></tr>
+<tr><th id="73">73</th><td>   <var>61</var>, <var>688</var>, <var>793</var>, <var>644</var>, <var>986</var>, <var>403</var>, <var>106</var>, <var>366</var>, <var>905</var>, <var>644</var>, </td></tr>
+<tr><th id="74">74</th><td>   <var>372</var>, <var>567</var>, <var>466</var>, <var>434</var>, <var>645</var>, <var>210</var>, <var>389</var>, <var>550</var>, <var>919</var>, <var>135</var>, </td></tr>
+<tr><th id="75">75</th><td>   <var>780</var>, <var>773</var>, <var>635</var>, <var>389</var>, <var>707</var>, <var>100</var>, <var>626</var>, <var>958</var>, <var>165</var>, <var>504</var>, </td></tr>
+<tr><th id="76">76</th><td>   <var>920</var>, <var>176</var>, <var>193</var>, <var>713</var>, <var>857</var>, <var>265</var>, <var>203</var>, <var>50</var>, <var>668</var>, <var>108</var>, </td></tr>
+<tr><th id="77">77</th><td>   <var>645</var>, <var>990</var>, <var>626</var>, <var>197</var>, <var>510</var>, <var>357</var>, <var>358</var>, <var>850</var>, <var>858</var>, <var>364</var>, </td></tr>
+<tr><th id="78">78</th><td>   <var>936</var>, <var>638</var></td></tr>
+<tr><th id="79">79</th><td>};</td></tr>
+<tr><th id="80">80</th><td></td></tr>
+<tr><th id="81">81</th><td></td></tr>
+<tr><th id="82">82</th><td><i>/*-------------------------------------------------------------*/</i></td></tr>
+<tr><th id="83">83</th><td><i>/*--- end                                       randtable.c ---*/</i></td></tr>
+<tr><th id="84">84</th><td><i>/*-------------------------------------------------------------*/</i></td></tr>
+<tr><th id="85">85</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

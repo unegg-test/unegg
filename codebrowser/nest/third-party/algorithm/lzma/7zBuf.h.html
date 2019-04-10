@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>7zBuf.h source code [codebrowser/nest/third-party/algorithm/lzma/7zBuf.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/third-party/algorithm/lzma/7zBuf.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>nest</a>/<a href='../..'>third-party</a>/<a href='..'>algorithm</a>/<a href='./'>lzma</a>/<a href='7zBuf.h.html'>7zBuf.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/* 7zBuf.h -- Byte Buffer</i></td></tr>
+<tr><th id="2">2</th><td><i> 2009-02-07 : Igor Pavlov : Public domain */</i></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#<span data-ppcond="4">ifndef</span> <span class="macro" data-ref="_M/__7Z_BUF_H">__7Z_BUF_H</span></u></td></tr>
+<tr><th id="5">5</th><td><u>#define <dfn class="macro" id="_M/__7Z_BUF_H" data-ref="_M/__7Z_BUF_H">__7Z_BUF_H</dfn></u></td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><u>#include <a href="Types.h.html">"Types.h"</a></u></td></tr>
+<tr><th id="8">8</th><td></td></tr>
+<tr><th id="9">9</th><td><u>#<span data-ppcond="9">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="10">10</th><td><b>extern</b> <q>"C"</q></td></tr>
+<tr><th id="11">11</th><td>{</td></tr>
+<tr><th id="12">12</th><td><u>#<span data-ppcond="9">endif</span></u></td></tr>
+<tr><th id="13">13</th><td></td></tr>
+<tr><th id="14">14</th><td><b>typedef</b> <b>struct</b></td></tr>
+<tr><th id="15">15</th><td>{</td></tr>
+<tr><th id="16">16</th><td>    <a class="typedef" href="Types.h.html#Byte" title='Byte' data-type='unsigned char' data-ref="Byte">Byte</a> *<dfn class="decl" id="(anonymous)::data" title='(anonymous struct)::data' data-ref="(anonymous)::data">data</dfn>;</td></tr>
+<tr><th id="17">17</th><td>    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="(anonymous)::size" title='(anonymous struct)::size' data-ref="(anonymous)::size">size</dfn>;</td></tr>
+<tr><th id="18">18</th><td>} <dfn class="typedef" id="CBuf" title='CBuf' data-type='struct CBuf' data-ref="CBuf">CBuf</dfn>;</td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><em>void</em> <a class="decl" href="7zBuf.c.html#Buf_Init" title='Buf_Init' data-ref="Buf_Init" id="Buf_Init">Buf_Init</a>(<a class="typedef" href="#CBuf" title='CBuf' data-type='struct CBuf' data-ref="CBuf">CBuf</a> *<dfn class="local col1 decl" id="1p" title='p' data-type='CBuf *' data-ref="1p">p</dfn>);</td></tr>
+<tr><th id="21">21</th><td><em>int</em> <a class="decl" href="7zBuf.c.html#Buf_Create" title='Buf_Create' data-ref="Buf_Create" id="Buf_Create">Buf_Create</a>(<a class="typedef" href="#CBuf" title='CBuf' data-type='struct CBuf' data-ref="CBuf">CBuf</a> *<dfn class="local col2 decl" id="2p" title='p' data-type='CBuf *' data-ref="2p">p</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col3 decl" id="3size" title='size' data-type='size_t' data-ref="3size">size</dfn>, <a class="typedef" href="Types.h.html#ISzAlloc" title='ISzAlloc' data-type='struct ISzAlloc' data-ref="ISzAlloc">ISzAlloc</a> *<dfn class="local col4 decl" id="4alloc" title='alloc' data-type='ISzAlloc *' data-ref="4alloc">alloc</dfn>);</td></tr>
+<tr><th id="22">22</th><td><em>void</em> <a class="decl" href="7zBuf.c.html#Buf_Free" title='Buf_Free' data-ref="Buf_Free" id="Buf_Free">Buf_Free</a>(<a class="typedef" href="#CBuf" title='CBuf' data-type='struct CBuf' data-ref="CBuf">CBuf</a> *<dfn class="local col5 decl" id="5p" title='p' data-type='CBuf *' data-ref="5p">p</dfn>, <a class="typedef" href="Types.h.html#ISzAlloc" title='ISzAlloc' data-type='struct ISzAlloc' data-ref="ISzAlloc">ISzAlloc</a> *<dfn class="local col6 decl" id="6alloc" title='alloc' data-type='ISzAlloc *' data-ref="6alloc">alloc</dfn>);</td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><b>typedef</b> <b>struct</b></td></tr>
+<tr><th id="25">25</th><td>{</td></tr>
+<tr><th id="26">26</th><td>    <a class="typedef" href="Types.h.html#Byte" title='Byte' data-type='unsigned char' data-ref="Byte">Byte</a> *<dfn class="decl" id="(anonymous)::data" title='(anonymous struct)::data' data-ref="(anonymous)::data">data</dfn>;</td></tr>
+<tr><th id="27">27</th><td>    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="(anonymous)::size" title='(anonymous struct)::size' data-ref="(anonymous)::size">size</dfn>;</td></tr>
+<tr><th id="28">28</th><td>    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl" id="(anonymous)::pos" title='(anonymous struct)::pos' data-ref="(anonymous)::pos">pos</dfn>;</td></tr>
+<tr><th id="29">29</th><td>} <dfn class="typedef" id="CDynBuf" title='CDynBuf' data-type='struct CDynBuf' data-ref="CDynBuf">CDynBuf</dfn>;</td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><em>void</em> <dfn class="decl" id="DynBuf_Construct" title='DynBuf_Construct' data-ref="DynBuf_Construct">DynBuf_Construct</dfn>(<a class="typedef" href="#CDynBuf" title='CDynBuf' data-type='struct CDynBuf' data-ref="CDynBuf">CDynBuf</a> *<dfn class="local col7 decl" id="7p" title='p' data-type='CDynBuf *' data-ref="7p">p</dfn>);</td></tr>
+<tr><th id="32">32</th><td><em>void</em> <dfn class="decl" id="DynBuf_SeekToBeg" title='DynBuf_SeekToBeg' data-ref="DynBuf_SeekToBeg">DynBuf_SeekToBeg</dfn>(<a class="typedef" href="#CDynBuf" title='CDynBuf' data-type='struct CDynBuf' data-ref="CDynBuf">CDynBuf</a> *<dfn class="local col8 decl" id="8p" title='p' data-type='CDynBuf *' data-ref="8p">p</dfn>);</td></tr>
+<tr><th id="33">33</th><td><em>int</em> <dfn class="decl" id="DynBuf_Write" title='DynBuf_Write' data-ref="DynBuf_Write">DynBuf_Write</dfn>(<a class="typedef" href="#CDynBuf" title='CDynBuf' data-type='struct CDynBuf' data-ref="CDynBuf">CDynBuf</a> *<dfn class="local col9 decl" id="9p" title='p' data-type='CDynBuf *' data-ref="9p">p</dfn>, <em>const</em> <a class="typedef" href="Types.h.html#Byte" title='Byte' data-type='unsigned char' data-ref="Byte">Byte</a> *<dfn class="local col0 decl" id="10buf" title='buf' data-type='const Byte *' data-ref="10buf">buf</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col1 decl" id="11size" title='size' data-type='size_t' data-ref="11size">size</dfn>, <a class="typedef" href="Types.h.html#ISzAlloc" title='ISzAlloc' data-type='struct ISzAlloc' data-ref="ISzAlloc">ISzAlloc</a> *<dfn class="local col2 decl" id="12alloc" title='alloc' data-type='ISzAlloc *' data-ref="12alloc">alloc</dfn>);</td></tr>
+<tr><th id="34">34</th><td><em>void</em> <dfn class="decl" id="DynBuf_Free" title='DynBuf_Free' data-ref="DynBuf_Free">DynBuf_Free</dfn>(<a class="typedef" href="#CDynBuf" title='CDynBuf' data-type='struct CDynBuf' data-ref="CDynBuf">CDynBuf</a> *<dfn class="local col3 decl" id="13p" title='p' data-type='CDynBuf *' data-ref="13p">p</dfn>, <a class="typedef" href="Types.h.html#ISzAlloc" title='ISzAlloc' data-type='struct ISzAlloc' data-ref="ISzAlloc">ISzAlloc</a> *<dfn class="local col4 decl" id="14alloc" title='alloc' data-type='ISzAlloc *' data-ref="14alloc">alloc</dfn>);</td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td><u>#<span data-ppcond="36">ifdef</span> <span class="macro" data-ref="_M/__cplusplus">__cplusplus</span></u></td></tr>
+<tr><th id="37">37</th><td>}</td></tr>
+<tr><th id="38">38</th><td><u>#<span data-ppcond="36">endif</span></u></td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td><u>#<span data-ppcond="4">endif</span></u></td></tr>
+<tr><th id="41">41</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='7zBuf.c.html'>codebrowser/nest/third-party/algorithm/lzma/7zBuf.c</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

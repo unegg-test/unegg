@@ -1,0 +1,22 @@
+<inh f='codebrowser/nest/algorithm/Coder.h' l='20' c='nest::Coder'/>
+<def f='codebrowser/nest/algorithm/LZMACoder.h' l='21' ll='43'/>
+<size>176</size>
+<fun r='_ZN4nest9LZMACoderC1Ev'/>
+<fun r='_ZN4nest9LZMACoderD1Ev'/>
+<fun r='_ZN4nest9LZMACoder10InitializeEPKhm'/>
+<fun r='_ZN4nest9LZMACoder8FinalizeEv'/>
+<fun r='_ZN4nest9LZMACoder6OnPushEPvm'/>
+<fun r='_ZN4nest9LZMACoder5OnPopEPvPm'/>
+<smbr r='nest::LZMACoder::IN_BUF_SIZE' t='const int'/>
+<smbr r='nest::LZMACoder::OUT_BUF_SIZE' t='const int'/>
+<mbr r='nest::LZMACoder::state_' o='64' t='CLzmaDec'/>
+<mbr r='nest::LZMACoder::input_' o='1152' t='unsigned char *'/>
+<mbr r='nest::LZMACoder::inputSize_' o='1216' t='size_t'/>
+<mbr r='nest::LZMACoder::inputPos_' o='1280' t='size_t'/>
+<mbr r='nest::LZMACoder::outputPos_' o='1344' t='size_t'/>
+<fun r='_ZN4nest9LZMACoderC1Ev'/>
+<fun r='_ZN4nest9LZMACoderD1Ev'/>
+<fun r='_ZN4nest9LZMACoder10InitializeEPKhm'/>
+<fun r='_ZN4nest9LZMACoder8FinalizeEv'/>
+<fun r='_ZN4nest9LZMACoder6OnPushEPvm'/>
+<fun r='_ZN4nest9LZMACoder5OnPopEPvPm'/>

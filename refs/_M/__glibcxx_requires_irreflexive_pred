@@ -1,0 +1,15 @@
+<dec f='include/c++/7/debug/debug.h' l='79'/>
+<use f='include/c++/7/bits/stl_heap.h' l='201' u='c'/>
+<use f='include/c++/7/bits/stl_heap.h' l='311' u='c'/>
+<use f='include/c++/7/bits/stl_heap.h' l='393' u='c'/>
+<use f='include/c++/7/bits/stl_heap.h' l='456' u='c'/>
+<use f='include/c++/7/bits/stl_algo.h' l='1810' u='c'/>
+<use f='include/c++/7/bits/stl_algo.h' l='2628' u='c'/>
+<use f='include/c++/7/bits/stl_algo.h' l='2996' u='c'/>
+<use f='include/c++/7/bits/stl_algo.h' l='3096' u='c'/>
+<use f='include/c++/7/bits/stl_algo.h' l='4727' u='c'/>
+<use f='include/c++/7/bits/stl_algo.h' l='4800' u='c'/>
+<use f='include/c++/7/bits/stl_algo.h' l='4866' u='c'/>
+<use f='include/c++/7/bits/stl_algo.h' l='5075' u='c'/>
+<use f='include/c++/7/bits/stl_algo.h' l='5638' u='c'/>
+<use f='include/c++/7/bits/stl_algo.h' l='5702' u='c'/>

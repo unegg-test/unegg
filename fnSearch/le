@@ -1,0 +1,6 @@
+_ZNKSt4lessclERKT_S2_|std::less::operator()
+_ZNKSt10less_equalclERKT_S2_|std::less_equal::operator()
+_ZSt23lexicographical_compareT_S_T0_S0_|std::lexicographical_compare
+_ZSt4leftRSt8ios_base|std::left
+_ZN3AZO7Decoder10LengthCode4CodeERNS0_11EntropyCodeEh|AZO::Decoder::LengthCode::Code
+_ZN3AZO7Decoder10LengthCodeC1Ev|AZO::Decoder::LengthCode::LengthCode

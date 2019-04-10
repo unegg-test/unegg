@@ -1,0 +1,6 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.h' l='64' type='int'/>
+<offset>800</offset>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='681' u='w' c='LzmaDec_InitDicAndState'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='684' u='w' c='LzmaDec_InitDicAndState'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='702' u='w' c='LzmaDec_InitStateReal'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='754' u='r' c='LzmaDec_DecodeToDic'/>

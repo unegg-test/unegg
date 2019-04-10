@@ -1,0 +1,4 @@
+<def f='codebrowser/nest/format/egg/FilenameField.h' l='35' ll='38' type='bool nest::egg::FilenameField::IsAbsolute()'/>
+<use f='codebrowser/nest/format/egg/FilenameField.h' l='47' u='c' c='_ZN4nest3egg13FilenameField15GetParentPathIDEv'/>
+<use f='codebrowser/nest/format/egg/FilenameField.h' l='52' u='c' c='_ZN4nest3egg13FilenameField11GetFileNameEv'/>
+<use f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='125' u='c' c='_ZN4nest3egg14ExtraFieldWrap9_As4BytesEjPb'/>

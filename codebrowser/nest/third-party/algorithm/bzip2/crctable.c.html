@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>crctable.c source code [codebrowser/nest/third-party/algorithm/bzip2/crctable.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/third-party/algorithm/bzip2/crctable.c'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>nest</a>/<a href='../..'>third-party</a>/<a href='..'>algorithm</a>/<a href='./'>bzip2</a>/<a href='crctable.c.html'>crctable.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td></td></tr>
+<tr><th id="2">2</th><td><i>/*-------------------------------------------------------------*/</i></td></tr>
+<tr><th id="3">3</th><td><i>/*--- Table for doing CRCs                                  ---*/</i></td></tr>
+<tr><th id="4">4</th><td><i>/*---                                            crctable.c ---*/</i></td></tr>
+<tr><th id="5">5</th><td><i>/*-------------------------------------------------------------*/</i></td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><i>/* ------------------------------------------------------------------</i></td></tr>
+<tr><th id="8">8</th><td><i>   This file is part of bzip2/libbzip2, a program and library for</i></td></tr>
+<tr><th id="9">9</th><td><i>   lossless, block-sorting data compression.</i></td></tr>
+<tr><th id="10">10</th><td><i></i></td></tr>
+<tr><th id="11">11</th><td><i>   bzip2/libbzip2 version 1.0.6 of 6 September 2010</i></td></tr>
+<tr><th id="12">12</th><td><i>   Copyright (C) 1996-2010 Julian Seward &lt;jseward@bzip.org&gt;</i></td></tr>
+<tr><th id="13">13</th><td><i></i></td></tr>
+<tr><th id="14">14</th><td><i>   Please read the WARNING, DISCLAIMER and PATENTS sections in the </i></td></tr>
+<tr><th id="15">15</th><td><i>   README file.</i></td></tr>
+<tr><th id="16">16</th><td><i></i></td></tr>
+<tr><th id="17">17</th><td><i>   This program is released under the terms of the license contained</i></td></tr>
+<tr><th id="18">18</th><td><i>   in the file LICENSE.</i></td></tr>
+<tr><th id="19">19</th><td><i>   ------------------------------------------------------------------ */</i></td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><u>#include <a href="bzlib_private.h.html">"bzlib_private.h"</a></u></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><i>/*--</i></td></tr>
+<tr><th id="25">25</th><td><i>  I think this is an implementation of the AUTODIN-II,</i></td></tr>
+<tr><th id="26">26</th><td><i>  Ethernet &amp; FDDI 32-bit CRC standard.  Vaguely derived</i></td></tr>
+<tr><th id="27">27</th><td><i>  from code by Rob Warnock, in Section 51 of the</i></td></tr>
+<tr><th id="28">28</th><td><i>  comp.compression FAQ.</i></td></tr>
+<tr><th id="29">29</th><td><i>--*/</i></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><a class="typedef" href="bzlib_private.h.html#UInt32" title='UInt32' data-type='unsigned int' data-ref="UInt32">UInt32</a> <dfn class="decl def" id="BZ2_crc32Table" title='BZ2_crc32Table' data-ref="BZ2_crc32Table">BZ2_crc32Table</dfn>[<var>256</var>] = {</td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td>   <i>/*-- Ugly, innit? --*/</i></td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td>   <var>0x00000000L</var>, <var>0x04c11db7L</var>, <var>0x09823b6eL</var>, <var>0x0d4326d9L</var>,</td></tr>
+<tr><th id="36">36</th><td>   <var>0x130476dcL</var>, <var>0x17c56b6bL</var>, <var>0x1a864db2L</var>, <var>0x1e475005L</var>,</td></tr>
+<tr><th id="37">37</th><td>   <var>0x2608edb8L</var>, <var>0x22c9f00fL</var>, <var>0x2f8ad6d6L</var>, <var>0x2b4bcb61L</var>,</td></tr>
+<tr><th id="38">38</th><td>   <var>0x350c9b64L</var>, <var>0x31cd86d3L</var>, <var>0x3c8ea00aL</var>, <var>0x384fbdbdL</var>,</td></tr>
+<tr><th id="39">39</th><td>   <var>0x4c11db70L</var>, <var>0x48d0c6c7L</var>, <var>0x4593e01eL</var>, <var>0x4152fda9L</var>,</td></tr>
+<tr><th id="40">40</th><td>   <var>0x5f15adacL</var>, <var>0x5bd4b01bL</var>, <var>0x569796c2L</var>, <var>0x52568b75L</var>,</td></tr>
+<tr><th id="41">41</th><td>   <var>0x6a1936c8L</var>, <var>0x6ed82b7fL</var>, <var>0x639b0da6L</var>, <var>0x675a1011L</var>,</td></tr>
+<tr><th id="42">42</th><td>   <var>0x791d4014L</var>, <var>0x7ddc5da3L</var>, <var>0x709f7b7aL</var>, <var>0x745e66cdL</var>,</td></tr>
+<tr><th id="43">43</th><td>   <var>0x9823b6e0L</var>, <var>0x9ce2ab57L</var>, <var>0x91a18d8eL</var>, <var>0x95609039L</var>,</td></tr>
+<tr><th id="44">44</th><td>   <var>0x8b27c03cL</var>, <var>0x8fe6dd8bL</var>, <var>0x82a5fb52L</var>, <var>0x8664e6e5L</var>,</td></tr>
+<tr><th id="45">45</th><td>   <var>0xbe2b5b58L</var>, <var>0xbaea46efL</var>, <var>0xb7a96036L</var>, <var>0xb3687d81L</var>,</td></tr>
+<tr><th id="46">46</th><td>   <var>0xad2f2d84L</var>, <var>0xa9ee3033L</var>, <var>0xa4ad16eaL</var>, <var>0xa06c0b5dL</var>,</td></tr>
+<tr><th id="47">47</th><td>   <var>0xd4326d90L</var>, <var>0xd0f37027L</var>, <var>0xddb056feL</var>, <var>0xd9714b49L</var>,</td></tr>
+<tr><th id="48">48</th><td>   <var>0xc7361b4cL</var>, <var>0xc3f706fbL</var>, <var>0xceb42022L</var>, <var>0xca753d95L</var>,</td></tr>
+<tr><th id="49">49</th><td>   <var>0xf23a8028L</var>, <var>0xf6fb9d9fL</var>, <var>0xfbb8bb46L</var>, <var>0xff79a6f1L</var>,</td></tr>
+<tr><th id="50">50</th><td>   <var>0xe13ef6f4L</var>, <var>0xe5ffeb43L</var>, <var>0xe8bccd9aL</var>, <var>0xec7dd02dL</var>,</td></tr>
+<tr><th id="51">51</th><td>   <var>0x34867077L</var>, <var>0x30476dc0L</var>, <var>0x3d044b19L</var>, <var>0x39c556aeL</var>,</td></tr>
+<tr><th id="52">52</th><td>   <var>0x278206abL</var>, <var>0x23431b1cL</var>, <var>0x2e003dc5L</var>, <var>0x2ac12072L</var>,</td></tr>
+<tr><th id="53">53</th><td>   <var>0x128e9dcfL</var>, <var>0x164f8078L</var>, <var>0x1b0ca6a1L</var>, <var>0x1fcdbb16L</var>,</td></tr>
+<tr><th id="54">54</th><td>   <var>0x018aeb13L</var>, <var>0x054bf6a4L</var>, <var>0x0808d07dL</var>, <var>0x0cc9cdcaL</var>,</td></tr>
+<tr><th id="55">55</th><td>   <var>0x7897ab07L</var>, <var>0x7c56b6b0L</var>, <var>0x71159069L</var>, <var>0x75d48ddeL</var>,</td></tr>
+<tr><th id="56">56</th><td>   <var>0x6b93dddbL</var>, <var>0x6f52c06cL</var>, <var>0x6211e6b5L</var>, <var>0x66d0fb02L</var>,</td></tr>
+<tr><th id="57">57</th><td>   <var>0x5e9f46bfL</var>, <var>0x5a5e5b08L</var>, <var>0x571d7dd1L</var>, <var>0x53dc6066L</var>,</td></tr>
+<tr><th id="58">58</th><td>   <var>0x4d9b3063L</var>, <var>0x495a2dd4L</var>, <var>0x44190b0dL</var>, <var>0x40d816baL</var>,</td></tr>
+<tr><th id="59">59</th><td>   <var>0xaca5c697L</var>, <var>0xa864db20L</var>, <var>0xa527fdf9L</var>, <var>0xa1e6e04eL</var>,</td></tr>
+<tr><th id="60">60</th><td>   <var>0xbfa1b04bL</var>, <var>0xbb60adfcL</var>, <var>0xb6238b25L</var>, <var>0xb2e29692L</var>,</td></tr>
+<tr><th id="61">61</th><td>   <var>0x8aad2b2fL</var>, <var>0x8e6c3698L</var>, <var>0x832f1041L</var>, <var>0x87ee0df6L</var>,</td></tr>
+<tr><th id="62">62</th><td>   <var>0x99a95df3L</var>, <var>0x9d684044L</var>, <var>0x902b669dL</var>, <var>0x94ea7b2aL</var>,</td></tr>
+<tr><th id="63">63</th><td>   <var>0xe0b41de7L</var>, <var>0xe4750050L</var>, <var>0xe9362689L</var>, <var>0xedf73b3eL</var>,</td></tr>
+<tr><th id="64">64</th><td>   <var>0xf3b06b3bL</var>, <var>0xf771768cL</var>, <var>0xfa325055L</var>, <var>0xfef34de2L</var>,</td></tr>
+<tr><th id="65">65</th><td>   <var>0xc6bcf05fL</var>, <var>0xc27dede8L</var>, <var>0xcf3ecb31L</var>, <var>0xcbffd686L</var>,</td></tr>
+<tr><th id="66">66</th><td>   <var>0xd5b88683L</var>, <var>0xd1799b34L</var>, <var>0xdc3abdedL</var>, <var>0xd8fba05aL</var>,</td></tr>
+<tr><th id="67">67</th><td>   <var>0x690ce0eeL</var>, <var>0x6dcdfd59L</var>, <var>0x608edb80L</var>, <var>0x644fc637L</var>,</td></tr>
+<tr><th id="68">68</th><td>   <var>0x7a089632L</var>, <var>0x7ec98b85L</var>, <var>0x738aad5cL</var>, <var>0x774bb0ebL</var>,</td></tr>
+<tr><th id="69">69</th><td>   <var>0x4f040d56L</var>, <var>0x4bc510e1L</var>, <var>0x46863638L</var>, <var>0x42472b8fL</var>,</td></tr>
+<tr><th id="70">70</th><td>   <var>0x5c007b8aL</var>, <var>0x58c1663dL</var>, <var>0x558240e4L</var>, <var>0x51435d53L</var>,</td></tr>
+<tr><th id="71">71</th><td>   <var>0x251d3b9eL</var>, <var>0x21dc2629L</var>, <var>0x2c9f00f0L</var>, <var>0x285e1d47L</var>,</td></tr>
+<tr><th id="72">72</th><td>   <var>0x36194d42L</var>, <var>0x32d850f5L</var>, <var>0x3f9b762cL</var>, <var>0x3b5a6b9bL</var>,</td></tr>
+<tr><th id="73">73</th><td>   <var>0x0315d626L</var>, <var>0x07d4cb91L</var>, <var>0x0a97ed48L</var>, <var>0x0e56f0ffL</var>,</td></tr>
+<tr><th id="74">74</th><td>   <var>0x1011a0faL</var>, <var>0x14d0bd4dL</var>, <var>0x19939b94L</var>, <var>0x1d528623L</var>,</td></tr>
+<tr><th id="75">75</th><td>   <var>0xf12f560eL</var>, <var>0xf5ee4bb9L</var>, <var>0xf8ad6d60L</var>, <var>0xfc6c70d7L</var>,</td></tr>
+<tr><th id="76">76</th><td>   <var>0xe22b20d2L</var>, <var>0xe6ea3d65L</var>, <var>0xeba91bbcL</var>, <var>0xef68060bL</var>,</td></tr>
+<tr><th id="77">77</th><td>   <var>0xd727bbb6L</var>, <var>0xd3e6a601L</var>, <var>0xdea580d8L</var>, <var>0xda649d6fL</var>,</td></tr>
+<tr><th id="78">78</th><td>   <var>0xc423cd6aL</var>, <var>0xc0e2d0ddL</var>, <var>0xcda1f604L</var>, <var>0xc960ebb3L</var>,</td></tr>
+<tr><th id="79">79</th><td>   <var>0xbd3e8d7eL</var>, <var>0xb9ff90c9L</var>, <var>0xb4bcb610L</var>, <var>0xb07daba7L</var>,</td></tr>
+<tr><th id="80">80</th><td>   <var>0xae3afba2L</var>, <var>0xaafbe615L</var>, <var>0xa7b8c0ccL</var>, <var>0xa379dd7bL</var>,</td></tr>
+<tr><th id="81">81</th><td>   <var>0x9b3660c6L</var>, <var>0x9ff77d71L</var>, <var>0x92b45ba8L</var>, <var>0x9675461fL</var>,</td></tr>
+<tr><th id="82">82</th><td>   <var>0x8832161aL</var>, <var>0x8cf30badL</var>, <var>0x81b02d74L</var>, <var>0x857130c3L</var>,</td></tr>
+<tr><th id="83">83</th><td>   <var>0x5d8a9099L</var>, <var>0x594b8d2eL</var>, <var>0x5408abf7L</var>, <var>0x50c9b640L</var>,</td></tr>
+<tr><th id="84">84</th><td>   <var>0x4e8ee645L</var>, <var>0x4a4ffbf2L</var>, <var>0x470cdd2bL</var>, <var>0x43cdc09cL</var>,</td></tr>
+<tr><th id="85">85</th><td>   <var>0x7b827d21L</var>, <var>0x7f436096L</var>, <var>0x7200464fL</var>, <var>0x76c15bf8L</var>,</td></tr>
+<tr><th id="86">86</th><td>   <var>0x68860bfdL</var>, <var>0x6c47164aL</var>, <var>0x61043093L</var>, <var>0x65c52d24L</var>,</td></tr>
+<tr><th id="87">87</th><td>   <var>0x119b4be9L</var>, <var>0x155a565eL</var>, <var>0x18197087L</var>, <var>0x1cd86d30L</var>,</td></tr>
+<tr><th id="88">88</th><td>   <var>0x029f3d35L</var>, <var>0x065e2082L</var>, <var>0x0b1d065bL</var>, <var>0x0fdc1becL</var>,</td></tr>
+<tr><th id="89">89</th><td>   <var>0x3793a651L</var>, <var>0x3352bbe6L</var>, <var>0x3e119d3fL</var>, <var>0x3ad08088L</var>,</td></tr>
+<tr><th id="90">90</th><td>   <var>0x2497d08dL</var>, <var>0x2056cd3aL</var>, <var>0x2d15ebe3L</var>, <var>0x29d4f654L</var>,</td></tr>
+<tr><th id="91">91</th><td>   <var>0xc5a92679L</var>, <var>0xc1683bceL</var>, <var>0xcc2b1d17L</var>, <var>0xc8ea00a0L</var>,</td></tr>
+<tr><th id="92">92</th><td>   <var>0xd6ad50a5L</var>, <var>0xd26c4d12L</var>, <var>0xdf2f6bcbL</var>, <var>0xdbee767cL</var>,</td></tr>
+<tr><th id="93">93</th><td>   <var>0xe3a1cbc1L</var>, <var>0xe760d676L</var>, <var>0xea23f0afL</var>, <var>0xeee2ed18L</var>,</td></tr>
+<tr><th id="94">94</th><td>   <var>0xf0a5bd1dL</var>, <var>0xf464a0aaL</var>, <var>0xf9278673L</var>, <var>0xfde69bc4L</var>,</td></tr>
+<tr><th id="95">95</th><td>   <var>0x89b8fd09L</var>, <var>0x8d79e0beL</var>, <var>0x803ac667L</var>, <var>0x84fbdbd0L</var>,</td></tr>
+<tr><th id="96">96</th><td>   <var>0x9abc8bd5L</var>, <var>0x9e7d9662L</var>, <var>0x933eb0bbL</var>, <var>0x97ffad0cL</var>,</td></tr>
+<tr><th id="97">97</th><td>   <var>0xafb010b1L</var>, <var>0xab710d06L</var>, <var>0xa6322bdfL</var>, <var>0xa2f33668L</var>,</td></tr>
+<tr><th id="98">98</th><td>   <var>0xbcb4666dL</var>, <var>0xb8757bdaL</var>, <var>0xb5365d03L</var>, <var>0xb1f740b4L</var></td></tr>
+<tr><th id="99">99</th><td>};</td></tr>
+<tr><th id="100">100</th><td></td></tr>
+<tr><th id="101">101</th><td></td></tr>
+<tr><th id="102">102</th><td><i>/*-------------------------------------------------------------*/</i></td></tr>
+<tr><th id="103">103</th><td><i>/*--- end                                        crctable.c ---*/</i></td></tr>
+<tr><th id="104">104</th><td><i>/*-------------------------------------------------------------*/</i></td></tr>
+<tr><th id="105">105</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

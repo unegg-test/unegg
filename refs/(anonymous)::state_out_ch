@@ -1,0 +1,15 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='356' type='UChar'/>
+<offset>96</offset>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='355'>/* for doing the final run-length decoding */</doc>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='547' u='r' c='unRLE_obuf_to_output_FAST'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='548' u='r' c='unRLE_obuf_to_output_FAST'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='564' u='w' c='unRLE_obuf_to_output_FAST'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='593' u='r' c='unRLE_obuf_to_output_FAST'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='671' u='w' c='unRLE_obuf_to_output_FAST'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='717' u='r' c='unRLE_obuf_to_output_SMALL'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='718' u='r' c='unRLE_obuf_to_output_SMALL'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='734' u='w' c='unRLE_obuf_to_output_SMALL'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='766' u='r' c='unRLE_obuf_to_output_SMALL'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='767' u='r' c='unRLE_obuf_to_output_SMALL'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='783' u='w' c='unRLE_obuf_to_output_SMALL'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='519' u='w' c='BZ2_decompress'/>

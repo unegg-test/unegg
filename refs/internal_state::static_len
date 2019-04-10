@@ -1,0 +1,7 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='245' type='ulg'/>
+<offset>47232</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='245'>/* bit length of current block with static trees */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='426' u='w' c='init_block'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='532' u='w' c='gen_bitlen'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='658' u='w' c='build_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='960' u='r' c='_tr_flush_block'/>

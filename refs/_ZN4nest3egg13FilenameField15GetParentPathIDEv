@@ -1,0 +1,2 @@
+<def f='codebrowser/nest/format/egg/FilenameField.h' l='45' ll='48' type='unsigned int nest::egg::FilenameField::GetParentPathID()'/>
+<use f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='129' u='c' c='_ZN4nest3egg14ExtraFieldWrap9_As4BytesEjPb'/>

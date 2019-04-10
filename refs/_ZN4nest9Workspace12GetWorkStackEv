@@ -1,0 +1,8 @@
+<dec f='codebrowser/nest/Workspace.h' l='50' type='std::stack&lt;int&gt; &amp; nest::Workspace::GetWorkStack()'/>
+<use f='codebrowser/EventHandler.cpp' l='75' u='c' c='_ZN12EventHandler11OnWorkStartEi'/>
+<use f='codebrowser/EventHandler.cpp' l='79' u='c' c='_ZN12EventHandler11OnWorkStartEi'/>
+<use f='codebrowser/EventHandler.cpp' l='83' u='c' c='_ZN12EventHandler11OnWorkStartEi'/>
+<use f='codebrowser/EventHandler.cpp' l='99' u='c' c='_ZN12EventHandler12OnWorkFinishEii'/>
+<use f='codebrowser/EventHandler.cpp' l='103' u='c' c='_ZN12EventHandler12OnWorkFinishEii'/>
+<use f='codebrowser/EventHandler.cpp' l='107' u='c' c='_ZN12EventHandler12OnWorkFinishEii'/>
+<def f='codebrowser/nest/Workspace.cpp' l='170' ll='173' type='std::stack&lt;int&gt; &amp; nest::Workspace::GetWorkStack()'/>

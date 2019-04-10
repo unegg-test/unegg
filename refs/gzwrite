@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='1251' type='int gzwrite(gzFile file, voidpc buf, unsigned int len)'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='143' ll='218' type='int gzwrite(gzFile file, voidpc buf, unsigned int len)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='258' u='c' c='gzputc'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='273' u='c' c='gzputs'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='142'>/* -- see zlib.h -- */</doc>

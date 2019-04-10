@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>SymbolCodeD.cpp source code [codebrowser/nest/algorithm/azo/Decoder/SymbolCodeD.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/algorithm/azo/Decoder/SymbolCodeD.cpp'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>nest</a>/<a href='../..'>algorithm</a>/<a href='..'>azo</a>/<a href='./'>Decoder</a>/<a href='SymbolCodeD.cpp.html'>SymbolCodeD.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/AZO_DECODER_SYMBOLCODE_CPP">AZO_DECODER_SYMBOLCODE_CPP</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/AZO_DECODER_SYMBOLCODE_CPP" data-ref="_M/AZO_DECODER_SYMBOLCODE_CPP">AZO_DECODER_SYMBOLCODE_CPP</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="SymbolCodeD.h.html">"SymbolCodeD.h"</a></u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><b>namespace</b> <span class="namespace">AZO</span> {</td></tr>
+<tr><th id="7">7</th><td><b>namespace</b> <span class="namespace">Decoder</span> {</td></tr>
+<tr><th id="8">8</th><td></td></tr>
+<tr><th id="9">9</th><td><b>template</b> &lt;<b>typename</b> T, u_int N, u_int HISTORY_N&gt;</td></tr>
+<tr><th id="10">10</th><td><b>inline</b> T <a class="type" href="SymbolCodeD.h.html#AZO::Decoder::SymbolCode" title='AZO::Decoder::SymbolCode' data-ref="AZO::Decoder::SymbolCode">SymbolCode</a>&lt;T, <a class="tu ref" href="#N" title='N' data-ref="N">N</a>, <a class="tu ref" href="#HISTORY_N" title='HISTORY_N' data-ref="HISTORY_N">HISTORY_N</a>&gt;::<dfn class="decl def" id="_ZN3AZO7Decoder10SymbolCode4CodeERNS0_11EntropyCodeE" title='AZO::Decoder::SymbolCode::Code' data-ref="_ZN3AZO7Decoder10SymbolCode4CodeERNS0_11EntropyCodeE">Code</dfn>(<a class="type" href="EntropyCodeD.h.html#AZO::Decoder::EntropyCode" title='AZO::Decoder::EntropyCode' data-ref="AZO::Decoder::EntropyCode">EntropyCode</a>&amp; <dfn class="local col1 decl" id="11entropy" title='entropy' data-type='AZO::Decoder::EntropyCode &amp;' data-ref="11entropy">entropy</dfn>)</td></tr>
+<tr><th id="11">11</th><td>{</td></tr>
+<tr><th id="12">12</th><td>    T <dfn class="local col2 decl" id="12ret" title='ret' data-type='T' data-ref="12ret">ret</dfn>(<var>0</var>);</td></tr>
+<tr><th id="13">13</th><td>    <b>if</b>(<a class="member" href="SymbolCodeD.h.html#AZO::Decoder::SymbolCode::history_" title='AZO::Decoder::SymbolCode::history_' data-ref="AZO::Decoder::SymbolCode::history_">history_</a>.Code(<a class="local col1 ref" href="#11entropy" title='entropy' data-ref="11entropy">entropy</a>, <a class="local col2 ref" href="#12ret" title='ret' data-ref="12ret">ret</a>) == <b>false</b>) {</td></tr>
+<tr><th id="14">14</th><td>        <a class="local col2 ref" href="#12ret" title='ret' data-ref="12ret">ret</a> = <a class="member" href="SymbolCodeD.h.html#AZO::Decoder::SymbolCode::prob_" title='AZO::Decoder::SymbolCode::prob_' data-ref="AZO::Decoder::SymbolCode::prob_">prob_</a>.Code(<a class="local col1 ref" href="#11entropy" title='entropy' data-ref="11entropy">entropy</a>);</td></tr>
+<tr><th id="15">15</th><td>        <a class="member" href="SymbolCodeD.h.html#AZO::Decoder::SymbolCode::history_" title='AZO::Decoder::SymbolCode::history_' data-ref="AZO::Decoder::SymbolCode::history_">history_</a>.Add(<a class="local col2 ref" href="#12ret" title='ret' data-ref="12ret">ret</a>);</td></tr>
+<tr><th id="16">16</th><td>    }</td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td>    <b>return</b> <a class="local col2 ref" href="#12ret" title='ret' data-ref="12ret">ret</a>;</td></tr>
+<tr><th id="19">19</th><td>}</td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td>} <i>//namespaces Decoder</i></td></tr>
+<tr><th id="22">22</th><td>} <i>//namespaces AZO</i></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><u>#<span data-ppcond="1">endif</span> /*AZO_DECODER_SYMBOLCODE_CPP*/</u></td></tr>
+<tr><th id="25">25</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='BlockCodeD.cpp.html'>codebrowser/nest/algorithm/azo/Decoder/BlockCodeD.cpp</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

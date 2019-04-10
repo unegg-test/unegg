@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='837' type='int inflateReset(z_streamp strm)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='198' u='c' c='gz_head'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='103' ll='128' type='int inflateReset(z_streamp strm)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='165' u='c' c='inflateReset2'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1382' u='c' c='inflateSync'/>

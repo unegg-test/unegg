@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/7zFile.h' l='50' type='WRes File_GetLength(CSzFile * p, UInt64 * length)'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='225' ll='249' type='WRes File_GetLength(CSzFile * p, UInt64 * length)'/>

@@ -1,0 +1,2 @@
+<def f='include/c++/7/bits/move.h' l='182' ll='201' type='void std::swap(_Tp &amp; __a, _Tp &amp; __b)'/>
+<dec f='include/c++/7/bits/algorithmfwd.h' l='587' type='void std::swap(_Tp &amp; __a, _Tp &amp; __b)'/>

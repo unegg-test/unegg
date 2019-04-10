@@ -1,0 +1,3 @@
+<use f='codebrowser/nest/stream/InputStreamRewinder.h' l='29' u='c' c='_ZN4nest19InputStreamRewinderC1ERNS_11InputStreamE'/>
+<use f='codebrowser/nest/stream/InputStreamRewinder.h' l='35' u='c' c='_ZN4nest19InputStreamRewinderC1EPNS_11InputStreamE'/>
+<def f='codebrowser/nest/stream/InputStreamRewinder.h' l='46' ll='49' type='void nest::InputStreamRewinder::Push()'/>

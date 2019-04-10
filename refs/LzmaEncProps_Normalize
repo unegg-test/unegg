@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.h' l='35' type='void LzmaEncProps_Normalize(CLzmaEncProps * p)'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='53' ll='84' type='void LzmaEncProps_Normalize(CLzmaEncProps * p)'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='89' u='c' c='LzmaEncProps_GetDictSize'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='396' u='c' c='LzmaEnc_SetProps'/>

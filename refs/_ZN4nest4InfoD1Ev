@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/Info.h' l='23' type='void nest::Info::~Info()'/>
+<def f='codebrowser/nest/Info.cpp' l='17' ll='20' type='void nest::Info::~Info()'/>
+<ovr f='codebrowser/nest/format/ALZFormat.cpp' l='37' c='_ZN4nest9ALZFormatD1Ev'/>
+<ovr f='codebrowser/nest/format/EggFormat.cpp' l='45' c='_ZN4nest9EggFormatD1Ev'/>
+<ovr f='codebrowser/nest/format/Header.cpp' l='24' c='_ZN4nest6HeaderD1Ev'/>

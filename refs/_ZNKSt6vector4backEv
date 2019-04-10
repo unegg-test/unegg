@@ -1,0 +1,5 @@
+<def f='include/c++/7/bits/stl_vector.h' l='905' ll='910' type='const_reference std::vector::back() const'/>
+<doc f='include/c++/7/bits/stl_vector.h' l='901'>/**
+       *  Returns a read-only (constant) reference to the data at the
+       *  last element of the %vector.
+       */</doc>

@@ -1,0 +1,5 @@
+_ZN11CommandLine16ParseCommandlineEiPPc|CommandLine::ParseCommandline
+_ZN4nest4utf813path_ellipsisEPcmmPKc|nest::utf8::path_ellipsis
+_ZSt12partial_sortT_S_S_|std::partial_sort
+_ZSt17partial_sort_copyT_S_T0_S0_|std::partial_sort_copy
+_ZSt9partitionT_S_T0_|std::partition

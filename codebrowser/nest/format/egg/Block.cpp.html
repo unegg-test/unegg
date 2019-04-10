@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Block.cpp source code [codebrowser/nest/format/egg/Block.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/format/egg/Block.cpp'; var root_path = '../../../..'; var data_path = '../../../../../data';</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>codebrowser</a>/<a href='../..'>nest</a>/<a href='..'>format</a>/<a href='./'>egg</a>/<a href='Block.cpp.html'>Block.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * Block.cpp</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> *  Created on: 2010. 12. 10.</i></td></tr>
+<tr><th id="5">5</th><td><i> *      Author: Jehoon Shin(Revolution)</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> *  Copyright(c) 2010-Present ESTsoft Corp. All rights reserved.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> *  For conditions of distribution and use, see copyright notice in license.txt</i></td></tr>
+<tr><th id="10">10</th><td><i> */</i></td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td><u>#include <a href="Block.h.html">"Block.h"</a></u></td></tr>
+<tr><th id="13">13</th><td><u>#include <a href="EggTypes.h.html">&lt;nest/format/egg/EggTypes.h&gt;</a></u></td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><b>namespace</b> <span class="namespace">nest</span></td></tr>
+<tr><th id="16">16</th><td>{</td></tr>
+<tr><th id="17">17</th><td><b>namespace</b> <span class="namespace">egg</span></td></tr>
+<tr><th id="18">18</th><td>{</td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><a class="type" href="Block.h.html#nest::egg::Block" title='nest::egg::Block' data-ref="nest::egg::Block">Block</a>::<dfn class="decl def" id="_ZN4nest3egg5BlockC1Ev" title='nest::egg::Block::Block' data-ref="_ZN4nest3egg5BlockC1Ev">Block</dfn>() :</td></tr>
+<tr><th id="21">21</th><td>    <a class="member" href="Block.h.html#nest::egg::Block::compMethod_" title='nest::egg::Block::compMethod_' data-ref="nest::egg::Block::compMethod_">compMethod_</a>(<var>0</var>), <a class="member" href="Block.h.html#nest::egg::Block::methodHint_" title='nest::egg::Block::methodHint_' data-ref="nest::egg::Block::methodHint_">methodHint_</a>(<var>0</var>), <a class="member" href="Block.h.html#nest::egg::Block::uncompSize_" title='nest::egg::Block::uncompSize_' data-ref="nest::egg::Block::uncompSize_">uncompSize_</a>(<var>0</var>), <a class="member" href="Block.h.html#nest::egg::Block::compSize_" title='nest::egg::Block::compSize_' data-ref="nest::egg::Block::compSize_">compSize_</a>(<var>0</var>), <a class="member" href="Block.h.html#nest::egg::Block::crc_" title='nest::egg::Block::crc_' data-ref="nest::egg::Block::crc_">crc_</a>(<var>0</var>)</td></tr>
+<tr><th id="22">22</th><td>{</td></tr>
+<tr><th id="23">23</th><td>    <i>// TODO Auto-generated constructor stub</i></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td>}</td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><a class="type" href="Block.h.html#nest::egg::Block" title='nest::egg::Block' data-ref="nest::egg::Block">Block</a>::<dfn class="virtual decl def" id="_ZN4nest3egg5BlockD1Ev" title='nest::egg::Block::~Block' data-ref="_ZN4nest3egg5BlockD1Ev">~Block</dfn>()</td></tr>
+<tr><th id="28">28</th><td>{</td></tr>
+<tr><th id="29">29</th><td>    <i>// TODO Auto-generated destructor stub</i></td></tr>
+<tr><th id="30">30</th><td>    <a class="member" href="../Header.h.html#_ZN4nest6Header5ClearEv" title='nest::Header::Clear' data-ref="_ZN4nest6Header5ClearEv">Clear</a>();</td></tr>
+<tr><th id="31">31</th><td>}</td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><em>int</em> <a class="type" href="Block.h.html#nest::egg::Block" title='nest::egg::Block' data-ref="nest::egg::Block">Block</a>::<dfn class="virtual decl def" id="_ZN4nest3egg5Block6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE" title='nest::egg::Block::OnRead' data-ref="_ZN4nest3egg5Block6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE">OnRead</dfn>(<a class="type" href="../../stream/InputStreamRewinder.h.html#nest::InputStreamRewinder" title='nest::InputStreamRewinder' data-ref="nest::InputStreamRewinder">InputStreamRewinder</a>* <dfn class="local col1 decl" id="1rewinder" title='rewinder' data-type='nest::InputStreamRewinder *' data-ref="1rewinder">rewinder</dfn>, <a class="type" href="../../stream/InputStream.h.html#nest::InputStream" title='nest::InputStream' data-ref="nest::InputStream">InputStream</a>* <dfn class="local col2 decl" id="2stream" title='stream' data-type='nest::InputStream *' data-ref="2stream">stream</dfn>)</td></tr>
+<tr><th id="34">34</th><td>{</td></tr>
+<tr><th id="35">35</th><td>    <em>int</em> <dfn class="local col3 decl" id="3res" title='res' data-type='int' data-ref="3res">res</dfn> = <span class="namespace">Result::</span><a class="enum" href="../../define.h.html#Result::ReadError" title='Result::ReadError' data-ref="Result::ReadError">ReadError</a>;</td></tr>
+<tr><th id="36">36</th><td>    <em>int</em> <dfn class="local col4 decl" id="4sig" title='sig' data-type='int' data-ref="4sig">sig</dfn> = <var>0</var>;</td></tr>
+<tr><th id="37">37</th><td></td></tr>
+<tr><th id="38">38</th><td>    <a class="macro" href="../Header.h.html#23" title="if (sizeof(sig) == stream-&gt;Read(&amp;sig, sizeof(sig)))" data-ref="_M/IF_READ_STREAM_VAR">IF_READ_STREAM_VAR</a>(<a class="local col2 ref" href="#2stream" title='stream' data-ref="2stream">stream</a>, <a class="local col4 ref" href="#4sig" title='sig' data-ref="4sig">sig</a>)</td></tr>
+<tr><th id="39">39</th><td>    {</td></tr>
+<tr><th id="40">40</th><td>        <b>if</b> (<a class="local col4 ref" href="#4sig" title='sig' data-ref="4sig">sig</a> == <span class="namespace">Magic::</span><a class="ref" href="EggTypes.h.html#nest::egg::Magic::BLOCK" title='nest::egg::Magic::BLOCK' data-ref="nest::egg::Magic::BLOCK">BLOCK</a>)</td></tr>
+<tr><th id="41">41</th><td>        {</td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td>            <a class="macro" href="../Header.h.html#23" title="if (sizeof(compMethod_) == stream-&gt;Read(&amp;compMethod_, sizeof(compMethod_)))" data-ref="_M/IF_READ_STREAM_VAR">IF_READ_STREAM_VAR</a>(<a class="local col2 ref" href="#2stream" title='stream' data-ref="2stream">stream</a>, <a class="member" href="Block.h.html#nest::egg::Block::compMethod_" title='nest::egg::Block::compMethod_' data-ref="nest::egg::Block::compMethod_">compMethod_</a>)</td></tr>
+<tr><th id="44">44</th><td>            {</td></tr>
+<tr><th id="45">45</th><td></td></tr>
+<tr><th id="46">46</th><td>                <a class="macro" href="../Header.h.html#23" title="if (sizeof(methodHint_) == stream-&gt;Read(&amp;methodHint_, sizeof(methodHint_)))" data-ref="_M/IF_READ_STREAM_VAR">IF_READ_STREAM_VAR</a>(<a class="local col2 ref" href="#2stream" title='stream' data-ref="2stream">stream</a>, <a class="member" href="Block.h.html#nest::egg::Block::methodHint_" title='nest::egg::Block::methodHint_' data-ref="nest::egg::Block::methodHint_">methodHint_</a>)</td></tr>
+<tr><th id="47">47</th><td>                {</td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td>                    <a class="macro" href="../Header.h.html#23" title="if (sizeof(uncompSize_) == stream-&gt;Read(&amp;uncompSize_, sizeof(uncompSize_)))" data-ref="_M/IF_READ_STREAM_VAR">IF_READ_STREAM_VAR</a>(<a class="local col2 ref" href="#2stream" title='stream' data-ref="2stream">stream</a>, <a class="member" href="Block.h.html#nest::egg::Block::uncompSize_" title='nest::egg::Block::uncompSize_' data-ref="nest::egg::Block::uncompSize_">uncompSize_</a>)</td></tr>
+<tr><th id="50">50</th><td>                    {</td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td>                        <a class="macro" href="../Header.h.html#23" title="if (sizeof(compSize_) == stream-&gt;Read(&amp;compSize_, sizeof(compSize_)))" data-ref="_M/IF_READ_STREAM_VAR">IF_READ_STREAM_VAR</a>(<a class="local col2 ref" href="#2stream" title='stream' data-ref="2stream">stream</a>, <a class="member" href="Block.h.html#nest::egg::Block::compSize_" title='nest::egg::Block::compSize_' data-ref="nest::egg::Block::compSize_">compSize_</a>)</td></tr>
+<tr><th id="53">53</th><td>                        {</td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td>                            <a class="macro" href="../Header.h.html#23" title="if (sizeof(crc_) == stream-&gt;Read(&amp;crc_, sizeof(crc_)))" data-ref="_M/IF_READ_STREAM_VAR">IF_READ_STREAM_VAR</a>(<a class="local col2 ref" href="#2stream" title='stream' data-ref="2stream">stream</a>, <a class="member" href="Block.h.html#nest::egg::Block::crc_" title='nest::egg::Block::crc_' data-ref="nest::egg::Block::crc_">crc_</a>)</td></tr>
+<tr><th id="56">56</th><td>                            {</td></tr>
+<tr><th id="57">57</th><td>                                <a class="local col1 ref" href="#1rewinder" title='rewinder' data-ref="1rewinder">rewinder</a>-&gt;<a class="ref" href="../../stream/InputStreamRewinder.h.html#_ZN4nest19InputStreamRewinder5ClearEv" title='nest::InputStreamRewinder::Clear' data-ref="_ZN4nest19InputStreamRewinder5ClearEv">Clear</a>();</td></tr>
+<tr><th id="58">58</th><td>                                <a class="member" href="Block.h.html#nest::egg::Block::dataOffset_" title='nest::egg::Block::dataOffset_' data-ref="nest::egg::Block::dataOffset_">dataOffset_</a> = <a class="local col2 ref" href="#2stream" title='stream' data-ref="2stream">stream</a>-&gt;<a class="virtual ref" href="../../stream/InputStream.h.html#_ZN4nest11InputStream4TellEv" title='nest::InputStream::Tell' data-ref="_ZN4nest11InputStream4TellEv">Tell</a>();</td></tr>
+<tr><th id="59">59</th><td></td></tr>
+<tr><th id="60">60</th><td>                                <a class="local col3 ref" href="#3res" title='res' data-ref="3res">res</a> = <span class="namespace">Result::</span><a class="enum" href="../../define.h.html#Result::Success" title='Result::Success' data-ref="Result::Success">Success</a>;</td></tr>
+<tr><th id="61">61</th><td>                            }</td></tr>
+<tr><th id="62">62</th><td>                        }</td></tr>
+<tr><th id="63">63</th><td>                    }</td></tr>
+<tr><th id="64">64</th><td>                }</td></tr>
+<tr><th id="65">65</th><td>            }</td></tr>
+<tr><th id="66">66</th><td>        }</td></tr>
+<tr><th id="67">67</th><td>    }</td></tr>
+<tr><th id="68">68</th><td></td></tr>
+<tr><th id="69">69</th><td>    <b>return</b> <a class="local col3 ref" href="#3res" title='res' data-ref="3res">res</a>;</td></tr>
+<tr><th id="70">70</th><td>}</td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td><em>int</em> <a class="type" href="Block.h.html#nest::egg::Block" title='nest::egg::Block' data-ref="nest::egg::Block">Block</a>::<dfn class="virtual decl def" id="_ZN4nest3egg5Block9_As4BytesEjPb" title='nest::egg::Block::_As4Bytes' data-ref="_ZN4nest3egg5Block9_As4BytesEjPb">_As4Bytes</dfn>(<em>unsigned</em> <em>int</em> <dfn class="local col5 decl" id="5key" title='key' data-type='unsigned int' data-ref="5key">key</dfn>, <em>bool</em>* <dfn class="local col6 decl" id="6handled" title='handled' data-type='bool *' data-ref="6handled">handled</dfn>)</td></tr>
+<tr><th id="73">73</th><td>{</td></tr>
+<tr><th id="74">74</th><td>    <a class="macro" href="../../nest.h.html#69" title="if (key == key::block::size::PACKED) { if (handled) { *handled = true; } return GetCompressedSize(); }" data-ref="_M/VERIFY_KEY">VERIFY_KEY</a>(key::block::size::<a class="ref" href="../../nest.h.html#151" title='nest::key::block::size::PACKED' data-ref="nest::key::block::size::PACKED">PACKED</a>, <a class="member" href="Block.h.html#_ZN4nest3egg5Block17GetCompressedSizeEv" title='nest::egg::Block::GetCompressedSize' data-ref="_ZN4nest3egg5Block17GetCompressedSizeEv">GetCompressedSize</a>());</td></tr>
+<tr><th id="75">75</th><td>    <a class="macro" href="../../nest.h.html#69" title="if (key == key::block::size::UNPACKED) { if (handled) { *handled = true; } return GetUncompressedSize(); }" data-ref="_M/VERIFY_KEY">VERIFY_KEY</a>(key::block::size::<a class="ref" href="../../nest.h.html#152" title='nest::key::block::size::UNPACKED' data-ref="nest::key::block::size::UNPACKED">UNPACKED</a>, <a class="member" href="Block.h.html#_ZN4nest3egg5Block19GetUncompressedSizeEv" title='nest::egg::Block::GetUncompressedSize' data-ref="_ZN4nest3egg5Block19GetUncompressedSizeEv">GetUncompressedSize</a>());</td></tr>
+<tr><th id="76">76</th><td>    <a class="macro" href="../../nest.h.html#69" title="if (key == key::block::method::HINT) { if (handled) { *handled = true; } return GetMethodHint(); }" data-ref="_M/VERIFY_KEY">VERIFY_KEY</a>(key::block::method::<a class="ref" href="../../nest.h.html#148" title='nest::key::block::method::HINT' data-ref="nest::key::block::method::HINT">HINT</a>, <a class="member" href="Block.h.html#_ZN4nest3egg5Block13GetMethodHintEv" title='nest::egg::Block::GetMethodHint' data-ref="_ZN4nest3egg5Block13GetMethodHintEv">GetMethodHint</a>());</td></tr>
+<tr><th id="77">77</th><td>    <a class="macro" href="../../nest.h.html#69" title="if (key == key::block::method::METHOD) { if (handled) { *handled = true; } return GetCompressMethod(); }" data-ref="_M/VERIFY_KEY">VERIFY_KEY</a>(key::block::method::<a class="ref" href="../../nest.h.html#147" title='nest::key::block::method::METHOD' data-ref="nest::key::block::method::METHOD">METHOD</a>, <a class="member" href="Block.h.html#_ZN4nest3egg5Block17GetCompressMethodEv" title='nest::egg::Block::GetCompressMethod' data-ref="_ZN4nest3egg5Block17GetCompressMethodEv">GetCompressMethod</a>());</td></tr>
+<tr><th id="78">78</th><td>    <a class="macro" href="../../nest.h.html#69" title="if (key == key::block::CRC) { if (handled) { *handled = true; } return GetCRC(); }" data-ref="_M/VERIFY_KEY">VERIFY_KEY</a>(key::block::<a class="ref" href="../../nest.h.html#144" title='nest::key::block::CRC' data-ref="nest::key::block::CRC">CRC</a>, <a class="member" href="Block.h.html#_ZN4nest3egg5Block6GetCRCEv" title='nest::egg::Block::GetCRC' data-ref="_ZN4nest3egg5Block6GetCRCEv">GetCRC</a>());</td></tr>
+<tr><th id="79">79</th><td></td></tr>
+<tr><th id="80">80</th><td>    <b>return</b> <a class="type" href="../Header.h.html#nest::Header" title='nest::Header' data-ref="nest::Header">Header</a>::<a class="virtual member" href="../../Info.h.html#_ZN4nest4Info9_As4BytesEjPb" title='nest::Info::_As4Bytes' data-ref="_ZN4nest4Info9_As4BytesEjPb">_As4Bytes</a>(<a class="local col5 ref" href="#5key" title='key' data-ref="5key">key</a>, <a class="local col6 ref" href="#6handled" title='handled' data-ref="6handled">handled</a>);</td></tr>
+<tr><th id="81">81</th><td>}</td></tr>
+<tr><th id="82">82</th><td></td></tr>
+<tr><th id="83">83</th><td><a class="typedef" href="../../define.h.html#int64" title='int64' data-type='long long' data-ref="int64">int64</a> <a class="type" href="Block.h.html#nest::egg::Block" title='nest::egg::Block' data-ref="nest::egg::Block">Block</a>::<dfn class="virtual decl def" id="_ZN4nest3egg5Block9_As8BytesEjPb" title='nest::egg::Block::_As8Bytes' data-ref="_ZN4nest3egg5Block9_As8BytesEjPb">_As8Bytes</dfn>(<em>unsigned</em> <em>int</em> <dfn class="local col7 decl" id="7key" title='key' data-type='unsigned int' data-ref="7key">key</dfn>, <em>bool</em>* <dfn class="local col8 decl" id="8handled" title='handled' data-type='bool *' data-ref="8handled">handled</dfn>)</td></tr>
+<tr><th id="84">84</th><td>{</td></tr>
+<tr><th id="85">85</th><td>    <a class="macro" href="../../nest.h.html#69" title="if (key == key::block::OFFSET) { if (handled) { *handled = true; } return GetDataOffset(); }" data-ref="_M/VERIFY_KEY">VERIFY_KEY</a>(key::block::<a class="ref" href="../../nest.h.html#145" title='nest::key::block::OFFSET' data-ref="nest::key::block::OFFSET">OFFSET</a>, <a class="member" href="Block.h.html#_ZN4nest3egg5Block13GetDataOffsetEv" title='nest::egg::Block::GetDataOffset' data-ref="_ZN4nest3egg5Block13GetDataOffsetEv">GetDataOffset</a>());</td></tr>
+<tr><th id="86">86</th><td></td></tr>
+<tr><th id="87">87</th><td>    <b>return</b> <a class="type" href="../Header.h.html#nest::Header" title='nest::Header' data-ref="nest::Header">Header</a>::<a class="virtual member" href="../../Info.h.html#_ZN4nest4Info9_As8BytesEjPb" title='nest::Info::_As8Bytes' data-ref="_ZN4nest4Info9_As8BytesEjPb">_As8Bytes</a>(<a class="local col7 ref" href="#7key" title='key' data-ref="7key">key</a>, <a class="local col8 ref" href="#8handled" title='handled' data-ref="8handled">handled</a>);</td></tr>
+<tr><th id="88">88</th><td>}</td></tr>
+<tr><th id="89">89</th><td></td></tr>
+<tr><th id="90">90</th><td><em>const</em> <em>char</em>* <a class="type" href="Block.h.html#nest::egg::Block" title='nest::egg::Block' data-ref="nest::egg::Block">Block</a>::<dfn class="decl def" id="_ZN4nest3egg5Block22GetComressMethodStringEv" title='nest::egg::Block::GetComressMethodString' data-ref="_ZN4nest3egg5Block22GetComressMethodStringEv">GetComressMethodString</dfn>()</td></tr>
+<tr><th id="91">91</th><td>{</td></tr>
+<tr><th id="92">92</th><td>    <b>switch</b> (<a class="member" href="Block.h.html#nest::egg::Block::compMethod_" title='nest::egg::Block::compMethod_' data-ref="nest::egg::Block::compMethod_">compMethod_</a>)</td></tr>
+<tr><th id="93">93</th><td>    {</td></tr>
+<tr><th id="94">94</th><td>    <b>case</b> <span class="namespace">CompressionMethod::</span><a class="enum" href="../../nest.h.html#nest::CompressionMethod::Store" title='nest::CompressionMethod::Store' data-ref="nest::CompressionMethod::Store">Store</a>:</td></tr>
+<tr><th id="95">95</th><td>        <b>return</b> <q>"STORE"</q>;</td></tr>
+<tr><th id="96">96</th><td>    <b>case</b> <span class="namespace">CompressionMethod::</span><a class="enum" href="../../nest.h.html#nest::CompressionMethod::Deflate" title='nest::CompressionMethod::Deflate' data-ref="nest::CompressionMethod::Deflate">Deflate</a>:</td></tr>
+<tr><th id="97">97</th><td>        <b>return</b> <q>"DEFLATE"</q>;</td></tr>
+<tr><th id="98">98</th><td>    <b>case</b> <span class="namespace">CompressionMethod::</span><a class="enum" href="../../nest.h.html#nest::CompressionMethod::bzip" title='nest::CompressionMethod::bzip' data-ref="nest::CompressionMethod::bzip">bzip</a>:</td></tr>
+<tr><th id="99">99</th><td>        <b>return</b> <q>"BZIP"</q>;</td></tr>
+<tr><th id="100">100</th><td>    <b>case</b> <span class="namespace">CompressionMethod::</span><a class="enum" href="../../nest.h.html#nest::CompressionMethod::lzma" title='nest::CompressionMethod::lzma' data-ref="nest::CompressionMethod::lzma">lzma</a>:</td></tr>
+<tr><th id="101">101</th><td>        <b>return</b> <q>"LZMA"</q>;</td></tr>
+<tr><th id="102">102</th><td>    <b>case</b> <span class="namespace">CompressionMethod::</span><a class="enum" href="../../nest.h.html#nest::CompressionMethod::azo" title='nest::CompressionMethod::azo' data-ref="nest::CompressionMethod::azo">azo</a>:</td></tr>
+<tr><th id="103">103</th><td>        <b>return</b> <q>"AZO"</q>;</td></tr>
+<tr><th id="104">104</th><td>    }</td></tr>
+<tr><th id="105">105</th><td></td></tr>
+<tr><th id="106">106</th><td>    <b>return</b> <q>""</q>;</td></tr>
+<tr><th id="107">107</th><td>}</td></tr>
+<tr><th id="108">108</th><td></td></tr>
+<tr><th id="109">109</th><td><em>const</em> <em>void</em>* <a class="type" href="Block.h.html#nest::egg::Block" title='nest::egg::Block' data-ref="nest::egg::Block">Block</a>::<dfn class="virtual decl def" id="_ZN4nest3egg5Block6_AsPtrEjPb" title='nest::egg::Block::_AsPtr' data-ref="_ZN4nest3egg5Block6_AsPtrEjPb">_AsPtr</dfn>(<em>unsigned</em> <em>int</em> <dfn class="local col9 decl" id="9key" title='key' data-type='unsigned int' data-ref="9key">key</dfn>, <em>bool</em>* <dfn class="local col0 decl" id="10handled" title='handled' data-type='bool *' data-ref="10handled">handled</dfn>)</td></tr>
+<tr><th id="110">110</th><td>{</td></tr>
+<tr><th id="111">111</th><td>    <a class="macro" href="../../nest.h.html#69" title="if (key == key::block::method::NAME) { if (handled) { *handled = true; } return GetComressMethodString(); }" data-ref="_M/VERIFY_KEY">VERIFY_KEY</a>(key::block::method::<a class="ref" href="../../nest.h.html#149" title='nest::key::block::method::NAME' data-ref="nest::key::block::method::NAME">NAME</a>, <a class="member" href="#_ZN4nest3egg5Block22GetComressMethodStringEv" title='nest::egg::Block::GetComressMethodString' data-ref="_ZN4nest3egg5Block22GetComressMethodStringEv">GetComressMethodString</a>());</td></tr>
+<tr><th id="112">112</th><td></td></tr>
+<tr><th id="113">113</th><td>    <b>return</b> <a class="type" href="../Header.h.html#nest::Header" title='nest::Header' data-ref="nest::Header">Header</a>::<a class="member" href="../../Info.h.html#_ZN4nest4Info5AsPtrEjPb" title='nest::Info::AsPtr' data-ref="_ZN4nest4Info5AsPtrEjPb">AsPtr</a>(<a class="local col9 ref" href="#9key" title='key' data-ref="9key">key</a>, <a class="local col0 ref" href="#10handled" title='handled' data-ref="10handled">handled</a>);</td></tr>
+<tr><th id="114">114</th><td>}</td></tr>
+<tr><th id="115">115</th><td></td></tr>
+<tr><th id="116">116</th><td>}</td></tr>
+<tr><th id="117">117</th><td>}</td></tr>
+<tr><th id="118">118</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

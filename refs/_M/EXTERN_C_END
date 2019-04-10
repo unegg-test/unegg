@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='16'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='250' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zCrc.h' l='23' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/CpuArch.h' l='150' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.h' l='78' u='c'/>

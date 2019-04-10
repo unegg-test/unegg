@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzFind.h' l='105' type='UInt32 Bt3Zip_MatchFinder_GetMatches(CMatchFinder * p, UInt32 * distances)'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='507' ll='516' type='UInt32 Bt3Zip_MatchFinder_GetMatches(CMatchFinder * p, UInt32 * distances)'/>

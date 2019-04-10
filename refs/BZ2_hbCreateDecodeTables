@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='491' type='void BZ2_hbCreateDecodeTables(Int32 * , Int32 * , Int32 * , UChar * , Int32 , Int32 , Int32 )'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='339' u='c' c='BZ2_decompress'/>
+<def f='codebrowser/nest/third-party/algorithm/bzip2/huffman.c' l='170' ll='200' type='void BZ2_hbCreateDecodeTables(Int32 * limit, Int32 * base, Int32 * perm, UChar * length, Int32 minLen, Int32 maxLen, Int32 alphaSize)'/>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/huffman.c' l='169'>/*---------------------------------------------------*/</doc>

@@ -1,0 +1,39 @@
+<inh f='codebrowser/nest/format/Header.h' l='27' c='nest::Header'/>
+<def f='codebrowser/nest/format/alz/File.h' l='22' ll='136'/>
+<size>128</size>
+<fun r='_ZN4nest3alz4FileC1Ev'/>
+<fun r='_ZN4nest3alz4FileD1Ev'/>
+<fun r='_ZN4nest3alz4File12GetSignatureEv'/>
+<fun r='_ZN4nest3alz4File17GetFilenameLengthEv'/>
+<fun r='_ZN4nest3alz4File12GetAttributeEv'/>
+<fun r='_ZN4nest3alz4File11GetDateTimeEv'/>
+<fun r='_ZN4nest3alz4File11GetBitFlagsEv'/>
+<fun r='_ZN4nest3alz4File11IsEncryptedEv'/>
+<fun r='_ZN4nest3alz4File15IsCommentExistsEv'/>
+<fun r='_ZN4nest3alz4File11GetBaseSizeEv'/>
+<fun r='_ZN4nest3alz4File17GetCompressMethodEv'/>
+<fun r='_ZN4nest3alz4File6GetCRCEv'/>
+<fun r='_ZN4nest3alz4File13GetPackedSizeEv'/>
+<fun r='_ZN4nest3alz4File15GetUnpackedSizeEv'/>
+<fun r='_ZN4nest3alz4File13GetDataOffsetEv'/>
+<fun r='_ZN4nest3alz4File11GetFilenameEv'/>
+<fun r='_ZN4nest3alz4File10GetCommentEv'/>
+<fun r='_ZN4nest3alz4File10SetCommentEPKc'/>
+<fun r='_ZN4nest3alz4File13GetVerifyDataEv'/>
+<fun r='_ZN4nest3alz4File12ReadFileSizeEPNS_11InputStreamEPym'/>
+<fun r='_ZN4nest3alz4File9OnCleanUpEv'/>
+<fun r='_ZN4nest3alz4File6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<fun r='_ZN4nest3alz4File9_As4BytesEjPb'/>
+<fun r='_ZN4nest3alz4File9_As8BytesEjPb'/>
+<fun r='_ZN4nest3alz4File7_AsSizeEjPb'/>
+<fun r='_ZN4nest3alz4File6_AsPtrEjPb'/>
+<fun r='_ZN4nest3alz4File23GetCompressMethodStringEv'/>
+<mbr r='nest::alz::File::buffer_' o='72' t='unsigned char [13]'/>
+<mbr r='nest::alz::File::crc_' o='192' t='unsigned int'/>
+<mbr r='nest::alz::File::compressMethod_' o='224' t='unsigned short'/>
+<mbr r='nest::alz::File::packedSize_' o='256' t='uint64'/>
+<mbr r='nest::alz::File::unpackedSize_' o='320' t='uint64'/>
+<mbr r='nest::alz::File::offset_' o='384' t='uint64'/>
+<mbr r='nest::alz::File::verifyData_' o='448' t='char *'/>
+<mbr r='nest::alz::File::filename_' o='512' t='std::string'/>
+<mbr r='nest::alz::File::comment_' o='768' t='std::string'/>

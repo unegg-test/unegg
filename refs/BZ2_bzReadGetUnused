@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.h' l='153' type='void BZ2_bzReadGetUnused(int * bzerror, BZFILE * b, void ** unused, int * nUnused)'/>
+<def f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1221' ll='1238' type='void BZ2_bzReadGetUnused(int * bzerror, BZFILE * b, void ** unused, int * nUnused)'/>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1220'>/*---------------------------------------------------*/</doc>

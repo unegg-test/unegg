@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>sha1.h source code [codebrowser/nest/third-party/encryption/aes/sha1.h] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/third-party/encryption/aes/sha1.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>nest</a>/<a href='../..'>third-party</a>/<a href='..'>encryption</a>/<a href='./'>aes</a>/<a href='sha1.h.html'>sha1.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> ---------------------------------------------------------------------------</i></td></tr>
+<tr><th id="3">3</th><td><i> Copyright (c) 2002, Dr Brian Gladman &lt;                 &gt;, Worcester, UK.</i></td></tr>
+<tr><th id="4">4</th><td><i> All rights reserved.</i></td></tr>
+<tr><th id="5">5</th><td><i></i></td></tr>
+<tr><th id="6">6</th><td><i> LICENSE TERMS</i></td></tr>
+<tr><th id="7">7</th><td><i></i></td></tr>
+<tr><th id="8">8</th><td><i> The free distribution and use of this software in both source and binary</i></td></tr>
+<tr><th id="9">9</th><td><i> form is allowed (with or without changes) provided that:</i></td></tr>
+<tr><th id="10">10</th><td><i></i></td></tr>
+<tr><th id="11">11</th><td><i>   1. distributions of this source code include the above copyright</i></td></tr>
+<tr><th id="12">12</th><td><i>      notice, this list of conditions and the following disclaimer;</i></td></tr>
+<tr><th id="13">13</th><td><i></i></td></tr>
+<tr><th id="14">14</th><td><i>   2. distributions in binary form include the above copyright</i></td></tr>
+<tr><th id="15">15</th><td><i>      notice, this list of conditions and the following disclaimer</i></td></tr>
+<tr><th id="16">16</th><td><i>      in the documentation and/or other associated materials;</i></td></tr>
+<tr><th id="17">17</th><td><i></i></td></tr>
+<tr><th id="18">18</th><td><i>   3. the copyright holder's name is not used to endorse products</i></td></tr>
+<tr><th id="19">19</th><td><i>      built using this software without specific written permission.</i></td></tr>
+<tr><th id="20">20</th><td><i></i></td></tr>
+<tr><th id="21">21</th><td><i> ALTERNATIVELY, provided that this notice is retained in full, this product</i></td></tr>
+<tr><th id="22">22</th><td><i> may be distributed under the terms of the GNU General Public License (GPL),</i></td></tr>
+<tr><th id="23">23</th><td><i> in which case the provisions of the GPL apply INSTEAD OF those given above.</i></td></tr>
+<tr><th id="24">24</th><td><i></i></td></tr>
+<tr><th id="25">25</th><td><i> DISCLAIMER</i></td></tr>
+<tr><th id="26">26</th><td><i></i></td></tr>
+<tr><th id="27">27</th><td><i> This software is provided 'as is' with no explicit or implied warranties</i></td></tr>
+<tr><th id="28">28</th><td><i> in respect of its properties, including, but not limited to, correctness</i></td></tr>
+<tr><th id="29">29</th><td><i> and/or fitness for purpose.</i></td></tr>
+<tr><th id="30">30</th><td><i> ---------------------------------------------------------------------------</i></td></tr>
+<tr><th id="31">31</th><td><i> Issue Date: 24/01/2003</i></td></tr>
+<tr><th id="32">32</th><td><i></i></td></tr>
+<tr><th id="33">33</th><td><i> This file contains the definitions needed for SHA1</i></td></tr>
+<tr><th id="34">34</th><td><i>*/</i></td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td><u>#<span data-ppcond="36">ifndef</span> <span class="macro" data-ref="_M/_SHA1_H">_SHA1_H</span></u></td></tr>
+<tr><th id="37">37</th><td><u>#define <dfn class="macro" id="_M/_SHA1_H" data-ref="_M/_SHA1_H">_SHA1_H</dfn></u></td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><u>#include &lt;limits.h&gt;</u></td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td><u>#define <dfn class="macro" id="_M/SHA1_BLOCK_SIZE" data-ref="_M/SHA1_BLOCK_SIZE">SHA1_BLOCK_SIZE</dfn>  64</u></td></tr>
+<tr><th id="42">42</th><td><u>#define <dfn class="macro" id="_M/SHA1_DIGEST_SIZE" data-ref="_M/SHA1_DIGEST_SIZE">SHA1_DIGEST_SIZE</dfn> 20</u></td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td><u>#<span data-ppcond="44">if</span> defined(<span class="macro" data-ref="_M/__cplusplus">__cplusplus</span>)</u></td></tr>
+<tr><th id="45">45</th><td><b>extern</b> <q>"C"</q></td></tr>
+<tr><th id="46">46</th><td>{</td></tr>
+<tr><th id="47">47</th><td><u>#<span data-ppcond="44">endif</span></u></td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td><i>/* define an unsigned 32-bit type */</i></td></tr>
+<tr><th id="50">50</th><td></td></tr>
+<tr><th id="51">51</th><td><u>#<span data-ppcond="51">if</span> <span class="macro" title="(2147483647 *2U +1U)" data-ref="_M/UINT_MAX">UINT_MAX</span> == 0xffffffff</u></td></tr>
+<tr><th id="52">52</th><td>  <b>typedef</b>   <em>unsigned</em> <em>int</em>     <dfn class="typedef" id="sha1_32t" title='sha1_32t' data-type='unsigned int' data-ref="sha1_32t">sha1_32t</dfn>;</td></tr>
+<tr><th id="53">53</th><td><u>#<span data-ppcond="51">elif</span> ULONG_MAX == 0xffffffff</u></td></tr>
+<tr><th id="54">54</th><td>  <b>typedef</b>   <em>unsigned</em> <em>long</em>    sha1_32t;</td></tr>
+<tr><th id="55">55</th><td><u>#else</u></td></tr>
+<tr><th id="56">56</th><td><u>#error Please define sha1_32t as an unsigned 32 bit type in sha2.h</u></td></tr>
+<tr><th id="57">57</th><td><u>#<span data-ppcond="51">endif</span></u></td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td><i>/* type to hold the SHA256 context  */</i></td></tr>
+<tr><th id="60">60</th><td></td></tr>
+<tr><th id="61">61</th><td><b>typedef</b> <b>struct</b></td></tr>
+<tr><th id="62">62</th><td>{   <a class="typedef" href="#sha1_32t" title='sha1_32t' data-type='unsigned int' data-ref="sha1_32t">sha1_32t</a> <dfn class="decl" id="(anonymous)::count" title='(anonymous struct)::count' data-ref="(anonymous)::count">count</dfn>[<var>2</var>];</td></tr>
+<tr><th id="63">63</th><td>    <a class="typedef" href="#sha1_32t" title='sha1_32t' data-type='unsigned int' data-ref="sha1_32t">sha1_32t</a> <dfn class="decl" id="(anonymous)::hash" title='(anonymous struct)::hash' data-ref="(anonymous)::hash">hash</dfn>[<var>5</var>];</td></tr>
+<tr><th id="64">64</th><td>    <a class="typedef" href="#sha1_32t" title='sha1_32t' data-type='unsigned int' data-ref="sha1_32t">sha1_32t</a> <dfn class="decl" id="(anonymous)::wbuf" title='(anonymous struct)::wbuf' data-ref="(anonymous)::wbuf">wbuf</dfn>[<var>16</var>];</td></tr>
+<tr><th id="65">65</th><td>} <dfn class="typedef" id="sha1_ctx" title='sha1_ctx' data-type='struct sha1_ctx' data-ref="sha1_ctx">sha1_ctx</dfn>;</td></tr>
+<tr><th id="66">66</th><td></td></tr>
+<tr><th id="67">67</th><td><em>void</em> <dfn class="decl" id="sha1_compile" title='sha1_compile' data-ref="sha1_compile">sha1_compile</dfn>(<a class="typedef" href="#sha1_ctx" title='sha1_ctx' data-type='struct sha1_ctx' data-ref="sha1_ctx">sha1_ctx</a> <dfn class="local col3 decl" id="13ctx" title='ctx' data-type='sha1_ctx *' data-ref="13ctx">ctx</dfn>[<var>1</var>]);</td></tr>
+<tr><th id="68">68</th><td></td></tr>
+<tr><th id="69">69</th><td><em>void</em> <dfn class="decl" id="sha1_begin" title='sha1_begin' data-ref="sha1_begin">sha1_begin</dfn>(<a class="typedef" href="#sha1_ctx" title='sha1_ctx' data-type='struct sha1_ctx' data-ref="sha1_ctx">sha1_ctx</a> <dfn class="local col4 decl" id="14ctx" title='ctx' data-type='sha1_ctx *' data-ref="14ctx">ctx</dfn>[<var>1</var>]);</td></tr>
+<tr><th id="70">70</th><td><em>void</em> <dfn class="decl" id="sha1_hash" title='sha1_hash' data-ref="sha1_hash">sha1_hash</dfn>(<em>const</em> <em>unsigned</em> <em>char</em> <dfn class="local col5 decl" id="15data" title='data' data-type='const unsigned char *' data-ref="15data">data</dfn>[], <em>unsigned</em> <em>int</em> <dfn class="local col6 decl" id="16len" title='len' data-type='unsigned int' data-ref="16len">len</dfn>, <a class="typedef" href="#sha1_ctx" title='sha1_ctx' data-type='struct sha1_ctx' data-ref="sha1_ctx">sha1_ctx</a> <dfn class="local col7 decl" id="17ctx" title='ctx' data-type='sha1_ctx *' data-ref="17ctx">ctx</dfn>[<var>1</var>]);</td></tr>
+<tr><th id="71">71</th><td><em>void</em> <dfn class="decl" id="sha1_end" title='sha1_end' data-ref="sha1_end">sha1_end</dfn>(<em>unsigned</em> <em>char</em> <dfn class="local col8 decl" id="18hval" title='hval' data-type='unsigned char *' data-ref="18hval">hval</dfn>[], <a class="typedef" href="#sha1_ctx" title='sha1_ctx' data-type='struct sha1_ctx' data-ref="sha1_ctx">sha1_ctx</a> <dfn class="local col9 decl" id="19ctx" title='ctx' data-type='sha1_ctx *' data-ref="19ctx">ctx</dfn>[<var>1</var>]);</td></tr>
+<tr><th id="72">72</th><td><em>void</em> <dfn class="decl" id="sha1" title='sha1' data-ref="sha1">sha1</dfn>(<em>unsigned</em> <em>char</em> <dfn class="local col0 decl" id="20hval" title='hval' data-type='unsigned char *' data-ref="20hval">hval</dfn>[], <em>const</em> <em>unsigned</em> <em>char</em> <dfn class="local col1 decl" id="21data" title='data' data-type='const unsigned char *' data-ref="21data">data</dfn>[], <em>unsigned</em> <em>int</em> <dfn class="local col2 decl" id="22len" title='len' data-type='unsigned int' data-ref="22len">len</dfn>);</td></tr>
+<tr><th id="73">73</th><td></td></tr>
+<tr><th id="74">74</th><td><u>#<span data-ppcond="74">if</span> defined(<span class="macro" data-ref="_M/__cplusplus">__cplusplus</span>)</u></td></tr>
+<tr><th id="75">75</th><td>}</td></tr>
+<tr><th id="76">76</th><td><u>#<span data-ppcond="74">endif</span></u></td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td><u>#<span data-ppcond="36">endif</span></u></td></tr>
+<tr><th id="79">79</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../encryption/AESDecoder.cpp.html'>codebrowser/nest/encryption/AESDecoder.cpp</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

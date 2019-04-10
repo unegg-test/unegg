@@ -1,0 +1,20 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='67' type='0'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='827' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1485' u='r' c='deflate_stored'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1450' u='r' c='deflate_stored'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1450' u='r' c='deflate_stored'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1450' u='r' c='deflate_stored'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1536' u='r' c='deflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1450' u='r' c='deflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1450' u='r' c='deflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1633' u='r' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1450' u='r' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1715' u='r' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1450' u='r' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1757' u='r' c='deflate_rle'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1450' u='r' c='deflate_rle'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1450' u='r' c='deflate_rle'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1819' u='r' c='deflate_huff'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1450' u='r' c='deflate_huff'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1450' u='r' c='deflate_huff'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='67'>/* block not completed, need more input or more output */</doc>

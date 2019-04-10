@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/stream/OutputStream.h' l='28' type='int nest::OutputStream::CreateFolder(const char * virtualName)'/>
+<ovr f='codebrowser/nest/stream/FileOutputStream.cpp' l='54' c='_ZN4nest16FileOutputStream12CreateFolderEPKc'/>

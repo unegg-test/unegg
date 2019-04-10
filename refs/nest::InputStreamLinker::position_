@@ -1,0 +1,15 @@
+<dec f='codebrowser/nest/stream/InputStreamLinker.h' l='63' type='uint64'/>
+<offset>320</offset>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='19' u='w' c='_ZN4nest17InputStreamLinkerC1Ev'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='34' u='w' c='_ZN4nest17InputStreamLinker4OpenEv'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='54' u='r' c='_ZN4nest17InputStreamLinker4SeekEyi'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='69' u='w' c='_ZN4nest17InputStreamLinker4SeekEyi'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='71' u='r' c='_ZN4nest17InputStreamLinker4SeekEyi'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='78' u='r' c='_ZN4nest17InputStreamLinker4TellEv'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='93' u='r' c='_ZN4nest17InputStreamLinker4ReadEPvm'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='100' u='w' c='_ZN4nest17InputStreamLinker4ReadEPvm'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='161' u='w' c='_ZN4nest17InputStreamLinker6PopAllEv'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='181' u='w' c='_ZN4nest17InputStreamLinker13UpdateStreamsEv'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='186' u='r' c='_ZN4nest17InputStreamLinker13UpdateStreamsEv'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='200' u='w' c='_ZN4nest17InputStreamLinker5CloseEv'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='217' u='w' c='_ZN4nest17InputStreamLinker8FinalizeEv'/>

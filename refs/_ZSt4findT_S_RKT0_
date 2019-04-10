@@ -1,0 +1,2 @@
+<dec f='include/c++/7/bits/algorithmfwd.h' l='648' type='_IIter std::find(_IIter , _IIter , const _Tp &amp; )'/>
+<def f='include/c++/7/bits/stl_algo.h' l='3898' ll='3909' type='_InputIterator std::find(_InputIterator __first, _InputIterator __last, const _Tp &amp; __val)'/>

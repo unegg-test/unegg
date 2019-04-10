@@ -1,0 +1,9 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='82' type='int'/>
+<offset>64</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='82'>/* largest code with non zero frequency */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='499' u='r' c='gen_bitlen'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='661' u='w' c='build_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='813' u='r' c='build_bl_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='814' u='r' c='build_bl_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='999' u='r' c='_tr_flush_block'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='999' u='r' c='_tr_flush_block'/>

@@ -1,0 +1,22 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='101' type='int'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='270' u='w' c='deflateInit2_'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='322' u='r' c='deflateSetDictionary'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='323' u='r' c='deflateSetDictionary'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='327' u='r' c='deflateSetDictionary'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='371' u='r' c='deflateReset'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='372' u='w' c='deflateReset'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='372' u='r' c='deflateReset'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='374' u='r' c='deflateReset'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='377' u='r' c='deflateReset'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='394' u='r' c='deflateSetHeader'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='504' u='r' c='deflateBound'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='609' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='866' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='870' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='890' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='890' u='w' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='890' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1004' u='r' c='read_buf'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1008' u='r' c='read_buf'/>
+<offset>352</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='101'>/* bit 0 true for zlib, bit 1 true for gzip */</doc>

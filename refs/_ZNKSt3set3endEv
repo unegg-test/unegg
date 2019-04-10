@@ -1,0 +1,8 @@
+<def f='include/c++/7/bits/stl_set.h' l='342' ll='344' type='iterator std::set::end() const'/>
+<use f='codebrowser/CommandLine.cpp' l='43' u='c' c='_ZN11CommandLine13CommandExistsEPKc'/>
+<doc f='include/c++/7/bits/stl_set.h' l='337'>/**
+       *  Returns a read-only (constant) iterator that points one past the last
+       *  element in the %set.  Iteration is done in ascending order according
+       *  to the keys.
+       */</doc>
+<use f='codebrowser/UnEgg.cpp' l='373' u='c' c='main'/>

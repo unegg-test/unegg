@@ -1,0 +1,22 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.h' l='63' type='void (*)(void *, void *)'/>
+<offset>512</offset>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='166' u='r' c='BZ2_bzCompressInit'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='166' u='w' c='BZ2_bzCompressInit'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='182' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='183' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='184' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='185' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='476' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='477' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='478' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='479' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='506' u='r' c='BZ2_bzDecompressInit'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='506' u='w' c='BZ2_bzDecompressInit'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='870' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='871' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='872' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='874' macro='1' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='947' u='w' c='BZ2_bzWriteOpen'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1121' u='w' c='BZ2_bzReadOpen'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1268' u='w' c='BZ2_bzBuffToBuffCompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1317' u='w' c='BZ2_bzBuffToBuffDecompress'/>

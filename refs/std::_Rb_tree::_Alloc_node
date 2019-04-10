@@ -1,0 +1,6 @@
+<def f='include/c++/7/bits/stl_tree.h' l='544' ll='560'/>
+<doc f='include/c++/7/bits/stl_tree.h' l='542'>// Functor similar to the previous one but without any pool of nodes to
+      // recycle.</doc>
+<fun r='_ZNSt8_Rb_tree11_Alloc_nodeC1ERSt8_Rb_treeIT_T0_T1_T2_T3_E'/>
+<fun r='_ZNKSt8_Rb_tree11_Alloc_nodeclERKT_'/>
+<mbr r='std::_Rb_tree::_Alloc_node::_M_t' t='_Rb_tree&lt;_Key, _Val, _KeyOfValue, _Compare, _Alloc&gt; &amp;'/>

@@ -1,0 +1,2 @@
+<def f='codebrowser/nest/format/alz/File.h' l='63' ll='66' type='unsigned char nest::alz::File::GetBaseSize()'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='106' u='c' c='_ZN4nest3alz4File6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>

@@ -1,0 +1,11 @@
+<def f='include/c++/7/bits/basic_string.h' l='509' ll='511' type='void std::__cxx11::basic_string::basic_string&lt;_CharT, _Traits, _Alloc&gt;(const _CharT * __s, const _Alloc &amp; __a = _Alloc())'/>
+<use f='codebrowser/CommandLine.cpp' l='31' u='c' c='_ZN11CommandLine16ParseCommandlineEiPPc'/>
+<use f='codebrowser/CommandLine.cpp' l='35' u='c' c='_ZN11CommandLine16ParseCommandlineEiPPc'/>
+<use f='codebrowser/CommandLine.cpp' l='43' u='c' c='_ZN11CommandLine13CommandExistsEPKc'/>
+<doc f='include/c++/7/bits/basic_string.h' l='504'>/**
+       *  @brief  Construct string as copy of a C string.
+       *  @param  __s  Source C string.
+       *  @param  __a  Allocator to use (default is default allocator).
+       */</doc>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='277' u='c' c='_ZN4nest9ALZFormat18GenerateVolumeNameEmPcm'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='257' u='c' c='_ZN4nest9EggFormat18GenerateVolumeNameEmPcm'/>

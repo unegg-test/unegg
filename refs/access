@@ -1,0 +1,4 @@
+<dec f='include/unistd.h' l='290' type='int access(const char * __name, int __type)'/>
+<use f='codebrowser/EventHandler.cpp' l='234' u='c' c='_ZN12EventHandler19OnQueryOutputStreamEmPPN4nest12OutputStreamEPKc'/>
+<doc f='include/unistd.h' l='289'>/* Test for access to NAME using the real UID and real GID.  */</doc>
+<use f='codebrowser/nest/stream/FileOutputStream.cpp' l='97' u='c' c='_ZN4nest16FileOutputStream14ForceDirectoryEPKc'/>

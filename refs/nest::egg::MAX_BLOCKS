@@ -1,0 +1,3 @@
+<def f='codebrowser/nest/format/egg/EggTypes.h' l='23' type='const size_t'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='364' u='r' c='_ZN4nest9EggFormat15ReadSolidBlocksEv'/>
+<use f='codebrowser/nest/format/egg/FileWrap.cpp' l='64' u='r' c='_ZN4nest3egg8FileWrap6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='1569' type='off64_t gzoffset64(gzFile )'/>
+<dec f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='68' type='long gzoffset64(gzFile )'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='390' ll='410' macro='1' type='long gzoffset64(gzFile file)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='418' u='c' c='gzoffset'/>

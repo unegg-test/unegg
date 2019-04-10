@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/7zCrc.h' l='11' type='UInt32 []'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/7zCrc.c' l='20' type='UInt32 [256]'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zCrc.c' l='43' c='CrcUpdate'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zCrc.c' l='48' c='CrcCalc'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zCrc.c' l='60' u='w' c='CrcGenerateTable'/>

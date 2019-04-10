@@ -1,0 +1,15 @@
+_ZNSt8_Rb_tree5clearEv|std::_Rb_tree::clear
+_ZNSt8multiset5clearEv|std::multiset::clear
+_ZNSt3set5clearEv|std::set::clear
+_ZNSt6vector5clearEv|std::vector::clear
+_ZN4nest19InputStreamRewinder5ClearEv|nest::InputStreamRewinder::Clear
+_ZNSt5deque5clearEv|std::deque::clear
+_ZNSt9basic_ios5clearESt12_Ios_Iostate|std::basic_ios::clear
+_ZN4nest9Workspace5CloseEv|nest::Workspace::Close
+_ZN3AZO9BufferMan5ClearEv|AZO::BufferMan::Clear
+_ZN4nest9ALZFormat5CloseEv|nest::ALZFormat::Close
+_ZN4nest9EggFormat5CloseEv|nest::EggFormat::Close
+_ZN4nest6Header5ClearEv|nest::Header::Clear
+_ZN4nest15FileInputStream5CloseEv|nest::FileInputStream::Close
+_ZN4nest16FileOutputStream5CloseEv|nest::FileOutputStream::Close
+_ZN4nest17InputStreamLinker5CloseEv|nest::InputStreamLinker::Close

@@ -1,0 +1,7 @@
+<def f='codebrowser/nest/stream/InputStreamLinker.h' l='42' ll='49'/>
+<size>40</size>
+<mbr r='nest::InputStreamLinker::StreamBlock::stream' o='0' t='nest::InputStream *'/>
+<mbr r='nest::InputStreamLinker::StreamBlock::offset' o='64' t='uint64'/>
+<mbr r='nest::InputStreamLinker::StreamBlock::size' o='128' t='uint64'/>
+<mbr r='nest::InputStreamLinker::StreamBlock::spos' o='192' t='uint64'/>
+<mbr r='nest::InputStreamLinker::StreamBlock::epos' o='256' t='uint64'/>

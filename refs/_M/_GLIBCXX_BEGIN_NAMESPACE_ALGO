@@ -1,0 +1,4 @@
+<dec f='include/x86_64-linux-gnu/c++/7/bits/c++config.h' l='416'/>
+<use f='include/c++/7/bits/stl_algobase.h' l='1025' u='c'/>
+<use f='include/c++/7/bits/algorithmfwd.h' l='620' u='c'/>
+<use f='include/c++/7/bits/stl_algo.h' l='3862' u='c'/>

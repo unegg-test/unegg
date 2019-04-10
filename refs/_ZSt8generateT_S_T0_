@@ -1,0 +1,2 @@
+<dec f='include/c++/7/bits/algorithmfwd.h' l='668' type='void std::generate(_FIter , _FIter , _Generator )'/>
+<def f='include/c++/7/bits/stl_algo.h' l='4427' ll='4439' type='void std::generate(_ForwardIterator __first, _ForwardIterator __last, _Generator __gen)'/>

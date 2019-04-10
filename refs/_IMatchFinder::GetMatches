@@ -1,0 +1,7 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzFind.h' l='98' type='Mf_GetMatches_Func'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='739' u='w' c='MatchFinder_CreateVTable'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='744' u='w' c='MatchFinder_CreateVTable'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='749' u='w' c='MatchFinder_CreateVTable'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='754' u='w' c='MatchFinder_CreateVTable'/>
+<offset>256</offset>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='809' u='r' c='ReadMatchDistances'/>

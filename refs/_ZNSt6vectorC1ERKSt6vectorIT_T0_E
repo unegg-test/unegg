@@ -1,0 +1,12 @@
+<def f='include/c++/7/bits/stl_vector.h' l='326' ll='334' type='void std::vector::vector&lt;_Tp, _Alloc&gt;(const vector&lt;_Tp, _Alloc&gt; &amp; __x)'/>
+<doc f='include/c++/7/bits/stl_vector.h' l='315'>/**
+       *  @brief  %Vector copy constructor.
+       *  @param  __x  A %vector of identical element and allocator types.
+       *
+       *  All the elements of @a __x are copied, but any unused capacity in
+       *  @a __x  will not be copied
+       *  (i.e. capacity() == size() in the new %vector).
+       *
+       *  The newly-created %vector uses a copy of the allocator object used
+       *  by @a __x (unless the allocator traits dictate a different object).
+       */</doc>

@@ -1,0 +1,4 @@
+<dec f='include/stdio.h' l='754' type='long ftell(FILE * __stream)'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='219' u='c' c='File_Seek'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='242' u='c' c='File_GetLength'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='244' u='c' c='File_GetLength'/>

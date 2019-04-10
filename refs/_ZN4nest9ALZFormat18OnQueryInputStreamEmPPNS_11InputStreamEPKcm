@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/format/ALZFormat.h' l='75' type='int nest::ALZFormat::OnQueryInputStream(size_t index, nest::InputStream ** stream, const char * virtualName, size_t queryCount)'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='316' u='c' c='_ZN4nest9ALZFormat21PrepareSpannedStreamsEv'/>
+<def f='codebrowser/nest/format/ALZFormat.cpp' l='829' ll='837' type='int nest::ALZFormat::OnQueryInputStream(size_t index, nest::InputStream ** stream, const char * virtualName, size_t queryCount)'/>

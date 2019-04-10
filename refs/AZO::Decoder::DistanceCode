@@ -1,0 +1,7 @@
+<def f='codebrowser/nest/algorithm/azo/Decoder/DistanceCodeD.h' l='21' ll='32'/>
+<size>1556</size>
+<fun r='_ZN3AZO7Decoder12DistanceCodeC1Ev'/>
+<fun r='_ZN3AZO7Decoder12DistanceCode4CodeERNS0_11EntropyCodeE'/>
+<mbr r='AZO::Decoder::DistanceCode::history_' o='0' t='HistoryList&lt;u_int, DISTANCE_HISTORY_SIZE&gt;'/>
+<mbr r='AZO::Decoder::DistanceCode::prob_' o='8352' t='EntropyBitProb&lt;MATCH_DIST_CODE_SIZE&gt;'/>
+<fun r='_ZN3AZO7Decoder12DistanceCode4CodeERNS0_11EntropyCodeE'/>

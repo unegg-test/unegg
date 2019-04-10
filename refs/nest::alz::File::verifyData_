@@ -1,0 +1,9 @@
+<use f='codebrowser/nest/format/alz/File.h' l='110' u='r' c='_ZN4nest3alz4File13GetVerifyDataEv'/>
+<dec f='codebrowser/nest/format/alz/File.h' l='133' type='char *'/>
+<offset>448</offset>
+<use f='codebrowser/nest/format/alz/File.cpp' l='22' u='w' c='_ZN4nest3alz4FileC1Ev'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='41' u='r' c='_ZN4nest3alz4File9OnCleanUpEv'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='43' u='r' c='_ZN4nest3alz4File9OnCleanUpEv'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='44' u='w' c='_ZN4nest3alz4File9OnCleanUpEv'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='139' u='w' c='_ZN4nest3alz4File6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='140' u='r' c='_ZN4nest3alz4File6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>

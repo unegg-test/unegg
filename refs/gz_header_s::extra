@@ -1,0 +1,11 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='117' type='Bytef *'/>
+<offset>192</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='117'>/* pointer to extra field or Z_NULL if none */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='514' u='r' c='deflateBound'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='629' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='641' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='683' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='696' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='715' u='w' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='723' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='725' u='r' c='inflate'/>

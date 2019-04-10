@@ -1,0 +1,8 @@
+<dec f='codebrowser/nest/Info.h' l='33' type='nest::Info * nest::Info::AsChildInfo(unsigned int key, size_t index, bool * handled = __null)'/>
+<use f='codebrowser/EventHandler.cpp' l='116' u='c' c='_ZN12EventHandler11OnFileStartEm'/>
+<use f='codebrowser/UnEgg.cpp' l='171' u='c' c='_Z18PrintListOfArchivePKc'/>
+<def f='codebrowser/nest/Info.cpp' l='67' ll='70' type='nest::Info * nest::Info::AsChildInfo(unsigned int key, size_t index, bool * handled = __null)'/>
+<use f='codebrowser/nest/format/egg/BlockWrap.cpp' l='148' u='c' c='_ZN4nest3egg9BlockWrap12_AsChildInfoEjmPb'/>
+<use f='codebrowser/nest/format/egg/BlockWrap.cpp' l='151' u='c' c='_ZN4nest3egg9BlockWrap12_AsChildInfoEjmPb'/>
+<use f='codebrowser/nest/format/egg/FileWrap.cpp' l='212' u='c' c='_ZN4nest3egg8FileWrap12_AsChildInfoEjmPb'/>
+<use f='codebrowser/nest/format/egg/FileWrap.cpp' l='215' u='c' c='_ZN4nest3egg8FileWrap12_AsChildInfoEjmPb'/>

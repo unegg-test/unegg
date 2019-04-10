@@ -1,0 +1,2 @@
+<dec f='include/c++/7/bits/algorithmfwd.h' l='824' type='void std::stable_sort(_RAIter , _RAIter )'/>
+<def f='include/c++/7/bits/stl_algo.h' l='5030' ll='5043' type='void std::stable_sort(_RandomAccessIterator __first, _RandomAccessIterator __last)'/>

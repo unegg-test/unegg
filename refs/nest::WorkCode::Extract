@@ -1,0 +1,11 @@
+<dec f='codebrowser/nest/nest.h' l='172' type='3'/>
+<use f='codebrowser/EventHandler.cpp' l='82' c='_ZN12EventHandler11OnWorkStartEi'/>
+<use f='codebrowser/EventHandler.cpp' l='106' c='_ZN12EventHandler12OnWorkFinishEii'/>
+<use f='codebrowser/EventHandler.cpp' l='120' u='r' c='_ZN12EventHandler11OnFileStartEm'/>
+<use f='codebrowser/EventHandler.cpp' l='144' u='r' c='_ZN12EventHandler12OnFileFinishEmi'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='391' u='r' c='_ZN4nest9ALZFormat7ExtractEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='422' u='r' c='_ZN4nest9ALZFormat7ExtractEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='509' u='r' c='_ZN4nest9EggFormat20ExtractNormalArchiveEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='540' u='r' c='_ZN4nest9EggFormat20ExtractNormalArchiveEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='548' u='r' c='_ZN4nest9EggFormat19ExtractSolidArchiveEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='738' u='r' c='_ZN4nest9EggFormat19ExtractSolidArchiveEv'/>

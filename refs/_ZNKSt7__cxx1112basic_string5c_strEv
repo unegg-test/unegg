@@ -1,0 +1,33 @@
+<def f='include/c++/7/bits/basic_string.h' l='2279' ll='2281' type='const _CharT * std::__cxx11::basic_string::c_str() const'/>
+<use f='codebrowser/CommandLine.cpp' l='63' u='c' c='_ZN11CommandLine11GetArgumentEm'/>
+<doc f='include/c++/7/bits/basic_string.h' l='2273'>/**
+       *  @brief  Return const pointer to null-terminated contents.
+       *
+       *  This is a handle to internal data.  Do not modify or dire things may
+       *  happen.
+      */</doc>
+<use f='codebrowser/EventHandler.cpp' l='124' u='c' c='_ZN12EventHandler11OnFileStartEm'/>
+<use f='codebrowser/EventHandler.cpp' l='131' u='c' c='_ZN12EventHandler11OnFileStartEm'/>
+<use f='codebrowser/EventHandler.cpp' l='135' u='c' c='_ZN12EventHandler11OnFileStartEm'/>
+<use f='codebrowser/EventHandler.cpp' l='243' u='c' c='_ZN12EventHandler19OnQueryOutputStreamEmPPN4nest12OutputStreamEPKc'/>
+<use f='codebrowser/EventHandler.cpp' l='321' u='c' c='_ZN12EventHandler10OnProgressEmii'/>
+<use f='include/c++/7/bits/locale_facets.tcc' l='697' u='c' c='_ZNKSt7num_get6do_getET0_S0_RSt8ios_baseRSt12_Ios_IostateRf'/>
+<use f='include/c++/7/bits/locale_facets.tcc' l='712' u='c' c='_ZNKSt7num_get6do_getET0_S0_RSt8ios_baseRSt12_Ios_IostateRd'/>
+<use f='include/c++/7/bits/locale_facets.tcc' l='744' u='c' c='_ZNKSt7num_get6do_getET0_S0_RSt8ios_baseRSt12_Ios_IostateRe'/>
+<use f='include/x86_64-linux-gnu/c++/7/bits/messages_members.h' l='73' u='c' c='_ZNKSt7__cxx118messages4openERKNS_12basic_stringIcSt11char_traitsIcESaIcEEERKSt6localePKc'/>
+<use f='include/x86_64-linux-gnu/c++/7/bits/messages_members.h' l='93' u='c' c='_ZNKSt7__cxx118messages7do_openERKNS_12basic_stringIcSt11char_traitsIcESaIcEEERKSt6locale'/>
+<use f='include/c++/7/bits/locale_facets_nonio.tcc' l='376' u='c' c='_ZNKSt7__cxx119money_get6do_getET0_S1_bRSt8ios_baseRSt12_Ios_IostateRe'/>
+<use f='codebrowser/nest/format/alz/File.h' l='95' u='c' c='_ZN4nest3alz4File11GetFilenameEv'/>
+<use f='codebrowser/nest/format/alz/File.h' l='100' u='c' c='_ZN4nest3alz4File10GetCommentEv'/>
+<use f='codebrowser/UnEgg.cpp' l='424' u='c' c='main'/>
+<use f='codebrowser/nest/Workspace.cpp' l='142' u='c' c='_ZN4nest9Workspace11GetFilenameEv'/>
+<use f='codebrowser/nest/Workspace.cpp' l='309' u='c' c='_ZN4nest9Workspace19OnQueryOutputStreamEmPPNS_12OutputStreamEPKc'/>
+<use f='codebrowser/nest/Workspace.cpp' l='318' u='c' c='_ZN4nest9Workspace19OnQueryOutputStreamEmPPNS_12OutputStreamEPKc'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='245' u='c' c='_ZN4nest9ALZFormat11ScanFootersEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='296' u='c' c='_ZN4nest9ALZFormat18GenerateVolumeNameEmPcm'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='449' u='c' c='_ZN4nest9ALZFormat17PreprocessDecryptEmPNS_3alz4FileE'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='727' u='c' c='_ZN4nest9ALZFormat6_AsPtrEjPb'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='263' u='c' c='_ZN4nest9EggFormat18GenerateVolumeNameEmPcm'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='933' u='c' c='_ZN4nest9EggFormat17PreprocessDecryptEmPNS_3egg12EncryptFieldE'/>
+<use f='codebrowser/nest/stream/FileInputStream.cpp' l='34' u='c' c='_ZN4nest15FileInputStream4OpenEv'/>
+<use f='codebrowser/nest/stream/InputStream.cpp' l='31' u='c' c='_ZN4nest11InputStream14GetVirtualNameEv'/>

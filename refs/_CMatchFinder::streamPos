@@ -1,0 +1,15 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzFind.h' l='21' type='UInt32'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='56' u='r' c='MatchFinder_GetNumAvailableBytes'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='63' u='w' c='MatchFinder_ReduceOffsets'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='72' u='r' c='MatchFinder_ReadBlock'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='76' u='w' c='MatchFinder_ReadBlock'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='83' u='r' c='MatchFinder_ReadBlock'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='95' u='w' c='MatchFinder_ReadBlock'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='96' u='r' c='MatchFinder_ReadBlock'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='105' u='r' c='MatchFinder_MoveBlock'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='121' u='r' c='MatchFinder_ReadIfRequired'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='263' u='r' c='MatchFinder_SetLimits'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='274' u='r' c='MatchFinder_SetLimits'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='289' u='w' c='MatchFinder_Init'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='326' u='r' c='MatchFinder_CheckLimits'/>
+<offset>128</offset>

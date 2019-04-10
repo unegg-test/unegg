@@ -1,0 +1,22 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='423' type='Int32'/>
+<offset>512640</offset>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='557' u='r' c='unRLE_obuf_to_output_FAST'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='560' u='r' c='unRLE_obuf_to_output_FAST'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='567' u='r' c='unRLE_obuf_to_output_FAST'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='573' u='r' c='unRLE_obuf_to_output_FAST'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='579' u='r' c='unRLE_obuf_to_output_FAST'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='605' u='r' c='unRLE_obuf_to_output_FAST'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='727' u='r' c='unRLE_obuf_to_output_SMALL'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='730' u='r' c='unRLE_obuf_to_output_SMALL'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='737' u='r' c='unRLE_obuf_to_output_SMALL'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='743' u='r' c='unRLE_obuf_to_output_SMALL'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='749' u='r' c='unRLE_obuf_to_output_SMALL'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='776' u='r' c='unRLE_obuf_to_output_SMALL'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='779' u='r' c='unRLE_obuf_to_output_SMALL'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='785' u='r' c='unRLE_obuf_to_output_SMALL'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='790' u='r' c='unRLE_obuf_to_output_SMALL'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='795' u='r' c='unRLE_obuf_to_output_SMALL'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='824' u='r' c='BZ2_bzDecompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='152' u='w' c='BZ2_decompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='179' u='r' c='BZ2_decompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='626' u='w' c='BZ2_decompress'/>

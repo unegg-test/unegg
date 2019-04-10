@@ -1,0 +1,10 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='283'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1073' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1074' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1332' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1505' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1552' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1652' u='c'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='279'>/* Minimum amount of lookahead, except at the end of the input file.
+ * See deflate.c for comments about the MIN_MATCH+1.
+ */</doc>

@@ -1,0 +1,4 @@
+<def f='codebrowser/nest/algorithm/azo/Common/MatchCodeTable.h' l='91' ll='93'/>
+<def f='codebrowser/nest/algorithm/azo/Common/MatchCodeTable.h' l='95' ll='98'/>
+<smbr r='AZO::MatchLenReverseCode::value' t='const uint8_t'/>
+<smbr r='AZO::MatchLenReverseCode{N,&apos;\x7F&apos;}::value' t='const uint8_t'/>

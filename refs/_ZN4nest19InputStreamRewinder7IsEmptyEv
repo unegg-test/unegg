@@ -1,0 +1,2 @@
+<def f='codebrowser/nest/stream/InputStreamRewinder.h' l='62' ll='65' type='bool nest::InputStreamRewinder::IsEmpty()'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='150' u='c' c='_ZN4nest3alz4File6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>

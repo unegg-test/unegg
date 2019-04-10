@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/CpuArch.h' l='129' type='UInt32'/>
+<offset>192</offset>
+<use f='codebrowser/nest/third-party/algorithm/lzma/CpuArch.c' l='101' u='a' c='x86cpuid_CheckAndRead'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/CpuArch.c' l='162' u='r' c='CPU_Is_Aes_Supported'/>

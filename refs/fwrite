@@ -1,0 +1,5 @@
+<dec f='include/stdio.h' l='715' type='size_t fwrite(const void *__restrict __ptr, size_t __size, size_t __n, FILE *__restrict __s)'/>
+<use f='codebrowser/nest/stream/FileOutputStream.cpp' l='70' u='c' c='_ZN4nest16FileOutputStream5WriteEPvm'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='996' u='c' c='BZ2_bzWrite'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1055' u='c' c='BZ2_bzWriteClose64'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='167' u='c' c='File_Write'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/algorithm/Coder.h' l='29' type='int nest::Coder::Pop(void * outputBuffer, size_t * size)'/>
+<def f='codebrowser/nest/algorithm/Coder.cpp' l='32' ll='35' type='int nest::Coder::Pop(void * outputBuffer, size_t * size)'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='572' u='c' c='_ZN4nest9ALZFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='611' u='c' c='_ZN4nest9EggFormat19ExtractSolidArchiveEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='813' u='c' c='_ZN4nest9EggFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>

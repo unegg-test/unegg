@@ -1,0 +1,4 @@
+<def f='codebrowser/nest/format/egg/EncryptField.h' l='30' ll='33' type='const char * nest::egg::EncryptField::GetVerifyData()'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='945' u='c' c='_ZN4nest9EggFormat17PreprocessDecryptEmPNS_3egg12EncryptFieldE'/>
+<use f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='210' u='c' c='_ZN4nest3egg14ExtraFieldWrap6_AsPtrEjPb'/>
+<use f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='213' u='c' c='_ZN4nest3egg14ExtraFieldWrap6_AsPtrEjPb'/>

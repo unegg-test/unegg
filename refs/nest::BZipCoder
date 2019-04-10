@@ -1,0 +1,16 @@
+<inh f='codebrowser/nest/algorithm/Coder.h' l='20' c='nest::Coder'/>
+<def f='codebrowser/nest/algorithm/BZipCoder.h' l='21' ll='36'/>
+<size>88</size>
+<fun r='_ZN4nest9BZipCoderC1Ev'/>
+<fun r='_ZN4nest9BZipCoderD1Ev'/>
+<fun r='_ZN4nest9BZipCoder10InitializeEPKhm'/>
+<fun r='_ZN4nest9BZipCoder8FinalizeEv'/>
+<fun r='_ZN4nest9BZipCoder6OnPushEPvm'/>
+<fun r='_ZN4nest9BZipCoder5OnPopEPvPm'/>
+<mbr r='nest::BZipCoder::stream_' o='64' t='bz_stream'/>
+<fun r='_ZN4nest9BZipCoderC1Ev'/>
+<fun r='_ZN4nest9BZipCoderD1Ev'/>
+<fun r='_ZN4nest9BZipCoder10InitializeEPKhm'/>
+<fun r='_ZN4nest9BZipCoder8FinalizeEv'/>
+<fun r='_ZN4nest9BZipCoder6OnPushEPvm'/>
+<fun r='_ZN4nest9BZipCoder5OnPopEPvPm'/>

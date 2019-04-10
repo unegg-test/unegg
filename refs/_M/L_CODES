@@ -1,0 +1,7 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='36'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='203' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='210' u='c'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='34'>/* number of literal bytes 0..255 */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.h' l='3' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='131' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='421' u='c'/>

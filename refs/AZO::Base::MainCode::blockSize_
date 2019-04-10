@@ -1,0 +1,11 @@
+<dec f='codebrowser/nest/algorithm/azo/Base/MainCodeB.h' l='40' type='u_int'/>
+<use f='codebrowser/nest/algorithm/azo/Base/MainCodeB.cpp' l='10' u='w' c='_ZN3AZO4Base8MainCodeC1Ev'/>
+<offset>384</offset>
+<use f='codebrowser/nest/algorithm/azo/Decoder/MainCodeD.cpp' l='90' u='a' c='_ZN3AZO7Decoder8MainCode4CodeERPKhRjRPhS5_'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/MainCodeD.cpp' l='98' u='r' c='_ZN3AZO7Decoder8MainCode4CodeERPKhRjRPhS5_'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/MainCodeD.cpp' l='98' u='r' c='_ZN3AZO7Decoder8MainCode4CodeERPKhRjRPhS5_'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/MainCodeD.cpp' l='118' u='r' c='_ZN3AZO7Decoder8MainCode4CodeERPKhRjRPhS5_'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/MainCodeD.cpp' l='121' u='r' c='_ZN3AZO7Decoder8MainCode4CodeERPKhRjRPhS5_'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/MainCodeD.cpp' l='125' u='r' c='_ZN3AZO7Decoder8MainCode4CodeERPKhRjRPhS5_'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/MainCodeD.cpp' l='129' u='r' c='_ZN3AZO7Decoder8MainCode4CodeERPKhRjRPhS5_'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/MainCodeD.cpp' l='134' u='r' c='_ZN3AZO7Decoder8MainCode4CodeERPKhRjRPhS5_'/>

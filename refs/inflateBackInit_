@@ -1,0 +1,9 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='1542' type='int inflateBackInit_(z_streamp strm, int windowBits, unsigned char * window, const char * version, int stream_size)'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='28' ll='61' type='int inflateBackInit_(z_streamp strm, int windowBits, unsigned char * window, const char * version, int stream_size)'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='21'>/*
+   strm provides memory allocation functions in zalloc and zfree, or
+   Z_NULL to use the library memory allocation functions.
+
+   windowBits is in the range 8..15, and window is a user-supplied
+   window and output buffer that is 2**windowBits bytes.
+ */</doc>

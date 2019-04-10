@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/inflate.h' l='46' type='25'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/inflate.h' l='46'>/* o: waiting for output space to write literal */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1039' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1153' c='inflate'/>

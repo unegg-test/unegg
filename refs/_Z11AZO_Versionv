@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/algorithm/azo/AZO.h' l='46' type='int AZO_Version()'/>
+<doc f='codebrowser/nest/algorithm/azo/AZO.h' l='45'>// init</doc>
+<def f='codebrowser/nest/algorithm/azo/unAZO.cpp' l='21' ll='24' type='int AZO_Version()'/>

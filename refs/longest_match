@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='92' type='uInt longest_match(deflate_state * s, IPos cur_match)'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1063' ll='1204' macro='1' type='uInt longest_match(deflate_state * s, IPos cur_match)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1557' u='c' c='deflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1657' u='c' c='deflate_slow'/>

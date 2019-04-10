@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>crc32.hpp source code [codebrowser/nest/algorithm/crc32.hpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/algorithm/crc32.hpp'; var root_path = '../../..'; var data_path = '../../../../data';</script>
+<script src='../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../..'>codebrowser</a>/<a href='..'>nest</a>/<a href='./'>algorithm</a>/<a href='crc32.hpp.html'>crc32.hpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * crc32.hpp</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> *  Created on: 2011. 1. 11.</i></td></tr>
+<tr><th id="5">5</th><td><i> *      Author: Jehoon Shin(Revolution)</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> *  Copyright(c) 2010-Present ESTsoft Corp. All rights reserved.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> *  For conditions of distribution and use, see copyright notice in license.txt</i></td></tr>
+<tr><th id="10">10</th><td><i> */</i></td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td><u>#<span data-ppcond="12">ifndef</span> <span class="macro" data-ref="_M/NEST_ALGORITHM_CRC32_HPP_">NEST_ALGORITHM_CRC32_HPP_</span></u></td></tr>
+<tr><th id="13">13</th><td><u>#define <dfn class="macro" id="_M/NEST_ALGORITHM_CRC32_HPP_" data-ref="_M/NEST_ALGORITHM_CRC32_HPP_">NEST_ALGORITHM_CRC32_HPP_</dfn></u></td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><u>#include <a href="../nest.h.html">&lt;nest/nest.h&gt;</a></u></td></tr>
+<tr><th id="16">16</th><td></td></tr>
+<tr><th id="17">17</th><td><b>namespace</b> <span class="namespace">nest</span></td></tr>
+<tr><th id="18">18</th><td>{</td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><em>static</em> <em>unsigned</em> <em>int</em> <dfn class="decl def" id="nest::g_crc32Table" title='nest::g_crc32Table' data-ref="nest::g_crc32Table">g_crc32Table</dfn>[] = { <var>0x00000000L</var>, <var>0x77073096L</var>, <var>0xEE0E612CL</var>, <var>0x990951BAL</var>, <var>0x076DC419L</var>, <var>0x706AF48FL</var>, <var>0xE963A535L</var>,</td></tr>
+<tr><th id="21">21</th><td>        <var>0x9E6495A3L</var>, <var>0x0EDB8832L</var>, <var>0x79DCB8A4L</var>, <var>0xE0D5E91EL</var>, <var>0x97D2D988L</var>, <var>0x09B64C2BL</var>, <var>0x7EB17CBDL</var>, <var>0xE7B82D07L</var>, <var>0x90BF1D91L</var>,</td></tr>
+<tr><th id="22">22</th><td>        <var>0x1DB71064L</var>, <var>0x6AB020F2L</var>, <var>0xF3B97148L</var>, <var>0x84BE41DEL</var>, <var>0x1ADAD47DL</var>, <var>0x6DDDE4EBL</var>, <var>0xF4D4B551L</var>, <var>0x83D385C7L</var>, <var>0x136C9856L</var>,</td></tr>
+<tr><th id="23">23</th><td>        <var>0x646BA8C0L</var>, <var>0xFD62F97AL</var>, <var>0x8A65C9ECL</var>, <var>0x14015C4FL</var>, <var>0x63066CD9L</var>, <var>0xFA0F3D63L</var>, <var>0x8D080DF5L</var>, <var>0x3B6E20C8L</var>, <var>0x4C69105EL</var>,</td></tr>
+<tr><th id="24">24</th><td>        <var>0xD56041E4L</var>, <var>0xA2677172L</var>, <var>0x3C03E4D1L</var>, <var>0x4B04D447L</var>, <var>0xD20D85FDL</var>, <var>0xA50AB56BL</var>, <var>0x35B5A8FAL</var>, <var>0x42B2986CL</var>, <var>0xDBBBC9D6L</var>,</td></tr>
+<tr><th id="25">25</th><td>        <var>0xACBCF940L</var>, <var>0x32D86CE3L</var>, <var>0x45DF5C75L</var>, <var>0xDCD60DCFL</var>, <var>0xABD13D59L</var>, <var>0x26D930ACL</var>, <var>0x51DE003AL</var>, <var>0xC8D75180L</var>, <var>0xBFD06116L</var>,</td></tr>
+<tr><th id="26">26</th><td>        <var>0x21B4F4B5L</var>, <var>0x56B3C423L</var>, <var>0xCFBA9599L</var>, <var>0xB8BDA50FL</var>, <var>0x2802B89EL</var>, <var>0x5F058808L</var>, <var>0xC60CD9B2L</var>, <var>0xB10BE924L</var>, <var>0x2F6F7C87L</var>,</td></tr>
+<tr><th id="27">27</th><td>        <var>0x58684C11L</var>, <var>0xC1611DABL</var>, <var>0xB6662D3DL</var>, <var>0x76DC4190L</var>, <var>0x01DB7106L</var>, <var>0x98D220BCL</var>, <var>0xEFD5102AL</var>, <var>0x71B18589L</var>, <var>0x06B6B51FL</var>,</td></tr>
+<tr><th id="28">28</th><td>        <var>0x9FBFE4A5L</var>, <var>0xE8B8D433L</var>, <var>0x7807C9A2L</var>, <var>0x0F00F934L</var>, <var>0x9609A88EL</var>, <var>0xE10E9818L</var>, <var>0x7F6A0DBBL</var>, <var>0x086D3D2DL</var>, <var>0x91646C97L</var>,</td></tr>
+<tr><th id="29">29</th><td>        <var>0xE6635C01L</var>, <var>0x6B6B51F4L</var>, <var>0x1C6C6162L</var>, <var>0x856530D8L</var>, <var>0xF262004EL</var>, <var>0x6C0695EDL</var>, <var>0x1B01A57BL</var>, <var>0x8208F4C1L</var>, <var>0xF50FC457L</var>,</td></tr>
+<tr><th id="30">30</th><td>        <var>0x65B0D9C6L</var>, <var>0x12B7E950L</var>, <var>0x8BBEB8EAL</var>, <var>0xFCB9887CL</var>, <var>0x62DD1DDFL</var>, <var>0x15DA2D49L</var>, <var>0x8CD37CF3L</var>, <var>0xFBD44C65L</var>, <var>0x4DB26158L</var>,</td></tr>
+<tr><th id="31">31</th><td>        <var>0x3AB551CEL</var>, <var>0xA3BC0074L</var>, <var>0xD4BB30E2L</var>, <var>0x4ADFA541L</var>, <var>0x3DD895D7L</var>, <var>0xA4D1C46DL</var>, <var>0xD3D6F4FBL</var>, <var>0x4369E96AL</var>, <var>0x346ED9FCL</var>,</td></tr>
+<tr><th id="32">32</th><td>        <var>0xAD678846L</var>, <var>0xDA60B8D0L</var>, <var>0x44042D73L</var>, <var>0x33031DE5L</var>, <var>0xAA0A4C5FL</var>, <var>0xDD0D7CC9L</var>, <var>0x5005713CL</var>, <var>0x270241AAL</var>, <var>0xBE0B1010L</var>,</td></tr>
+<tr><th id="33">33</th><td>        <var>0xC90C2086L</var>, <var>0x5768B525L</var>, <var>0x206F85B3L</var>, <var>0xB966D409L</var>, <var>0xCE61E49FL</var>, <var>0x5EDEF90EL</var>, <var>0x29D9C998L</var>, <var>0xB0D09822L</var>, <var>0xC7D7A8B4L</var>,</td></tr>
+<tr><th id="34">34</th><td>        <var>0x59B33D17L</var>, <var>0x2EB40D81L</var>, <var>0xB7BD5C3BL</var>, <var>0xC0BA6CADL</var>, <var>0xEDB88320L</var>, <var>0x9ABFB3B6L</var>, <var>0x03B6E20CL</var>, <var>0x74B1D29AL</var>, <var>0xEAD54739L</var>,</td></tr>
+<tr><th id="35">35</th><td>        <var>0x9DD277AFL</var>, <var>0x04DB2615L</var>, <var>0x73DC1683L</var>, <var>0xE3630B12L</var>, <var>0x94643B84L</var>, <var>0x0D6D6A3EL</var>, <var>0x7A6A5AA8L</var>, <var>0xE40ECF0BL</var>, <var>0x9309FF9DL</var>,</td></tr>
+<tr><th id="36">36</th><td>        <var>0x0A00AE27L</var>, <var>0x7D079EB1L</var>, <var>0xF00F9344L</var>, <var>0x8708A3D2L</var>, <var>0x1E01F268L</var>, <var>0x6906C2FEL</var>, <var>0xF762575DL</var>, <var>0x806567CBL</var>, <var>0x196C3671L</var>,</td></tr>
+<tr><th id="37">37</th><td>        <var>0x6E6B06E7L</var>, <var>0xFED41B76L</var>, <var>0x89D32BE0L</var>, <var>0x10DA7A5AL</var>, <var>0x67DD4ACCL</var>, <var>0xF9B9DF6FL</var>, <var>0x8EBEEFF9L</var>, <var>0x17B7BE43L</var>, <var>0x60B08ED5L</var>,</td></tr>
+<tr><th id="38">38</th><td>        <var>0xD6D6A3E8L</var>, <var>0xA1D1937EL</var>, <var>0x38D8C2C4L</var>, <var>0x4FDFF252L</var>, <var>0xD1BB67F1L</var>, <var>0xA6BC5767L</var>, <var>0x3FB506DDL</var>, <var>0x48B2364BL</var>, <var>0xD80D2BDAL</var>,</td></tr>
+<tr><th id="39">39</th><td>        <var>0xAF0A1B4CL</var>, <var>0x36034AF6L</var>, <var>0x41047A60L</var>, <var>0xDF60EFC3L</var>, <var>0xA867DF55L</var>, <var>0x316E8EEFL</var>, <var>0x4669BE79L</var>, <var>0xCB61B38CL</var>, <var>0xBC66831AL</var>,</td></tr>
+<tr><th id="40">40</th><td>        <var>0x256FD2A0L</var>, <var>0x5268E236L</var>, <var>0xCC0C7795L</var>, <var>0xBB0B4703L</var>, <var>0x220216B9L</var>, <var>0x5505262FL</var>, <var>0xC5BA3BBEL</var>, <var>0xB2BD0B28L</var>, <var>0x2BB45A92L</var>,</td></tr>
+<tr><th id="41">41</th><td>        <var>0x5CB36A04L</var>, <var>0xC2D7FFA7L</var>, <var>0xB5D0CF31L</var>, <var>0x2CD99E8BL</var>, <var>0x5BDEAE1DL</var>, <var>0x9B64C2B0L</var>, <var>0xEC63F226L</var>, <var>0x756AA39CL</var>, <var>0x026D930AL</var>,</td></tr>
+<tr><th id="42">42</th><td>        <var>0x9C0906A9L</var>, <var>0xEB0E363FL</var>, <var>0x72076785L</var>, <var>0x05005713L</var>, <var>0x95BF4A82L</var>, <var>0xE2B87A14L</var>, <var>0x7BB12BAEL</var>, <var>0x0CB61B38L</var>, <var>0x92D28E9BL</var>,</td></tr>
+<tr><th id="43">43</th><td>        <var>0xE5D5BE0DL</var>, <var>0x7CDCEFB7L</var>, <var>0x0BDBDF21L</var>, <var>0x86D3D2D4L</var>, <var>0xF1D4E242L</var>, <var>0x68DDB3F8L</var>, <var>0x1FDA836EL</var>, <var>0x81BE16CDL</var>, <var>0xF6B9265BL</var>,</td></tr>
+<tr><th id="44">44</th><td>        <var>0x6FB077E1L</var>, <var>0x18B74777L</var>, <var>0x88085AE6L</var>, <var>0xFF0F6A70L</var>, <var>0x66063BCAL</var>, <var>0x11010B5CL</var>, <var>0x8F659EFFL</var>, <var>0xF862AE69L</var>, <var>0x616BFFD3L</var>,</td></tr>
+<tr><th id="45">45</th><td>        <var>0x166CCF45L</var>, <var>0xA00AE278L</var>, <var>0xD70DD2EEL</var>, <var>0x4E048354L</var>, <var>0x3903B3C2L</var>, <var>0xA7672661L</var>, <var>0xD06016F7L</var>, <var>0x4969474DL</var>, <var>0x3E6E77DBL</var>,</td></tr>
+<tr><th id="46">46</th><td>        <var>0xAED16A4AL</var>, <var>0xD9D65ADCL</var>, <var>0x40DF0B66L</var>, <var>0x37D83BF0L</var>, <var>0xA9BCAE53L</var>, <var>0xDEBB9EC5L</var>, <var>0x47B2CF7FL</var>, <var>0x30B5FFE9L</var>, <var>0xBDBDF21CL</var>,</td></tr>
+<tr><th id="47">47</th><td>        <var>0xCABAC28AL</var>, <var>0x53B39330L</var>, <var>0x24B4A3A6L</var>, <var>0xBAD03605L</var>, <var>0xCDD70693L</var>, <var>0x54DE5729L</var>, <var>0x23D967BFL</var>, <var>0xB3667A2EL</var>, <var>0xC4614AB8L</var>,</td></tr>
+<tr><th id="48">48</th><td>        <var>0x5D681B02L</var>, <var>0x2A6F2B94L</var>, <var>0xB40BBE37L</var>, <var>0xC30C8EA1L</var>, <var>0x5A05DF1BL</var>, <var>0x2D02EF8DL</var> };</td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td><b>inline</b> <em>static</em> <em>void</em> <dfn class="decl def" id="_ZN4nestL9CRC32InitEPj" title='nest::CRC32Init' data-ref="_ZN4nestL9CRC32InitEPj">CRC32Init</dfn>(<em>unsigned</em> <em>int</em> *<dfn class="local col9 decl" id="9pCrc32" title='pCrc32' data-type='unsigned int *' data-ref="9pCrc32">pCrc32</dfn>)</td></tr>
+<tr><th id="51">51</th><td>{</td></tr>
+<tr><th id="52">52</th><td>    *<a class="local col9 ref" href="#9pCrc32" title='pCrc32' data-ref="9pCrc32">pCrc32</a> = <var>0xFFFFFFFF</var>;</td></tr>
+<tr><th id="53">53</th><td>}</td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td><b>inline</b> <em>static</em> <em>void</em> <dfn class="decl def" id="_ZN4nestL11CRC32UpdateEPjPKhj" title='nest::CRC32Update' data-ref="_ZN4nestL11CRC32UpdateEPjPKhj">CRC32Update</dfn>(<em>unsigned</em> <em>int</em> *<dfn class="local col0 decl" id="10pCrc32" title='pCrc32' data-type='unsigned int *' data-ref="10pCrc32">pCrc32</dfn>, <em>const</em> <em>unsigned</em> <em>char</em>* <dfn class="local col1 decl" id="11lpData" title='lpData' data-type='const unsigned char *' data-ref="11lpData">lpData</dfn>, <em>const</em> <em>unsigned</em> <em>int</em> <dfn class="local col2 decl" id="12uSize" title='uSize' data-type='const unsigned int' data-ref="12uSize">uSize</dfn>)</td></tr>
+<tr><th id="56">56</th><td>{</td></tr>
+<tr><th id="57">57</th><td>    <em>unsigned</em> <em>int</em> <dfn class="local col3 decl" id="13i" title='i' data-type='unsigned int' data-ref="13i">i</dfn> = <var>0</var>;</td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td>    <b>for</b> (<a class="local col3 ref" href="#13i" title='i' data-ref="13i">i</a> = <var>0</var>; <a class="local col3 ref" href="#13i" title='i' data-ref="13i">i</a> &lt; <a class="local col2 ref" href="#12uSize" title='uSize' data-ref="12uSize">uSize</a>; <a class="local col3 ref" href="#13i" title='i' data-ref="13i">i</a>++)</td></tr>
+<tr><th id="60">60</th><td>    {</td></tr>
+<tr><th id="61">61</th><td>        *<a class="local col0 ref" href="#10pCrc32" title='pCrc32' data-ref="10pCrc32">pCrc32</a> = ((*<a class="local col0 ref" href="#10pCrc32" title='pCrc32' data-ref="10pCrc32">pCrc32</a>) &gt;&gt; <var>8</var>) ^ <a class="ref" href="#nest::g_crc32Table" title='nest::g_crc32Table' data-ref="nest::g_crc32Table">g_crc32Table</a>[(<a class="local col1 ref" href="#11lpData" title='lpData' data-ref="11lpData">lpData</a>[<a class="local col3 ref" href="#13i" title='i' data-ref="13i">i</a>]) ^ ((*<a class="local col0 ref" href="#10pCrc32" title='pCrc32' data-ref="10pCrc32">pCrc32</a>) &amp; <var>0x000000FF</var>)];</td></tr>
+<tr><th id="62">62</th><td>    }</td></tr>
+<tr><th id="63">63</th><td>}</td></tr>
+<tr><th id="64">64</th><td></td></tr>
+<tr><th id="65">65</th><td><b>inline</b> <em>static</em> <em>void</em> <dfn class="decl def" id="_ZN4nestL11CRC32FinishEPj" title='nest::CRC32Finish' data-ref="_ZN4nestL11CRC32FinishEPj">CRC32Finish</dfn>(<em>unsigned</em> <em>int</em> *<dfn class="local col4 decl" id="14pCrc32" title='pCrc32' data-type='unsigned int *' data-ref="14pCrc32">pCrc32</dfn>)</td></tr>
+<tr><th id="66">66</th><td>{</td></tr>
+<tr><th id="67">67</th><td>    *<a class="local col4 ref" href="#14pCrc32" title='pCrc32' data-ref="14pCrc32">pCrc32</a> = ~(*<a class="local col4 ref" href="#14pCrc32" title='pCrc32' data-ref="14pCrc32">pCrc32</a>);</td></tr>
+<tr><th id="68">68</th><td>}</td></tr>
+<tr><th id="69">69</th><td></td></tr>
+<tr><th id="70">70</th><td>}</td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td><u>#<span data-ppcond="12">endif</span> /* NEST_ALGORITHM_CRC32_HPP_ */</u></td></tr>
+<tr><th id="73">73</th><td></td></tr>
+<tr><th id="74">74</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../encryption/ZipDecoder.cpp.html'>codebrowser/nest/encryption/ZipDecoder.cpp</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

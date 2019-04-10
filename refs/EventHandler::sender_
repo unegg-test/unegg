@@ -1,0 +1,15 @@
+<dec f='codebrowser/EventHandler.h' l='63' type='nest::Workspace *'/>
+<use f='codebrowser/EventHandler.cpp' l='46' u='w' c='_ZN12EventHandler10InitializeEPN4nest9WorkspaceE'/>
+<use f='codebrowser/EventHandler.cpp' l='62' u='w' c='_ZN12EventHandler8FinalizeEi'/>
+<use f='codebrowser/EventHandler.cpp' l='75' u='r' c='_ZN12EventHandler11OnWorkStartEi'/>
+<use f='codebrowser/EventHandler.cpp' l='76' u='r' c='_ZN12EventHandler11OnWorkStartEi'/>
+<use f='codebrowser/EventHandler.cpp' l='79' u='r' c='_ZN12EventHandler11OnWorkStartEi'/>
+<use f='codebrowser/EventHandler.cpp' l='80' u='r' c='_ZN12EventHandler11OnWorkStartEi'/>
+<use f='codebrowser/EventHandler.cpp' l='83' u='r' c='_ZN12EventHandler11OnWorkStartEi'/>
+<use f='codebrowser/EventHandler.cpp' l='84' u='r' c='_ZN12EventHandler11OnWorkStartEi'/>
+<use f='codebrowser/EventHandler.cpp' l='99' u='r' c='_ZN12EventHandler12OnWorkFinishEii'/>
+<use f='codebrowser/EventHandler.cpp' l='103' u='r' c='_ZN12EventHandler12OnWorkFinishEii'/>
+<use f='codebrowser/EventHandler.cpp' l='107' u='r' c='_ZN12EventHandler12OnWorkFinishEii'/>
+<use f='codebrowser/EventHandler.cpp' l='120' u='r' c='_ZN12EventHandler11OnFileStartEm'/>
+<use f='codebrowser/EventHandler.cpp' l='144' u='r' c='_ZN12EventHandler12OnFileFinishEmi'/>
+<offset>128</offset>

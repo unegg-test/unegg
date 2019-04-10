@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/algorithm/azo/Decoder/PredictProbD.h' l='21' type='EntropyBitProb&lt;N&gt; [KEY &gt;&gt; SHIFT]'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/PredictProbD.cpp' l='17' u='a' c='_ZN3AZO7Decoder11PredictProb4CodeERNS0_11EntropyCodeEj'/>

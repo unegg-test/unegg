@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='145' type='SRes SeqInStream_Read(ISeqInStream * stream, void * buf, size_t size)'/>
+<doc f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='144'>/* it can return SZ_ERROR_INPUT_EOF */</doc>
+<def f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='22' ll='25' type='SRes SeqInStream_Read(ISeqInStream * stream, void * buf, size_t size)'/>

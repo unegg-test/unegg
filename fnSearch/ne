@@ -1,0 +1,9 @@
+_ZNKSt6negateclERKT_|std::negate::operator()
+_ZN4nest6chrlwrEc|nest::chrlwr
+_ZN4nest6mkdir_EPKcj|nest::mkdir_
+_ZN4nest7mkdir_rEPKcj|nest::mkdir_r
+_ZN4nest4utf84nextEPKc|nest::utf8::next
+_ZSt16next_permutationT_S_|std::next_permutation
+_ZN4nestL11CRC32FinishEPj|nest::CRC32Finish
+_ZN4nestL9CRC32InitEPj|nest::CRC32Init
+_ZN4nestL11CRC32UpdateEPjPKhj|nest::CRC32Update

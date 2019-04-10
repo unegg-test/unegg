@@ -1,0 +1,12 @@
+<dec f='include/c++/7/bits/stl_pair.h' l='215' type='_T2'/>
+<use f='include/c++/7/bits/stl_pair.h' l='230' u='w' c='_ZNSt4pairC1Ev'/>
+<use f='include/c++/7/bits/stl_pair.h' l='249' u='w' c='_ZNSt4pairC1ERKT_RKT0_'/>
+<use f='include/c++/7/bits/stl_pair.h' l='277' u='w' c='_ZNSt4pairC1ERKSt4pairIT_T0_E'/>
+<use f='include/c++/7/bits/stl_tree.h' l='2093' u='r' c='_ZNSt8_Rb_tree16_M_insert_uniqueERKT0_'/>
+<use f='include/c++/7/bits/stl_tree.h' l='2096' c='_ZNSt8_Rb_tree16_M_insert_uniqueERKT0_'/>
+<use f='include/c++/7/bits/stl_tree.h' l='2120' c='_ZNSt8_Rb_tree15_M_insert_equalERKT0_'/>
+<use f='include/c++/7/bits/stl_tree.h' l='2203' u='r' c='_ZNSt8_Rb_tree17_M_insert_unique_ESt23_Rb_tree_const_iteratorIT0_ERKS1_RT_'/>
+<use f='include/c++/7/bits/stl_tree.h' l='2204' c='_ZNSt8_Rb_tree17_M_insert_unique_ESt23_Rb_tree_const_iteratorIT0_ERKS1_RT_'/>
+<use f='include/c++/7/bits/stl_tree.h' l='2285' u='r' c='_ZNSt8_Rb_tree16_M_insert_equal_ESt23_Rb_tree_const_iteratorIT0_ERKS1_RT_'/>
+<use f='include/c++/7/bits/stl_tree.h' l='2286' c='_ZNSt8_Rb_tree16_M_insert_equal_ESt23_Rb_tree_const_iteratorIT0_ERKS1_RT_'/>
+<doc f='include/c++/7/bits/stl_pair.h' l='215'>/// @c second is a copy of the second object</doc>

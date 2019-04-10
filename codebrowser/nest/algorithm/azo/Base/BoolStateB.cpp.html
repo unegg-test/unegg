@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>BoolStateB.cpp source code [codebrowser/nest/algorithm/azo/Base/BoolStateB.cpp] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/algorithm/azo/Base/BoolStateB.cpp'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>nest</a>/<a href='../..'>algorithm</a>/<a href='..'>azo</a>/<a href='./'>Base</a>/<a href='BoolStateB.cpp.html'>BoolStateB.cpp</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/AZO_BASE_BoolState_CPP">AZO_BASE_BoolState_CPP</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/AZO_BASE_BoolState_CPP" data-ref="_M/AZO_BASE_BoolState_CPP">AZO_BASE_BoolState_CPP</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="BoolStateB.h.html">"BoolStateB.h"</a></u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><b>namespace</b> <span class="namespace">AZO</span> {</td></tr>
+<tr><th id="7">7</th><td><b>namespace</b> <span class="namespace">Base</span> {</td></tr>
+<tr><th id="8">8</th><td></td></tr>
+<tr><th id="9">9</th><td><b>template</b> &lt;u_int N&gt;</td></tr>
+<tr><th id="10">10</th><td><a class="type" href="BoolStateB.h.html#AZO::Base::BoolState" title='AZO::Base::BoolState' data-ref="AZO::Base::BoolState">BoolState</a>&lt;<a class="tu ref" href="#N" title='N' data-ref="N">N</a>&gt;::<dfn class="decl def" id="_ZN3AZO4Base9BoolStateC1Ev" title='AZO::Base::BoolState::BoolState&lt;N&gt;' data-ref="_ZN3AZO4Base9BoolStateC1Ev">BoolState</dfn>() : <a class="member" href="BoolStateB.h.html#AZO::Base::BoolState::state_" title='AZO::Base::BoolState::state_' data-ref="AZO::Base::BoolState::state_">state_</a>(<var>0</var>)</td></tr>
+<tr><th id="11">11</th><td>{</td></tr>
+<tr><th id="12">12</th><td>    <b>for</b>(<a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <dfn class="local col2 decl" id="2i" title='i' data-type='u_int' data-ref="2i">i</dfn>=<var>0</var>; <a class="local col2 ref" href="#2i" title='i' data-ref="2i">i</a>&lt;<a class="member" href="BoolStateB.h.html#AZO::Base::BoolState::ARRAY_N" title='AZO::Base::BoolState::ARRAY_N' data-ref="AZO::Base::BoolState::ARRAY_N">ARRAY_N</a>; ++<a class="local col2 ref" href="#2i" title='i' data-ref="2i">i</a>) {</td></tr>
+<tr><th id="13">13</th><td>        <a class="member" href="BoolStateB.h.html#AZO::Base::BoolState::prob_" title='AZO::Base::BoolState::prob_' data-ref="AZO::Base::BoolState::prob_">prob_</a>[<a class="local col2 ref" href="#2i" title='i' data-ref="2i">i</a>] = <a class="member" href="BoolStateB.h.html#AZO::Base::BoolState::TOTAL_COUNT" title='AZO::Base::BoolState::TOTAL_COUNT' data-ref="AZO::Base::BoolState::TOTAL_COUNT">TOTAL_COUNT</a>/<var>2</var>;</td></tr>
+<tr><th id="14">14</th><td>    }</td></tr>
+<tr><th id="15">15</th><td>}</td></tr>
+<tr><th id="16">16</th><td></td></tr>
+<tr><th id="17">17</th><td><b>template</b> &lt;u_int N&gt;</td></tr>
+<tr><th id="18">18</th><td><a class="type" href="BoolStateB.h.html#AZO::Base::BoolState" title='AZO::Base::BoolState' data-ref="AZO::Base::BoolState">BoolState</a>&lt;<a class="tu ref" href="#N" title='N' data-ref="N">N</a>&gt;::<dfn class="decl def" id="_ZN3AZO4Base9BoolStateD1Ev" title='AZO::Base::BoolState::~BoolState&lt;N&gt;' data-ref="_ZN3AZO4Base9BoolStateD1Ev">~BoolState</dfn>()</td></tr>
+<tr><th id="19">19</th><td>{</td></tr>
+<tr><th id="20">20</th><td>}</td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><b>template</b> &lt;u_int N&gt;</td></tr>
+<tr><th id="23">23</th><td><b>inline</b> <em>void</em> <a class="type" href="BoolStateB.h.html#AZO::Base::BoolState" title='AZO::Base::BoolState' data-ref="AZO::Base::BoolState">BoolState</a>&lt;<a class="tu ref" href="#N" title='N' data-ref="N">N</a>&gt;::<dfn class="decl def" id="_ZN3AZO4Base9BoolState6UpdateEj" title='AZO::Base::BoolState::Update' data-ref="_ZN3AZO4Base9BoolState6UpdateEj">Update</dfn>(<a class="typedef" href="../Common/AZOType.h.html#AZO::BOOL" title='AZO::BOOL' data-type='u_int' data-ref="AZO::BOOL">BOOL</a> <dfn class="local col3 decl" id="3b" title='b' data-type='BOOL' data-ref="3b">b</dfn>)</td></tr>
+<tr><th id="24">24</th><td>{</td></tr>
+<tr><th id="25">25</th><td>    <a class="macro" href="../Common/AZOPrivate.h.html#18" title="" data-ref="_M/ASSERT">ASSERT</a>(state_ &lt; ARRAY_N);</td></tr>
+<tr><th id="26">26</th><td>    </td></tr>
+<tr><th id="27">27</th><td>    <em>const</em> <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <dfn class="local col4 decl" id="4SHIFT_BIT" title='SHIFT_BIT' data-type='const u_int' data-ref="4SHIFT_BIT">SHIFT_BIT</dfn> = <a class="member" href="BoolStateB.h.html#AZO::Base::BoolState::TOTAL_BIT" title='AZO::Base::BoolState::TOTAL_BIT' data-ref="AZO::Base::BoolState::TOTAL_BIT">TOTAL_BIT</a>-<var>6</var>;</td></tr>
+<tr><th id="28">28</th><td>    <a class="typedef" href="../Common/AZOType.h.html#AZO::uint32_t" title='AZO::uint32_t' data-type='unsigned int' data-ref="AZO::uint32_t">uint32_t</a>&amp; <dfn class="local col5 decl" id="5p" title='p' data-type='uint32_t &amp;' data-ref="5p">p</dfn> = <a class="member" href="BoolStateB.h.html#AZO::Base::BoolState::prob_" title='AZO::Base::BoolState::prob_' data-ref="AZO::Base::BoolState::prob_">prob_</a>[<a class="member" href="BoolStateB.h.html#AZO::Base::BoolState::state_" title='AZO::Base::BoolState::state_' data-ref="AZO::Base::BoolState::state_">state_</a>];</td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td>    <b>if</b>(<a class="local col3 ref" href="#3b" title='b' data-ref="3b">b</a> == <var>0</var>) {</td></tr>
+<tr><th id="31">31</th><td>        <a class="local col5 ref" href="#5p" title='p' data-ref="5p">p</a> += (<a class="member" href="BoolStateB.h.html#AZO::Base::BoolState::TOTAL_COUNT" title='AZO::Base::BoolState::TOTAL_COUNT' data-ref="AZO::Base::BoolState::TOTAL_COUNT">TOTAL_COUNT</a>-<a class="local col5 ref" href="#5p" title='p' data-ref="5p">p</a>)&gt;&gt;<a class="local col4 ref" href="#4SHIFT_BIT" title='SHIFT_BIT' data-ref="4SHIFT_BIT">SHIFT_BIT</a>;</td></tr>
+<tr><th id="32">32</th><td>    } <b>else</b> {</td></tr>
+<tr><th id="33">33</th><td>        <a class="local col5 ref" href="#5p" title='p' data-ref="5p">p</a> -= <a class="local col5 ref" href="#5p" title='p' data-ref="5p">p</a>&gt;&gt;<a class="local col4 ref" href="#4SHIFT_BIT" title='SHIFT_BIT' data-ref="4SHIFT_BIT">SHIFT_BIT</a>;</td></tr>
+<tr><th id="34">34</th><td>    }</td></tr>
+<tr><th id="35">35</th><td></td></tr>
+<tr><th id="36">36</th><td>    <a class="member" href="BoolStateB.h.html#AZO::Base::BoolState::state_" title='AZO::Base::BoolState::state_' data-ref="AZO::Base::BoolState::state_">state_</a> = ((<a class="member" href="BoolStateB.h.html#AZO::Base::BoolState::state_" title='AZO::Base::BoolState::state_' data-ref="AZO::Base::BoolState::state_">state_</a> &lt;&lt; <var>1</var>) &amp; (<a class="member" href="BoolStateB.h.html#AZO::Base::BoolState::ARRAY_N" title='AZO::Base::BoolState::ARRAY_N' data-ref="AZO::Base::BoolState::ARRAY_N">ARRAY_N</a>-<var>1</var>)) | <a class="local col3 ref" href="#3b" title='b' data-ref="3b">b</a>;</td></tr>
+<tr><th id="37">37</th><td>}</td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td>} <i>//namespaces Base</i></td></tr>
+<tr><th id="40">40</th><td>} <i>//namespaces AZO</i></td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td><u>#<span data-ppcond="1">endif</span> /*AZO_BASE_BoolState_CPP*/</u></td></tr>
+<tr><th id="43">43</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

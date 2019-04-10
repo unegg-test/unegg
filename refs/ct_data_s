@@ -1,0 +1,5 @@
+<def f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='62' ll='71'/>
+<size>4</size>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='61'>/* Data structure describing a single value and its code string. */</doc>
+<mbr r='ct_data_s::fc' o='0' t='union (anonymous union at /home/nemnemee/Downloads/unegg/release-x64/.././nest/third-party/algorithm/zlib/deflate.h:63:5)'/>
+<mbr r='ct_data_s::dl' o='16' t='union (anonymous union at /home/nemnemee/Downloads/unegg/release-x64/.././nest/third-party/algorithm/zlib/deflate.h:67:5)'/>

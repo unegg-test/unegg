@@ -1,0 +1,14 @@
+<dec f='codebrowser/nest/algorithm/azo/Common/BufferMan.h' l='27' type='byte *'/>
+<use f='codebrowser/nest/algorithm/azo/Common/BufferMan.cpp' l='12' u='w' c='_ZN3AZO9BufferManC1Ev'/>
+<use f='codebrowser/nest/algorithm/azo/Common/BufferMan.cpp' l='18' u='r' c='_ZN3AZO9BufferManD1Ev'/>
+<use f='codebrowser/nest/algorithm/azo/Common/BufferMan.cpp' l='19' u='r' c='_ZN3AZO9BufferManD1Ev'/>
+<use f='codebrowser/nest/algorithm/azo/Common/BufferMan.cpp' l='34' u='r' c='_ZN3AZO9BufferMan8CapacityEj'/>
+<use f='codebrowser/nest/algorithm/azo/Common/BufferMan.cpp' l='37' u='r' c='_ZN3AZO9BufferMan8CapacityEj'/>
+<use f='codebrowser/nest/algorithm/azo/Common/BufferMan.cpp' l='38' u='r' c='_ZN3AZO9BufferMan8CapacityEj'/>
+<use f='codebrowser/nest/algorithm/azo/Common/BufferMan.cpp' l='41' u='w' c='_ZN3AZO9BufferMan8CapacityEj'/>
+<use f='codebrowser/nest/algorithm/azo/Common/BufferMan.cpp' l='53' u='r' c='_ZN3AZO9BufferMan9GetBufPtrEv'/>
+<use f='codebrowser/nest/algorithm/azo/Common/BufferMan.cpp' l='53' u='r' c='_ZN3AZO9BufferMan9GetBufPtrEv'/>
+<use f='codebrowser/nest/algorithm/azo/Common/BufferMan.cpp' l='58' u='r' c='_ZN3AZO9BufferMan9GetBufPtrEv'/>
+<use f='codebrowser/nest/algorithm/azo/Common/BufferMan.cpp' l='69' u='r' c='_ZN3AZO9BufferMan3AddEPKhj'/>
+<use f='codebrowser/nest/algorithm/azo/Common/BufferMan.cpp' l='87' u='r' c='_ZN3AZO9BufferMan3GetEPhj'/>
+<offset>0</offset>

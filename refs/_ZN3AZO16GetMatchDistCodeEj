@@ -1,0 +1,2 @@
+<def f='codebrowser/nest/algorithm/azo/Common/MatchCodeTable.h' l='166' ll='183' type='uint8_t AZO::GetMatchDistCode(u_int value)'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/MatchCodeD.cpp' l='17' u='c' c='_ZN3AZO7Decoder9MatchCode4CodeERNS0_11EntropyCodeEjRjS4_'/>

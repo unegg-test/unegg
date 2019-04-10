@@ -1,0 +1,14 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='78' type='block_state deflate_fast(deflate_state * s, int flush)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='134'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='134'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='135'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='135'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='136'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='136'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='134'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='134'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='135'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='135'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='136'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='136'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1520' ll='1608' macro='1' type='block_state deflate_fast(deflate_state * s, int flush)'/>

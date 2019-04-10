@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.h' l='55' type='SRes LzmaEnc_WriteProperties(CLzmaEncHandle p, Byte * properties, SizeT * size)'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='2159' ll='2186' type='SRes LzmaEnc_WriteProperties(CLzmaEncHandle pp, Byte * props, SizeT * size)'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='2227' u='c' c='LzmaEncode'/>

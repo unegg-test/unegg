@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/format/egg/ExtraFieldWrap.h' l='45' type='void nest::egg::ExtraFieldWrap::OnCleanUp()'/>
+<inh f='codebrowser/nest/format/Header.h' l='42' c='_ZN4nest6Header9OnCleanUpEv'/>
+<def f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='40' ll='47' type='void nest::egg::ExtraFieldWrap::OnCleanUp()'/>

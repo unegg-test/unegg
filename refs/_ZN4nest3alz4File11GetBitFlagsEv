@@ -1,0 +1,6 @@
+<def f='codebrowser/nest/format/alz/File.h' l='48' ll='51' type='unsigned short nest::alz::File::GetBitFlags()'/>
+<use f='codebrowser/nest/format/alz/File.h' l='55' u='c' c='_ZN4nest3alz4File11IsEncryptedEv'/>
+<use f='codebrowser/nest/format/alz/File.h' l='60' u='c' c='_ZN4nest3alz4File15IsCommentExistsEv'/>
+<use f='codebrowser/nest/format/alz/File.h' l='65' u='c' c='_ZN4nest3alz4File11GetBaseSizeEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='532' u='c' c='_ZN4nest9ALZFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='98' u='c' c='_ZN4nest3alz4File6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>

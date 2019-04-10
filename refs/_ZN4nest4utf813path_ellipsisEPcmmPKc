@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/Utils.h' l='41' type='void nest::utf8::path_ellipsis(char * buffer, size_t size, size_t limitWidth, const char * str)'/>
+<def f='codebrowser/nest/Utils.cpp' l='311' ll='424' type='void nest::utf8::path_ellipsis(char * buffer, size_t bufSize, size_t limitWidth, const char * str)'/>
+<use f='codebrowser/nest/Utils.cpp' l='428' u='c' c='_ZN4nest4utf813path_ellipsisEmPKc'/>

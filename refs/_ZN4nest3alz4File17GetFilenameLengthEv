@@ -1,0 +1,2 @@
+<def f='codebrowser/nest/format/alz/File.h' l='33' ll='36' type='unsigned short nest::alz::File::GetFilenameLength()'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='122' u='c' c='_ZN4nest3alz4File6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>

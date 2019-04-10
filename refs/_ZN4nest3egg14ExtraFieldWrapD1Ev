@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/format/egg/ExtraFieldWrap.h' l='27' type='void nest::egg::ExtraFieldWrap::~ExtraFieldWrap()'/>
+<inh f='codebrowser/nest/format/Header.h' l='31' c='_ZN4nest6HeaderD1Ev'/>
+<def f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='34' ll='38' type='void nest::egg::ExtraFieldWrap::~ExtraFieldWrap()'/>

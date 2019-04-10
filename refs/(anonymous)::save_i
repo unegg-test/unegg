@@ -1,0 +1,6 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='412' type='Int32'/>
+<offset>512288</offset>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='411'>/* save area for scalars in the main decompress code */</doc>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='141' u='w' c='BZ2_decompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='168' u='r' c='BZ2_decompress'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/decompress.c' l='615' u='w' c='BZ2_decompress'/>

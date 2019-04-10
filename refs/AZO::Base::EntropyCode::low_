@@ -1,0 +1,19 @@
+<dec f='codebrowser/nest/algorithm/azo/Base/EntropyCodeB.h' l='22' type='RANGE_TYPE'/>
+<use f='codebrowser/nest/algorithm/azo/Base/EntropyCodeB.cpp' l='11' u='w' c='_ZN3AZO4Base11EntropyCodeC1Ev'/>
+<offset>0</offset>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='29' u='r' c='_ZN3AZO7Decoder11EntropyCode7RescaleEv'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='35' u='w' c='_ZN3AZO7Decoder11EntropyCode7RescaleEv'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='39' u='r' c='_ZN3AZO7Decoder11EntropyCode7RescaleEv'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='46' u='w' c='_ZN3AZO7Decoder11EntropyCode7RescaleEv'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='47' u='w' c='_ZN3AZO7Decoder11EntropyCode7RescaleEv'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='59' u='r' c='_ZN3AZO7Decoder11EntropyCode4CodeEj'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='63' u='r' c='_ZN3AZO7Decoder11EntropyCode4CodeEj'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='66' u='r' c='_ZN3AZO7Decoder11EntropyCode4CodeEj'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='68' u='r' c='_ZN3AZO7Decoder11EntropyCode4CodeEj'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='69' u='w' c='_ZN3AZO7Decoder11EntropyCode4CodeEj'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='69' u='r' c='_ZN3AZO7Decoder11EntropyCode4CodeEj'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='81' u='r' c='_ZN3AZO7Decoder11EntropyCode4CodeEjj'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='85' u='r' c='_ZN3AZO7Decoder11EntropyCode4CodeEjj'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='88' u='r' c='_ZN3AZO7Decoder11EntropyCode4CodeEjj'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='91' u='w' c='_ZN3AZO7Decoder11EntropyCode4CodeEjj'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='93' u='r' c='_ZN3AZO7Decoder11EntropyCode4CodeEjj'/>

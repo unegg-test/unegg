@@ -1,0 +1,7 @@
+<def f='codebrowser/nest/algorithm/azo/Common/AZOOption.h' l='23' type='const u_int'/>
+<use f='codebrowser/nest/algorithm/azo/Common/MatchCodeTable.h' l='71' u='r'/>
+<use f='codebrowser/nest/algorithm/azo/Common/MatchCodeTable.h' l='96' u='r'/>
+<use f='codebrowser/nest/algorithm/azo/Common/MatchCodeTable.h' l='97' u='r'/>
+<use f='codebrowser/nest/algorithm/azo/Common/MatchCodeTable.h' l='115' u='r' c='_ZN3AZO23GetMatchLengthCode_SlowEj'/>
+<use f='codebrowser/nest/algorithm/azo/Common/MatchCodeTable.h' l='121' u='r' c='_ZN3AZO23GetMatchLengthCode_SlowEj'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/LengthCodeD.h' l='18' u='r'/>

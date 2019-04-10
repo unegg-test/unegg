@@ -1,0 +1,7 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='134' type='void (*)(void *, Byte)'/>
+<dec f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='151' type='size_t (*)(void *, const void *, size_t)'/>
+<offset>0</offset>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='295' u='w' c='FileOutStream_CreateVTable'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='504' u='r' c='RangeEnc_FlushStream'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='2096' u='w' c='LzmaEnc_CodeOneMemBlock'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='2198' u='w' c='LzmaEnc_MemEncode'/>

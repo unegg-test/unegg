@@ -1,0 +1,7 @@
+<inh f='codebrowser/nest/format/egg/ExtraField.h' l='22' c='nest::egg::ExtraField'/>
+<def f='codebrowser/nest/format/egg/PosixField.h' l='22' ll='44'/>
+<size>32</size>
+<fun r='_ZN4nest3egg10PosixField7GetModeEv'/>
+<fun r='_ZN4nest3egg10PosixField6GetUIDEv'/>
+<fun r='_ZN4nest3egg10PosixField6GetGIDEv'/>
+<fun r='_ZN4nest3egg10PosixField23GetLastModifiedDateTimeEv'/>

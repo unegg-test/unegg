@@ -1,0 +1,3 @@
+<def f='codebrowser/nest/format/egg/BlockWrap.h' l='40' ll='43' type='uint64 nest::egg::BlockWrap::GetDataOffset()'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='436' u='c' c='_ZN4nest9EggFormat17PrepareSolidBlockEPNS_3egg9BlockWrapEPNS0_16BlockExtractInfoE'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='777' u='c' c='_ZN4nest9EggFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>

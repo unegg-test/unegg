@@ -1,0 +1,5 @@
+<def f='codebrowser/nest/format/EggFormat.h' l='83' ll='88'/>
+<size>24</size>
+<mbr r='nest::EggFormat::SpannedVolume::stream' o='0' t='nest::InputStream *'/>
+<mbr r='nest::EggFormat::SpannedVolume::offset' o='64' t='uint64'/>
+<mbr r='nest::EggFormat::SpannedVolume::size' o='128' t='uint64'/>

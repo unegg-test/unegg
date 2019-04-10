@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.h' l='30' type='unsigned int'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='50' u='w' c='LzmaEncProps_Init'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='430' u='r' c='LzmaEnc_SetProps'/>
+<offset>320</offset>
+<doc f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.h' l='30'>/* 0 - do not write EOPM, 1 - write EOPM, default = 0 */</doc>

@@ -1,0 +1,2 @@
+<def f='codebrowser/nest/algorithm/azo/Decoder/HistoryListD.h' l='17' type='void AZO::Decoder::HistoryList::HistoryList&lt;T, N&gt;(T init = 0)'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/DistanceCodeD.h' l='25' u='c' c='_ZN3AZO7Decoder12DistanceCodeC1Ev'/>

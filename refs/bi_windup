@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='158' type='void bi_windup(deflate_state * s)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1013' u='c' c='_tr_flush_block'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1203' ll='1216' macro='1' type='void bi_windup(deflate_state * s)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1228' u='c' c='copy_block'/>

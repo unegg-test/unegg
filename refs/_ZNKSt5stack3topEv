@@ -1,0 +1,5 @@
+<def f='include/c++/7/bits/stl_stack.h' l='208' ll='213' type='const_reference std::stack::top() const'/>
+<doc f='include/c++/7/bits/stl_stack.h' l='204'>/**
+       *  Returns a read-only (constant) reference to the data at the first
+       *  element of the %stack.
+       */</doc>

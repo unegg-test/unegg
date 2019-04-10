@@ -1,0 +1,8 @@
+<use f='codebrowser/nest/format/egg/ExtraFieldWrap.h' l='31' u='c' c='_ZN4nest3egg14ExtraFieldWrap11FieldExistsEi'/>
+<def f='codebrowser/nest/format/egg/ExtraFieldWrap.h' l='34' ll='37' type='nest::egg::ExtraField * nest::egg::ExtraFieldWrap::GetExtra(int magic)'/>
+<use f='codebrowser/nest/format/egg/FileWrap.h' l='47' u='c' c='_ZN4nest3egg8FileWrap8GetExtraEi'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='104' u='c' c='_ZN4nest9EggFormat4ScanEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='105' u='c' c='_ZN4nest9EggFormat4ScanEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='274' u='c' c='_ZN4nest9EggFormat21PrepareSpannedStreamsEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='312' u='c' c='_ZN4nest9EggFormat21PrepareSpannedStreamsEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='747' u='c' c='_ZN4nest9EggFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/Workspace.h' l='74' type='std::string'/>
+<offset>256</offset>
+<use f='codebrowser/nest/Workspace.cpp' l='62' u='w' c='_ZN4nest9Workspace4OpenEPKc'/>
+<use f='codebrowser/nest/Workspace.cpp' l='103' u='m' c='_ZN4nest9Workspace5CloseEv'/>
+<use f='codebrowser/nest/Workspace.cpp' l='142' u='m' c='_ZN4nest9Workspace11GetFilenameEv'/>

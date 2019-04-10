@@ -1,0 +1,6 @@
+<dec f='codebrowser/nest/define.h' l='46' type='16'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='462' u='r' c='_ZN4nest9ALZFormat17PreprocessDecryptEmPNS_3alz4FileE'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='615' u='r' c='_ZN4nest9ALZFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='856' u='r' c='_ZN4nest9EggFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='949' u='r' c='_ZN4nest9EggFormat17PreprocessDecryptEmPNS_3egg12EncryptFieldE'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='957' u='r' c='_ZN4nest9EggFormat17PreprocessDecryptEmPNS_3egg12EncryptFieldE'/>

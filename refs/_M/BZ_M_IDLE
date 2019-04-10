@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='178'/>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='176'>/*-- States and modes for compression. --*/</doc>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='419' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='460' u='c'/>

@@ -1,0 +1,20 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzFind.h' l='20' type='UInt32'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='61' u='w' c='MatchFinder_ReduceOffsets'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='279' u='w' c='MatchFinder_SetLimits'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='470' u='r' c='MatchFinder_MovePos'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='470' u='r' c='Bt2_MatchFinder_GetMatches'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='470' u='r' c='Bt3Zip_MatchFinder_GetMatches'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='470' u='r' c='Bt3_MatchFinder_GetMatches'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='470' u='r' c='Bt3_MatchFinder_GetMatches'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='470' u='r' c='Bt4_MatchFinder_GetMatches'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='470' u='r' c='Bt4_MatchFinder_GetMatches'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='470' u='r' c='Hc4_MatchFinder_GetMatches'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='470' u='r' c='Hc4_MatchFinder_GetMatches'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='470' u='r' c='Hc3Zip_MatchFinder_GetMatches'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='470' u='r' c='Bt2_MatchFinder_Skip'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='470' u='r' c='Bt3Zip_MatchFinder_Skip'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='470' u='r' c='Bt3_MatchFinder_Skip'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='470' u='r' c='Bt4_MatchFinder_Skip'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='470' u='r' c='Hc4_MatchFinder_Skip'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='470' u='r' c='Hc3Zip_MatchFinder_Skip'/>
+<offset>96</offset>

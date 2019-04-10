@@ -1,0 +1,16 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/7zBuf.h' l='16' type='Byte *'/>
+<dec f='codebrowser/nest/third-party/algorithm/lzma/7zBuf.h' l='26' type='Byte *'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zBuf.c' l='10' u='w' c='Buf_Init'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zBuf.c' l='19' u='w' c='Buf_Create'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zBuf.c' l='22' u='w' c='Buf_Create'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zBuf.c' l='23' u='r' c='Buf_Create'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zBuf.c' l='33' u='r' c='Buf_Free'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zBuf.c' l='34' u='w' c='Buf_Free'/>
+<offset>0</offset>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zBuf2.c' l='9' u='w' c='DynBuf_Construct'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zBuf2.c' l='30' u='r' c='DynBuf_Write'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zBuf2.c' l='31' u='r' c='DynBuf_Write'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zBuf2.c' l='32' u='w' c='DynBuf_Write'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zBuf2.c' l='34' u='r' c='DynBuf_Write'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zBuf2.c' l='41' u='r' c='DynBuf_Free'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zBuf2.c' l='42' u='w' c='DynBuf_Free'/>

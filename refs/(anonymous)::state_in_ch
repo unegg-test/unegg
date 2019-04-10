@@ -1,0 +1,22 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='225' type='UInt32'/>
+<offset>736</offset>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='224'>/* run-length-encoding of the input */</doc>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='133' u='w' c='init_RL'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='141' u='r' c='isempty_RL'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='219' u='r' c='add_pair_to_block'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='223' u='r' c='add_pair_to_block'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='254' u='r' c='flush_RL'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='264' u='r' c='copy_input_until_stop'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='266' u='r' c='copy_input_until_stop'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='268' u='r' c='copy_input_until_stop'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='271' u='w' c='copy_input_until_stop'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='275' u='r' c='copy_input_until_stop'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='277' u='r' c='copy_input_until_stop'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='279' u='w' c='copy_input_until_stop'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='264' u='r' c='copy_input_until_stop'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='266' u='r' c='copy_input_until_stop'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='268' u='r' c='copy_input_until_stop'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='271' u='w' c='copy_input_until_stop'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='275' u='r' c='copy_input_until_stop'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='277' u='r' c='copy_input_until_stop'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='279' u='w' c='copy_input_until_stop'/>

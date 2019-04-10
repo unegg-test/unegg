@@ -1,0 +1,2 @@
+<def f='codebrowser/UnEgg.cpp' l='280' ll='320' type='int ExtractArchive(CommandLine &amp; cmd)'/>
+<use f='codebrowser/UnEgg.cpp' l='328' u='c' c='_Z18ProcessCommandlineR11CommandLine'/>

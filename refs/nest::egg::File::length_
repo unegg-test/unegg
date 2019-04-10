@@ -1,0 +1,6 @@
+<use f='codebrowser/nest/format/egg/File.h' l='35' u='r' c='_ZN4nest3egg4File9GetLengthEv'/>
+<dec f='codebrowser/nest/format/egg/File.h' l='51' type='uint64'/>
+<offset>128</offset>
+<use f='codebrowser/nest/format/egg/File.cpp' l='45' u='r' c='_ZN4nest3egg4File6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/egg/File.cpp' l='45' u='a' c='_ZN4nest3egg4File6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/egg/File.cpp' l='45' u='r' c='_ZN4nest3egg4File6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>

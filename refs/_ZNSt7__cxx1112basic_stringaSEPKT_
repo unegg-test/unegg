@@ -1,0 +1,27 @@
+<def f='include/c++/7/bits/basic_string.h' l='692' ll='694' type='basic_string&lt;_CharT, _Traits, _Alloc&gt; &amp; std::__cxx11::basic_string::operator=(const _CharT * __s)'/>
+<doc f='include/c++/7/bits/basic_string.h' l='688'>/**
+       *  @brief  Copy contents of @a s into this string.
+       *  @param  __s  Source null-terminated string.
+       */</doc>
+<use f='codebrowser/EventHandler.cpp' l='47' u='c' c='_ZN12EventHandler10InitializeEPN4nest9WorkspaceE'/>
+<use f='codebrowser/EventHandler.cpp' l='118' u='c' c='_ZN12EventHandler11OnFileStartEm'/>
+<use f='codebrowser/EventHandler.cpp' l='188' u='c' c='_ZN12EventHandler7OnErrorEmi'/>
+<use f='codebrowser/EventHandler.cpp' l='191' u='c' c='_ZN12EventHandler7OnErrorEmi'/>
+<use f='codebrowser/EventHandler.cpp' l='194' u='c' c='_ZN12EventHandler7OnErrorEmi'/>
+<use f='codebrowser/EventHandler.cpp' l='197' u='c' c='_ZN12EventHandler7OnErrorEmi'/>
+<use f='codebrowser/EventHandler.cpp' l='200' u='c' c='_ZN12EventHandler7OnErrorEmi'/>
+<use f='codebrowser/EventHandler.cpp' l='203' u='c' c='_ZN12EventHandler7OnErrorEmi'/>
+<use f='codebrowser/EventHandler.cpp' l='206' u='c' c='_ZN12EventHandler7OnErrorEmi'/>
+<use f='codebrowser/EventHandler.cpp' l='209' u='c' c='_ZN12EventHandler7OnErrorEmi'/>
+<use f='codebrowser/EventHandler.cpp' l='212' u='c' c='_ZN12EventHandler7OnErrorEmi'/>
+<use f='codebrowser/EventHandler.cpp' l='215' u='c' c='_ZN12EventHandler7OnErrorEmi'/>
+<use f='codebrowser/EventHandler.cpp' l='218' u='c' c='_ZN12EventHandler7OnErrorEmi'/>
+<use f='codebrowser/EventHandler.cpp' l='222' u='c' c='_ZN12EventHandler7OnErrorEmi'/>
+<use f='codebrowser/nest/format/alz/File.h' l='105' u='c' c='_ZN4nest3alz4File10SetCommentEPKc'/>
+<use f='codebrowser/nest/Utils.cpp' l='239' u='c' c='_ZN4nest4utf810euckr2utf8EPKcPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='codebrowser/nest/Workspace.cpp' l='62' u='c' c='_ZN4nest9Workspace4OpenEPKc'/>
+<use f='codebrowser/nest/Workspace.cpp' l='128' u='c' c='_ZN4nest9Workspace7ExtractEPKc'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='471' u='c' c='_ZN4nest9ALZFormat17PreprocessDecryptEmPNS_3alz4FileE'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='968' u='c' c='_ZN4nest9EggFormat17PreprocessDecryptEmPNS_3egg12EncryptFieldE'/>
+<use f='codebrowser/nest/stream/FileOutputStream.cpp' l='47' u='c' c='_ZN4nest16FileOutputStream6CreateEPKc'/>
+<use f='codebrowser/nest/stream/InputStream.cpp' l='19' u='c' c='_ZN4nest11InputStream10InitializeEPKc'/>

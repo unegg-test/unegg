@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>CommandLine.h source code [codebrowser/CommandLine.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="CommandLine "/>
+<link rel="stylesheet" href="../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/CommandLine.h'; var root_path = '..'; var data_path = '../../data';</script>
+<script src='../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='./'>codebrowser</a>/<a href='CommandLine.h.html'>CommandLine.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * CommandLine.h</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> *  Created on: 2010. 12. 9.</i></td></tr>
+<tr><th id="5">5</th><td><i> *      Author: Jehoon Shin(Revolution)</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> *  Copyright(c) 2010-Present ESTsoft Corp. All rights reserved.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> *  For conditions of distribution and use, see copyright notice in license.txt</i></td></tr>
+<tr><th id="10">10</th><td><i> */</i></td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td><u>#<span data-ppcond="12">ifndef</span> <span class="macro" data-ref="_M/COMMANDLINE_H_">COMMANDLINE_H_</span></u></td></tr>
+<tr><th id="13">13</th><td><u>#define <dfn class="macro" id="_M/COMMANDLINE_H_" data-ref="_M/COMMANDLINE_H_">COMMANDLINE_H_</dfn></u></td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><u>#include <a href="../include/c++/7/set.html">&lt;set&gt;</a></u></td></tr>
+<tr><th id="16">16</th><td><u>#include <a href="../include/c++/7/vector.html">&lt;vector&gt;</a></u></td></tr>
+<tr><th id="17">17</th><td><u>#include <a href="../include/c++/7/string.html">&lt;string&gt;</a></u></td></tr>
+<tr><th id="18">18</th><td></td></tr>
+<tr><th id="19">19</th><td><b>class</b> <dfn class="type def" id="CommandLine" title='CommandLine' data-ref="CommandLine">CommandLine</dfn></td></tr>
+<tr><th id="20">20</th><td>{</td></tr>
+<tr><th id="21">21</th><td><b>public</b>:</td></tr>
+<tr><th id="22">22</th><td>    <a class="decl" href="CommandLine.cpp.html#_ZN11CommandLineC1EiPPc" title='CommandLine::CommandLine' data-ref="_ZN11CommandLineC1EiPPc" id="_ZN11CommandLineC1EiPPc">CommandLine</a>(<em>int</em> <dfn class="local col6 decl" id="2686argc" title='argc' data-type='int' data-ref="2686argc">argc</dfn>, <em>char</em>* <dfn class="local col7 decl" id="2687argv" title='argv' data-type='char **' data-ref="2687argv">argv</dfn>[]);</td></tr>
+<tr><th id="23">23</th><td>    <b>virtual</b> <a class="virtual decl" href="CommandLine.cpp.html#_ZN11CommandLineD1Ev" title='CommandLine::~CommandLine' data-ref="_ZN11CommandLineD1Ev" id="_ZN11CommandLineD1Ev">~CommandLine</a>();</td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td>    <em>bool</em> <a class="decl" href="CommandLine.cpp.html#_ZN11CommandLine13CommandExistsEPKc" title='CommandLine::CommandExists' data-ref="_ZN11CommandLine13CommandExistsEPKc" id="_ZN11CommandLine13CommandExistsEPKc">CommandExists</a>(<em>const</em> <em>char</em>* <dfn class="local col8 decl" id="2688c" title='c' data-type='const char *' data-ref="2688c">c</dfn>);</td></tr>
+<tr><th id="26">26</th><td>    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <a class="decl" href="CommandLine.cpp.html#_ZN11CommandLine15GetCommandCountEv" title='CommandLine::GetCommandCount' data-ref="_ZN11CommandLine15GetCommandCountEv" id="_ZN11CommandLine15GetCommandCountEv">GetCommandCount</a>();</td></tr>
+<tr><th id="27">27</th><td>    <span class="namespace">std::</span><a class="type" href="../include/c++/7/bits/stl_set.h.html#std::set" title='std::set' data-ref="std::set">set</a>&lt;<span class="namespace">std::</span><a class="typedef" href="../include/c++/7/bits/stringfwd.h.html#std::__cxx11::string" title='std::__cxx11::string' data-type='basic_string&lt;char&gt;' data-ref="std::__cxx11::string">string</a>&gt;&amp; <a class="decl" href="CommandLine.cpp.html#_ZN11CommandLine11GetCommandsEv" title='CommandLine::GetCommands' data-ref="_ZN11CommandLine11GetCommandsEv" id="_ZN11CommandLine11GetCommandsEv">GetCommands</a>();</td></tr>
+<tr><th id="28">28</th><td>    <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <a class="decl" href="CommandLine.cpp.html#_ZN11CommandLine16GetArgumentCountEv" title='CommandLine::GetArgumentCount' data-ref="_ZN11CommandLine16GetArgumentCountEv" id="_ZN11CommandLine16GetArgumentCountEv">GetArgumentCount</a>();</td></tr>
+<tr><th id="29">29</th><td>    <em>const</em> <em>char</em>* <a class="decl" href="CommandLine.cpp.html#_ZN11CommandLine11GetArgumentEm" title='CommandLine::GetArgument' data-ref="_ZN11CommandLine11GetArgumentEm" id="_ZN11CommandLine11GetArgumentEm">GetArgument</a>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col9 decl" id="2689index" title='index' data-type='size_t' data-ref="2689index">index</dfn>);</td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><b>protected</b>:</td></tr>
+<tr><th id="32">32</th><td>    <em>void</em> <a class="decl" href="CommandLine.cpp.html#_ZN11CommandLine16ParseCommandlineEiPPc" title='CommandLine::ParseCommandline' data-ref="_ZN11CommandLine16ParseCommandlineEiPPc" id="_ZN11CommandLine16ParseCommandlineEiPPc">ParseCommandline</a>(<em>int</em> <dfn class="local col0 decl" id="2690argc" title='argc' data-type='int' data-ref="2690argc">argc</dfn>, <em>char</em>* <dfn class="local col1 decl" id="2691argv" title='argv' data-type='char **' data-ref="2691argv">argv</dfn>[]);</td></tr>
+<tr><th id="33">33</th><td></td></tr>
+<tr><th id="34">34</th><td><b>private</b>:</td></tr>
+<tr><th id="35">35</th><td>    <span class="namespace">std::</span><a class="type" href="../include/c++/7/bits/stl_set.h.html#std::set" title='std::set' data-ref="std::set">set</a>&lt;<span class="namespace">std::</span><a class="typedef" href="../include/c++/7/bits/stringfwd.h.html#std::__cxx11::string" title='std::__cxx11::string' data-type='basic_string&lt;char&gt;' data-ref="std::__cxx11::string">string</a>&gt; <dfn class="decl" id="CommandLine::commands_" title='CommandLine::commands_' data-ref="CommandLine::commands_">commands_</dfn>;</td></tr>
+<tr><th id="36">36</th><td>    <span class="namespace">std::</span><a class="type" href="../include/c++/7/bits/stl_vector.h.html#std::vector" title='std::vector' data-ref="std::vector">vector</a>&lt;<span class="namespace">std::</span><a class="typedef" href="../include/c++/7/bits/stringfwd.h.html#std::__cxx11::string" title='std::__cxx11::string' data-type='basic_string&lt;char&gt;' data-ref="std::__cxx11::string">string</a>&gt; <dfn class="decl" id="CommandLine::args_" title='CommandLine::args_' data-ref="CommandLine::args_">args_</dfn>;</td></tr>
+<tr><th id="37">37</th><td>};</td></tr>
+<tr><th id="38">38</th><td></td></tr>
+<tr><th id="39">39</th><td><u>#<span data-ppcond="12">endif</span> /* COMMANDLINE_H_ */</u></td></tr>
+<tr><th id="40">40</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='CommandLine.cpp.html'>codebrowser/CommandLine.cpp</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

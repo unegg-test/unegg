@@ -1,0 +1,16 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='115'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='255' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='259' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='260' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='261' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='263' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='404' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='406' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='407' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='408' u='c'/>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='113'>/*-- Constants for the back end. --*/</doc>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/huffman.c' l='75' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/huffman.c' l='76' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/huffman.c' l='77' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/huffman.c' l='98' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/huffman.c' l='112' u='c'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='16' type='gzFile gz_open(const char * , int , const char * )'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='87' ll='193' macro='1' type='gzFile gz_open(const char * path, int fd, const char * mode)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='200' u='c' c='gzopen'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='208' u='c' c='gzopen64'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='222' u='c' c='gzdopen'/>

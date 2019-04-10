@@ -1,0 +1,29 @@
+<dec f='include/assert.h' l='69' type='void __assert_fail(const char * __assertion, const char * __file, unsigned int __line, const char * __function)'/>
+<doc f='include/assert.h' l='68'>/* This prints an &quot;Assertion failed&quot; message and aborts.  */</doc>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='683' macro='1' u='c'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='698' macro='1' u='c'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='716' macro='1' u='c'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='738' macro='1' u='c'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='753' macro='1' u='c'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='421' macro='1' u='c'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='1007' macro='1' u='c'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='1029' macro='1' u='c'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='1056' macro='1' u='c'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='1083' macro='1' u='c'/>
+<use f='codebrowser/nest/format/egg/BlockWrap.cpp' l='72' macro='1' u='c'/>
+<use f='codebrowser/nest/format/egg/BlockWrap.cpp' l='89' macro='1' u='c'/>
+<use f='codebrowser/nest/format/egg/BlockWrap.cpp' l='106' macro='1' u='c'/>
+<use f='codebrowser/nest/format/egg/BlockWrap.cpp' l='123' macro='1' u='c'/>
+<use f='codebrowser/nest/format/egg/BlockWrap.cpp' l='140' macro='1' u='c'/>
+<use f='codebrowser/nest/format/egg/BlockWrap.cpp' l='157' macro='1' u='c'/>
+<use f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='51' macro='1' u='c'/>
+<use f='codebrowser/nest/format/egg/FileWrap.cpp' l='112' macro='1' u='c'/>
+<use f='codebrowser/nest/format/egg/FileWrap.cpp' l='144' macro='1' u='c'/>
+<use f='codebrowser/nest/format/egg/FileWrap.cpp' l='163' macro='1' u='c'/>
+<use f='codebrowser/nest/format/egg/FileWrap.cpp' l='185' macro='1' u='c'/>
+<use f='codebrowser/nest/format/egg/FileWrap.cpp' l='202' macro='1' u='c'/>
+<use f='codebrowser/nest/format/egg/FileWrap.cpp' l='221' macro='1' u='c'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='45' macro='1' u='c'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='76' macro='1' u='c'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='83' macro='1' u='c'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='110' macro='1' u='c'/>

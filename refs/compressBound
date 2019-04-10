@@ -1,0 +1,6 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='1132' type='uLong compressBound(uLong sourceLen)'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/compress.c' l='75' ll='80' type='uLong compressBound(uLong sourceLen)'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/compress.c' l='71'>/* ===========================================================================
+     If the default memLevel or windowBits for deflateInit() is changed, then
+   this function needs to be updated.
+ */</doc>

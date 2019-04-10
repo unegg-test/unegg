@@ -1,0 +1,12 @@
+<dec f='include/string.h' l='394' type='size_t strlen(const char * __s)'/>
+<doc f='include/string.h' l='393'>/* Return the length of S.  */</doc>
+<use f='codebrowser/EventHandler.cpp' l='299' u='c' c='_ZN12EventHandler15OnQueryPasswordEmPcmm'/>
+<use f='codebrowser/nest/Utils.cpp' l='78' u='c' c='_ZN4nest4utf87strsizeEPKc'/>
+<use f='codebrowser/nest/Utils.cpp' l='215' u='c' c='_ZN4nest4utf810euckr2utf8EPKcPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<use f='codebrowser/nest/Utils.cpp' l='370' u='c' c='_ZN4nest4utf813path_ellipsisEPcmmPKc'/>
+<use f='codebrowser/nest/encryption/AESDecoder.cpp' l='34' u='c' c='_ZN4nest10AESDecoder12OnPreprocessEPKcPKv'/>
+<use f='codebrowser/nest/encryption/ZipDecoder.cpp' l='38' u='c' c='_ZN4nest10ZipDecoder8InitKeysEPKc'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='151' u='c' c='gz_open'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='509' u='c' c='gz_error'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='509' u='c' c='gz_error'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='272' u='c' c='gzputs'/>

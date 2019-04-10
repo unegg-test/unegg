@@ -1,0 +1,7 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='85' type='void putShortMSB(deflate_state * s, uInt b)'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='548' ll='554' macro='1' type='void putShortMSB(deflate_state * s, uInt b)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='671' u='c' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='675' u='c' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='676' u='c' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='883' u='c' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='884' u='c' c='deflate'/>

@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/format/ALZFormat.h' l='54' type='void nest::ALZFormat::GenerateCoder(int method, nest::Coder ** coder, size_t * dataHeaderSize)'/>
+<def f='codebrowser/nest/format/ALZFormat.cpp' l='490' ll='506' type='void nest::ALZFormat::GenerateCoder(int method, nest::Coder ** coder, size_t * dataHeaderSize)'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='538' u='c' c='_ZN4nest9ALZFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>

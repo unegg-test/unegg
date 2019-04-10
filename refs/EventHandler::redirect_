@@ -1,0 +1,6 @@
+<dec f='codebrowser/EventHandler.h' l='62' type='bool'/>
+<use f='codebrowser/EventHandler.cpp' l='22' u='w' c='_ZN12EventHandlerC1EP7winsize'/>
+<use f='codebrowser/EventHandler.cpp' l='40' u='w' c='_ZN12EventHandler11SetRedirectEb'/>
+<use f='codebrowser/EventHandler.cpp' l='129' u='r' c='_ZN12EventHandler11OnFileStartEm'/>
+<use f='codebrowser/EventHandler.cpp' l='318' u='r' c='_ZN12EventHandler10OnProgressEmii'/>
+<offset>96</offset>

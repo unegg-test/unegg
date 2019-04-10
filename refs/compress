@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='1102' type='int compress(Bytef * dest, uLongf * destLen, const Bytef * source, uLong sourceLen)'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/compress.c' l='62' ll='69' type='int compress(Bytef * dest, uLongf * destLen, const Bytef * source, uLong sourceLen)'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/compress.c' l='60'>/* ===========================================================================
+ */</doc>

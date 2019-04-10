@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/7zBuf.h' l='33' type='int DynBuf_Write(CDynBuf * p, const Byte * buf, size_t size, ISzAlloc * alloc)'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/7zBuf2.c' l='19' ll='37' type='int DynBuf_Write(CDynBuf * p, const Byte * buf, size_t size, ISzAlloc * alloc)'/>

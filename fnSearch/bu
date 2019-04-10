@@ -1,0 +1,17 @@
+_ZN3AZO9BufferMan3AddEPKhj|AZO::BufferMan::Add
+_ZN3AZO9BufferMan5AheadEj|AZO::BufferMan::Ahead
+_ZN3AZO9BufferManC1Ev|AZO::BufferMan::BufferMan
+_ZN3AZO9BufferMan8CapacityEj|AZO::BufferMan::Capacity
+_ZN3AZO9BufferMan5ClearEv|AZO::BufferMan::Clear
+_ZN3AZO9BufferMan3GetEPhj|AZO::BufferMan::Get
+_ZN3AZO9BufferMan9GetBufPtrEv|AZO::BufferMan::GetBufPtr
+_ZN3AZO9BufferMan13GetRemainSizeEv|AZO::BufferMan::GetRemainSize
+_ZN3AZO9BufferMan7GetSizeEv|AZO::BufferMan::GetSize
+_ZN3AZO9BufferMan10GetUseSizeEv|AZO::BufferMan::GetUseSize
+_ZN3AZO9BufferMan6RemoveEj|AZO::BufferMan::Remove
+_ZN3AZO9BufferManD1Ev|AZO::BufferMan::~BufferMan
+Buf_Create|Buf_Create
+Buf_Free|Buf_Free
+Buf_Init|Buf_Init
+build_bl_tree|build_bl_tree
+build_tree|build_tree

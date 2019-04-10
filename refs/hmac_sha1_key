@@ -1,0 +1,6 @@
+<dec f='codebrowser/nest/third-party/encryption/aes/hmac.h' l='63' type='int hmac_sha1_key(const unsigned char * key, unsigned int key_len, hmac_ctx * cx)'/>
+<use f='codebrowser/nest/third-party/encryption/aes/fileenc.c' l='108' u='c' c='fcrypt_init'/>
+<def f='codebrowser/nest/third-party/encryption/aes/hmac.c' l='50' ll='70' type='int hmac_sha1_key(const unsigned char * key, unsigned int key_len, hmac_ctx * cx)'/>
+<use f='codebrowser/nest/third-party/encryption/aes/hmac.c' l='138' u='c' c='hmac_sha1'/>
+<doc f='codebrowser/nest/third-party/encryption/aes/hmac.c' l='49'>/* input the HMAC key (can be called multiple times)    */</doc>
+<use f='codebrowser/nest/third-party/encryption/aes/pwd2key.c' l='59' u='c' c='derive_key'/>

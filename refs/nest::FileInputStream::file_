@@ -1,0 +1,12 @@
+<dec f='codebrowser/nest/stream/FileInputStream.h' l='36' type='FILE *'/>
+<offset>320</offset>
+<use f='codebrowser/nest/stream/FileInputStream.cpp' l='18' u='w' c='_ZN4nest15FileInputStreamC1Ev'/>
+<use f='codebrowser/nest/stream/FileInputStream.cpp' l='34' u='w' c='_ZN4nest15FileInputStream4OpenEv'/>
+<use f='codebrowser/nest/stream/FileInputStream.cpp' l='35' u='r' c='_ZN4nest15FileInputStream4OpenEv'/>
+<use f='codebrowser/nest/stream/FileInputStream.cpp' l='40' u='r' c='_ZN4nest15FileInputStream4OpenEv'/>
+<use f='codebrowser/nest/stream/FileInputStream.cpp' l='45' u='r' c='_ZN4nest15FileInputStream5CloseEv'/>
+<use f='codebrowser/nest/stream/FileInputStream.cpp' l='47' u='r' c='_ZN4nest15FileInputStream5CloseEv'/>
+<use f='codebrowser/nest/stream/FileInputStream.cpp' l='48' u='w' c='_ZN4nest15FileInputStream5CloseEv'/>
+<use f='codebrowser/nest/stream/FileInputStream.cpp' l='54' u='r' c='_ZN4nest15FileInputStream4SeekEyi'/>
+<use f='codebrowser/nest/stream/FileInputStream.cpp' l='59' u='r' c='_ZN4nest15FileInputStream4TellEv'/>
+<use f='codebrowser/nest/stream/FileInputStream.cpp' l='64' u='r' c='_ZN4nest15FileInputStream4ReadEPvm'/>

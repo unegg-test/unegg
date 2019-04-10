@@ -1,0 +1,15 @@
+<dec f='codebrowser/nest/format/Header.h' l='33' type='void nest::Header::Clear()'/>
+<def f='codebrowser/nest/format/Header.cpp' l='29' ll='33' type='void nest::Header::Clear()'/>
+<use f='codebrowser/nest/format/Header.cpp' l='37' u='c' c='_ZN4nest6Header4ReadEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/egg/Block.cpp' l='30' u='c' c='_ZN4nest3egg5BlockD1Ev'/>
+<use f='codebrowser/nest/format/egg/BlockWrap.cpp' l='28' u='c' c='_ZN4nest3egg9BlockWrapD1Ev'/>
+<use f='codebrowser/nest/format/egg/BlockWrap.cpp' l='33' u='c' c='_ZN4nest3egg9BlockWrap9OnCleanUpEv'/>
+<use f='codebrowser/nest/format/egg/BlockWrap.cpp' l='34' u='c' c='_ZN4nest3egg9BlockWrap9OnCleanUpEv'/>
+<use f='codebrowser/nest/format/egg/Dummy.cpp' l='28' u='c' c='_ZN4nest3egg5DummyD1Ev'/>
+<use f='codebrowser/nest/format/egg/ExtraField.cpp' l='30' u='c' c='_ZN4nest3egg10ExtraFieldD1Ev'/>
+<use f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='37' u='c' c='_ZN4nest3egg14ExtraFieldWrapD1Ev'/>
+<use f='codebrowser/nest/format/egg/File.cpp' l='29' u='c' c='_ZN4nest3egg4FileD1Ev'/>
+<use f='codebrowser/nest/format/egg/FileWrap.cpp' l='30' u='c' c='_ZN4nest3egg8FileWrapD1Ev'/>
+<use f='codebrowser/nest/format/egg/FileWrap.cpp' l='35' u='c' c='_ZN4nest3egg8FileWrap9OnCleanUpEv'/>
+<use f='codebrowser/nest/format/egg/FileWrap.cpp' l='36' u='c' c='_ZN4nest3egg8FileWrap9OnCleanUpEv'/>
+<use f='codebrowser/nest/format/egg/Global.cpp' l='29' u='c' c='_ZN4nest3egg6GlobalD1Ev'/>

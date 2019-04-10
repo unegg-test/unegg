@@ -1,0 +1,4 @@
+<def f='include/c++/7/bits/stl_algobase.h' l='621' ll='635' type='_BI2 std::copy_backward(_BI1 __first, _BI1 __last, _BI2 __result)'/>
+<dec f='include/c++/7/bits/algorithmfwd.h' l='230' type='_BIter2 std::copy_backward(_BIter1 , _BIter1 , _BIter2 )'/>
+<use f='codebrowser/nest/algorithm/azo/Base/DictionaryTableB.cpp' l='21' u='c' c='_ZN3AZO4Base15DictionaryTable6UpdateEjj'/>
+<use f='codebrowser/nest/algorithm/azo/Base/DictionaryTableB.cpp' l='30' u='c' c='_ZN3AZO4Base15DictionaryTable6UpdateEjjj'/>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.h' l='25' type='int'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='49' u='w' c='LzmaEncProps_Init'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='67' u='r' c='LzmaEncProps_Normalize'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='68' u='w' c='LzmaEncProps_Normalize'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='72' u='r' c='LzmaEncProps_Normalize'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='414' u='r' c='LzmaEnc_SetProps'/>
+<offset>160</offset>
+<doc f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.h' l='25'>/* 0 - fast, 1 - normal, default = 1 */</doc>

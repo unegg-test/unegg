@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/algorithm/azo/Decoder/BitCodeD.h' l='34' type='bool AZO::Decoder::BitCode::Code(bool &amp; v)'/>
+<def f='codebrowser/nest/algorithm/azo/Decoder/BitCodeD.cpp' l='83' ll='103' type='bool AZO::Decoder::BitCode::Code(bool &amp; v)'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='32' u='c' c='_ZN3AZO7Decoder11EntropyCode7RescaleEv'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='42' u='c' c='_ZN3AZO7Decoder11EntropyCode7RescaleEv'/>

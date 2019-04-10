@@ -1,0 +1,14 @@
+<inh f='codebrowser/nest/stream/OutputStream.h' l='21' c='nest::OutputStream'/>
+<def f='codebrowser/nest/stream/FileOutputStream.h' l='21' ll='45'/>
+<size>48</size>
+<fun r='_ZN4nest16FileOutputStreamC1Ev'/>
+<fun r='_ZN4nest16FileOutputStreamD1Ev'/>
+<fun r='_ZN4nest16FileOutputStream6CreateEPKc'/>
+<fun r='_ZN4nest16FileOutputStream12CreateFolderEPKc'/>
+<fun r='_ZN4nest16FileOutputStream5CloseEv'/>
+<fun r='_ZN4nest16FileOutputStream8IsOpenedEv'/>
+<fun r='_ZN4nest16FileOutputStream5WriteEPvm'/>
+<fun r='_ZN4nest16FileOutputStream14EnsureFilePathEPKc'/>
+<fun r='_ZN4nest16FileOutputStream14ForceDirectoryEPKc'/>
+<mbr r='nest::FileOutputStream::filename_' o='64' t='std::string'/>
+<mbr r='nest::FileOutputStream::file_' o='320' t='FILE *'/>

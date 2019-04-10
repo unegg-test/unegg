@@ -1,0 +1,26 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zutil.h' l='17'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/zutil.h' l='265' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/zutil.h' l='267' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='293' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='294' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='295' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='297' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='298' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='315' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='316' u='c'/>
+<dec f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='16'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='119' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='485' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inftrees.h' l='60' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inffast.h' l='11' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inffast.c' l='67' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inftrees.c' l='32' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.h' l='73' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.h' l='102' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='386' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='871' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='896' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='925' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='1026' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/zutil.c' l='300' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/zutil.c' l='310' u='c'/>

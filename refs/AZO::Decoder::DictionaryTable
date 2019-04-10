@@ -1,0 +1,12 @@
+<inh f='codebrowser/nest/algorithm/azo/Base/DictionaryTableB.h' l='10' c='AZO::Base::DictionaryTable'/>
+<def f='codebrowser/nest/algorithm/azo/Decoder/DictionaryTableD.h' l='22' ll='37'/>
+<size>3624</size>
+<fun r='_ZN3AZO7Decoder15DictionaryTableC1EPKhj'/>
+<fun r='_ZN3AZO7Decoder15DictionaryTable4CodeERNS0_11EntropyCodeERjS4_'/>
+<fun r='_ZN3AZO7Decoder15DictionaryTable3AddEjj'/>
+<fun r='_ZN3AZO7Decoder15DictionaryTable3GetEjRjS2_'/>
+<mbr r='AZO::Decoder::DictionaryTable::findState_' o='8288' t='BoolState&lt;&gt;'/>
+<mbr r='AZO::Decoder::DictionaryTable::prob_' o='16512' t='SymbolCode&lt;u_int, DICTIONARY_SIZE, DICTIONARY_HISTORY_SIZE&gt;'/>
+<fun r='_ZN3AZO7Decoder15DictionaryTable4CodeERNS0_11EntropyCodeERjS4_'/>
+<fun r='_ZN3AZO7Decoder15DictionaryTable3AddEjj'/>
+<fun r='_ZN3AZO7Decoder15DictionaryTable3GetEjRjS2_'/>

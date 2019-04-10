@@ -1,0 +1,11 @@
+<dec f='codebrowser/nest/stream/InputStreamLinker.h' l='48' type='uint64'/>
+<offset>256</offset>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='93' u='r' c='_ZN4nest17InputStreamLinker4ReadEPvm'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='112' u='r' c='_ZN4nest17InputStreamLinker4SizeEv'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='134' u='r' c='_ZN4nest17InputStreamLinker10PushStreamEPNS_11InputStreamEyy'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='136' u='w' c='_ZN4nest17InputStreamLinker10PushStreamEPNS_11InputStreamEyy'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='171' u='r' c='_ZN4nest17InputStreamLinker13UpdateStreamsEv'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='172' u='w' c='_ZN4nest17InputStreamLinker13UpdateStreamsEv'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='231' u='r' c='_ZN4nest17InputStreamLinker15PositionToIndexEy'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='237' u='r' c='_ZN4nest17InputStreamLinker15PositionToIndexEy'/>
+<use f='codebrowser/nest/stream/InputStreamLinker.cpp' l='242' u='r' c='_ZN4nest17InputStreamLinker15PositionToIndexEy'/>

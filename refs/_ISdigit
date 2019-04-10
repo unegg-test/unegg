@@ -1,0 +1,6 @@
+<dec f='include/ctype.h' l='51' type='2048'/>
+<doc f='include/ctype.h' l='51'>/* Numeric.  */</doc>
+<use f='include/x86_64-linux-gnu/c++/7/bits/ctype_base.h' l='52'/>
+<use f='include/x86_64-linux-gnu/c++/7/bits/ctype_base.h' l='56' u='r'/>
+<use f='include/x86_64-linux-gnu/c++/7/bits/ctype_base.h' l='59' u='r'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1411' macro='1' u='r'/>

@@ -1,0 +1,7 @@
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.h' l='16' u='w' c='_ZN3AZO7Decoder11EntropyCodeC1EPKhj'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.h' l='26' u='m' c='_ZN3AZO7Decoder11EntropyCode7GetSizeEv'/>
+<dec f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.h' l='38' type='AZO::Decoder::BitCode'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='19' u='m' c='_ZN3AZO7Decoder11EntropyCode10InitializeEv'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='32' u='m' c='_ZN3AZO7Decoder11EntropyCode7RescaleEv'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='42' u='m' c='_ZN3AZO7Decoder11EntropyCode7RescaleEv'/>
+<offset>64</offset>

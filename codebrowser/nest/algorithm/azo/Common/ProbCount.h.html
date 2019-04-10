@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ProbCount.h source code [codebrowser/nest/algorithm/azo/Common/ProbCount.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="AZO::ProbCount "/>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/algorithm/azo/Common/ProbCount.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>nest</a>/<a href='../..'>algorithm</a>/<a href='..'>azo</a>/<a href='./'>Common</a>/<a href='ProbCount.h.html'>ProbCount.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/AZO_PROBCOUNT_H">AZO_PROBCOUNT_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/AZO_PROBCOUNT_H" data-ref="_M/AZO_PROBCOUNT_H">AZO_PROBCOUNT_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="AZOPrivate.h.html">"../Common/AZOPrivate.h"</a></u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><b>namespace</b> <span class="namespace">AZO</span> {</td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td><b>template</b> &lt;<a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> N&gt;</td></tr>
+<tr><th id="9">9</th><td><b>struct</b> <dfn class="type def" id="AZO::ProbCount" title='AZO::ProbCount' data-ref="AZO::ProbCount">ProbCount</dfn></td></tr>
+<tr><th id="10">10</th><td>{</td></tr>
+<tr><th id="11">11</th><td>    <a class="decl" href="ProbCount.cpp.html#_ZN3AZO9ProbCountC1Ei" title='AZO::ProbCount::ProbCount&lt;N&gt;' data-ref="_ZN3AZO9ProbCountC1Ei" id="_ZN3AZO9ProbCountC1Ei">ProbCount</a>(<em>int</em> <dfn class="local col1 decl" id="1init" title='init' data-type='int' data-ref="1init">init</dfn> = <var>0</var>);</td></tr>
+<tr><th id="12">12</th><td></td></tr>
+<tr><th id="13">13</th><td>    <a class="typedef" href="AZOType.h.html#AZO::uint32_t" title='AZO::uint32_t' data-type='unsigned int' data-ref="AZO::uint32_t">uint32_t</a> <dfn class="decl" id="AZO::ProbCount::hit" title='AZO::ProbCount::hit' data-ref="AZO::ProbCount::hit">hit</dfn>[<a class="tu ref" href="#AZO::ProbCount::N" title='AZO::ProbCount::N' data-ref="AZO::ProbCount::N">N</a>];</td></tr>
+<tr><th id="14">14</th><td>    <a class="typedef" href="AZOType.h.html#AZO::uint32_t" title='AZO::uint32_t' data-type='unsigned int' data-ref="AZO::uint32_t">uint32_t</a> <dfn class="decl" id="AZO::ProbCount::total" title='AZO::ProbCount::total' data-ref="AZO::ProbCount::total">total</dfn>;</td></tr>
+<tr><th id="15">15</th><td></td></tr>
+<tr><th id="16">16</th><td><b>private</b>:</td></tr>
+<tr><th id="17">17</th><td>    <b>template</b> &lt;<b>typename</b> T&gt;</td></tr>
+<tr><th id="18">18</th><td>    <em>void</em> <a class="decl" href="ProbCount.cpp.html#_ZN3AZO9ProbCount9IncreProbERKT_i" title='AZO::ProbCount::IncreProb' data-ref="_ZN3AZO9ProbCount9IncreProbERKT_i" id="_ZN3AZO9ProbCount9IncreProbERKT_i">IncreProb</a>(<em>const</em> T&amp; <dfn class="local col2 decl" id="2value" title='value' data-type='const T &amp;' data-ref="2value">value</dfn>, <em>int</em> <dfn class="local col3 decl" id="3count" title='count' data-type='int' data-ref="3count">count</dfn> = <var>1</var>);</td></tr>
+<tr><th id="19">19</th><td>};</td></tr>
+<tr><th id="20">20</th><td></td></tr>
+<tr><th id="21">21</th><td>} <i>//namespaces AZO</i></td></tr>
+<tr><th id="22">22</th><td></td></tr>
+<tr><th id="23">23</th><td><u>#include <a href="ProbCount.cpp.html">"ProbCount.cpp"</a></u></td></tr>
+<tr><th id="24">24</th><td></td></tr>
+<tr><th id="25">25</th><td><u>#<span data-ppcond="1">endif</span> /*AZO_PROBCOUNT_H*/</u></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../Base/EntropyBitProbB.cpp.html'>codebrowser/nest/algorithm/azo/Base/EntropyBitProbB.cpp</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

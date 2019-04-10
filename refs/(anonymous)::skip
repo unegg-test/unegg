@@ -1,0 +1,14 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='108' type='long'/>
+<offset>768</offset>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='303' u='r' c='gzseek64'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='345' u='w' c='gzseek64'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='376' u='r' c='gztell64'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='396' u='r' c='gzread'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='501' u='r' c='gzungetc'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='562' u='r' c='gzgets'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='181' u='r' c='gzwrite'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='242' u='r' c='gzputc'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='305' u='r' c='gzprintf'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='448' u='r' c='gzflush'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='483' u='r' c='gzsetparams'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='518' u='r' c='gzclose_w'/>

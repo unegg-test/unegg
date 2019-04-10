@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/format/egg/FileWrap.h' l='67' type='size_t nest::egg::FileWrap::_AsSize(unsigned int key, bool * handled)'/>
+<inh f='codebrowser/nest/Info.h' l='40' c='_ZN4nest4Info7_AsSizeEjPb'/>
+<def f='codebrowser/nest/format/egg/FileWrap.cpp' l='149' ll='166' type='size_t nest::egg::FileWrap::_AsSize(unsigned int key, bool * handled)'/>

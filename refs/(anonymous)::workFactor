@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='222' type='Int32'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/blocksort.c' l='1038' u='r' c='BZ2_blockSort'/>
+<offset>704</offset>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='221'>/* for deciding when to use the fallback sorting algorithm */</doc>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='196' u='w' c='BZ2_bzCompressInit'/>

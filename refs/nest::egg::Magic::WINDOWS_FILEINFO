@@ -1,0 +1,5 @@
+<def f='codebrowser/nest/format/egg/EggTypes.h' l='33' type='const int'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='458' u='r' c='_ZN4nest9EggFormat11IsTargetDirEPNS_3egg8FileWrapE'/>
+<use f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='68' u='r' c='_ZN4nest3egg14ExtraFieldWrap6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='98' u='r' c='_ZN4nest3egg14ExtraFieldWrap9_As4BytesEjPb'/>
+<use f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='159' u='r' c='_ZN4nest3egg14ExtraFieldWrap9_As8BytesEjPb'/>

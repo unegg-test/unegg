@@ -1,0 +1,29 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='973' type='int inflateBack(z_streamp strm, in_func in, void * in_desc, out_func out, void * out_desc)'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='241' ll='621' type='int inflateBack(z_streamp strm, in_func in, void * in_desc, out_func out, void * out_desc)'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='214'>/*
+   strm provides the memory allocation functions and window buffer on input,
+   and provides information on the unused input on return.  For Z_DATA_ERROR
+   returns, strm will also provide an error message.
+
+   in() and out() are the call-back input and output functions.  When
+   inflateBack() needs more input, it calls in().  When inflateBack() has
+   filled the window with output, or when it completes with data in the
+   window, it calls out() to write out the data.  The application must not
+   change the provided input until in() is called again or inflateBack()
+   returns.  The application must not change the window/output buffer until
+   inflateBack() returns.
+
+   in() and out() are called with a descriptor parameter provided in the
+   inflateBack() call.  This parameter can be a structure that provides the
+   information required to do the read or write, as well as accumulated
+   information on the input and output such as totals and check values.
+
+   in() should return zero on failure.  out() should return non-zero on
+   failure.  If either in() or out() fails, than inflateBack() returns a
+   Z_BUF_ERROR.  strm-&gt;next_in can be checked for Z_NULL to see whether it
+   was in() or out() that caused in the error.  Otherwise,  inflateBack()
+   returns Z_STREAM_END on success, Z_DATA_ERROR for an deflate format
+   error, or Z_MEM_ERROR if it could not allocate memory for the state.
+   inflateBack() can also return Z_STREAM_ERROR if the input parameters
+   are not correct, i.e. strm is Z_NULL or the state was not initialized.
+ */</doc>

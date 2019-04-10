@@ -1,0 +1,2 @@
+<def f='codebrowser/nest/format/egg/FileWrap.h' l='40' ll='43' type='nest::egg::ExtraFieldWrap &amp; nest::egg::FileWrap::GetExtras()'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='747' u='c' c='_ZN4nest9EggFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>

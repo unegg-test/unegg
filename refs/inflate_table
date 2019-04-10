@@ -1,0 +1,20 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/inftrees.h' l='60' type='int inflate_table(codetype type, unsigned short * lens, unsigned int codes, code ** table, unsigned int * bits, unsigned short * work)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='379' u='c' c='inflateBack'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='454' u='c' c='inflateBack'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='463' u='c' c='inflateBack'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='910' u='c' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='985' u='c' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='994' u='c' c='inflate'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/inftrees.c' l='32' ll='330' type='int inflate_table(codetype type, unsigned short * lens, unsigned int codes, code ** table, unsigned int * bits, unsigned short * work)'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/inftrees.c' l='20'>/*
+   Build a set of tables to decode the provided canonical Huffman code.
+   The code lengths are lens[0..codes-1].  The result starts at *table,
+   whose indices are 0..2^bits-1.  work is a writable array of at least
+   lens shorts, which is used as a work area.  type is the type of code
+   to be generated, CODES, LENS, or DISTS.  On return, zero is success,
+   -1 is an invalid code, and +1 means that ENOUGH isn&apos;t enough.  table
+   on return points to the next available entry&apos;s address.  bits is the
+   requested root table index bits, and on return it is the actual root
+   table index bits.  It will differ if the request is greater than the
+   longest code or if it is less than the shortest code.
+ */</doc>

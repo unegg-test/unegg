@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>HistoryListB.h source code [codebrowser/nest/algorithm/azo/Base/HistoryListB.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="AZO::Base::HistoryList "/>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/algorithm/azo/Base/HistoryListB.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>nest</a>/<a href='../..'>algorithm</a>/<a href='..'>azo</a>/<a href='./'>Base</a>/<a href='HistoryListB.h.html'>HistoryListB.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/AZO_BASE_HISTORYLIST_H">AZO_BASE_HISTORYLIST_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/AZO_BASE_HISTORYLIST_H" data-ref="_M/AZO_BASE_HISTORYLIST_H">AZO_BASE_HISTORYLIST_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="../Common/AZOPrivate.h.html">"../Common/AZOPrivate.h"</a></u></td></tr>
+<tr><th id="5">5</th><td></td></tr>
+<tr><th id="6">6</th><td><b>namespace</b> <span class="namespace">AZO</span> {</td></tr>
+<tr><th id="7">7</th><td><b>namespace</b> <span class="namespace">Base</span> {</td></tr>
+<tr><th id="8">8</th><td></td></tr>
+<tr><th id="9">9</th><td><b>template</b> &lt;<b>typename</b> T, <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> N&gt;</td></tr>
+<tr><th id="10">10</th><td><b>class</b> <dfn class="type def" id="AZO::Base::HistoryList" title='AZO::Base::HistoryList' data-ref="AZO::Base::HistoryList">HistoryList</dfn></td></tr>
+<tr><th id="11">11</th><td>{</td></tr>
+<tr><th id="12">12</th><td><b>public</b>:</td></tr>
+<tr><th id="13">13</th><td>    <a class="decl" href="HistoryListB.cpp.html#_ZN3AZO4Base11HistoryListC1ET_" title='AZO::Base::HistoryList::HistoryList&lt;T, N&gt;' data-ref="_ZN3AZO4Base11HistoryListC1ET_" id="_ZN3AZO4Base11HistoryListC1ET_">HistoryList</a>(T <dfn class="local col1 decl" id="1init" title='init' data-type='T' data-ref="1init">init</dfn>);</td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td>    <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <dfn class="decl def" id="_ZN3AZO4Base11HistoryList4SizeEv" title='AZO::Base::HistoryList::Size' data-ref="_ZN3AZO4Base11HistoryList4SizeEv">Size</dfn>() { <b>return</b> <a class="tu member" href="#AZO::Base::HistoryList::N" title='AZO::Base::HistoryList::N' data-use='r' data-ref="AZO::Base::HistoryList::N">N</a>; }</td></tr>
+<tr><th id="16">16</th><td></td></tr>
+<tr><th id="17">17</th><td>    <em>void</em> <a class="decl" href="HistoryListB.cpp.html#_ZN3AZO4Base11HistoryList3AddERKT_" title='AZO::Base::HistoryList::Add' data-ref="_ZN3AZO4Base11HistoryList3AddERKT_" id="_ZN3AZO4Base11HistoryList3AddERKT_">Add</a>(<em>const</em> T&amp; <dfn class="local col2 decl" id="2value" title='value' data-type='const T &amp;' data-ref="2value">value</dfn>);</td></tr>
+<tr><th id="18">18</th><td>    <em>void</em> <a class="decl" href="HistoryListB.cpp.html#_ZN3AZO4Base11HistoryList3AddERKT_j" title='AZO::Base::HistoryList::Add' data-ref="_ZN3AZO4Base11HistoryList3AddERKT_j" id="_ZN3AZO4Base11HistoryList3AddERKT_j">Add</a>(<em>const</em> T&amp; <dfn class="local col3 decl" id="3value" title='value' data-type='const T &amp;' data-ref="3value">value</dfn>, <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <dfn class="local col4 decl" id="4delIdx" title='delIdx' data-type='u_int' data-ref="4delIdx">delIdx</dfn>);</td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><b>protected</b>:</td></tr>
+<tr><th id="21">21</th><td>    T <dfn class="decl" id="AZO::Base::HistoryList::rep_" title='AZO::Base::HistoryList::rep_' data-ref="AZO::Base::HistoryList::rep_">rep_</dfn>[<a class="tu ref" href="#AZO::Base::HistoryList::N" title='AZO::Base::HistoryList::N' data-ref="AZO::Base::HistoryList::N">N</a>];</td></tr>
+<tr><th id="22">22</th><td>};</td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td>} <i>//namespaces Base</i></td></tr>
+<tr><th id="25">25</th><td>} <i>//namespaces AZO</i></td></tr>
+<tr><th id="26">26</th><td></td></tr>
+<tr><th id="27">27</th><td><u>#include <a href="HistoryListB.cpp.html">"HistoryListB.cpp"</a></u></td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><u>#<span data-ppcond="1">endif</span> /*AZO_BASE_HISTORYLIST_H*/</u></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='HistoryListB.cpp.html'>codebrowser/nest/algorithm/azo/Base/HistoryListB.cpp</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

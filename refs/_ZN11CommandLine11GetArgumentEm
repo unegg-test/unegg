@@ -1,0 +1,5 @@
+<dec f='codebrowser/CommandLine.h' l='29' type='const char * CommandLine::GetArgument(size_t index)'/>
+<def f='codebrowser/CommandLine.cpp' l='61' ll='64' type='const char * CommandLine::GetArgument(size_t index)'/>
+<use f='codebrowser/UnEgg.cpp' l='285' u='c' c='_Z14ExtractArchiveR11CommandLine'/>
+<use f='codebrowser/UnEgg.cpp' l='298' u='c' c='_Z14ExtractArchiveR11CommandLine'/>
+<use f='codebrowser/UnEgg.cpp' l='332' u='c' c='_Z18ProcessCommandlineR11CommandLine'/>

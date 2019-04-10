@@ -1,0 +1,51 @@
+<inh f='codebrowser/nest/format/Format.h' l='23' c='nest::Format'/>
+<inh f='codebrowser/nest/Info.h' l='20' c='nest::Info'/>
+<def f='codebrowser/nest/format/ALZFormat.h' l='28' ll='105'/>
+<size>248</size>
+<fun r='_ZN4nest9ALZFormatC1Ev'/>
+<fun r='_ZN4nest9ALZFormatC1EPNS_6EventsE'/>
+<fun r='_ZN4nest9ALZFormatD1Ev'/>
+<fun r='_ZN4nest9ALZFormat4OpenEPNS_11InputStreamE'/>
+<fun r='_ZN4nest9ALZFormat5CloseEv'/>
+<fun r='_ZN4nest9ALZFormat11CheckHeaderEPNS_11InputStreamE'/>
+<fun r='_ZN4nest9ALZFormat4ScanEv'/>
+<fun r='_ZN4nest9ALZFormat7ExtractEv'/>
+<fun r='_ZN4nest9ALZFormat14GetInputStreamEv'/>
+<fun r='_ZN4nest9ALZFormat7GetInfoEv'/>
+<fun r='_ZN4nest9ALZFormat19CheckHeaderInternalEPNS_11InputStreamEPNS_3alz6GlobalE'/>
+<fun r='_ZN4nest9ALZFormat9ScanFilesEv'/>
+<fun r='_ZN4nest9ALZFormat11ScanFootersEv'/>
+<fun r='_ZN4nest9ALZFormat18GenerateVolumeNameEmPcm'/>
+<fun r='_ZN4nest9ALZFormat21PrepareSpannedStreamsEv'/>
+<fun r='_ZN4nest9ALZFormat18QueryExtractStreamEmPPNS_12OutputStreamE'/>
+<fun r='_ZN4nest9ALZFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>
+<fun r='_ZN4nest9ALZFormat11IsTargetDirEPNS_3alz4FileE'/>
+<fun r='_ZN4nest9ALZFormat17PreprocessDecryptEmPNS_3alz4FileE'/>
+<fun r='_ZN4nest9ALZFormat18PostprocessDecryptEmPNS_3alz4FileE'/>
+<fun r='_ZN4nest9ALZFormat13GenerateCoderEiPPNS_5CoderEPm'/>
+<fun r='_ZN4nest9ALZFormat9_As4BytesEjPb'/>
+<fun r='_ZN4nest9ALZFormat9_As8BytesEjPb'/>
+<fun r='_ZN4nest9ALZFormat7_AsSizeEjPb'/>
+<fun r='_ZN4nest9ALZFormat6_AsPtrEjPb'/>
+<fun r='_ZN4nest9ALZFormat7_AsInfoEjPb'/>
+<fun r='_ZN4nest9ALZFormat12_AsChildInfoEjmPb'/>
+<fun r='_ZN4nest9ALZFormat10InitializeEPNS_9WorkspaceE'/>
+<fun r='_ZN4nest9ALZFormat8FinalizeEi'/>
+<fun r='_ZN4nest9ALZFormat11OnWorkStartEi'/>
+<fun r='_ZN4nest9ALZFormat12OnWorkFinishEii'/>
+<fun r='_ZN4nest9ALZFormat11OnFileStartEm'/>
+<fun r='_ZN4nest9ALZFormat12OnFileFinishEmi'/>
+<fun r='_ZN4nest9ALZFormat7OnErrorEmi'/>
+<fun r='_ZN4nest9ALZFormat18OnQueryInputStreamEmPPNS_11InputStreamEPKcm'/>
+<fun r='_ZN4nest9ALZFormat19OnQueryOutputStreamEmPPNS_12OutputStreamEPKc'/>
+<fun r='_ZN4nest9ALZFormat15OnQueryPasswordEmPcmm'/>
+<fun r='_ZN4nest9ALZFormat10OnProgressEmii'/>
+<mbr r='nest::ALZFormat::istream_' o='192' t='nest::InputStreamLinker'/>
+<mbr r='nest::ALZFormat::opened_' o='832' t='bool'/>
+<mbr r='nest::ALZFormat::global_' o='896' t='alz::Global'/>
+<mbr r='nest::ALZFormat::files_' o='1088' t='std::vector&lt;alz::File *&gt;'/>
+<mbr r='nest::ALZFormat::spanned_' o='1280' t='bool'/>
+<mbr r='nest::ALZFormat::comment_' o='1344' t='std::string'/>
+<mbr r='nest::ALZFormat::crc_' o='1600' t='unsigned int'/>
+<mbr r='nest::ALZFormat::decoder_' o='1664' t='nest::Decoder *'/>
+<mbr r='nest::ALZFormat::password_' o='1728' t='std::string'/>

@@ -1,0 +1,6 @@
+<def f='codebrowser/nest/algorithm/azo/Decoder/AlphaCodeD.h' l='20' ll='29'/>
+<size>271360</size>
+<fun r='_ZN3AZO7Decoder9AlphaCodeC1Ev'/>
+<fun r='_ZN3AZO7Decoder9AlphaCode4CodeERNS0_11EntropyCodeEjh'/>
+<mbr r='AZO::Decoder::AlphaCode::alphaProb_' o='0' t='PredictProb&lt;ALPHA_SIZE, ALPHA_SIZE, ALPHACODE_PREDICT_SHIFT&gt;'/>
+<fun r='_ZN3AZO7Decoder9AlphaCode4CodeERNS0_11EntropyCodeEjh'/>

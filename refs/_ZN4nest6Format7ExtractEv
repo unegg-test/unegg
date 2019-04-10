@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/format/Format.h' l='53' type='int nest::Format::Extract()'/>
+<use f='codebrowser/nest/Workspace.cpp' l='134' u='c' c='_ZN4nest9Workspace7ExtractEPKc'/>
+<ovr f='codebrowser/nest/format/ALZFormat.cpp' l='385' c='_ZN4nest9ALZFormat7ExtractEv'/>
+<ovr f='codebrowser/nest/format/EggFormat.cpp' l='125' c='_ZN4nest9EggFormat7ExtractEv'/>

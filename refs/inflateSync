@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='806' type='int inflateSync(z_streamp strm)'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1345' ll='1386' type='int inflateSync(z_streamp strm)'/>

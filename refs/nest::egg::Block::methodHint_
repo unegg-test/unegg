@@ -1,0 +1,7 @@
+<use f='codebrowser/nest/format/egg/Block.h' l='35' u='r' c='_ZN4nest3egg5Block13GetMethodHintEv'/>
+<dec f='codebrowser/nest/format/egg/Block.h' l='73' type='unsigned char'/>
+<offset>80</offset>
+<use f='codebrowser/nest/format/egg/Block.cpp' l='21' u='w' c='_ZN4nest3egg5BlockC1Ev'/>
+<use f='codebrowser/nest/format/egg/Block.cpp' l='46' u='r' c='_ZN4nest3egg5Block6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/egg/Block.cpp' l='46' u='a' c='_ZN4nest3egg5Block6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/egg/Block.cpp' l='46' u='r' c='_ZN4nest3egg5Block6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>

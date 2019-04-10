@@ -1,0 +1,27 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='96' type='unsigned char *'/>
+<offset>384</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='96'>/* next output data to deliver or write */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='337' u='w' c='gzseek64'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='215' u='w' c='gz_head'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='217' u='r' c='gz_head'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='273' u='w' c='gz_decomp'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='274' u='r' c='gz_decomp'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='319' u='w' c='gz_make'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='344' u='w' c='gz_skip'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='406' u='r' c='gzread'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='407' u='w' c='gzread'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='474' u='w' c='gzgetc'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='512' u='w' c='gzungetc'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='513' u='r' c='gzungetc'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='525' u='r' c='gzungetc'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='530' u='w' c='gzungetc'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='533' u='w' c='gzungetc'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='534' u='r' c='gzungetc'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='585' u='r' c='gzgets'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='587' u='r' c='gzgets'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='590' u='r' c='gzgets'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='592' u='w' c='gzgets'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='51' u='w' c='gz_init'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='78' u='r' c='gz_comp'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='79' u='r' c='gz_comp'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='88' u='w' c='gz_comp'/>

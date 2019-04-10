@@ -1,0 +1,6 @@
+<def f='include/c++/7/bits/stl_vector.h' l='589' ll='591' type='const_iterator std::vector::end() const'/>
+<doc f='include/c++/7/bits/stl_vector.h' l='584'>/**
+       *  Returns a read-only (constant) iterator that points one past
+       *  the last element in the %vector.  Iteration is done in
+       *  ordinary element order.
+       */</doc>

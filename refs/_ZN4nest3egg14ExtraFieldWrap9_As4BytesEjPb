@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/format/egg/ExtraFieldWrap.h' l='49' type='int nest::egg::ExtraFieldWrap::_As4Bytes(unsigned int key, bool * handled)'/>
+<doc f='codebrowser/nest/format/egg/ExtraFieldWrap.h' l='48'>// Info</doc>
+<inh f='codebrowser/nest/Info.h' l='38' c='_ZN4nest4Info9_As4BytesEjPb'/>
+<def f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='92' ll='151' type='int nest::egg::ExtraFieldWrap::_As4Bytes(unsigned int key, bool * handled)'/>

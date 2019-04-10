@@ -1,0 +1,6 @@
+<dec f='codebrowser/nest/Info.h' l='27' type='uint64 nest::Info::AsUInt64(unsigned int key, bool * handled = __null)'/>
+<use f='codebrowser/UnEgg.cpp' l='186' u='c' c='_Z18PrintListOfArchivePKc'/>
+<use f='codebrowser/UnEgg.cpp' l='189' u='c' c='_Z18PrintListOfArchivePKc'/>
+<use f='codebrowser/UnEgg.cpp' l='236' u='c' c='_Z18PrintListOfArchivePKc'/>
+<use f='codebrowser/UnEgg.cpp' l='239' u='c' c='_Z18PrintListOfArchivePKc'/>
+<def f='codebrowser/nest/Info.cpp' l='37' ll='40' type='uint64 nest::Info::AsUInt64(unsigned int key, bool * handled = __null)'/>

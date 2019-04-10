@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>FileWrap.h source code [codebrowser/nest/format/egg/FileWrap.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="nest::egg::FileWrap "/>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/format/egg/FileWrap.h'; var root_path = '../../../..'; var data_path = '../../../../../data';</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>codebrowser</a>/<a href='../..'>nest</a>/<a href='..'>format</a>/<a href='./'>egg</a>/<a href='FileWrap.h.html'>FileWrap.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * FileWrap.h</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> *  Created on: 2010. 12. 13.</i></td></tr>
+<tr><th id="5">5</th><td><i> *      Author: Jehoon Shin(Revolution)</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> *  Copyright(c) 2010-Present ESTsoft Corp. All rights reserved.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> *  For conditions of distribution and use, see copyright notice in license.txt</i></td></tr>
+<tr><th id="10">10</th><td><i> */</i></td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td><u>#<span data-ppcond="12">ifndef</span> <span class="macro" data-ref="_M/NEST_FORMAT_EGG_FILEWRAP_H_">NEST_FORMAT_EGG_FILEWRAP_H_</span></u></td></tr>
+<tr><th id="13">13</th><td><u>#define <dfn class="macro" id="_M/NEST_FORMAT_EGG_FILEWRAP_H_" data-ref="_M/NEST_FORMAT_EGG_FILEWRAP_H_">NEST_FORMAT_EGG_FILEWRAP_H_</dfn></u></td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><u>#include <a href="../../../../include/c++/7/vector.html">&lt;vector&gt;</a></u></td></tr>
+<tr><th id="16">16</th><td><u>#include <a href="../../Info.h.html">&lt;nest/Info.h&gt;</a></u></td></tr>
+<tr><th id="17">17</th><td><u>#include <a href="../Header.h.html">&lt;nest/format/Header.h&gt;</a></u></td></tr>
+<tr><th id="18">18</th><td><u>#include <a href="ExtraFieldWrap.h.html">&lt;nest/format/egg/ExtraFieldWrap.h&gt;</a></u></td></tr>
+<tr><th id="19">19</th><td><u>#include <a href="File.h.html">&lt;nest/format/egg/File.h&gt;</a></u></td></tr>
+<tr><th id="20">20</th><td><u>#include <a href="BlockWrap.h.html">&lt;nest/format/egg/BlockWrap.h&gt;</a></u></td></tr>
+<tr><th id="21">21</th><td><u>#include <a href="CommentField.h.html">&lt;nest/format/egg/CommentField.h&gt;</a></u></td></tr>
+<tr><th id="22">22</th><td><u>#include <a href="FilenameField.h.html">&lt;nest/format/egg/FilenameField.h&gt;</a></u></td></tr>
+<tr><th id="23">23</th><td></td></tr>
+<tr><th id="24">24</th><td><b>namespace</b> <span class="namespace">nest</span></td></tr>
+<tr><th id="25">25</th><td>{</td></tr>
+<tr><th id="26">26</th><td><b>namespace</b> <span class="namespace">egg</span></td></tr>
+<tr><th id="27">27</th><td>{</td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><b>class</b> <dfn class="type def" id="nest::egg::FileWrap" title='nest::egg::FileWrap' data-ref="nest::egg::FileWrap">FileWrap</dfn> : <b>public</b> <a class="type" href="../Header.h.html#nest::Header" title='nest::Header' data-ref="nest::Header">Header</a></td></tr>
+<tr><th id="30">30</th><td>{</td></tr>
+<tr><th id="31">31</th><td><b>public</b>:</td></tr>
+<tr><th id="32">32</th><td>    <dfn class="decl" id="_ZN4nest3egg8FileWrapC1Eb" title='nest::egg::FileWrap::FileWrap' data-ref="_ZN4nest3egg8FileWrapC1Eb">FileWrap</dfn>(<em>bool</em> <dfn class="local col5 decl" id="155isSolid" title='isSolid' data-type='bool' data-ref="155isSolid">isSolid</dfn>);</td></tr>
+<tr><th id="33">33</th><td>    <b>virtual</b> <dfn class="virtual decl" id="_ZN4nest3egg8FileWrapD1Ev" title='nest::egg::FileWrap::~FileWrap' data-ref="_ZN4nest3egg8FileWrapD1Ev">~FileWrap</dfn>();</td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td>    <b>inline</b> <a class="type" href="File.h.html#nest::egg::File" title='nest::egg::File' data-ref="nest::egg::File">File</a>&amp; <dfn class="decl def" id="_ZN4nest3egg8FileWrap13GetFileHeaderEv" title='nest::egg::FileWrap::GetFileHeader' data-ref="_ZN4nest3egg8FileWrap13GetFileHeaderEv">GetFileHeader</dfn>()</td></tr>
+<tr><th id="36">36</th><td>    {</td></tr>
+<tr><th id="37">37</th><td>        <b>return</b> <a class="member" href="#nest::egg::FileWrap::file_" title='nest::egg::FileWrap::file_' data-ref="nest::egg::FileWrap::file_">file_</a>;</td></tr>
+<tr><th id="38">38</th><td>    }</td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td>    <b>inline</b> <a class="type" href="ExtraFieldWrap.h.html#nest::egg::ExtraFieldWrap" title='nest::egg::ExtraFieldWrap' data-ref="nest::egg::ExtraFieldWrap">ExtraFieldWrap</a>&amp; <dfn class="decl def" id="_ZN4nest3egg8FileWrap9GetExtrasEv" title='nest::egg::FileWrap::GetExtras' data-ref="_ZN4nest3egg8FileWrap9GetExtrasEv">GetExtras</dfn>()</td></tr>
+<tr><th id="41">41</th><td>    {</td></tr>
+<tr><th id="42">42</th><td>        <b>return</b> <a class="member" href="#nest::egg::FileWrap::extras_" title='nest::egg::FileWrap::extras_' data-ref="nest::egg::FileWrap::extras_">extras_</a>;</td></tr>
+<tr><th id="43">43</th><td>    }</td></tr>
+<tr><th id="44">44</th><td></td></tr>
+<tr><th id="45">45</th><td>    <b>inline</b> <a class="type" href="ExtraField.h.html#nest::egg::ExtraField" title='nest::egg::ExtraField' data-ref="nest::egg::ExtraField">ExtraField</a>* <dfn class="decl def" id="_ZN4nest3egg8FileWrap8GetExtraEi" title='nest::egg::FileWrap::GetExtra' data-ref="_ZN4nest3egg8FileWrap8GetExtraEi">GetExtra</dfn>(<em>int</em> <dfn class="local col6 decl" id="156magic" title='magic' data-type='int' data-ref="156magic">magic</dfn>)</td></tr>
+<tr><th id="46">46</th><td>    {</td></tr>
+<tr><th id="47">47</th><td>        <b>return</b> <a class="member" href="#nest::egg::FileWrap::extras_" title='nest::egg::FileWrap::extras_' data-ref="nest::egg::FileWrap::extras_">extras_</a>.<a class="ref" href="ExtraFieldWrap.h.html#_ZN4nest3egg14ExtraFieldWrap8GetExtraEi" title='nest::egg::ExtraFieldWrap::GetExtra' data-ref="_ZN4nest3egg14ExtraFieldWrap8GetExtraEi">GetExtra</a>(<a class="local col6 ref" href="#156magic" title='magic' data-ref="156magic">magic</a>);</td></tr>
+<tr><th id="48">48</th><td>    }</td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td>    <b>inline</b> <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="decl def" id="_ZN4nest3egg8FileWrap13GetBlockCountEv" title='nest::egg::FileWrap::GetBlockCount' data-ref="_ZN4nest3egg8FileWrap13GetBlockCountEv">GetBlockCount</dfn>()</td></tr>
+<tr><th id="51">51</th><td>    {</td></tr>
+<tr><th id="52">52</th><td>        <b>return</b> <a class="member" href="#nest::egg::FileWrap::blocks_" title='nest::egg::FileWrap::blocks_' data-ref="nest::egg::FileWrap::blocks_">blocks_</a>.<a class="ref" href="../../../../include/c++/7/bits/stl_vector.h.html#_ZNKSt6vector4sizeEv" title='std::vector::size' data-ref="_ZNKSt6vector4sizeEv">size</a>();</td></tr>
+<tr><th id="53">53</th><td>    }</td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td>    <b>inline</b> <a class="type" href="BlockWrap.h.html#nest::egg::BlockWrap" title='nest::egg::BlockWrap' data-ref="nest::egg::BlockWrap">BlockWrap</a>* <dfn class="decl def" id="_ZN4nest3egg8FileWrap8GetBlockEm" title='nest::egg::FileWrap::GetBlock' data-ref="_ZN4nest3egg8FileWrap8GetBlockEm">GetBlock</dfn>(<span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col7 decl" id="157index" title='index' data-type='size_t' data-ref="157index">index</dfn>)</td></tr>
+<tr><th id="56">56</th><td>    {</td></tr>
+<tr><th id="57">57</th><td>        <b>return</b> <a class="member" href="#nest::egg::FileWrap::blocks_" title='nest::egg::FileWrap::blocks_' data-ref="nest::egg::FileWrap::blocks_">blocks_</a><a class="ref" href="../../../../include/c++/7/bits/stl_vector.h.html#_ZNSt6vectorixEm" title='std::vector::operator[]' data-ref="_ZNSt6vectorixEm">[<a class="local col7 ref" href="#157index" title='index' data-ref="157index">index</a>]</a>;</td></tr>
+<tr><th id="58">58</th><td>    }</td></tr>
+<tr><th id="59">59</th><td></td></tr>
+<tr><th id="60">60</th><td><b>protected</b>:</td></tr>
+<tr><th id="61">61</th><td>    <b>virtual</b> <em>void</em> <dfn class="virtual decl" id="_ZN4nest3egg8FileWrap9OnCleanUpEv" title='nest::egg::FileWrap::OnCleanUp' data-ref="_ZN4nest3egg8FileWrap9OnCleanUpEv">OnCleanUp</dfn>();</td></tr>
+<tr><th id="62">62</th><td>    <b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN4nest3egg8FileWrap6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE" title='nest::egg::FileWrap::OnRead' data-ref="_ZN4nest3egg8FileWrap6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE">OnRead</dfn>(<a class="type" href="../../stream/InputStreamRewinder.h.html#nest::InputStreamRewinder" title='nest::InputStreamRewinder' data-ref="nest::InputStreamRewinder">InputStreamRewinder</a>* <dfn class="local col8 decl" id="158rewinder" title='rewinder' data-type='nest::InputStreamRewinder *' data-ref="158rewinder">rewinder</dfn>, <a class="type" href="../../stream/InputStream.h.html#nest::InputStream" title='nest::InputStream' data-ref="nest::InputStream">InputStream</a>* <dfn class="local col9 decl" id="159stream" title='stream' data-type='nest::InputStream *' data-ref="159stream">stream</dfn>);</td></tr>
+<tr><th id="63">63</th><td></td></tr>
+<tr><th id="64">64</th><td>    <i>// Info</i></td></tr>
+<tr><th id="65">65</th><td>    <b>virtual</b> <em>int</em> <dfn class="virtual decl" id="_ZN4nest3egg8FileWrap9_As4BytesEjPb" title='nest::egg::FileWrap::_As4Bytes' data-ref="_ZN4nest3egg8FileWrap9_As4BytesEjPb">_As4Bytes</dfn>(<em>unsigned</em> <em>int</em> <dfn class="local col0 decl" id="160key" title='key' data-type='unsigned int' data-ref="160key">key</dfn>, <em>bool</em>* <dfn class="local col1 decl" id="161handled" title='handled' data-type='bool *' data-ref="161handled">handled</dfn>);</td></tr>
+<tr><th id="66">66</th><td>    <b>virtual</b> <a class="typedef" href="../../define.h.html#int64" title='int64' data-type='long long' data-ref="int64">int64</a> <dfn class="virtual decl" id="_ZN4nest3egg8FileWrap9_As8BytesEjPb" title='nest::egg::FileWrap::_As8Bytes' data-ref="_ZN4nest3egg8FileWrap9_As8BytesEjPb">_As8Bytes</dfn>(<em>unsigned</em> <em>int</em> <dfn class="local col2 decl" id="162key" title='key' data-type='unsigned int' data-ref="162key">key</dfn>, <em>bool</em>* <dfn class="local col3 decl" id="163handled" title='handled' data-type='bool *' data-ref="163handled">handled</dfn>);</td></tr>
+<tr><th id="67">67</th><td>    <b>virtual</b> <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="virtual decl" id="_ZN4nest3egg8FileWrap7_AsSizeEjPb" title='nest::egg::FileWrap::_AsSize' data-ref="_ZN4nest3egg8FileWrap7_AsSizeEjPb">_AsSize</dfn>(<em>unsigned</em> <em>int</em> <dfn class="local col4 decl" id="164key" title='key' data-type='unsigned int' data-ref="164key">key</dfn>, <em>bool</em>* <dfn class="local col5 decl" id="165handled" title='handled' data-type='bool *' data-ref="165handled">handled</dfn>);</td></tr>
+<tr><th id="68">68</th><td>    <b>virtual</b> <em>const</em> <em>void</em>* <dfn class="virtual decl" id="_ZN4nest3egg8FileWrap6_AsPtrEjPb" title='nest::egg::FileWrap::_AsPtr' data-ref="_ZN4nest3egg8FileWrap6_AsPtrEjPb">_AsPtr</dfn>(<em>unsigned</em> <em>int</em> <dfn class="local col6 decl" id="166key" title='key' data-type='unsigned int' data-ref="166key">key</dfn>, <em>bool</em>* <dfn class="local col7 decl" id="167handled" title='handled' data-type='bool *' data-ref="167handled">handled</dfn>);</td></tr>
+<tr><th id="69">69</th><td>    <b>virtual</b> <a class="type" href="../../Info.h.html#nest::Info" title='nest::Info' data-ref="nest::Info">Info</a>* <dfn class="virtual decl" id="_ZN4nest3egg8FileWrap7_AsInfoEjPb" title='nest::egg::FileWrap::_AsInfo' data-ref="_ZN4nest3egg8FileWrap7_AsInfoEjPb">_AsInfo</dfn>(<em>unsigned</em> <em>int</em> <dfn class="local col8 decl" id="168key" title='key' data-type='unsigned int' data-ref="168key">key</dfn>, <em>bool</em>* <dfn class="local col9 decl" id="169handled" title='handled' data-type='bool *' data-ref="169handled">handled</dfn>);</td></tr>
+<tr><th id="70">70</th><td>    <b>virtual</b> <a class="type" href="../../Info.h.html#nest::Info" title='nest::Info' data-ref="nest::Info">Info</a>* <dfn class="virtual decl" id="_ZN4nest3egg8FileWrap12_AsChildInfoEjmPb" title='nest::egg::FileWrap::_AsChildInfo' data-ref="_ZN4nest3egg8FileWrap12_AsChildInfoEjmPb">_AsChildInfo</dfn>(<em>unsigned</em> <em>int</em> <dfn class="local col0 decl" id="170key" title='key' data-type='unsigned int' data-ref="170key">key</dfn>, <span class='typedef' title='size_t' data-type='unsigned long' data-ref="size_t">size_t</span> <dfn class="local col1 decl" id="171index" title='index' data-type='size_t' data-ref="171index">index</dfn>, <em>bool</em>* <dfn class="local col2 decl" id="172handled" title='handled' data-type='bool *' data-ref="172handled">handled</dfn>);</td></tr>
+<tr><th id="71">71</th><td></td></tr>
+<tr><th id="72">72</th><td><b>private</b>:</td></tr>
+<tr><th id="73">73</th><td>    <a class="type" href="File.h.html#nest::egg::File" title='nest::egg::File' data-ref="nest::egg::File">File</a> <dfn class="decl" id="nest::egg::FileWrap::file_" title='nest::egg::FileWrap::file_' data-ref="nest::egg::FileWrap::file_">file_</dfn>;</td></tr>
+<tr><th id="74">74</th><td>    <a class="type" href="ExtraFieldWrap.h.html#nest::egg::ExtraFieldWrap" title='nest::egg::ExtraFieldWrap' data-ref="nest::egg::ExtraFieldWrap">ExtraFieldWrap</a> <dfn class="decl" id="nest::egg::FileWrap::extras_" title='nest::egg::FileWrap::extras_' data-ref="nest::egg::FileWrap::extras_">extras_</dfn>;</td></tr>
+<tr><th id="75">75</th><td>    <span class="namespace">std::</span><a class="type" href="../../../../include/c++/7/bits/stl_vector.h.html#std::vector" title='std::vector' data-ref="std::vector">vector</a>&lt;<a class="type" href="BlockWrap.h.html#nest::egg::BlockWrap" title='nest::egg::BlockWrap' data-ref="nest::egg::BlockWrap">BlockWrap</a>*&gt; <dfn class="decl" id="nest::egg::FileWrap::blocks_" title='nest::egg::FileWrap::blocks_' data-ref="nest::egg::FileWrap::blocks_">blocks_</dfn>;</td></tr>
+<tr><th id="76">76</th><td>    <em>bool</em> <dfn class="decl" id="nest::egg::FileWrap::isSolid_" title='nest::egg::FileWrap::isSolid_' data-ref="nest::egg::FileWrap::isSolid_">isSolid_</dfn>;</td></tr>
+<tr><th id="77">77</th><td>};</td></tr>
+<tr><th id="78">78</th><td></td></tr>
+<tr><th id="79">79</th><td>}</td></tr>
+<tr><th id="80">80</th><td>}</td></tr>
+<tr><th id="81">81</th><td></td></tr>
+<tr><th id="82">82</th><td><u>#<span data-ppcond="12">endif</span> /* NEST_FORMAT_EGG_FILEWRAP_H_ */</u></td></tr>
+<tr><th id="83">83</th><td></td></tr>
+<tr><th id="84">84</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../../../EventHandler.cpp.html'>codebrowser/EventHandler.cpp</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

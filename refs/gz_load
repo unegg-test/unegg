@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='9' type='int gz_load(gz_statep , unsigned char * , unsigned int , unsigned int * )'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='21' ll='43' macro='1' type='int gz_load(gz_statep state, unsigned char * buf, unsigned int len, unsigned int * have)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='58' u='c' c='gz_avail'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='317' u='c' c='gz_make'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='428' u='c' c='gzread'/>

@@ -1,0 +1,10 @@
+<dec f='include/x86_64-linux-gnu/bits/ioctl-types.h' l='30' type='unsigned short'/>
+<use f='codebrowser/EventHandler.cpp' l='124' u='r' c='_ZN12EventHandler11OnFileStartEm'/>
+<use f='codebrowser/EventHandler.cpp' l='135' u='r' c='_ZN12EventHandler11OnFileStartEm'/>
+<use f='codebrowser/EventHandler.cpp' l='321' u='r' c='_ZN12EventHandler10OnProgressEmii'/>
+<offset>16</offset>
+<use f='codebrowser/UnEgg.cpp' l='112' u='r' c='_Z18PrintListOfArchivePKc'/>
+<use f='codebrowser/UnEgg.cpp' l='114' c='_Z18PrintListOfArchivePKc'/>
+<use f='codebrowser/UnEgg.cpp' l='116' u='r' c='_Z18PrintListOfArchivePKc'/>
+<use f='codebrowser/UnEgg.cpp' l='351' u='r' c='main'/>
+<use f='codebrowser/UnEgg.cpp' l='353' u='w' c='main'/>

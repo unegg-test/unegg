@@ -1,0 +1,8 @@
+<dec f='codebrowser/nest/algorithm/azo/Decoder/BitCodeD.h' l='42' type='const TYPE *'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/BitCodeD.cpp' l='20' u='w' c='_ZN3AZO7Decoder7BitCodeC1EPKhj'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/BitCodeD.cpp' l='41' u='w' c='_ZN3AZO7Decoder7BitCode4CodeERT_j'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/BitCodeD.cpp' l='47' u='w' c='_ZN3AZO7Decoder7BitCode4CodeERT_j'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/BitCodeD.cpp' l='54' u='r' c='_ZN3AZO7Decoder7BitCode4CodeERT_j'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/BitCodeD.cpp' l='95' u='r' c='_ZN3AZO7Decoder7BitCode4CodeERb'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/BitCodeD.cpp' l='98' u='w' c='_ZN3AZO7Decoder7BitCode4CodeERb'/>
+<offset>0</offset>

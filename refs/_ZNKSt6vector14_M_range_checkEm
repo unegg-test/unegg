@@ -1,0 +1,4 @@
+<def f='include/c++/7/bits/stl_vector.h' l='821' ll='829' type='void std::vector::_M_range_check(size_type __n) const'/>
+<use f='include/c++/7/bits/stl_vector.h' l='846' u='c' c='_ZNSt6vector2atEm'/>
+<use f='include/c++/7/bits/stl_vector.h' l='864' u='c' c='_ZNKSt6vector2atEm'/>
+<doc f='include/c++/7/bits/stl_vector.h' l='820'>/// Safety check used only from at().</doc>

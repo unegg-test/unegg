@@ -1,0 +1,12 @@
+<dec f='include/x86_64-linux-gnu/c++/7/bits/c++config.h' l='142'/>
+<use f='include/c++/7/bits/stl_tree.h' l='147' u='c'/>
+<use f='include/c++/7/bits/stl_tree.h' l='1005' u='c'/>
+<use f='include/c++/7/bits/stl_tree.h' l='1996' u='c'/>
+<use f='include/c++/7/bits/stl_set.h' l='432' u='c'/>
+<use f='include/c++/7/bits/stl_set.h' l='966' u='c'/>
+<use f='include/c++/7/bits/stl_multiset.h' l='428' u='c'/>
+<use f='include/c++/7/bits/stl_multiset.h' l='950' u='c'/>
+<use f='include/c++/7/bits/stl_vector.h' l='1650' u='c'/>
+<use f='include/c++/7/bits/basic_string.h' l='421' u='c'/>
+<use f='include/c++/7/bits/basic_string.h' l='6248' u='c'/>
+<use f='include/c++/7/bits/stl_deque.h' l='2313' u='c'/>

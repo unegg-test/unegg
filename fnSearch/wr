@@ -1,0 +1,2 @@
+_ZNSt13basic_ostream5writeEPKT_l|std::basic_ostream::write
+_ZN4nest16FileOutputStream5WriteEPvm|nest::FileOutputStream::Write

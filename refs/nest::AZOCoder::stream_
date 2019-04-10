@@ -1,0 +1,11 @@
+<dec f='codebrowser/nest/algorithm/AZOCoder.h' l='35' type='AZO_Stream'/>
+<use f='codebrowser/nest/algorithm/AZOCoder.cpp' l='33' u='a' c='_ZN4nest8AZOCoder10InitializeEPKhm'/>
+<use f='codebrowser/nest/algorithm/AZOCoder.cpp' l='33' u='r' c='_ZN4nest8AZOCoder10InitializeEPKhm'/>
+<use f='codebrowser/nest/algorithm/AZOCoder.cpp' l='48' u='m' c='_ZN4nest8AZOCoder6OnPushEPvm'/>
+<use f='codebrowser/nest/algorithm/AZOCoder.cpp' l='49' u='m' c='_ZN4nest8AZOCoder6OnPushEPvm'/>
+<use f='codebrowser/nest/algorithm/AZOCoder.cpp' l='56' u='m' c='_ZN4nest8AZOCoder5OnPopEPvPm'/>
+<use f='codebrowser/nest/algorithm/AZOCoder.cpp' l='57' u='m' c='_ZN4nest8AZOCoder5OnPopEPvPm'/>
+<use f='codebrowser/nest/algorithm/AZOCoder.cpp' l='59' u='a' c='_ZN4nest8AZOCoder5OnPopEPvPm'/>
+<use f='codebrowser/nest/algorithm/AZOCoder.cpp' l='61' u='m' c='_ZN4nest8AZOCoder5OnPopEPvPm'/>
+<use f='codebrowser/nest/algorithm/AZOCoder.cpp' l='63' u='m' c='_ZN4nest8AZOCoder5OnPopEPvPm'/>
+<offset>64</offset>

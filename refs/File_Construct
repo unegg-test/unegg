@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/7zFile.h' l='32' type='void File_Construct(CSzFile * p)'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='28' ll='35' type='void File_Construct(CSzFile * p)'/>

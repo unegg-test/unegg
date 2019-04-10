@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/format/egg/Dummy.h' l='26' type='void nest::egg::Dummy::~Dummy()'/>
+<inh f='codebrowser/nest/format/egg/ExtraField.h' l='26' c='_ZN4nest3egg10ExtraFieldD1Ev'/>
+<def f='codebrowser/nest/format/egg/Dummy.cpp' l='25' ll='29' type='void nest::egg::Dummy::~Dummy()'/>

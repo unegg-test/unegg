@@ -1,0 +1,8 @@
+<inh f='codebrowser/nest/format/egg/ExtraField.h' l='22' c='nest::egg::ExtraField'/>
+<def f='codebrowser/nest/format/egg/EncryptField.h' l='22' ll='64'/>
+<size>32</size>
+<fun r='_ZN4nest3egg12EncryptField16GetEncryptMethodEv'/>
+<fun r='_ZN4nest3egg12EncryptField13GetVerifyDataEv'/>
+<fun r='_ZN4nest3egg12EncryptField6GetCRCEv'/>
+<fun r='_ZN4nest3egg12EncryptField12GetAESHeaderEv'/>
+<fun r='_ZN4nest3egg12EncryptField12GetAESFooterEv'/>

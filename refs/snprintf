@@ -1,0 +1,8 @@
+<dec f='include/stdio.h' l='386' type='int snprintf(char *__restrict __s, size_t __maxlen, const char *__restrict __format)'/>
+<use f='codebrowser/UnEgg.cpp' l='155' macro='1' u='c'/>
+<use f='codebrowser/UnEgg.cpp' l='162' macro='1' u='c'/>
+<use f='codebrowser/UnEgg.cpp' l='181' u='c' c='_Z18PrintListOfArchivePKc'/>
+<use f='codebrowser/UnEgg.cpp' l='219' macro='1' u='c'/>
+<use f='codebrowser/UnEgg.cpp' l='229' u='c' c='_Z18PrintListOfArchivePKc'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='296' u='c' c='_ZN4nest9ALZFormat18GenerateVolumeNameEmPcm'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='263' u='c' c='_ZN4nest9EggFormat18GenerateVolumeNameEmPcm'/>

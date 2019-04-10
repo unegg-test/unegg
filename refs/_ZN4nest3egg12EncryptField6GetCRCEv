@@ -1,0 +1,5 @@
+<def f='codebrowser/nest/format/egg/EncryptField.h' l='35' ll='38' type='int nest::egg::EncryptField::GetCRC()'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='948' u='c' c='_ZN4nest9EggFormat17PreprocessDecryptEmPNS_3egg12EncryptFieldE'/>
+<use f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='116' u='c' c='_ZN4nest3egg14ExtraFieldWrap9_As4BytesEjPb'/>
+<use f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='118' u='c' c='_ZN4nest3egg14ExtraFieldWrap9_As4BytesEjPb'/>
+<use f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='120' u='c' c='_ZN4nest3egg14ExtraFieldWrap9_As4BytesEjPb'/>

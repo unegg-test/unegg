@@ -1,0 +1,8 @@
+<dec f='codebrowser/nest/algorithm/Coder.h' l='32' type='int nest::Coder::OnPush(void * inputBuffer, size_t size)'/>
+<ovr f='codebrowser/nest/algorithm/AZOCoder.cpp' l='46' c='_ZN4nest8AZOCoder6OnPushEPvm'/>
+<ovr f='codebrowser/nest/algorithm/BZipCoder.cpp' l='46' c='_ZN4nest9BZipCoder6OnPushEPvm'/>
+<use f='codebrowser/nest/algorithm/Coder.cpp' l='29' u='c' c='_ZN4nest5Coder4PushEPvm'/>
+<def f='codebrowser/nest/algorithm/Coder.cpp' l='41' ll='44' type='int nest::Coder::OnPush(void * inputBuffer, size_t size)'/>
+<ovr f='codebrowser/nest/algorithm/DeflateCoder.cpp' l='50' c='_ZN4nest12DeflateCoder6OnPushEPvm'/>
+<ovr f='codebrowser/nest/algorithm/LZMACoder.cpp' l='65' c='_ZN4nest9LZMACoder6OnPushEPvm'/>
+<ovr f='codebrowser/nest/algorithm/StoreCoder.cpp' l='41' c='_ZN4nest10StoreCoder6OnPushEPvm'/>

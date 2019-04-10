@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/algorithm/azo/Common/BufferMan.h' l='18' type='u_int AZO::BufferMan::Remove(u_int size)'/>
+<use f='codebrowser/nest/algorithm/azo/Common/BufferMan.h' l='19' u='c' c='_ZN3AZO9BufferMan5ClearEv'/>
+<def f='codebrowser/nest/algorithm/azo/Common/BufferMan.cpp' l='97' ll='108' type='u_int AZO::BufferMan::Remove(u_int size)'/>
+<use f='codebrowser/nest/algorithm/azo/Base/MainCodeB.cpp' l='79' u='c' c='_ZN3AZO4Base8MainCode14RemoveInBufferERPKhRjj'/>

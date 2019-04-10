@@ -1,0 +1,24 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzFind.h' l='25' type='UInt32'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='239' u='w' c='MatchFinder_Create'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='260' u='r' c='MatchFinder_SetLimits'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='289' u='r' c='MatchFinder_Init'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='328' u='r' c='MatchFinder_CheckLimits'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='487' u='r' c='Bt2_MatchFinder_GetMatches'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='487' u='r' c='Bt3Zip_MatchFinder_GetMatches'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='532' u='r' c='Bt3_MatchFinder_GetMatches'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='487' u='r' c='Bt3_MatchFinder_GetMatches'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='487' u='r' c='Bt3_MatchFinder_GetMatches'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='564' u='r' c='Bt4_MatchFinder_GetMatches'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='570' u='r' c='Bt4_MatchFinder_GetMatches'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='487' u='r' c='Bt4_MatchFinder_GetMatches'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='487' u='r' c='Bt4_MatchFinder_GetMatches'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='609' u='r' c='Hc4_MatchFinder_GetMatches'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='615' u='r' c='Hc4_MatchFinder_GetMatches'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='487' u='r' c='Hc4_MatchFinder_GetMatches'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='487' u='r' c='Hc3Zip_MatchFinder_GetMatches'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='487' u='r' c='Bt2_MatchFinder_Skip'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='487' u='r' c='Bt3Zip_MatchFinder_Skip'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='487' u='r' c='Bt3_MatchFinder_Skip'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='487' u='r' c='Bt4_MatchFinder_Skip'/>
+<offset>224</offset>
+<doc f='codebrowser/nest/third-party/algorithm/lzma/LzFind.h' l='25'>/* it must be = (historySize + 1) */</doc>

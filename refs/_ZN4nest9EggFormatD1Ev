@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/format/EggFormat.h' l='38' type='void nest::EggFormat::~EggFormat()'/>
+<inh f='codebrowser/nest/format/Format.h' l='35' c='_ZN4nest6FormatD1Ev'/>
+<inh f='codebrowser/nest/Events.h' l='27' c='_ZN4nest6EventsD1Ev'/>
+<inh f='codebrowser/nest/Info.h' l='23' c='_ZN4nest4InfoD1Ev'/>
+<def f='codebrowser/nest/format/EggFormat.cpp' l='45' ll='48' type='void nest::EggFormat::~EggFormat()'/>

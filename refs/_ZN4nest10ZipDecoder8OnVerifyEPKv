@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/encryption/ZipDecoder.h' l='27' type='bool nest::ZipDecoder::OnVerify(const void * verifyData)'/>
+<inh f='codebrowser/nest/encryption/Decoder.h' l='31' c='_ZN4nest7Decoder8OnVerifyEPKv'/>
+<def f='codebrowser/nest/encryption/ZipDecoder.cpp' l='87' ll='90' type='bool nest::ZipDecoder::OnVerify(const void * verifyData)'/>

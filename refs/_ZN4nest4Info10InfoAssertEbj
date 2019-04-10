@@ -1,0 +1,8 @@
+<dec f='codebrowser/nest/Info.h' l='36' type='void nest::Info::InfoAssert(bool value, unsigned int key)'/>
+<def f='codebrowser/nest/Info.cpp' l='72' ll='81' type='void nest::Info::InfoAssert(bool value, unsigned int key)'/>
+<use f='codebrowser/nest/Info.cpp' l='86' u='c' c='_ZN4nest4Info9_As4BytesEjPb'/>
+<use f='codebrowser/nest/Info.cpp' l='93' u='c' c='_ZN4nest4Info9_As8BytesEjPb'/>
+<use f='codebrowser/nest/Info.cpp' l='100' u='c' c='_ZN4nest4Info7_AsSizeEjPb'/>
+<use f='codebrowser/nest/Info.cpp' l='107' u='c' c='_ZN4nest4Info6_AsPtrEjPb'/>
+<use f='codebrowser/nest/Info.cpp' l='114' u='c' c='_ZN4nest4Info7_AsInfoEjPb'/>
+<use f='codebrowser/nest/Info.cpp' l='121' u='c' c='_ZN4nest4Info12_AsChildInfoEjmPb'/>

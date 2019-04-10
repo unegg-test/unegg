@@ -1,0 +1,6 @@
+<use f='codebrowser/nest/format/egg/Global.h' l='30' u='r' c='_ZN4nest3egg6Global10GetVersionEv'/>
+<dec f='codebrowser/nest/format/egg/Global.h' l='48' type='unsigned short'/>
+<offset>80</offset>
+<use f='codebrowser/nest/format/egg/Global.cpp' l='47' u='r' c='_ZN4nest3egg6Global6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/egg/Global.cpp' l='47' u='a' c='_ZN4nest3egg6Global6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/egg/Global.cpp' l='47' u='r' c='_ZN4nest3egg6Global6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>

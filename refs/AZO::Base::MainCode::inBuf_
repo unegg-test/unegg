@@ -1,0 +1,17 @@
+<use f='codebrowser/nest/algorithm/azo/Base/MainCodeB.h' l='32' u='m' c='_ZN3AZO4Base8MainCode15InBufferUseSizeEv'/>
+<dec f='codebrowser/nest/algorithm/azo/Base/MainCodeB.h' l='36' type='AZO::BufferMan'/>
+<use f='codebrowser/nest/algorithm/azo/Base/MainCodeB.cpp' l='22' u='m' c='_ZN3AZO4Base8MainCode13AllocInBufferEj'/>
+<use f='codebrowser/nest/algorithm/azo/Base/MainCodeB.cpp' l='32' u='m' c='_ZN3AZO4Base8MainCode11GetInBufferERPKhRjj'/>
+<use f='codebrowser/nest/algorithm/azo/Base/MainCodeB.cpp' l='33' u='m' c='_ZN3AZO4Base8MainCode11GetInBufferERPKhRjj'/>
+<use f='codebrowser/nest/algorithm/azo/Base/MainCodeB.cpp' l='36' u='m' c='_ZN3AZO4Base8MainCode11GetInBufferERPKhRjj'/>
+<use f='codebrowser/nest/algorithm/azo/Base/MainCodeB.cpp' l='40' u='m' c='_ZN3AZO4Base8MainCode11GetInBufferERPKhRjj'/>
+<use f='codebrowser/nest/algorithm/azo/Base/MainCodeB.cpp' l='42' u='m' c='_ZN3AZO4Base8MainCode11GetInBufferERPKhRjj'/>
+<use f='codebrowser/nest/algorithm/azo/Base/MainCodeB.cpp' l='47' u='m' c='_ZN3AZO4Base8MainCode11GetInBufferERPKhRjj'/>
+<use f='codebrowser/nest/algorithm/azo/Base/MainCodeB.cpp' l='48' u='m' c='_ZN3AZO4Base8MainCode11GetInBufferERPKhRjj'/>
+<use f='codebrowser/nest/algorithm/azo/Base/MainCodeB.cpp' l='56' u='m' c='_ZN3AZO4Base8MainCode12GetInBuffer2ERPKhRjj'/>
+<use f='codebrowser/nest/algorithm/azo/Base/MainCodeB.cpp' l='58' u='m' c='_ZN3AZO4Base8MainCode12GetInBuffer2ERPKhRjj'/>
+<use f='codebrowser/nest/algorithm/azo/Base/MainCodeB.cpp' l='63' u='m' c='_ZN3AZO4Base8MainCode12GetInBuffer2ERPKhRjj'/>
+<use f='codebrowser/nest/algorithm/azo/Base/MainCodeB.cpp' l='64' u='m' c='_ZN3AZO4Base8MainCode12GetInBuffer2ERPKhRjj'/>
+<use f='codebrowser/nest/algorithm/azo/Base/MainCodeB.cpp' l='72' u='m' c='_ZN3AZO4Base8MainCode14RemoveInBufferERPKhRjj'/>
+<use f='codebrowser/nest/algorithm/azo/Base/MainCodeB.cpp' l='79' u='m' c='_ZN3AZO4Base8MainCode14RemoveInBufferERPKhRjj'/>
+<offset>0</offset>

@@ -1,0 +1,4 @@
+<dec f='codebrowser/EventHandler.h' l='66' type='std::string'/>
+<use f='codebrowser/EventHandler.cpp' l='47' u='w' c='_ZN12EventHandler10InitializeEPN4nest9WorkspaceE'/>
+<use f='codebrowser/EventHandler.cpp' l='65' u='m' c='_ZN12EventHandler8FinalizeEi'/>
+<offset>512</offset>

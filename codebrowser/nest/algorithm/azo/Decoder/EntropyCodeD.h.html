@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>EntropyCodeD.h source code [codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="AZO::Decoder::EntropyCode "/>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>nest</a>/<a href='../..'>algorithm</a>/<a href='..'>azo</a>/<a href='./'>Decoder</a>/<a href='EntropyCodeD.h.html'>EntropyCodeD.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/AZO_DECODER_ENTROPYCODE_H">AZO_DECODER_ENTROPYCODE_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/AZO_DECODER_ENTROPYCODE_H" data-ref="_M/AZO_DECODER_ENTROPYCODE_H">AZO_DECODER_ENTROPYCODE_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="../Base/EntropyCodeB.h.html">"../Base/EntropyCodeB.h"</a></u></td></tr>
+<tr><th id="5">5</th><td><u>#include <a href="BitCodeD.h.html">"BitCodeD.h"</a></u></td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><b>namespace</b> <span class="namespace">AZO</span> {</td></tr>
+<tr><th id="8">8</th><td><b>namespace</b> <span class="namespace">Decoder</span> {</td></tr>
+<tr><th id="9">9</th><td></td></tr>
+<tr><th id="10">10</th><td><b>class</b> <dfn class="type def" id="AZO::Decoder::EntropyCode" title='AZO::Decoder::EntropyCode' data-ref="AZO::Decoder::EntropyCode">EntropyCode</dfn> : <b>public</b> <span class="namespace">Base::</span><a class="type" href="../Base/EntropyCodeB.h.html#AZO::Base::EntropyCode" title='AZO::Base::EntropyCode' data-ref="AZO::Base::EntropyCode">EntropyCode</a></td></tr>
+<tr><th id="11">11</th><td>{</td></tr>
+<tr><th id="12">12</th><td>    <b>typedef</b> <span class="namespace">Base::</span><a class="type" href="../Base/EntropyCodeB.h.html#AZO::Base::EntropyCode" title='AZO::Base::EntropyCode' data-ref="AZO::Base::EntropyCode">EntropyCode</a> <dfn class="typedef" id="AZO::Decoder::EntropyCode::super" title='AZO::Decoder::EntropyCode::super' data-type='Base::EntropyCode' data-ref="AZO::Decoder::EntropyCode::super">super</dfn>;</td></tr>
+<tr><th id="13">13</th><td></td></tr>
+<tr><th id="14">14</th><td><b>public</b>:</td></tr>
+<tr><th id="15">15</th><td>    <dfn class="decl def" id="_ZN3AZO7Decoder11EntropyCodeC1EPKhj" title='AZO::Decoder::EntropyCode::EntropyCode' data-ref="_ZN3AZO7Decoder11EntropyCodeC1EPKhj">EntropyCode</dfn>(<em>const</em> <a class="typedef" href="../Common/AZOType.h.html#AZO::byte" title='AZO::byte' data-type='uint8_t' data-ref="AZO::byte">byte</a>* <dfn class="local col7 decl" id="17buf" title='buf' data-type='const byte *' data-ref="17buf">buf</dfn>, <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <dfn class="local col8 decl" id="18size" title='size' data-type='u_int' data-ref="18size">size</dfn>) :</td></tr>
+<tr><th id="16">16</th><td>        <a class="member" href="#AZO::Decoder::EntropyCode::bit_" title='AZO::Decoder::EntropyCode::bit_' data-ref="AZO::Decoder::EntropyCode::bit_">bit_</a><a class="ref" href="BitCodeD.cpp.html#_ZN3AZO7Decoder7BitCodeC1EPKhj" title='AZO::Decoder::BitCode::BitCode' data-ref="_ZN3AZO7Decoder7BitCodeC1EPKhj">(</a><a class="local col7 ref" href="#17buf" title='buf' data-ref="17buf">buf</a>, <a class="local col8 ref" href="#18size" title='size' data-ref="18size">size</a>), <a class="member" href="#AZO::Decoder::EntropyCode::tag_" title='AZO::Decoder::EntropyCode::tag_' data-ref="AZO::Decoder::EntropyCode::tag_">tag_</a>(<var>0</var>), <a class="member" href="#AZO::Decoder::EntropyCode::init_" title='AZO::Decoder::EntropyCode::init_' data-ref="AZO::Decoder::EntropyCode::init_">init_</a>(<b>false</b>) {}</td></tr>
+<tr><th id="17">17</th><td></td></tr>
+<tr><th id="18">18</th><td>    <dfn class="decl def" id="_ZN3AZO7Decoder11EntropyCodeD1Ev" title='AZO::Decoder::EntropyCode::~EntropyCode' data-ref="_ZN3AZO7Decoder11EntropyCodeD1Ev">~EntropyCode</dfn>() {}</td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td>    <em>void</em> <a class="decl" href="EntropyCodeD.cpp.html#_ZN3AZO7Decoder11EntropyCode10InitializeEv" title='AZO::Decoder::EntropyCode::Initialize' data-ref="_ZN3AZO7Decoder11EntropyCode10InitializeEv" id="_ZN3AZO7Decoder11EntropyCode10InitializeEv">Initialize</a>();</td></tr>
+<tr><th id="21">21</th><td>    <em>void</em> <a class="decl" href="EntropyCodeD.cpp.html#_ZN3AZO7Decoder11EntropyCode8FinalizeEv" title='AZO::Decoder::EntropyCode::Finalize' data-ref="_ZN3AZO7Decoder11EntropyCode8FinalizeEv" id="_ZN3AZO7Decoder11EntropyCode8FinalizeEv">Finalize</a>();</td></tr>
+<tr><th id="22">22</th><td>    </td></tr>
+<tr><th id="23">23</th><td>    <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <a class="decl" href="EntropyCodeD.cpp.html#_ZN3AZO7Decoder11EntropyCode4CodeEj" title='AZO::Decoder::EntropyCode::Code' data-ref="_ZN3AZO7Decoder11EntropyCode4CodeEj" id="_ZN3AZO7Decoder11EntropyCode4CodeEj">Code</a>(<a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <dfn class="local col9 decl" id="19totalBit" title='totalBit' data-type='u_int' data-ref="19totalBit">totalBit</dfn>);</td></tr>
+<tr><th id="24">24</th><td>    <a class="typedef" href="../Common/AZOType.h.html#AZO::BOOL" title='AZO::BOOL' data-type='u_int' data-ref="AZO::BOOL">BOOL</a> <a class="decl" href="EntropyCodeD.cpp.html#_ZN3AZO7Decoder11EntropyCode4CodeEjj" title='AZO::Decoder::EntropyCode::Code' data-ref="_ZN3AZO7Decoder11EntropyCode4CodeEjj" id="_ZN3AZO7Decoder11EntropyCode4CodeEjj">Code</a>(<a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <dfn class="local col0 decl" id="20cumCount" title='cumCount' data-type='u_int' data-ref="20cumCount">cumCount</dfn>, <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <dfn class="local col1 decl" id="21totalBit" title='totalBit' data-type='u_int' data-ref="21totalBit">totalBit</dfn>);</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td>	<a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <dfn class="decl def" id="_ZN3AZO7Decoder11EntropyCode7GetSizeEv" title='AZO::Decoder::EntropyCode::GetSize' data-ref="_ZN3AZO7Decoder11EntropyCode7GetSizeEv">GetSize</dfn>() { <b>return</b> (<a class="member" href="#AZO::Decoder::EntropyCode::bit_" title='AZO::Decoder::EntropyCode::bit_' data-ref="AZO::Decoder::EntropyCode::bit_">bit_</a>.<a class="ref" href="BitCodeD.h.html#_ZN3AZO7Decoder7BitCode11GetReadSizeEv" title='AZO::Decoder::BitCode::GetReadSize' data-ref="_ZN3AZO7Decoder7BitCode11GetReadSizeEv">GetReadSize</a>()+<var>7</var>)/<var>8</var>; }</td></tr>
+<tr><th id="27">27</th><td></td></tr>
+<tr><th id="28">28</th><td><b>private</b>:</td></tr>
+<tr><th id="29">29</th><td>    <em>void</em> <a class="decl" href="EntropyCodeD.cpp.html#_ZN3AZO7Decoder11EntropyCode7RescaleEv" title='AZO::Decoder::EntropyCode::Rescale' data-ref="_ZN3AZO7Decoder11EntropyCode7RescaleEv" id="_ZN3AZO7Decoder11EntropyCode7RescaleEv">Rescale</a>();</td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><b>private</b>:</td></tr>
+<tr><th id="32">32</th><td>	<b>using</b> <a class="typedef" href="#AZO::Decoder::EntropyCode::super" title='AZO::Decoder::EntropyCode::super' data-type='Base::EntropyCode' data-ref="AZO::Decoder::EntropyCode::super">super</a>::MSB;</td></tr>
+<tr><th id="33">33</th><td>    <b>using</b> <a class="typedef" href="#AZO::Decoder::EntropyCode::super" title='AZO::Decoder::EntropyCode::super' data-type='Base::EntropyCode' data-ref="AZO::Decoder::EntropyCode::super">super</a>::sMSB;</td></tr>
+<tr><th id="34">34</th><td>	<b>using</b> <a class="typedef" href="#AZO::Decoder::EntropyCode::super" title='AZO::Decoder::EntropyCode::super' data-type='Base::EntropyCode' data-ref="AZO::Decoder::EntropyCode::super">super</a>::low_;</td></tr>
+<tr><th id="35">35</th><td>    <b>using</b> <a class="typedef" href="#AZO::Decoder::EntropyCode::super" title='AZO::Decoder::EntropyCode::super' data-type='Base::EntropyCode' data-ref="AZO::Decoder::EntropyCode::super">super</a>::up_;</td></tr>
+<tr><th id="36">36</th><td></td></tr>
+<tr><th id="37">37</th><td><b>private</b>:</td></tr>
+<tr><th id="38">38</th><td>    <a class="type" href="BitCodeD.h.html#AZO::Decoder::BitCode" title='AZO::Decoder::BitCode' data-ref="AZO::Decoder::BitCode">BitCode</a> <dfn class="decl" id="AZO::Decoder::EntropyCode::bit_" title='AZO::Decoder::EntropyCode::bit_' data-ref="AZO::Decoder::EntropyCode::bit_">bit_</dfn>;</td></tr>
+<tr><th id="39">39</th><td>    <a class="typedef" href="../Base/EntropyCodeB.h.html#AZO::Base::EntropyCode::RANGE_TYPE" title='AZO::Base::EntropyCode::RANGE_TYPE' data-type='uint32_t' data-ref="AZO::Base::EntropyCode::RANGE_TYPE">RANGE_TYPE</a> <dfn class="decl" id="AZO::Decoder::EntropyCode::tag_" title='AZO::Decoder::EntropyCode::tag_' data-ref="AZO::Decoder::EntropyCode::tag_">tag_</dfn>;</td></tr>
+<tr><th id="40">40</th><td>    <em>bool</em> <dfn class="decl" id="AZO::Decoder::EntropyCode::init_" title='AZO::Decoder::EntropyCode::init_' data-ref="AZO::Decoder::EntropyCode::init_">init_</dfn>;</td></tr>
+<tr><th id="41">41</th><td>};</td></tr>
+<tr><th id="42">42</th><td></td></tr>
+<tr><th id="43">43</th><td>} <i>//namespaces Decoder</i></td></tr>
+<tr><th id="44">44</th><td>} <i>//namespaces AZO</i></td></tr>
+<tr><th id="45">45</th><td></td></tr>
+<tr><th id="46">46</th><td><u>#include <a href="EntropyCodeD.cpp.html">"EntropyCodeD.cpp"</a></u></td></tr>
+<tr><th id="47">47</th><td></td></tr>
+<tr><th id="48">48</th><td><u>#<span data-ppcond="1">endif</span> /*AZO_DECODER_ENTROPYCODE_H*/</u></td></tr>
+<tr><th id="49">49</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='AlphaCodeD.cpp.html'>codebrowser/nest/algorithm/azo/Decoder/AlphaCodeD.cpp</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

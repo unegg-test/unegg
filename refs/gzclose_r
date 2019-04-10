@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='1425' type='int gzclose_r(gzFile file)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzclose.c' l='21' u='c' c='gzclose'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='628' ll='654' type='int gzclose_r(gzFile file)'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='627'>/* -- see zlib.h -- */</doc>

@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='1594' type='uLong adler32_combine(uLong , uLong , off_t )'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/adler32.c' l='155' ll='161' type='uLong adler32_combine(uLong adler1, uLong adler2, long len2)'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/adler32.c' l='154'>/* ========================================================================= */</doc>

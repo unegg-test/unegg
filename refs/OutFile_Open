@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/7zFile.h' l='35' type='WRes OutFile_Open(CSzFile * p, const char * name)'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='62' ll='65' type='WRes OutFile_Open(CSzFile * p, const char * name)'/>

@@ -1,0 +1,15 @@
+<dec f='codebrowser/nest/algorithm/Coder.h' l='25' type='int nest::Coder::Initialize(const unsigned char * dataHeader, size_t size)'/>
+<ovr f='codebrowser/nest/algorithm/AZOCoder.cpp' l='28' c='_ZN4nest8AZOCoder10InitializeEPKhm'/>
+<use f='codebrowser/nest/algorithm/AZOCoder.cpp' l='30' u='c' c='_ZN4nest8AZOCoder10InitializeEPKhm'/>
+<ovr f='codebrowser/nest/algorithm/BZipCoder.cpp' l='28' c='_ZN4nest9BZipCoder10InitializeEPKhm'/>
+<use f='codebrowser/nest/algorithm/BZipCoder.cpp' l='30' u='c' c='_ZN4nest9BZipCoder10InitializeEPKhm'/>
+<def f='codebrowser/nest/algorithm/Coder.cpp' l='22' ll='25' type='int nest::Coder::Initialize(const unsigned char * dataHeader, size_t size)'/>
+<ovr f='codebrowser/nest/algorithm/DeflateCoder.cpp' l='29' c='_ZN4nest12DeflateCoder10InitializeEPKhm'/>
+<use f='codebrowser/nest/algorithm/DeflateCoder.cpp' l='31' u='c' c='_ZN4nest12DeflateCoder10InitializeEPKhm'/>
+<ovr f='codebrowser/nest/algorithm/LZMACoder.cpp' l='43' c='_ZN4nest9LZMACoder10InitializeEPKhm'/>
+<use f='codebrowser/nest/algorithm/LZMACoder.cpp' l='45' u='c' c='_ZN4nest9LZMACoder10InitializeEPKhm'/>
+<ovr f='codebrowser/nest/algorithm/StoreCoder.cpp' l='27' c='_ZN4nest10StoreCoder10InitializeEPKhm'/>
+<use f='codebrowser/nest/algorithm/StoreCoder.cpp' l='29' u='c' c='_ZN4nest10StoreCoder10InitializeEPKhm'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='544' u='c' c='_ZN4nest9ALZFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='444' u='c' c='_ZN4nest9EggFormat17PrepareSolidBlockEPNS_3egg9BlockWrapEPNS0_16BlockExtractInfoE'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='785' u='c' c='_ZN4nest9EggFormat21ExtractIndividualFileEmPNS_12OutputStreamE'/>

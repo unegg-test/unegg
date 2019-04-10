@@ -1,0 +1,12 @@
+<dec f='codebrowser/nest/algorithm/Coder.h' l='26' type='void nest::Coder::Finalize()'/>
+<ovr f='codebrowser/nest/algorithm/AZOCoder.cpp' l='38' c='_ZN4nest8AZOCoder8FinalizeEv'/>
+<use f='codebrowser/nest/algorithm/AZOCoder.cpp' l='40' u='c' c='_ZN4nest8AZOCoder8FinalizeEv'/>
+<ovr f='codebrowser/nest/algorithm/BZipCoder.cpp' l='39' c='_ZN4nest9BZipCoder8FinalizeEv'/>
+<use f='codebrowser/nest/algorithm/BZipCoder.cpp' l='41' u='c' c='_ZN4nest9BZipCoder8FinalizeEv'/>
+<def f='codebrowser/nest/algorithm/Coder.cpp' l='37' ll='39' type='void nest::Coder::Finalize()'/>
+<ovr f='codebrowser/nest/algorithm/DeflateCoder.cpp' l='43' c='_ZN4nest12DeflateCoder8FinalizeEv'/>
+<use f='codebrowser/nest/algorithm/DeflateCoder.cpp' l='45' u='c' c='_ZN4nest12DeflateCoder8FinalizeEv'/>
+<ovr f='codebrowser/nest/algorithm/LZMACoder.cpp' l='58' c='_ZN4nest9LZMACoder8FinalizeEv'/>
+<use f='codebrowser/nest/algorithm/LZMACoder.cpp' l='60' u='c' c='_ZN4nest9LZMACoder8FinalizeEv'/>
+<ovr f='codebrowser/nest/algorithm/StoreCoder.cpp' l='36' c='_ZN4nest10StoreCoder8FinalizeEv'/>
+<use f='codebrowser/nest/algorithm/StoreCoder.cpp' l='38' u='c' c='_ZN4nest10StoreCoder8FinalizeEv'/>

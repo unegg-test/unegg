@@ -1,0 +1,5 @@
+<dec f='codebrowser/CommandLine.h' l='36' type='std::vector&lt;std::string&gt;'/>
+<use f='codebrowser/CommandLine.cpp' l='36' u='m' c='_ZN11CommandLine16ParseCommandlineEiPPc'/>
+<use f='codebrowser/CommandLine.cpp' l='58' u='m' c='_ZN11CommandLine16GetArgumentCountEv'/>
+<use f='codebrowser/CommandLine.cpp' l='63' u='m' c='_ZN11CommandLine11GetArgumentEm'/>
+<offset>448</offset>

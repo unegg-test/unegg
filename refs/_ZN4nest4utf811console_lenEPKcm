@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/Utils.h' l='38' type='size_t nest::utf8::console_len(const char * str, size_t bytes = 0)'/>
+<def f='codebrowser/nest/Utils.cpp' l='246' ll='266' type='size_t nest::utf8::console_len(const char * str, size_t bytes = 0)'/>
+<use f='codebrowser/nest/Utils.cpp' l='315' u='c' c='_ZN4nest4utf813path_ellipsisEPcmmPKc'/>
+<use f='codebrowser/nest/Utils.cpp' l='354' u='c' c='_ZN4nest4utf813path_ellipsisEPcmmPKc'/>
+<use f='codebrowser/nest/Utils.cpp' l='397' u='c' c='_ZN4nest4utf813path_ellipsisEPcmmPKc'/>

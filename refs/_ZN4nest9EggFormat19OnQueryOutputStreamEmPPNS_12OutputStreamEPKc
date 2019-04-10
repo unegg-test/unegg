@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/format/EggFormat.h' l='70' type='int nest::EggFormat::OnQueryOutputStream(size_t index, nest::OutputStream ** stream, const char * virtualName)'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='423' u='c' c='_ZN4nest9EggFormat18QueryExtractStreamEmPPNS_12OutputStreamE'/>
+<inh f='codebrowser/nest/Events.h' l='39' c='_ZN4nest6Events19OnQueryOutputStreamEmPPNS_12OutputStreamEPKc'/>
+<def f='codebrowser/nest/format/EggFormat.cpp' l='1170' ll='1178' type='int nest::EggFormat::OnQueryOutputStream(size_t index, nest::OutputStream ** stream, const char * virtualName)'/>

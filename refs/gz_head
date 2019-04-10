@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='12' type='int gz_head(gz_statep )'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='104' ll='224' macro='1' type='int gz_head(gz_statep state)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='311' u='c' c='gz_make'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='621' u='c' c='gzdirect'/>

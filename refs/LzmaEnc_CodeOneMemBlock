@@ -1,0 +1,1 @@
+<def f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='2089' ll='2120' type='SRes LzmaEnc_CodeOneMemBlock(CLzmaEncHandle pp, Bool reInit, Byte * dest, size_t * destLen, UInt32 desiredPackSize, UInt32 * unpackSize)'/>

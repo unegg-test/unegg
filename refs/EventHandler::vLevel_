@@ -1,0 +1,8 @@
+<dec f='codebrowser/EventHandler.h' l='61' type='int'/>
+<use f='codebrowser/EventHandler.cpp' l='22' u='w' c='_ZN12EventHandlerC1EP7winsize'/>
+<use f='codebrowser/EventHandler.cpp' l='35' u='w' c='_ZN12EventHandler15SetDisplayLevelEi'/>
+<use f='codebrowser/EventHandler.cpp' l='70' u='r' c='_ZN12EventHandler11OnWorkStartEi'/>
+<use f='codebrowser/EventHandler.cpp' l='94' u='r' c='_ZN12EventHandler12OnWorkFinishEii'/>
+<use f='codebrowser/EventHandler.cpp' l='122' u='r' c='_ZN12EventHandler11OnFileStartEm'/>
+<use f='codebrowser/EventHandler.cpp' l='330' u='r' c='_ZN12EventHandler11PrintIndentEm'/>
+<offset>64</offset>

@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>prng.c source code [codebrowser/nest/third-party/encryption/aes/prng.c] - Woboq Code Browser</title>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/third-party/encryption/aes/prng.c'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>nest</a>/<a href='../..'>third-party</a>/<a href='..'>encryption</a>/<a href='./'>aes</a>/<a href='prng.c.html'>prng.c</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> ---------------------------------------------------------------------------</i></td></tr>
+<tr><th id="3">3</th><td><i> Copyright (c) 2002, Dr Brian Gladman &lt;                 &gt;, Worcester, UK.</i></td></tr>
+<tr><th id="4">4</th><td><i> All rights reserved.</i></td></tr>
+<tr><th id="5">5</th><td><i></i></td></tr>
+<tr><th id="6">6</th><td><i> LICENSE TERMS</i></td></tr>
+<tr><th id="7">7</th><td><i></i></td></tr>
+<tr><th id="8">8</th><td><i> The free distribution and use of this software in both source and binary</i></td></tr>
+<tr><th id="9">9</th><td><i> form is allowed (with or without changes) provided that:</i></td></tr>
+<tr><th id="10">10</th><td><i></i></td></tr>
+<tr><th id="11">11</th><td><i>   1. distributions of this source code include the above copyright</i></td></tr>
+<tr><th id="12">12</th><td><i>      notice, this list of conditions and the following disclaimer;</i></td></tr>
+<tr><th id="13">13</th><td><i></i></td></tr>
+<tr><th id="14">14</th><td><i>   2. distributions in binary form include the above copyright</i></td></tr>
+<tr><th id="15">15</th><td><i>      notice, this list of conditions and the following disclaimer</i></td></tr>
+<tr><th id="16">16</th><td><i>      in the documentation and/or other associated materials;</i></td></tr>
+<tr><th id="17">17</th><td><i></i></td></tr>
+<tr><th id="18">18</th><td><i>   3. the copyright holder's name is not used to endorse products</i></td></tr>
+<tr><th id="19">19</th><td><i>      built using this software without specific written permission.</i></td></tr>
+<tr><th id="20">20</th><td><i></i></td></tr>
+<tr><th id="21">21</th><td><i> ALTERNATIVELY, provided that this notice is retained in full, this product</i></td></tr>
+<tr><th id="22">22</th><td><i> may be distributed under the terms of the GNU General Public License (GPL),</i></td></tr>
+<tr><th id="23">23</th><td><i> in which case the provisions of the GPL apply INSTEAD OF those given above.</i></td></tr>
+<tr><th id="24">24</th><td><i></i></td></tr>
+<tr><th id="25">25</th><td><i> DISCLAIMER</i></td></tr>
+<tr><th id="26">26</th><td><i></i></td></tr>
+<tr><th id="27">27</th><td><i> This software is provided 'as is' with no explicit or implied warranties</i></td></tr>
+<tr><th id="28">28</th><td><i> in respect of its properties, including, but not limited to, correctness</i></td></tr>
+<tr><th id="29">29</th><td><i> and/or fitness for purpose.</i></td></tr>
+<tr><th id="30">30</th><td><i> ---------------------------------------------------------------------------</i></td></tr>
+<tr><th id="31">31</th><td><i> Issue Date: 24/01/2003</i></td></tr>
+<tr><th id="32">32</th><td><i></i></td></tr>
+<tr><th id="33">33</th><td><i> This file implements a random data pool based on the use of an external</i></td></tr>
+<tr><th id="34">34</th><td><i> entropy function.  It is based on the ideas advocated by Peter Gutmann in</i></td></tr>
+<tr><th id="35">35</th><td><i> his work on pseudo random sequence generators.  It is not a 'paranoid'</i></td></tr>
+<tr><th id="36">36</th><td><i> random sequence generator and no attempt is made to protect the pool</i></td></tr>
+<tr><th id="37">37</th><td><i> from prying eyes either by memory locking or by techniques to obscure</i></td></tr>
+<tr><th id="38">38</th><td><i> its location in memory.</i></td></tr>
+<tr><th id="39">39</th><td><i>*/</i></td></tr>
+<tr><th id="40">40</th><td></td></tr>
+<tr><th id="41">41</th><td><u>#include <a href="../../../../../include/memory.h.html">&lt;memory.h&gt;</a></u></td></tr>
+<tr><th id="42">42</th><td><u>#include <a href="prng.h.html">"prng.h"</a></u></td></tr>
+<tr><th id="43">43</th><td></td></tr>
+<tr><th id="44">44</th><td><u>#<span data-ppcond="44">if</span> defined(<span class="macro" data-ref="_M/__cplusplus">__cplusplus</span>)</u></td></tr>
+<tr><th id="45">45</th><td><b>extern</b> <q>"C"</q></td></tr>
+<tr><th id="46">46</th><td>{</td></tr>
+<tr><th id="47">47</th><td><u>#<span data-ppcond="44">endif</span></u></td></tr>
+<tr><th id="48">48</th><td></td></tr>
+<tr><th id="49">49</th><td><i>/* mix a random data pool using the SHA1 compression function (as   */</i></td></tr>
+<tr><th id="50">50</th><td><i  data-doc="prng_mix">/* suggested by Peter Gutmann in his paper on random pools)         */</i></td></tr>
+<tr><th id="51">51</th><td></td></tr>
+<tr><th id="52">52</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="prng_mix" title='prng_mix' data-type='void prng_mix(unsigned char * buf)' data-ref="prng_mix">prng_mix</dfn>(<em>unsigned</em> <em>char</em> <dfn class="local col9 decl" id="9buf" title='buf' data-type='unsigned char *' data-ref="9buf">buf</dfn>[])</td></tr>
+<tr><th id="53">53</th><td>{   <em>unsigned</em> <em>int</em>    <dfn class="local col0 decl" id="10i" title='i' data-type='unsigned int' data-ref="10i">i</dfn>, <dfn class="local col1 decl" id="11len" title='len' data-type='unsigned int' data-ref="11len">len</dfn>;</td></tr>
+<tr><th id="54">54</th><td>    <a class="typedef" href="sha1.h.html#sha1_ctx" title='sha1_ctx' data-type='struct sha1_ctx' data-ref="sha1_ctx">sha1_ctx</a>        <dfn class="local col2 decl" id="12ctx" title='ctx' data-type='sha1_ctx [1]' data-ref="12ctx">ctx</dfn>[<var>1</var>];</td></tr>
+<tr><th id="55">55</th><td></td></tr>
+<tr><th id="56">56</th><td>    <i>/*lint -e{663}  unusual array to pointer conversion */</i></td></tr>
+<tr><th id="57">57</th><td>    <b>for</b>(<a class="local col0 ref" href="#10i" title='i' data-ref="10i">i</a> = <var>0</var>; <a class="local col0 ref" href="#10i" title='i' data-ref="10i">i</a> &lt; <a class="macro" href="prng.h.html#47" title="(20 * (1 + (256 - 1) / 20))" data-ref="_M/PRNG_POOL_SIZE">PRNG_POOL_SIZE</a>; <a class="local col0 ref" href="#10i" title='i' data-ref="10i">i</a> += <a class="macro" href="sha1.h.html#42" title="20" data-ref="_M/SHA1_DIGEST_SIZE">SHA1_DIGEST_SIZE</a>)</td></tr>
+<tr><th id="58">58</th><td>    {</td></tr>
+<tr><th id="59">59</th><td>        <i>/* copy digest size pool block into SHA1 hash block */</i></td></tr>
+<tr><th id="60">60</th><td>        <a class="ref" href="../../../../../include/string.h.html#memcpy" title='memcpy' data-ref="memcpy">memcpy</a>(<a class="local col2 ref" href="#12ctx" title='ctx' data-ref="12ctx">ctx</a>-&gt;<a class="ref" href="sha1.h.html#(anonymous)::hash" title='(anonymous struct)::hash' data-ref="(anonymous)::hash">hash</a>, <a class="local col9 ref" href="#9buf" title='buf' data-ref="9buf">buf</a> + (<a class="local col0 ref" href="#10i" title='i' data-ref="10i">i</a> ? <a class="local col0 ref" href="#10i" title='i' data-ref="10i">i</a> : <a class="macro" href="prng.h.html#47" title="(20 * (1 + (256 - 1) / 20))" data-ref="_M/PRNG_POOL_SIZE">PRNG_POOL_SIZE</a>)</td></tr>
+<tr><th id="61">61</th><td>                            - <a class="macro" href="sha1.h.html#42" title="20" data-ref="_M/SHA1_DIGEST_SIZE">SHA1_DIGEST_SIZE</a>, <a class="macro" href="sha1.h.html#42" title="20" data-ref="_M/SHA1_DIGEST_SIZE">SHA1_DIGEST_SIZE</a>);</td></tr>
+<tr><th id="62">62</th><td></td></tr>
+<tr><th id="63">63</th><td>        <i>/* copy data from pool into the SHA1 data buffer    */</i></td></tr>
+<tr><th id="64">64</th><td>        <a class="local col1 ref" href="#11len" title='len' data-ref="11len">len</a> = <a class="macro" href="prng.h.html#47" title="(20 * (1 + (256 - 1) / 20))" data-ref="_M/PRNG_POOL_SIZE">PRNG_POOL_SIZE</a> - <a class="local col0 ref" href="#10i" title='i' data-ref="10i">i</a>;</td></tr>
+<tr><th id="65">65</th><td>        <a class="ref" href="../../../../../include/string.h.html#memcpy" title='memcpy' data-ref="memcpy">memcpy</a>(<a class="local col2 ref" href="#12ctx" title='ctx' data-ref="12ctx">ctx</a>-&gt;<a class="ref" href="sha1.h.html#(anonymous)::wbuf" title='(anonymous struct)::wbuf' data-ref="(anonymous)::wbuf">wbuf</a>, <a class="local col9 ref" href="#9buf" title='buf' data-ref="9buf">buf</a> + <a class="local col0 ref" href="#10i" title='i' data-ref="10i">i</a>, (<a class="local col1 ref" href="#11len" title='len' data-ref="11len">len</a> &gt; <a class="macro" href="sha1.h.html#41" title="64" data-ref="_M/SHA1_BLOCK_SIZE">SHA1_BLOCK_SIZE</a> ? <a class="macro" href="sha1.h.html#41" title="64" data-ref="_M/SHA1_BLOCK_SIZE">SHA1_BLOCK_SIZE</a> : <a class="local col1 ref" href="#11len" title='len' data-ref="11len">len</a>));</td></tr>
+<tr><th id="66">66</th><td></td></tr>
+<tr><th id="67">67</th><td>        <b>if</b>(<a class="local col1 ref" href="#11len" title='len' data-ref="11len">len</a> &lt; <a class="macro" href="sha1.h.html#41" title="64" data-ref="_M/SHA1_BLOCK_SIZE">SHA1_BLOCK_SIZE</a>)</td></tr>
+<tr><th id="68">68</th><td>            <a class="ref" href="../../../../../include/string.h.html#memcpy" title='memcpy' data-ref="memcpy">memcpy</a>(((<em>char</em>*)<a class="local col2 ref" href="#12ctx" title='ctx' data-ref="12ctx">ctx</a>-&gt;<a class="ref" href="sha1.h.html#(anonymous)::wbuf" title='(anonymous struct)::wbuf' data-ref="(anonymous)::wbuf">wbuf</a>) + <a class="local col1 ref" href="#11len" title='len' data-ref="11len">len</a>, <a class="local col9 ref" href="#9buf" title='buf' data-ref="9buf">buf</a>, <a class="macro" href="sha1.h.html#41" title="64" data-ref="_M/SHA1_BLOCK_SIZE">SHA1_BLOCK_SIZE</a> - <a class="local col1 ref" href="#11len" title='len' data-ref="11len">len</a>);</td></tr>
+<tr><th id="69">69</th><td></td></tr>
+<tr><th id="70">70</th><td>        <i>/* compress using the SHA1 compression function     */</i></td></tr>
+<tr><th id="71">71</th><td>        <a class="ref" href="sha1.h.html#sha1_compile" title='sha1_compile' data-ref="sha1_compile">sha1_compile</a>(<a class="local col2 ref" href="#12ctx" title='ctx' data-ref="12ctx">ctx</a>);</td></tr>
+<tr><th id="72">72</th><td></td></tr>
+<tr><th id="73">73</th><td>        <i>/* put digest size block back into the random pool  */</i></td></tr>
+<tr><th id="74">74</th><td>        <a class="ref" href="../../../../../include/string.h.html#memcpy" title='memcpy' data-ref="memcpy">memcpy</a>(<a class="local col9 ref" href="#9buf" title='buf' data-ref="9buf">buf</a> + <a class="local col0 ref" href="#10i" title='i' data-ref="10i">i</a>, <a class="local col2 ref" href="#12ctx" title='ctx' data-ref="12ctx">ctx</a>-&gt;<a class="ref" href="sha1.h.html#(anonymous)::hash" title='(anonymous struct)::hash' data-ref="(anonymous)::hash">hash</a>, <a class="macro" href="sha1.h.html#42" title="20" data-ref="_M/SHA1_DIGEST_SIZE">SHA1_DIGEST_SIZE</a>);</td></tr>
+<tr><th id="75">75</th><td>    }</td></tr>
+<tr><th id="76">76</th><td>}</td></tr>
+<tr><th id="77">77</th><td></td></tr>
+<tr><th id="78">78</th><td><i>/* refresh the output buffer and update the random pool by adding   */</i></td></tr>
+<tr><th id="79">79</th><td><i  data-doc="update_pool">/* entropy and remixing                                             */</i></td></tr>
+<tr><th id="80">80</th><td></td></tr>
+<tr><th id="81">81</th><td><em>static</em> <em>void</em> <dfn class="tu decl def" id="update_pool" title='update_pool' data-type='void update_pool(prng_ctx * ctx)' data-ref="update_pool">update_pool</dfn>(<a class="typedef" href="prng.h.html#prng_ctx" title='prng_ctx' data-type='struct prng_ctx' data-ref="prng_ctx">prng_ctx</a> <dfn class="local col3 decl" id="13ctx" title='ctx' data-type='prng_ctx *' data-ref="13ctx">ctx</dfn>[<var>1</var>])</td></tr>
+<tr><th id="82">82</th><td>{   <em>unsigned</em> <em>int</em>    <dfn class="local col4 decl" id="14i" title='i' data-type='unsigned int' data-ref="14i">i</dfn> = <var>0</var>;</td></tr>
+<tr><th id="83">83</th><td></td></tr>
+<tr><th id="84">84</th><td>    <i>/* transfer random pool data to the output buffer   */</i></td></tr>
+<tr><th id="85">85</th><td>    <a class="ref" href="../../../../../include/string.h.html#memcpy" title='memcpy' data-ref="memcpy">memcpy</a>(<a class="local col3 ref" href="#13ctx" title='ctx' data-ref="13ctx">ctx</a>-&gt;<a class="ref" href="prng.h.html#(anonymous)::obuf" title='(anonymous struct)::obuf' data-ref="(anonymous)::obuf">obuf</a>, <a class="local col3 ref" href="#13ctx" title='ctx' data-ref="13ctx">ctx</a>-&gt;<a class="ref" href="prng.h.html#(anonymous)::rbuf" title='(anonymous struct)::rbuf' data-ref="(anonymous)::rbuf">rbuf</a>, <a class="macro" href="prng.h.html#47" title="(20 * (1 + (256 - 1) / 20))" data-ref="_M/PRNG_POOL_SIZE">PRNG_POOL_SIZE</a>);</td></tr>
+<tr><th id="86">86</th><td></td></tr>
+<tr><th id="87">87</th><td>    <i>/* enter entropy data into the pool */</i></td></tr>
+<tr><th id="88">88</th><td>    <b>while</b>(<a class="local col4 ref" href="#14i" title='i' data-ref="14i">i</a> &lt; <a class="macro" href="prng.h.html#47" title="(20 * (1 + (256 - 1) / 20))" data-ref="_M/PRNG_POOL_SIZE">PRNG_POOL_SIZE</a>)</td></tr>
+<tr><th id="89">89</th><td>        <a class="local col4 ref" href="#14i" title='i' data-ref="14i">i</a> += <a class="local col3 ref" href="#13ctx" title='ctx' data-ref="13ctx">ctx</a>-&gt;<a class="ref" href="prng.h.html#(anonymous)::entropy" title='(anonymous struct)::entropy' data-ref="(anonymous)::entropy">entropy</a>(<a class="local col3 ref" href="#13ctx" title='ctx' data-ref="13ctx">ctx</a>-&gt;<a class="ref" href="prng.h.html#(anonymous)::rbuf" title='(anonymous struct)::rbuf' data-ref="(anonymous)::rbuf">rbuf</a> + <a class="local col4 ref" href="#14i" title='i' data-ref="14i">i</a>, <a class="macro" href="prng.h.html#47" title="(20 * (1 + (256 - 1) / 20))" data-ref="_M/PRNG_POOL_SIZE">PRNG_POOL_SIZE</a> - <a class="local col4 ref" href="#14i" title='i' data-ref="14i">i</a>);</td></tr>
+<tr><th id="90">90</th><td></td></tr>
+<tr><th id="91">91</th><td>    <i>/* invert and xor the original pool data into the pool  */</i></td></tr>
+<tr><th id="92">92</th><td>    <b>for</b>(<a class="local col4 ref" href="#14i" title='i' data-ref="14i">i</a> = <var>0</var>; <a class="local col4 ref" href="#14i" title='i' data-ref="14i">i</a> &lt; <a class="macro" href="prng.h.html#47" title="(20 * (1 + (256 - 1) / 20))" data-ref="_M/PRNG_POOL_SIZE">PRNG_POOL_SIZE</a>; ++<a class="local col4 ref" href="#14i" title='i' data-ref="14i">i</a>)</td></tr>
+<tr><th id="93">93</th><td>        <a class="local col3 ref" href="#13ctx" title='ctx' data-ref="13ctx">ctx</a>-&gt;<a class="ref" href="prng.h.html#(anonymous)::rbuf" title='(anonymous struct)::rbuf' data-ref="(anonymous)::rbuf">rbuf</a>[<a class="local col4 ref" href="#14i" title='i' data-ref="14i">i</a>] ^= ~<a class="local col3 ref" href="#13ctx" title='ctx' data-ref="13ctx">ctx</a>-&gt;<a class="ref" href="prng.h.html#(anonymous)::obuf" title='(anonymous struct)::obuf' data-ref="(anonymous)::obuf">obuf</a>[<a class="local col4 ref" href="#14i" title='i' data-ref="14i">i</a>];</td></tr>
+<tr><th id="94">94</th><td></td></tr>
+<tr><th id="95">95</th><td>    <i>/* mix the pool and the output buffer   */</i></td></tr>
+<tr><th id="96">96</th><td>    <a class="tu ref" href="#prng_mix" title='prng_mix' data-use='c' data-ref="prng_mix">prng_mix</a>(<a class="local col3 ref" href="#13ctx" title='ctx' data-ref="13ctx">ctx</a>-&gt;<a class="ref" href="prng.h.html#(anonymous)::rbuf" title='(anonymous struct)::rbuf' data-ref="(anonymous)::rbuf">rbuf</a>);</td></tr>
+<tr><th id="97">97</th><td>    <a class="tu ref" href="#prng_mix" title='prng_mix' data-use='c' data-ref="prng_mix">prng_mix</a>(<a class="local col3 ref" href="#13ctx" title='ctx' data-ref="13ctx">ctx</a>-&gt;<a class="ref" href="prng.h.html#(anonymous)::obuf" title='(anonymous struct)::obuf' data-ref="(anonymous)::obuf">obuf</a>);</td></tr>
+<tr><th id="98">98</th><td>}</td></tr>
+<tr><th id="99">99</th><td></td></tr>
+<tr><th id="100">100</th><td><em>void</em> <dfn class="decl def" id="prng_init" title='prng_init' data-ref="prng_init">prng_init</dfn>(<a class="typedef" href="prng.h.html#prng_entropy_fn" title='prng_entropy_fn' data-type='int (*)(unsigned char *, unsigned int)' data-ref="prng_entropy_fn">prng_entropy_fn</a> <dfn class="local col5 decl" id="15fun" title='fun' data-type='prng_entropy_fn' data-ref="15fun">fun</dfn>, <a class="typedef" href="prng.h.html#prng_ctx" title='prng_ctx' data-type='struct prng_ctx' data-ref="prng_ctx">prng_ctx</a> <dfn class="local col6 decl" id="16ctx" title='ctx' data-type='prng_ctx *' data-ref="16ctx">ctx</dfn>[<var>1</var>])</td></tr>
+<tr><th id="101">101</th><td>{   <em>int</em> <dfn class="local col7 decl" id="17i" title='i' data-type='int' data-ref="17i">i</dfn>;</td></tr>
+<tr><th id="102">102</th><td></td></tr>
+<tr><th id="103">103</th><td>    <i>/* clear the buffers and the counter in the context     */</i></td></tr>
+<tr><th id="104">104</th><td>    <a class="ref" href="../../../../../include/string.h.html#memset" title='memset' data-ref="memset">memset</a>(<a class="local col6 ref" href="#16ctx" title='ctx' data-ref="16ctx">ctx</a>, <var>0</var>, <b>sizeof</b>(<a class="typedef" href="prng.h.html#prng_ctx" title='prng_ctx' data-type='struct prng_ctx' data-ref="prng_ctx">prng_ctx</a>));</td></tr>
+<tr><th id="105">105</th><td></td></tr>
+<tr><th id="106">106</th><td>    <i>/* set the pointer to the entropy collection function   */</i></td></tr>
+<tr><th id="107">107</th><td>    <a class="local col6 ref" href="#16ctx" title='ctx' data-ref="16ctx">ctx</a>-&gt;<a class="ref" href="prng.h.html#(anonymous)::entropy" title='(anonymous struct)::entropy' data-ref="(anonymous)::entropy">entropy</a> = <a class="local col5 ref" href="#15fun" title='fun' data-ref="15fun">fun</a>;</td></tr>
+<tr><th id="108">108</th><td></td></tr>
+<tr><th id="109">109</th><td>    <i>/* initialise the random data pool                      */</i></td></tr>
+<tr><th id="110">110</th><td>    <a class="tu ref" href="#update_pool" title='update_pool' data-use='c' data-ref="update_pool">update_pool</a>(<a class="local col6 ref" href="#16ctx" title='ctx' data-ref="16ctx">ctx</a>);</td></tr>
+<tr><th id="111">111</th><td></td></tr>
+<tr><th id="112">112</th><td>    <i>/* mix the pool a minimum number of times               */</i></td></tr>
+<tr><th id="113">113</th><td>    <b>for</b>(<a class="local col7 ref" href="#17i" title='i' data-ref="17i">i</a> = <var>0</var>; <a class="local col7 ref" href="#17i" title='i' data-ref="17i">i</a> &lt; <a class="macro" href="prng.h.html#43" title="20" data-ref="_M/PRNG_MIN_MIX">PRNG_MIN_MIX</a>; ++<a class="local col7 ref" href="#17i" title='i' data-ref="17i">i</a>)</td></tr>
+<tr><th id="114">114</th><td>        <a class="tu ref" href="#prng_mix" title='prng_mix' data-use='c' data-ref="prng_mix">prng_mix</a>(<a class="local col6 ref" href="#16ctx" title='ctx' data-ref="16ctx">ctx</a>-&gt;<a class="ref" href="prng.h.html#(anonymous)::rbuf" title='(anonymous struct)::rbuf' data-ref="(anonymous)::rbuf">rbuf</a>);</td></tr>
+<tr><th id="115">115</th><td></td></tr>
+<tr><th id="116">116</th><td>    <i>/* update the pool to prime the pool output buffer      */</i></td></tr>
+<tr><th id="117">117</th><td>    <a class="tu ref" href="#update_pool" title='update_pool' data-use='c' data-ref="update_pool">update_pool</a>(<a class="local col6 ref" href="#16ctx" title='ctx' data-ref="16ctx">ctx</a>);</td></tr>
+<tr><th id="118">118</th><td>}</td></tr>
+<tr><th id="119">119</th><td></td></tr>
+<tr><th id="120">120</th><td><i>/* provide random bytes from the random data pool   */</i></td></tr>
+<tr><th id="121">121</th><td></td></tr>
+<tr><th id="122">122</th><td><em>void</em> <dfn class="decl def" id="prng_rand" title='prng_rand' data-ref="prng_rand">prng_rand</dfn>(<em>unsigned</em> <em>char</em> <dfn class="local col8 decl" id="18data" title='data' data-type='unsigned char *' data-ref="18data">data</dfn>[], <em>unsigned</em> <em>int</em> <dfn class="local col9 decl" id="19data_len" title='data_len' data-type='unsigned int' data-ref="19data_len">data_len</dfn>, <a class="typedef" href="prng.h.html#prng_ctx" title='prng_ctx' data-type='struct prng_ctx' data-ref="prng_ctx">prng_ctx</a> <dfn class="local col0 decl" id="20ctx" title='ctx' data-type='prng_ctx *' data-ref="20ctx">ctx</dfn>[<var>1</var>])</td></tr>
+<tr><th id="123">123</th><td>{   <em>unsigned</em> <em>char</em>   *<dfn class="local col1 decl" id="21rp" title='rp' data-type='unsigned char *' data-ref="21rp">rp</dfn> = <a class="local col8 ref" href="#18data" title='data' data-ref="18data">data</a>;</td></tr>
+<tr><th id="124">124</th><td>    <em>unsigned</em> <em>int</em>    <dfn class="local col2 decl" id="22len" title='len' data-type='unsigned int' data-ref="22len">len</dfn>, <dfn class="local col3 decl" id="23pos" title='pos' data-type='unsigned int' data-ref="23pos">pos</dfn> = <a class="local col0 ref" href="#20ctx" title='ctx' data-ref="20ctx">ctx</a>-&gt;<a class="ref" href="prng.h.html#(anonymous)::pos" title='(anonymous struct)::pos' data-ref="(anonymous)::pos">pos</a>;</td></tr>
+<tr><th id="125">125</th><td></td></tr>
+<tr><th id="126">126</th><td>    <b>while</b>(<a class="local col9 ref" href="#19data_len" title='data_len' data-ref="19data_len">data_len</a>)</td></tr>
+<tr><th id="127">127</th><td>    {</td></tr>
+<tr><th id="128">128</th><td>        <i>/* transfer 'data_len' bytes (or the number of bytes remaining  */</i></td></tr>
+<tr><th id="129">129</th><td>        <i>/* the pool output buffer if less) into the output              */</i></td></tr>
+<tr><th id="130">130</th><td>        <a class="local col2 ref" href="#22len" title='len' data-ref="22len">len</a> = (<a class="local col9 ref" href="#19data_len" title='data_len' data-ref="19data_len">data_len</a> &lt; <a class="macro" href="prng.h.html#47" title="(20 * (1 + (256 - 1) / 20))" data-ref="_M/PRNG_POOL_SIZE">PRNG_POOL_SIZE</a> - <a class="local col3 ref" href="#23pos" title='pos' data-ref="23pos">pos</a> ? <a class="local col9 ref" href="#19data_len" title='data_len' data-ref="19data_len">data_len</a> : <a class="macro" href="prng.h.html#47" title="(20 * (1 + (256 - 1) / 20))" data-ref="_M/PRNG_POOL_SIZE">PRNG_POOL_SIZE</a> - <a class="local col3 ref" href="#23pos" title='pos' data-ref="23pos">pos</a>);</td></tr>
+<tr><th id="131">131</th><td>        <a class="ref" href="../../../../../include/string.h.html#memcpy" title='memcpy' data-ref="memcpy">memcpy</a>(<a class="local col1 ref" href="#21rp" title='rp' data-ref="21rp">rp</a>, <a class="local col0 ref" href="#20ctx" title='ctx' data-ref="20ctx">ctx</a>-&gt;<a class="ref" href="prng.h.html#(anonymous)::obuf" title='(anonymous struct)::obuf' data-ref="(anonymous)::obuf">obuf</a> + <a class="local col3 ref" href="#23pos" title='pos' data-ref="23pos">pos</a>, <a class="local col2 ref" href="#22len" title='len' data-ref="22len">len</a>);</td></tr>
+<tr><th id="132">132</th><td>        <a class="local col1 ref" href="#21rp" title='rp' data-ref="21rp">rp</a> += <a class="local col2 ref" href="#22len" title='len' data-ref="22len">len</a>;          <i>/* update ouput buffer position pointer     */</i></td></tr>
+<tr><th id="133">133</th><td>        <a class="local col3 ref" href="#23pos" title='pos' data-ref="23pos">pos</a> += <a class="local col2 ref" href="#22len" title='len' data-ref="22len">len</a>;         <i>/* update pool output buffer pointer        */</i></td></tr>
+<tr><th id="134">134</th><td>        <a class="local col9 ref" href="#19data_len" title='data_len' data-ref="19data_len">data_len</a> -= <a class="local col2 ref" href="#22len" title='len' data-ref="22len">len</a>;    <i>/* update the remaining data count          */</i></td></tr>
+<tr><th id="135">135</th><td></td></tr>
+<tr><th id="136">136</th><td>        <i>/* refresh the random pool if necessary */</i></td></tr>
+<tr><th id="137">137</th><td>        <b>if</b>(<a class="local col3 ref" href="#23pos" title='pos' data-ref="23pos">pos</a> == <a class="macro" href="prng.h.html#47" title="(20 * (1 + (256 - 1) / 20))" data-ref="_M/PRNG_POOL_SIZE">PRNG_POOL_SIZE</a>)</td></tr>
+<tr><th id="138">138</th><td>        {</td></tr>
+<tr><th id="139">139</th><td>            <a class="tu ref" href="#update_pool" title='update_pool' data-use='c' data-ref="update_pool">update_pool</a>(<a class="local col0 ref" href="#20ctx" title='ctx' data-ref="20ctx">ctx</a>); <a class="local col3 ref" href="#23pos" title='pos' data-ref="23pos">pos</a> = <var>0</var>;</td></tr>
+<tr><th id="140">140</th><td>        }</td></tr>
+<tr><th id="141">141</th><td>    }</td></tr>
+<tr><th id="142">142</th><td></td></tr>
+<tr><th id="143">143</th><td>    <a class="local col0 ref" href="#20ctx" title='ctx' data-ref="20ctx">ctx</a>-&gt;<a class="ref" href="prng.h.html#(anonymous)::pos" title='(anonymous struct)::pos' data-ref="(anonymous)::pos">pos</a> = <a class="local col3 ref" href="#23pos" title='pos' data-ref="23pos">pos</a>;</td></tr>
+<tr><th id="144">144</th><td>}</td></tr>
+<tr><th id="145">145</th><td></td></tr>
+<tr><th id="146">146</th><td><em>void</em> <dfn class="decl def" id="prng_end" title='prng_end' data-ref="prng_end">prng_end</dfn>(<a class="typedef" href="prng.h.html#prng_ctx" title='prng_ctx' data-type='struct prng_ctx' data-ref="prng_ctx">prng_ctx</a> <dfn class="local col4 decl" id="24ctx" title='ctx' data-type='prng_ctx *' data-ref="24ctx">ctx</dfn>[<var>1</var>])</td></tr>
+<tr><th id="147">147</th><td>{</td></tr>
+<tr><th id="148">148</th><td>    <i>/* ensure the data in the context is destroyed  */</i></td></tr>
+<tr><th id="149">149</th><td>    <a class="ref" href="../../../../../include/string.h.html#memset" title='memset' data-ref="memset">memset</a>(<a class="local col4 ref" href="#24ctx" title='ctx' data-ref="24ctx">ctx</a>, <var>0</var>, <b>sizeof</b>(<a class="typedef" href="prng.h.html#prng_ctx" title='prng_ctx' data-type='struct prng_ctx' data-ref="prng_ctx">prng_ctx</a>));</td></tr>
+<tr><th id="150">150</th><td>}</td></tr>
+<tr><th id="151">151</th><td></td></tr>
+<tr><th id="152">152</th><td><u>#<span data-ppcond="152">if</span> defined(<span class="macro" data-ref="_M/__cplusplus">__cplusplus</span>)</u></td></tr>
+<tr><th id="153">153</th><td>}</td></tr>
+<tr><th id="154">154</th><td><u>#<span data-ppcond="152">endif</span></u></td></tr>
+<tr><th id="155">155</th><td></td></tr>
+<tr><th id="156">156</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

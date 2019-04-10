@@ -1,0 +1,10 @@
+<dec f='codebrowser/nest/format/EggFormat.h' l='114' type='egg::ExtraFieldWrap'/>
+<offset>576</offset>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='104' u='m' c='_ZN4nest9EggFormat4ScanEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='105' u='m' c='_ZN4nest9EggFormat4ScanEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='174' u='a' c='_ZN4nest9EggFormat11ScanHeadersEPNS_11InputStreamEPNS_3egg14ExtraFieldWrapE'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='274' u='m' c='_ZN4nest9EggFormat21PrepareSpannedStreamsEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='996' u='m' c='_ZN4nest9EggFormat9_As4BytesEjPb'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='1018' u='m' c='_ZN4nest9EggFormat9_As8BytesEjPb'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='1043' u='m' c='_ZN4nest9EggFormat7_AsSizeEjPb'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='1070' u='m' c='_ZN4nest9EggFormat6_AsPtrEjPb'/>

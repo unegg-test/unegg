@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='154' type='IPos'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1648' u='w' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1682' u='r' c='deflate_slow'/>
+<offset>1184</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='154'>/* previous match */</doc>

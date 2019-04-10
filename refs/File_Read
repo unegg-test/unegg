@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/7zFile.h' l='44' type='WRes File_Read(CSzFile * p, void * data, size_t * size)'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='105' ll='138' type='WRes File_Read(CSzFile * p, void * data, size_t * size)'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='256' u='c' c='FileSeqInStream_Read'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zFile.c' l='269' u='c' c='FileInStream_Read'/>
+<doc f='codebrowser/nest/third-party/algorithm/lzma/7zFile.h' l='43'>/* reads max(*size, remain file&apos;s size) bytes */</doc>

@@ -1,0 +1,8 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='70' type='3'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='824' u='r' c='deflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1510' u='r' c='deflate_stored'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1607' u='r' c='deflate_fast'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1732' u='r' c='deflate_slow'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1800' u='r' c='deflate_rle'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='1833' u='r' c='deflate_huff'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='70'>/* finish done, accept no more input or output */</doc>

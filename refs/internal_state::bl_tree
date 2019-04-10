@@ -1,0 +1,29 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='194' type='struct ct_data_s [39]'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='979' u='r' c='deflateCopy'/>
+<offset>21856</offset>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/deflate.h' l='194'>/* Huffman tree for bit lengths */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='397' u='r' c='_tr_init'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='423' u='m' c='init_block'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='732' u='m' c='scan_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='734' u='m' c='scan_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='735' u='m' c='scan_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='737' u='m' c='scan_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='739' u='m' c='scan_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='777' u='m' c='send_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='777' u='m' c='send_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='777' u='m' c='send_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='781' u='m' c='send_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='781' u='m' c='send_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='781' u='m' c='send_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='784' u='m' c='send_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='784' u='m' c='send_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='784' u='m' c='send_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='787' u='m' c='send_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='787' u='m' c='send_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='787' u='m' c='send_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='790' u='m' c='send_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='790' u='m' c='send_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='790' u='m' c='send_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='827' u='m' c='build_bl_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='857' u='m' c='send_all_trees'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='857' u='m' c='send_all_trees'/>

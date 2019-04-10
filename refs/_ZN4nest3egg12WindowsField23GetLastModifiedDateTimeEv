@@ -1,0 +1,2 @@
+<def f='codebrowser/nest/format/egg/WindowsField.h' l='25' ll='28' type='int64 nest::egg::WindowsField::GetLastModifiedDateTime()'/>
+<use f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='169' u='c' c='_ZN4nest3egg14ExtraFieldWrap9_As8BytesEjPb'/>

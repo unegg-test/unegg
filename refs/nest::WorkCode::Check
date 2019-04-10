@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/nest.h' l='172' type='0'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='87' u='r' c='_ZN4nest9ALZFormat19CheckHeaderInternalEPNS_11InputStreamEPNS_3alz6GlobalE'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='105' u='r' c='_ZN4nest9ALZFormat19CheckHeaderInternalEPNS_11InputStreamEPNS_3alz6GlobalE'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='146' u='r' c='_ZN4nest9EggFormat19CheckHeaderInternalEPNS_11InputStreamEPNS_3egg6GlobalE'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='161' u='r' c='_ZN4nest9EggFormat19CheckHeaderInternalEPNS_11InputStreamEPNS_3egg6GlobalE'/>

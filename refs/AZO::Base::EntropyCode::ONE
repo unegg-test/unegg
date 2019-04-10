@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/algorithm/azo/Base/EntropyCodeB.h' l='15' type='const RANGE_TYPE'/>
+<use f='codebrowser/nest/algorithm/azo/Base/EntropyCodeB.h' l='16' u='r'/>
+<use f='codebrowser/nest/algorithm/azo/Base/EntropyCodeB.h' l='17' u='r'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='61' u='r' c='_ZN3AZO7Decoder11EntropyCode4CodeEj'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/EntropyCodeD.cpp' l='83' u='r' c='_ZN3AZO7Decoder11EntropyCode4CodeEjj'/>

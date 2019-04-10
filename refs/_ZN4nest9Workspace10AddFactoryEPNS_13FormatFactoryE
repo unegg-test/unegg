@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/Workspace.h' l='52' type='static int nest::Workspace::AddFactory(nest::FormatFactory * factory)'/>
+<use f='codebrowser/UnEgg.cpp' l='355' u='c' c='main'/>
+<use f='codebrowser/UnEgg.cpp' l='356' u='c' c='main'/>
+<def f='codebrowser/nest/Workspace.cpp' l='21' ll='26' type='static int nest::Workspace::AddFactory(nest::FormatFactory * factory)'/>

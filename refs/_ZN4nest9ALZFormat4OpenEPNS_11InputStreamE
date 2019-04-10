@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/format/ALZFormat.h' l='35' type='int nest::ALZFormat::Open(nest::InputStream * stream)'/>
+<inh f='codebrowser/nest/format/Format.h' l='49' c='_ZN4nest6Format4OpenEPNS_11InputStreamE'/>
+<def f='codebrowser/nest/format/ALZFormat.cpp' l='43' ll='69' type='int nest::ALZFormat::Open(nest::InputStream * stream)'/>

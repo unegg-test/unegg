@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/algorithm/DeflateCoder.h' l='24' type='void nest::DeflateCoder::DeflateCoder()'/>
+<def f='codebrowser/nest/algorithm/DeflateCoder.cpp' l='18' ll='22' type='void nest::DeflateCoder::DeflateCoder()'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='500' u='c' c='_ZN4nest9ALZFormat13GenerateCoderEiPPNS_5CoderEPm'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='485' u='c' c='_ZN4nest9EggFormat13GenerateCoderEiPPNS_5CoderEPm'/>

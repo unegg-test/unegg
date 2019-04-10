@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/algorithm/azo/Base/HistoryListB.h' l='18' type='void AZO::Base::HistoryList::Add(const T &amp; value, u_int delIdx)'/>
+<def f='codebrowser/nest/algorithm/azo/Base/HistoryListB.cpp' l='25' ll='30' type='void AZO::Base::HistoryList::Add(const T &amp; value, u_int delIdx)'/>

@@ -1,0 +1,18 @@
+<dec f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='245' type='UInt32'/>
+<offset>5184</offset>
+<doc f='codebrowser/nest/third-party/algorithm/bzip2/bzlib_private.h' l='244'>/* block and combined CRCs */</doc>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='123' u='w' c='prepare_new_block'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='221' u='w' c='add_pair_to_block'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='221' u='r' c='add_pair_to_block'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='221' u='r' c='add_pair_to_block'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='267' u='w' c='copy_input_until_stop'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='267' u='r' c='copy_input_until_stop'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='267' u='r' c='copy_input_until_stop'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='267' u='w' c='copy_input_until_stop'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='267' u='r' c='copy_input_until_stop'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='267' u='r' c='copy_input_until_stop'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='606' u='w' c='BZ2_compressBlock'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='606' u='r' c='BZ2_compressBlock'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='608' u='r' c='BZ2_compressBlock'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='614' u='r' c='BZ2_compressBlock'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/compress.c' l='637' u='r' c='BZ2_compressBlock'/>

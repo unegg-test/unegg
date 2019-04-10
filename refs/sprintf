@@ -1,0 +1,2 @@
+<dec f='include/stdio.h' l='364' type='int sprintf(char *__restrict __s, const char *__restrict __format)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='221' u='c' c='gzdopen'/>

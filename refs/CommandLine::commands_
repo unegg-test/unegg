@@ -1,0 +1,7 @@
+<dec f='codebrowser/CommandLine.h' l='35' type='std::set&lt;std::string&gt;'/>
+<use f='codebrowser/CommandLine.cpp' l='31' u='m' c='_ZN11CommandLine16ParseCommandlineEiPPc'/>
+<use f='codebrowser/CommandLine.cpp' l='43' u='m' c='_ZN11CommandLine13CommandExistsEPKc'/>
+<use f='codebrowser/CommandLine.cpp' l='43' u='m' c='_ZN11CommandLine13CommandExistsEPKc'/>
+<use f='codebrowser/CommandLine.cpp' l='48' u='m' c='_ZN11CommandLine15GetCommandCountEv'/>
+<use f='codebrowser/CommandLine.cpp' l='53' u='a' c='_ZN11CommandLine11GetCommandsEv'/>
+<offset>64</offset>

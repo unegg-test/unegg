@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/algorithm/azo/Base/MainCodeB.h' l='26' type='byte * AZO::Base::MainCode::GetInBuffer2(const byte *&amp; in, u_int &amp; inAvailSize, u_int needSize)'/>
+<def f='codebrowser/nest/algorithm/azo/Base/MainCodeB.cpp' l='54' ll='68' type='byte * AZO::Base::MainCode::GetInBuffer2(const byte *&amp; in, u_int &amp; inAvailSize, u_int needSize)'/>

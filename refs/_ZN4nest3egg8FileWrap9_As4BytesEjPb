@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/format/egg/FileWrap.h' l='65' type='int nest::egg::FileWrap::_As4Bytes(unsigned int key, bool * handled)'/>
+<doc f='codebrowser/nest/format/egg/FileWrap.h' l='64'>// Info</doc>
+<inh f='codebrowser/nest/Info.h' l='38' c='_ZN4nest4Info9_As4BytesEjPb'/>
+<def f='codebrowser/nest/format/egg/FileWrap.cpp' l='95' ll='115' type='int nest::egg::FileWrap::_As4Bytes(unsigned int key, bool * handled)'/>

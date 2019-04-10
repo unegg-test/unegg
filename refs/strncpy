@@ -1,0 +1,8 @@
+<dec f='include/string.h' l='128' type='char * strncpy(char *__restrict __dest, const char *__restrict __src, size_t __n)'/>
+<doc f='include/string.h' l='127'>/* Copy no more than N characters of SRC to DEST.  */</doc>
+<use f='codebrowser/nest/Utils.cpp' l='165' u='c' c='_ZN4nest4utf83nthEPKcmPcPi'/>
+<use f='codebrowser/nest/Utils.cpp' l='408' u='c' c='_ZN4nest4utf813path_ellipsisEPcmmPKc'/>
+<use f='codebrowser/nest/Utils.cpp' l='411' u='c' c='_ZN4nest4utf813path_ellipsisEPcmmPKc'/>
+<use f='codebrowser/nest/Utils.cpp' l='416' u='c' c='_ZN4nest4utf813path_ellipsisEPcmmPKc'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='449' u='c' c='_ZN4nest9ALZFormat17PreprocessDecryptEmPNS_3alz4FileE'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='933' u='c' c='_ZN4nest9EggFormat17PreprocessDecryptEmPNS_3egg12EncryptFieldE'/>

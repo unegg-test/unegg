@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/format/EggFormat.h' l='101' type='int nest::EggFormat::PrepareSolidBlock(egg::BlockWrap * block, nest::EggFormat::BlockExtractInfo * info)'/>
+<def f='codebrowser/nest/format/EggFormat.cpp' l='426' ll='453' type='int nest::EggFormat::PrepareSolidBlock(egg::BlockWrap * block, nest::EggFormat::BlockExtractInfo * info)'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='561' u='c' c='_ZN4nest9EggFormat19ExtractSolidArchiveEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='655' u='c' c='_ZN4nest9EggFormat19ExtractSolidArchiveEv'/>

@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='145' type='void pqdownheap(deflate_state * s, ct_data * tree, int k)'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='459' ll='482' macro='1' type='void pqdownheap(deflate_state * s, ct_data * tree, int k)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='666' u='c' c='build_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='442' u='c' c='build_tree'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/trees.c' l='692' u='c' c='build_tree'/>

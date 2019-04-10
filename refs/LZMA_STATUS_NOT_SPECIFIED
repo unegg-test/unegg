@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.h' l='102' type='0'/>
+<use f='codebrowser/nest/algorithm/LZMACoder.cpp' l='93' c='_ZN4nest9LZMACoder5OnPopEPvPm'/>
+<doc f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.h' l='102'>/* use main error code instead */</doc>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaDec.c' l='711' u='r' c='LzmaDec_DecodeToDic'/>

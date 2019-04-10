@@ -1,0 +1,9 @@
+<dec f='codebrowser/nest/algorithm/azo/AZO.h' l='37' type='unsigned int'/>
+<use f='codebrowser/nest/algorithm/azo/AZOWrapper.h' l='38' u='w' c='_ZN10AZODecoder10DecompressERPKcRjRPcS3_'/>
+<use f='codebrowser/nest/algorithm/azo/AZOWrapper.h' l='45' u='r' c='_ZN10AZODecoder10DecompressERPKcRjRPcS3_'/>
+<use f='codebrowser/nest/algorithm/AZOCoder.cpp' l='56' u='w' c='_ZN4nest8AZOCoder5OnPopEPvPm'/>
+<use f='codebrowser/nest/algorithm/AZOCoder.cpp' l='61' u='r' c='_ZN4nest8AZOCoder5OnPopEPvPm'/>
+<use f='codebrowser/nest/algorithm/AZOCoder.cpp' l='63' u='r' c='_ZN4nest8AZOCoder5OnPopEPvPm'/>
+<offset>192</offset>
+<use f='codebrowser/nest/algorithm/azo/unAZO.cpp' l='63' u='r' c='_Z14AZO_DecompressPvP10AZO_Stream'/>
+<use f='codebrowser/nest/algorithm/azo/unAZO.cpp' l='70' u='w' c='_Z14AZO_DecompressPvP10AZO_Stream'/>

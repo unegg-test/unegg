@@ -1,0 +1,7 @@
+<dec f='codebrowser/EventHandler.h' l='67' type='nest::Info *'/>
+<use f='codebrowser/EventHandler.cpp' l='48' u='w' c='_ZN12EventHandler10InitializeEPN4nest9WorkspaceE'/>
+<use f='codebrowser/EventHandler.cpp' l='57' u='r' c='_ZN12EventHandler8FinalizeEi'/>
+<use f='codebrowser/EventHandler.cpp' l='63' u='w' c='_ZN12EventHandler8FinalizeEi'/>
+<use f='codebrowser/EventHandler.cpp' l='116' u='r' c='_ZN12EventHandler11OnFileStartEm'/>
+<use f='codebrowser/EventHandler.cpp' l='149' u='r' c='_ZN12EventHandler12OnFileFinishEmi'/>
+<offset>768</offset>

@@ -1,0 +1,2 @@
+<def f='include/c++/7/bits/stl_iterator.h' l='834' ll='836' type='__normal_iterator&lt;_Iterator, _Container&gt; __gnu_cxx::__normal_iterator::operator+(difference_type __n) const'/>
+<use f='codebrowser/nest/Utils.cpp' l='356' u='c' c='_ZN4nest4utf813path_ellipsisEPcmmPKc'/>

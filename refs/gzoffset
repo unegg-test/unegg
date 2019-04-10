@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='1593' type='off_t gzoffset(gzFile )'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='413' ll='420' macro='1' type='long gzoffset(gzFile file)'/>

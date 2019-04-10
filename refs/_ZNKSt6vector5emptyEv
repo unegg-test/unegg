@@ -1,0 +1,6 @@
+<def f='include/c++/7/bits/stl_vector.h' l='758' ll='760' type='bool std::vector::empty() const'/>
+<doc f='include/c++/7/bits/stl_vector.h' l='754'>/**
+       *  Returns true if the %vector is empty.  (Thus begin() would
+       *  equal end().)
+       */</doc>
+<use f='codebrowser/nest/stream/InputStreamRewinder.h' l='64' u='c' c='_ZN4nest19InputStreamRewinder7IsEmptyEv'/>

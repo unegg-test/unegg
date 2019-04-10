@@ -1,0 +1,2 @@
+<def f='codebrowser/nest/algorithm/azo/AZOWrapper.h' l='20' ll='24' type='void AZODecoder::AZODecoder()'/>
+<use f='codebrowser/nest/algorithm/AZOCoder.cpp' l='32' u='c' c='_ZN4nest8AZOCoder10InitializeEPKhm'/>

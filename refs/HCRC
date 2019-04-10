@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/inflate.h' l='29' type='8'/>
+<doc f='codebrowser/nest/third-party/algorithm/zlib/inflate.h' l='29'>/* i: waiting for header crc (gzip) */</doc>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='779' u='r' c='inflate'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='780' c='inflate'/>

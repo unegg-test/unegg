@@ -1,0 +1,16 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='178'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/deflate.c' l='922' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='163' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='168' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='249' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='264' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='265' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='279' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='283' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzread.c' l='287' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/infback.c' l='608' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1200' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1271' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1380' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/inflate.c' l='1466' u='c'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/uncompr.c' l='52' u='c'/>

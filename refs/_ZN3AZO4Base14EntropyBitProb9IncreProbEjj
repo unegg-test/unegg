@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/algorithm/azo/Base/EntropyBitProbB.h' l='22' type='void AZO::Base::EntropyBitProb::IncreProb(u_int pre, BOOL value)'/>
+<def f='codebrowser/nest/algorithm/azo/Base/EntropyBitProbB.cpp' l='32' ll='46' type='void AZO::Base::EntropyBitProb::IncreProb(u_int pre, BOOL value)'/>
+<use f='codebrowser/nest/algorithm/azo/Base/EntropyBitProbB.cpp' l='59' u='c' c='_ZN3AZO4Base14EntropyBitProb6UpdateEj'/>

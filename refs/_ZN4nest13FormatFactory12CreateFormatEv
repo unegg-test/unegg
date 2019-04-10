@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/format/FormatFactory.h' l='25' type='nest::Format * nest::FormatFactory::CreateFormat()'/>
+<use f='codebrowser/nest/Workspace.cpp' l='79' u='c' c='_ZN4nest9Workspace4OpenEPKc'/>
+<ovr f='codebrowser/nest/format/ALZFormatFactory.cpp' l='31' c='_ZN4nest16ALZFormatFactory12CreateFormatEv'/>
+<ovr f='codebrowser/nest/format/EggFormatFactory.cpp' l='27' c='_ZN4nest16EggFormatFactory12CreateFormatEv'/>

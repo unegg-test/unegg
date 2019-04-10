@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/Workspace.h' l='44' type='uint64 nest::Workspace::GetStreamPos()'/>
+<def f='codebrowser/nest/Workspace.cpp' l='150' ll='153' type='uint64 nest::Workspace::GetStreamPos()'/>

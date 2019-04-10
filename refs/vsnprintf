@@ -1,0 +1,2 @@
+<dec f='include/stdio.h' l='390' type='int vsnprintf(char *__restrict __s, size_t __maxlen, const char *__restrict __format, __va_list_tag * __arg)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzwrite.c' l='333' u='c' c='gzprintf'/>

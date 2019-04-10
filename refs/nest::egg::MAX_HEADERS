@@ -1,0 +1,2 @@
+<def f='codebrowser/nest/format/egg/EggTypes.h' l='22' type='const size_t'/>
+<use f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='55' u='r' c='_ZN4nest3egg14ExtraFieldWrap6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>

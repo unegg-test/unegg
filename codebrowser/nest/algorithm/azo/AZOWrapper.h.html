@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>AZOWrapper.h source code [codebrowser/nest/algorithm/azo/AZOWrapper.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="AZODecoder "/>
+<link rel="stylesheet" href="../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/algorithm/azo/AZOWrapper.h'; var root_path = '../../../..'; var data_path = '../../../../../data';</script>
+<script src='../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../..'>codebrowser</a>/<a href='../..'>nest</a>/<a href='..'>algorithm</a>/<a href='./'>azo</a>/<a href='AZOWrapper.h.html'>AZOWrapper.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><i>/*</i></td></tr>
+<tr><th id="2">2</th><td><i> * AZOWrapper.h</i></td></tr>
+<tr><th id="3">3</th><td><i> *</i></td></tr>
+<tr><th id="4">4</th><td><i> *  Created on: 2010. 12. 16.</i></td></tr>
+<tr><th id="5">5</th><td><i> *      Author: Yoonsik Oh(Boom)</i></td></tr>
+<tr><th id="6">6</th><td><i> *</i></td></tr>
+<tr><th id="7">7</th><td><i> *  Copyright(c) 2010-Present ESTsoft Corp. All rights reserved.</i></td></tr>
+<tr><th id="8">8</th><td><i> *</i></td></tr>
+<tr><th id="9">9</th><td><i> *  For conditions of distribution and use, see copyright notice in license.txt</i></td></tr>
+<tr><th id="10">10</th><td><i> */</i></td></tr>
+<tr><th id="11">11</th><td></td></tr>
+<tr><th id="12">12</th><td><u>#<span data-ppcond="12">ifndef</span> <span class="macro" data-ref="_M/AZO_AZOWRAPPER_H">AZO_AZOWRAPPER_H</span></u></td></tr>
+<tr><th id="13">13</th><td><u>#define <dfn class="macro" id="_M/AZO_AZOWRAPPER_H" data-ref="_M/AZO_AZOWRAPPER_H">AZO_AZOWRAPPER_H</dfn></u></td></tr>
+<tr><th id="14">14</th><td></td></tr>
+<tr><th id="15">15</th><td><u>#include <a href="AZO.h.html">"AZO.h"</a></u></td></tr>
+<tr><th id="16">16</th><td></td></tr>
+<tr><th id="17">17</th><td><b>class</b> <dfn class="type def" id="AZODecoder" title='AZODecoder' data-ref="AZODecoder">AZODecoder</dfn></td></tr>
+<tr><th id="18">18</th><td>{</td></tr>
+<tr><th id="19">19</th><td><b>public</b>:</td></tr>
+<tr><th id="20">20</th><td>    <dfn class="decl def" id="_ZN10AZODecoderC1Ev" title='AZODecoder::AZODecoder' data-ref="_ZN10AZODecoderC1Ev">AZODecoder</dfn>() :</td></tr>
+<tr><th id="21">21</th><td>        <a class="member" href="#AZODecoder::handle_" title='AZODecoder::handle_' data-ref="AZODecoder::handle_">handle_</a>(<span class="macro" title="__null" data-ref="_M/NULL">NULL</span>)</td></tr>
+<tr><th id="22">22</th><td>    {</td></tr>
+<tr><th id="23">23</th><td>        <a class="ref" href="AZO.h.html#_Z18AZO_DecompressInitPPv" title='AZO_DecompressInit' data-ref="_Z18AZO_DecompressInitPPv">AZO_DecompressInit</a>(&amp;<a class="member" href="#AZODecoder::handle_" title='AZODecoder::handle_' data-ref="AZODecoder::handle_">handle_</a>);</td></tr>
+<tr><th id="24">24</th><td>    }</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td>    <dfn class="decl def" id="_ZN10AZODecoderD1Ev" title='AZODecoder::~AZODecoder' data-ref="_ZN10AZODecoderD1Ev">~AZODecoder</dfn>()</td></tr>
+<tr><th id="27">27</th><td>    {</td></tr>
+<tr><th id="28">28</th><td>        <a class="ref" href="AZO.h.html#_Z17AZO_DecompressEndPv" title='AZO_DecompressEnd' data-ref="_Z17AZO_DecompressEndPv">AZO_DecompressEnd</a>(<a class="member" href="#AZODecoder::handle_" title='AZODecoder::handle_' data-ref="AZODecoder::handle_">handle_</a>);</td></tr>
+<tr><th id="29">29</th><td>    }</td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td>    <em>int</em> <dfn class="decl def" id="_ZN10AZODecoder10DecompressERPKcRjRPcS3_" title='AZODecoder::Decompress' data-ref="_ZN10AZODecoder10DecompressERPKcRjRPcS3_">Decompress</dfn>(<em>const</em> <em>char</em>*&amp; <dfn class="local col2 decl" id="12next_in" title='next_in' data-type='const char *&amp;' data-ref="12next_in">next_in</dfn>, <em>unsigned</em> <em>int</em>&amp; <dfn class="local col3 decl" id="13avail_in" title='avail_in' data-type='unsigned int &amp;' data-ref="13avail_in">avail_in</dfn>,</td></tr>
+<tr><th id="32">32</th><td>                <em>char</em>*&amp; <dfn class="local col4 decl" id="14next_out" title='next_out' data-type='char *&amp;' data-ref="14next_out">next_out</dfn>, <em>unsigned</em> <em>int</em>&amp; <dfn class="local col5 decl" id="15avail_out" title='avail_out' data-type='unsigned int &amp;' data-ref="15avail_out">avail_out</dfn>)</td></tr>
+<tr><th id="33">33</th><td>    {</td></tr>
+<tr><th id="34">34</th><td>        <a class="type" href="AZO.h.html#AZO_Stream" title='AZO_Stream' data-ref="AZO_Stream">AZO_Stream</a> <a class="ref fake" href="AZO.h.html#31" title='AZO_Stream::AZO_Stream' data-ref="_ZN10AZO_StreamC1Ev"></a><dfn class="local col6 decl" id="16stream" title='stream' data-type='AZO_Stream' data-ref="16stream">stream</dfn>;</td></tr>
+<tr><th id="35">35</th><td>        <a class="local col6 ref" href="#16stream" title='stream' data-ref="16stream">stream</a>.<a class="ref" href="AZO.h.html#AZO_Stream::next_in" title='AZO_Stream::next_in' data-ref="AZO_Stream::next_in">next_in</a> = <a class="local col2 ref" href="#12next_in" title='next_in' data-ref="12next_in">next_in</a>;</td></tr>
+<tr><th id="36">36</th><td>        <a class="local col6 ref" href="#16stream" title='stream' data-ref="16stream">stream</a>.<a class="ref" href="AZO.h.html#AZO_Stream::avail_in" title='AZO_Stream::avail_in' data-ref="AZO_Stream::avail_in">avail_in</a> = <a class="local col3 ref" href="#13avail_in" title='avail_in' data-ref="13avail_in">avail_in</a>;</td></tr>
+<tr><th id="37">37</th><td>        <a class="local col6 ref" href="#16stream" title='stream' data-ref="16stream">stream</a>.<a class="ref" href="AZO.h.html#AZO_Stream::next_out" title='AZO_Stream::next_out' data-ref="AZO_Stream::next_out">next_out</a> = <a class="local col4 ref" href="#14next_out" title='next_out' data-ref="14next_out">next_out</a>;</td></tr>
+<tr><th id="38">38</th><td>        <a class="local col6 ref" href="#16stream" title='stream' data-ref="16stream">stream</a>.<a class="ref" href="AZO.h.html#AZO_Stream::avail_out" title='AZO_Stream::avail_out' data-ref="AZO_Stream::avail_out">avail_out</a> = <a class="local col5 ref" href="#15avail_out" title='avail_out' data-ref="15avail_out">avail_out</a>;</td></tr>
+<tr><th id="39">39</th><td></td></tr>
+<tr><th id="40">40</th><td>        <em>int</em> <dfn class="local col7 decl" id="17ret" title='ret' data-type='int' data-ref="17ret">ret</dfn> = <a class="member" href="#_ZN10AZODecoder10DecompressER10AZO_Stream" title='AZODecoder::Decompress' data-ref="_ZN10AZODecoder10DecompressER10AZO_Stream">Decompress</a>(<span class='refarg'><a class="local col6 ref" href="#16stream" title='stream' data-ref="16stream">stream</a></span>);</td></tr>
+<tr><th id="41">41</th><td></td></tr>
+<tr><th id="42">42</th><td>        <a class="local col2 ref" href="#12next_in" title='next_in' data-ref="12next_in">next_in</a> = <a class="local col6 ref" href="#16stream" title='stream' data-ref="16stream">stream</a>.<a class="ref" href="AZO.h.html#AZO_Stream::next_in" title='AZO_Stream::next_in' data-ref="AZO_Stream::next_in">next_in</a>;</td></tr>
+<tr><th id="43">43</th><td>        <a class="local col3 ref" href="#13avail_in" title='avail_in' data-ref="13avail_in">avail_in</a> = <a class="local col6 ref" href="#16stream" title='stream' data-ref="16stream">stream</a>.<a class="ref" href="AZO.h.html#AZO_Stream::avail_in" title='AZO_Stream::avail_in' data-ref="AZO_Stream::avail_in">avail_in</a>;</td></tr>
+<tr><th id="44">44</th><td>        <a class="local col4 ref" href="#14next_out" title='next_out' data-ref="14next_out">next_out</a> = <a class="local col6 ref" href="#16stream" title='stream' data-ref="16stream">stream</a>.<a class="ref" href="AZO.h.html#AZO_Stream::next_out" title='AZO_Stream::next_out' data-ref="AZO_Stream::next_out">next_out</a>;</td></tr>
+<tr><th id="45">45</th><td>        <a class="local col5 ref" href="#15avail_out" title='avail_out' data-ref="15avail_out">avail_out</a> = <a class="local col6 ref" href="#16stream" title='stream' data-ref="16stream">stream</a>.<a class="ref" href="AZO.h.html#AZO_Stream::avail_out" title='AZO_Stream::avail_out' data-ref="AZO_Stream::avail_out">avail_out</a>;</td></tr>
+<tr><th id="46">46</th><td></td></tr>
+<tr><th id="47">47</th><td>        <b>return</b> <a class="local col7 ref" href="#17ret" title='ret' data-ref="17ret">ret</a>;</td></tr>
+<tr><th id="48">48</th><td>    }</td></tr>
+<tr><th id="49">49</th><td></td></tr>
+<tr><th id="50">50</th><td>    <em>int</em> <dfn class="decl def" id="_ZN10AZODecoder10DecompressER10AZO_Stream" title='AZODecoder::Decompress' data-ref="_ZN10AZODecoder10DecompressER10AZO_Stream">Decompress</dfn>(<a class="type" href="AZO.h.html#AZO_Stream" title='AZO_Stream' data-ref="AZO_Stream">AZO_Stream</a>&amp; <dfn class="local col8 decl" id="18stream" title='stream' data-type='AZO_Stream &amp;' data-ref="18stream">stream</dfn>)</td></tr>
+<tr><th id="51">51</th><td>    {</td></tr>
+<tr><th id="52">52</th><td>        <b>return</b> <a class="ref" href="AZO.h.html#_Z14AZO_DecompressPvP10AZO_Stream" title='AZO_Decompress' data-ref="_Z14AZO_DecompressPvP10AZO_Stream">AZO_Decompress</a>(<a class="member" href="#AZODecoder::handle_" title='AZODecoder::handle_' data-ref="AZODecoder::handle_">handle_</a>, &amp;<a class="local col8 ref" href="#18stream" title='stream' data-ref="18stream">stream</a>);</td></tr>
+<tr><th id="53">53</th><td>    }</td></tr>
+<tr><th id="54">54</th><td></td></tr>
+<tr><th id="55">55</th><td><b>private</b>:</td></tr>
+<tr><th id="56">56</th><td>    <a class="typedef" href="AZO.h.html#AZO_HDECOMPRESS" title='AZO_HDECOMPRESS' data-type='void *' data-ref="AZO_HDECOMPRESS">AZO_HDECOMPRESS</a> <dfn class="decl" id="AZODecoder::handle_" title='AZODecoder::handle_' data-ref="AZODecoder::handle_">handle_</dfn>;    </td></tr>
+<tr><th id="57">57</th><td>};</td></tr>
+<tr><th id="58">58</th><td></td></tr>
+<tr><th id="59">59</th><td><u>#<span data-ppcond="12">endif</span> /*AZO_AZOWRAPPER_H*/</u></td></tr>
+<tr><th id="60">60</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='../AZOCoder.cpp.html'>codebrowser/nest/algorithm/AZOCoder.cpp</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

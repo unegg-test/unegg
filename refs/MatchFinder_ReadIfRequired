@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzFind.h' l='62' type='void MatchFinder_ReadIfRequired(CMatchFinder * p)'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='117' ll='123' type='void MatchFinder_ReadIfRequired(CMatchFinder * p)'/>

@@ -1,0 +1,15 @@
+<dec f='codebrowser/nest/Info.h' l='29' type='size_t nest::Info::AsSize(unsigned int key, bool * handled = __null)'/>
+<use f='codebrowser/UnEgg.cpp' l='129' u='c' c='_Z18PrintListOfArchivePKc'/>
+<use f='codebrowser/UnEgg.cpp' l='133' u='c' c='_Z18PrintListOfArchivePKc'/>
+<use f='codebrowser/UnEgg.cpp' l='169' u='c' c='_Z18PrintListOfArchivePKc'/>
+<use f='codebrowser/UnEgg.cpp' l='195' u='c' c='_Z18PrintListOfArchivePKc'/>
+<use f='codebrowser/UnEgg.cpp' l='245' u='c' c='_Z18PrintListOfArchivePKc'/>
+<use f='codebrowser/UnEgg.cpp' l='306' u='c' c='_Z14ExtractArchiveR11CommandLine'/>
+<def f='codebrowser/nest/Info.cpp' l='47' ll='50' type='size_t nest::Info::AsSize(unsigned int key, bool * handled = __null)'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='709' u='c' c='_ZN4nest9ALZFormat7_AsSizeEjPb'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='1039' u='c' c='_ZN4nest9EggFormat7_AsSizeEjPb'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='1043' u='c' c='_ZN4nest9EggFormat7_AsSizeEjPb'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='1048' u='c' c='_ZN4nest9EggFormat7_AsSizeEjPb'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='193' u='c' c='_ZN4nest3alz4File7_AsSizeEjPb'/>
+<use f='codebrowser/nest/format/egg/BlockWrap.cpp' l='97' u='c' c='_ZN4nest3egg9BlockWrap7_AsSizeEjPb'/>
+<use f='codebrowser/nest/format/egg/BlockWrap.cpp' l='100' u='c' c='_ZN4nest3egg9BlockWrap7_AsSizeEjPb'/>

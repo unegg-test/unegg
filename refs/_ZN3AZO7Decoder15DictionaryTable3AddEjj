@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/algorithm/azo/Decoder/DictionaryTableD.h' l='29' type='void AZO::Decoder::DictionaryTable::Add(u_int pos, u_int length)'/>
+<def f='codebrowser/nest/algorithm/azo/Decoder/DictionaryTableD.cpp' l='41' ll='44' type='void AZO::Decoder::DictionaryTable::Add(u_int pos, u_int length)'/>
+<use f='codebrowser/nest/algorithm/azo/Decoder/MatchCodeD.cpp' l='19' u='c' c='_ZN3AZO7Decoder9MatchCode4CodeERNS0_11EntropyCodeEjRjS4_'/>

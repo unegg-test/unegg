@@ -1,0 +1,4 @@
+fcrypt_decrypt|fcrypt_decrypt
+fcrypt_encrypt|fcrypt_encrypt
+fcrypt_end|fcrypt_end
+fcrypt_init|fcrypt_init

@@ -1,0 +1,3 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/Alloc.h' l='15' type='void MyFree(void * address)'/>
+<use f='codebrowser/nest/algorithm/LZMACoder.cpp' l='27' u='c' c='_ZN4nestL6SzFreeEPvS0_'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/Alloc.c' l='38' ll='45' type='void MyFree(void * address)'/>

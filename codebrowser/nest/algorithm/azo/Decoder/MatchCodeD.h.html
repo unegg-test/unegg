@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>MatchCodeD.h source code [codebrowser/nest/algorithm/azo/Decoder/MatchCodeD.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="AZO::Decoder::MatchCode "/>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/algorithm/azo/Decoder/MatchCodeD.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>nest</a>/<a href='../..'>algorithm</a>/<a href='..'>azo</a>/<a href='./'>Decoder</a>/<a href='MatchCodeD.h.html'>MatchCodeD.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/AZO_DECODER_MATCHCODE_H">AZO_DECODER_MATCHCODE_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/AZO_DECODER_MATCHCODE_H" data-ref="_M/AZO_DECODER_MATCHCODE_H">AZO_DECODER_MATCHCODE_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="DictionaryTableD.h.html">"DictionaryTableD.h"</a></u></td></tr>
+<tr><th id="5">5</th><td><u>#include <a href="DistanceCodeD.h.html">"DistanceCodeD.h"</a></u></td></tr>
+<tr><th id="6">6</th><td><u>#include <a href="LengthCodeD.h.html">"LengthCodeD.h"</a></u></td></tr>
+<tr><th id="7">7</th><td></td></tr>
+<tr><th id="8">8</th><td><b>namespace</b> <span class="namespace">AZO</span> {</td></tr>
+<tr><th id="9">9</th><td><b>namespace</b> <span class="namespace">Decoder</span> {</td></tr>
+<tr><th id="10">10</th><td></td></tr>
+<tr><th id="11">11</th><td><b>class</b> <dfn class="type def" id="AZO::Decoder::MatchCode" title='AZO::Decoder::MatchCode' data-ref="AZO::Decoder::MatchCode">MatchCode</dfn></td></tr>
+<tr><th id="12">12</th><td>{</td></tr>
+<tr><th id="13">13</th><td><b>public</b>:</td></tr>
+<tr><th id="14">14</th><td>    <dfn class="decl def" id="_ZN3AZO7Decoder9MatchCodeC1EPKhj" title='AZO::Decoder::MatchCode::MatchCode' data-ref="_ZN3AZO7Decoder9MatchCodeC1EPKhj">MatchCode</dfn>(<em>const</em> <a class="typedef" href="../Common/AZOType.h.html#AZO::byte" title='AZO::byte' data-type='uint8_t' data-ref="AZO::byte">byte</a>* <dfn class="local col6 decl" id="56buf" title='buf' data-type='const byte *' data-ref="56buf">buf</dfn>, <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <dfn class="local col7 decl" id="57size" title='size' data-type='u_int' data-ref="57size">size</dfn>) : </td></tr>
+<tr><th id="15">15</th><td>        <a class="member" href="#AZO::Decoder::MatchCode::dictTable_" title='AZO::Decoder::MatchCode::dictTable_' data-ref="AZO::Decoder::MatchCode::dictTable_">dictTable_</a><a class="ref" href="DictionaryTableD.h.html#_ZN3AZO7Decoder15DictionaryTableC1EPKhj" title='AZO::Decoder::DictionaryTable::DictionaryTable' data-ref="_ZN3AZO7Decoder15DictionaryTableC1EPKhj">(</a><a class="local col6 ref" href="#56buf" title='buf' data-ref="56buf">buf</a>, <a class="local col7 ref" href="#57size" title='size' data-ref="57size">size</a>) {}</td></tr>
+<tr><th id="16">16</th><td>    </td></tr>
+<tr><th id="17">17</th><td>    <em>void</em> <a class="decl" href="MatchCodeD.cpp.html#_ZN3AZO7Decoder9MatchCode4CodeERNS0_11EntropyCodeEjRjS4_" title='AZO::Decoder::MatchCode::Code' data-ref="_ZN3AZO7Decoder9MatchCode4CodeERNS0_11EntropyCodeEjRjS4_" id="_ZN3AZO7Decoder9MatchCode4CodeERNS0_11EntropyCodeEjRjS4_">Code</a>(<a class="type" href="EntropyCodeD.h.html#AZO::Decoder::EntropyCode" title='AZO::Decoder::EntropyCode' data-ref="AZO::Decoder::EntropyCode">EntropyCode</a>&amp; <dfn class="local col8 decl" id="58entropy" title='entropy' data-type='AZO::Decoder::EntropyCode &amp;' data-ref="58entropy">entropy</dfn>, <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <dfn class="local col9 decl" id="59pos" title='pos' data-type='u_int' data-ref="59pos">pos</dfn>, </td></tr>
+<tr><th id="18">18</th><td>              <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a>&amp; <dfn class="local col0 decl" id="60dist" title='dist' data-type='u_int &amp;' data-ref="60dist">dist</dfn>, <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a>&amp; <dfn class="local col1 decl" id="61length" title='length' data-type='u_int &amp;' data-ref="61length">length</dfn>);</td></tr>
+<tr><th id="19">19</th><td></td></tr>
+<tr><th id="20">20</th><td><b>private</b>:    </td></tr>
+<tr><th id="21">21</th><td>    <a class="type" href="DictionaryTableD.h.html#AZO::Decoder::DictionaryTable" title='AZO::Decoder::DictionaryTable' data-ref="AZO::Decoder::DictionaryTable">DictionaryTable</a>    <dfn class="decl" id="AZO::Decoder::MatchCode::dictTable_" title='AZO::Decoder::MatchCode::dictTable_' data-ref="AZO::Decoder::MatchCode::dictTable_">dictTable_</dfn>;</td></tr>
+<tr><th id="22">22</th><td>    <a class="type" href="DistanceCodeD.h.html#AZO::Decoder::DistanceCode" title='AZO::Decoder::DistanceCode' data-ref="AZO::Decoder::DistanceCode">DistanceCode</a>       <dfn class="decl" id="AZO::Decoder::MatchCode::distProb_" title='AZO::Decoder::MatchCode::distProb_' data-ref="AZO::Decoder::MatchCode::distProb_">distProb_</dfn>;</td></tr>
+<tr><th id="23">23</th><td>    <a class="type" href="LengthCodeD.h.html#AZO::Decoder::LengthCode" title='AZO::Decoder::LengthCode' data-ref="AZO::Decoder::LengthCode">LengthCode</a>         <dfn class="decl" id="AZO::Decoder::MatchCode::lenProb_" title='AZO::Decoder::MatchCode::lenProb_' data-ref="AZO::Decoder::MatchCode::lenProb_">lenProb_</dfn>;</td></tr>
+<tr><th id="24">24</th><td>};</td></tr>
+<tr><th id="25">25</th><td></td></tr>
+<tr><th id="26">26</th><td>} <i>//namespaces Decoder</i></td></tr>
+<tr><th id="27">27</th><td>} <i>//namespaces AZO</i></td></tr>
+<tr><th id="28">28</th><td></td></tr>
+<tr><th id="29">29</th><td><u>#include <a href="MatchCodeD.cpp.html">"MatchCodeD.cpp"</a></u></td></tr>
+<tr><th id="30">30</th><td></td></tr>
+<tr><th id="31">31</th><td><u>#<span data-ppcond="1">endif</span> /*AZO_DECODER_MATCHCODE_H*/</u></td></tr>
+<tr><th id="32">32</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='BlockCodeD.cpp.html'>codebrowser/nest/algorithm/azo/Decoder/BlockCodeD.cpp</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

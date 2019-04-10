@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/zlib/zlib.h' l='1567' type='off64_t gzseek64(gzFile , off64_t , int )'/>
+<dec f='codebrowser/nest/third-party/algorithm/zlib/gzguts.h' l='66' type='long gzseek64(gzFile , long , int )'/>
+<def f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='275' ll='348' macro='1' type='long gzseek64(gzFile file, long offset, int whence)'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='358' u='c' c='gzseek'/>

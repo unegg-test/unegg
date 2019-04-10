@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/Types.h' l='169' type='SRes (*)(void *, const void **, size_t *)'/>
+<offset>0</offset>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='45' u='r' c='LookInStream_LookRead'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/7zStream.c' l='136' u='w' c='LookToRead_CreateVTable'/>

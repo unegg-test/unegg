@@ -1,0 +1,7 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzFind.h' l='50' type='SRes'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='68' u='r' c='MatchFinder_ReadBlock'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='87' u='w' c='MatchFinder_ReadBlock'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='88' u='r' c='MatchFinder_ReadBlock'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='290' u='w' c='MatchFinder_Init'/>
+<offset>1088</offset>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzmaEnc.c' l='1594' u='r' c='CheckErrors'/>

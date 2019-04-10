@@ -1,0 +1,5 @@
+<dec f='codebrowser/nest/format/ALZFormat.h' l='36' type='void nest::ALZFormat::Close()'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='40' u='c' c='_ZN4nest9ALZFormatD1Ev'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='47' u='c' c='_ZN4nest9ALZFormat4OpenEPNS_11InputStreamE'/>
+<inh f='codebrowser/nest/format/Format.h' l='50' c='_ZN4nest6Format5CloseEv'/>
+<def f='codebrowser/nest/format/ALZFormat.cpp' l='71' ll='77' type='void nest::ALZFormat::Close()'/>

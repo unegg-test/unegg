@@ -1,0 +1,2 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/7zBuf.h' l='20' type='void Buf_Init(CBuf * p)'/>
+<def f='codebrowser/nest/third-party/algorithm/lzma/7zBuf.c' l='8' ll='12' type='void Buf_Init(CBuf * p)'/>

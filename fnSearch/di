@@ -1,0 +1,11 @@
+_ZSt8distanceT_S_|std::distance
+_ZSt3divll|std::div
+_ZNKSt7dividesclERKT_S2_|std::divides::operator()
+_ZN3AZO4Base15DictionaryTableC1EPKhj|AZO::Base::DictionaryTable::DictionaryTable
+_ZN3AZO4Base15DictionaryTable6UpdateEjj|AZO::Base::DictionaryTable::Update
+_ZN3AZO7Decoder15DictionaryTable3AddEjj|AZO::Decoder::DictionaryTable::Add
+_ZN3AZO7Decoder15DictionaryTable4CodeERNS0_11EntropyCodeERjS4_|AZO::Decoder::DictionaryTable::Code
+_ZN3AZO7Decoder15DictionaryTableC1EPKhj|AZO::Decoder::DictionaryTable::DictionaryTable
+_ZN3AZO7Decoder15DictionaryTable3GetEjRjS2_|AZO::Decoder::DictionaryTable::Get
+_ZN3AZO7Decoder12DistanceCode4CodeERNS0_11EntropyCodeE|AZO::Decoder::DistanceCode::Code
+_ZN3AZO7Decoder12DistanceCodeC1Ev|AZO::Decoder::DistanceCode::DistanceCode

@@ -1,0 +1,3 @@
+_ZNSt14numeric_limits9quiet_NaNEv|std::numeric_limits::quiet_NaN
+_ZN4nest9ALZFormat18QueryExtractStreamEmPPNS_12OutputStreamE|nest::ALZFormat::QueryExtractStream
+_ZN4nest9EggFormat18QueryExtractStreamEmPPNS_12OutputStreamE|nest::EggFormat::QueryExtractStream

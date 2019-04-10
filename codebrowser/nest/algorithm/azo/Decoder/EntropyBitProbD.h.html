@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>EntropyBitProbD.h source code [codebrowser/nest/algorithm/azo/Decoder/EntropyBitProbD.h] - Woboq Code Browser</title>
+<meta name="woboq:interestingDefinitions" content="AZO::Decoder::EntropyBitProb "/>
+<link rel="stylesheet" href="../../../../../../data/qtcreator.css" title="QtCreator"/>
+<link rel="alternate stylesheet" href="../../../../../../data/kdevelop.css" title="KDevelop"/>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="../../../../../../data/jquery/jquery-ui.min.js"></script>
+<script>var file = 'codebrowser/nest/algorithm/azo/Decoder/EntropyBitProbD.h'; var root_path = '../../../../..'; var data_path = '../../../../../../data';</script>
+<script src='../../../../../../data/codebrowser.js'></script>
+</head>
+<body><div id='header'><h1 id='breadcrumb'><span>Browse the source code of </span><a href='../../../..'>codebrowser</a>/<a href='../../..'>nest</a>/<a href='../..'>algorithm</a>/<a href='..'>azo</a>/<a href='./'>Decoder</a>/<a href='EntropyBitProbD.h.html'>EntropyBitProbD.h</a></h1></div>
+<hr/><div id='content'><table class="code">
+<tr><th id="1">1</th><td><u>#<span data-ppcond="1">ifndef</span> <span class="macro" data-ref="_M/AZO_DECODER_ENTROPYBITPROB_H">AZO_DECODER_ENTROPYBITPROB_H</span></u></td></tr>
+<tr><th id="2">2</th><td><u>#define <dfn class="macro" id="_M/AZO_DECODER_ENTROPYBITPROB_H" data-ref="_M/AZO_DECODER_ENTROPYBITPROB_H">AZO_DECODER_ENTROPYBITPROB_H</dfn></u></td></tr>
+<tr><th id="3">3</th><td></td></tr>
+<tr><th id="4">4</th><td><u>#include <a href="../Base/EntropyBitProbB.h.html">"../Base/EntropyBitProbB.h"</a></u></td></tr>
+<tr><th id="5">5</th><td><u>#include <a href="EntropyCodeD.h.html">"EntropyCodeD.h"</a></u></td></tr>
+<tr><th id="6">6</th><td></td></tr>
+<tr><th id="7">7</th><td><b>namespace</b> <span class="namespace">AZO</span> {</td></tr>
+<tr><th id="8">8</th><td><b>namespace</b> <span class="namespace">Decoder</span> {</td></tr>
+<tr><th id="9">9</th><td></td></tr>
+<tr><th id="10">10</th><td><b>template</b> &lt;<a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> N&gt;</td></tr>
+<tr><th id="11">11</th><td><b>class</b> <dfn class="type def" id="AZO::Decoder::EntropyBitProb" title='AZO::Decoder::EntropyBitProb' data-ref="AZO::Decoder::EntropyBitProb">EntropyBitProb</dfn> : <b>public</b> <span class="namespace">Base::</span><a class="type" href="../Base/EntropyBitProbB.h.html#AZO::Base::EntropyBitProb" title='AZO::Base::EntropyBitProb' data-ref="AZO::Base::EntropyBitProb">EntropyBitProb</a>&lt;<a class="tu ref" href="#AZO::Decoder::EntropyBitProb::N" title='AZO::Decoder::EntropyBitProb::N' data-ref="AZO::Decoder::EntropyBitProb::N">N</a>&gt;</td></tr>
+<tr><th id="12">12</th><td>{</td></tr>
+<tr><th id="13">13</th><td>    <b>typedef</b> <span class="namespace">Base::</span><a class="type" href="../Base/EntropyBitProbB.h.html#AZO::Base::EntropyBitProb" title='AZO::Base::EntropyBitProb' data-ref="AZO::Base::EntropyBitProb">EntropyBitProb</a>&lt;<a class="tu ref" href="#AZO::Decoder::EntropyBitProb::N" title='AZO::Decoder::EntropyBitProb::N' data-ref="AZO::Decoder::EntropyBitProb::N">N</a>&gt; <dfn class="typedef" id="AZO::Decoder::EntropyBitProb::super" title='AZO::Decoder::EntropyBitProb::super' data-type='Base::EntropyBitProb&lt;N&gt;' data-ref="AZO::Decoder::EntropyBitProb::super">super</dfn>;</td></tr>
+<tr><th id="14">14</th><td><b>public</b>:</td></tr>
+<tr><th id="15">15</th><td>    <dfn class="decl def" id="_ZN3AZO7Decoder14EntropyBitProbC1Ev" title='AZO::Decoder::EntropyBitProb::EntropyBitProb&lt;N&gt;' data-ref="_ZN3AZO7Decoder14EntropyBitProbC1Ev">EntropyBitProb</dfn>() {}</td></tr>
+<tr><th id="16">16</th><td>    <dfn class="decl def" id="_ZN3AZO7Decoder14EntropyBitProbD1Ev" title='AZO::Decoder::EntropyBitProb::~EntropyBitProb&lt;N&gt;' data-ref="_ZN3AZO7Decoder14EntropyBitProbD1Ev">~EntropyBitProb</dfn>() {}</td></tr>
+<tr><th id="17">17</th><td>    </td></tr>
+<tr><th id="18">18</th><td>    <b>using</b> <a class="typedef" href="#AZO::Decoder::EntropyBitProb::super" title='AZO::Decoder::EntropyBitProb::super' data-type='Base::EntropyBitProb&lt;N&gt;' data-ref="AZO::Decoder::EntropyBitProb::super">super</a>::Init;</td></tr>
+<tr><th id="19">19</th><td>    <b>using</b> <a class="typedef" href="#AZO::Decoder::EntropyBitProb::super" title='AZO::Decoder::EntropyBitProb::super' data-type='Base::EntropyBitProb&lt;N&gt;' data-ref="AZO::Decoder::EntropyBitProb::super">super</a>::Update;</td></tr>
+<tr><th id="20">20</th><td>    <a class="typedef" href="../../../../../include/x86_64-linux-gnu/sys/types.h.html#u_int" title='u_int' data-type='__u_int' data-ref="u_int">u_int</a> <a class="decl" href="EntropyBitProbD.cpp.html#_ZN3AZO7Decoder14EntropyBitProb4CodeERNS0_11EntropyCodeE" title='AZO::Decoder::EntropyBitProb::Code' data-ref="_ZN3AZO7Decoder14EntropyBitProb4CodeERNS0_11EntropyCodeE" id="_ZN3AZO7Decoder14EntropyBitProb4CodeERNS0_11EntropyCodeE">Code</a>(<a class="type" href="EntropyCodeD.h.html#AZO::Decoder::EntropyCode" title='AZO::Decoder::EntropyCode' data-ref="AZO::Decoder::EntropyCode">EntropyCode</a>&amp; <dfn class="local col4 decl" id="34entropy" title='entropy' data-type='AZO::Decoder::EntropyCode &amp;' data-ref="34entropy">entropy</dfn>);</td></tr>
+<tr><th id="21">21</th><td></td></tr>
+<tr><th id="22">22</th><td><b>private</b>:    </td></tr>
+<tr><th id="23">23</th><td>    <b>using</b> <a class="typedef" href="#AZO::Decoder::EntropyBitProb::super" title='AZO::Decoder::EntropyBitProb::super' data-type='Base::EntropyBitProb&lt;N&gt;' data-ref="AZO::Decoder::EntropyBitProb::super">super</a>::GetProb;</td></tr>
+<tr><th id="24">24</th><td> </td></tr>
+<tr><th id="25">25</th><td><b>private</b>:</td></tr>
+<tr><th id="26">26</th><td>    <b>using</b> <a class="typedef" href="#AZO::Decoder::EntropyBitProb::super" title='AZO::Decoder::EntropyBitProb::super' data-type='Base::EntropyBitProb&lt;N&gt;' data-ref="AZO::Decoder::EntropyBitProb::super">super</a>::BIT_N;</td></tr>
+<tr><th id="27">27</th><td>    <b>using</b> <a class="typedef" href="#AZO::Decoder::EntropyBitProb::super" title='AZO::Decoder::EntropyBitProb::super' data-type='Base::EntropyBitProb&lt;N&gt;' data-ref="AZO::Decoder::EntropyBitProb::super">super</a>::TOTAL_BIT;</td></tr>
+<tr><th id="28">28</th><td>};</td></tr>
+<tr><th id="29">29</th><td></td></tr>
+<tr><th id="30">30</th><td>} <i>//namespaces Decoder</i></td></tr>
+<tr><th id="31">31</th><td>} <i>//namespaces AZO</i></td></tr>
+<tr><th id="32">32</th><td></td></tr>
+<tr><th id="33">33</th><td><u>#include <a href="EntropyBitProbD.cpp.html">"EntropyBitProbD.cpp"</a></u></td></tr>
+<tr><th id="34">34</th><td></td></tr>
+<tr><th id="35">35</th><td><u>#<span data-ppcond="1">endif</span> /*AZO_DECODER_ENTROPYBITPROB_H*/</u></td></tr>
+<tr><th id="36">36</th><td></td></tr>
+</table><hr/><p id='footer'>
+Generated while processing <a href='AlphaCodeD.cpp.html'>codebrowser/nest/algorithm/azo/Decoder/AlphaCodeD.cpp</a><br/>Generated on <em>2019-Apr-10</em> from project codebrowser<br />Powered by <a href='https://woboq.com'><img alt='Woboq' src='https://code.woboq.org/woboq-16.png' width='41' height='16' /></a> <a href='https://code.woboq.org'>Code Browser</a> 2.1
+<br/>Generator usage only permitted with license.</p>
+</div></body></html>

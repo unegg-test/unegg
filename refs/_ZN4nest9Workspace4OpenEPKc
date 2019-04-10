@@ -1,0 +1,4 @@
+<dec f='codebrowser/nest/Workspace.h' l='37' type='int nest::Workspace::Open(const char * filename)'/>
+<use f='codebrowser/UnEgg.cpp' l='106' u='c' c='_Z18PrintListOfArchivePKc'/>
+<use f='codebrowser/UnEgg.cpp' l='285' u='c' c='_Z14ExtractArchiveR11CommandLine'/>
+<def f='codebrowser/nest/Workspace.cpp' l='55' ll='99' type='int nest::Workspace::Open(const char * filename)'/>

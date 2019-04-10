@@ -1,0 +1,13 @@
+<dec f='codebrowser/nest/define.h' l='38' type='8'/>
+<use f='codebrowser/nest/algorithm/BZipCoder.cpp' l='60' u='r' c='_ZN4nest9BZipCoder5OnPopEPvPm'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='62' u='r' c='_ZN4nest9ALZFormat4OpenEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='92' u='r' c='_ZN4nest9ALZFormat19CheckHeaderInternalEPNS_11InputStreamEPNS_3alz6GlobalE'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='100' u='r' c='_ZN4nest9ALZFormat19CheckHeaderInternalEPNS_11InputStreamEPNS_3alz6GlobalE'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='150' u='r' c='_ZN4nest9ALZFormat9ScanFilesEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='205' u='r' c='_ZN4nest9ALZFormat11ScanFootersEv'/>
+<use f='codebrowser/nest/format/ALZFormat.cpp' l='249' u='r' c='_ZN4nest9ALZFormat11ScanFootersEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='193' u='r' c='_ZN4nest9EggFormat9ScanFilesEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='273' u='r' c='_ZN4nest9EggFormat21PrepareSpannedStreamsEv'/>
+<use f='codebrowser/nest/format/EggFormat.cpp' l='311' u='r' c='_ZN4nest9EggFormat21PrepareSpannedStreamsEv'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='74' u='r' c='_ZN4nest3alz4File12ReadFileSizeEPNS_11InputStreamEPym'/>
+<use f='codebrowser/nest/format/egg/ExtraFieldWrap.cpp' l='53' u='r' c='_ZN4nest3egg14ExtraFieldWrap6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>

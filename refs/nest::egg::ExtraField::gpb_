@@ -1,0 +1,9 @@
+<dec f='codebrowser/nest/format/egg/ExtraField.h' l='40' type='unsigned char'/>
+<offset>128</offset>
+<use f='codebrowser/nest/format/egg/ExtraField.cpp' l='21' u='w' c='_ZN4nest3egg10ExtraFieldC1Ev'/>
+<use f='codebrowser/nest/format/egg/ExtraField.cpp' l='53' u='r' c='_ZN4nest3egg10ExtraField6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/egg/ExtraField.cpp' l='53' u='a' c='_ZN4nest3egg10ExtraField6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/egg/ExtraField.cpp' l='53' u='r' c='_ZN4nest3egg10ExtraField6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/egg/ExtraField.cpp' l='58' u='r' c='_ZN4nest3egg10ExtraField6OnReadEPNS_19InputStreamRewinderEPNS_11InputStreamE'/>
+<use f='codebrowser/nest/format/egg/ExtraField.cpp' l='118' u='r' c='_ZN4nest3egg10ExtraField11GetBitFlagsEv'/>
+<use f='codebrowser/nest/format/egg/ExtraField.cpp' l='123' u='r' c='_ZN4nest3egg10ExtraField10GetBitFlagEm'/>

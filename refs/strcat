@@ -1,0 +1,6 @@
+<dec f='include/string.h' l='133' type='char * strcat(char *__restrict __dest, const char *__restrict __src)'/>
+<doc f='include/string.h' l='132'>/* Append SRC onto DEST.  */</doc>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1417' u='c' c='bzopen_or_bzdopen'/>
+<use f='codebrowser/nest/third-party/algorithm/bzip2/bzlib.c' l='1418' u='c' c='bzopen_or_bzdopen'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='515' u='c' c='gz_error'/>
+<use f='codebrowser/nest/third-party/algorithm/zlib/gzlib.c' l='516' u='c' c='gz_error'/>

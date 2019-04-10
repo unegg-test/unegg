@@ -1,0 +1,5 @@
+<dec f='include/iconv.h' l='42' type='size_t iconv(iconv_t __cd, char **__restrict __inbuf, size_t *__restrict __inbytesleft, char **__restrict __outbuf, size_t *__restrict __outbytesleft)'/>
+<use f='codebrowser/nest/Utils.cpp' l='229' u='c' c='_ZN4nest4utf810euckr2utf8EPKcPNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE'/>
+<doc f='include/iconv.h' l='39'>/* Convert at most *INBYTESLEFT bytes from *INBUF according to the
+   code conversion algorithm specified by CD and place up to
+   *OUTBYTESLEFT bytes in buffer at *OUTBUF.  */</doc>

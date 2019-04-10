@@ -1,0 +1,2 @@
+<def f='codebrowser/nest/format/alz/File.h' l='43' ll='46' type='unsigned int nest::alz::File::GetDateTime()'/>
+<use f='codebrowser/nest/format/alz/File.cpp' l='172' u='c' c='_ZN4nest3alz4File9_As4BytesEjPb'/>

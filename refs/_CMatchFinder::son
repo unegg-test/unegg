@@ -1,0 +1,18 @@
+<dec f='codebrowser/nest/third-party/algorithm/lzma/LzFind.h' l='29' type='CLzRef *'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='248' u='w' c='MatchFinder_Create'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='487' u='r' c='Bt2_MatchFinder_GetMatches'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='487' u='r' c='Bt3Zip_MatchFinder_GetMatches'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='487' u='r' c='Bt3_MatchFinder_GetMatches'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='487' u='r' c='Bt3_MatchFinder_GetMatches'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='487' u='r' c='Bt4_MatchFinder_GetMatches'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='487' u='r' c='Bt4_MatchFinder_GetMatches'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='630' u='r' c='Hc4_MatchFinder_GetMatches'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='487' u='r' c='Hc4_MatchFinder_GetMatches'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='487' u='r' c='Hc3Zip_MatchFinder_GetMatches'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='487' u='r' c='Bt2_MatchFinder_Skip'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='487' u='r' c='Bt3Zip_MatchFinder_Skip'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='487' u='r' c='Bt3_MatchFinder_Skip'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='487' u='r' c='Bt4_MatchFinder_Skip'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='713' u='r' c='Hc4_MatchFinder_Skip'/>
+<use f='codebrowser/nest/third-party/algorithm/lzma/LzFind.c' l='726' u='r' c='Hc3Zip_MatchFinder_Skip'/>
+<offset>384</offset>
